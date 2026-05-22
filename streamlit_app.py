@@ -328,15 +328,24 @@ with tab2:
                 from news_context import fetch_news_context
                 news = fetch_news_context(days_back=7)
 
-                # Enrich con Groq si está disponible
+                # Enrich con Groq si está disponible (lee de st.secrets o archivo local)
                 try:
                     import os
+                    # En Streamlit Cloud, el secret esta en st.secrets
+                    if 'GROQ_API_KEY' in st.secrets:
+                        os.environ['GROQ_API_KEY'] = st.secrets['GROQ_API_KEY']
+                        # Tambien crear el archivo temporal que groq_interpreter espera
+                        try:
+                            Path('groq_api_key.txt').write_text(st.secrets['GROQ_API_KEY'])
+                        except Exception:
+                            pass
+
                     if os.environ.get('GROQ_API_KEY') or Path('groq_api_key.txt').exists():
                         from news_context import enrich_with_groq
-                        with st.spinner("Procesando con IA..."):
+                        with st.spinner("Procesando con IA (esto toma 20-30 seg)..."):
                             enrich_with_groq(news, max_items=max_news, verbose=False)
-                except Exception:
-                    pass
+                except Exception as e:
+                    st.warning(f"No se pudo procesar con IA: {e}")
             except Exception as e:
                 st.error(f"Error cargando noticias: {e}")
                 news = None
