@@ -363,7 +363,7 @@ with tab2:
             # Noticias
             st.subheader(f"Top {min(max_news, len(news['items']))} titulares relevantes")
             for item in news['items'][:max_news]:
-                impacto = item.get('impacto', '').lower()
+                impacto = (item.get('impacto') or '').lower()
                 if 'positivo' in impacto and 'negativo' not in impacto:
                     border = 'news-impact-positive'
                 elif 'negativo' in impacto:
