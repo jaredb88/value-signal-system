@@ -53,7 +53,12 @@ Responde SOLO con esas dos lineas. No agregues comentarios ni notas adicionales.
 # ============================================================
 
 def load_api_key():
-    """Lee la API key desde groq_api_key.txt"""
+    """Lee la API key desde variable de entorno o archivo local."""
+    # Primero intentar variable de entorno (Streamlit Cloud, GitHub Actions)
+    env_key = os.environ.get('GROQ_API_KEY', '').strip()
+    if env_key and env_key.startswith('gsk_'):
+        return env_key
+    # Fallback: archivo local
     if not API_KEY_FILE.exists():
         return None
     try:
