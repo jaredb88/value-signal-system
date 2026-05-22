@@ -90,19 +90,45 @@ WEIGHTS = {'cape': 0.40, 'drawdown': 0.25, 'ey_vs_bond': 0.15, 'yield_curve': 0.
 # ============================================================
 @st.cache_data(ttl=3600)
 def fetch_monthly(ticker, start='1990-01-01'):
-    df = yf.download(ticker, start=start, progress=False, auto_adjust=True)
-    if df.empty: return None
-    if isinstance(df.columns, pd.MultiIndex):
-        df.columns = df.columns.get_level_values(0)
-    return df['Close'].resample('ME').last()
+    import time
+    for attempt in range(3):
+        try:
+            df = yf.download(ticker, start=start, progress=False, auto_adjust=True)
+            if df.empty:
+                if attempt < 2:
+                    time.sleep(2)
+                    continue
+                return None
+            if isinstance(df.columns, pd.MultiIndex):
+                df.columns = df.columns.get_level_values(0)
+            return df['Close'].resample('ME').last()
+        except Exception:
+            if attempt < 2:
+                time.sleep(2)
+                continue
+            return None
+    return None
 
 @st.cache_data(ttl=3600)
 def fetch_daily(ticker, period='1y'):
-    df = yf.download(ticker, period=period, progress=False, auto_adjust=True)
-    if df.empty: return None
-    if isinstance(df.columns, pd.MultiIndex):
-        df.columns = df.columns.get_level_values(0)
-    return df['Close']
+    import time
+    for attempt in range(3):
+        try:
+            df = yf.download(ticker, period=period, progress=False, auto_adjust=True)
+            if df.empty:
+                if attempt < 2:
+                    time.sleep(2)
+                    continue
+                return None
+            if isinstance(df.columns, pd.MultiIndex):
+                df.columns = df.columns.get_level_values(0)
+            return df['Close']
+        except Exception:
+            if attempt < 2:
+                time.sleep(2)
+                continue
+            return None
+    return None
 
 @st.cache_data(ttl=86400)  # 24 horas, CAPE es mensual
 def fetch_cape():
@@ -197,7 +223,11 @@ with st.spinner("Descargando datos de mercado..."):
     cfinasd_daily = fetch_daily('CFINASDAQ.SN')
 
 if sp500 is None or nasdaq is None:
-    st.error("❌ Error descargando datos. Verifica tu conexion.")
+    st.error("⏳ Yahoo Finance esta temporalmente saturado. Refresca en 5 minutos.")
+    st.info("Esto puede pasar si hay muchas consultas. El sistema usa cache por 1 hora.")
+    if st.button("🔄 Reintentar ahora"):
+        st.cache_data.clear()
+        st.rerun()
     st.stop()
 
 data = pd.DataFrame({
