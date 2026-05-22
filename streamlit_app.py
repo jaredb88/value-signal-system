@@ -48,14 +48,28 @@ st.markdown("""
 .zone-oportunidad { background: linear-gradient(135deg, #00b09b, #96c93d); color: white; }
 .big-score { font-size: 3.5rem; font-weight: bold; line-height: 1; }
 .zone-label { font-size: 1.5rem; font-weight: bold; }
-.metric-label { font-size: 0.8rem; opacity: 0.9; text-transform: uppercase; }
+.metric-label { font-size: 1.3rem; opacity: 0.95; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
 .metric-value { font-size: 1.4rem; font-weight: bold; }
+.ticker-name { font-size: 1.6rem; font-weight: bold; opacity: 1; margin-bottom: 0.3rem; }
+.ticker-mapping { font-size: 1.1rem; opacity: 0.85; font-weight: 500; margin-bottom: 0.8rem; }
+.score-max { font-size: 1.4rem; opacity: 0.7; font-weight: 500; }
+.scale-bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin: 0.8rem 0 0.3rem 0; opacity: 0.95; }
+.scale-segment { flex: 1; }
+.scale-caro { background: #c0392b; }
+.scale-neutral { background: #f39c12; }
+.scale-atractivo { background: #27ae60; }
+.scale-oportunidad { background: #00b09b; }
+.scale-marker { position: relative; height: 0; }
+.scale-marker-dot { position: absolute; top: -7px; width: 22px; height: 22px; background: white; border: 3px solid #2c3e50; border-radius: 50%; transform: translateX(-50%); box-shadow: 0 2px 6px rgba(0,0,0,0.4); }
+.scale-legend { display: flex; justify-content: space-between; font-size: 0.7rem; opacity: 0.85; font-weight: 600; margin-top: 0.3rem; }
 .news-card { background: #1e1e2e; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 4px solid #4a90e2; }
 .news-impact-positive { border-left-color: #2ecc71; }
 .news-impact-negative { border-left-color: #e74c3c; }
 .news-impact-neutral { border-left-color: #95a5a6; }
 @media (max-width: 768px) {
     .big-score { font-size: 2.5rem; }
+    .ticker-name { font-size: 1.3rem; }
+    .ticker-mapping { font-size: 0.95rem; }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -211,6 +225,17 @@ def analyze_etf(daily, name, ticker):
 st.title("📊 Value Signal System")
 st.caption(f"Sistema cuantitativo para timing de aportes — Consulta: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
+with st.expander("ℹ️ ¿Cómo leer el score? (0-100)", expanded=False):
+    st.markdown("""
+    El **Score** combina 5 indicadores académicos en un puntaje de **0 a 100**, donde:
+    - **0-25 = 🔴 CARO** → mercado en valuación alta vs su historia. Invierte la mitad ($100 base × 0.5)
+    - **25-50 = 🟡 NEUTRAL** → valuación normal. Invierte lo planificado (DCA normal × 1.0)
+    - **50-75 = 🟢 ATRACTIVO** → buena ventana de entrada. Invierte 50% más (× 1.5)
+    - **75-100 = 🟢🟢 OPORTUNIDAD** → evento tipo Covid o crash. Carga fuerte (× 2.5)
+
+    **Score más alto = mejor para comprar**. Score más bajo = mercado caro, modera aportes.
+    """)
+
 # Descargar datos
 with st.spinner("Descargando datos de mercado..."):
     sp500 = fetch_monthly('^GSPC')
@@ -256,11 +281,29 @@ def render_score_card(col, last, etf, name, ticker, aporte_base):
     emoji = get_zone_emoji(last['zona'])
 
     with col:
-        st.markdown(f'<div class="score-card {zone_class}">', unsafe_allow_html=True)
-        st.markdown(f'<div class="metric-label">{name} → {ticker}</div>', unsafe_allow_html=True)
-        st.markdown(f'<div class="big-score">{last["score"]:.1f}</div>', unsafe_allow_html=True)
-        st.markdown(f'<div class="zone-label">{emoji} {last["zona"]}</div>', unsafe_allow_html=True)
-        st.markdown('</div>', unsafe_allow_html=True)
+        score_pct = max(0, min(100, last["score"]))
+        st.markdown(f"""<div class="score-card {zone_class}">
+            <div class="ticker-name">{name}</div>
+            <div class="ticker-mapping">→ {ticker} en Racional</div>
+            <div class="big-score">{last["score"]:.1f}<span class="score-max"> / 100</span></div>
+            <div class="zone-label">{emoji} {last["zona"]}</div>
+            <div class="scale-bar">
+                <div class="scale-segment scale-caro"></div>
+                <div class="scale-segment scale-neutral"></div>
+                <div class="scale-segment scale-atractivo"></div>
+                <div class="scale-segment scale-oportunidad"></div>
+            </div>
+            <div class="scale-marker">
+                <div class="scale-marker-dot" style="left:{score_pct}%"></div>
+            </div>
+            <div class="scale-legend">
+                <span>0 CARO</span>
+                <span>25 NEUTRAL</span>
+                <span>50 ATRACTIVO</span>
+                <span>75 OPORTUNIDAD</span>
+                <span>100</span>
+            </div>
+        </div>""", unsafe_allow_html=True)
 
         # Sub-metricas
         c1, c2, c3 = st.columns(3)
@@ -358,24 +401,63 @@ with tab2:
                 from news_context import fetch_news_context
                 news = fetch_news_context(days_back=7)
 
-                # Enrich con Groq si está disponible (lee de st.secrets o archivo local)
+                # Enrich con Groq si está disponible (con debug visible)
+                debug_msgs = []
                 try:
                     import os
-                    # En Streamlit Cloud, el secret esta en st.secrets
-                    if 'GROQ_API_KEY' in st.secrets:
-                        os.environ['GROQ_API_KEY'] = st.secrets['GROQ_API_KEY']
-                        # Tambien crear el archivo temporal que groq_interpreter espera
-                        try:
-                            Path('groq_api_key.txt').write_text(st.secrets['GROQ_API_KEY'])
-                        except Exception:
-                            pass
 
-                    if os.environ.get('GROQ_API_KEY') or Path('groq_api_key.txt').exists():
+                    # 1. Verificar si st.secrets tiene la key
+                    has_secret = 'GROQ_API_KEY' in st.secrets
+                    debug_msgs.append(f"st.secrets tiene GROQ_API_KEY: {has_secret}")
+
+                    if has_secret:
+                        key_value = st.secrets['GROQ_API_KEY']
+                        os.environ['GROQ_API_KEY'] = key_value
+                        debug_msgs.append(f"Key cargada (len={len(key_value)}, prefix={key_value[:10]}...)")
+
+                    # 2. Verificar import del modulo
+                    try:
+                        from groq_interpreter import load_api_key, query_groq, interpret_news_item
+                        debug_msgs.append("OK Import de groq_interpreter")
+                    except Exception as ie:
+                        debug_msgs.append(f"ERROR import: {ie}")
+                        raise
+
+                    # 3. Verificar load_api_key
+                    loaded_key = load_api_key()
+                    if loaded_key:
+                        debug_msgs.append(f"OK load_api_key devolvio key (prefix={loaded_key[:10]}...)")
+                    else:
+                        debug_msgs.append("ERROR load_api_key devolvio None")
+
+                    # 4. Hacer una prueba directa con UNA noticia
+                    if loaded_key and news.get('items'):
+                        test_item = news['items'][0]
+                        debug_msgs.append(f"Probando con: {test_item['title'][:60]}...")
+                        result = interpret_news_item(test_item, loaded_key)
+                        if result:
+                            debug_msgs.append(f"OK Resultado: traduccion={result.get('traduccion', 'NONE')[:50] if result.get('traduccion') else 'NONE'}, impacto={result.get('impacto', 'NONE')[:50] if result.get('impacto') else 'NONE'}")
+                        else:
+                            debug_msgs.append("ERROR interpret_news_item devolvio None")
+
+                    # 5. Si todo lo anterior OK, hacer el batch real
+                    if loaded_key:
                         from news_context import enrich_with_groq
                         with st.spinner("Procesando con IA (esto toma 20-30 seg)..."):
-                            enrich_with_groq(news, max_items=max_news, verbose=False)
+                            enriched = enrich_with_groq(news, max_items=max_news, verbose=False)
+                            debug_msgs.append(f"enrich_with_groq retorno: {enriched}")
+                            # Verificar si se enriquecio
+                            n_with_traduccion = sum(1 for it in news['items'][:max_news] if it.get('traduccion'))
+                            debug_msgs.append(f"Items con traduccion: {n_with_traduccion}/{max_news}")
                 except Exception as e:
-                    st.warning(f"No se pudo procesar con IA: {e}")
+                    import traceback
+                    debug_msgs.append(f"EXCEPTION: {e}")
+                    debug_msgs.append(traceback.format_exc())
+
+                # Mostrar debug info visible
+                with st.expander("🔧 Debug info (temporal)", expanded=True):
+                    for msg in debug_msgs:
+                        st.code(msg)
             except Exception as e:
                 st.error(f"Error cargando noticias: {e}")
                 news = None
