@@ -1,0 +1,55 @@
+name: Value Signal Alert Monitor
+
+# Cuando se ejecuta:
+on:
+  schedule:
+    # Cada hora en hora exacta. UTC.
+    # Chile esta UTC-3 (verano) o UTC-4 (invierno)
+    - cron: '0 * * * *'
+
+  # Permite ejecucion manual desde la UI de GitHub
+  workflow_dispatch:
+
+# Permisos para que el bot pueda hacer commit del estado
+permissions:
+  contents: write
+
+jobs:
+  check-alerts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run alert monitor
+        env:
+          GMAIL_USER:         ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO:           ${{ secrets.EMAIL_TO }}
+          GROQ_API_KEY:       ${{ secrets.GROQ_API_KEY }}
+          APORTE_SP500:       ${{ vars.APORTE_SP500 }}
+          APORTE_NASDAQ:      ${{ vars.APORTE_NASDAQ }}
+        run: |
+          python alert_monitor.py
+
+      - name: Commit updated state
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -f alert_state.json ]; then
+            git add alert_state.json
+            git diff --staged --quiet || git commit -m "chore: update alert state [skip ci]"
+            git push || echo "Nothing to push"
+          fi
