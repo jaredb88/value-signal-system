@@ -1,0 +1,46 @@
+name: Keep Streamlit App Alive
+
+# Pinguea el dashboard cada 12 horas para evitar que se duerma
+# Streamlit Community Cloud duerme apps inactivas tras ~7 dias
+
+on:
+  schedule:
+    # Cada 12 horas: a las 00:00 y 12:00 UTC
+    # En Chile: 21:00 y 09:00 (verano) o 20:00 y 08:00 (invierno)
+    - cron: '0 0,12 * * *'
+
+  # Permite ejecucion manual desde la UI de GitHub
+  workflow_dispatch:
+
+jobs:
+  ping-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping dashboard URL
+        run: |
+          URL="https://valuesignal.streamlit.app"
+          echo "Pinging $URL ..."
+
+          # Hacer 3 intentos por si la primera vez tarda en despertar
+          for i in 1 2 3; do
+            echo "Intento $i..."
+            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 60 "$URL" || echo "000")
+            echo "HTTP status: $HTTP_CODE"
+
+            if [ "$HTTP_CODE" = "200" ]; then
+              echo "✓ Dashboard responde OK"
+              exit 0
+            fi
+
+            # Si no respondio bien, esperar 30s y reintentar
+            if [ "$i" -lt 3 ]; then
+              echo "Esperando 30s antes de reintentar..."
+              sleep 30
+            fi
+          done
+
+          echo "⚠ Dashboard no respondio bien tras 3 intentos (codigo: $HTTP_CODE)"
+          echo "Nota: esto NO afecta el sistema de alertas, que corre independiente."
+          # No fallar el workflow para no llenarse de notificaciones de error
+          exit 0
