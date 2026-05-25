@@ -1,55 +1,115 @@
 """
-UPDATE PRICES - Orquestador
-============================
-Ejecuta el scraper de Bolsa de Santiago para los ETFs configurados
-y guarda los precios en prices.json para que Streamlit los lea.
+UPDATE PRICES - Local Edition
+==============================
+Ejecuta el scraper de Bolsa de Santiago y guarda los precios en prices.json.
+Diseñado para correr en PC local cada 5 minutos via Tarea Programada Windows.
 
-Uso:
-    python update_prices.py
-
-Se ejecuta automaticamente cada hora via GitHub Actions.
+Características:
+- Solo commitea al repo si el precio cambió >0.1%
+- Loggea todo en update.log para diagnóstico
+- Tolerante a fallos (si BCS está caído, conserva precio previo como stale)
+- Hace git pull antes (por si Streamlit modificó algo) y push después
 """
 
 import asyncio
 import json
 import sys
 import logging
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
 from bcs_scraper import fetch_bcs_resumen, extraer_datos_precio
 
+# Configuración logging: archivo + consola
+SCRIPT_DIR = Path(__file__).parent
+# Log va a una subcarpeta logs\ dentro del repo (gitignored)
+LOG_DIR = SCRIPT_DIR / "logs"
+LOG_DIR.mkdir(exist_ok=True)
+LOG_FILE = LOG_DIR / "update.log"
+
+# Si el log es muy grande (>5MB), rotarlo
+try:
+    if LOG_FILE.exists() and LOG_FILE.stat().st_size > 5_000_000:
+        backup = LOG_DIR / "update.log.old"
+        if backup.exists():
+            backup.unlink()
+        LOG_FILE.rename(backup)
+except Exception:
+    pass
+
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(LOG_FILE, encoding='utf-8'),
+        logging.StreamHandler(sys.stdout),
+    ]
 )
 log = logging.getLogger(__name__)
 
-# ETFs a actualizar
+# Configuración
 TICKERS = ["CFISPETF", "CFINASDAQ"]
-
-# Archivo de salida
-SCRIPT_DIR = Path(__file__).parent
 OUTPUT_FILE = SCRIPT_DIR / "prices.json"
+UMBRAL_CAMBIO_PCT = 0.1  # Solo commitea si cambia >0.1%
+
+
+def precio_cambió_significativamente(precio_anterior, precio_nuevo):
+    """Devuelve True si el precio cambió más del umbral."""
+    if precio_anterior is None or precio_nuevo is None:
+        return True
+    if precio_anterior == 0:
+        return True
+    cambio_pct = abs((precio_nuevo - precio_anterior) / precio_anterior * 100)
+    return cambio_pct >= UMBRAL_CAMBIO_PCT
+
+
+def ejecutar_git(args, cwd=None):
+    """Ejecuta un comando git y devuelve (exit_code, stdout, stderr)."""
+    cwd = cwd or SCRIPT_DIR
+    try:
+        result = subprocess.run(
+            ['git'] + args,
+            cwd=str(cwd),
+            capture_output=True,
+            text=True,
+            timeout=60,
+            encoding='utf-8',
+            errors='replace',
+        )
+        return result.returncode, result.stdout.strip(), result.stderr.strip()
+    except subprocess.TimeoutExpired:
+        return -1, "", "TIMEOUT"
+    except Exception as e:
+        return -1, "", str(e)
 
 
 async def main():
-    log.info("=== Update Prices ===")
-    log.info(f"Hora UTC: {datetime.now(timezone.utc).isoformat()}")
-    log.info(f"Tickers a actualizar: {TICKERS}")
+    log.info("=" * 60)
+    log.info("=== Update Prices LOCAL ===")
+    log.info(f"Hora: {datetime.now().isoformat()}")
 
-    # Cargar datos previos si existen (para preservar histórico)
+    # 1. Git pull primero para evitar conflictos
+    log.info("--- Git pull ---")
+    code, out, err = ejecutar_git(['pull', '--no-rebase'])
+    if code != 0:
+        log.warning(f"git pull devolvió código {code}: {err}")
+    else:
+        log.info("git pull OK")
+
+    # 2. Cargar precios previos
     previous_data = {}
     if OUTPUT_FILE.exists():
         try:
             with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
                 previous_data = json.load(f)
-            log.info(f"Cargado prices.json previo")
+            log.info("Cargado prices.json previo")
         except Exception as e:
-            log.warning(f"No se pudo cargar prices.json previo: {e}")
+            log.warning(f"No se pudo cargar prices.json: {e}")
 
-    # Scrapear cada ticker
+    # 3. Scrapear cada ticker
     new_prices = {}
+    hubo_cambios = False
     errores = []
 
     for ticker in TICKERS:
@@ -58,59 +118,81 @@ async def main():
             resumen = await fetch_bcs_resumen(ticker)
             datos = extraer_datos_precio(resumen, ticker)
 
-            if datos.get("precio_cierre") is not None or datos.get("precio_actual") is not None:
+            precio_actual = datos.get("precio_cierre") or datos.get("precio_actual")
+
+            if precio_actual is not None:
+                # Comparar con precio anterior
+                ant = previous_data.get("prices", {}).get(ticker, {})
+                precio_anterior = ant.get("precio_cierre") or ant.get("precio_actual")
+
+                if precio_cambió_significativamente(precio_anterior, precio_actual):
+                    log.info(f"  PRECIO CAMBIÓ: {precio_anterior} -> {precio_actual}")
+                    hubo_cambios = True
+                else:
+                    log.info(f"  Sin cambios significativos (anterior: {precio_anterior}, nuevo: {precio_actual})")
+
                 new_prices[ticker] = datos
-                log.info(f"  OK: precio cierre {datos.get('precio_cierre')}")
             else:
-                errores.append(f"{ticker}: sin precio en la respuesta")
+                errores.append(f"{ticker}: sin precio")
                 log.warning(f"  Sin precio para {ticker}")
-                # Conservar dato previo si existe
+                # Conservar dato previo como stale
                 if ticker in previous_data.get("prices", {}):
                     new_prices[ticker] = previous_data["prices"][ticker]
                     new_prices[ticker]["stale"] = True
-                    log.info(f"  Usando precio previo (stale)")
         except Exception as e:
             errores.append(f"{ticker}: {str(e)}")
             log.error(f"  ERROR: {e}")
-            # Conservar dato previo si existe
             if ticker in previous_data.get("prices", {}):
                 new_prices[ticker] = previous_data["prices"][ticker]
                 new_prices[ticker]["stale"] = True
 
-    # Construir el JSON final
+    # 4. Construir output
     output_data = {
         "updated_at_utc": datetime.now(timezone.utc).isoformat(),
-        "updated_at_chile": datetime.now(timezone.utc).astimezone(
-            tz=datetime.now(timezone.utc).astimezone().tzinfo
-        ).isoformat(),
+        "updated_at_local": datetime.now().isoformat(),
         "tickers_solicitados": TICKERS,
         "errores": errores,
         "prices": new_prices,
     }
 
-    # Guardar
+    # 5. Guardar siempre (aunque no haya cambios, para refrescar timestamp)
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False, default=str)
+    log.info(f"Guardado en {OUTPUT_FILE.name}")
 
-    log.info(f"=== Guardado en {OUTPUT_FILE.name} ===")
+    # 6. Si hubo cambios significativos, commit + push
+    if hubo_cambios:
+        log.info("--- Hay cambios significativos: committing ---")
+        code, out, err = ejecutar_git(['add', 'prices.json'])
+        if code != 0:
+            log.error(f"git add falló: {err}")
+            return 1
 
-    # Resumen final
+        ts = datetime.now().strftime("%Y-%m-%d %H:%M")
+        code, out, err = ejecutar_git(['commit', '-m', f"chore: update BCS prices {ts} [skip ci]"])
+        if code != 0:
+            # Puede ser "nothing to commit" si solo cambió el timestamp
+            log.warning(f"git commit dijo: {out or err}")
+        else:
+            log.info("git commit OK")
+
+        code, out, err = ejecutar_git(['push'])
+        if code != 0:
+            log.error(f"git push falló: {err}")
+            return 1
+        log.info("git push OK")
+    else:
+        log.info("Sin cambios significativos, no commiteo")
+
+    # 7. Resumen final
     log.info("Resumen:")
     for ticker, data in new_prices.items():
         precio = data.get("precio_cierre") or data.get("precio_actual") or "N/A"
         stale = " (STALE)" if data.get("stale") else ""
         log.info(f"  {ticker}: ${precio} CLP{stale}")
 
-    if errores:
-        log.warning(f"Errores: {errores}")
-        # No fallar el workflow, solo loggear
-
-    # Exit code 0 si al menos un ticker funcionó
-    if new_prices:
-        return 0
-    else:
-        log.error("Ningún ticker se actualizó correctamente")
-        return 1
+    log.info(f"=== FIN ({datetime.now().strftime('%H:%M:%S')}) ===\n")
+    return 0
 
 
 if __name__ == "__main__":
