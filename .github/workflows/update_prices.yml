@@ -1,0 +1,55 @@
+name: Update BCS Prices
+
+# Actualiza precios de Bolsa de Santiago cada hora.
+# Mantiene prices.json fresco para que Streamlit lo lea.
+
+on:
+  schedule:
+    # Cada hora en hora exacta (UTC)
+    # Chile (UTC-3 o UTC-4): equivale a cada hora local también
+    - cron: '15 * * * *'  # minuto 15 para no coincidir con alert_monitor
+
+  # Permite ejecución manual
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+
+      - name: Install Playwright Chromium
+        run: |
+          python -m playwright install chromium
+          python -m playwright install-deps chromium
+
+      - name: Run price updater
+        run: |
+          python update_prices.py
+        continue-on-error: true  # No fallar el workflow si BCS está caído
+
+      - name: Commit updated prices
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -f prices.json ]; then
+            git add prices.json
+            git diff --staged --quiet || git commit -m "chore: update BCS prices [skip ci]"
+            git push || echo "Nothing to push"
+          fi
