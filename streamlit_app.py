@@ -198,10 +198,49 @@ def get_zone_emoji(zona):
 # ============================================================
 # RANGOS DE PRECIO ETF
 # ============================================================
-def analyze_etf(daily, name, ticker):
+@st.cache_data(ttl=600)  # 10 min cache
+def load_bcs_prices():
+    """Carga precios de prices.json (actualizado por GitHub Actions)."""
+    import json
+    from pathlib import Path
+    try:
+        prices_file = Path(__file__).parent / 'prices.json'
+        if not prices_file.exists():
+            return None
+        with open(prices_file, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+
+def get_bcs_price(bcs_data, ticker):
+    """Extrae el precio de un ticker desde el dict de prices.json."""
+    if not bcs_data or 'prices' not in bcs_data:
+        return None
+    ticker_data = bcs_data['prices'].get(ticker)
+    if not ticker_data:
+        return None
+    precio = ticker_data.get('precio_cierre') or ticker_data.get('precio_actual')
+    return float(precio) if precio else None
+
+
+def analyze_etf(daily, name, ticker, bcs_data=None, bcs_ticker=None):
     if daily is None or len(daily) < 5:
         return None
-    current = float(daily.iloc[-1])
+    # Intentar precio oficial BCS primero
+    current_bcs = None
+    bcs_freshness = None
+    if bcs_data and bcs_ticker:
+        current_bcs = get_bcs_price(bcs_data, bcs_ticker)
+        bcs_freshness = bcs_data.get('updated_at_utc')
+
+    # Si hay precio BCS oficial, usarlo. Si no, fallback a Yahoo.
+    if current_bcs:
+        current = current_bcs
+        precio_fuente = "BCS (oficial)"
+    else:
+        current = float(daily.iloc[-1])
+        precio_fuente = "Yahoo Finance"
 
     def range_stats(series, days):
         if len(series) == 0: return None
@@ -214,6 +253,8 @@ def analyze_etf(daily, name, ticker):
     return {
         'name': name, 'ticker': ticker,
         'current': current, 'date': daily.index[-1].strftime('%Y-%m-%d'),
+        'precio_fuente': precio_fuente,
+        'bcs_freshness': bcs_freshness,
         'r30': range_stats(daily, 30),
         'r180': range_stats(daily, 180),
         'r365': range_stats(daily, 365),
@@ -247,6 +288,9 @@ with st.spinner("Descargando datos de mercado..."):
     cfisp_daily = fetch_daily('CFISP500.SN')
     cfinasd_daily = fetch_daily('CFINASDAQ.SN')
 
+# Cargar precios oficiales de Bolsa de Santiago (actualizado cada hora)
+bcs_data = load_bcs_prices()
+
 if sp500 is None or nasdaq is None:
     st.error("⏳ Yahoo Finance esta temporalmente saturado. Refresca en 5 minutos.")
     st.info("Esto puede pasar si hay muchas consultas. El sistema usa cache por 1 hora.")
@@ -263,8 +307,8 @@ data['yield_curve'] = data['rate_10y'] - data['rate_3m']
 
 sp = calc_scores(data['sp500'], data['rate_10y'], data['yield_curve'], cape_official)
 nq = calc_scores(data['nasdaq'], data['rate_10y'], data['yield_curve'], None)
-etf_sp = analyze_etf(cfisp_daily, 'S&P 500', 'CFISP500.SN')
-etf_nq = analyze_etf(cfinasd_daily, 'Nasdaq 100', 'CFINASDAQ.SN')
+etf_sp = analyze_etf(cfisp_daily, 'S&P 500', 'CFISP500.SN', bcs_data, 'CFISPETF')
+etf_nq = analyze_etf(cfinasd_daily, 'Nasdaq 100', 'CFINASDAQ.SN', bcs_data, 'CFINASDAQ')
 
 last_sp = sp.dropna(subset=['score']).iloc[-1]
 last_nq = nq.dropna(subset=['score']).iloc[-1]
@@ -518,47 +562,3 @@ with tab3:
 
     # CSV histórico si existe
     history_file = Path('value_signal_history.csv')
-    if history_file.exists():
-        st.subheader("Historial de consultas")
-        try:
-            hist = pd.read_csv(history_file)
-            st.dataframe(hist.tail(20), use_container_width=True)
-            csv = hist.to_csv(index=False)
-            st.download_button("📥 Descargar histórico completo", csv,
-                               "value_signal_history.csv", "text/csv")
-        except Exception as e:
-            st.warning(f"No se pudo leer el historial: {e}")
-
-# ============================================================
-# TAB 4: Sobre el sistema
-# ============================================================
-with tab4:
-    st.markdown("""
-    ### Sobre Value Signal System
-
-    Sistema cuantitativo para timing de aportes en bolsa USA via ETFs Racional (CFISPETF + CFINASDAQ).
-
-    **Componentes del score (0-100):**
-    - **CAPE (40%):** Valuación largo plazo basada en Shiller P/E 10 años
-    - **Drawdown (25%):** Caída desde el máximo histórico
-    - **EY vs Bond (15%):** Premium de acciones vs bonos Treasury 10Y
-    - **Yield Curve (10%):** Régimen macro vía curva de tasas
-    - **Momentum (10%):** Tendencia 12-1 meses (Jegadeesh-Titman)
-
-    **Zonas y multiplicadores:**
-    - 🔴 CARO (0-25): 0.5x el aporte base
-    - 🟡 NEUTRAL (25-50): 1.0x el aporte base
-    - 🟢 ATRACTIVO (50-75): 1.5x el aporte base
-    - 🟢🟢 OPORTUNIDAD (75-100): 2.5x el aporte base
-
-    **Validación:** Walk-forward sobre datos reales 1990-2026, 100% ventanas con alpha positivo vs DCA puro.
-
-    **Disclaimers:**
-    - No es asesoría financiera. Sistema cuantitativo educativo.
-    - Performance pasada no garantiza performance futura.
-    - Mantener fondo de emergencia separado del capital de inversión.
-    """)
-
-# Footer
-st.divider()
-st.caption("Value Signal System v2.1 · Datos: Yahoo Finance + Shiller Online · IA: Groq Llama 3.3")
