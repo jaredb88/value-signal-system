@@ -1185,18 +1185,41 @@ if DIVIDEND_ETFS_AVAILABLE:
                     st.markdown(f"- **Expense ratio:** {r['expense_ratio']*100:.2f}%")
                     st.markdown(f"- **Frecuencia de pago:** {r['frequency']}")
 
-                # Desglose del score
+                # Desglose del score (mismo estilo visual que Growth ETFs)
                 with st.expander("🔍 Desglose del score"):
                     componentes_info = [
-                        ("DY actual vs histórico", "dy_vs_historico", "35%"),
-                        ("Drawdown vs máximo", "drawdown", "25%"),
-                        ("Balance CAGR + DY", "balance_cagr", "15%"),
-                        ("Momentum 12-1m", "momentum", "10%"),
-                        ("Dividend Growth Rate", "dgr", "15%"),
+                        ("DY actual vs histórico", "dy_vs_historico", 0.35, "Yield actual comparado con el promedio 3 años"),
+                        ("Drawdown vs máximo", "drawdown", 0.25, "Caída desde el máximo histórico"),
+                        ("Balance CAGR + DY", "balance_cagr", 0.15, "Retorno total esperado (apreciación + income)"),
+                        ("Momentum 12-1m", "momentum", 0.10, "Tendencia 12-1 meses (Jegadeesh-Titman)"),
+                        ("Dividend Growth Rate", "dgr", 0.15, "Crecimiento sostenido de dividendos"),
                     ]
-                    for nombre, key, peso in componentes_info:
-                        valor = r['componentes'].get(key, 0)
-                        st.caption(f"**{nombre}** ({peso}): {valor:.1f}/100")
+                    for nombre_d, key_d, peso_d, desc_d in componentes_info:
+                        v_d = r['componentes'].get(key_d, 0)
+                        if v_d is None:
+                            continue
+                        # Color seguir mismo criterio que Growth ETF: <25 rojo, 25-50 amarillo, 50-75 verde, 75+ verde fuerte
+                        if v_d < 25:
+                            color_d = "🔴"
+                        elif v_d < 50:
+                            color_d = "🟡"
+                        else:
+                            color_d = "🟢"
+                        # Veredicto especifico segun componente
+                        if key_d == "dy_vs_historico":
+                            label_d = "YIELD BAJO" if v_d < 25 else "YIELD NORMAL" if v_d < 50 else "YIELD ATRACTIVO" if v_d < 75 else "YIELD MUY ALTO"
+                        elif key_d == "drawdown":
+                            label_d = "EN MÁXIMOS" if v_d < 25 else "CAÍDA LEVE" if v_d < 50 else "CAÍDA SIGNIFICATIVA" if v_d < 75 else "CRASH"
+                        elif key_d == "balance_cagr":
+                            label_d = "RETORNO BAJO" if v_d < 25 else "RETORNO MODERADO" if v_d < 50 else "RETORNO BUENO" if v_d < 75 else "RETORNO EXCELENTE"
+                        elif key_d == "momentum":
+                            label_d = "BAJISTA" if v_d < 25 else "LATERAL" if v_d < 50 else "ALCISTA" if v_d < 75 else "MUY ALCISTA"
+                        elif key_d == "dgr":
+                            label_d = "NO CRECE" if v_d < 25 else "CRECIMIENTO LENTO" if v_d < 50 else "CRECIMIENTO SÓLIDO" if v_d < 75 else "CRECIMIENTO FUERTE"
+                        else:
+                            label_d = ""
+                        st.markdown(f"**{color_d} {nombre_d}** ({peso_d:.0%}) — {label_d}")
+                        st.progress(v_d/100, text=f"{v_d:.1f}/100 · {desc_d}")
 
     with st.expander("ℹ️ ¿Cómo se calcula el score de Dividend ETFs?"):
         st.markdown("""
