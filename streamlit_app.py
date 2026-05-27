@@ -393,7 +393,7 @@ if seccion == "🇨🇱 Acciones Chilenas":
         acciones,
         key=lambda a: (
             status_orden.get((a.get("evaluacion") or {}).get("status", "Sin datos"), 99),
-            -(a.get("dy", {}).get("dy_pct") or 0),  # luego por DY descendente
+            -((a.get("dy") or {}).get("dy_pct") or 0),  # luego por DY descendente
         ),
     )
 
