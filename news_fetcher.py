@@ -8,6 +8,7 @@ Salida: noticias_watchlist.json (consumido por el dashboard)
 
 Frecuencia recomendada: cada 2-3 horas via tarea programada.
 """
+import html as _html_lib
 import json
 import logging
 import re
@@ -71,6 +72,25 @@ WATCHLIST_KEYWORDS = {
     "QUINENCO":   ["Quinenco"],
     "CENCOMALLS": ["Cencosud Shopping", "Cencomalls"],
 }
+
+# Mapeo ticker -> keywords de razon social en mayusculas (CMF usa mayusculas)
+# Usamos substring matching con normalizacion de tildes
+WATCHLIST_HECHOS_ESENCIALES = {
+    "HABITAT":    ["afp habitat"],
+    "ZOFRI":      ["zona franca de iquique", "zofri"],
+    "PEHUENCHE":  ["pehuenche"],
+    "TRICAHUE":   ["fondo de inversion tricahue", "tricahue capital"],
+    "COLBUN":     ["colbun"],
+    "ENELGXCH":   ["enel generacion", "enel chile"],
+    "LIPIGAS":    ["empresas lipigas", "lipigas"],
+    "NTGCLGAS":   ["empresas gasco", "gasco s.a."],
+    "SOQUICOM":   ["sociedad quimica y minera"],
+    "QUINENCO":   ["quinenco"],
+    "CENCOMALLS": ["cencosud shopping"],
+}
+
+# URL del agregador de hechos esenciales (ultimos 7 dias)
+VISFIN_HECHOS_URL = "https://visfin.cl/hechos-esenciales"
 
 # Sitios objetivo (3 medios principales)
 SITIOS = [
@@ -184,9 +204,95 @@ def es_titulo_basura(title):
         ". noticias",
         "talento local",
         "cuales son las organizaciones",
+        "abstracto - diario",
+        "abstracto - el mercurio",
     ]
     t = normalizar(title)
-    return any(b in t for b in basura)
+    if any(b in t for b in basura):
+        return True
+    # Filtrar titulos que son solo numeros (IDs internos sueltos)
+    titulo_strip = title.strip()
+    if titulo_strip.isdigit():
+        return True
+    # Filtrar titulos muy cortos (menos de 15 caracteres) que probablemente
+    # son fragmentos rotos (IDs con sufijo, etc.)
+    if len(titulo_strip) < 15:
+        return True
+    return False
+
+
+# ============================================================
+# HECHOS ESENCIALES (scraping visfin.cl que agrega CMF)
+# ============================================================
+
+def fetch_hechos_esenciales():
+    """
+    Descarga la tabla de hechos esenciales de visfin.cl (ultimos 7 dias)
+    y devuelve una lista de dicts: fecha, empresa, materia, link.
+    """
+    log.info("Descargando hechos esenciales de visfin.cl...")
+    try:
+        html = fetch_rss(VISFIN_HECHOS_URL, timeout=30)
+    except Exception as e:
+        log.error(f"  Error descargando visfin: {e}")
+        return []
+
+    # La tabla esta en formato HTML simple. Buscamos filas <tr> con <td>
+    hechos = []
+    # Patron: capturar filas que tengan 4 columnas (fecha, empresa, materia, link)
+    # Usamos un regex tolerante
+    row_pattern = re.compile(
+        r'<tr[^>]*>\s*'
+        r'<td[^>]*>(.*?)</td>\s*'      # fecha
+        r'<td[^>]*>(.*?)</td>\s*'      # empresa
+        r'<td[^>]*>(.*?)</td>\s*'      # materia
+        r'<td[^>]*>\s*<a[^>]*href="([^"]+)"[^>]*>([^<]+)</a>\s*</td>',
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    for match in row_pattern.finditer(html):
+        fecha_str = match.group(1).strip()
+        empresa = re.sub(r"<[^>]+>", "", match.group(2)).strip()
+        materia = re.sub(r"<[^>]+>", "", match.group(3)).strip()
+        link = match.group(4).strip()
+        doc_id = match.group(5).strip()
+
+        # Filtros minimos
+        if not empresa or not link or "cmfchile.cl" not in link:
+            continue
+
+        hechos.append({
+            "fecha": fecha_str,
+            "empresa": _html_lib.unescape(empresa),
+            "materia": _html_lib.unescape(materia),
+            "link": _html_lib.unescape(link),
+            "doc_id": _html_lib.unescape(doc_id),
+        })
+
+    log.info(f"Hechos esenciales descargados: {len(hechos)}")
+    return hechos
+
+
+def filtrar_hechos_por_ticker(hechos, ticker, keywords):
+    """Filtra los hechos que matchean alguna keyword del ticker."""
+    resultado = []
+    for h in hechos:
+        empresa_norm = normalizar(h["empresa"])
+        for kw in keywords:
+            if kw in empresa_norm:
+                resultado.append({
+                    "title": f"{h['empresa']}: {h['materia']}",
+                    "link": h["link"],
+                    "pubdate": h["fecha"],
+                    "source": "CMF (Hecho Esencial)",
+                    "matched_keyword": kw,
+                    "es_hecho_esencial": True,
+                    "doc_id": h.get("doc_id", ""),
+                    "empresa_cmf": h["empresa"],
+                    "materia_cmf": h["materia"],
+                })
+                break  # un hecho solo cuenta una vez por ticker
+    return resultado
 
 
 # ============================================================
@@ -209,16 +315,21 @@ def main():
     else:
         log.info("git pull OK")
 
-    # Cargar links del JSON anterior para detectar cambios reales
-    links_anteriores = set()
+    # Cargar IDs estables del JSON anterior para detectar cambios reales
+    # - Hechos esenciales: doc_id (estable, no incluye token t=)
+    # - Noticias: link (Google News no cambia)
+    ids_anteriores_estables = set()
     if OUTPUT_FILE.exists():
         try:
             with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
                 data_anterior = json.load(f)
             for noticias in data_anterior.get("noticias_por_ticker", {}).values():
                 for n in noticias:
-                    links_anteriores.add(n.get("link", ""))
-            log.info(f"Links anteriores cargados: {len(links_anteriores)}")
+                    if n.get("es_hecho_esencial") and n.get("doc_id"):
+                        ids_anteriores_estables.add(f"cmf:{n['doc_id']}")
+                    else:
+                        ids_anteriores_estables.add(f"news:{n.get('link', '')}")
+            log.info(f"IDs anteriores cargados: {len(ids_anteriores_estables)}")
         except Exception as e:
             log.warning(f"No se pudo leer JSON anterior: {e}")
 
@@ -241,9 +352,54 @@ def main():
 
     seen_links = set()  # para dedupe global
 
+    # Descargar hechos esenciales UNA VEZ (es global, no por ticker)
+    log.info("--- Cargando Hechos Esenciales (visfin) ---")
+    hechos_globales = fetch_hechos_esenciales()
+
+    # Robustez: si visfin devolvio 0 (blip transitorio), reusar los anteriores
+    if len(hechos_globales) == 0 and OUTPUT_FILE.exists():
+        log.warning("Visfin devolvio 0 hechos. Reusando hechos anteriores del JSON.")
+        try:
+            with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+                data_prev = json.load(f)
+            hechos_recuperados = []
+            for noticias in data_prev.get("noticias_por_ticker", {}).values():
+                for n in noticias:
+                    if n.get("es_hecho_esencial") and n.get("doc_id"):
+                        # Reconstruir formato de hecho_global
+                        hechos_recuperados.append({
+                            "fecha": n.get("pubdate", ""),
+                            "empresa": n.get("empresa_cmf", n.get("title", "").split(":")[0]),
+                            "materia": n.get("materia_cmf", ""),
+                            "link": n.get("link", ""),
+                            "doc_id": n.get("doc_id", ""),
+                        })
+            # Dedupe por doc_id
+            seen_docs = set()
+            hechos_globales = []
+            for h in hechos_recuperados:
+                if h["doc_id"] and h["doc_id"] not in seen_docs:
+                    seen_docs.add(h["doc_id"])
+                    hechos_globales.append(h)
+            log.info(f"Hechos esenciales recuperados del JSON anterior: {len(hechos_globales)}")
+        except Exception as e:
+            log.error(f"No se pudieron recuperar hechos anteriores: {e}")
+
+    resultado["stats"]["total_hechos_esenciales_brutos"] = len(hechos_globales)
+
     for ticker, keywords in WATCHLIST_KEYWORDS.items():
         log.info(f"--- {ticker} ---")
         noticias_ticker = []
+
+        # Filtrar hechos esenciales relevantes para este ticker
+        kw_hechos = WATCHLIST_HECHOS_ESENCIALES.get(ticker, [])
+        hechos_ticker = filtrar_hechos_por_ticker(hechos_globales, ticker, kw_hechos)
+        for h in hechos_ticker:
+            if h["link"] not in seen_links:
+                seen_links.add(h["link"])
+                noticias_ticker.append(h)
+        if hechos_ticker:
+            log.info(f"  Hechos Esenciales: {len(hechos_ticker)}")
 
         for keyword in keywords:
             for sitio in SITIOS:
@@ -298,14 +454,20 @@ def main():
     log.info(f"Guardado: {OUTPUT_FILE}")
     log.info(f"Stats: {resultado['stats']}")
 
-    # Detectar si hubo cambios (links nuevos o desaparecidos)
-    links_actuales = set()
+    # Detectar si hubo cambios usando identificador ESTABLE:
+    # - Hechos esenciales: doc_id (el numero CMF, no cambia entre fetches)
+    # - Noticias: link (estable en Google News)
+    ids_actuales = set()
     for noticias in resultado["noticias_por_ticker"].values():
         for n in noticias:
-            links_actuales.add(n["link"])
+            if n.get("es_hecho_esencial") and n.get("doc_id"):
+                ids_actuales.add(f"cmf:{n['doc_id']}")
+            else:
+                ids_actuales.add(f"news:{n['link']}")
 
-    nuevos = links_actuales - links_anteriores
-    quitados = links_anteriores - links_actuales
+    # ids_anteriores_estables ya fue cargado al inicio del main
+    nuevos = ids_actuales - ids_anteriores_estables
+    quitados = ids_anteriores_estables - ids_actuales
     hubo_cambios = len(nuevos) > 0 or len(quitados) > 0
 
     log.info(f"Cambios: {len(nuevos)} nuevos, {len(quitados)} quitados")
