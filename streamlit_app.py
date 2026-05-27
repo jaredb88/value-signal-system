@@ -1,4 +1,4 @@
-﻿"""
+"""
 VALUE SIGNAL DASHBOARD - Streamlit
 ====================================
 Dashboard web del sistema Value Signal.
