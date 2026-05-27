@@ -165,7 +165,7 @@ def fetch_monthly(ticker, start='1990-01-01'):
             return None
     return None
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=1800)
 def fetch_daily(ticker, period='1y'):
     import time
     for attempt in range(3):
