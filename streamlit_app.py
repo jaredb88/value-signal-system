@@ -617,6 +617,85 @@ if seccion == "🇨🇱 Acciones Chilenas":
         - 🔴 **Bajo benchmark**: DY actual < 80% del mínimo (acción cara)
         """)
 
+    # ============================================================
+    # SECCION: NOTICIAS DEL WATCHLIST
+    # ============================================================
+    st.divider()
+    st.header("📰 Noticias del Watchlist")
+    st.caption("Últimos 7 días · Diario Financiero, La Tercera, El Mercurio · Actualización cada 2h")
+
+    @st.cache_data(ttl=1800)
+    def _load_news():
+        import json as _json_news
+        from pathlib import Path as _Path_news
+        path = _Path_news(__file__).parent / "noticias_watchlist.json"
+        if not path.exists():
+            return None
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return _json_news.load(f)
+        except Exception:
+            return None
+
+    def _fecha_relativa(pubdate_str):
+        """Convierte pubdate a 'hace X horas/dias'."""
+        from datetime import datetime as _dt, timezone as _tz
+        try:
+            dt = _dt.strptime(pubdate_str, "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=_tz.utc)
+        except Exception:
+            return pubdate_str
+        ahora = _dt.now(_tz.utc)
+        delta = ahora - dt
+        h = int(delta.total_seconds() // 3600)
+        if h < 1:
+            return "hace menos de 1h"
+        if h < 24:
+            return f"hace {h}h"
+        d = h // 24
+        if d == 1:
+            return "hace 1 día"
+        return f"hace {d} días"
+
+    _news_data = _load_news()
+    if _news_data is None:
+        st.warning("⚠️ No se encontró noticias_watchlist.json. La tarea programada de noticias aún no se ha ejecutado.")
+    else:
+        _stats = _news_data.get("stats", {})
+        _total_relevantes = _stats.get("total_noticias_filtradas", 0)
+        _updated = _news_data.get("updated_at_utc", "")[:16].replace("T", " ")
+        st.caption(f"📊 {_total_relevantes} noticias relevantes · Última actualización: {_updated} UTC")
+
+        _noticias_por_ticker = _news_data.get("noticias_por_ticker", {})
+
+        # Orden: tickers con mas noticias primero (mas accionable)
+        _tickers_ordenados = sorted(
+            _noticias_por_ticker.keys(),
+            key=lambda t: len(_noticias_por_ticker.get(t, [])),
+            reverse=True,
+        )
+
+        for _ticker in _tickers_ordenados:
+            _noticias = _noticias_por_ticker.get(_ticker, [])
+            _n = len(_noticias)
+            if _n == 0:
+                with st.expander(f"📭 **{_ticker}** — Sin novedades esta semana", expanded=False):
+                    st.caption("No se encontraron noticias en los últimos 7 días.")
+            else:
+                with st.expander(f"📰 **{_ticker}** — {_n} noticias", expanded=False):
+                    for _noti in _noticias:
+                        _titulo = _noti.get("title", "")
+                        _medio = _noti.get("source", "")
+                        _link = _noti.get("link", "")
+                        _fecha_rel = _fecha_relativa(_noti.get("pubdate", ""))
+
+                        _col_txt, _col_btn = st.columns([4, 1])
+                        with _col_txt:
+                            st.markdown(f"**{_titulo}**")
+                            st.caption(f"📍 {_medio} · 🕐 {_fecha_rel}")
+                        with _col_btn:
+                            st.link_button("Abrir", _link, use_container_width=True)
+                        st.divider()
+
     # Footer y stop para no ejecutar el código de ETFs
     st.divider()
     st.caption("Sistema de Valores en Línea · v2.4 · Datos: BCS Chile + CMF Chile · Update: cada 30 min")

@@ -1,0 +1,310 @@
+{
+  "updated_at_utc": "2026-05-27T21:16:33.087037+00:00",
+  "ventana_dias": 7,
+  "medios": [
+    "Diario Financiero",
+    "La Tercera",
+    "El Mercurio"
+  ],
+  "noticias_por_ticker": {
+    "HABITAT": [
+      {
+        "title": "ILC más que duplica sus ganancias por un mejor desempeño de las filiales financieras",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWXNuM3JRaFBNNkdqVmtjWjl1dk02b21fOHBFOW5RTVRpT2hrM2hMWEZZYkRJeDVPa2hJTEVHV1p4Z3JWV09JMl9EdTI5NnN4eWV3eVFyZVhxZjZuN3JaeTFzLUlxZlNOZ0dBQ1ByM0M1OXhjaTV5UVJZa2pyMXdXWjFEbFpzVzBxcVUtbjQ4U05EZU9HRi05aXZpYkl2LVktMXA4TE1nc3U4bEY2SWprMzM2VENoTENTc2t4YjJURdIB4AFBVV95cUxOZmEtZUdxN3lmWDJ2a3lyWGxwZ3FDUHJYZEVPYnZLSGhMeWJzdGItcDlmdXZGNjE2RU1QVnpCbGZXMWlDdmVBQUF1UFdfMHY3SmUwVFRzQ1VsVWFUSEtEcWx2ZjFFU2pyM3NmLWtmeHNnOGlabFN3aFNDSzZVbmRoWjRDcFJPYmF6RUJBTzB0UHlCV3Q4V3Q2MzZTbVpyUjNEQjRUMzRwa3BrV1ZXNGNkSnVmWWFaYm5UQ3UzS3JwbGI1NWRVWkduRjh1M05SVHA5R1UzcGtrM09BMVBtdDhDdA?oc=5",
+        "pubdate": "Mon, 25 May 2026 20:46:01 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "AFP Habitat"
+      },
+      {
+        "title": "ILC eleva sus utilidades en 125% por mejor desempeño operacional de filiales",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOHExcFpNMjdtaGx5a1U5VGFLRXhpZ0RodDJBc0R0YktOM3cwWU5mTEZsb2hhN21pVFlDdHp1b2RQZG5VaXZFWDdIRS1KSGMyLVJTV2J3enlic1RSaEFZUlo4QXd5Ujk5V1F0T0taVEV5T0pyWFA4ZXlweEp3RTBMZHR0LWh6N29CQUxSZ2wxS0ZfZWRoZ092V0N3cnV3TVJyYklySW5aUHFGWE0?oc=5",
+        "pubdate": "Mon, 25 May 2026 19:49:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "AFP Habitat"
+      },
+      {
+        "title": "Cajas de Chile A.G. abordó las transformaciones y desafíos del mercado laboral para la generación +50",
+        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNQVBNU01uZFA3VFpZc3paQlpHMEZwc2xTckhZc08wanhGT20taTE4cXhteTNhbUtzRFdsMkIxbFotN1hkak0ySklaTnlGQ0o5Smdra2pWREZfQTIyaXk3SnVybkJSZ25Vd0xGZDkzU2NhdTlZc0RZeHpZNC1lYlN5bUFVRHZwdUcyZnBuRXFJZDNBX20zVDhVM0EydkNmeXp0clhseTZab05mME1mcHM2bjJubnZmS3JjdHNsWC1sR1UySGhacWJqMVZMM01JSVhBUld0Vlh2WkE0XzhNLV9rY3JxZ08zLWIyaDE4ZDNTMzEtNlZKazQ4N25jVdIB-wFBVV95cUxNQVBNU01uZFA3VFpZc3paQlpHMEZwc2xTckhZc08wanhGT20taTE4cXhteTNhbUtzRFdsMkIxbFotN1hkak0ySklaTnlGQ0o5Smdra2pWREZfQTIyaXk3SnVybkJSZ25Vd0xGZDkzU2NhdTlZc0RZeHpZNC1lYlN5bUFVRHZwdUcyZnBuRXFJZDNBX20zVDhVM0EydkNmeXp0clhseTZab05mME1mcHM2bjJubnZmS3JjdHNsWC1sR1UySGhacWJqMVZMM01JSVhBUld0Vlh2WkE0XzhNLV9rY3JxZ08zLWIyaDE4ZDNTMzEtNlZKazQ4N25jVQ?oc=5",
+        "pubdate": "Mon, 25 May 2026 14:44:34 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "AFP Habitat"
+      }
+    ],
+    "ZOFRI": [
+      {
+        "title": "Tarapacá",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBEWVktSTlkVkhIRnZ2Nm1GZlZfS2dwZUtfOWpMNUVHSjJMMGpSRVJoMUl4c2oyWDVYRmtZWUVWWjlhRk5zRzI5QkF0NEhQS1hTUVgwNWZISnJRbUtTZEIzYlAxZzNwVl9TMTFIZ05yQXhQR24xcWc?oc=5",
+        "pubdate": "Sat, 23 May 2026 06:15:14 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Zofri"
+      }
+    ],
+    "PEHUENCHE": [],
+    "TRICAHUE": [],
+    "COLBUN": [
+      {
+        "title": "Longaví Colbún y Linares",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBoY3V0dlpjX1pUb2xxbUNETGlWNjczMWVwM1FNbGk5RmJKSjBOTkRETEtHdnhtVDk5VnpEQzBVVkJReTQxdDU2eFN1NGxlZkpHQ1BTekNHV2ZJdFZIckFZR01wR2huUHpELS1vdw?oc=5",
+        "pubdate": "Wed, 27 May 2026 10:16:54 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "Colbun"
+      }
+    ],
+    "ENELGXCH": [
+      {
+        "title": "5259",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE03MHZOMVFaTmlER3VPeWZYWUFVaW1OZFNfUng3WE5mMndIdVNsMnJUajkyMUpNbi04WC1IRWhQcE5BNnE2REJGeGx0VzZoZEo0c3FoSWg4ZXNvZVRqajBtZVhrWjhxamtCa0QydU4tVHR4SVVQRDRXNQ?oc=5",
+        "pubdate": "Wed, 27 May 2026 05:14:48 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Enel Chile"
+      },
+      {
+        "title": "5128",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9kM2c2R2FWbkxIT1JuMHg2aGJJVUpQSGV3UEM0LVBxNVRtbGZsMld5bEs1aW90emF3aUkzWHI5cHpsRUtkM3hldk5jU0VjcGxsSi1zZXlTTWhDaERUS09MRHlVeDlxUEpxU0MwdmY3c0s1VlR0cXBITw?oc=5",
+        "pubdate": "Sun, 24 May 2026 16:20:17 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Enel Chile"
+      },
+      {
+        "title": "29/11/2022",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9Icko2OU9GTWRuVnhjWHQ2T3drdHpLZWNUSGlEalZqUFVlR0ZFTS04ZjlLRDZYb3ZfNUVBOWJDTmlISU5TTVNwT05CZ2RKNEVGaDlVZzV1WFdrZG5rR1p1aXdTdHFXRVk3QkVHZGZud1RWUkR0VkVPQQ?oc=5",
+        "pubdate": "Sun, 24 May 2026 15:53:47 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Enel Chile"
+      },
+      {
+        "title": "EMPRESAS CHILENAS AVANZAN EN ÍNDICE DOW JONES DE SUSTENTABILIDAD",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONXJUM1gzSUFfMnVta09IUllCel9MWk1NMmM4dUQxMzh5N09rOFl5M1JydmNRNk51M2haSUlhUWM0enItRkVRT1NxU2NFT291TWR2ZjZsYXVwS3FqemZoRmNGNUgtS21TSTdXbVhoazhBQU0xOERNbzNYYmVxdlZGenc0TDdEeEtXQV9xYQ?oc=5",
+        "pubdate": "Fri, 22 May 2026 23:55:24 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Enel Chile"
+      }
+    ],
+    "LIPIGAS": [
+      {
+        "title": "5174",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE04V0FnQVJpXzdrZUVnU2pEZU5Dd0wxUG5jTlh2TjNFMkh6LV9fcHZUd0p6MnJ6YlhnWE5ZblVhcGxJS1N3Z3pfY0x3Wm9MUlprd3FibWhMWWlDSFFtdllUWHZYNmtDU2VMOVdQYjNQdkI2bFBsbGlGSg?oc=5",
+        "pubdate": "Mon, 25 May 2026 14:06:53 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Lipigas"
+      },
+      {
+        "title": "Disputa por la herencia del empresario Jaime Santa Cruz escala con informes económicos",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQXpENFQ1eVhSdHFfUFpaeTNHV2RSZ1ZlUnh4WWNCaUhyc0tKQzM1OXBBekVFVU9DMDZzbkRPNEZVbXdsWEZtYWY3YVp0UUx1UVFOUmc5NkRkdjRWYXJsTXRnZDc0anlJUTBVMUVJR2tlOWE0aWphVWZNZWVQMFBTNWhIbHYtUlNhWjk0Mmg4ekJxb2FFeHVlUHNjOHBUN2k2bVMtUU9sMnlYc3NhMHJOeVZJZU85dWdZOV9ZQmFIc0VuUUxaMlHSAecBQVVfeXFMTlpfNHA0M2ZpN1BXRGxrMnhnNU5xcnU1NTZCRU9RUjdrNTRSMExiQ1NoMEJoNk9nUmVQYWNVeUZqMWoyODZqRzJEc1BfSFd2dmhPemNuMHZfSHB0dEVTLXFTVmp3empRRVRrVXUwaG5MYnhDaFZUZjY1eGVUUVBlVERTWW1ZTGltYnpSNHFwcUVMSUt5UW9tZlB3TDVVc1dFbFdhTTJEazJtblNmVGJTSnZlMWduUzI1bjJ2RDFBSzVGT2wyU0pmYl94emJTSHNqU1BPUlZVNmdtb1R6M21HSHRicTJtQlJn?oc=5",
+        "pubdate": "Fri, 22 May 2026 16:03:29 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "Empresas Lipigas"
+      }
+    ],
+    "NTGCLGAS": [
+      {
+        "title": "GeoPark anuncia plan de inversión de más de US$ 70 millones en 2011",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1sWmhDLTdYVlVULWV1MXByU24tUjZhMkpaOENlU2RGRm9sQ2pqMFVPME0zVzJWdGhTS3ljaFNEUkZnb3NfTHBMajNpdGhta2tHV0lvQm1oVWZxQ1dfSGxXaFlURG5fZUttdWRwZmFlTkhUNUhpTE94aG9vWmJRaXc?oc=5",
+        "pubdate": "Tue, 26 May 2026 07:38:21 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Gasco"
+      }
+    ],
+    "SOQUICOM": [
+      {
+        "title": "Bolsa chilena cierra al alza y el IPSA recupera los 10.800 con fuerte impulso de SQM tras positivos resultados del primer trimestre",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sdDI2akhBLTN1QnZjM1VJV1BLckpxTlpuX2wzWUY0a2k0SUdmRU04VVlqT05hZWVWOXk4Y2dPTy0ydnRZcEttdU0wcTQtVFZUZzVuN0NWd2c0NWowS2RYcHdKQ0tLOXZ2?oc=5",
+        "pubdate": "Wed, 27 May 2026 20:26:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "SQM apunta con todo al litio: Invertirá US$ 3.000 millones en Salar Futuro y ampliará su producción en Australia",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcEE3Y3hIc3BOQTJXaWFfY0dvYjhUMG5yY2VUVW5ZMUVhTV94ZDRlS01acll5amlHS2VTWDdyWW9XS2RQZjhaR0FCblZsUmpQeDJuWEdEVGRKc1Y4SzNBY3NJcmh4NWtPN29kV3QyRXNwTE83SnFPa1F2Yk5YSWd5M2RnTGdnRUJuTGpDUnNwM0lCNEdaS0dTREUyZkdEMVpXSnNHdTJPSkdhUzA?oc=5",
+        "pubdate": "Wed, 27 May 2026 20:21:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Abstracto - Diario El Mercurio |",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE40R3NTRFdUZU5tWUVDNnMtNUU5VFBrUmMtN0FMblFBa1ZEWlBRNzVudkItNURCR1BXUHJMVWdkODhxbFlkbElHcUg1SDRURzBCRDFOdlpiaUpHS1dCVTVOeWJ6N3pmODc5TEkwTm1CY1BuTnJmYy1vYUYyNzh0ZjQ?oc=5",
+        "pubdate": "Wed, 27 May 2026 17:12:19 GMT",
+        "source": "Diario El Mercurio |",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Sociedades aguas arriba: fusión de las Cascadas de SQM entra en su recta final",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTmx0T0FmMThjZTdkZjU0Z0diSkFPREVVM2EwUm9kaGNTc0tVd1pOUklySE43T3RHMkNjSTR2aUNnakhrc1VIVjdwTXpiWGVJUEsyVnVZcnNHZkd6S1lMV2xQaEdWTGJSVXptamtCT3VHSWEtX2RKbklFTENBUGZXWHc2TDhZTEdIQ2RHTTE0RngxekdkSWQ3YWh4dXJhNlhDSnowcjBJSEt4ZHpPbGtLaHY0cUlKMWJhMHfSAdsBQVVfeXFMTWNUbUZ4RUQ2SU5HSURYVUVHcjBuUUF3ajMwZHJTWF9pZlVYWm5vVVpzd2F3QjdUMmFwTlFkbE0wQ05kUkdta1FCUEdxMURFTW4xdmgzYVhBZUJmS1lhSlVEblVRX290ZHl5TXhNVUtYb1pfNVVLWFlLR19TVHU0SURYVVY4Z2ZpaEEtS1FOVzlTUlppTXkwWmMxdDNLcGFLVWs3bkhaNEJ6ejgzbjc1ZDdfelBIN1ZFbjM1OXp2aS1Cd2pZWTl5NUVqNjFUVXhfN0hzSWhkUVJnU2w0?oc=5",
+        "pubdate": "Wed, 27 May 2026 15:56:22 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "“Sobreproducción” en Codelco - Diario El Mercurio |",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZVJNZWlrUnFJRWFFOGEtNGladXRYVWliSHJaMTdYanJDZ3k4MnQ2eUlkcmZuMWM0RHc0QWc3ME1seHhYU21vYjZRQUk2YWhfblFSN2xiT3JhcTZOME9vMVpMQ2JyS05xU0JsRWdZYXpHYXdzQ1dNOTBPTnhvV1BfT0tpNS15b0toZlE?oc=5",
+        "pubdate": "Wed, 27 May 2026 14:01:20 GMT",
+        "source": "Diario El Mercurio |",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "El verdadero litio chileno: instituciones, más que salares",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRE80czFWSFBGQUhQUWhWSnNfRHpCYUR3bzM0bGtCLVA3dU1LS0h5V3hJWUVvYkp0MDVqN0JDTVV0TmFneGxpU05KSS1ONTVfRzhpeUlwdktxT0FGbzdXM0xJUWQ0OGRvbUNwSTFraFJ1c29zODFHQlpQRTNjZ1dKZERTUzh1cTJBT3hvUGpTRXh5VHMyZlJ5MFQ0NjM5VWh3Nk42TGRGQ2ktNG9yV0k0?oc=5",
+        "pubdate": "Wed, 27 May 2026 08:03:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Oro Blanco informa fusión legal con dos sociedades Cascada de SQM y nuevo esquema comienza a operar en junio",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbDZVZ2kyUjZ0NU1za2dFbEcyQktkTWRDZUd1TTF5QUVSNFZzUkRrZFZhREtUTGNjVF9xX0hhZmhBWnhDOHpIcDJNWEZHVlFvRXh6b0Jna2FuQXN4QXJrbEhxelVXcnBNVXo4aXNUM1VlSlhrWHRLZ0dnOUFpWGNIalJyVnBBUFZZUS02YnM3ZElscDNtUlhlY0RiSmVSQ2N5Sm82SDQ1OTJxWjVDblNCdGw2U0g?oc=5",
+        "pubdate": "Wed, 27 May 2026 00:45:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Hernán Büchi asume vicepresidencia de SQM y Josefina Montenegro pone su cargo a disposición en Novandino",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQlJQUDZNek01Q0N5TzJ6QzdBLWlEVFhJT1E1QzdXWFZXdDZDYk9URGFzd01KSUxtZVNjcXotNUtpQ2NONEZ3dmIwNG01b0hiQUxSb2Y4aG00Mkx4Y2tVQ19oY1RpUHZNa2dsZTBjcjBhbVM1dFViN0lDUWtGZ1ZZbjlKM05XMFhreUsyX2FrWWtlTHZyUHM1N0JNUkFWVXp3Q2g4cHlWd09mSkZWOFVDSDJHb2dXZjJJaEVaWjBWR2kyVG9JUHpqSDlzSWNoREFaS0Z2MjhDQ3Y3LXM3VVHSAf8BQVVfeXFMT2ZJQkh6NURHaV8yZWU0RFQ2WDZvSjFOQXJBN0ZhcHl5MGJCNl8tWUU0cURma0V5NGZ5eGtlYUthaFVNVVlicUdLWkFBTFZkYmpvaVI3NXk5QVBxdFBheng5ZVZpNDlQdUZUckVXY1hiWmUxOUVpcDFIdWpKek9aV2k0T2ViVHprRG40NWd0SFpDcU5TZ1VYQ1Zya3lMME83R2ZXR19KTlBpdkU4RzI3QzhTTmp3OXVBRXo0S2YzckdzY2Vic1EwTkF2Q0FNVUJkQThIa0J6UW80ZXVZSS1RTV9RZjRmcGpjSGNDMUR5R2xJT1VNYkhaN2hWaVVUVVlj?oc=5",
+        "pubdate": "Wed, 27 May 2026 00:42:55 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Precio del litio mejora en el primer trimestre: SQM gana US$ 365 millones y paga a Corfo US$ 342 millones",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSzJpWFlQSkZoazhMcTJYbDdEUzlKek5uYmNTVEhvbzg5TGFGY053M3l2M1c3TFVrLThVQlV5amRDczd6YVpEc0lZMU5fUWJ0RzllQ08zZ3I4V3Jfbm1vcmk4ajlxOE1kQlgxLXhpZGtQekpyVGRfekxjdTIwQjJsT19MTFBSLUdSMFRrYkFnZjVNQ1N3NVpKSzdSWDlkS005UUFWN0JKU1RYVTdxT3hQeHk3elBDa3VtVUpURURFOUFQYkZCS0NMSlhzZkRWeGhNeFRtZDZFZ19pTWPSAfwBQVVfeXFMUGl3YklWNWQ1aTlCcnpLckNUbWNpakt1a1lLUXZOWkd4VFpqMUhzM0JfZmxZTkhHdGU3QTVwc2x6Q0RRUnE4UVN3cnBPOFlYcHduRmNSM1RfSnpkdHhJelR0dGs4aTBMU3dsdkhzR3ZRWGVSTVlWTEtUQlhocExJSzFBSXRPYlh3a0d3UVJFdnlFSUpxZkNmXzFSQU9fSVM1R25uNlZQVXZOTGxVVlgzY0Q4QlpfUUlCX1pWUThLRU1tUEV6RjBxcXNmazhVV21sVzJJclhCOWh2Yk5rXzh1aFRTYjQ1cmhQQ0l0bVNfMkxYZURTVW11Y1QxUi1E?oc=5",
+        "pubdate": "Wed, 27 May 2026 00:33:14 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "SQM dispara sus ganancias un 165% en el primer trimestre de 2026 impulsada por el boom del litio",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZHoweXctSEYyM0lQcGRMNUZpbDdwUS1IYTJKYUtpam9QYlV2N08zSTd6MWFfcjNEWU84Ml9rV3FISFZhWlNMRzdUYTF3eU02OWc4aUJCMW5fVHZ2dzhYY1J2NWFidTlBX3dQRmRLaUJHN2dpRXBzQWx4dllXSDdwMmNjQlpBWkNJUUMxQnNiemYxcFQyLVdmeW56UWpQSVFSaHB5RkRNUzlqUldD?oc=5",
+        "pubdate": "Tue, 26 May 2026 23:37:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "IPSA cierra a la baja y pierde los 10.800 puntos en medio de incertidumbre tras ataques estadounidenses contra Irán",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFByQzFRaV8xMEh1MzZ3clIxeEVBRU05bWdMdjlBZ0tfX0pIWW9rbGo1WHdLODd5ZnU0ZlBROXVGREUxbTdlQjlnam0wT0hkSFVvcF8wank0dVh3QUt1YlpXNzh1T3RXQnRf?oc=5",
+        "pubdate": "Tue, 26 May 2026 20:28:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "5188",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9Wcm41TjRwS3ZhZDFpZzdDMGJwU0hndlFjMnRwZXowMDZ3QzJVT3RYU2JETXY2QzJpRWl3aTAwVDc4TmVPRWdPXzBRVE9tN294M1gtV081UmJfSUloSzU3elRyWEFlUVNCVjVEX3g2VmZ3SGdrbWRYTA?oc=5",
+        "pubdate": "Tue, 26 May 2026 02:12:32 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Máximo Pacheco renuncia a directorio de Novandino Litio: “He seguido atentamente la ofensiva que han llevado algunos sectores”",
+        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNbzhnd1BraGRKUXJkYjRlajVZX0drTVdSV0RCY2hyX3dNcEFIeG1NYnVuTXZRa0tTaDRQMWJrWXJFWDhEQXdaWTYzUmZuUW1CeWhqbUZES3ZzTWIzV2J0aGx0bjdES2ltNEs3bnB4LWhsSHNtWXMxOEx4dmVkV1VGUU44ekJweTBHYzhIcnNvYWlTODBJMkh4bkRCeUxCb3FZSmh2VEx1X2xFeTZuajY4RFBrMFRjTy1ZeXhxWnk0MzRpVGVmSXVCNzl0ZXlIeTBsNWVUNzVyUWduVElDbXRLdUxDQ0Vmb2cxWE1iSVU3dWs3YlowUC1v0gGYAkFVX3lxTE42UzVnbTVoWWpXTkVHS1hRQmQ4RlJ5TW00TVQtWkc1ZFNCMHI3NHN5eHNmbmYtTEctSFROM0ZyX2VWV3ctU0duczNqQmlpYzNRNzdOaVlCMVI0a1JiZF9MendmaTFZUTRYakVhdEZRVnhNUHMxM2JFaFdMY2QzT2ZvSmRJV241TzB4TEhScXFDMHJQR2VOSkt1VEthVFNERTVMZE1MVUhYZVRHNjNBT0lOUDU0eExMSmNFV21LNmNBWlcwWXNtR3dpWmg4cjBQMHNqRTlZTnZ0Smo5QkNwQVhzVWxOeW8tUWljWlZMbmw0UUtTS0FnMi1zZUl1aVZaelc5LTRwYkdmU3NOdVlVcjA5Smlpd3RQbEQ?oc=5",
+        "pubdate": "Mon, 25 May 2026 23:27:29 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Bolsa chilena cierra con fuerte alza y el IPSA supera los 10.800 puntos tras progreso de conversaciones de paz en Medio Oriente",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9sX3pndjhocTA5a24ySnVfLVVUbENyQm5RSkxQMGNKSEh5aXFVRmtIMWxXbnVVaVl5YzdiSW9JaVpka0dHdm1xMDBTTFdOelZiMTQ1SXRYNWVMWnZOSUlaUnpoejcwZV8t?oc=5",
+        "pubdate": "Mon, 25 May 2026 20:25:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "“Mejorar eficiencia de recursos”: Dipres también golpea la mesa a Codelco, EFE y otras empresas públicas por ajuste fiscal",
+        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPRWtnOVUxRkxPeDNYNTZpN0hIS29uSnBoNm81SVRXNUJLV0oyczhueWdHMjJRY21pYnplem5wVW1SdE16Y2E2SFNQY0taeU5LNVU3aXEtNGFSSG1WRXhDcDBxbXo5eXVHYnlTZGVfdm1WTWJ6WUdxZHAzWGl0RGRieC1kZnZzN21rcXZuaWVHQ3RES3BvYVZKaEdoVmFRTDg1NUlraDhNQWxqNF9FYkU4MXRINVk3dE9oVkJRNF9xUXJZcEtScDFKcjFXZmZZRkNZU1pZYTA2WWR2M0RtYUh5UzN3SXNoT1BpdW1OV1hZeVJQS0U1X0HSAZcCQVVfeXFMUHVZSXVuWkxOdWRhbzVnc1ZUa2V6eTBmb0FiUW1uV2JKNndYaUVDTk5PaU9xV2RJdU5oeW9yNldpT0pKdGVLOFFHNWtudjkzM0dfS19KZ3JiNzlLM2ljRXI2YTN2OF9wb21mZkRJTUpOaXNYQzJ3VXA5c2QwLWN6QXFlLU5DWUVDdGRFWXZ5UjkyMnN1Q3VZMTU1MjdlT2s1WjJtLUJFd1hGd3cycjVJMm1qZS04bmJGYXR3RTlNWUZZNGN2LTUyUFZpUUxCVnc3VmRXYU1nWkQzOTdzYzh0aHp3NHdqdWJKTVdXR0RpVm1FcTQ4YllKRk9wUkd0ZW1vM3VIRWxEeTFRLWpGcEVSQXJqUE5xVFhz?oc=5",
+        "pubdate": "Mon, 25 May 2026 17:30:00 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "El adiós de Máximo Pacheco en su último día en Codelco: “Partir es morir un poco”",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVkFRVklRMmFkQnRBdkdPMU9WUzVRVjJWRW5ldDhGVWhVczNMZEsxd3JySHlPaE96Yi1LM1VhWGRpMTBzUHZKUG5qWkF2U3h3SjRtSlhFSGZIWGlFZlhQVUgxZzB0VWFUTDNIWl84emlTOV84UFpyOHRUZjJSMjRpVzVKYUozZVdDT0RKN0hKemYwaHM3NzN4bmVWS1hndG1zV3dOX0JZTXdISlRDNUNFZVRTb1loT2ZISFQ00gHcAUFVX3lxTFBsdVk0SFlieGpSOG9hZ1RPXzJuaU1DYWVqbjBLMUxvdU1YUjV2OHFXeDlLX2pqZFRSaEoxS0Mwd0dvTDJCbXkxZUFRYjZpcUpVblBWN0lERkdyRmFRUTRkLUFKdURXdDJwQndKRF9tQUg0RDVRaE85ZXVNbkZtUFBubTZqdGNjZTFkd2lFdDBwcHRubzRUYk83Q0VzUkZlOEVhWnA5NzBfb0tXUDVqaXo0eHphZWNDcXdOa3VKRmVaU3hPLWQ1T3JhMjVOUzd1RXQ5cW9HWGxBejRPeFI?oc=5",
+        "pubdate": "Mon, 25 May 2026 17:12:52 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Laurence Golborne respalda abrir parte de la propiedad de Codelco a privados y cuestiona continuidad de Pacheco en Novandino Litio",
+        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQbGlReUh1LUZrcVhzZGJuQVByMlhNdklCc3NEMjVvaVRiU3hiOWZkSC1WSmdEalNHTlZtNldrby01VWlocjVkSU5Nb21MUlNaeXdESmt5YUZMTGxFSnBRNTlkbGU1QmMxdVBZSXNSYkJVQ0paUWkweWxOY0xCUlFfZktadFBXUkJRRGhIZE5YQ0Vwa1Y3ekFGVnNiX3V3SFBlZUx5MjhZYVo2VXU0QVM1ank2QTZOdk1HMV9ZQ1NTNlV6ZVVtSThTdFE0TXNIWVZnV1h0bkV0N2o0TnBSemFZUzNKeGFUMTRXR2w2QTRFbF9Tek1sOHowaF9MLUZ1Q0lj0gGiAkFVX3lxTE1iOGFIRWwxWlROYzk0Y3ZSS2FJZTBHR0xRb3ZvZXZLQko5b1lVS3RGVnlTRnFQT0J6aVR1NFVua1lWb0ZNekRyaFk4V1JqbVhlVjlfUkFOTUtrQzN0ekRKWE9KZTdJSVQzaGJ5MGFqU2Z5YWQtSktVd3c4RnFtMmJJWVlYSkRhMHFlNkRQRFJpTm85R2p1bF9kWTBWb0hkUHY4NFJLNjV1b2F6bTRVc0QyMDhWN2RXaVFrT1lNNm9IYUhwYnluS0NZejFmRFhIV1dJZzZ1c2tRNmJ1UFoweG9iRHRfZGxGdzBNcFplazJXS2pPT25odEVIWUYwMkpBdXdLMmVHOHUxVl9mOUFXeXduVGpkWFFITmdLeEhBV3lsS2ZB?oc=5",
+        "pubdate": "Mon, 25 May 2026 15:09:22 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "5175",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5GTzM0Y2s4NDJRaXFjcXRHR3dFMmdKNlE2TWVYQ0tORkNiLTJkSmpZZ3ViWXUteWVtLTFab2lKRmxtelhRSTRLdlpRLVJ6V1R6RnlvcGRjS08zSFVIYnlLbzhlMzFEdUplWlFxWm0xdG84Z1pPRm52OQ?oc=5",
+        "pubdate": "Mon, 25 May 2026 14:35:31 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "5167",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0wM1RCdUZpakkxQ0lvRGJyRXBSZFNtc0FVTlg3ZEZZcUFwREFtU1kzYzFreVF1TkdxQ2lTSVktcWFKUnVDYzdjekNQSjYwYmFveUFCN1FvOHZ4LUQzeGNHWkhoTGViZ1VEODBfd0hvbENZdjRrTTlJUA?oc=5",
+        "pubdate": "Mon, 25 May 2026 12:02:52 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "5163",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9TVVVxRVI4Rk9OUGtRZnhfTDVaS3dfaDM3d3JjYnc1TjN5aW84NXF1Q0U5QlVhYlpkbUdfeEIweG5VNGNRQmRCRGJzVWpNckdRMXNmeTlWRHJkc0pwTjc2N3pzbGt4d0FuZ0FTcTN3bktIdEljTG1wLQ?oc=5",
+        "pubdate": "Mon, 25 May 2026 10:47:06 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "5136",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1EQnpTUjZyNjZJM05kWl9HMlQ3Wk5rM1dESFdpbjFINDdaSnJ3UHAzSjk5WUNqUGMwRjFQUk1BUVlob01kUU5VWU12SFJFaDN4YXJZU2hMYVE4NUx3blE0RjdKTjhMRG5IZzZMeTdGX3NTdW5Ib1R6cA?oc=5",
+        "pubdate": "Sun, 24 May 2026 18:16:43 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "El atormentado fin de ciclo de Máximo Pacheco en Codelco",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSGtXOWVubzl4YlpSaHJFdzhnbDBXeldSZDRhNmg0MU9tVmtqRncwSFRkSTF4a3BHcGRqMUdpVTBRWW54eUhLMlh5MkN1MUJrN2kybDNBT0N6NXpVU05WTDNlNjlVQmN0NWNRR09ENll1OG5rS0VHVktDNGVkYmlzVVN1bmxxRG5rV0dRNUNzZ0Rlc3ZHcmRlQdIBugFBVV95cUxOX29uODFRakswazdPX1Q3NVR5aVhjSDhOLVg2X2JWaVFmcF9MMFFUaUpYTjdlQ0Z5T3BWdm1rekNqMzlKc3VsallfY29aaG5Gc2ZRZXcycTl5NVpBMmhCVWwySV95N1VoRk1BNXFYeVBFSGpUWnFEdnhqUTRyRXRFQ0YxMEpBaTg3bHlDV3o3bXVyLWM1YW9VZnVPdUJGa016a1ZqYzVtb2VHazdxZ1llZS1Da3ZKNV8wQkE?oc=5",
+        "pubdate": "Sun, 24 May 2026 11:00:00 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Eugenio Tironi: “La oposición debe salir de la mera condición de oposición y entrar a lidiar en un debate mucho más de fondo”",
+        "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPYi0zQjBOVnRFd2tONWxHMnhtMmJjZTZLR1JQb2I0TENxcDEzWi11WHhvMXl0RzRNZDk4NWxiSjkzTVRDZzVMNUR4R3BCbG9YaE80S05jRDk1S004eFN4SUtXVEJYVFdqNndoVDJPM3dLZTY3aVB1VnRGU0NSdkZvaWtuWXQxWkdsaDFHY1MtTFJMZ2xWZTlIdzFFb05sOHZ6b3YtVWZLZ1h1eEduR2sxM0NLT2pRNUo1RDlBS1RwdWI3LVVORXEybmlDbUF4RVVjM0FNM09CM2VOZUE4ZDdKMHc5cUZiZmRYalBraWttNUlyT09lOHpkS1Rn0gGbAkFVX3lxTFA3RVBwVlR6SkNxOF9VQWdJRHVRdjR4Nzh4QklWX2xGal9jVXJPeTh0QjhINU04MlVocnhmSmF1ZFBIeW51Tnpib1E1YzlXT3pNdFJzV05YNDJZcnhuVXZWUGVhSVJkVkNQbGM3TUw2Vk9kX3l4ck9tYUVFb21nTFlSZU5sWlBHX2NrTTlmQldBMHQ1M2pHWDNRcWxVMThlVDl1NkJJaGFnaHdYV2dlWVIxYk40TUV4dzZQeXFDRVdZeTZwVHdRYUlYR2prNGs0VElrSEQycjJxZTFjOXFmLTAtZnhxNXBSRmxycVhsaGhOLVY5X2hxQmlhQjhUV2tZWXFZRF9SeGJOQVZUZFRJa1hpNU95RWhQaDFzWU0?oc=5",
+        "pubdate": "Sun, 24 May 2026 10:30:00 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Bolsa chilena cae este viernes, pero logra quebrar racha de cuatro semanas en rojo con miras a posible acuerdo de paz en Medio Oriente",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94NFpaNkhmMXJpbUFyMnJGdGpPRnhic0xaZEYxUERaZ19yaDAzQ2tuZTlmMWdaMlMxVUpjQll3eHVSY1VjaUVkNm5sclplR0xBeW80STVkYzljbXhVcUIyb3hlZWxOS01I?oc=5",
+        "pubdate": "Fri, 22 May 2026 20:26:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Dos de las tres acciones más rentables del IPSA en 2026 cotizan muy por sobre su promedio histórico",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYVFvVGo5V0o5NWRfRGRxVWxpS1dGVFFOOHF2cGJNWUdrSXZFZDFJczhIbTRQeWlMUXJiRUJsQmhmaE4wcU56aUJnZkNUSVRpU2dsbnQ3dkRfQU9FaWF4dnJGNEltNFNUWFFXUXJOcW04dnVVQnZWV1lfb1BmVi1mUVFzMnh4Wm1UR2FoVXM1SXZzVENDZ3dMR3lsem8zSHRBTHh6UFBURDdQalBvSnF3b1pta1BLSXNUZUE?oc=5",
+        "pubdate": "Fri, 22 May 2026 12:30:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "¿Codelco “fuera de control”?",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4yaEZ2ZE8zaC1xS2p6aVJFazVZZldTdVE3cFJtcnRQcUtYU1ZhUk1ySV9UM1ltR3lBTm5wclFBQXA0Rnh2SlluR1R4MWNjSzdmQWR4aU5JUUYwb3lZYmtxZURWRlQzUVBUdEx6WHFlUmNSLUxQUk9Ubw?oc=5",
+        "pubdate": "Fri, 22 May 2026 00:50:38 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      }
+    ],
+    "QUINENCO": [
+      {
+        "title": "El dilema de los US$ 2.100 millones: ¿Qué hará Quiñenco con la mayor caja de su historia?",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOd0xsMVdjYXFIMTQxZ3d0N1dSWTJabFFhYmNGYURVclpMUXFrZWZGZ25ZMS03RFZDMmd3cS14eGtGdTFuRnFPSEFhWUhsZDhfdEMyTVlDbjZRTjM1eG5LM1R4SC1vSUhOUDhScWpLT0hWQnE3MWxvVDhXclVwdFZDY2c1UXNyanlUQU40aVpCSkUwd2xodUxmRHNKSEFBY0dORTFPWFVfTWY?oc=5",
+        "pubdate": "Fri, 22 May 2026 22:15:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Quinenco"
+      }
+    ],
+    "CENCOMALLS": []
+  },
+  "stats": {
+    "total_queries": 51,
+    "queries_exitosas": 51,
+    "queries_falladas": 0,
+    "total_noticias_brutas": 2197,
+    "total_noticias_filtradas": 39
+  }
+}
