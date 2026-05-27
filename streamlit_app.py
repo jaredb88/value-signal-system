@@ -38,7 +38,7 @@ except Exception:
 # CONFIGURACION PAGINA
 # ============================================================
 st.set_page_config(
-    page_title="Value Signal System",
+    page_title="Sistema de Valores en Línea — ETFs",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -297,7 +297,7 @@ def analyze_etf(daily, name, ticker, bcs_data=None, bcs_ticker=None):
 # ============================================================
 # UI PRINCIPAL
 # ============================================================
-st.title("📊 Value Signal System")
+st.title("📊 Sistema de Valores en Línea — ETFs")
 st.caption(f"Sistema cuantitativo para timing de aportes — Consulta: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
 # Descargar datos
@@ -888,4 +888,4 @@ else:
 
 # Footer
 st.divider()
-st.caption("Value Signal System v2.2 · Datos: Yahoo Finance + Shiller Online + BCS · IA: Groq Llama 3.3")
+st.caption("Sistema de Valores en Línea — ETFs · v2.3 · Datos: Yahoo Finance + Shiller Online + BCS · IA: Groq Llama 3.3")
