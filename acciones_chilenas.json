@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-05-27T12:33:46.608617",
-  "duracion_segundos": 92.072525,
+  "fecha_actualizacion": "2026-05-27T12:41:57.099751",
+  "duracion_segundos": 104.774403,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,11 +11,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": 1362,
+      "precio_actual_clp": 1360,
       "razon_social": "A.F.P. HABITAT S.A.",
-      "variacion_pct": 0.77,
+      "variacion_pct": 0.62,
       "dy": {
-        "dy_pct": 7.29,
+        "dy_pct": 7.3,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 110.0,
@@ -25,13 +25,13 @@
         "promedio_anual": 99.33,
         "advertencia": null
       },
-      "cagr_3y": 0.2535295848899848,
-      "cagr_5y": 0.3912060331850826,
-      "cagr_10y": 0.10436248161616235,
+      "cagr_3y": 0.2529157113418188,
+      "cagr_5y": 0.3907972155907573,
+      "cagr_10y": 0.10420020659179241,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 0.79
+        "vs_benchmark_pp": 0.8
       },
       "cmf": {
         "periodo": "03/2026",
