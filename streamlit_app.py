@@ -1,4 +1,4 @@
-"""
+﻿"""
 VALUE SIGNAL DASHBOARD - Streamlit
 ====================================
 Dashboard web del sistema Value Signal.
@@ -359,10 +359,10 @@ if seccion == "🇨🇱 Acciones Chilenas":
     st.header("📊 Resumen del Watchlist")
 
     n_total = len(acciones)
-    n_sobre = sum(1 for a in acciones if a.get("evaluacion", {}).get("status") == "Sobre benchmark")
-    n_rango = sum(1 for a in acciones if a.get("evaluacion", {}).get("status") == "En rango")
-    n_cerca = sum(1 for a in acciones if a.get("evaluacion", {}).get("status") == "Cerca")
-    n_bajo = sum(1 for a in acciones if a.get("evaluacion", {}).get("status") == "Bajo benchmark")
+    n_sobre = sum(1 for a in acciones if (a.get("evaluacion") or {}).get("status") == "Sobre benchmark")
+    n_rango = sum(1 for a in acciones if (a.get("evaluacion") or {}).get("status") == "En rango")
+    n_cerca = sum(1 for a in acciones if (a.get("evaluacion") or {}).get("status") == "Cerca")
+    n_bajo = sum(1 for a in acciones if (a.get("evaluacion") or {}).get("status") == "Bajo benchmark")
 
     dys_validos = [a["dy"]["dy_pct"] for a in acciones if a.get("dy") and a["dy"].get("dy_pct") is not None]
     dy_promedio = sum(dys_validos) / len(dys_validos) if dys_validos else 0
@@ -392,7 +392,7 @@ if seccion == "🇨🇱 Acciones Chilenas":
     acciones_ordenadas = sorted(
         acciones,
         key=lambda a: (
-            status_orden.get(a.get("evaluacion", {}).get("status", "Sin datos"), 99),
+            status_orden.get((a.get("evaluacion") or {}).get("status", "Sin datos"), 99),
             -(a.get("dy", {}).get("dy_pct") or 0),  # luego por DY descendente
         ),
     )
