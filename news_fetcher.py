@@ -24,6 +24,24 @@ LOG_DIR = SCRIPT_DIR / "logs"
 LOG_DIR.mkdir(exist_ok=True)
 LOG_FILE = LOG_DIR / "news.log"
 
+
+def ejecutar_git(args, cwd=None):
+    """Ejecuta un comando git y devuelve (exit_code, stdout, stderr)."""
+    cwd = cwd or SCRIPT_DIR
+    try:
+        result = subprocess.run(
+            ["git"] + args,
+            cwd=str(cwd),
+            capture_output=True,
+            text=True,
+            timeout=120,
+        )
+        return result.returncode, result.stdout.strip(), result.stderr.strip()
+    except subprocess.TimeoutExpired:
+        return -1, "", "TIMEOUT"
+    except Exception as e:
+        return -2, "", str(e)
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
@@ -183,6 +201,27 @@ def main():
     log.info(f"Medios: {[s['name'] for s in SITIOS]}")
     log.info(f"Watchlist: {list(WATCHLIST_KEYWORDS.keys())}")
 
+    # Git pull para evitar conflictos con otras tareas (acciones, prices)
+    log.info("--- Git pull ---")
+    code, out, err = ejecutar_git(["pull", "--no-rebase"])
+    if code != 0:
+        log.warning(f"git pull devolvio codigo {code}: {err}")
+    else:
+        log.info("git pull OK")
+
+    # Cargar links del JSON anterior para detectar cambios reales
+    links_anteriores = set()
+    if OUTPUT_FILE.exists():
+        try:
+            with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+                data_anterior = json.load(f)
+            for noticias in data_anterior.get("noticias_por_ticker", {}).values():
+                for n in noticias:
+                    links_anteriores.add(n.get("link", ""))
+            log.info(f"Links anteriores cargados: {len(links_anteriores)}")
+        except Exception as e:
+            log.warning(f"No se pudo leer JSON anterior: {e}")
+
     cutoff = datetime.now(timezone.utc) - timedelta(days=DIAS_VENTANA)
     log.info(f"Cutoff fecha: {cutoff.isoformat()}")
 
@@ -258,6 +297,42 @@ def main():
     log.info("-" * 60)
     log.info(f"Guardado: {OUTPUT_FILE}")
     log.info(f"Stats: {resultado['stats']}")
+
+    # Detectar si hubo cambios (links nuevos o desaparecidos)
+    links_actuales = set()
+    for noticias in resultado["noticias_por_ticker"].values():
+        for n in noticias:
+            links_actuales.add(n["link"])
+
+    nuevos = links_actuales - links_anteriores
+    quitados = links_anteriores - links_actuales
+    hubo_cambios = len(nuevos) > 0 or len(quitados) > 0
+
+    log.info(f"Cambios: {len(nuevos)} nuevos, {len(quitados)} quitados")
+
+    if hubo_cambios:
+        log.info("--- Hay cambios: committing ---")
+        code, out, err = ejecutar_git(["add", "noticias_watchlist.json"])
+        if code != 0:
+            log.error(f"git add fallo: {err}")
+            return
+
+        ts = datetime.now().strftime("%Y-%m-%d %H:%M")
+        msg = f"chore: update noticias watchlist {ts} (+{len(nuevos)}/-{len(quitados)}) [skip ci]"
+        code, out, err = ejecutar_git(["commit", "-m", msg])
+        if code != 0:
+            log.warning(f"git commit dijo: {out or err}")
+        else:
+            log.info("git commit OK")
+
+        code, out, err = ejecutar_git(["push"])
+        if code != 0:
+            log.error(f"git push fallo: {err}")
+            return
+        log.info("git push OK")
+    else:
+        log.info("Sin cambios en links, no commiteo")
+
     log.info(f"=== FIN ({datetime.now().strftime('%H:%M:%S')}) ===")
 
 

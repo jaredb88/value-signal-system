@@ -46,3 +46,4 @@ aplicar_*.py
 cambiar_*.py
 actualizar_desglose_*.py
 check_*.py
+agregar_*.py
