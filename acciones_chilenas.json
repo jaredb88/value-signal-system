@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-05-27T01:16:11.812915",
-  "duracion_segundos": 71.534695,
+  "fecha_actualizacion": "2026-05-27T02:16:54.906798",
+  "duracion_segundos": 81.193889,
   "n_acciones": 11,
   "acciones": [
     {
@@ -10,7 +10,7 @@
       "clasificacion": "DGI",
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
-      "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (técnicamente Crecimiento pero paga dividendos altos).",
+      "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tÃ©cnicamente Crecimiento pero paga dividendos altos).",
       "precio_actual_clp": 1351.6,
       "razon_social": "A.F.P. HABITAT S.A.",
       "variacion_pct": 0,
@@ -25,9 +25,12 @@
         "promedio_anual": 99.33,
         "advertencia": null
       },
+      "cagr_3y": 0.2503308498943293,
+      "cagr_5y": 0.38907491159490704,
+      "cagr_10y": 0.1035162975579007,
       "evaluacion": {
         "status": "Sobre benchmark",
-        "emoji": "🟢",
+        "emoji": "ðŸŸ¢",
         "vs_benchmark_pp": 0.85
       },
       "cmf": {
@@ -129,7 +132,7 @@
     {
       "ticker": "ZOFRI",
       "nombre": "Zona Franca de Iquique",
-      "sector": "Concesión",
+      "sector": "ConcesiÃ³n",
       "clasificacion": "Vaca Lechera",
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
@@ -148,9 +151,12 @@
         "promedio_anual": 69.21,
         "advertencia": null
       },
+      "cagr_3y": 0.21499052837348187,
+      "cagr_5y": 0.2008734602262563,
+      "cagr_10y": 0.06763700941380524,
       "evaluacion": {
         "status": "Cerca",
-        "emoji": "🟠",
+        "emoji": "ðŸŸ ",
         "vs_benchmark_pp": -1.61
       },
       "cmf": {
@@ -251,12 +257,12 @@
     },
     {
       "ticker": "PEHUENCHE",
-      "nombre": "Empresa Eléctrica Pehuenche",
-      "sector": "Eléctrica",
+      "nombre": "Empresa ElÃ©ctrica Pehuenche",
+      "sector": "ElÃ©ctrica",
       "clasificacion": "Vaca Lechera",
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
-      "descripcion": "Generadora hidroeléctrica del Maule. Filial de Enel Generación. ROE 72%, payout >100% (paga más que lo que gana, usa caja acumulada).",
+      "descripcion": "Generadora hidroelÃ©ctrica del Maule. Filial de Enel GeneraciÃ³n. ROE 72%, payout >100% (paga mÃ¡s que lo que gana, usa caja acumulada).",
       "precio_actual_clp": 2662.6,
       "razon_social": "EMPRESA ELECTRICA PEHUENCHE S.A.",
       "variacion_pct": 0,
@@ -271,9 +277,12 @@
         "promedio_anual": 233.52,
         "advertencia": null
       },
+      "cagr_3y": 0.1341774796194033,
+      "cagr_5y": 0.08145059649071618,
+      "cagr_10y": null,
       "evaluacion": {
         "status": "En rango",
-        "emoji": "🟡",
+        "emoji": "ðŸŸ¡",
         "vs_benchmark_pp": 0.27
       },
       "cmf": {
@@ -375,11 +384,11 @@
     {
       "ticker": "TRICAHUE",
       "nombre": "Tricahue",
-      "sector": "Eléctrica",
+      "sector": "ElÃ©ctrica",
       "clasificacion": "Vaca Lechera",
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
-      "descripcion": "Eléctrica regulada chilena. ROE 8%, payout >100%, G negativo.",
+      "descripcion": "ElÃ©ctrica regulada chilena. ROE 8%, payout >100%, G negativo.",
       "precio_actual_clp": 1482,
       "razon_social": "INVERSIONES TRICAHUE S.A.",
       "variacion_pct": 0,
@@ -394,9 +403,12 @@
         "promedio_anual": 70.9,
         "advertencia": null
       },
+      "cagr_3y": 0.29978564673101316,
+      "cagr_5y": 0.1459281498546543,
+      "cagr_10y": -0.008249946073146108,
       "evaluacion": {
         "status": "Bajo benchmark",
-        "emoji": "🔴",
+        "emoji": "ðŸ”´",
         "vs_benchmark_pp": -3.72
       },
       "cmf": {
@@ -497,12 +509,12 @@
     },
     {
       "ticker": "COLBUN",
-      "nombre": "Colbún",
-      "sector": "Eléctrica",
+      "nombre": "ColbÃºn",
+      "sector": "ElÃ©ctrica",
       "clasificacion": "Vaca Lechera",
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
-      "descripcion": "Segunda mayor generadora eléctrica de Chile. Diversificada en hidro, gas, eólica, solar. ROE 4%, payout 79%, G=1%.",
+      "descripcion": "Segunda mayor generadora elÃ©ctrica de Chile. Diversificada en hidro, gas, eÃ³lica, solar. ROE 4%, payout 79%, G=1%.",
       "precio_actual_clp": 131.52,
       "razon_social": "COLBUN S.A.",
       "variacion_pct": 0,
@@ -517,9 +529,12 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
+      "cagr_3y": 0.019600418675074893,
+      "cagr_5y": 0.05582064186951796,
+      "cagr_10y": -0.02502728983098368,
       "evaluacion": {
         "status": "Bajo benchmark",
-        "emoji": "🔴",
+        "emoji": "ðŸ”´",
         "vs_benchmark_pp": -2.46
       },
       "cmf": {
@@ -620,12 +635,12 @@
     },
     {
       "ticker": "ENELGXCH",
-      "nombre": "Enel Generación Chile",
-      "sector": "Eléctrica",
+      "nombre": "Enel GeneraciÃ³n Chile",
+      "sector": "ElÃ©ctrica",
       "clasificacion": "Vaca Lechera",
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
-      "descripcion": "Filial chilena de Enel. Principal generadora hidroeléctrica del país. ROE 19%, payout 62%, G=7%.",
+      "descripcion": "Filial chilena de Enel. Principal generadora hidroelÃ©ctrica del paÃ­s. ROE 19%, payout 62%, G=7%.",
       "precio_actual_clp": 516.31,
       "razon_social": "ENEL GENERACION CHILE S.A.",
       "variacion_pct": 0,
@@ -640,9 +655,12 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
+      "cagr_3y": 0.2820093254139793,
+      "cagr_5y": 0.189779437130285,
+      "cagr_10y": -0.014729176513118003,
       "evaluacion": {
         "status": "Cerca",
-        "emoji": "🟠",
+        "emoji": "ðŸŸ ",
         "vs_benchmark_pp": -1.99
       },
       "cmf": {
@@ -748,7 +766,7 @@
       "clasificacion": "DGI",
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
-      "descripcion": "Distribuidora de GLP en Chile, Colombia y Perú. Crecimiento moderado por expansión regional. ROE 33%, payout 63%, G=12%.",
+      "descripcion": "Distribuidora de GLP en Chile, Colombia y PerÃº. Crecimiento moderado por expansiÃ³n regional. ROE 33%, payout 63%, G=12%.",
       "precio_actual_clp": 8198.6,
       "razon_social": "EMPRESAS LIPIGAS S.A.",
       "variacion_pct": 0,
@@ -760,11 +778,14 @@
           "2024": 321.0
         },
         "promedio_anual": 379.0,
-        "advertencia": "Solo 2 años disponibles (ideal: 3)"
+        "advertencia": "Solo 2 aÃ±os disponibles (ideal: 3)"
       },
+      "cagr_3y": 0.4396670451539413,
+      "cagr_5y": 0.17049327482677024,
+      "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
-        "emoji": "🔴",
+        "emoji": "ðŸ”´",
         "vs_benchmark_pp": -1.88
       },
       "cmf": {
@@ -870,7 +891,7 @@
       "clasificacion": "Vaca Lechera",
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
-      "descripcion": "Distribución de gas natural por redes en Chile. Negocio regulado, payout alto. ROE 13%, payout 68%, G=4%.",
+      "descripcion": "DistribuciÃ³n de gas natural por redes en Chile. Negocio regulado, payout alto. ROE 13%, payout 68%, G=4%.",
       "precio_actual_clp": 610.34,
       "razon_social": "NATURGY CHILE GAS NATURAL S.A.",
       "variacion_pct": 0,
@@ -885,9 +906,12 @@
         "promedio_anual": 40.33,
         "advertencia": null
       },
+      "cagr_3y": 0.5523688459020444,
+      "cagr_5y": 0.24160445332874048,
+      "cagr_10y": null,
       "evaluacion": {
         "status": "Cerca",
-        "emoji": "🟠",
+        "emoji": "ðŸŸ ",
         "vs_benchmark_pp": -1.89
       },
       "cmf": {
@@ -1008,9 +1032,12 @@
         "promedio_anual": 27.22,
         "advertencia": null
       },
+      "cagr_3y": 0.09283276755116043,
+      "cagr_5y": 0.12506166171309885,
+      "cagr_10y": 0.10452804361108092,
       "evaluacion": {
         "status": "Sobre benchmark",
-        "emoji": "🟢",
+        "emoji": "ðŸŸ¢",
         "vs_benchmark_pp": 0.65
       },
       "cmf": {
@@ -1111,7 +1138,7 @@
     },
     {
       "ticker": "QUINENCO",
-      "nombre": "Quiñenco",
+      "nombre": "QuiÃ±enco",
       "sector": "Holding",
       "clasificacion": "Vaca Lechera",
       "benchmark_min_pct": 8.0,
@@ -1131,9 +1158,12 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
+      "cagr_3y": 0.12533871412091346,
+      "cagr_5y": 0.24003775792156912,
+      "cagr_10y": 0.1235936114151579,
       "evaluacion": {
         "status": "Sobre benchmark",
-        "emoji": "🟢",
+        "emoji": "ðŸŸ¢",
         "vs_benchmark_pp": 1.33
       },
       "cmf": {
@@ -1239,7 +1269,7 @@
       "clasificacion": "Vaca Lechera",
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
-      "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Perú y Colombia. ROE 11%, payout 46%, G=6%.",
+      "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, PerÃº y Colombia. ROE 11%, payout 46%, G=6%.",
       "precio_actual_clp": 2470,
       "razon_social": "CENCOSUD SHOPPING S.A.",
       "variacion_pct": 0,
@@ -1254,9 +1284,12 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
+      "cagr_3y": 0.2498484784587407,
+      "cagr_5y": 0.12757417758007472,
+      "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
-        "emoji": "🔴",
+        "emoji": "ðŸ”´",
         "vs_benchmark_pp": -4.38
       },
       "cmf": {

@@ -1,14 +1,14 @@
-"""
+﻿"""
 ACCIONES CHILENAS - WATCHLIST DIVIDENDERO
 ==========================================
-Sistema de análisis para watchlist de acciones chilenas dividenderas.
+Sistema de anÃ¡lisis para watchlist de acciones chilenas dividenderas.
 
-Fórmula Jared:
-- DY 3y = promedio de dividendos (definitivos + provisorios) de los ÚLTIMOS
-  3 AÑOS COMPLETOS (SIN incluir el año actual) / precio actual BCS
+FÃ³rmula Jared:
+- DY 3y = promedio de dividendos (definitivos + provisorios) de los ÃšLTIMOS
+  3 AÃ‘OS COMPLETOS (SIN incluir el aÃ±o actual) / precio actual BCS
 
 Datos:
-- Precio: Bolsa de Santiago (oficial, vía Playwright)
+- Precio: Bolsa de Santiago (oficial, vÃ­a Playwright)
 - Dividendos: Bolsa de Santiago (clasificados: DEF / PROV / ADIC / EVENT)
 - Datos financieros: CMF Chile (estados financieros oficiales)
 
@@ -38,9 +38,10 @@ from cmf import (
     extraer_cuentas_clave,
     calcular_indicadores_balance,
 )
+from precio_historico_bcs import obtener_cagr_multi
 
 # ============================================================================
-# CONFIGURACIÓN
+# CONFIGURACIÃ“N
 # ============================================================================
 
 logging.basicConfig(
@@ -55,7 +56,7 @@ JSON_PATH = REPO_PATH / "acciones_chilenas.json"
 
 # ============================================================================
 # WATCHLIST - 11 acciones chilenas dividenderas
-# Benchmarks calculados desde G = ROE × (1 - Payout)
+# Benchmarks calculados desde G = ROE Ã— (1 - Payout)
 # ============================================================================
 
 WATCHLIST = [
@@ -67,54 +68,54 @@ WATCHLIST = [
         "clasificacion": "DGI",
         "benchmark_min": 0.06,
         "benchmark_max": 0.07,
-        "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (técnicamente Crecimiento pero paga dividendos altos).",
+        "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tÃ©cnicamente Crecimiento pero paga dividendos altos).",
     },
-    # Concesión
+    # ConcesiÃ³n
     {
         "ticker": "ZOFRI",
         "nombre": "Zona Franca de Iquique",
-        "sector": "Concesión",
+        "sector": "ConcesiÃ³n",
         "clasificacion": "Vaca Lechera",
         "benchmark_min": 0.08,
         "benchmark_max": 0.09,
         "descripcion": "Operadora de la zona franca de Iquique. Negocio estable y predecible. ROE 35%, payout 74%, G=9%.",
     },
-    # Eléctricas
+    # ElÃ©ctricas
     {
         "ticker": "PEHUENCHE",
-        "nombre": "Empresa Eléctrica Pehuenche",
-        "sector": "Eléctrica",
+        "nombre": "Empresa ElÃ©ctrica Pehuenche",
+        "sector": "ElÃ©ctrica",
         "clasificacion": "Vaca Lechera",
         "benchmark_min": 0.08,
         "benchmark_max": 0.09,
-        "descripcion": "Generadora hidroeléctrica del Maule. Filial de Enel Generación. ROE 72%, payout >100% (paga más que lo que gana, usa caja acumulada).",
+        "descripcion": "Generadora hidroelÃ©ctrica del Maule. Filial de Enel GeneraciÃ³n. ROE 72%, payout >100% (paga mÃ¡s que lo que gana, usa caja acumulada).",
     },
     {
         "ticker": "TRICAHUE",
         "nombre": "Tricahue",
-        "sector": "Eléctrica",
+        "sector": "ElÃ©ctrica",
         "clasificacion": "Vaca Lechera",
         "benchmark_min": 0.08,
         "benchmark_max": 0.09,
-        "descripcion": "Eléctrica regulada chilena. ROE 8%, payout >100%, G negativo.",
+        "descripcion": "ElÃ©ctrica regulada chilena. ROE 8%, payout >100%, G negativo.",
     },
     {
         "ticker": "COLBUN",
-        "nombre": "Colbún",
-        "sector": "Eléctrica",
+        "nombre": "ColbÃºn",
+        "sector": "ElÃ©ctrica",
         "clasificacion": "Vaca Lechera",
         "benchmark_min": 0.08,
         "benchmark_max": 0.09,
-        "descripcion": "Segunda mayor generadora eléctrica de Chile. Diversificada en hidro, gas, eólica, solar. ROE 4%, payout 79%, G=1%.",
+        "descripcion": "Segunda mayor generadora elÃ©ctrica de Chile. Diversificada en hidro, gas, eÃ³lica, solar. ROE 4%, payout 79%, G=1%.",
     },
     {
         "ticker": "ENELGXCH",
-        "nombre": "Enel Generación Chile",
-        "sector": "Eléctrica",
+        "nombre": "Enel GeneraciÃ³n Chile",
+        "sector": "ElÃ©ctrica",
         "clasificacion": "Vaca Lechera",
         "benchmark_min": 0.08,
         "benchmark_max": 0.09,
-        "descripcion": "Filial chilena de Enel. Principal generadora hidroeléctrica del país. ROE 19%, payout 62%, G=7%.",
+        "descripcion": "Filial chilena de Enel. Principal generadora hidroelÃ©ctrica del paÃ­s. ROE 19%, payout 62%, G=7%.",
     },
     # Gas
     {
@@ -124,7 +125,7 @@ WATCHLIST = [
         "clasificacion": "DGI",
         "benchmark_min": 0.06,
         "benchmark_max": 0.07,
-        "descripcion": "Distribuidora de GLP en Chile, Colombia y Perú. Crecimiento moderado por expansión regional. ROE 33%, payout 63%, G=12%.",
+        "descripcion": "Distribuidora de GLP en Chile, Colombia y PerÃº. Crecimiento moderado por expansiÃ³n regional. ROE 33%, payout 63%, G=12%.",
     },
     {
         "ticker": "NTGCLGAS",
@@ -133,7 +134,7 @@ WATCHLIST = [
         "clasificacion": "Vaca Lechera",
         "benchmark_min": 0.08,
         "benchmark_max": 0.09,
-        "descripcion": "Distribución de gas natural por redes en Chile. Negocio regulado, payout alto. ROE 13%, payout 68%, G=4%.",
+        "descripcion": "DistribuciÃ³n de gas natural por redes en Chile. Negocio regulado, payout alto. ROE 13%, payout 68%, G=4%.",
     },
     # Fertilizantes
     {
@@ -148,7 +149,7 @@ WATCHLIST = [
     # Holding
     {
         "ticker": "QUINENCO",
-        "nombre": "Quiñenco",
+        "nombre": "QuiÃ±enco",
         "sector": "Holding",
         "clasificacion": "Vaca Lechera",
         "benchmark_min": 0.08,
@@ -163,35 +164,35 @@ WATCHLIST = [
         "clasificacion": "Vaca Lechera",
         "benchmark_min": 0.08,
         "benchmark_max": 0.09,
-        "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Perú y Colombia. ROE 11%, payout 46%, G=6%.",
+        "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, PerÃº y Colombia. ROE 11%, payout 46%, G=6%.",
     },
 ]
 
 # ============================================================================
-# CÁLCULOS
+# CÃLCULOS
 # ============================================================================
 
 
 def calcular_dy_jared(divs, precio_actual):
     """
-    Aplica la fórmula de Jared para DY:
+    Aplica la fÃ³rmula de Jared para DY:
     - Solo DEFINITIVO + PROVISORIO (excluye ADICIONAL y EVENTUAL)
-    - Promedio de últimos 3 AÑOS COMPLETOS (sin año actual)
+    - Promedio de Ãºltimos 3 AÃ‘OS COMPLETOS (sin aÃ±o actual)
     - Dividido por precio actual BCS
 
-    Si no hay 3 años completos, usa los años disponibles e indica cuántos.
+    Si no hay 3 aÃ±os completos, usa los aÃ±os disponibles e indica cuÃ¡ntos.
     """
     ano_actual = datetime.now().year
 
-    # Filtrar solo definitivos y provisorios, EXCLUYENDO año actual
+    # Filtrar solo definitivos y provisorios, EXCLUYENDO aÃ±o actual
     divs_validos = [
         d for d in divs
         if d["tipo"] in ("DEFINITIVO", "PROVISORIO")
         and d["fecha_pago"]
-        and int(d["fecha_pago"][:4]) < ano_actual  # Sin año actual
+        and int(d["fecha_pago"][:4]) < ano_actual  # Sin aÃ±o actual
     ]
 
-    # Agrupar por año
+    # Agrupar por aÃ±o
     por_ano = {}
     for d in divs_validos:
         ano = d["fecha_pago"][:4]
@@ -203,10 +204,10 @@ def calcular_dy_jared(divs, precio_actual):
             "anos_usados": 0,
             "anos_detalle": {},
             "promedio_anual": 0,
-            "advertencia": "Sin dividendos definitivos/provisorios en años pasados",
+            "advertencia": "Sin dividendos definitivos/provisorios en aÃ±os pasados",
         }
 
-    # Tomar los 3 años más recientes disponibles (sin año actual)
+    # Tomar los 3 aÃ±os mÃ¡s recientes disponibles (sin aÃ±o actual)
     anos_disponibles = sorted(por_ano.keys(), reverse=True)[:3]
     anos_para_promedio = {a: por_ano[a] for a in anos_disponibles}
 
@@ -215,7 +216,7 @@ def calcular_dy_jared(divs, precio_actual):
 
     advertencia = None
     if len(anos_disponibles) < 3:
-        advertencia = f"Solo {len(anos_disponibles)} años disponibles (ideal: 3)"
+        advertencia = f"Solo {len(anos_disponibles)} aÃ±os disponibles (ideal: 3)"
 
     return {
         "dy_pct": round(dy_pct, 2),
@@ -234,7 +235,7 @@ def evaluar_vs_benchmark(dy_pct, benchmark_min, benchmark_max):
     if dy_pct is None:
         return {
             "status": "Sin datos",
-            "emoji": "⚪",
+            "emoji": "âšª",
             "vs_benchmark_pp": None,
         }
 
@@ -244,17 +245,17 @@ def evaluar_vs_benchmark(dy_pct, benchmark_min, benchmark_max):
     diff_pp = (dy_decimal - benchmark_medio) * 100  # diferencia en puntos porcentuales
 
     if dy_decimal >= benchmark_max:
-        return {"status": "Sobre benchmark", "emoji": "🟢", "vs_benchmark_pp": round(diff_pp, 2)}
+        return {"status": "Sobre benchmark", "emoji": "ðŸŸ¢", "vs_benchmark_pp": round(diff_pp, 2)}
     elif dy_decimal >= benchmark_min:
-        return {"status": "En rango", "emoji": "🟡", "vs_benchmark_pp": round(diff_pp, 2)}
+        return {"status": "En rango", "emoji": "ðŸŸ¡", "vs_benchmark_pp": round(diff_pp, 2)}
     elif dy_decimal >= benchmark_min * 0.8:
-        return {"status": "Cerca", "emoji": "🟠", "vs_benchmark_pp": round(diff_pp, 2)}
+        return {"status": "Cerca", "emoji": "ðŸŸ ", "vs_benchmark_pp": round(diff_pp, 2)}
     else:
-        return {"status": "Bajo benchmark", "emoji": "🔴", "vs_benchmark_pp": round(diff_pp, 2)}
+        return {"status": "Bajo benchmark", "emoji": "ðŸ”´", "vs_benchmark_pp": round(diff_pp, 2)}
 
 
 def _valor_mas_reciente(item):
-    """Helper para extraer el valor más reciente del dict de cuentas CMF."""
+    """Helper para extraer el valor mÃ¡s reciente del dict de cuentas CMF."""
     if not item or "valores" not in item:
         return None
     valores = item["valores"]
@@ -265,7 +266,7 @@ def _valor_mas_reciente(item):
 
 
 # ============================================================================
-# ANÁLISIS DE UN TICKER
+# ANÃLISIS DE UN TICKER
 # ============================================================================
 
 
@@ -273,10 +274,10 @@ async def analizar_ticker(ticker_config, bcs_client):
     """
     Obtiene todos los datos de un ticker:
     - Precio BCS oficial
-    - Dividendos clasificados últimos 5 años
+    - Dividendos clasificados Ãºltimos 5 aÃ±os
     - Datos CMF (ROE, indicadores)
-    - Aplica fórmula DY Jared
-    - Evalúa vs benchmark
+    - Aplica fÃ³rmula DY Jared
+    - EvalÃºa vs benchmark
     """
     ticker = ticker_config["ticker"]
     log.info(f"Analizando {ticker}...")
@@ -293,6 +294,9 @@ async def analizar_ticker(ticker_config, bcs_client):
         "razon_social": None,
         "variacion_pct": None,
         "dy": None,
+        "cagr_3y": None,
+        "cagr_5y": None,
+        "cagr_10y": None,
         "evaluacion": None,
         "cmf": None,
         "dividendos_recientes": [],
@@ -313,12 +317,12 @@ async def analizar_ticker(ticker_config, bcs_client):
         # Parsear dividendos
         if variaciones:
             divs = parsear_dividendos_de_variaciones(variaciones)
-            # Guardar los 10 más recientes
+            # Guardar los 10 mÃ¡s recientes
             resultado["dividendos_recientes"] = sorted(
                 divs, key=lambda x: x["fecha_pago"], reverse=True
             )[:10]
 
-            # Calcular DY con fórmula Jared
+            # Calcular DY con fÃ³rmula Jared
             precio = resultado["precio_actual_clp"] or 0
             if precio > 0:
                 resultado["dy"] = calcular_dy_jared(divs, precio)
@@ -330,6 +334,18 @@ async def analizar_ticker(ticker_config, bcs_client):
                 )
     except Exception as e:
         resultado["error"] = f"BCS: {e}"
+
+
+
+
+# 1.5 CAGR historico desde BCS (precio oficial)
+    try:
+        cagrs = obtener_cagr_multi(ticker)
+        resultado["cagr_3y"] = cagrs["cagr_3y"]
+        resultado["cagr_5y"] = cagrs["cagr_5y"]
+        resultado["cagr_10y"] = cagrs["cagr_10y"]
+    except Exception as e:
+        log.warning(f"CAGR BCS fallo para {ticker}: {e}")
         log.warning(f"  Error BCS para {ticker}: {e}")
 
     # 2. Obtener datos CMF (indicadores)
@@ -385,7 +401,7 @@ async def analizar_ticker(ticker_config, bcs_client):
 
 async def main():
     log.info("=" * 70)
-    log.info("ACCIONES CHILENAS - Análisis Watchlist Dividendero")
+    log.info("ACCIONES CHILENAS - AnÃ¡lisis Watchlist Dividendero")
     log.info("=" * 70)
 
     inicio = datetime.now()
@@ -400,7 +416,7 @@ async def main():
             resultado = await analizar_ticker(ticker_config, bcs)
             resultados.append(resultado)
         except Exception as e:
-            log.error(f"Fallo crítico con {ticker_config['ticker']}: {e}")
+            log.error(f"Fallo crÃ­tico con {ticker_config['ticker']}: {e}")
             resultados.append({
                 "ticker": ticker_config["ticker"],
                 "nombre": ticker_config["nombre"],
