@@ -624,7 +624,7 @@ if seccion == "🇨🇱 Acciones Chilenas":
     st.header("📰 Noticias del Watchlist")
     st.caption("Últimos 7 días · Diario Financiero, La Tercera, El Mercurio · Actualización cada 2h")
 
-    @st.cache_data(ttl=1800)
+    @st.cache_data(ttl=300)
     def _load_news():
         import json as _json_news
         from pathlib import Path as _Path_news
