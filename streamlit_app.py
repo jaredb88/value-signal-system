@@ -81,6 +81,14 @@ st.markdown("""
 .big-score-plain { font-size: 3.5rem; font-weight: bold; line-height: 1; color: inherit; }
 .score-max-plain { font-size: 1.4rem; opacity: 0.5; font-weight: 500; }
 .zone-label-plain { font-size: 1.3rem; font-weight: bold; margin: 0.3rem 0 0.8rem 0; color: inherit; }
+
+/* Summary card - vista compacta para resumen arriba */
+.summary-card { padding: 0.3rem 0; margin: 0.3rem 0; }
+.summary-ticker { font-size: 1.2rem; font-weight: bold; color: inherit; margin-bottom: 0.1rem; }
+.summary-sub { font-size: 0.8rem; color: rgba(128,128,128,0.85); margin-bottom: 0.5rem; }
+.summary-score { font-size: 2.2rem; font-weight: bold; line-height: 1; color: inherit; }
+.summary-score-max { font-size: 0.9rem; opacity: 0.5; font-weight: 500; }
+.summary-zone { font-size: 1rem; font-weight: bold; margin: 0.2rem 0 0.5rem 0; color: inherit; }
 @media (max-width: 768px) {
     .big-score { font-size: 2.5rem; }
     .ticker-name { font-size: 1.3rem; }
@@ -336,6 +344,119 @@ last_nq = nq.dropna(subset=['score']).iloc[-1]
 # ============================================================
 # CARDS PRINCIPALES (ambos arriba para vista de un vistazo)
 # ============================================================
+
+# Cargar Dividend ETFs (SCHD, JEPQ) temprano para usar en resumen
+div_results = {}
+if DIVIDEND_ETFS_AVAILABLE:
+    with st.spinner("Analizando Dividend ETFs..."):
+        div_aportes = {"SCHD": APORTE_SCHD, "JEPQ": APORTE_JEPQ}
+        for ticker_div in ["SCHD", "JEPQ"]:
+            try:
+                result = analyze_dividend_etf(
+                    ticker_div,
+                    aporte_base_usd=div_aportes[ticker_div],
+                    usd_clp=None,
+                )
+                if result:
+                    div_results[ticker_div] = result
+            except Exception as e:
+                st.warning(f"No se pudo analizar {ticker_div}: {e}")
+
+
+def render_summary_card(col, ticker_label, sub_label, score, zona, mult, aporte_str, precio_str):
+    """
+    Card compacta para vista resumen arriba.
+    Diseñada para mostrar 4 ETFs en línea con info esencial.
+    """
+    emoji = {"CARO": "🔴", "NEUTRAL": "🟡", "ATRACTIVO": "🟢", "OPORTUNIDAD": "🟢🟢"}.get(zona, "")
+    score_pct = max(0, min(100, score))
+
+    with col:
+        st.markdown(f'''<div class="summary-card">
+            <div class="summary-ticker">{ticker_label}</div>
+            <div class="summary-sub">{sub_label}</div>
+            <div class="summary-score">{score:.1f}<span class="summary-score-max"> / 100</span></div>
+            <div class="summary-zone">{emoji} {zona}</div>
+            <div class="scale-bar" style="margin: 0.5rem 0 0.2rem 0;">
+                <div class="scale-segment scale-caro"></div>
+                <div class="scale-segment scale-neutral"></div>
+                <div class="scale-segment scale-atractivo"></div>
+                <div class="scale-segment scale-oportunidad"></div>
+            </div>
+            <div class="scale-marker">
+                <div class="scale-marker-dot" style="left:{score_pct}%; width:14px; height:14px; top:-4px; border-width:2px;"></div>
+            </div>
+        </div>''', unsafe_allow_html=True)
+
+        # Métricas compactas
+        mc1, mc2, mc3 = st.columns(3)
+        mc1.metric("Mult.", f"{mult}x")
+        mc2.metric("Aporte", aporte_str)
+        mc3.metric("Precio", precio_str)
+
+
+# ============================================================
+# SECCIÓN RESUMEN - 4 ETFs en línea
+# ============================================================
+st.subheader("📋 Resumen de inversiones")
+st.caption("Vista rápida de todos los ETFs. Detalle completo más abajo.")
+
+sum_col1, sum_col2, sum_col3, sum_col4 = st.columns(4)
+
+# Card 1: S&P 500
+mult_sp = MULT.get(last_sp['zona'], 1.0)
+aporte_sp = APORTE_SP500 * mult_sp
+render_summary_card(
+    sum_col1, "S&P 500", "CFISPETF",
+    last_sp['score'], last_sp['zona'], mult_sp,
+    f"${aporte_sp:.0f}",
+    f"${etf_sp['current']:,.0f} CLP" if etf_sp else "N/A",
+)
+
+# Card 2: Nasdaq 100
+mult_nq = MULT.get(last_nq['zona'], 1.0)
+aporte_nq = APORTE_NASDAQ * mult_nq
+render_summary_card(
+    sum_col2, "Nasdaq 100", "CFINASDAQ",
+    last_nq['score'], last_nq['zona'], mult_nq,
+    f"${aporte_nq:.0f}",
+    f"${etf_nq['current']:,.0f} CLP" if etf_nq else "N/A",
+)
+
+# Card 3: SCHD
+if "SCHD" in div_results:
+    r_schd = div_results["SCHD"]
+    render_summary_card(
+        sum_col3, "SCHD", "Dividend Growth",
+        r_schd['score'], r_schd['zona'], r_schd['multiplicador'],
+        f"${r_schd['aporte_sugerido_usd']:.0f} USD",
+        f"${r_schd['precio_usd']:.2f}",
+    )
+else:
+    with sum_col3:
+        st.info("SCHD no disponible")
+
+# Card 4: JEPQ
+if "JEPQ" in div_results:
+    r_jepq = div_results["JEPQ"]
+    render_summary_card(
+        sum_col4, "JEPQ", "Covered Call Income",
+        r_jepq['score'], r_jepq['zona'], r_jepq['multiplicador'],
+        f"${r_jepq['aporte_sugerido_usd']:.0f} USD",
+        f"${r_jepq['precio_usd']:.2f}",
+    )
+else:
+    with sum_col4:
+        st.info("JEPQ no disponible")
+
+
+# ============================================================
+# SECCIÓN: ÍNDICES BURSÁTILES (S&P + Nasdaq detallados)
+# ============================================================
+st.divider()
+st.header("📈 Índices Bursátiles (USA)")
+st.caption("Detalle de S&P 500 y Nasdaq 100 — acceso desde Chile vía Singular AGF")
+
 col1, col2 = st.columns(2)
 
 def render_score_card(col, last, etf, name, ticker, aporte_base):
@@ -445,8 +566,21 @@ render_score_card(col2, last_nq, etf_nq, "Nasdaq 100", "CFINASDAQ", APORTE_NASDA
 st.divider()
 st.subheader("💰 Acción este mes")
 
-total_invertir = APORTE_SP500 * MULT.get(last_sp['zona'], 1.0) + APORTE_NASDAQ * MULT.get(last_nq['zona'], 1.0)
-total_base = APORTE_SP500 + APORTE_NASDAQ
+# Calcular totales incluyendo Dividend ETFs
+total_indices = APORTE_SP500 * MULT.get(last_sp['zona'], 1.0) + APORTE_NASDAQ * MULT.get(last_nq['zona'], 1.0)
+base_indices = APORTE_SP500 + APORTE_NASDAQ
+
+total_dividend = 0
+base_dividend = 0
+if "SCHD" in div_results:
+    total_dividend += div_results["SCHD"]["aporte_sugerido_usd"]
+    base_dividend += APORTE_SCHD
+if "JEPQ" in div_results:
+    total_dividend += div_results["JEPQ"]["aporte_sugerido_usd"]
+    base_dividend += APORTE_JEPQ
+
+total_invertir = total_indices + total_dividend
+total_base = base_indices + base_dividend
 cash_tactico = total_base - total_invertir
 
 c1, c2, c3 = st.columns(3)
@@ -458,6 +592,22 @@ elif cash_tactico < 0:
     c3.metric("💸 Sacar de cash", f"${-cash_tactico:.0f} USD", delta="desplegar", delta_color="inverse")
 else:
     c3.metric("Cash táctico", "$0 USD", delta="estable")
+
+# Desglose por tipo de ETF
+with st.expander("📊 Desglose por tipo de ETF"):
+    de1, de2 = st.columns(2)
+    with de1:
+        st.markdown("**📈 Índices Bursátiles**")
+        st.caption(f"S&P 500 (CFISPETF): ${APORTE_SP500 * MULT.get(last_sp['zona'], 1.0):.0f} USD")
+        st.caption(f"Nasdaq 100 (CFINASDAQ): ${APORTE_NASDAQ * MULT.get(last_nq['zona'], 1.0):.0f} USD")
+        st.caption(f"**Subtotal: ${total_indices:.0f} USD**")
+    with de2:
+        st.markdown("**💰 Dividend ETFs**")
+        if "SCHD" in div_results:
+            st.caption(f"SCHD: ${div_results['SCHD']['aporte_sugerido_usd']:.0f} USD")
+        if "JEPQ" in div_results:
+            st.caption(f"JEPQ: ${div_results['JEPQ']['aporte_sugerido_usd']:.0f} USD")
+        st.caption(f"**Subtotal: ${total_dividend:.0f} USD**")
 
 # ============================================================
 # TABS DE DETALLE
@@ -642,29 +792,15 @@ with tab4:
     """)
 
 # ====================================================================
-# SECCIÓN: DIVIDEND ETFs (SCHD, JEPQ)
+# SECCIÓN: DIVIDEND ETFs DETALLE (SCHD, JEPQ)
+# Ya descargados arriba en div_results
 # ====================================================================
 if DIVIDEND_ETFS_AVAILABLE:
     st.divider()
     st.header("💰 Dividend ETFs (USA)")
     st.caption("ETFs de income/dividendos para diversificación. Valores en USD.")
 
-    with st.spinner("Analizando Dividend ETFs..."):
-        div_aportes = {"SCHD": APORTE_SCHD, "JEPQ": APORTE_JEPQ}
-        div_results = {}
-        for ticker_div in ["SCHD", "JEPQ"]:
-            try:
-                result = analyze_dividend_etf(
-                    ticker_div,
-                    aporte_base_usd=div_aportes[ticker_div],
-                    usd_clp=None,  # Mantenemos valores en USD según preferencia
-                )
-                if result:
-                    div_results[ticker_div] = result
-            except Exception as e:
-                st.warning(f"No se pudo analizar {ticker_div}: {e}")
-
-    # Mostrar cards de SCHD y JEPQ
+    # Mostrar cards de SCHD y JEPQ (los datos ya están en div_results)
     if div_results:
         col_schd, col_jepq = st.columns(2)
 
