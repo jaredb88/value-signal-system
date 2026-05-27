@@ -1,0 +1,1359 @@
+{
+  "fecha_actualizacion": "2026-05-27T00:49:52.625347",
+  "duracion_segundos": 136.564677,
+  "n_acciones": 11,
+  "acciones": [
+    {
+      "ticker": "HABITAT",
+      "nombre": "AFP Habitat",
+      "sector": "AFP",
+      "clasificacion": "DGI",
+      "benchmark_min_pct": 6.0,
+      "benchmark_max_pct": 7.000000000000001,
+      "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (técnicamente Crecimiento pero paga dividendos altos).",
+      "precio_actual_clp": 1351.6,
+      "razon_social": "A.F.P. HABITAT S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 7.35,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 110.0,
+          "2024": 120.0,
+          "2023": 68.0
+        },
+        "promedio_anual": 99.33,
+        "advertencia": null
+      },
+      "evaluacion": {
+        "status": "Sobre benchmark",
+        "emoji": "🟢",
+        "vs_benchmark_pp": 0.85
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "INDIVIDUAL",
+        "moneda": "CLP",
+        "unidad": "Miles",
+        "roe_pct": 41.53,
+        "margen_neto_pct": 55.72,
+        "razon_endeudamiento_pct": 49.57,
+        "razon_corriente": 1.04,
+        "capital_trabajo": 5894518.0,
+        "patrimonio_total": 337439248.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-15",
+          "fecha_limite": "2026-05-09",
+          "monto_clp": 60.0,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO ADIC 149 $ 60"
+        },
+        {
+          "fecha_pago": "2026-01-09",
+          "fecha_limite": "2026-01-03",
+          "monto_clp": 20.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 20"
+        },
+        {
+          "fecha_pago": "2025-10-10",
+          "fecha_limite": "2025-10-04",
+          "monto_clp": 20.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 20"
+        },
+        {
+          "fecha_pago": "2025-05-16",
+          "fecha_limite": "2025-05-10",
+          "monto_clp": 55.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 146 $ 55"
+        },
+        {
+          "fecha_pago": "2025-01-03",
+          "fecha_limite": "2024-12-27",
+          "monto_clp": 35.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 145 $ 35"
+        },
+        {
+          "fecha_pago": "2024-10-11",
+          "fecha_limite": "2024-10-05",
+          "monto_clp": 20.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 144 $ 20"
+        },
+        {
+          "fecha_pago": "2024-05-17",
+          "fecha_limite": "2024-05-11",
+          "monto_clp": 60.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 143 $ 60"
+        },
+        {
+          "fecha_pago": "2024-01-05",
+          "fecha_limite": "2023-12-29",
+          "monto_clp": 40.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 142 $ 40"
+        },
+        {
+          "fecha_pago": "2023-10-13",
+          "fecha_limite": "2023-10-06",
+          "monto_clp": 15.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 141 $ 15"
+        },
+        {
+          "fecha_pago": "2023-05-12",
+          "fecha_limite": "2023-05-06",
+          "monto_clp": 53.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 140 $ 53"
+        }
+      ],
+      "error": null
+    },
+    {
+      "ticker": "ZOFRI",
+      "nombre": "Zona Franca de Iquique",
+      "sector": "Concesión",
+      "clasificacion": "Vaca Lechera",
+      "benchmark_min_pct": 8.0,
+      "benchmark_max_pct": 9.0,
+      "descripcion": "Operadora de la zona franca de Iquique. Negocio estable y predecible. ROE 35%, payout 74%, G=9%.",
+      "precio_actual_clp": 1004.4,
+      "razon_social": "ZONA FRANCA DE IQUIQUE S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 6.89,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 67.12,
+          "2024": 80.4,
+          "2023": 60.11
+        },
+        "promedio_anual": 69.21,
+        "advertencia": null
+      },
+      "evaluacion": {
+        "status": "Cerca",
+        "emoji": "🟠",
+        "vs_benchmark_pp": -1.61
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "INDIVIDUAL",
+        "moneda": "CLP",
+        "unidad": "Miles",
+        "roe_pct": 33.73,
+        "margen_neto_pct": 36.67,
+        "razon_endeudamiento_pct": 59.6,
+        "razon_corriente": 1.49,
+        "capital_trabajo": 17702685.0,
+        "patrimonio_total": 54867590.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-11-27",
+          "fecha_limite": "2026-11-21",
+          "monto_clp": 36.19,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF. 74 $ 36,19"
+        },
+        {
+          "fecha_pago": "2026-05-22",
+          "fecha_limite": "2026-05-15",
+          "monto_clp": 36.19,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 73 $ 36,19"
+        },
+        {
+          "fecha_pago": "2025-11-28",
+          "fecha_limite": "2025-11-22",
+          "monto_clp": 33.56,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 72 $ 33,56"
+        },
+        {
+          "fecha_pago": "2025-05-23",
+          "fecha_limite": "2025-05-16",
+          "monto_clp": 33.56,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 71 $ 33,56"
+        },
+        {
+          "fecha_pago": "2024-11-29",
+          "fecha_limite": "2024-11-23",
+          "monto_clp": 40.2,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 70 $ 40,2"
+        },
+        {
+          "fecha_pago": "2024-05-31",
+          "fecha_limite": "2024-05-25",
+          "monto_clp": 40.2,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 69 $ 40,2"
+        },
+        {
+          "fecha_pago": "2023-11-24",
+          "fecha_limite": "2023-11-18",
+          "monto_clp": 30.055,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 68 $ 30,055"
+        },
+        {
+          "fecha_pago": "2023-05-26",
+          "fecha_limite": "2023-05-20",
+          "monto_clp": 30.055,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 67 $ 30,055"
+        },
+        {
+          "fecha_pago": "2022-11-30",
+          "fecha_limite": "2022-11-24",
+          "monto_clp": 36.3834,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 66 $ 36,3834"
+        },
+        {
+          "fecha_pago": "2022-05-27",
+          "fecha_limite": "2022-05-20",
+          "monto_clp": 21.8301,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 65 $ 21,8301"
+        }
+      ],
+      "error": null
+    },
+    {
+      "ticker": "PEHUENCHE",
+      "nombre": "Empresa Eléctrica Pehuenche",
+      "sector": "Eléctrica",
+      "clasificacion": "Vaca Lechera",
+      "benchmark_min_pct": 8.0,
+      "benchmark_max_pct": 9.0,
+      "descripcion": "Generadora hidroeléctrica del Maule. Filial de Enel Generación. ROE 72%, payout >100% (paga más que lo que gana, usa caja acumulada).",
+      "precio_actual_clp": 2662.6,
+      "razon_social": "EMPRESA ELECTRICA PEHUENCHE S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 8.77,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 234.9,
+          "2024": 251.36,
+          "2023": 214.31
+        },
+        "promedio_anual": 233.52,
+        "advertencia": null
+      },
+      "evaluacion": {
+        "status": "En rango",
+        "emoji": "🟡",
+        "vs_benchmark_pp": 0.27
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "INDIVIDUAL",
+        "moneda": "CLP",
+        "unidad": "Miles",
+        "roe_pct": 97.76,
+        "margen_neto_pct": 64.95,
+        "razon_endeudamiento_pct": 34.14,
+        "razon_corriente": 1.8,
+        "capital_trabajo": 41198103.0,
+        "patrimonio_total": 165514938.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-15",
+          "fecha_limite": "2026-05-09",
+          "monto_clp": 74.962150569,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIV. DEF. 113 US$ 0,0844444137949492"
+        },
+        {
+          "fecha_pago": "2026-01-16",
+          "fecha_limite": "2026-01-10",
+          "monto_clp": 52.550646154,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV.  US$ 0,058592075009149"
+        },
+        {
+          "fecha_pago": "2025-10-24",
+          "fecha_limite": "2025-10-18",
+          "monto_clp": 82.376668057,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV. 111 US$ 0,086156347"
+        },
+        {
+          "fecha_pago": "2025-05-23",
+          "fecha_limite": "2025-05-16",
+          "monto_clp": 98.153826825,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF.  $ 98,153826825"
+        },
+        {
+          "fecha_pago": "2025-01-17",
+          "fecha_limite": "2025-01-11",
+          "monto_clp": 54.37,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV. 109 $ 54,37"
+        },
+        {
+          "fecha_pago": "2024-10-25",
+          "fecha_limite": "2024-10-19",
+          "monto_clp": 111.6,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 111,6"
+        },
+        {
+          "fecha_pago": "2024-05-24",
+          "fecha_limite": "2024-05-17",
+          "monto_clp": 88.931136617,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 107 $ 88,931136617"
+        },
+        {
+          "fecha_pago": "2024-01-19",
+          "fecha_limite": "2024-01-13",
+          "monto_clp": 50.83,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 106 $ 50,83"
+        },
+        {
+          "fecha_pago": "2023-10-20",
+          "fecha_limite": "2023-10-14",
+          "monto_clp": 101.26,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 105 $ 101,26"
+        },
+        {
+          "fecha_pago": "2023-05-19",
+          "fecha_limite": "2023-05-13",
+          "monto_clp": 113.045329208,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 104 $ 113,045329208"
+        }
+      ],
+      "error": null
+    },
+    {
+      "ticker": "TRICAHUE",
+      "nombre": "Tricahue",
+      "sector": "Eléctrica",
+      "clasificacion": "Vaca Lechera",
+      "benchmark_min_pct": 8.0,
+      "benchmark_max_pct": 9.0,
+      "descripcion": "Eléctrica regulada chilena. ROE 8%, payout >100%, G negativo.",
+      "precio_actual_clp": 1482,
+      "razon_social": "INVERSIONES TRICAHUE S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 4.78,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 72.11,
+          "2024": 86.6,
+          "2023": 54.0
+        },
+        "promedio_anual": 70.9,
+        "advertencia": null
+      },
+      "evaluacion": {
+        "status": "Bajo benchmark",
+        "emoji": "🔴",
+        "vs_benchmark_pp": -3.72
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "INDIVIDUAL",
+        "moneda": "CLP",
+        "unidad": "Miles",
+        "roe_pct": 12.28,
+        "margen_neto_pct": 97.08,
+        "razon_endeudamiento_pct": 21.25,
+        "razon_corriente": 1.05,
+        "capital_trabajo": 47408.0,
+        "patrimonio_total": 35901328.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-22",
+          "fecha_limite": "2026-05-15",
+          "monto_clp": 38.5,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO ADIC 107 $ 38,5"
+        },
+        {
+          "fecha_pago": "2026-01-23",
+          "fecha_limite": "2026-01-17",
+          "monto_clp": 26.3,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV. 106 $ 26,30"
+        },
+        {
+          "fecha_pago": "2025-10-30",
+          "fecha_limite": "2025-10-24",
+          "monto_clp": 43.12,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV. 105 $ 43,12"
+        },
+        {
+          "fecha_pago": "2025-05-26",
+          "fecha_limite": "2025-05-19",
+          "monto_clp": 43.5,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO ADIC 103 $ 43,5"
+        },
+        {
+          "fecha_pago": "2025-05-26",
+          "fecha_limite": "2025-05-19",
+          "monto_clp": 8.35,
+          "tipo": "OTRO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO EVEN. 104 $ 8,35"
+        },
+        {
+          "fecha_pago": "2025-01-20",
+          "fecha_limite": "2025-01-14",
+          "monto_clp": 28.99,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV. 102 $ 28,99"
+        },
+        {
+          "fecha_pago": "2024-10-28",
+          "fecha_limite": "2024-10-22",
+          "monto_clp": 59.5,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV. 101 $ 59,5"
+        },
+        {
+          "fecha_pago": "2024-05-27",
+          "fecha_limite": "2024-05-20",
+          "monto_clp": 47.43,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO ADIC 100 $ 47,43"
+        },
+        {
+          "fecha_pago": "2024-01-22",
+          "fecha_limite": "2024-01-16",
+          "monto_clp": 27.1,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 99 $ 27,1"
+        },
+        {
+          "fecha_pago": "2023-10-23",
+          "fecha_limite": "2023-10-17",
+          "monto_clp": 54.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 98 $ 54"
+        }
+      ],
+      "error": null
+    },
+    {
+      "ticker": "COLBUN",
+      "nombre": "Colbún",
+      "sector": "Eléctrica",
+      "clasificacion": "Vaca Lechera",
+      "benchmark_min_pct": 8.0,
+      "benchmark_max_pct": 9.0,
+      "descripcion": "Segunda mayor generadora eléctrica de Chile. Diversificada en hidro, gas, eólica, solar. ROE 4%, payout 79%, G=1%.",
+      "precio_actual_clp": 131.52,
+      "razon_social": "COLBUN S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 6.04,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 5.54,
+          "2024": 6.97,
+          "2023": 11.32
+        },
+        "promedio_anual": 7.94,
+        "advertencia": null
+      },
+      "evaluacion": {
+        "status": "Bajo benchmark",
+        "emoji": "🔴",
+        "vs_benchmark_pp": -2.46
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "CONSOLIDADO",
+        "moneda": "USD",
+        "unidad": "Miles",
+        "roe_pct": 7.82,
+        "margen_neto_pct": 16.02,
+        "razon_endeudamiento_pct": 53.24,
+        "razon_corriente": 3.24,
+        "capital_trabajo": 829908.0,
+        "patrimonio_total": 3230396.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-15",
+          "fecha_limite": "2026-05-09",
+          "monto_clp": 0.8009199,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF 67 US$ 0,00089"
+        },
+        {
+          "fecha_pago": "2025-12-12",
+          "fecha_limite": "2025-12-05",
+          "monto_clp": 4.1246605,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV.  US$ 0,00445"
+        },
+        {
+          "fecha_pago": "2025-05-09",
+          "fecha_limite": "2025-05-03",
+          "monto_clp": 1.4189017,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF 65 US$ 0,00151"
+        },
+        {
+          "fecha_pago": "2024-12-13",
+          "fecha_limite": "2024-12-07",
+          "monto_clp": 5.5331267,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV.  US$ 0,00569"
+        },
+        {
+          "fecha_pago": "2024-05-10",
+          "fecha_limite": "2024-05-04",
+          "monto_clp": 1.4388066,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF 63 US$ 0,00154"
+        },
+        {
+          "fecha_pago": "2023-12-15",
+          "fecha_limite": "2023-12-09",
+          "monto_clp": 8.4023368,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV 62 US$ 0,00968"
+        },
+        {
+          "fecha_pago": "2023-05-12",
+          "fecha_limite": "2023-05-06",
+          "monto_clp": 2.9162528,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF US$ 0,00368"
+        },
+        {
+          "fecha_pago": "2023-05-12",
+          "fecha_limite": "2023-05-06",
+          "monto_clp": 3.3917288,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO ADIC US$ 0,00428"
+        },
+        {
+          "fecha_pago": "2022-12-16",
+          "fecha_limite": "2022-12-10",
+          "monto_clp": 4.1007876,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV 60 US$ 0,00476"
+        },
+        {
+          "fecha_pago": "2022-05-12",
+          "fecha_limite": "2022-05-06",
+          "monto_clp": 1.1195523,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF US$ 0,00129"
+        }
+      ],
+      "error": null
+    },
+    {
+      "ticker": "ENELGXCH",
+      "nombre": "Enel Generación Chile",
+      "sector": "Eléctrica",
+      "clasificacion": "Vaca Lechera",
+      "benchmark_min_pct": 8.0,
+      "benchmark_max_pct": 9.0,
+      "descripcion": "Filial chilena de Enel. Principal generadora hidroeléctrica del país. ROE 19%, payout 62%, G=7%.",
+      "precio_actual_clp": 516.31,
+      "razon_social": "ENEL GENERACION CHILE S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 6.51,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 41.9,
+          "2024": 37.0,
+          "2023": 21.86
+        },
+        "promedio_anual": 33.59,
+        "advertencia": null
+      },
+      "evaluacion": {
+        "status": "Cerca",
+        "emoji": "🟠",
+        "vs_benchmark_pp": -1.99
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "CONSOLIDADO",
+        "moneda": "CLP",
+        "unidad": "Miles",
+        "roe_pct": 17.94,
+        "margen_neto_pct": 16.3,
+        "razon_endeudamiento_pct": 43.06,
+        "razon_corriente": 1.53,
+        "capital_trabajo": 622968486.0,
+        "patrimonio_total": 2737300055.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-15",
+          "fecha_limite": "2026-05-09",
+          "monto_clp": 34.819127736,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF. 81 US$ 0,039223538922327"
+        },
+        {
+          "fecha_pago": "2026-01-16",
+          "fecha_limite": "2026-01-10",
+          "monto_clp": 6.31037334,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV 80 US$ 0,007035839"
+        },
+        {
+          "fecha_pago": "2025-05-16",
+          "fecha_limite": "2025-05-10",
+          "monto_clp": 33.87762031,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF. 78 $ 33,8776203097508"
+        },
+        {
+          "fecha_pago": "2025-05-16",
+          "fecha_limite": "2025-05-10",
+          "monto_clp": 14.068398021,
+          "tipo": "OTRO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO EVEN. 79 $ 14,0683980205123"
+        },
+        {
+          "fecha_pago": "2025-01-17",
+          "fecha_limite": "2025-01-11",
+          "monto_clp": 8.02650877,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV. 77 $ 8,026508770151470"
+        },
+        {
+          "fecha_pago": "2024-05-17",
+          "fecha_limite": "2024-05-11",
+          "monto_clp": 32.122913873,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF. 76 $ 32,122913873021500"
+        },
+        {
+          "fecha_pago": "2024-01-19",
+          "fecha_limite": "2024-01-13",
+          "monto_clp": 4.875300798,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 75 $ 4,87530079850304"
+        },
+        {
+          "fecha_pago": "2023-05-19",
+          "fecha_limite": "2023-05-13",
+          "monto_clp": 18.951859615,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 74 $ 18,9518596153849"
+        },
+        {
+          "fecha_pago": "2023-01-20",
+          "fecha_limite": "2023-01-14",
+          "monto_clp": 2.905598501,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 73 $ 2,905598500119960"
+        },
+        {
+          "fecha_pago": "2022-05-20",
+          "fecha_limite": "2022-05-14",
+          "monto_clp": 3.061433063,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 72 $ 3,061433063265350"
+        }
+      ],
+      "error": null
+    },
+    {
+      "ticker": "LIPIGAS",
+      "nombre": "Lipigas",
+      "sector": "Gas",
+      "clasificacion": "DGI",
+      "benchmark_min_pct": 6.0,
+      "benchmark_max_pct": 7.000000000000001,
+      "descripcion": "Distribuidora de GLP en Chile, Colombia y Perú. Crecimiento moderado por expansión regional. ROE 33%, payout 63%, G=12%.",
+      "precio_actual_clp": 8198.6,
+      "razon_social": "EMPRESAS LIPIGAS S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 4.62,
+        "anos_usados": 2,
+        "anos_detalle": {
+          "2025": 437.0,
+          "2024": 321.0
+        },
+        "promedio_anual": 379.0,
+        "advertencia": "Solo 2 años disponibles (ideal: 3)"
+      },
+      "evaluacion": {
+        "status": "Bajo benchmark",
+        "emoji": "🔴",
+        "vs_benchmark_pp": -1.88
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "CONSOLIDADO",
+        "moneda": "CLP",
+        "unidad": "Miles",
+        "roe_pct": 27.69,
+        "margen_neto_pct": 6.97,
+        "razon_endeudamiento_pct": 71.45,
+        "razon_corriente": 1.79,
+        "capital_trabajo": 100393368.0,
+        "patrimonio_total": 223869826.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-07",
+          "fecha_limite": "2026-04-30",
+          "monto_clp": 118.0,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO ADIC $ 118"
+        },
+        {
+          "fecha_pago": "2026-03-31",
+          "fecha_limite": "2026-03-25",
+          "monto_clp": 95.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 95"
+        },
+        {
+          "fecha_pago": "2025-12-26",
+          "fecha_limite": "2025-12-19",
+          "monto_clp": 153.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 153"
+        },
+        {
+          "fecha_pago": "2025-09-25",
+          "fecha_limite": "2025-09-17",
+          "monto_clp": 122.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 122"
+        },
+        {
+          "fecha_pago": "2025-06-25",
+          "fecha_limite": "2025-06-18",
+          "monto_clp": 81.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 81"
+        },
+        {
+          "fecha_pago": "2025-05-02",
+          "fecha_limite": "2025-04-25",
+          "monto_clp": 65.0,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO ADIC  $ 65"
+        },
+        {
+          "fecha_pago": "2025-03-31",
+          "fecha_limite": "2025-03-25",
+          "monto_clp": 81.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV $ 81"
+        },
+        {
+          "fecha_pago": "2024-12-27",
+          "fecha_limite": "2024-12-20",
+          "monto_clp": 164.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV $ 164"
+        },
+        {
+          "fecha_pago": "2024-09-30",
+          "fecha_limite": "2024-09-24",
+          "monto_clp": 97.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 97"
+        },
+        {
+          "fecha_pago": "2024-06-27",
+          "fecha_limite": "2024-06-21",
+          "monto_clp": 60.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV $ 60"
+        }
+      ],
+      "error": null
+    },
+    {
+      "ticker": "NTGCLGAS",
+      "nombre": "GASCO",
+      "sector": "Gas",
+      "clasificacion": "Vaca Lechera",
+      "benchmark_min_pct": 8.0,
+      "benchmark_max_pct": 9.0,
+      "descripcion": "Distribución de gas natural por redes en Chile. Negocio regulado, payout alto. ROE 13%, payout 68%, G=4%.",
+      "precio_actual_clp": 610.34,
+      "razon_social": "NATURGY CHILE GAS NATURAL S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 6.61,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 44.0,
+          "2024": 62.0,
+          "2023": 15.0
+        },
+        "promedio_anual": 40.33,
+        "advertencia": null
+      },
+      "evaluacion": {
+        "status": "Cerca",
+        "emoji": "🟠",
+        "vs_benchmark_pp": -1.89
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "CONSOLIDADO",
+        "moneda": "CLP",
+        "unidad": "Miles",
+        "roe_pct": 13.47,
+        "margen_neto_pct": 24.84,
+        "razon_endeudamiento_pct": 40.84,
+        "razon_corriente": 1.79,
+        "capital_trabajo": 158420791.0,
+        "patrimonio_total": 1631399760.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2025-12-15",
+          "fecha_limite": "2025-12-09",
+          "monto_clp": 25.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV. 17 $ 25"
+        },
+        {
+          "fecha_pago": "2025-12-15",
+          "fecha_limite": "2025-12-09",
+          "monto_clp": 54.0,
+          "tipo": "OTRO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO EVEN. 16 $ 54"
+        },
+        {
+          "fecha_pago": "2025-05-16",
+          "fecha_limite": "2025-05-10",
+          "monto_clp": 19.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF. 15 $ 19"
+        },
+        {
+          "fecha_pago": "2024-12-13",
+          "fecha_limite": "2024-12-07",
+          "monto_clp": 62.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV. 14 $ 62"
+        },
+        {
+          "fecha_pago": "2023-11-28",
+          "fecha_limite": "2023-11-22",
+          "monto_clp": 14.0,
+          "tipo": "OTRO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO EVEN 12 $ 14"
+        },
+        {
+          "fecha_pago": "2023-11-28",
+          "fecha_limite": "2023-11-22",
+          "monto_clp": 15.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 13 $ 15"
+        },
+        {
+          "fecha_pago": "2022-04-12",
+          "fecha_limite": "2022-04-06",
+          "monto_clp": 7.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 11 $ 7"
+        },
+        {
+          "fecha_pago": "2021-11-30",
+          "fecha_limite": "2021-11-24",
+          "monto_clp": 16.0,
+          "tipo": "OTRO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO EVEN 10 $ 16"
+        },
+        {
+          "fecha_pago": "2021-04-12",
+          "fecha_limite": "2021-04-06",
+          "monto_clp": 13.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 9 $ 13"
+        },
+        {
+          "fecha_pago": "2020-11-30",
+          "fecha_limite": "2020-11-24",
+          "monto_clp": 19.0,
+          "tipo": "OTRO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO EVEN 8 $ 19"
+        }
+      ],
+      "error": null
+    },
+    {
+      "ticker": "SOQUICOM",
+      "nombre": "Soquimich Comercial",
+      "sector": "Fertilizantes",
+      "clasificacion": "DGI",
+      "benchmark_min_pct": 6.0,
+      "benchmark_max_pct": 7.000000000000001,
+      "descripcion": "Distribuidora de fertilizantes especiales en Chile. Filial de SQM. ROE 11%, ciclo de payout variable, G=11%.",
+      "precio_actual_clp": 381,
+      "razon_social": "SOQUIMICH COMERCIAL S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 7.15,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 30.4,
+          "2024": 10.0,
+          "2023": 41.28
+        },
+        "promedio_anual": 27.22,
+        "advertencia": null
+      },
+      "evaluacion": {
+        "status": "Sobre benchmark",
+        "emoji": "🟢",
+        "vs_benchmark_pp": 0.65
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "CONSOLIDADO",
+        "moneda": "USD",
+        "unidad": "Miles",
+        "roe_pct": 13.11,
+        "margen_neto_pct": 6.47,
+        "razon_endeudamiento_pct": 39.42,
+        "razon_corriente": 2.54,
+        "capital_trabajo": 62560.0,
+        "patrimonio_total": 67112.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-15",
+          "fecha_limite": "2026-05-09",
+          "monto_clp": 25.22679,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF. 49 US$ 0,028210"
+        },
+        {
+          "fecha_pago": "2025-05-09",
+          "fecha_limite": "2025-05-03",
+          "monto_clp": 30.39602,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVID. DEF. 48 US$ 0,03233"
+        },
+        {
+          "fecha_pago": "2024-05-10",
+          "fecha_limite": "2024-05-04",
+          "monto_clp": 9.9993275,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF. US$ 0,01075"
+        },
+        {
+          "fecha_pago": "2024-05-10",
+          "fecha_limite": "2024-05-04",
+          "monto_clp": 23.3286636,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO ADIC US$ 0,02508"
+        },
+        {
+          "fecha_pago": "2023-05-11",
+          "fecha_limite": "2023-05-05",
+          "monto_clp": 41.27642,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF US$ 0,05189"
+        },
+        {
+          "fecha_pago": "2022-05-06",
+          "fecha_limite": "2022-04-30",
+          "monto_clp": 46.17012,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF $ 46,17012"
+        },
+        {
+          "fecha_pago": "2021-12-20",
+          "fecha_limite": "2021-12-14",
+          "monto_clp": 30.91851,
+          "tipo": "OTRO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO EVEN US$ 0,03675"
+        },
+        {
+          "fecha_pago": "2021-05-19",
+          "fecha_limite": "2021-05-12",
+          "monto_clp": 19.36794,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF $ 19,36794"
+        },
+        {
+          "fecha_pago": "2021-05-19",
+          "fecha_limite": "2021-05-12",
+          "monto_clp": 12.80738,
+          "tipo": "OTRO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO EVEN $ 12,80738"
+        },
+        {
+          "fecha_pago": "2020-12-21",
+          "fecha_limite": "2020-12-15",
+          "monto_clp": 27.12775,
+          "tipo": "OTRO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO EVEN US$ 0,03675"
+        }
+      ],
+      "error": null
+    },
+    {
+      "ticker": "QUINENCO",
+      "nombre": "Quiñenco",
+      "sector": "Holding",
+      "clasificacion": "Vaca Lechera",
+      "benchmark_min_pct": 8.0,
+      "benchmark_max_pct": 9.0,
+      "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
+      "precio_actual_clp": 4104.9,
+      "razon_social": "QUINENCO S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 9.83,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 300.7,
+          "2024": 272.19,
+          "2023": 637.85
+        },
+        "promedio_anual": 403.58,
+        "advertencia": null
+      },
+      "evaluacion": {
+        "status": "Sobre benchmark",
+        "emoji": "🟢",
+        "vs_benchmark_pp": 1.33
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "CONSOLIDADO",
+        "moneda": "CLP",
+        "unidad": "Miles",
+        "roe_pct": 3.93,
+        "margen_neto_pct": 12.32,
+        "razon_endeudamiento_pct": 74.66,
+        "razon_corriente": 4.46,
+        "capital_trabajo": 2688034481.0,
+        "patrimonio_total": 16881204675.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-15",
+          "fecha_limite": "2026-05-09",
+          "monto_clp": 62.61297,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF. 54 $ 62,61297"
+        },
+        {
+          "fecha_pago": "2026-05-15",
+          "fecha_limite": "2026-05-09",
+          "monto_clp": 286.4259,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO ADIC. 55 $ 286,4259"
+        },
+        {
+          "fecha_pago": "2025-12-18",
+          "fecha_limite": "2025-12-12",
+          "monto_clp": 60.141,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV. 53 $ 60,141"
+        },
+        {
+          "fecha_pago": "2025-05-16",
+          "fecha_limite": "2025-05-10",
+          "monto_clp": 240.564,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 52 $ 240,564"
+        },
+        {
+          "fecha_pago": "2024-12-20",
+          "fecha_limite": "2024-12-14",
+          "monto_clp": 120.28198,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 120,28198"
+        },
+        {
+          "fecha_pago": "2024-05-10",
+          "fecha_limite": "2024-05-04",
+          "monto_clp": 151.91015,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 50 $ 151,91015"
+        },
+        {
+          "fecha_pago": "2023-05-26",
+          "fecha_limite": "2023-05-20",
+          "monto_clp": 637.8532,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 49 $ 637,8532"
+        },
+        {
+          "fecha_pago": "2022-06-24",
+          "fecha_limite": "2022-06-17",
+          "monto_clp": 298.02756,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO ADIC 48 $ 298,02756"
+        },
+        {
+          "fecha_pago": "2022-05-02",
+          "fecha_limite": "2022-04-26",
+          "monto_clp": 170.30525,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 47 $ 170,30525"
+        },
+        {
+          "fecha_pago": "2021-11-02",
+          "fecha_limite": "2021-10-26",
+          "monto_clp": 171.26168,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV $ 171,26168"
+        }
+      ],
+      "error": null
+    },
+    {
+      "ticker": "CENCOMALLS",
+      "nombre": "Cencosud Shopping",
+      "sector": "Inmobiliario",
+      "clasificacion": "Vaca Lechera",
+      "benchmark_min_pct": 8.0,
+      "benchmark_max_pct": 9.0,
+      "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Perú y Colombia. ROE 11%, payout 46%, G=6%.",
+      "precio_actual_clp": 2470,
+      "razon_social": "CENCOSUD SHOPPING S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 4.12,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 91.0,
+          "2024": 119.0,
+          "2023": 95.0
+        },
+        "promedio_anual": 101.67,
+        "advertencia": null
+      },
+      "evaluacion": {
+        "status": "Bajo benchmark",
+        "emoji": "🔴",
+        "vs_benchmark_pp": -4.38
+      },
+      "cmf": {
+        "periodo": "12/2024",
+        "tipo_balance": "CONSOLIDADO",
+        "moneda": "CLP",
+        "unidad": "Miles",
+        "roe_pct": 9.42,
+        "margen_neto_pct": 75.58,
+        "razon_endeudamiento_pct": 33.95,
+        "razon_corriente": 1.77,
+        "capital_trabajo": 65996484.0,
+        "patrimonio_total": 2834499257.0
+      },
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-12",
+          "fecha_limite": "2026-05-06",
+          "monto_clp": 15.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF.  $ 15"
+        },
+        {
+          "fecha_pago": "2025-11-27",
+          "fecha_limite": "2025-11-21",
+          "monto_clp": 60.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 60"
+        },
+        {
+          "fecha_pago": "2025-05-06",
+          "fecha_limite": "2025-04-29",
+          "monto_clp": 31.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF.  $ 31"
+        },
+        {
+          "fecha_pago": "2024-11-20",
+          "fecha_limite": "2024-11-14",
+          "monto_clp": 85.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV $ 85"
+        },
+        {
+          "fecha_pago": "2024-05-07",
+          "fecha_limite": "2024-04-30",
+          "monto_clp": 34.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 8 $ 34"
+        },
+        {
+          "fecha_pago": "2023-11-16",
+          "fecha_limite": "2023-11-10",
+          "monto_clp": 70.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 7 $ 70"
+        },
+        {
+          "fecha_pago": "2023-05-09",
+          "fecha_limite": "2023-05-03",
+          "monto_clp": 25.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF $ 25"
+        },
+        {
+          "fecha_pago": "2022-11-08",
+          "fecha_limite": "2022-11-02",
+          "monto_clp": 60.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 6 $ 60"
+        },
+        {
+          "fecha_pago": "2022-05-03",
+          "fecha_limite": "2022-04-27",
+          "monto_clp": 30.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF $ 30"
+        },
+        {
+          "fecha_pago": "2021-10-21",
+          "fecha_limite": "2021-10-15",
+          "monto_clp": 30.0,
+          "tipo": "OTRO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO EVEN 4 $ 30"
+        }
+      ],
+      "error": null
+    }
+  ]
+}
