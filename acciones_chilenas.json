@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-05-27T11:30:44.661269",
-  "duracion_segundos": 91.091831,
+  "fecha_actualizacion": "2026-05-27T11:41:50.616615",
+  "duracion_segundos": 98.415653,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,14 +11,28 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": null,
-      "razon_social": null,
-      "variacion_pct": null,
-      "dy": null,
+      "precio_actual_clp": 1361,
+      "razon_social": "A.F.P. HABITAT S.A.",
+      "variacion_pct": 0.7,
+      "dy": {
+        "dy_pct": 7.3,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 110.0,
+          "2024": 120.0,
+          "2023": 68.0
+        },
+        "promedio_anual": 99.33,
+        "advertencia": null
+      },
       "cagr_3y": 0.25322272329023554,
       "cagr_5y": 0.39100168446398653,
       "cagr_10y": 0.10428137093122491,
-      "evaluacion": null,
+      "evaluacion": {
+        "status": "Sobre benchmark",
+        "emoji": "🟢",
+        "vs_benchmark_pp": 0.8
+      },
       "cmf": {
         "periodo": "12/2024",
         "tipo_balance": "INDIVIDUAL",
@@ -123,11 +137,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Operadora de la zona franca de Iquique. Negocio estable y predecible. ROE 35%, payout 74%, G=9%.",
-      "precio_actual_clp": 1004.4,
+      "precio_actual_clp": 1014.4,
       "razon_social": "ZONA FRANCA DE IQUIQUE S.A.",
-      "variacion_pct": 0,
+      "variacion_pct": 1,
       "dy": {
-        "dy_pct": 6.89,
+        "dy_pct": 6.82,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 67.12,
@@ -137,13 +151,13 @@
         "promedio_anual": 69.21,
         "advertencia": null
       },
-      "cagr_3y": 0.21499052837348187,
-      "cagr_5y": 0.2008734602262563,
-      "cagr_10y": 0.06763700941380524,
+      "cagr_3y": 0.21900944665937216,
+      "cagr_5y": 0.20325521924768286,
+      "cagr_10y": 0.06869523684818457,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
-        "vs_benchmark_pp": -1.61
+        "vs_benchmark_pp": -1.68
       },
       "cmf": {
         "periodo": "12/2024",
@@ -501,11 +515,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 131.58,
+      "precio_actual_clp": 132.32,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": 0.05,
+      "variacion_pct": 0.61,
       "dy": {
-        "dy_pct": 6.04,
+        "dy_pct": 6.0,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 5.54,
@@ -515,13 +529,13 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.019755443828547214,
-      "cagr_5y": 0.05591695829530163,
-      "cagr_10y": -0.024982820277429263,
+      "cagr_3y": 0.021663557483259543,
+      "cagr_5y": 0.05710198137199174,
+      "cagr_10y": -0.024435857820592655,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.46
+        "vs_benchmark_pp": -2.5
       },
       "cmf": {
         "periodo": "12/2024",
@@ -1130,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 4087,
+      "precio_actual_clp": 4111,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": -0.44,
+      "variacion_pct": 0.15,
       "dy": {
-        "dy_pct": 9.87,
+        "dy_pct": 9.82,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1144,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.1237005975817238,
-      "cagr_5y": 0.23895439442043243,
-      "cagr_10y": 0.12310268834321292,
+      "cagr_3y": 0.12589586684457021,
+      "cagr_5y": 0.24040608543562203,
+      "cagr_10y": 0.12376046912259242,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 1.37
+        "vs_benchmark_pp": 1.32
       },
       "cmf": {
         "periodo": "12/2024",
@@ -1256,11 +1270,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2473.3,
+      "precio_actual_clp": 2457.4,
       "razon_social": "CENCOSUD SHOPPING S.A.",
-      "variacion_pct": 0.13,
+      "variacion_pct": -0.51,
       "dy": {
-        "dy_pct": 4.11,
+        "dy_pct": 4.14,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 91.0,
@@ -1270,13 +1284,13 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.2504048434410904,
-      "cagr_5y": 0.12787531181738343,
+      "cagr_3y": 0.2477196059746345,
+      "cagr_5y": 0.1264214234298413,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -4.39
+        "vs_benchmark_pp": -4.36
       },
       "cmf": {
         "periodo": "12/2024",
