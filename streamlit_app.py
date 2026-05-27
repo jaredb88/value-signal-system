@@ -294,17 +294,6 @@ def analyze_etf(daily, name, ticker, bcs_data=None, bcs_ticker=None):
 st.title("📊 Value Signal System")
 st.caption(f"Sistema cuantitativo para timing de aportes — Consulta: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
-with st.expander("ℹ️ ¿Cómo leer el score? (0-100)", expanded=False):
-    st.markdown("""
-    El **Score** combina 5 indicadores académicos en un puntaje de **0 a 100**, donde:
-    - **0-25 = 🔴 CARO** → mercado en valuación alta vs su historia. Invierte la mitad ($100 base × 0.5)
-    - **25-50 = 🟡 NEUTRAL** → valuación normal. Invierte lo planificado (DCA normal × 1.0)
-    - **50-75 = 🟢 ATRACTIVO** → buena ventana de entrada. Invierte 50% más (× 1.5)
-    - **75-100 = 🟢🟢 OPORTUNIDAD** → evento tipo Covid o crash. Carga fuerte (× 2.5)
-
-    **Score más alto = mejor para comprar**. Score más bajo = mercado caro, modera aportes.
-    """)
-
 # Descargar datos
 with st.spinner("Descargando datos de mercado..."):
     sp500 = fetch_monthly('^GSPC')
@@ -395,18 +384,18 @@ def render_summary_card(col, ticker_label, sub_label, score, zona):
 st.subheader("📋 Resumen de inversiones")
 st.caption("Vista rápida de todos los ETFs. Detalle completo más abajo.")
 
-# Fila 1: Índices Bursátiles
+# Fila 1: Growth ETFs
 sum_row1_col1, sum_row1_col2 = st.columns(2)
 
 mult_sp = MULT.get(last_sp['zona'], 1.0)
 render_summary_card(
-    sum_row1_col1, "S&P 500", "CFISPETF · Índice Bursátil",
+    sum_row1_col1, "CFISPETF", "S&P 500 · Growth ETF",
     last_sp['score'], last_sp['zona'],
 )
 
 mult_nq = MULT.get(last_nq['zona'], 1.0)
 render_summary_card(
-    sum_row1_col2, "Nasdaq 100", "CFINASDAQ · Índice Bursátil",
+    sum_row1_col2, "CFINASDAQ", "Nasdaq 100 · Growth ETF",
     last_nq['score'], last_nq['zona'],
 )
 
@@ -435,11 +424,22 @@ else:
 
 
 # ============================================================
-# SECCIÓN: ÍNDICES BURSÁTILES (S&P + Nasdaq detallados)
+# SECCIÓN: GROWTH ETFs (S&P + Nasdaq detallados)
 # ============================================================
 st.divider()
-st.header("📈 Índices Bursátiles (USA)")
-st.caption("Detalle de S&P 500 y Nasdaq 100 — acceso desde Chile vía Singular AGF")
+st.header("📈 Growth ETFs (USA)")
+st.caption("ETFs de crecimiento — acceso desde Chile vía Singular AGF")
+
+with st.expander("ℹ️ ¿Cómo leer el score? (0-100)", expanded=False):
+    st.markdown("""
+    El **Score** combina 5 indicadores académicos en un puntaje de **0 a 100**, donde:
+    - **0-25 = 🔴 CARO** → mercado en valuación alta vs su historia. Invierte la mitad ($100 base × 0.5)
+    - **25-50 = 🟡 NEUTRAL** → valuación normal. Invierte lo planificado (DCA normal × 1.0)
+    - **50-75 = 🟢 ATRACTIVO** → buena ventana de entrada. Invierte 50% más (× 1.5)
+    - **75-100 = 🟢🟢 OPORTUNIDAD** → evento tipo Covid o crash. Carga fuerte (× 2.5)
+
+    **Score más alto = mejor para comprar**. Score más bajo = mercado caro, modera aportes.
+    """)
 
 col1, col2 = st.columns(2)
 
@@ -455,9 +455,10 @@ def render_score_card(col, last, etf, name, ticker, aporte_base):
         score_pct = max(0, min(100, last["score"]))
 
         # Card sobria (sin fondo de color, solo estructura limpia)
+        # Jerarquía visual: ticker Racional GRANDE (lo que compras) + índice subyacente pequeño
         st.markdown(f'''<div class="score-card-plain">
-            <div class="ticker-name-plain">{name}</div>
-            <div class="ticker-mapping-plain">→ {ticker} en Racional · {tipo_etf}</div>
+            <div class="ticker-name-plain">{ticker}</div>
+            <div class="ticker-mapping-plain">{name} · Growth ETF · Racional</div>
             <div class="big-score-plain">{last["score"]:.1f}<span class="score-max-plain"> / 100</span></div>
             <div class="zone-label-plain">{emoji} {last["zona"]}</div>
             <div class="scale-bar">
@@ -581,7 +582,7 @@ else:
 with st.expander("📊 Desglose por tipo de ETF"):
     de1, de2 = st.columns(2)
     with de1:
-        st.markdown("**📈 Índices Bursátiles**")
+        st.markdown("**📈 Growth ETFs**")
         st.caption(f"S&P 500 (CFISPETF): ${APORTE_SP500 * MULT.get(last_sp['zona'], 1.0):.0f} USD")
         st.caption(f"Nasdaq 100 (CFINASDAQ): ${APORTE_NASDAQ * MULT.get(last_nq['zona'], 1.0):.0f} USD")
         st.caption(f"**Subtotal: ${total_indices:.0f} USD**")
