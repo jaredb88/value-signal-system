@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-05-27T11:44:14.114744",
-  "duracion_segundos": 92.943586,
+  "fecha_actualizacion": "2026-05-27T12:11:42.048788",
+  "duracion_segundos": 89.889257,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,11 +11,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": 1361,
+      "precio_actual_clp": 1362,
       "razon_social": "A.F.P. HABITAT S.A.",
-      "variacion_pct": 0.7,
+      "variacion_pct": 0.77,
       "dy": {
-        "dy_pct": 7.3,
+        "dy_pct": 7.29,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 110.0,
@@ -25,13 +25,13 @@
         "promedio_anual": 99.33,
         "advertencia": null
       },
-      "cagr_3y": 0.25322272329023554,
-      "cagr_5y": 0.39100168446398653,
-      "cagr_10y": 0.10428137093122491,
+      "cagr_3y": 0.2535295848899848,
+      "cagr_5y": 0.3912060331850826,
+      "cagr_10y": 0.10436248161616235,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 0.8
+        "vs_benchmark_pp": 0.79
       },
       "cmf": {
         "periodo": "12/2024",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 4098.8,
+      "precio_actual_clp": 4090.7,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": -0.15,
+      "variacion_pct": -0.35,
       "dy": {
-        "dy_pct": 9.85,
+        "dy_pct": 9.87,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.12478100916012114,
-      "cagr_5y": 0.2396689922706461,
-      "cagr_10y": 0.12342653039847118,
+      "cagr_3y": 0.12403959425210909,
+      "cagr_5y": 0.2391786406713461,
+      "cagr_10y": 0.12320432250075841,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 1.35
+        "vs_benchmark_pp": 1.37
       },
       "cmf": {
         "periodo": "12/2024",
@@ -1270,7 +1270,7 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2454.9,
+      "precio_actual_clp": 2455,
       "razon_social": "CENCOSUD SHOPPING S.A.",
       "variacion_pct": -0.61,
       "dy": {
@@ -1284,8 +1284,8 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.2472963459702544,
-      "cagr_5y": 0.12619214043098514,
+      "cagr_3y": 0.2473132818863164,
+      "cagr_5y": 0.12620131533660883,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
