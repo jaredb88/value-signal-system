@@ -513,11 +513,11 @@ if seccion == "🇨🇱 Acciones Chilenas":
                     st.markdown("**📈 Apreciacion de precio (CAGR)**")
                     cagr_lines = []
                     if cagr_3y is not None:
-                        cagr_lines.append(f"3 anos: **{cagr_3y*100:.2f}%** anual")
+                        cagr_lines.append(f"3y: **{cagr_3y*100:.2f}%** anual")
                     if cagr_5y is not None:
-                        cagr_lines.append(f"5 anos: **{cagr_5y*100:.2f}%** anual")
+                        cagr_lines.append(f"5y: **{cagr_5y*100:.2f}%** anual")
                     if cagr_10y is not None:
-                        cagr_lines.append(f"10 anos: **{cagr_10y*100:.2f}%** anual")
+                        cagr_lines.append(f"10y: **{cagr_10y*100:.2f}%** anual")
                     st.caption(" · ".join(cagr_lines))
                     if cagr_3y is not None and dy.get("dy_pct") is not None:
                         rent_total = cagr_3y*100 + dy.get("dy_pct", 0)
