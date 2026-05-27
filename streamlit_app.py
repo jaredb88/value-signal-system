@@ -27,6 +27,13 @@ from pathlib import Path
 
 warnings.filterwarnings('ignore')
 
+# Modulo de Dividend ETFs (SCHD, JEPQ)
+try:
+    from dividend_etf_signal import analyze_dividend_etf, fetch_usd_clp, DIVIDEND_ETFS
+    DIVIDEND_ETFS_AVAILABLE = True
+except Exception:
+    DIVIDEND_ETFS_AVAILABLE = False
+
 # ============================================================
 # CONFIGURACION PAGINA
 # ============================================================
@@ -83,6 +90,11 @@ with st.sidebar:
     APORTE_NASDAQ = st.number_input("Aporte base Nasdaq (USD/mes)", value=60, min_value=0, step=10)
     show_news = st.checkbox("Mostrar noticias", value=True)
     max_news = st.slider("Cantidad de noticias", 4, 12, 8)
+
+    st.divider()
+    st.subheader("💰 Dividend ETFs")
+    APORTE_SCHD = st.number_input("Aporte SCHD (USD/mes)", value=140, min_value=0, step=10, help="Schwab US Dividend Equity ETF")
+    APORTE_JEPQ = st.number_input("Aporte JEPQ (USD/mes)", value=60, min_value=0, step=10, help="JPMorgan Nasdaq Equity Premium Income ETF")
 
     st.divider()
     st.caption("Multiplicadores por zona:")
@@ -562,3 +574,171 @@ with tab3:
 
     # CSV histórico si existe
     history_file = Path('value_signal_history.csv')
+    if history_file.exists():
+        st.subheader("Historial de consultas")
+        try:
+            hist = pd.read_csv(history_file)
+            st.dataframe(hist.tail(20), use_container_width=True)
+            csv = hist.to_csv(index=False)
+            st.download_button("📥 Descargar histórico completo", csv,
+                               "value_signal_history.csv", "text/csv")
+        except Exception as e:
+            st.warning(f"No se pudo leer el historial: {e}")
+
+# ============================================================
+# TAB 4: Sobre el sistema
+# ============================================================
+with tab4:
+    st.markdown("""
+    ### Sobre Value Signal System
+
+    Sistema cuantitativo para timing de aportes en bolsa USA via ETFs Racional (CFISPETF + CFINASDAQ).
+
+    **Componentes del score (0-100):**
+    - **CAPE (40%):** Valuación largo plazo basada en Shiller P/E 10 años
+    - **Drawdown (25%):** Caída desde el máximo histórico
+    - **EY vs Bond (15%):** Premium de acciones vs bonos Treasury 10Y
+    - **Yield Curve (10%):** Régimen macro vía curva de tasas
+    - **Momentum (10%):** Tendencia 12-1 meses (Jegadeesh-Titman)
+
+    **Zonas y multiplicadores:**
+    - 🔴 CARO (0-25): 0.5x el aporte base
+    - 🟡 NEUTRAL (25-50): 1.0x el aporte base
+    - 🟢 ATRACTIVO (50-75): 1.5x el aporte base
+    - 🟢🟢 OPORTUNIDAD (75-100): 2.5x el aporte base
+
+    **Validación:** Walk-forward sobre datos reales 1990-2026, 100% ventanas con alpha positivo vs DCA puro.
+
+    **Disclaimers:**
+    - No es asesoría financiera. Sistema cuantitativo educativo.
+    - Performance pasada no garantiza performance futura.
+    - Mantener fondo de emergencia separado del capital de inversión.
+    """)
+
+# ====================================================================
+# SECCIÓN: DIVIDEND ETFs (SCHD, JEPQ)
+# ====================================================================
+if DIVIDEND_ETFS_AVAILABLE:
+    st.divider()
+    st.header("💰 Dividend ETFs (USA)")
+    st.caption("ETFs de income/dividendos para diversificación. Valores en USD.")
+
+    with st.spinner("Analizando Dividend ETFs..."):
+        div_aportes = {"SCHD": APORTE_SCHD, "JEPQ": APORTE_JEPQ}
+        div_results = {}
+        for ticker_div in ["SCHD", "JEPQ"]:
+            try:
+                result = analyze_dividend_etf(
+                    ticker_div,
+                    aporte_base_usd=div_aportes[ticker_div],
+                    usd_clp=None,  # Mantenemos valores en USD según preferencia
+                )
+                if result:
+                    div_results[ticker_div] = result
+            except Exception as e:
+                st.warning(f"No se pudo analizar {ticker_div}: {e}")
+
+    # Mostrar cards de SCHD y JEPQ
+    if div_results:
+        col_schd, col_jepq = st.columns(2)
+
+        for col, ticker_div in [(col_schd, "SCHD"), (col_jepq, "JEPQ")]:
+            if ticker_div not in div_results:
+                continue
+            r = div_results[ticker_div]
+
+            zona_class = {
+                "CARO": "score-card-caro",
+                "NEUTRAL": "score-card-neutral",
+                "ATRACTIVO": "score-card-atractivo",
+                "OPORTUNIDAD": "score-card-oportunidad",
+            }.get(r["zona"], "score-card-neutral")
+
+            score_pct = max(0, min(100, r["score"]))
+
+            with col:
+                st.markdown(f'''<div class="score-card {zona_class}">
+                    <div class="ticker-name">{r['name']}</div>
+                    <div class="ticker-mapping">{r['type']}</div>
+                    <div class="big-score">{r['score']:.1f}<span class="score-max"> / 100</span></div>
+                    <div class="zone-label">{r['emoji']} {r['zona']}</div>
+                    <div class="scale-bar">
+                        <div class="scale-segment scale-caro"></div>
+                        <div class="scale-segment scale-neutral"></div>
+                        <div class="scale-segment scale-atractivo"></div>
+                        <div class="scale-segment scale-oportunidad"></div>
+                    </div>
+                    <div class="scale-marker">
+                        <div class="scale-marker-dot" style="left:{score_pct}%"></div>
+                    </div>
+                    <div class="scale-legend">
+                        <span>0 CARO</span>
+                        <span>25 NEUTRAL</span>
+                        <span>50 ATRACTIVO</span>
+                        <span>75 OPORTUNIDAD</span>
+                        <span>100</span>
+                    </div>
+                </div>''', unsafe_allow_html=True)
+
+                # Métricas debajo de la card
+                m1, m2, m3 = st.columns(3)
+                m1.metric("Multiplicador", f"{r['multiplicador']}x")
+                m2.metric("Aporte sugerido", f"${r['aporte_sugerido_usd']:.0f} USD")
+                m3.metric("Precio actual", f"${r['precio_usd']:.2f}")
+
+                # Indicadores clave
+                st.markdown("**Indicadores clave:**")
+                ic1, ic2 = st.columns(2)
+                with ic1:
+                    st.caption(f"DY actual: **{r['dy_actual_pct']}%**")
+                    st.caption(f"DY promedio 3y: **{r['dy_historico_3y_pct']}%**")
+                    st.caption(f"DGR 3y: **{r['dgr_3y_pct']}%**")
+                with ic2:
+                    st.caption(f"CAGR precio 3y: **{r['cagr_precio_3y_pct']}%**")
+                    if r.get('cagr_precio_5y_pct'):
+                        st.caption(f"CAGR precio 5y: **{r['cagr_precio_5y_pct']}%**")
+                    else:
+                        st.caption("CAGR 5y: N/A")
+                    st.caption(f"Drawdown: **{r['drawdown_pct']}%**")
+
+                # Descripción del ETF (plegable)
+                with st.expander(f"ℹ️ Acerca de {r['name']}"):
+                    st.markdown(f"**{r['long_name']}**")
+                    st.markdown(r['description'])
+                    st.markdown(f"- **Inception:** {r['inception']}")
+                    st.markdown(f"- **Expense ratio:** {r['expense_ratio']*100:.2f}%")
+                    st.markdown(f"- **Frecuencia de pago:** {r['frequency']}")
+
+                # Desglose del score
+                with st.expander("🔍 Desglose del score"):
+                    componentes_info = [
+                        ("DY actual vs histórico", "dy_vs_historico", "35%"),
+                        ("Drawdown vs máximo", "drawdown", "25%"),
+                        ("Balance CAGR + DY", "balance_cagr", "15%"),
+                        ("Momentum 12-1m", "momentum", "10%"),
+                        ("Dividend Growth Rate", "dgr", "15%"),
+                    ]
+                    for nombre, key, peso in componentes_info:
+                        valor = r['componentes'].get(key, 0)
+                        st.caption(f"**{nombre}** ({peso}): {valor:.1f}/100")
+
+    with st.expander("ℹ️ ¿Cómo se calcula el score de Dividend ETFs?"):
+        st.markdown("""
+        A diferencia de los ETFs de índices (S&P 500, Nasdaq), los Dividend ETFs se evalúan con criterios específicos de income investing:
+
+        - **DY actual vs histórico (35%)**: si el yield actual está arriba de su promedio 3y, el precio está atractivo
+        - **Drawdown vs máximo (25%)**: caídas generan oportunidades de entrada
+        - **Balance CAGR + DY (15%)**: total return esperado (apreciación + income)
+        - **Momentum 12-1m (10%)**: confirmación de tendencia
+        - **Dividend Growth Rate (15%)**: premio a ETFs donde los dividendos crecen consistentemente
+
+        Multiplicadores: misma lógica que ETFs de índices (0.5x CARO, 1.0x NEUTRAL, 1.5x ATRACTIVO, 2.5x OPORTUNIDAD).
+        """)
+
+else:
+    st.warning("Módulo de Dividend ETFs no disponible. Verifica que dividend_etf_signal.py esté en el repo.")
+
+
+# Footer
+st.divider()
+st.caption("Value Signal System v2.2 · Datos: Yahoo Finance + Shiller Online + BCS · IA: Groq Llama 3.3")
