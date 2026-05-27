@@ -397,40 +397,103 @@ if seccion == "🇨🇱 Acciones Chilenas":
         ),
     )
 
-    # Construir filas como dicts para el dataframe
-    filas = []
+
+
+
+# Construir tabla HTML custom con anchos compactos y tipografia mejorada
+    filas_html = []
     for a in acciones_ordenadas:
         evaluacion = a.get("evaluacion") or {}
         dy = a.get("dy") or {}
-        filas.append({
-            "Status": f"{evaluacion.get('emoji', '⚪')} {evaluacion.get('status', 'Sin datos')}",
-            "Ticker": a.get("ticker", ""),
-            "DY 3y": dy.get("dy_pct") if dy.get("dy_pct") is not None else 0,
-            "CAGR 3y": (a.get("cagr_3y") * 100) if a.get("cagr_3y") is not None else None,
-            "Benchmark": f"{a.get('benchmark_min_pct', 0):.0f}-{a.get('benchmark_max_pct', 0):.0f}%",
-            "vs Bench": evaluacion.get("vs_benchmark_pp") if evaluacion.get("vs_benchmark_pp") is not None else 0,
-        })
 
-    df_acciones = pd.DataFrame(filas)
+        emoji = evaluacion.get("emoji", "")
+        status = evaluacion.get("status", "Sin datos")
+        ticker = a.get("ticker", "")
+        sector = a.get("sector", "")
+        dy_pct = dy.get("dy_pct")
+        cagr_3y = a.get("cagr_3y")
+        bench_min = a.get("benchmark_min_pct", 0)
+        bench_max = a.get("benchmark_max_pct", 0)
+        vs_bench = evaluacion.get("vs_benchmark_pp")
 
-    # Mostrar tabla con formato
-    st.dataframe(
-        df_acciones,
-        use_container_width=True,
-        hide_index=True,
-        column_config={
-            "Status": st.column_config.TextColumn("Status", width="medium"),
-            "Ticker": st.column_config.TextColumn("Ticker", width="small"),
-            "Sector": st.column_config.TextColumn("Sector", width="small"),
-            "Clasif.": st.column_config.TextColumn("Clasif.", width="small"),
-            "Precio CLP": st.column_config.NumberColumn("Precio CLP", format="$%d"),
-            "DY 3y": st.column_config.NumberColumn("DY 3y", format="%.2f%%", width="small"),
-            "CAGR 3y": st.column_config.NumberColumn("CAGR 3y", format="%.1f%%", width="small", help="Crecimiento 	    anual compuesto del precio (3 años, fuente: BCS)"),
-            "Benchmark": st.column_config.TextColumn("Benchmark", width="small"),
-            "vs Bench": st.column_config.NumberColumn("vs Bench", format="%+.2f pp", width="small"),
-        },
-    )
+        dy_str = f"{dy_pct:.2f}%" if dy_pct is not None else "-"
+        cagr_str = f"{cagr_3y*100:.1f}%" if cagr_3y is not None else "-"
+        bench_str = f"{bench_min:.0f}-{bench_max:.0f}%"
+        vs_bench_str = f"{vs_bench:+.2f} pp" if vs_bench is not None else "-"
 
+        # Color de vs Bench segun signo
+        if vs_bench is not None and vs_bench > 0:
+            vs_bench_color = "#16a34a"
+        elif vs_bench is not None and vs_bench < 0:
+            vs_bench_color = "#dc2626"
+        else:
+            vs_bench_color = "inherit"
+
+        filas_html.append(f"""
+        <tr>
+          <td class="status-cell">{emoji} {status}</td>
+          <td class="ticker-cell"><b>{ticker}</b></td>
+          <td class="sector-cell">{sector}</td>
+          <td class="num-cell">{dy_str}</td>
+          <td class="num-cell">{cagr_str}</td>
+          <td class="bench-cell">{bench_str}</td>
+          <td class="num-cell" style="color: {vs_bench_color};">{vs_bench_str}</td>
+        </tr>
+        """)
+
+    tabla_html = f"""
+    <style>
+      .watchlist-table {{
+        width: 100%;
+        border-collapse: collapse;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 14px;
+      }}
+      .watchlist-table thead th {{
+        background: #f3f4f6;
+        font-weight: 700;
+        font-size: 15px;
+        text-align: left;
+        padding: 10px 8px;
+        border-bottom: 2px solid #d1d5db;
+        white-space: nowrap;
+      }}
+      .watchlist-table thead th.num-header {{
+        text-align: center;
+      }}
+      .watchlist-table tbody td {{
+        padding: 8px;
+        border-bottom: 1px solid #e5e7eb;
+        white-space: nowrap;
+      }}
+      .watchlist-table tbody tr:hover {{
+        background: #f9fafb;
+      }}
+      .status-cell {{ text-align: left; }}
+      .ticker-cell {{ text-align: left; }}
+      .sector-cell {{ text-align: left; color: #6b7280; }}
+      .num-cell {{ text-align: center; font-variant-numeric: tabular-nums; }}
+      .bench-cell {{ text-align: center; color: #6b7280; }}
+    </style>
+    <table class="watchlist-table">
+      <thead>
+        <tr>
+          <th>Status</th>
+          <th>Ticker</th>
+          <th>Sector</th>
+          <th class="num-header">DY 3y</th>
+          <th class="num-header">CAGR 3y</th>
+          <th class="num-header">Benchmark</th>
+          <th class="num-header">vs Bench</th>
+        </tr>
+      </thead>
+      <tbody>
+        {''.join(filas_html)}
+      </tbody>
+    </table>
+    """
+    st.markdown(tabla_html, unsafe_allow_html=True)
+    
     # ============================================================
     # DETALLE POR ACCIÓN (expander por cada una)
     # ============================================================
