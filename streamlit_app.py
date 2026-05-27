@@ -492,7 +492,8 @@ if seccion == "🇨🇱 Acciones Chilenas":
       </tbody>
     </table>
     """
-    st.markdown(tabla_html, unsafe_allow_html=True)
+    import textwrap
+    st.markdown(textwrap.dedent(tabla_html), unsafe_allow_html=True)
     
     # ============================================================
     # DETALLE POR ACCIÓN (expander por cada una)
