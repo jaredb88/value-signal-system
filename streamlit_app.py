@@ -405,10 +405,8 @@ if seccion == "🇨🇱 Acciones Chilenas":
         filas.append({
             "Status": f"{evaluacion.get('emoji', '⚪')} {evaluacion.get('status', 'Sin datos')}",
             "Ticker": a.get("ticker", ""),
-            "Sector": a.get("sector", ""),
-            "Clasif.": a.get("clasificacion", ""),
-            "Precio CLP": a.get("precio_actual_clp") or 0,
             "DY 3y": dy.get("dy_pct") if dy.get("dy_pct") is not None else 0,
+            "CAGR 3y": (a.get("cagr_3y") * 100) if a.get("cagr_3y") is not None else None,
             "Benchmark": f"{a.get('benchmark_min_pct', 0):.0f}-{a.get('benchmark_max_pct', 0):.0f}%",
             "vs Bench": evaluacion.get("vs_benchmark_pp") if evaluacion.get("vs_benchmark_pp") is not None else 0,
         })
@@ -426,7 +424,8 @@ if seccion == "🇨🇱 Acciones Chilenas":
             "Sector": st.column_config.TextColumn("Sector", width="small"),
             "Clasif.": st.column_config.TextColumn("Clasif.", width="small"),
             "Precio CLP": st.column_config.NumberColumn("Precio CLP", format="$%d"),
-            "DY 3y": st.column_config.NumberColumn("DY 3y", format="%.2f%%"),
+	    "DY 3y": st.column_config.NumberColumn("DY 3y", format="%.2f%%"),
+            "CAGR 3y": st.column_config.NumberColumn("CAGR 3y", format="%.1f%%", help="Crecimiento anual compuesto 	    del precio (3 años, fuente: BCS)"),
             "Benchmark": st.column_config.TextColumn("Benchmark", width="small"),
             "vs Bench": st.column_config.NumberColumn("vs Bench", format="%+.2f pp"),
         },
@@ -479,6 +478,38 @@ if seccion == "🇨🇱 Acciones Chilenas":
                     st.caption(f"Años usados: **{dy.get('anos_usados', 0)}** (sin año actual)")
                     if dy.get("advertencia"):
                         st.caption(f"⚠️ {dy['advertencia']}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		# CAGR (apreciación de precio desde BCS)
+                cagr_3y = a.get("cagr_3y")
+                cagr_5y = a.get("cagr_5y")
+                cagr_10y = a.get("cagr_10y")
+                if cagr_3y is not None or cagr_5y is not None:
+                    st.markdown("**📈 Apreciación de precio (CAGR)**")
+                    cagr_lines = []
+                    if cagr_3y is not None:
+                        cagr_lines.append(f"3 años: **{cagr_3y*100:.2f}%** anual")
+                    if cagr_5y is not None:
+                        cagr_lines.append(f"5 años: **{cagr_5y*100:.2f}%** anual")
+                    if cagr_10y is not None:
+                        cagr_lines.append(f"10 años: **{cagr_10y*100:.2f}%** anual")
+                    st.caption(" · ".join(cagr_lines))
+                    if cagr_3y is not None and dy.get("dy_pct") is not None:
+                        rent_total = cagr_3y*100 + dy.get("dy_pct", 0)
+                        st.caption(f"Rentabilidad total estimada 3y: **{rent_total:.2f}%** anual (CAGR + DY)")
 
                 # Indicadores CMF
                 cmf = a.get("cmf")
