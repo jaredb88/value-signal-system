@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-05-27T02:16:54.906798",
-  "duracion_segundos": 81.193889,
+  "fecha_actualizacion": "2026-05-27T02:39:39.010526",
+  "duracion_segundos": 88.962305,
   "n_acciones": 11,
   "acciones": [
     {
@@ -30,7 +30,7 @@
       "cagr_10y": 0.1035162975579007,
       "evaluacion": {
         "status": "Sobre benchmark",
-        "emoji": "ðŸŸ¢",
+        "emoji": "🟢",
         "vs_benchmark_pp": 0.85
       },
       "cmf": {
@@ -156,7 +156,7 @@
       "cagr_10y": 0.06763700941380524,
       "evaluacion": {
         "status": "Cerca",
-        "emoji": "ðŸŸ ",
+        "emoji": "🟠",
         "vs_benchmark_pp": -1.61
       },
       "cmf": {
@@ -282,7 +282,7 @@
       "cagr_10y": null,
       "evaluacion": {
         "status": "En rango",
-        "emoji": "ðŸŸ¡",
+        "emoji": "🟡",
         "vs_benchmark_pp": 0.27
       },
       "cmf": {
@@ -408,7 +408,7 @@
       "cagr_10y": -0.008249946073146108,
       "evaluacion": {
         "status": "Bajo benchmark",
-        "emoji": "ðŸ”´",
+        "emoji": "🔴",
         "vs_benchmark_pp": -3.72
       },
       "cmf": {
@@ -534,7 +534,7 @@
       "cagr_10y": -0.02502728983098368,
       "evaluacion": {
         "status": "Bajo benchmark",
-        "emoji": "ðŸ”´",
+        "emoji": "🔴",
         "vs_benchmark_pp": -2.46
       },
       "cmf": {
@@ -660,7 +660,7 @@
       "cagr_10y": -0.014729176513118003,
       "evaluacion": {
         "status": "Cerca",
-        "emoji": "ðŸŸ ",
+        "emoji": "🟠",
         "vs_benchmark_pp": -1.99
       },
       "cmf": {
@@ -785,7 +785,7 @@
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
-        "emoji": "ðŸ”´",
+        "emoji": "🔴",
         "vs_benchmark_pp": -1.88
       },
       "cmf": {
@@ -911,7 +911,7 @@
       "cagr_10y": null,
       "evaluacion": {
         "status": "Cerca",
-        "emoji": "ðŸŸ ",
+        "emoji": "🟠",
         "vs_benchmark_pp": -1.89
       },
       "cmf": {
@@ -1037,7 +1037,7 @@
       "cagr_10y": 0.10452804361108092,
       "evaluacion": {
         "status": "Sobre benchmark",
-        "emoji": "ðŸŸ¢",
+        "emoji": "🟢",
         "vs_benchmark_pp": 0.65
       },
       "cmf": {
@@ -1163,7 +1163,7 @@
       "cagr_10y": 0.1235936114151579,
       "evaluacion": {
         "status": "Sobre benchmark",
-        "emoji": "ðŸŸ¢",
+        "emoji": "🟢",
         "vs_benchmark_pp": 1.33
       },
       "cmf": {
@@ -1289,7 +1289,7 @@
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
-        "emoji": "ðŸ”´",
+        "emoji": "🔴",
         "vs_benchmark_pp": -4.38
       },
       "cmf": {

@@ -235,7 +235,7 @@ def evaluar_vs_benchmark(dy_pct, benchmark_min, benchmark_max):
     if dy_pct is None:
         return {
             "status": "Sin datos",
-            "emoji": "âšª",
+            "emoji": "⚪",
             "vs_benchmark_pp": None,
         }
 
@@ -245,13 +245,13 @@ def evaluar_vs_benchmark(dy_pct, benchmark_min, benchmark_max):
     diff_pp = (dy_decimal - benchmark_medio) * 100  # diferencia en puntos porcentuales
 
     if dy_decimal >= benchmark_max:
-        return {"status": "Sobre benchmark", "emoji": "ðŸŸ¢", "vs_benchmark_pp": round(diff_pp, 2)}
+        return {"status": "Sobre benchmark", "emoji": "🟢", "vs_benchmark_pp": round(diff_pp, 2)}
     elif dy_decimal >= benchmark_min:
-        return {"status": "En rango", "emoji": "ðŸŸ¡", "vs_benchmark_pp": round(diff_pp, 2)}
+        return {"status": "En rango", "emoji": "🟡", "vs_benchmark_pp": round(diff_pp, 2)}
     elif dy_decimal >= benchmark_min * 0.8:
-        return {"status": "Cerca", "emoji": "ðŸŸ ", "vs_benchmark_pp": round(diff_pp, 2)}
+        return {"status": "Cerca", "emoji": "🟠", "vs_benchmark_pp": round(diff_pp, 2)}
     else:
-        return {"status": "Bajo benchmark", "emoji": "ðŸ”´", "vs_benchmark_pp": round(diff_pp, 2)}
+        return {"status": "Bajo benchmark", "emoji": "🔴", "vs_benchmark_pp": round(diff_pp, 2)}
 
 
 def _valor_mas_reciente(item):
