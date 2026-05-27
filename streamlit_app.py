@@ -82,13 +82,13 @@ st.markdown("""
 .score-max-plain { font-size: 1.4rem; opacity: 0.5; font-weight: 500; }
 .zone-label-plain { font-size: 1.3rem; font-weight: bold; margin: 0.3rem 0 0.8rem 0; color: inherit; }
 
-/* Summary card - vista compacta para resumen arriba */
-.summary-card { padding: 0.3rem 0; margin: 0.3rem 0; }
-.summary-ticker { font-size: 1.2rem; font-weight: bold; color: inherit; margin-bottom: 0.1rem; }
-.summary-sub { font-size: 0.8rem; color: rgba(128,128,128,0.85); margin-bottom: 0.5rem; }
-.summary-score { font-size: 2.2rem; font-weight: bold; line-height: 1; color: inherit; }
-.summary-score-max { font-size: 0.9rem; opacity: 0.5; font-weight: 500; }
-.summary-zone { font-size: 1rem; font-weight: bold; margin: 0.2rem 0 0.5rem 0; color: inherit; }
+/* Summary card - vista compacta para resumen arriba (2x2) */
+.summary-card { padding: 0.5rem 0; margin: 0.5rem 0; }
+.summary-ticker { font-size: 1.6rem; font-weight: bold; color: inherit; margin-bottom: 0.2rem; }
+.summary-sub { font-size: 1rem; color: rgba(128,128,128,0.85); margin-bottom: 0.8rem; }
+.summary-score { font-size: 3rem; font-weight: bold; line-height: 1; color: inherit; }
+.summary-score-max { font-size: 1.2rem; opacity: 0.5; font-weight: 500; }
+.summary-zone { font-size: 1.2rem; font-weight: bold; margin: 0.3rem 0 0.6rem 0; color: inherit; }
 @media (max-width: 768px) {
     .big-score { font-size: 2.5rem; }
     .ticker-name { font-size: 1.3rem; }
@@ -363,10 +363,10 @@ if DIVIDEND_ETFS_AVAILABLE:
                 st.warning(f"No se pudo analizar {ticker_div}: {e}")
 
 
-def render_summary_card(col, ticker_label, sub_label, score, zona, mult, aporte_str, precio_str):
+def render_summary_card(col, ticker_label, sub_label, score, zona):
     """
     Card compacta para vista resumen arriba.
-    Diseñada para mostrar 4 ETFs en línea con info esencial.
+    Solo muestra: ticker, sub-label, score, zona y barra. Sin métricas detalladas.
     """
     emoji = {"CARO": "🔴", "NEUTRAL": "🟡", "ATRACTIVO": "🟢", "OPORTUNIDAD": "🟢🟢"}.get(zona, "")
     score_pct = max(0, min(100, score))
@@ -384,69 +384,53 @@ def render_summary_card(col, ticker_label, sub_label, score, zona, mult, aporte_
                 <div class="scale-segment scale-oportunidad"></div>
             </div>
             <div class="scale-marker">
-                <div class="scale-marker-dot" style="left:{score_pct}%; width:14px; height:14px; top:-4px; border-width:2px;"></div>
+                <div class="scale-marker-dot" style="left:{score_pct}%; width:16px; height:16px; top:-5px; border-width:2px;"></div>
             </div>
         </div>''', unsafe_allow_html=True)
 
-        # Métricas compactas
-        mc1, mc2, mc3 = st.columns(3)
-        mc1.metric("Mult.", f"{mult}x")
-        mc2.metric("Aporte", aporte_str)
-        mc3.metric("Precio", precio_str)
-
 
 # ============================================================
-# SECCIÓN RESUMEN - 4 ETFs en línea
+# SECCIÓN RESUMEN - 4 ETFs en 2x2
 # ============================================================
 st.subheader("📋 Resumen de inversiones")
 st.caption("Vista rápida de todos los ETFs. Detalle completo más abajo.")
 
-sum_col1, sum_col2, sum_col3, sum_col4 = st.columns(4)
+# Fila 1: Índices Bursátiles
+sum_row1_col1, sum_row1_col2 = st.columns(2)
 
-# Card 1: S&P 500
 mult_sp = MULT.get(last_sp['zona'], 1.0)
-aporte_sp = APORTE_SP500 * mult_sp
 render_summary_card(
-    sum_col1, "S&P 500", "CFISPETF",
-    last_sp['score'], last_sp['zona'], mult_sp,
-    f"${aporte_sp:.0f}",
-    f"${etf_sp['current']:,.0f} CLP" if etf_sp else "N/A",
+    sum_row1_col1, "S&P 500", "CFISPETF · Índice Bursátil",
+    last_sp['score'], last_sp['zona'],
 )
 
-# Card 2: Nasdaq 100
 mult_nq = MULT.get(last_nq['zona'], 1.0)
-aporte_nq = APORTE_NASDAQ * mult_nq
 render_summary_card(
-    sum_col2, "Nasdaq 100", "CFINASDAQ",
-    last_nq['score'], last_nq['zona'], mult_nq,
-    f"${aporte_nq:.0f}",
-    f"${etf_nq['current']:,.0f} CLP" if etf_nq else "N/A",
+    sum_row1_col2, "Nasdaq 100", "CFINASDAQ · Índice Bursátil",
+    last_nq['score'], last_nq['zona'],
 )
 
-# Card 3: SCHD
+# Fila 2: Dividend ETFs
+sum_row2_col1, sum_row2_col2 = st.columns(2)
+
 if "SCHD" in div_results:
     r_schd = div_results["SCHD"]
     render_summary_card(
-        sum_col3, "SCHD", "Dividend Growth",
-        r_schd['score'], r_schd['zona'], r_schd['multiplicador'],
-        f"${r_schd['aporte_sugerido_usd']:.0f} USD",
-        f"${r_schd['precio_usd']:.2f}",
+        sum_row2_col1, "SCHD", "Dividend Growth",
+        r_schd['score'], r_schd['zona'],
     )
 else:
-    with sum_col3:
+    with sum_row2_col1:
         st.info("SCHD no disponible")
 
-# Card 4: JEPQ
 if "JEPQ" in div_results:
     r_jepq = div_results["JEPQ"]
     render_summary_card(
-        sum_col4, "JEPQ", "Covered Call Income",
-        r_jepq['score'], r_jepq['zona'], r_jepq['multiplicador'],
-        f"${r_jepq['aporte_sugerido_usd']:.0f} USD",
-        f"${r_jepq['precio_usd']:.2f}",
+        sum_row2_col2, "JEPQ", "Covered Call Income",
+        r_jepq['score'], r_jepq['zona'],
     )
 else:
-    with sum_col4:
+    with sum_row2_col2:
         st.info("JEPQ no disponible")
 
 
