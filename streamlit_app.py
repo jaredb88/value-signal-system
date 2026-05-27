@@ -521,63 +521,25 @@ with tab2:
                 from news_context import fetch_news_context
                 news = fetch_news_context(days_back=7)
 
-                # Enrich con Groq si está disponible (con debug visible)
-                debug_msgs = []
+                # Enrich con Groq si está disponible
                 try:
                     import os
-
-                    # 1. Verificar si st.secrets tiene la key
-                    has_secret = 'GROQ_API_KEY' in st.secrets
-                    debug_msgs.append(f"st.secrets tiene GROQ_API_KEY: {has_secret}")
-
-                    if has_secret:
+                    # En Streamlit Cloud, leer la API key desde st.secrets
+                    if 'GROQ_API_KEY' in st.secrets:
                         key_value = st.secrets['GROQ_API_KEY']
+                        # Limpiar duplicado "gsk_gsk_" si existe (bug histórico)
+                        if key_value.startswith('gsk_gsk_'):
+                            key_value = key_value[4:]
                         os.environ['GROQ_API_KEY'] = key_value
-                        debug_msgs.append(f"Key cargada (len={len(key_value)}, prefix={key_value[:10]}...)")
 
-                    # 2. Verificar import del modulo
-                    try:
-                        from groq_interpreter import load_api_key, query_groq, interpret_news_item
-                        debug_msgs.append("OK Import de groq_interpreter")
-                    except Exception as ie:
-                        debug_msgs.append(f"ERROR import: {ie}")
-                        raise
-
-                    # 3. Verificar load_api_key
-                    loaded_key = load_api_key()
-                    if loaded_key:
-                        debug_msgs.append(f"OK load_api_key devolvio key (prefix={loaded_key[:10]}...)")
-                    else:
-                        debug_msgs.append("ERROR load_api_key devolvio None")
-
-                    # 4. Hacer una prueba directa con UNA noticia
-                    if loaded_key and news.get('items'):
-                        test_item = news['items'][0]
-                        debug_msgs.append(f"Probando con: {test_item['title'][:60]}...")
-                        result = interpret_news_item(test_item, loaded_key)
-                        if result:
-                            debug_msgs.append(f"OK Resultado: traduccion={result.get('traduccion', 'NONE')[:50] if result.get('traduccion') else 'NONE'}, impacto={result.get('impacto', 'NONE')[:50] if result.get('impacto') else 'NONE'}")
-                        else:
-                            debug_msgs.append("ERROR interpret_news_item devolvio None")
-
-                    # 5. Si todo lo anterior OK, hacer el batch real
-                    if loaded_key:
+                    # Procesar con IA si hay API key disponible
+                    if os.environ.get('GROQ_API_KEY'):
                         from news_context import enrich_with_groq
-                        with st.spinner("Procesando con IA (esto toma 20-30 seg)..."):
-                            enriched = enrich_with_groq(news, max_items=max_news, verbose=False)
-                            debug_msgs.append(f"enrich_with_groq retorno: {enriched}")
-                            # Verificar si se enriquecio
-                            n_with_traduccion = sum(1 for it in news['items'][:max_news] if it.get('traduccion'))
-                            debug_msgs.append(f"Items con traduccion: {n_with_traduccion}/{max_news}")
-                except Exception as e:
-                    import traceback
-                    debug_msgs.append(f"EXCEPTION: {e}")
-                    debug_msgs.append(traceback.format_exc())
-
-                # Mostrar debug info visible
-                with st.expander("🔧 Debug info (temporal)", expanded=True):
-                    for msg in debug_msgs:
-                        st.code(msg)
+                        with st.spinner("Procesando con IA (~20-30s)..."):
+                            enrich_with_groq(news, max_items=max_news, verbose=False)
+                except Exception:
+                    # Si Groq falla, mostramos las noticias sin traducción
+                    pass
             except Exception as e:
                 st.error(f"Error cargando noticias: {e}")
                 news = None
