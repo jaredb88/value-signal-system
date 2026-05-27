@@ -429,71 +429,33 @@ if seccion == "🇨🇱 Acciones Chilenas":
         else:
             vs_bench_color = "inherit"
 
-        filas_html.append(f"""
-        <tr>
-          <td class="status-cell">{emoji} {status}</td>
-          <td class="ticker-cell"><b>{ticker}</b></td>
-          <td class="sector-cell">{sector}</td>
-          <td class="num-cell">{dy_str}</td>
-          <td class="num-cell">{cagr_str}</td>
-          <td class="bench-cell">{bench_str}</td>
-          <td class="num-cell" style="color: {vs_bench_color};">{vs_bench_str}</td>
-        </tr>
-        """)
+        filas_html.append(f'<tr><td class="status-cell">{emoji} {status}</td><td class="ticker-cell"><b>{ticker}</b></td><td class="sector-cell">{sector}</td><td class="num-cell">{dy_str}</td><td class="num-cell">{cagr_str}</td><td class="bench-cell">{bench_str}</td><td class="num-cell" style="color: {vs_bench_color};">{vs_bench_str}</td></tr>')
 
-    tabla_html = f"""
-    <style>
-      .watchlist-table {{
-        width: 100%;
-        border-collapse: collapse;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        font-size: 14px;
-      }}
-      .watchlist-table thead th {{
-        background: #f3f4f6;
-        font-weight: 700;
-        font-size: 15px;
-        text-align: left;
-        padding: 10px 8px;
-        border-bottom: 2px solid #d1d5db;
-        white-space: nowrap;
-      }}
-      .watchlist-table thead th.num-header {{
-        text-align: center;
-      }}
-      .watchlist-table tbody td {{
-        padding: 8px;
-        border-bottom: 1px solid #e5e7eb;
-        white-space: nowrap;
-      }}
-      .watchlist-table tbody tr:hover {{
-        background: #f9fafb;
-      }}
-      .status-cell {{ text-align: left; }}
-      .ticker-cell {{ text-align: left; }}
-      .sector-cell {{ text-align: left; color: #6b7280; }}
-      .num-cell {{ text-align: center; font-variant-numeric: tabular-nums; }}
-      .bench-cell {{ text-align: center; color: #6b7280; }}
-    </style>
-    <table class="watchlist-table">
-      <thead>
-        <tr>
-          <th>Status</th>
-          <th>Ticker</th>
-          <th>Sector</th>
-          <th class="num-header">DY 3y</th>
-          <th class="num-header">CAGR 3y</th>
-          <th class="num-header">Benchmark</th>
-          <th class="num-header">vs Bench</th>
-        </tr>
-      </thead>
-      <tbody>
-        {''.join(filas_html)}
-      </tbody>
-    </table>
-    """
-    import textwrap
-    st.markdown(textwrap.dedent(tabla_html), unsafe_allow_html=True)
+    tabla_html = (
+        '<style>'
+        '.watchlist-table { width: 100%; border-collapse: collapse; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; }'
+        '.watchlist-table thead th { background: #f3f4f6; font-weight: 700; font-size: 15px; text-align: left; padding: 10px 8px; border-bottom: 2px solid #d1d5db; white-space: nowrap; }'
+        '.watchlist-table thead th.num-header { text-align: center; }'
+        '.watchlist-table tbody td { padding: 8px; border-bottom: 1px solid #e5e7eb; white-space: nowrap; }'
+        '.watchlist-table tbody tr:hover { background: #f9fafb; }'
+        '.status-cell { text-align: left; }'
+        '.ticker-cell { text-align: left; }'
+        '.sector-cell { text-align: left; color: #6b7280; }'
+        '.num-cell { text-align: center; font-variant-numeric: tabular-nums; }'
+        '.bench-cell { text-align: center; color: #6b7280; }'
+        '</style>'
+        '<table class="watchlist-table">'
+        '<thead><tr>'
+        '<th>Status</th><th>Ticker</th><th>Sector</th>'
+        '<th class="num-header">DY 3y</th>'
+        '<th class="num-header">CAGR 3y</th>'
+        '<th class="num-header">Benchmark</th>'
+        '<th class="num-header">vs Bench</th>'
+        '</tr></thead>'
+        '<tbody>' + ''.join(filas_html) + '</tbody>'
+        '</table>'
+    )
+    st.markdown(tabla_html, unsafe_allow_html=True)
     
     # ============================================================
     # DETALLE POR ACCIÓN (expander por cada una)
