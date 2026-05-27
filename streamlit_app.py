@@ -568,12 +568,29 @@ if seccion == "🇨🇱 Acciones Chilenas":
         - Se promedian los **últimos 3 años completos** SIN incluir el año actual
         - DY = (promedio anual) / (precio actual BCS) × 100
 
-        **Benchmarks por clasificación:**
-        - **DGI** (Dividend Growth Investing): G = 10-15% → tasa exigencia 6-7%
-        - **Vaca Lechera**: G < 10% → tasa exigencia 8-9%
-        - **Crecimiento**: G > 15% → no apta para estrategia dividendera
 
-        **Clasificación G** = ROE × (1 - Payout). Se obtiene de los datos CMF oficiales.
+
+
+
+
+
+
+        **Benchmarks por clasificación (filosofía Jared):**
+
+        | Tipo | G | ROE | PER | P/B | Payout | Dividendo | Tasa exigencia |
+        |---|---|---|---|---|---|---|---|
+        | 🐮 **Vaca Lechera** | <10% | <12% | 8-14 | ≤1 (ROE<10%) · 1-2 (ROE 10-15%) | >80% | Estable, no crece | 8-9% |
+        | 📈 **DGI** | 10-15% | 12-18% | 15-25 | 1-2 (ROE 10-15%) · 2-2.5 (ROE>15%) | 30-80% | Crece sostenidamente | 6-7% |
+        | 🚀 **Crecimiento** | >15% | >15% | 25+ | >2 | ~0% | Reinvierte, no paga | No apta dividendos |
+
+        **Cómo se usa:**
+        - **G (crecimiento)** = ROE × (1 - Payout). Determina en qué grupo cae la acción.
+        - **Tasa exigencia** = yield objetivo para considerar compra (DY actual ≥ tasa).
+        - Las **Vacas Lecheras** exigen yield más alto porque no crecen; el retorno viene casi 100% del dividendo.
+        - Las **DGI** aceptan yield más bajo porque el dividendo crece año a año, sumando rentabilidad.
+        - Las **Crecimiento** no entran en esta estrategia: pagan poco o nada, su retorno es por apreciación.
+
+        Los benchmarks por ticker se cargan desde los datos CMF oficiales (ROE, payout) y se cruzan con esta tabla.
 
         **Status visual:**
         - 🟢 **Sobre benchmark**: DY actual ≥ máximo del rango (oportunidad)
