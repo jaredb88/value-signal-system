@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-05-27T12:11:42.048788",
-  "duracion_segundos": 89.889257,
+  "fecha_actualizacion": "2026-05-27T12:33:46.608617",
+  "duracion_segundos": 92.072525,
   "n_acciones": 11,
   "acciones": [
     {
@@ -34,16 +34,16 @@
         "vs_benchmark_pp": 0.79
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "03/2026",
         "tipo_balance": "INDIVIDUAL",
         "moneda": "CLP",
         "unidad": "Miles",
-        "roe_pct": 41.53,
-        "margen_neto_pct": 55.72,
-        "razon_endeudamiento_pct": 49.57,
-        "razon_corriente": 1.04,
-        "capital_trabajo": 5894518.0,
-        "patrimonio_total": 337439248.0
+        "roe_pct": 7.56,
+        "margen_neto_pct": 46.95,
+        "razon_endeudamiento_pct": 45.24,
+        "razon_corriente": 0.95,
+        "capital_trabajo": -8196260.0,
+        "patrimonio_total": 423201664.0
       },
       "dividendos_recientes": [
         {
@@ -160,16 +160,16 @@
         "vs_benchmark_pp": -1.68
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "12/2025",
         "tipo_balance": "INDIVIDUAL",
         "moneda": "CLP",
         "unidad": "Miles",
-        "roe_pct": 33.73,
-        "margen_neto_pct": 36.67,
-        "razon_endeudamiento_pct": 59.6,
-        "razon_corriente": 1.49,
-        "capital_trabajo": 17702685.0,
-        "patrimonio_total": 54867590.0
+        "roe_pct": 33.8,
+        "margen_neto_pct": 35.02,
+        "razon_endeudamiento_pct": 56.15,
+        "razon_corriente": 1.45,
+        "capital_trabajo": 16548748.0,
+        "patrimonio_total": 59035428.0
       },
       "dividendos_recientes": [
         {
@@ -286,16 +286,16 @@
         "vs_benchmark_pp": 0.27
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "03/2026",
         "tipo_balance": "INDIVIDUAL",
         "moneda": "CLP",
         "unidad": "Miles",
-        "roe_pct": 97.76,
-        "margen_neto_pct": 64.95,
-        "razon_endeudamiento_pct": 34.14,
-        "razon_corriente": 1.8,
-        "capital_trabajo": 41198103.0,
-        "patrimonio_total": 165514938.0
+        "roe_pct": null,
+        "margen_neto_pct": null,
+        "razon_endeudamiento_pct": null,
+        "razon_corriente": null,
+        "capital_trabajo": null,
+        "patrimonio_total": null
       },
       "dividendos_recientes": [
         {
@@ -412,16 +412,16 @@
         "vs_benchmark_pp": -3.72
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "12/2025",
         "tipo_balance": "INDIVIDUAL",
         "moneda": "CLP",
         "unidad": "Miles",
-        "roe_pct": 12.28,
-        "margen_neto_pct": 97.08,
-        "razon_endeudamiento_pct": 21.25,
-        "razon_corriente": 1.05,
-        "capital_trabajo": 47408.0,
-        "patrimonio_total": 35901328.0
+        "roe_pct": 7.85,
+        "margen_neto_pct": 96.67,
+        "razon_endeudamiento_pct": 20.1,
+        "razon_corriente": 0.97,
+        "capital_trabajo": -1241.0,
+        "patrimonio_total": 39711679.0
       },
       "dividendos_recientes": [
         {
@@ -538,16 +538,16 @@
         "vs_benchmark_pp": -2.46
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
         "moneda": "USD",
         "unidad": "Miles",
-        "roe_pct": 7.82,
-        "margen_neto_pct": 16.02,
-        "razon_endeudamiento_pct": 53.24,
-        "razon_corriente": 3.24,
-        "capital_trabajo": 829908.0,
-        "patrimonio_total": 3230396.0
+        "roe_pct": 0.75,
+        "margen_neto_pct": 5.97,
+        "razon_endeudamiento_pct": 55.17,
+        "razon_corriente": 3.1,
+        "capital_trabajo": 974541.0,
+        "patrimonio_total": 3271628.0
       },
       "dividendos_recientes": [
         {
@@ -641,11 +641,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial chilena de Enel. Principal generadora hidroelectrica del pais. ROE 19%, payout 62%, G=7%.",
-      "precio_actual_clp": 524,
+      "precio_actual_clp": 525,
       "razon_social": "ENEL GENERACION CHILE S.A.",
-      "variacion_pct": 1.49,
+      "variacion_pct": 1.68,
       "dy": {
-        "dy_pct": 6.41,
+        "dy_pct": 6.4,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 41.9,
@@ -655,25 +655,25 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": 0.28834279904628657,
-      "cagr_5y": 0.19330266035735333,
-      "cagr_10y": -0.013271442886279017,
+      "cagr_3y": 0.289161834739903,
+      "cagr_5y": 0.193757772106949,
+      "cagr_10y": -0.0130832974285513,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
-        "vs_benchmark_pp": -2.09
+        "vs_benchmark_pp": -2.1
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
-        "moneda": "CLP",
+        "moneda": "USD",
         "unidad": "Miles",
-        "roe_pct": 17.94,
-        "margen_neto_pct": 16.3,
-        "razon_endeudamiento_pct": 43.06,
-        "razon_corriente": 1.53,
-        "capital_trabajo": 622968486.0,
-        "patrimonio_total": 2737300055.0
+        "roe_pct": 5.4,
+        "margen_neto_pct": 23.13,
+        "razon_endeudamiento_pct": 35.95,
+        "razon_corriente": 1.31,
+        "capital_trabajo": 380498.0,
+        "patrimonio_total": 2947734.0
       },
       "dividendos_recientes": [
         {
@@ -789,16 +789,16 @@
         "vs_benchmark_pp": -1.88
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "12/2025",
         "tipo_balance": "CONSOLIDADO",
         "moneda": "CLP",
         "unidad": "Miles",
-        "roe_pct": 27.69,
-        "margen_neto_pct": 6.97,
-        "razon_endeudamiento_pct": 71.45,
-        "razon_corriente": 1.79,
-        "capital_trabajo": 100393368.0,
-        "patrimonio_total": 223869826.0
+        "roe_pct": 30.99,
+        "margen_neto_pct": 8.36,
+        "razon_endeudamiento_pct": 69.18,
+        "razon_corriente": 1.74,
+        "capital_trabajo": 100920267.0,
+        "patrimonio_total": 254699206.0
       },
       "dividendos_recientes": [
         {
@@ -915,16 +915,16 @@
         "vs_benchmark_pp": -1.94
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
         "moneda": "CLP",
         "unidad": "Miles",
-        "roe_pct": 13.47,
-        "margen_neto_pct": 24.84,
-        "razon_endeudamiento_pct": 40.84,
-        "razon_corriente": 1.79,
-        "capital_trabajo": 158420791.0,
-        "patrimonio_total": 1631399760.0
+        "roe_pct": 1.13,
+        "margen_neto_pct": 11.12,
+        "razon_endeudamiento_pct": 43.38,
+        "razon_corriente": 0.99,
+        "capital_trabajo": -2847198.0,
+        "patrimonio_total": 1553085695.0
       },
       "dividendos_recientes": [
         {
@@ -1041,16 +1041,16 @@
         "vs_benchmark_pp": 0.65
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
         "moneda": "USD",
         "unidad": "Miles",
-        "roe_pct": 13.11,
-        "margen_neto_pct": 6.47,
-        "razon_endeudamiento_pct": 39.42,
-        "razon_corriente": 2.54,
-        "capital_trabajo": 62560.0,
-        "patrimonio_total": 67112.0
+        "roe_pct": 1.74,
+        "margen_neto_pct": 4.87,
+        "razon_endeudamiento_pct": 41.55,
+        "razon_corriente": 2.39,
+        "capital_trabajo": 62181.0,
+        "patrimonio_total": 66820.0
       },
       "dividendos_recientes": [
         {
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 4090.7,
+      "precio_actual_clp": 4099.9,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": -0.35,
+      "variacion_pct": -0.12,
       "dy": {
-        "dy_pct": 9.87,
+        "dy_pct": 9.84,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,25 +1158,25 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.12403959425210909,
-      "cagr_5y": 0.2391786406713461,
-      "cagr_10y": 0.12320432250075841,
+      "cagr_3y": 0.12488161978152168,
+      "cagr_5y": 0.2397355234276095,
+      "cagr_10y": 0.12345667629406498,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 1.37
+        "vs_benchmark_pp": 1.34
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "12/2025",
         "tipo_balance": "CONSOLIDADO",
         "moneda": "CLP",
         "unidad": "Miles",
-        "roe_pct": 3.93,
-        "margen_neto_pct": 12.32,
-        "razon_endeudamiento_pct": 74.66,
-        "razon_corriente": 4.46,
-        "capital_trabajo": 2688034481.0,
-        "patrimonio_total": 16881204675.0
+        "roe_pct": 4.2,
+        "margen_neto_pct": 12.26,
+        "razon_endeudamiento_pct": 76.08,
+        "razon_corriente": 3.57,
+        "capital_trabajo": 2582342214.0,
+        "patrimonio_total": 16192470869.0
       },
       "dividendos_recientes": [
         {
@@ -1270,11 +1270,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2455,
+      "precio_actual_clp": 2445.8,
       "razon_social": "CENCOSUD SHOPPING S.A.",
-      "variacion_pct": -0.61,
+      "variacion_pct": -0.98,
       "dy": {
-        "dy_pct": 4.14,
+        "dy_pct": 4.16,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 91.0,
@@ -1284,25 +1284,25 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.2473132818863164,
-      "cagr_5y": 0.12620131533660883,
+      "cagr_3y": 0.2457532484204883,
+      "cagr_5y": 0.12535596966318852,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -4.36
+        "vs_benchmark_pp": -4.34
       },
       "cmf": {
-        "periodo": "12/2024",
+        "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
         "moneda": "CLP",
         "unidad": "Miles",
-        "roe_pct": 9.42,
-        "margen_neto_pct": 75.58,
-        "razon_endeudamiento_pct": 33.95,
-        "razon_corriente": 1.77,
-        "capital_trabajo": 65996484.0,
-        "patrimonio_total": 2834499257.0
+        "roe_pct": 3.04,
+        "margen_neto_pct": 98.75,
+        "razon_endeudamiento_pct": 33.44,
+        "razon_corriente": 1.14,
+        "capital_trabajo": 15588435.0,
+        "patrimonio_total": 3074811583.0
       },
       "dividendos_recientes": [
         {

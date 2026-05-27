@@ -1,4 +1,4 @@
-﻿"""
+"""
 ACCIONES CHILENAS - WATCHLIST DIVIDENDERO
 ==========================================
 Sistema de analisis para watchlist de acciones chilenas dividenderas.
@@ -408,6 +408,18 @@ async def main():
 
     # Inicializar cliente BCS (singleton)
     bcs = BCSClient()
+
+    # Warm-up del browser: la primera llamada a Playwright tiende a fallar
+    # por race condition del listener de red. Hacemos un fetch dummy del
+    # primer ticker para calentar el browser antes del loop principal.
+    if WATCHLIST:
+        warmup_ticker = WATCHLIST[0]["ticker"]
+        log.info(f"Warm-up del browser con {warmup_ticker}...")
+        try:
+            await bcs.fetch_data_for_nemo(warmup_ticker)
+            log.info("Warm-up OK")
+        except Exception as e:
+            log.warning(f"Warm-up fallo (no critico): {e}")
 
     # Analizar todos los tickers (secuencial porque BCS usa el mismo browser)
     resultados = []
