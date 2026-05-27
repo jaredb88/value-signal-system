@@ -505,6 +505,24 @@ if seccion == "🇨🇱 Acciones Chilenas":
                     if dy.get("advertencia"):
                         st.caption(f"⚠️ {dy['advertencia']}")
 
+                # CAGR (apreciacion de precio desde BCS)
+                cagr_3y = a.get("cagr_3y")
+                cagr_5y = a.get("cagr_5y")
+                cagr_10y = a.get("cagr_10y")
+                if cagr_3y is not None or cagr_5y is not None:
+                    st.markdown("**📈 Apreciacion de precio (CAGR)**")
+                    cagr_lines = []
+                    if cagr_3y is not None:
+                        cagr_lines.append(f"3 anos: **{cagr_3y*100:.2f}%** anual")
+                    if cagr_5y is not None:
+                        cagr_lines.append(f"5 anos: **{cagr_5y*100:.2f}%** anual")
+                    if cagr_10y is not None:
+                        cagr_lines.append(f"10 anos: **{cagr_10y*100:.2f}%** anual")
+                    st.caption(" · ".join(cagr_lines))
+                    if cagr_3y is not None and dy.get("dy_pct") is not None:
+                        rent_total = cagr_3y*100 + dy.get("dy_pct", 0)
+                        st.caption(f"Rentabilidad total estimada 3y: **{rent_total:.2f}%** anual (CAGR + DY)")
+
 
 
 
