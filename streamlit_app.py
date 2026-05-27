@@ -107,6 +107,14 @@ header[data-testid="stHeader"] { height: 0; }
 # CONFIGURACION (sidebar)
 # ============================================================
 with st.sidebar:
+    st.title("🧭 Sección")
+    seccion = st.radio(
+        "Selecciona vista:",
+        ["📈 ETFs USA", "🇨🇱 Acciones Chilenas"],
+        label_visibility="collapsed",
+    )
+
+    st.divider()
     st.title("⚙️ Configuración")
     APORTE_SP500 = st.number_input("Aporte base S&P 500 (USD/mes)", value=140, min_value=0, step=10)
     APORTE_NASDAQ = st.number_input("Aporte base Nasdaq (USD/mes)", value=60, min_value=0, step=10)
@@ -295,7 +303,252 @@ def analyze_etf(daily, name, ticker, bcs_data=None, bcs_ticker=None):
     }
 
 # ============================================================
-# UI PRINCIPAL
+# UI PRINCIPAL - RUTEO POR SECCIÓN
+# ============================================================
+
+# Si el usuario eligió "Acciones Chilenas", mostrar esa vista y detener
+if seccion == "🇨🇱 Acciones Chilenas":
+    # ============================================================
+    # SECCIÓN: ACCIONES CHILENAS WATCHLIST
+    # ============================================================
+    st.title("🇨🇱 Acciones Chilenas — Watchlist Dividendero")
+    st.caption("Datos oficiales BCS + CMF Chile · Actualización cada 30 min")
+
+    import json as _json
+
+    # Cargar datos desde JSON
+    acciones_json_path = Path(__file__).parent / "acciones_chilenas.json"
+
+    if not acciones_json_path.exists():
+        st.error("⚠️ No se encontró acciones_chilenas.json. Asegúrate de que la Tarea Programada esté corriendo.")
+        st.stop()
+
+    try:
+        with open(acciones_json_path, "r", encoding="utf-8") as f:
+            data_acciones = _json.load(f)
+    except Exception as e:
+        st.error(f"⚠️ Error leyendo acciones_chilenas.json: {e}")
+        st.stop()
+
+    # Mostrar fecha de actualización
+    fecha_str = data_acciones.get("fecha_actualizacion", "")
+    if fecha_str:
+        try:
+            fecha_dt = datetime.fromisoformat(fecha_str)
+            ahora = datetime.now()
+            delta = ahora - fecha_dt
+            minutos = int(delta.total_seconds() / 60)
+            if minutos < 60:
+                freshness = f"hace {minutos} min"
+            elif minutos < 1440:
+                freshness = f"hace {minutos // 60}h {minutos % 60}min"
+            else:
+                freshness = f"hace {minutos // 1440} días"
+            st.caption(f"Última actualización: {fecha_dt.strftime('%Y-%m-%d %H:%M')} ({freshness})")
+        except Exception:
+            st.caption(f"Última actualización: {fecha_str}")
+
+    acciones = data_acciones.get("acciones", [])
+    if not acciones:
+        st.warning("No hay datos de acciones para mostrar.")
+        st.stop()
+
+    # ============================================================
+    # RESUMEN ESTADÍSTICO
+    # ============================================================
+    st.header("📊 Resumen del Watchlist")
+
+    n_total = len(acciones)
+    n_sobre = sum(1 for a in acciones if a.get("evaluacion", {}).get("status") == "Sobre benchmark")
+    n_rango = sum(1 for a in acciones if a.get("evaluacion", {}).get("status") == "En rango")
+    n_cerca = sum(1 for a in acciones if a.get("evaluacion", {}).get("status") == "Cerca")
+    n_bajo = sum(1 for a in acciones if a.get("evaluacion", {}).get("status") == "Bajo benchmark")
+
+    dys_validos = [a["dy"]["dy_pct"] for a in acciones if a.get("dy") and a["dy"].get("dy_pct") is not None]
+    dy_promedio = sum(dys_validos) / len(dys_validos) if dys_validos else 0
+
+    c1, c2, c3, c4, c5 = st.columns(5)
+    c1.metric("Total acciones", n_total)
+    c2.metric("🟢 Sobre benchmark", n_sobre)
+    c3.metric("🟡 En rango", n_rango)
+    c4.metric("🟠/🔴 Cerca o bajo", n_cerca + n_bajo)
+    c5.metric("DY promedio", f"{dy_promedio:.2f}%")
+
+    # ============================================================
+    # TABLA ORDENADA POR STATUS (oportunidades primero)
+    # ============================================================
+    st.header("📋 Watchlist")
+    st.caption("Ordenado por status: oportunidades (sobre benchmark) primero")
+
+    # Orden de prioridad por status
+    status_orden = {
+        "Sobre benchmark": 1,
+        "En rango": 2,
+        "Cerca": 3,
+        "Bajo benchmark": 4,
+        "Sin datos": 5,
+    }
+
+    acciones_ordenadas = sorted(
+        acciones,
+        key=lambda a: (
+            status_orden.get(a.get("evaluacion", {}).get("status", "Sin datos"), 99),
+            -(a.get("dy", {}).get("dy_pct") or 0),  # luego por DY descendente
+        ),
+    )
+
+    # Construir filas como dicts para el dataframe
+    filas = []
+    for a in acciones_ordenadas:
+        evaluacion = a.get("evaluacion") or {}
+        dy = a.get("dy") or {}
+        filas.append({
+            "Status": f"{evaluacion.get('emoji', '⚪')} {evaluacion.get('status', 'Sin datos')}",
+            "Ticker": a.get("ticker", ""),
+            "Sector": a.get("sector", ""),
+            "Clasif.": a.get("clasificacion", ""),
+            "Precio CLP": a.get("precio_actual_clp") or 0,
+            "DY 3y": dy.get("dy_pct") if dy.get("dy_pct") is not None else 0,
+            "Benchmark": f"{a.get('benchmark_min_pct', 0):.0f}-{a.get('benchmark_max_pct', 0):.0f}%",
+            "vs Bench": evaluacion.get("vs_benchmark_pp") if evaluacion.get("vs_benchmark_pp") is not None else 0,
+        })
+
+    df_acciones = pd.DataFrame(filas)
+
+    # Mostrar tabla con formato
+    st.dataframe(
+        df_acciones,
+        use_container_width=True,
+        hide_index=True,
+        column_config={
+            "Status": st.column_config.TextColumn("Status", width="medium"),
+            "Ticker": st.column_config.TextColumn("Ticker", width="small"),
+            "Sector": st.column_config.TextColumn("Sector", width="small"),
+            "Clasif.": st.column_config.TextColumn("Clasif.", width="small"),
+            "Precio CLP": st.column_config.NumberColumn("Precio CLP", format="$%d"),
+            "DY 3y": st.column_config.NumberColumn("DY 3y", format="%.2f%%"),
+            "Benchmark": st.column_config.TextColumn("Benchmark", width="small"),
+            "vs Bench": st.column_config.NumberColumn("vs Bench", format="%+.2f pp"),
+        },
+    )
+
+    # ============================================================
+    # DETALLE POR ACCIÓN (expander por cada una)
+    # ============================================================
+    st.header("🔍 Detalle por acción")
+
+    for a in acciones_ordenadas:
+        evaluacion = a.get("evaluacion") or {}
+        dy = a.get("dy") or {}
+        emoji = evaluacion.get("emoji", "⚪")
+        status = evaluacion.get("status", "Sin datos")
+        ticker = a.get("ticker", "")
+        sector = a.get("sector", "")
+        precio = a.get("precio_actual_clp", 0)
+        dy_pct = dy.get("dy_pct")
+        dy_str = f"{dy_pct:.2f}%" if dy_pct is not None else "N/A"
+
+        header_str = f"{emoji} **{ticker}** · {sector} · ${precio:,.0f} CLP · DY {dy_str} · {status}"
+
+        with st.expander(header_str):
+            # Descripción
+            descripcion = a.get("descripcion", "")
+            if descripcion:
+                st.markdown(f"**{a.get('nombre', ticker)}**")
+                st.caption(descripcion)
+
+            # Información principal en columnas
+            col_info, col_div = st.columns(2)
+
+            with col_info:
+                st.markdown("**📊 Datos clave**")
+                st.caption(f"Sector: **{sector}**")
+                st.caption(f"Clasificación: **{a.get('clasificacion', 'N/A')}**")
+                st.caption(f"Benchmark: **{a.get('benchmark_min_pct', 0):.0f}-{a.get('benchmark_max_pct', 0):.0f}%** ({a.get('clasificacion')})")
+                st.caption(f"Precio actual BCS: **${precio:,.0f} CLP**")
+                variacion = a.get("variacion_pct")
+                if variacion is not None:
+                    color = "🟢" if variacion >= 0 else "🔴"
+                    st.caption(f"Variación día: {color} {variacion:+.2f}%")
+
+                # DY
+                if dy_pct is not None:
+                    st.markdown("**💰 Dividend Yield (fórmula Jared)**")
+                    st.caption(f"DY 3y: **{dy_pct:.2f}%**")
+                    st.caption(f"Promedio anual: **${dy.get('promedio_anual', 0):,.2f} CLP**")
+                    st.caption(f"Años usados: **{dy.get('anos_usados', 0)}** (sin año actual)")
+                    if dy.get("advertencia"):
+                        st.caption(f"⚠️ {dy['advertencia']}")
+
+                # Indicadores CMF
+                cmf = a.get("cmf")
+                if cmf:
+                    st.markdown("**🏛️ Indicadores CMF**")
+                    st.caption(f"Período: {cmf.get('periodo', 'N/A')} ({cmf.get('tipo_balance', '')})")
+                    if cmf.get("roe_pct") is not None:
+                        st.caption(f"ROE: **{cmf['roe_pct']:.2f}%**")
+                    if cmf.get("margen_neto_pct") is not None:
+                        st.caption(f"Margen Neto: **{cmf['margen_neto_pct']:.2f}%**")
+                    if cmf.get("razon_endeudamiento_pct") is not None:
+                        st.caption(f"Razón Endeudamiento: **{cmf['razon_endeudamiento_pct']:.2f}%**")
+                    if cmf.get("razon_corriente") is not None:
+                        st.caption(f"Razón Corriente: **{cmf['razon_corriente']:.2f}**")
+
+            with col_div:
+                # Dividendos por año (los del DY)
+                anos_detalle = dy.get("anos_detalle", {})
+                if anos_detalle:
+                    st.markdown("**📅 Dividendos por año (DEF + PROV)**")
+                    for ano in sorted(anos_detalle.keys(), reverse=True):
+                        st.caption(f"{ano}: **${anos_detalle[ano]:,.2f} CLP**")
+
+                # Dividendos recientes (últimos 10)
+                divs_recientes = a.get("dividendos_recientes", [])
+                if divs_recientes:
+                    st.markdown("**📜 Últimos dividendos (10)**")
+                    for d in divs_recientes:
+                        tipo = d.get("tipo", "")
+                        fecha = d.get("fecha_pago", "")
+                        monto = d.get("monto_clp", 0)
+                        marker = "✓" if tipo in ("DEFINITIVO", "PROVISORIO") else "✗"
+                        st.caption(f"{marker} {fecha} · {tipo}: ${monto:,.2f}")
+                    st.caption("(✓ incluido en DY · ✗ excluido)")
+
+            # Error si lo hubo
+            if a.get("error"):
+                st.warning(f"⚠️ Error parcial: {a['error']}")
+
+    # Metodología
+    with st.expander("ℹ️ ¿Cómo se calcula el DY y los benchmarks?"):
+        st.markdown("""
+        **Fórmula DY 3y (filosofía Jared):**
+        - Solo se cuentan dividendos **DEFINITIVOS + PROVISORIOS** (recurrentes)
+        - Se excluyen **ADICIONALES y EVENTUALES** (no recurrentes, peligrosos)
+        - Se promedian los **últimos 3 años completos** SIN incluir el año actual
+        - DY = (promedio anual) / (precio actual BCS) × 100
+
+        **Benchmarks por clasificación:**
+        - **DGI** (Dividend Growth Investing): G = 10-15% → tasa exigencia 6-7%
+        - **Vaca Lechera**: G < 10% → tasa exigencia 8-9%
+        - **Crecimiento**: G > 15% → no apta para estrategia dividendera
+
+        **Clasificación G** = ROE × (1 - Payout). Se obtiene de los datos CMF oficiales.
+
+        **Status visual:**
+        - 🟢 **Sobre benchmark**: DY actual ≥ máximo del rango (oportunidad)
+        - 🟡 **En rango**: DY actual entre benchmark_min y benchmark_max
+        - 🟠 **Cerca**: DY actual entre 80% del mínimo y el mínimo
+        - 🔴 **Bajo benchmark**: DY actual < 80% del mínimo (acción cara)
+        """)
+
+    # Footer y stop para no ejecutar el código de ETFs
+    st.divider()
+    st.caption("Sistema de Valores en Línea · v2.4 · Datos: BCS Chile + CMF Chile · Update: cada 30 min")
+    st.stop()
+
+
+# ============================================================
+# CONTINÚA EL DASHBOARD DE ETFs (sección por defecto)
 # ============================================================
 st.title("📊 Sistema de Valores en Línea — ETFs")
 st.caption(f"Sistema cuantitativo para timing de aportes — Consulta: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
