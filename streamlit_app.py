@@ -681,20 +681,54 @@ if seccion == "🇨🇱 Acciones Chilenas":
                 with st.expander(f"📭 **{_ticker}** — Sin novedades esta semana", expanded=False):
                     st.caption("No se encontraron noticias en los últimos 7 días.")
             else:
-                with st.expander(f"📰 **{_ticker}** — {_n} noticias", expanded=False):
-                    for _noti in _noticias:
-                        _titulo = _noti.get("title", "")
-                        _medio = _noti.get("source", "")
-                        _link = _noti.get("link", "")
-                        _fecha_rel = _fecha_relativa(_noti.get("pubdate", ""))
+                # Separar hechos esenciales de noticias
+                _hechos = [n for n in _noticias if n.get("es_hecho_esencial")]
+                _news = [n for n in _noticias if not n.get("es_hecho_esencial")]
 
-                        _col_txt, _col_btn = st.columns([4, 1])
-                        with _col_txt:
-                            st.markdown(f"**{_titulo}**")
-                            st.caption(f"📍 {_medio} · 🕐 {_fecha_rel}")
-                        with _col_btn:
-                            st.link_button("Abrir", _link, use_container_width=True)
-                        st.divider()
+                # Header del expander: si hay hechos esenciales, mostrarlo con badge
+                if _hechos:
+                    _header = f"📰 **{_ticker}** — {_n} items · 📢 {len(_hechos)} hecho(s) esencial(es)"
+                else:
+                    _header = f"📰 **{_ticker}** — {_n} noticias"
+
+                with st.expander(_header, expanded=False):
+                    # Primero los hechos esenciales (mas relevantes)
+                    if _hechos:
+                        st.markdown("##### 📢 Hechos Esenciales (CMF)")
+                        for _h in _hechos:
+                            _titulo = _h.get("title", "")
+                            _link = _h.get("link", "")
+                            _fecha = _h.get("pubdate", "")  # ya viene como "26 may 2026 20:15"
+
+                            _col_txt, _col_btn = st.columns([4, 1])
+                            with _col_txt:
+                                # Badge CMF inline + titulo en negrita
+                                st.markdown(
+                                    f"<span style=\"background-color:#FFE5B4;color:#8B4513;padding:2px 6px;border-radius:4px;font-size:0.75em;font-weight:600;\">📢 CMF</span> **{_titulo}**",
+                                    unsafe_allow_html=True,
+                                )
+                                st.caption(f"📅 {_fecha}")
+                            with _col_btn:
+                                st.link_button("Ver doc", _link, use_container_width=True)
+                            st.divider()
+
+                    # Despues las noticias
+                    if _news:
+                        if _hechos:
+                            st.markdown("##### 📰 Noticias")
+                        for _noti in _news:
+                            _titulo = _noti.get("title", "")
+                            _medio = _noti.get("source", "")
+                            _link = _noti.get("link", "")
+                            _fecha_rel = _fecha_relativa(_noti.get("pubdate", ""))
+
+                            _col_txt, _col_btn = st.columns([4, 1])
+                            with _col_txt:
+                                st.markdown(f"**{_titulo}**")
+                                st.caption(f"📍 {_medio} · 🕐 {_fecha_rel}")
+                            with _col_btn:
+                                st.link_button("Abrir", _link, use_container_width=True)
+                            st.divider()
 
     # Footer y stop para no ejecutar el código de ETFs
     st.divider()
