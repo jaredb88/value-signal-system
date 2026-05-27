@@ -387,7 +387,7 @@ def render_summary_card(col, ticker_label, sub_label, score, zona):
 # ============================================================
 # SECCIÓN RESUMEN - 4 ETFs en 2x2
 # ============================================================
-st.subheader("📋 Resumen de inversiones")
+st.header("📋 Resumen de inversiones")
 st.caption("Vista rápida de todos los ETFs. Detalle completo más abajo.")
 
 # Fila 1: Growth ETFs
@@ -427,6 +427,56 @@ if "JEPQ" in div_results:
 else:
     with sum_row2_col2:
         st.info("JEPQ no disponible")
+
+
+# ============================================================
+# CÓMO DISTRIBUIR LA INVERSIÓN (justo después del resumen)
+# ============================================================
+st.divider()
+st.header("💰 Cómo distribuir la inversión")
+
+# Calcular totales incluyendo Dividend ETFs
+total_indices = APORTE_SP500 * MULT.get(last_sp['zona'], 1.0) + APORTE_NASDAQ * MULT.get(last_nq['zona'], 1.0)
+base_indices = APORTE_SP500 + APORTE_NASDAQ
+
+total_dividend = 0
+base_dividend = 0
+if "SCHD" in div_results:
+    total_dividend += div_results["SCHD"]["aporte_sugerido_usd"]
+    base_dividend += APORTE_SCHD
+if "JEPQ" in div_results:
+    total_dividend += div_results["JEPQ"]["aporte_sugerido_usd"]
+    base_dividend += APORTE_JEPQ
+
+total_invertir = total_indices + total_dividend
+total_base = base_indices + base_dividend
+cash_tactico = total_base - total_invertir
+
+c1, c2, c3 = st.columns(3)
+c1.metric("Total a invertir", f"${total_invertir:.0f} USD")
+c2.metric("Base normal", f"${total_base:.0f} USD")
+if cash_tactico > 0:
+    c3.metric("💰 Guardar en cash", f"${cash_tactico:.0f} USD", delta="acumular")
+elif cash_tactico < 0:
+    c3.metric("💸 Sacar de cash", f"${-cash_tactico:.0f} USD", delta="desplegar", delta_color="inverse")
+else:
+    c3.metric("Cash táctico", "$0 USD", delta="estable")
+
+# Desglose por tipo de ETF
+with st.expander("📊 Desglose por tipo de ETF"):
+    de1, de2 = st.columns(2)
+    with de1:
+        st.markdown("**📈 Growth ETFs**")
+        st.caption(f"S&P 500 (CFISPETF): ${APORTE_SP500 * MULT.get(last_sp['zona'], 1.0):.0f} USD")
+        st.caption(f"Nasdaq 100 (CFINASDAQ): ${APORTE_NASDAQ * MULT.get(last_nq['zona'], 1.0):.0f} USD")
+        st.caption(f"**Subtotal: ${total_indices:.0f} USD**")
+    with de2:
+        st.markdown("**💰 Dividend ETFs**")
+        if "SCHD" in div_results:
+            st.caption(f"SCHD: ${div_results['SCHD']['aporte_sugerido_usd']:.0f} USD")
+        if "JEPQ" in div_results:
+            st.caption(f"JEPQ: ${div_results['JEPQ']['aporte_sugerido_usd']:.0f} USD")
+        st.caption(f"**Subtotal: ${total_dividend:.0f} USD**")
 
 
 # ============================================================
@@ -550,55 +600,6 @@ def render_score_card(col, last, etf, name, ticker, aporte_base):
 
 render_score_card(col1, last_sp, etf_sp, "S&P 500", "CFISPETF", APORTE_SP500)
 render_score_card(col2, last_nq, etf_nq, "Nasdaq 100", "CFINASDAQ", APORTE_NASDAQ)
-
-# ============================================================
-# RESUMEN ACCION
-# ============================================================
-st.divider()
-st.subheader("💰 Cómo distribuir la inversión")
-
-# Calcular totales incluyendo Dividend ETFs
-total_indices = APORTE_SP500 * MULT.get(last_sp['zona'], 1.0) + APORTE_NASDAQ * MULT.get(last_nq['zona'], 1.0)
-base_indices = APORTE_SP500 + APORTE_NASDAQ
-
-total_dividend = 0
-base_dividend = 0
-if "SCHD" in div_results:
-    total_dividend += div_results["SCHD"]["aporte_sugerido_usd"]
-    base_dividend += APORTE_SCHD
-if "JEPQ" in div_results:
-    total_dividend += div_results["JEPQ"]["aporte_sugerido_usd"]
-    base_dividend += APORTE_JEPQ
-
-total_invertir = total_indices + total_dividend
-total_base = base_indices + base_dividend
-cash_tactico = total_base - total_invertir
-
-c1, c2, c3 = st.columns(3)
-c1.metric("Total a invertir", f"${total_invertir:.0f} USD")
-c2.metric("Base normal", f"${total_base:.0f} USD")
-if cash_tactico > 0:
-    c3.metric("💰 Guardar en cash", f"${cash_tactico:.0f} USD", delta="acumular")
-elif cash_tactico < 0:
-    c3.metric("💸 Sacar de cash", f"${-cash_tactico:.0f} USD", delta="desplegar", delta_color="inverse")
-else:
-    c3.metric("Cash táctico", "$0 USD", delta="estable")
-
-# Desglose por tipo de ETF
-with st.expander("📊 Desglose por tipo de ETF"):
-    de1, de2 = st.columns(2)
-    with de1:
-        st.markdown("**📈 Growth ETFs**")
-        st.caption(f"S&P 500 (CFISPETF): ${APORTE_SP500 * MULT.get(last_sp['zona'], 1.0):.0f} USD")
-        st.caption(f"Nasdaq 100 (CFINASDAQ): ${APORTE_NASDAQ * MULT.get(last_nq['zona'], 1.0):.0f} USD")
-        st.caption(f"**Subtotal: ${total_indices:.0f} USD**")
-    with de2:
-        st.markdown("**💰 Dividend ETFs**")
-        if "SCHD" in div_results:
-            st.caption(f"SCHD: ${div_results['SCHD']['aporte_sugerido_usd']:.0f} USD")
-        if "JEPQ" in div_results:
-            st.caption(f"JEPQ: ${div_results['JEPQ']['aporte_sugerido_usd']:.0f} USD")
-        st.caption(f"**Subtotal: ${total_dividend:.0f} USD**")
 
 # ============================================================
 # TABS DE DETALLE
