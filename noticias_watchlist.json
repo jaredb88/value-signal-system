@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-05-27T22:03:03.733723+00:00",
+  "updated_at_utc": "2026-05-27T22:06:56.349978+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -212,11 +212,14 @@
       },
       {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1779919141",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1779919441",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
-        "es_hecho_esencial": true
+        "es_hecho_esencial": true,
+        "doc_id": "2026050353255",
+        "empresa_cmf": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.",
+        "materia_cmf": "Cambios en la administración"
       }
     ],
     "QUINENCO": [
@@ -236,6 +239,6 @@
     "queries_falladas": 0,
     "total_noticias_brutas": 2194,
     "total_noticias_filtradas": 29,
-    "total_hechos_esenciales_brutos": 123
+    "total_hechos_esenciales_brutos": 124
   }
 }
