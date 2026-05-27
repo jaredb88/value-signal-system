@@ -555,7 +555,7 @@ render_score_card(col2, last_nq, etf_nq, "Nasdaq 100", "CFINASDAQ", APORTE_NASDA
 # RESUMEN ACCION
 # ============================================================
 st.divider()
-st.subheader("💰 Acción este mes")
+st.subheader("💰 Cómo distribuir la inversión")
 
 # Calcular totales incluyendo Dividend ETFs
 total_indices = APORTE_SP500 * MULT.get(last_sp['zona'], 1.0) + APORTE_NASDAQ * MULT.get(last_nq['zona'], 1.0)
