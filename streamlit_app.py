@@ -47,7 +47,13 @@ st.set_page_config(
 # Mobile-friendly styles
 st.markdown("""
 <style>
-.main { padding: 1rem; }
+/* Reducir espacio superior del dashboard */
+.main { padding: 0.5rem 1rem 1rem 1rem; }
+.block-container { padding-top: 1rem !important; padding-bottom: 2rem !important; max-width: 100% !important; }
+header[data-testid="stHeader"] { height: 0; }
+.stApp > header { display: none; }
+/* Reducir margen del título principal */
+.main h1:first-of-type { margin-top: 0 !important; padding-top: 0.5rem !important; }
 .score-card { padding: 1.5rem; border-radius: 10px; margin: 0.5rem 0; }
 .zone-caro { background: linear-gradient(135deg, #ff6b6b, #c0392b); color: white; }
 .zone-neutral { background: linear-gradient(135deg, #f39c12, #d35400); color: white; }
@@ -76,19 +82,19 @@ st.markdown("""
 
 /* Estilo sobrio (plain) - mismo look que cards de Dividend ETFs */
 .score-card-plain { padding: 0.5rem 0; margin: 0.5rem 0; }
-.ticker-name-plain { font-size: 1.6rem; font-weight: bold; color: inherit; margin-bottom: 0.2rem; }
+.ticker-name-plain { font-size: 2.4rem; font-weight: bold; color: inherit; margin-bottom: 0.2rem; letter-spacing: -0.5px; }
 .ticker-mapping-plain { font-size: 1rem; color: rgba(128,128,128,0.85); margin-bottom: 1rem; }
-.big-score-plain { font-size: 3.5rem; font-weight: bold; line-height: 1; color: inherit; }
-.score-max-plain { font-size: 1.4rem; opacity: 0.5; font-weight: 500; }
-.zone-label-plain { font-size: 1.3rem; font-weight: bold; margin: 0.3rem 0 0.8rem 0; color: inherit; }
+.big-score-plain { font-size: 2.8rem; font-weight: bold; line-height: 1; color: inherit; }
+.score-max-plain { font-size: 1.2rem; opacity: 0.5; font-weight: 500; }
+.zone-label-plain { font-size: 1.2rem; font-weight: bold; margin: 0.3rem 0 0.8rem 0; color: inherit; }
 
 /* Summary card - vista compacta para resumen arriba (2x2) */
 .summary-card { padding: 0.5rem 0; margin: 0.5rem 0; }
-.summary-ticker { font-size: 1.6rem; font-weight: bold; color: inherit; margin-bottom: 0.2rem; }
+.summary-ticker { font-size: 2.2rem; font-weight: bold; color: inherit; margin-bottom: 0.2rem; letter-spacing: -0.5px; }
 .summary-sub { font-size: 1rem; color: rgba(128,128,128,0.85); margin-bottom: 0.8rem; }
-.summary-score { font-size: 3rem; font-weight: bold; line-height: 1; color: inherit; }
-.summary-score-max { font-size: 1.2rem; opacity: 0.5; font-weight: 500; }
-.summary-zone { font-size: 1.2rem; font-weight: bold; margin: 0.3rem 0 0.6rem 0; color: inherit; }
+.summary-score { font-size: 2.4rem; font-weight: bold; line-height: 1; color: inherit; }
+.summary-score-max { font-size: 1rem; opacity: 0.5; font-weight: 500; }
+.summary-zone { font-size: 1.1rem; font-weight: bold; margin: 0.3rem 0 0.6rem 0; color: inherit; }
 @media (max-width: 768px) {
     .big-score { font-size: 2.5rem; }
     .ticker-name { font-size: 1.3rem; }
