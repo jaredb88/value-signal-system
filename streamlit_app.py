@@ -73,6 +73,14 @@ st.markdown("""
 .news-impact-positive { border-left-color: #2ecc71; }
 .news-impact-negative { border-left-color: #e74c3c; }
 .news-impact-neutral { border-left-color: #95a5a6; }
+
+/* Estilo sobrio (plain) - mismo look que cards de Dividend ETFs */
+.score-card-plain { padding: 0.5rem 0; margin: 0.5rem 0; }
+.ticker-name-plain { font-size: 1.6rem; font-weight: bold; color: inherit; margin-bottom: 0.2rem; }
+.ticker-mapping-plain { font-size: 1rem; color: rgba(128,128,128,0.85); margin-bottom: 1rem; }
+.big-score-plain { font-size: 3.5rem; font-weight: bold; line-height: 1; color: inherit; }
+.score-max-plain { font-size: 1.4rem; opacity: 0.5; font-weight: 500; }
+.zone-label-plain { font-size: 1.3rem; font-weight: bold; margin: 0.3rem 0 0.8rem 0; color: inherit; }
 @media (max-width: 768px) {
     .big-score { font-size: 2.5rem; }
     .ticker-name { font-size: 1.3rem; }
@@ -333,16 +341,20 @@ col1, col2 = st.columns(2)
 def render_score_card(col, last, etf, name, ticker, aporte_base):
     mult = MULT.get(last['zona'], 1.0)
     aporte = aporte_base * mult
-    zone_class = get_zone_class(last['zona'])
     emoji = get_zone_emoji(last['zona'])
+
+    # Mapear zona a etiqueta de "tipo" (paralelo a Dividend ETFs)
+    tipo_etf = "Índice Bursátil USA"
 
     with col:
         score_pct = max(0, min(100, last["score"]))
-        st.markdown(f"""<div class="score-card {zone_class}">
-            <div class="ticker-name">{name}</div>
-            <div class="ticker-mapping">→ {ticker} en Racional</div>
-            <div class="big-score">{last["score"]:.1f}<span class="score-max"> / 100</span></div>
-            <div class="zone-label">{emoji} {last["zona"]}</div>
+
+        # Card sobria (sin fondo de color, solo estructura limpia)
+        st.markdown(f'''<div class="score-card-plain">
+            <div class="ticker-name-plain">{name}</div>
+            <div class="ticker-mapping-plain">→ {ticker} en Racional · {tipo_etf}</div>
+            <div class="big-score-plain">{last["score"]:.1f}<span class="score-max-plain"> / 100</span></div>
+            <div class="zone-label-plain">{emoji} {last["zona"]}</div>
             <div class="scale-bar">
                 <div class="scale-segment scale-caro"></div>
                 <div class="scale-segment scale-neutral"></div>
@@ -359,18 +371,70 @@ def render_score_card(col, last, etf, name, ticker, aporte_base):
                 <span>75 OPORTUNIDAD</span>
                 <span>100</span>
             </div>
-        </div>""", unsafe_allow_html=True)
+        </div>''', unsafe_allow_html=True)
 
-        # Sub-metricas
-        c1, c2, c3 = st.columns(3)
-        c1.metric("Multiplicador", f"{mult}x")
-        c2.metric("Aporte mes", f"${aporte:.0f}")
+        # Métricas debajo de la card (mismo formato que Dividend ETFs)
+        m1, m2, m3 = st.columns(3)
+        m1.metric("Multiplicador", f"{mult}x")
+        m2.metric("Aporte sugerido", f"${aporte:.0f} USD")
         if etf:
-            c3.metric("Precio CLP", f"${etf['current']:,.0f}")
+            m3.metric("Precio CLP", f"${etf['current']:,.0f}")
 
-        # Drawdown
-        st.metric("Drawdown vs máximo", f"{last['drawdown']*100:+.1f}%",
-                  delta=f"CAPE {last['cape']:.1f}", delta_color="off")
+        # Indicadores clave (mismo formato sobrio que Dividend ETFs)
+        st.markdown("**Indicadores clave:**")
+        ic1, ic2 = st.columns(2)
+        with ic1:
+            st.caption(f"CAPE: **{last['cape']:.1f}**")
+            st.caption(f"Drawdown vs máximo: **{last['drawdown']*100:+.1f}%**")
+            st.caption(f"Earnings Yield vs Bono 10Y: **{last.get('ey_minus_bond', 0)*100:+.2f} pp**" if not pd.isna(last.get('ey_minus_bond', np.nan)) else "EY vs Bono: N/A")
+        with ic2:
+            st.caption(f"Momentum 12-1m: **{last.get('mom_12_1', 0)*100:+.1f}%**" if not pd.isna(last.get('mom_12_1', np.nan)) else "Momentum: N/A")
+            st.caption(f"Yield Curve 10Y-3M: **{last.get('yield_spread', 0)*100:+.2f} pp**" if not pd.isna(last.get('yield_spread', np.nan)) else "Yield Curve: N/A")
+            if etf:
+                fuente = etf.get('precio_fuente', 'Yahoo Finance')
+                st.caption(f"Fuente precio: **{fuente}**")
+
+        # Descripción del índice (plegable)
+        with st.expander(f"ℹ️ Acerca de {name}"):
+            if name == "S&P 500":
+                st.markdown("**S&P 500 (Standard & Poor's 500)**")
+                st.markdown(
+                    "Índice de las 500 compañías más grandes de USA por capitalización de mercado. "
+                    "Cubre ~80% del mercado accionario norteamericano. Sectores diversificados: "
+                    "tecnología, financiero, salud, consumo, energía, industrial. "
+                    "Componentes seleccionados por un comité usando criterios de tamaño, liquidez y representatividad sectorial."
+                )
+                st.markdown("- **ETF accesible en Chile:** CFISPETF (FI ETF Singular S&P 500)")
+                st.markdown("- **Emisor:** Singular AGF")
+                st.markdown("- **Moneda:** CLP")
+                st.markdown("- **Estrategia:** Pasiva (réplica del índice)")
+            else:  # Nasdaq 100
+                st.markdown("**Nasdaq 100 (NDX)**")
+                st.markdown(
+                    "Las 100 mayores compañías no-financieras listadas en Nasdaq. "
+                    "Fuerte sesgo tecnológico: Apple, Microsoft, Nvidia, Google, Amazon, Meta, Tesla, etc. "
+                    "También incluye consumo (Costco, Starbucks), salud (Amgen), industriales y otros. "
+                    "Es el principal benchmark del sector tech/crecimiento USA."
+                )
+                st.markdown("- **ETF accesible en Chile:** CFINASDAQ (FI ETF Singular Nasdaq 100)")
+                st.markdown("- **Emisor:** Singular AGF")
+                st.markdown("- **Moneda:** CLP")
+                st.markdown("- **Estrategia:** Pasiva (réplica del índice)")
+
+        # Desglose del score (plegable)
+        with st.expander("🔍 Desglose del score"):
+            componentes_info = [
+                ("CAPE (Shiller P/E)", "s_cape", "40%"),
+                ("Drawdown vs máximo", "s_drawdown", "25%"),
+                ("EY vs Bond", "s_ey_vs_bond", "15%"),
+                ("Yield Curve", "s_yield_curve", "10%"),
+                ("Momentum 12-1m", "s_momentum", "10%"),
+            ]
+            for nombre_c, key_c, peso_c in componentes_info:
+                valor_c = last.get(key_c, 0)
+                if pd.isna(valor_c):
+                    valor_c = 0
+                st.caption(f"**{nombre_c}** ({peso_c}): {valor_c:.1f}/100")
 
 render_score_card(col1, last_sp, etf_sp, "S&P 500", "CFISPETF", APORTE_SP500)
 render_score_card(col2, last_nq, etf_nq, "Nasdaq 100", "CFINASDAQ", APORTE_NASDAQ)
@@ -647,21 +711,14 @@ if DIVIDEND_ETFS_AVAILABLE:
                 continue
             r = div_results[ticker_div]
 
-            zona_class = {
-                "CARO": "score-card-caro",
-                "NEUTRAL": "score-card-neutral",
-                "ATRACTIVO": "score-card-atractivo",
-                "OPORTUNIDAD": "score-card-oportunidad",
-            }.get(r["zona"], "score-card-neutral")
-
             score_pct = max(0, min(100, r["score"]))
 
             with col:
-                st.markdown(f'''<div class="score-card {zona_class}">
-                    <div class="ticker-name">{r['name']}</div>
-                    <div class="ticker-mapping">{r['type']}</div>
-                    <div class="big-score">{r['score']:.1f}<span class="score-max"> / 100</span></div>
-                    <div class="zone-label">{r['emoji']} {r['zona']}</div>
+                st.markdown(f'''<div class="score-card-plain">
+                    <div class="ticker-name-plain">{r['name']}</div>
+                    <div class="ticker-mapping-plain">{r['type']}</div>
+                    <div class="big-score-plain">{r['score']:.1f}<span class="score-max-plain"> / 100</span></div>
+                    <div class="zone-label-plain">{r['emoji']} {r['zona']}</div>
                     <div class="scale-bar">
                         <div class="scale-segment scale-caro"></div>
                         <div class="scale-segment scale-neutral"></div>
