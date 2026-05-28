@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-05-28T15:06:40.840187+00:00",
+  "updated_at_utc": "2026-05-28T15:33:03.890280+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -53,7 +53,7 @@
       },
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1779980641",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1779982141",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -228,6 +228,13 @@
         "matched_keyword": "SQM"
       },
       {
+        "title": "Dos de las tres acciones más rentables del IPSA en 2026 cotizan muy por sobre su promedio histórico",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYVFvVGo5V0o5NWRfRGRxVWxpS1dGVFFOOHF2cGJNWUdrSXZFZDFJczhIbTRQeWlMUXJiRUJsQmhmaE4wcU56aUJnZkNUSVRpU2dsbnQ3dkRfQU9FaWF4dnJGNEltNFNUWFFXUXJOcW04dnVVQnZWV1lfb1BmVi1mUVFzMnh4Wm1UR2FoVXM1SXZzVENDZ3dMR3lsem8zSHRBTHh6UFBURDdQalBvSnF3b1pta1BLSXNUZUE?oc=5",
+        "pubdate": "Fri, 22 May 2026 12:30:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
         "title": "¿Codelco “fuera de control”?",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4yaEZ2ZE8zaC1xS2p6aVJFazVZZldTdVE3cFJtcnRQcUtYU1ZhUk1ySV9UM1ltR3lBTm5wclFBQXA0Rnh2SlluR1R4MWNjSzdmQWR4aU5JUUYwb3lZYmtxZURWRlQzUVBUdEx6WHFlUmNSLUxQUk9Ubw?oc=5",
         "pubdate": "Fri, 22 May 2026 00:50:38 GMT",
@@ -236,7 +243,7 @@
       },
       {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1779980641",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1779982141",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -261,8 +268,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2182,
-    "total_noticias_filtradas": 32,
+    "total_noticias_brutas": 2181,
+    "total_noticias_filtradas": 33,
     "total_hechos_esenciales_brutos": 98
   }
 }
