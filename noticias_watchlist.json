@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-05-29T17:33:03.044378+00:00",
+  "updated_at_utc": "2026-05-29T19:33:03.065984+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -42,6 +42,13 @@
     "TRICAHUE": [],
     "COLBUN": [
       {
+        "title": "Licitaciones eléctricas entran a la puja bursátil: Engie, Enel y Colbún se juegan contratos clave para sostener ingresos de largo plazo",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSzBiY1JSVjBpSExrM2RQc1lSYXNsYkxyc0dpVXlUVWJTNU9zM25kU1RUSFFtZnAySVdRZDRmWW5TSFBuWFNzTmNmeUo5REN6Z01OSUFWNzFvWExPR29GSEVFX2FzakVyU3RyeFc4UGd5WU94a0NXSWxYZEVEdVJscnBiSC1McFV5d1ctb285RHJPX2lOWDBLTE5CdlVZMmRPYmcyc2M0eHhvMFNUcTlMSkNTdw?oc=5",
+        "pubdate": "Fri, 29 May 2026 17:12:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Colbun"
+      },
+      {
         "title": "Longaví Colbún y Linares",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBoY3V0dlpjX1pUb2xxbUNETGlWNjczMWVwM1FNbGk5RmJKSjBOTkRETEtHdnhtVDk5VnpEQzBVVkJReTQxdDU2eFN1NGxlZkpHQ1BTekNHV2ZJdFZIckFZR01wR2huUHpELS1vdw?oc=5",
         "pubdate": "Wed, 27 May 2026 10:16:54 GMT",
@@ -68,7 +75,7 @@
     "LIPIGAS": [
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780075742",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780083061",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -126,7 +133,7 @@
       {
         "title": "Primer directorio de Fontaine en Codelco: auditoría forense a producción de 2024 y 2025 y a costos de remodelación de casa matriz",
         "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPelh1RURwcGwzN253cGFDbDc4d0JSUWpyYkdnaUlQQXNTeXFUVzR3ZkI1REhOYzY4eG5ESjV1LXlXRl9LVXh3Vkx2b2F2dGhrME1VbGtBQ3B0UGppNF9Uc1BxRjl1dTJveHhQbTQ5ZlF3YTVfbkhYbzhfR2dfZmc5OUZKYUZmb2lLM0djOTB5ZlJpWWtuWllyRlpnZzcxOWRNSGkxeWxja0hQb0x3QVBhYXRGOXZScFMxaHlxX0lpWWZhVDlFMHhtREtWXzNsc1dncjhEZDlBZVB1WWhKd1FJMC1IODdmWXZMaGFROWUtak92QWEtVk9sZ2pEYw?oc=5",
-        "pubdate": "Fri, 29 May 2026 00:16:38 GMT",
+        "pubdate": "Fri, 29 May 2026 00:13:48 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
       },
@@ -187,6 +194,13 @@
         "matched_keyword": "SQM"
       },
       {
+        "title": "Ministerio Público abre nueva causa penal contra Codelco y fiscal confirma citación a Máximo Pacheco",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNDJKOHYwSmYtcFJPRFhrcEVWNGtFaThwUFFEdHlONWttWnEyUmpjUnl2ajJ1UHJJa3ZsZVdaeU9ackEteFhyUUYtbXFHbDdMUkhDTlFRd1VQZ1FiQ3Rud0Y1cGg2ekdmSkFnanVST29rb0pNZWwtR0JzWXBfMXVmWHVXVURiamxiS2NmdWtyeGhNR3lKLWhoMFVSLVk5V0d3bHp4LXJoM0pybGtPWlE?oc=5",
+        "pubdate": "Wed, 27 May 2026 08:00:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
         "title": "Oro Blanco informa fusión legal con dos sociedades Cascada de SQM y nuevo esquema comienza a operar en junio",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbDZVZ2kyUjZ0NU1za2dFbEcyQktkTWRDZUd1TTF5QUVSNFZzUkRrZFZhREtUTGNjVF9xX0hhZmhBWnhDOHpIcDJNWEZHVlFvRXh6b0Jna2FuQXN4QXJrbEhxelVXcnBNVXo4aXNUM1VlSlhrWHRLZ0dnOUFpWGNIalJyVnBBUFZZUS02YnM3ZElscDNtUlhlY0RiSmVSQ2N5Sm82SDQ1OTJxWjVDblNCdGw2U0g?oc=5",
         "pubdate": "Wed, 27 May 2026 00:45:00 GMT",
@@ -225,6 +239,13 @@
         "title": "Grau responde a Quiroz por finanzas públicas: “El Ministro de Hacienda se apresura (…) La proyección de deuda es consistente y no tiene errores de cálculo”",
         "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVURCSEJPTW1qMjU5b1dOQnE2empReGFNQ3lvOUZFZU9qOURSdEdIM2J2bDdiemxmLVBmeFpnV0JXaXFSTm94SnhXaVRnWDRXS2pjclJZNUVqMlptZmhQckNuUWJvMDRpOHZnOWxrLVhIYkt2QmZYa2pwZzJMYlgySVVQX3lZOGtBLWp0TmFKM3lkeUFUNEZDQ0trU1l2MElSZjVuS2NoWlo2LUVsckRKWTZpWlU1S0F2WVJXNWQtQjM1NGVC?oc=5",
         "pubdate": "Tue, 26 May 2026 12:02:24 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Caso Primus: CMF responde recurso de Deloitte y la acusa de “vulnerar” la confianza del mercado",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTGRONTI4WFQxaTdJZzY5WHpfbGd3RXFaUHZwcHgtRjhkc1Atd3ZWZWc4UDE5djFIVHFtMWJ1QlduSUI4eW5vYWxYYXJLQUdSR25vUlBWWE1xM01qejVhYjdyVGN3SGtpZjJOajlZVkI4US01VGF1T1REVHI4aDR3RURKVWVORHQxTkZQVnJOYUhmSzJCZ1NoU0F3ZGFMbi1CSUYyckdENmhjYlk4NkhZT0MzcGpGRHEyRWpaV19FTHF0OGJtRzc5UDJ3Z2dpQQ?oc=5",
+        "pubdate": "Tue, 26 May 2026 00:30:00 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
       },
@@ -279,7 +300,7 @@
       },
       {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780075742",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780083061",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -326,8 +347,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2220,
-    "total_noticias_filtradas": 41,
-    "total_hechos_esenciales_brutos": 135
+    "total_noticias_brutas": 2227,
+    "total_noticias_filtradas": 44,
+    "total_hechos_esenciales_brutos": 141
   }
 }
