@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-05-28T21:33:03.542836+00:00",
+  "updated_at_utc": "2026-05-29T14:15:50.381492+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -49,6 +49,13 @@
         "pubdate": "Thu, 28 May 2026 20:28:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "Enel Chile"
+      },
+      {
+        "title": "EMPRESAS CHILENAS AVANZAN EN ÍNDICE DOW JONES DE SUSTENTABILIDAD",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONXJUM1gzSUFfMnVta09IUllCel9MWk1NMmM4dUQxMzh5N09rOFl5M1JydmNRNk51M2haSUlhUWM0enItRkVRT1NxU2NFT291TWR2ZjZsYXVwS3FqemZoRmNGNUgtS21TSTdXbVhoazhBQU0xOERNbzNYYmVxdlZGenc0TDdEeEtXQV9xYQ?oc=5",
+        "pubdate": "Fri, 22 May 2026 23:55:24 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Enel Chile"
       }
     ],
     "LIPIGAS": [
@@ -61,7 +68,7 @@
       },
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780003741",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780063921",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -82,17 +89,45 @@
     ],
     "SOQUICOM": [
       {
-        "title": "Vuelve el Premio Territorio Circular en su 4ª versión para destacar modelos de negocio sostenibles",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObWppbWRlc1lDVWoyZmJzMTRRZXl0d1l0TzczcFJQYWFMcDlXSHZITmdHbXpfR25PdUJ3RUhjZ1d0eGYzbXBZVXpqalF2RmhuVEFId2RXa2xNWTgxQy05ZkFIM1pBT0l5X1VySmNVQllLTTBucGpXMDVtSTBFai1MZnhfZzlJYUpwaUNDbk9zWE1lUFVDR21DSkN2TWZVS21MSG5tZ1hhQnpSeW1tU3B2RDVPVHQ5U0V4cUFRemVwd2l5ZE1YUWVuNG5Pc1g4UlJyZmw2T2NTbU1jRkkxMHpnUGxB?oc=5",
-        "pubdate": "Thu, 28 May 2026 15:47:00 GMT",
+        "title": "Las 4 acciones del IPSA que mejor han sorteado la guerra",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeEtxSTNoWGRtUTdUWWEyUU03LXdhS0oxNGpaZ0t3X1BUOGdxcnVFYkMxNUlyMUJscnY0LXRCbm8yemZTWmxkYWNaY1VmbXI5VWh5MVMtaGo1ZnRNS01Qci1ZelVCMU9OR0REMjhCSEhPVWtidVgzSUFQVVVWaDZ4SHc1U2w1TkUzbHJVR01FRE4xVEVmRms4V3ZnNUdSZUZvckE2ZUlB?oc=5",
+        "pubdate": "Fri, 29 May 2026 13:52:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "IPSA abre al alza y recupera la marca de 10.900 puntos por expectativa de acuerdo de paz en Medio Oriente",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Tc1ltZXlUd2RSbGV1a0paTlhnMGY0OFZ3ZUhrY1lFUVRnNm5ZY1FfcFFjT0hCaEFmQkRKdWxxTXNRYi1xZ19OZDlNUzA2M2Q2NDdXYkxLY0tQSFE5bmd6NEU3N2sxTGRm?oc=5",
+        "pubdate": "Fri, 29 May 2026 13:43:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Grupo Pampa sale al mercado a comprar US$ 38 millones en acciones de SQM tras positivos resultados de la compañía",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMmNWMnl0ekpEd2txcG4wTDBHOEdQbmJ5UUpmTDFIVWlOSkJKN0c1SlY1RWdtb1lERDBrdjNQMnNYVmc2Y3plUEprcE5IbS1Jdy1WRVFfczM3NDIyN1gwOUlUV3pQM3JWV002azNCZVJPZ0xhc0lmMjhORm1nUm9BMmtmN2JST0tNZXc2Tm1sOFFGb1ZjbUlkQXZFLVFLSFQyYWZ1bWVEWkhzVEpYNzRtM0dn?oc=5",
+        "pubdate": "Fri, 29 May 2026 13:20:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Economía y Negocios Pág.16",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbkdEY0NKVlZNSUxHY1dHWkdBN3pMWVROU1kzQkZiUGp0YUJUWE9LdC1CX2ZGS3l5enFJb3hYcHhyQ0tmckREZlVEcjlleERYV0pzQkVzeWdIQnR2SXEzbHVZYzZhRURnVzhISzAya2dKRFhOMmFDejVHX2FncDhXeXdRNEJDS2sySS1Iejl2RWpNcHhOSm9hV1lBc005ZVhaa0dXQ3dn?oc=5",
+        "pubdate": "Fri, 29 May 2026 03:47:24 GMT",
+        "source": "Diario El Mercurio |",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Primer directorio de Fontaine en Codelco: auditoría forense a producción de 2024 y 2025 y a costos de remodelación de casa matriz",
+        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPelh1RURwcGwzN253cGFDbDc4d0JSUWpyYkdnaUlQQXNTeXFUVzR3ZkI1REhOYzY4eG5ESjV1LXlXRl9LVXh3Vkx2b2F2dGhrME1VbGtBQ3B0UGppNF9Uc1BxRjl1dTJveHhQbTQ5ZlF3YTVfbkhYbzhfR2dfZmc5OUZKYUZmb2lLM0djOTB5ZlJpWWtuWllyRlpnZzcxOWRNSGkxeWxja0hQb0x3QVBhYXRGOXZScFMxaHlxX0lpWWZhVDlFMHhtREtWXzNsc1dncjhEZDlBZVB1WWhKd1FJMC1IODdmWXZMaGFROWUtak92QWEtVk9sZ2pEYw?oc=5",
+        "pubdate": "Fri, 29 May 2026 00:16:38 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
       },
       {
-        "title": "Concentración de rondas, IA y resaca de pandemia: el nuevo mapa del capital de riesgo en Chile",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQS3ZTSmhGT1VqeThOUE1Ydk9SQVdVOXcwQzdXU0NSWDVrVTRETzJpM1RjMU9XS0FvYWVoSnJueXZXWTV6MDhOSzd1NmVSMXc1YzZ0MU8xb09CTm5iTHRYOXFiOE5BVmp3TlBiWU84OGVGaWp6eDZFaDA4LTVRRlhYRnpmUTEyVG8tbTJQeFNQZ1RMUEZyZEtZSFc0NXF4S0Rwek9HdEZ4LWJMVC0zNUIwVnVR?oc=5",
-        "pubdate": "Thu, 28 May 2026 08:00:00 GMT",
-        "source": "Diario Financiero",
+        "title": "Vuelve el Premio Territorio Circular en su 4ª versión para destacar modelos de negocio sostenibles",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObWppbWRlc1lDVWoyZmJzMTRRZXl0d1l0TzczcFJQYWFMcDlXSHZITmdHbXpfR25PdUJ3RUhjZ1d0eGYzbXBZVXpqalF2RmhuVEFId2RXa2xNWTgxQy05ZkFIM1pBT0l5X1VySmNVQllLTTBucGpXMDVtSTBFai1MZnhfZzlJYUpwaUNDbk9zWE1lUFVDR21DSkN2TWZVS21MSG5tZ1hhQnpSeW1tU3B2RDVPVHQ5U0V4cUFRemVwd2l5ZE1YUWVuNG5Pc1g4UlJyZmw2T2NTbU1jRkkxMHpnUGxB?oc=5",
+        "pubdate": "Thu, 28 May 2026 15:47:00 GMT",
+        "source": "La Tercera",
         "matched_keyword": "SQM"
       },
       {
@@ -147,7 +182,7 @@
       {
         "title": "Hernán Büchi asume vicepresidencia de SQM y Josefina Montenegro pone su cargo a disposición en Novandino",
         "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQlJQUDZNek01Q0N5TzJ6QzdBLWlEVFhJT1E1QzdXWFZXdDZDYk9URGFzd01KSUxtZVNjcXotNUtpQ2NONEZ3dmIwNG01b0hiQUxSb2Y4aG00Mkx4Y2tVQ19oY1RpUHZNa2dsZTBjcjBhbVM1dFViN0lDUWtGZ1ZZbjlKM05XMFhreUsyX2FrWWtlTHZyUHM1N0JNUkFWVXp3Q2g4cHlWd09mSkZWOFVDSDJHb2dXZjJJaEVaWjBWR2kyVG9JUHpqSDlzSWNoREFaS0Z2MjhDQ3Y3LXM3VVE?oc=5",
-        "pubdate": "Wed, 27 May 2026 00:42:55 GMT",
+        "pubdate": "Wed, 27 May 2026 00:39:55 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
       },
@@ -188,7 +223,7 @@
       },
       {
         "title": "“Mejorar eficiencia de recursos”: Dipres también golpea la mesa a Codelco, EFE y otras empresas públicas por ajuste fiscal",
-        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPRWtnOVUxRkxPeDNYNTZpN0hIS29uSnBoNm81SVRXNUJLV0oyczhueWdHMjJRY21pYnplem5wVW1SdE16Y2E2SFNQY0taeU5LNVU3aXEtNGFSSG1WRXhDcDBxbXo5eXVHYnlTZGVfdm1WTWJ6WUdxZHAzWGl0RGRieC1kZnZzN21rcXZuaWVHQ3RES3BvYVZKaEdoVmFRTDg1NUlraDhNQWxqNF9FYkU4MXRINVk3dE9oVkJRNF9xUXJZcEtScDFKcjFXZmZZRkNZU1pZYTA2WWR2M0RtYUh5UzN3SXNoT1BpdW1OV1hZeVJQS0U1X0HSAZcCQVVfeXFMUHVZSXVuWkxOdWRhbzVnc1ZUa2V6eTBmb0FiUW1uV2JKNndYaUVDTk5PaU9xV2RJdU5oeW9yNldpT0pKdGVLOFFHNWtudjkzM0dfS19KZ3JiNzlLM2ljRXI2YTN2OF9wb21mZkRJTUpOaXNYQzJ3VXA5c2QwLWN6QXFlLU5DWUVDdGRFWXZ5UjkyMnN1Q3VZMTU1MjdlT2s1WjJtLUJFd1hGd3cycjVJMm1qZS04bmJGYXR3RTlNWUZZNGN2LTUyUFZpUUxCVnc3VmRXYU1nWkQzOTdzYzh0aHp3NHdqdWJKTVdXR0RpVm1FcTQ4YllKRk9wUkd0ZW1vM3VIRWxEeTFRLWpGcEVSQXJqUE5xVFhz?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPRWtnOVUxRkxPeDNYNTZpN0hIS29uSnBoNm81SVRXNUJLV0oyczhueWdHMjJRY21pYnplem5wVW1SdE16Y2E2SFNQY0taeU5LNVU3aXEtNGFSSG1WRXhDcDBxbXo5eXVHYnlTZGVfdm1WTWJ6WUdxZHAzWGl0RGRieC1kZnZzN21rcXZuaWVHQ3RES3BvYVZKaEdoVmFRTDg1NUlraDhNQWxqNF9FYkU4MXRINVk3dE9oVkJRNF9xUXJZcEtScDFKcjFXZmZZRkNZU1pZYTA2WWR2M0RtYUh5UzN3SXNoT1BpdW1OV1hZeVJQS0U1X0E?oc=5",
         "pubdate": "Mon, 25 May 2026 17:30:00 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
@@ -197,13 +232,6 @@
         "title": "El adiós de Máximo Pacheco en su último día en Codelco: “Partir es morir un poco”",
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVkFRVklRMmFkQnRBdkdPMU9WUzVRVjJWRW5ldDhGVWhVczNMZEsxd3JySHlPaE96Yi1LM1VhWGRpMTBzUHZKUG5qWkF2U3h3SjRtSlhFSGZIWGlFZlhQVUgxZzB0VWFUTDNIWl84emlTOV84UFpyOHRUZjJSMjRpVzVKYUozZVdDT0RKN0hKemYwaHM3NzN4bmVWS1hndG1zV3dOX0JZTXdISlRDNUNFZVRTb1loT2ZISFQ0?oc=5",
         "pubdate": "Mon, 25 May 2026 17:12:52 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Novandino y Albemarle redujeron su participación mundial en el mercado del litio durante 2025, mientras demanda aumentó 35%",
-        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNLXNtdTVZSHc0VlZ5NS1CVnNycVN3V0tLLUxFRVRGMTJlYkgtQlpzZnY2U3IyYXhIakhjWnJWdVFCS1N1NTlvdjlkMlZfNFBaMHpxYll4aVhoR3F0eFdoN0paSVNKYWNxdUNLRmFZNk5DaDZudm5mRExidWJlYUt2X1JkekhraktlWlhDMUw0UTFxenFmd18yU2puclQ0Q1o1Q21EanpSaTdrc1VBdUhqNTVyVExrSlRrVUwwYWdVc0FiSldhM1pXWXR4Qk16b2lnU0hPQkl6VU9wcU5NTnN5b1pwVTc4THFseTVFakZrSWhaSER1?oc=5",
-        "pubdate": "Mon, 25 May 2026 15:57:43 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
       },
@@ -229,29 +257,8 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "Bolsa chilena cae este viernes, pero logra quebrar racha de cuatro semanas en rojo con miras a posible acuerdo de paz en Medio Oriente",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94NFpaNkhmMXJpbUFyMnJGdGpPRnhic0xaZEYxUERaZ19yaDAzQ2tuZTlmMWdaMlMxVUpjQll3eHVSY1VjaUVkNm5sclplR0xBeW80STVkYzljbXhVcUIyb3hlZWxOS01I?oc=5",
-        "pubdate": "Fri, 22 May 2026 20:26:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Dos de las tres acciones más rentables del IPSA en 2026 cotizan muy por sobre su promedio histórico",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYVFvVGo5V0o5NWRfRGRxVWxpS1dGVFFOOHF2cGJNWUdrSXZFZDFJczhIbTRQeWlMUXJiRUJsQmhmaE4wcU56aUJnZkNUSVRpU2dsbnQ3dkRfQU9FaWF4dnJGNEltNFNUWFFXUXJOcW04dnVVQnZWV1lfb1BmVi1mUVFzMnh4Wm1UR2FoVXM1SXZzVENDZ3dMR3lsem8zSHRBTHh6UFBURDdQalBvSnF3b1pta1BLSXNUZUE?oc=5",
-        "pubdate": "Fri, 22 May 2026 12:30:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "¿Codelco “fuera de control”?",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4yaEZ2ZE8zaC1xS2p6aVJFazVZZldTdVE3cFJtcnRQcUtYU1ZhUk1ySV9UM1ltR3lBTm5wclFBQXA0Rnh2SlluR1R4MWNjSzdmQWR4aU5JUUYwb3lZYmtxZURWRlQzUVBUdEx6WHFlUmNSLUxQUk9Ubw?oc=5",
-        "pubdate": "Fri, 22 May 2026 00:50:38 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780003741",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780063921",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -276,8 +283,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2188,
-    "total_noticias_filtradas": 34,
-    "total_hechos_esenciales_brutos": 117
+    "total_noticias_brutas": 2206,
+    "total_noticias_filtradas": 35,
+    "total_hechos_esenciales_brutos": 128
   }
 }
