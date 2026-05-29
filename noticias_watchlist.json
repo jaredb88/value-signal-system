@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-05-29T15:33:03.227616+00:00",
+  "updated_at_utc": "2026-05-29T17:33:03.044378+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -67,15 +67,8 @@
     ],
     "LIPIGAS": [
       {
-        "title": "Disputa por la herencia del empresario Jaime Santa Cruz escala con informes económicos",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQXpENFQ1eVhSdHFfUFpaeTNHV2RSZ1ZlUnh4WWNCaUhyc0tKQzM1OXBBekVFVU9DMDZzbkRPNEZVbXdsWEZtYWY3YVp0UUx1UVFOUmc5NkRkdjRWYXJsTXRnZDc0anlJUTBVMUVJR2tlOWE0aWphVWZNZWVQMFBTNWhIbHYtUlNhWjk0Mmg4ekJxb2FFeHVlUHNjOHBUN2k2bVMtUU9sMnlYc3NhMHJOeVZJZU85dWdZOV9ZQmFIc0VuUUxaMlE?oc=5",
-        "pubdate": "Fri, 22 May 2026 16:03:29 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "Empresas Lipigas"
-      },
-      {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780068481",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780075742",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -95,6 +88,13 @@
       }
     ],
     "SOQUICOM": [
+      {
+        "title": "Eduardo Frei inauguró exposición de Jimmy Scott en su casa paterna",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRnFncmhBV0d0OEltNnI3N1gxakZiN202NUtvcXZZOEZjWm1Yb3lrelFka0JPV0Z2dS1vMGFHTDdKbGxDTjVQVmxkcTh6SkU5VlNLVGNkSF8yLXJmQjJLd0JhZWgwQnR0d3hpVE1ZVExkVXMwVnNXM2l6eVpQY19kOVByT1IyZmgtYzNDQ1FlLVJSdUJYa3BVcE82NTYyZHBJWkhDRUpMOWtoUQ?oc=5",
+        "pubdate": "Fri, 29 May 2026 14:58:41 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
       {
         "title": "Las 4 acciones del IPSA que mejor han sorteado la guerra",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeEtxSTNoWGRtUTdUWWEyUU03LXdhS0oxNGpaZ0t3X1BUOGdxcnVFYkMxNUlyMUJscnY0LXRCbm8yemZTWmxkYWNaY1VmbXI5VWh5MVMtaGo1ZnRNS01Qci1ZelVCMU9OR0REMjhCSEhPVWtidVgzSUFQVVVWaDZ4SHc1U2w1TkUzbHJVR01FRE4xVEVmRms4V3ZnNUdSZUZvckE2ZUlB?oc=5",
@@ -117,7 +117,7 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "Economía y Negocios Pág.16",
+        "title": "Economía y Negocios Pág.2",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbkdEY0NKVlZNSUxHY1dHWkdBN3pMWVROU1kzQkZiUGp0YUJUWE9LdC1CX2ZGS3l5enFJb3hYcHhyQ0tmckREZlVEcjlleERYV0pzQkVzeWdIQnR2SXEzbHVZYzZhRURnVzhISzAya2dKRFhOMmFDejVHX2FncDhXeXdRNEJDS2sySS1Iejl2RWpNcHhOSm9hV1lBc005ZVhaa0dXQ3dn?oc=5",
         "pubdate": "Fri, 29 May 2026 03:47:24 GMT",
         "source": "Diario El Mercurio |",
@@ -141,6 +141,13 @@
         "title": "Bernardo Fontaine debuta como nuevo presidente del directorio de Codelco",
         "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMjRnek10ZEVIaHBWX3ZvM3UwQk5XM2RDVzkyRUl1d1hxWDRObEVvZG9CSnVMaWxUcUtoV0RDQUtwTnRSWnc0N1hFb01IY0RzMERWTnV5ZmtPNC1FbW1HY2hienk4bFZOZlZ0akk2WFRRNXI4aFg4UVd1RXgzVDdUV2Fzc1NxNkR3dUl2M0o2TTZhdFVaQ0ZvdDloZUd2Qlp6QTZSZVdDNjVBZlhEazZKdmF6VGptR2JFVHF5c1d0VEF1VUtvNGZDaGtldHZ4Zw?oc=5",
         "pubdate": "Wed, 27 May 2026 22:17:22 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Bencinas frenan su alza y el diésel registrará fuerte caída este jueves",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNOUdTZk5EX0UyanZ4OEtJdF9MNHA1SFdYZmZpVlhXRDRKQjNnbUZvVkpPc3dWVl9PNDNkR0NvWGw0S19YYzFxOEVYWHBRakpOblhsQU5IczJoT1hrZEJZU0I1MEp6bVJaT0FnQW9QR2M1bHM2aG9YVjRXT1ZCaTNZVXRvSUNON0dQMFdxQWdQTUJFa2IycUNYeUNzcG9LMFhPXzRaa0RmSDVkMWRKRzdPZ19Ga0lQd0FxX3JFQWFGR2FPeTBpTzdRY3pDZw?oc=5",
+        "pubdate": "Wed, 27 May 2026 21:51:41 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
       },
@@ -195,8 +202,8 @@
       },
       {
         "title": "Precio del litio mejora en el primer trimestre: SQM gana US$ 365 millones y paga a Corfo US$ 342 millones",
-        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQaXdiSVY1ZDVpOUJyektyQ1RtY2lqS3VrWUtRdk5aR3hUWmoxSHMzQl9mbFlOSEd0ZTdBNXBzbHpDRFFScThRU3dycE84WVhwd25GY1IzVF9KemR0eEl6VHR0azhpMExTd2x2SHNHdlFYZVJNWVZMS1RCWGhwTElLMUFJdE9iWHdrR3dRUkV2eUVJSnFmQ2ZfMVJBT19JUzVHbm42VlBVdk5MbFVWWDNjRDhCWl9RSUJfWlZROEtFTW1QRXpGMHFxc2ZrOFVXbWxXMklyWEI5aHZiTmtfOHVoVFNiNDVyaFBDSXRtU18yTFhlRFNVbXVjVDFSLUTSAfwBQVVfeXFMUGl3YklWNWQ1aTlCcnpLckNUbWNpakt1a1lLUXZOWkd4VFpqMUhzM0JfZmxZTkhHdGU3QTVwc2x6Q0RRUnE4UVN3cnBPOFlYcHduRmNSM1RfSnpkdHhJelR0dGs4aTBMU3dsdkhzR3ZRWGVSTVlWTEtUQlhocExJSzFBSXRPYlh3a0d3UVJFdnlFSUpxZkNmXzFSQU9fSVM1R25uNlZQVXZOTGxVVlgzY0Q4QlpfUUlCX1pWUThLRU1tUEV6RjBxcXNmazhVV21sVzJJclhCOWh2Yk5rXzh1aFRTYjQ1cmhQQ0l0bVNfMkxYZURTVW11Y1QxUi1E?oc=5",
-        "pubdate": "Wed, 27 May 2026 00:25:38 GMT",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSzJpWFlQSkZoazhMcTJYbDdEUzlKek5uYmNTVEhvbzg5TGFGY053M3l2M1c3TFVrLThVQlV5amRDczd6YVpEc0lZMU5fUWJ0RzllQ08zZ3I4V3Jfbm1vcmk4ajlxOE1kQlgxLXhpZGtQekpyVGRfekxjdTIwQjJsT19MTFBSLUdSMFRrYkFnZjVNQ1N3NVpKSzdSWDlkS005UUFWN0JKU1RYVTdxT3hQeHk3elBDa3VtVUpURURFOUFQYkZCS0NMSlhzZkRWeGhNeFRtZDZFZ19pTWM?oc=5",
+        "pubdate": "Wed, 27 May 2026 00:33:14 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
       },
@@ -212,6 +219,13 @@
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFByQzFRaV8xMEh1MzZ3clIxeEVBRU05bWdMdjlBZ0tfX0pIWW9rbGo1WHdLODd5ZnU0ZlBROXVGREUxbTdlQjlnam0wT0hkSFVvcF8wank0dVh3QUt1YlpXNzh1T3RXQnRf?oc=5",
         "pubdate": "Tue, 26 May 2026 20:28:00 GMT",
         "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Grau responde a Quiroz por finanzas públicas: “El Ministro de Hacienda se apresura (…) La proyección de deuda es consistente y no tiene errores de cálculo”",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVURCSEJPTW1qMjU5b1dOQnE2empReGFNQ3lvOUZFZU9qOURSdEdIM2J2bDdiemxmLVBmeFpnV0JXaXFSTm94SnhXaVRnWDRXS2pjclJZNUVqMlptZmhQckNuUWJvMDRpOHZnOWxrLVhIYkt2QmZYa2pwZzJMYlgySVVQX3lZOGtBLWp0TmFKM3lkeUFUNEZDQ0trU1l2MElSZjVuS2NoWlo2LUVsckRKWTZpWlU1S0F2WVJXNWQtQjM1NGVC?oc=5",
+        "pubdate": "Tue, 26 May 2026 12:02:24 GMT",
+        "source": "La Tercera",
         "matched_keyword": "SQM"
       },
       {
@@ -265,7 +279,7 @@
       },
       {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780068481",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780075742",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -276,6 +290,13 @@
       }
     ],
     "QUINENCO": [
+      {
+        "title": "Quiñenco anota caída en sus ganancias ante impacto de la guerra en Medio Oriente en su filial naviera",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdFA2dHFFUFFwS0pCS3hqOXc4UXc3LU54OE5ZSTlNYUoxNFA3N3MxYll3OWYxQV9CcUp2UVNDZjF1S19aX21DOFJyMnVCSnNQaWJxUkdlZWQ0aGdjZEc4NXdQWU05STdtNUtET0RZTkdWckc2OFZJLWpPUnFiZC1MZ2VXNWkwdjlHTjljNUNMQ3BnTmRlT3g4Z3V2SjBKa0RjaExwNzc3Sk8yM0hrVkY2VXBjSEIzeGxoQ3pSYQ?oc=5",
+        "pubdate": "Fri, 29 May 2026 15:38:35 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "Quinenco"
+      },
       {
         "title": "Quiñenco reporta leve baja en resultados trimestrales por impacto de la guerra en sus filiales navieras",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaVh0blplV3luUUlGNkdVUTZCX3BmeUUxVWxFZWpKNmNvYTlGMzlyeHk0UHhNRFZ1dVZsQm54ZmRNb2xsUVdZeU9Iam1QTHNCUng4cnpUUE9WbENSNjhqYXlMYnFNR3F6bW1vTmNBaW9NWkl0Uy1Gd3U4Z2tGdjlIeE50ZENsbFFiX21WT2VXRmx3dkNVYU9mbW42cmhkY2xWaS1KdXBSM2gyY2pC?oc=5",
@@ -291,14 +312,22 @@
         "matched_keyword": "Quinenco"
       }
     ],
-    "CENCOMALLS": []
+    "CENCOMALLS": [
+      {
+        "title": "- Diario Financiero",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAwdk1idDhUdFRSMVk2NFdhRG1SbkN0UjNZanV6X1VnT1BINWVMNUdWd2ZVbURiZmU4djIxanRHUHEzRGtDb0otbUpVY3dzTUYwU245eHh1OGFHOGVQbkZ3RkZrakJjMWVidlB3bHc4WEljVzBMQ3lJNg?oc=5",
+        "pubdate": "Fri, 29 May 2026 01:08:45 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Cencosud Shopping"
+      }
+    ]
   },
   "stats": {
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2212,
-    "total_noticias_filtradas": 37,
-    "total_hechos_esenciales_brutos": 131
+    "total_noticias_brutas": 2220,
+    "total_noticias_filtradas": 41,
+    "total_hechos_esenciales_brutos": 135
   }
 }
