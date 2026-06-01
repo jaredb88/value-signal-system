@@ -138,6 +138,63 @@ with st.sidebar:
         st.cache_data.clear()
         st.rerun()
 
+    # ============================================================
+    # PANEL DE ESTADO DEL SISTEMA (frescura de los JSON)
+    # ============================================================
+    st.divider()
+    st.subheader("📡 Estado del sistema")
+
+    from datetime import datetime as _dt_status, timezone as _tz_status
+    from pathlib import Path as _Path_status
+    import os as _os_status
+
+    def _status_archivo(filename, label, umbral_verde_h, umbral_amarillo_h):
+        """Devuelve (emoji, mensaje) segun la antiguedad del archivo."""
+        ruta = _Path_status(__file__).parent / filename
+        if not ruta.exists():
+            return ("⚫", f"{label} · sin datos")
+
+        try:
+            mtime_ts = _os_status.path.getmtime(ruta)
+            mtime = _dt_status.fromtimestamp(mtime_ts, tz=_tz_status.utc)
+            delta = _dt_status.now(_tz_status.utc) - mtime
+            horas = delta.total_seconds() / 3600
+
+            if horas < 1:
+                tiempo = f"hace {int(delta.total_seconds() / 60)} min"
+            elif horas < 24:
+                h = int(horas)
+                m = int((horas - h) * 60)
+                tiempo = f"hace {h}h {m}min" if m > 0 else f"hace {h}h"
+            else:
+                dias = int(horas / 24)
+                tiempo = f"hace {dias} dia(s)"
+
+            if horas < umbral_verde_h:
+                emoji = "🟢"
+            elif horas < umbral_amarillo_h:
+                emoji = "🟡"
+            else:
+                emoji = "🔴"
+
+            return (emoji, f"{label} · {tiempo}")
+        except Exception:
+            return ("⚫", f"{label} · error leyendo")
+
+    # Cada archivo tiene su frecuencia esperada
+    estados = [
+        _status_archivo("acciones_chilenas.json", "Acciones Chilenas", 1, 3),
+        _status_archivo("prices.json", "Precios ETFs", 1, 3),
+        _status_archivo("noticias_watchlist.json", "Noticias + CMF", 3, 8),
+    ]
+
+    for emoji, msg in estados:
+        st.caption(f"{emoji} {msg}")
+
+    # Si hay alguno rojo, mostrar advertencia mas notoria
+    if any(e == "🔴" for e, _ in estados):
+        st.warning("⚠️ Hay datos desactualizados. Revisar tareas programadas en el PC.")
+
 MULT = {'CARO': 0.5, 'NEUTRAL': 1.0, 'ATRACTIVO': 1.5, 'OPORTUNIDAD': 2.5}
 WEIGHTS = {'cape': 0.40, 'drawdown': 0.25, 'ey_vs_bond': 0.15, 'yield_curve': 0.10, 'momentum': 0.10}
 
