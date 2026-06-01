@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-01T15:33:03.935146+00:00",
+  "updated_at_utc": "2026-06-01T19:10:15.202509+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -75,7 +75,7 @@
     "LIPIGAS": [
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780327861",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780340941",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -88,17 +88,17 @@
     "NTGCLGAS": [],
     "SOQUICOM": [
       {
-        "title": "Cómo se gestó el retorno de Hernán Büchi a la vicepresidencia de SQM",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbnZySTNyZ292QWxyRWdMUzJBdkhPcFVfdUtjVTV5S1EtUkgwZEtxM0k0VkE0QWxGZGVfd1A4ZnF4ZmhMRThxQ1NhQkNxeTRkMmpfZExtTFRpeVRWXzgzOXhQenlfenR1OXVMS2JTcEF0MUI1X1NJYlowODRxaEx4cUdUQXB0aU5lQzNIOV9lYWRvZlJkemZCYldfSmNGVC1mT2RhaDdB?oc=5",
-        "pubdate": "Mon, 01 Jun 2026 08:00:00 GMT",
+        "title": "IPSA cae con fuerza a niveles de 10.600 puntos luego de que Irán cortara el diálogo con EEUU por ataques israelíes en el Líbano",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9na2VnMjVIVjFCaFp5Qnl5VVdFTHE2WE9lX3dJYXVnMU5yX3JMc0lSVFFkVmNFNUt5OXhMdHVDejVuLUNRRGZmbEFQV0ZqcU5WNmtLQlVJNnJoVXBSRzF3bzFhdVhTamhB?oc=5",
+        "pubdate": "Mon, 01 Jun 2026 16:57:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
       {
-        "title": "La industria que Chile no nombra con orgullo",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWnR5QnJpMFZLZDMzU1duWFlVbEtJQ3lmME1ydmoxYlV1WVNFNEFwZXhwOE1ab3lFMzRaSTVRR0NJR185ektEQW1KTkhYNklrWmUyanE1S1BWMFdsNGVTdVp1NXlZaFEtY1lwYjJoQi1UcVpLR0x6S0ZfaF9Oc1U3M0xBV0R0RDhGajR4TXJGTmhieXlFQmEzMl84S0l6QkpjbHo0bG1R?oc=5",
-        "pubdate": "Sun, 31 May 2026 03:40:28 GMT",
-        "source": "Diario El Mercurio |",
+        "title": "Cómo se gestó el retorno de Hernán Büchi a la vicepresidencia de SQM",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbnZySTNyZ292QWxyRWdMUzJBdkhPcFVfdUtjVTV5S1EtUkgwZEtxM0k0VkE0QWxGZGVfd1A4ZnF4ZmhMRThxQ1NhQkNxeTRkMmpfZExtTFRpeVRWXzgzOXhQenlfenR1OXVMS2JTcEF0MUI1X1NJYlowODRxaEx4cUdUQXB0aU5lQzNIOV9lYWRvZlJkemZCYldfSmNGVC1mT2RhaDdB?oc=5",
+        "pubdate": "Mon, 01 Jun 2026 08:00:00 GMT",
+        "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
       {
@@ -179,13 +179,6 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "El verdadero litio chileno: instituciones, más que salares",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRE80czFWSFBGQUhQUWhWSnNfRHpCYUR3bzM0bGtCLVA3dU1LS0h5V3hJWUVvYkp0MDVqN0JDTVV0TmFneGxpU05KSS1ONTVfRzhpeUlwdktxT0FGbzdXM0xJUWQ0OGRvbUNwSTFraFJ1c29zODFHQlpQRTNjZ1dKZERTUzh1cTJBT3hvUGpTRXh5VHMyZlJ5MFQ0NjM5VWh3Nk42TGRGQ2ktNG9yV0k0?oc=5",
-        "pubdate": "Wed, 27 May 2026 08:03:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "Oro Blanco informa fusión legal con dos sociedades Cascada de SQM y nuevo esquema comienza a operar en junio",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbDZVZ2kyUjZ0NU1za2dFbEcyQktkTWRDZUd1TTF5QUVSNFZzUkRrZFZhREtUTGNjVF9xX0hhZmhBWnhDOHpIcDJNWEZHVlFvRXh6b0Jna2FuQXN4QXJrbEhxelVXcnBNVXo4aXNUM1VlSlhrWHRLZ0dnOUFpWGNIalJyVnBBUFZZUS02YnM3ZElscDNtUlhlY0RiSmVSQ2N5Sm82SDQ1OTJxWjVDblNCdGw2U0g?oc=5",
         "pubdate": "Wed, 27 May 2026 00:45:00 GMT",
@@ -228,15 +221,8 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "Novandino y Albemarle redujeron su participación mundial en el mercado del litio durante 2025, mientras demanda aumentó 35%",
-        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNLXNtdTVZSHc0VlZ5NS1CVnNycVN3V0tLLUxFRVRGMTJlYkgtQlpzZnY2U3IyYXhIakhjWnJWdVFCS1N1NTlvdjlkMlZfNFBaMHpxYll4aVhoR3F0eFdoN0paSVNKYWNxdUNLRmFZNk5DaDZudm5mRExidWJlYUt2X1JkekhraktlWlhDMUw0UTFxenFmd18yU2puclQ0Q1o1Q21EanpSaTdrc1VBdUhqNTVyVExrSlRrVUwwYWdVc0FiSldhM1pXWXR4Qk16b2lnU0hPQkl6VU9wcU5NTnN5b1pwVTc4THFseTVFakZrSWhaSER1?oc=5",
-        "pubdate": "Mon, 25 May 2026 15:57:43 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780327861",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780340941",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -276,8 +262,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2221,
-    "total_noticias_filtradas": 34,
-    "total_hechos_esenciales_brutos": 143
+    "total_noticias_brutas": 2222,
+    "total_noticias_filtradas": 32,
+    "total_hechos_esenciales_brutos": 150
   }
 }
