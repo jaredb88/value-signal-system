@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-01T13:33:04.116812+00:00",
+  "updated_at_utc": "2026-06-01T15:33:03.935146+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -20,13 +20,6 @@
         "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOHExcFpNMjdtaGx5a1U5VGFLRXhpZ0RodDJBc0R0YktOM3cwWU5mTEZsb2hhN21pVFlDdHp1b2RQZG5VaXZFWDdIRS1KSGMyLVJTV2J3enlic1RSaEFZUlo4QXd5Ujk5V1F0T0taVEV5T0pyWFA4ZXlweEp3RTBMZHR0LWh6N29CQUxSZ2wxS0ZfZWRoZ092V0N3cnV3TVJyYklySW5aUHFGWE0?oc=5",
         "pubdate": "Mon, 25 May 2026 19:49:00 GMT",
         "source": "Diario Financiero",
-        "matched_keyword": "AFP Habitat"
-      },
-      {
-        "title": "Cajas de Chile A.G. abordó las transformaciones y desafíos del mercado laboral para la generación +50",
-        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdlE2Um9jSzFwY3FSQ1VlSkZXQzRjak5hejRPUEhPazVRTHkzRzZvaGYyUDc5Q3UwWTVEWEZVeGU0d1BJOHE2d2ZGTTV3SnhXYWwwemhFYi1OUDFEYWJHNUhXdVFRZnZGNDhkTjVBMTNzVUFsOGJmWEJldlNPa09BTHk1TmY5N0tabHBaaksxY1pLTHFvU2swX1lXaDBzam53c1ZIWVNRNDFvWWpMdWVYbnFhVnVfWERVX19Eb1V1UUUybTNmWGd5MFlHd0RhS3N3eVVNRUp5N3EyQQ?oc=5",
-        "pubdate": "Mon, 25 May 2026 14:44:34 GMT",
-        "source": "La Tercera",
         "matched_keyword": "AFP Habitat"
       }
     ],
@@ -82,7 +75,7 @@
     "LIPIGAS": [
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780320541",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780327861",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -112,6 +105,13 @@
         "title": "Ethic Points, roca verde y el mejor compañero: la trama tras la denuncia de sobreproducción en Codelco",
         "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcUU2SzRSOGVQU2ltcnlNTGp0UGpYT1ZBNU5fOW4xWFZjUkxXcHVyTUphblJQNlFOMDU0OFpmUzc0UzV6cEhTY2NfMnFOQmM1MEhDMnMwa1FPbTA4NUNscGRNVG9NNEx5VHFzazVvbnpadEQ5dlppQzRhZ3g1T0ZjaEJsbldYWmdUMEZnMmpQeUUtN1pEZ1ZrTTV4bzMtTTU5WTNQMzNPdGlwN1RQR1E?oc=5",
         "pubdate": "Sun, 31 May 2026 01:00:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Fuera de Libreto | Francisco Bustamante: El arte en permanente búsqueda y \"Temporal\", la exposición que inaugura pronto",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcDM0a1NOelFUYUlSVG16b1R0S3VEM2o2VjVidzlJYVN0UlNrOE9IX3lRY2xWRW9xZkFnMnJkeEJpMHkzWC1wT1VLUDZjRDNnY3o4emZOR2N0ZTk3QXFYeXp6UFdJd0lVU3ZMS3ZURmNETDdqTFpMbVltX3VOV2taYVZaMlFUOFBsSkgwVnRuTnh2dWlXRGhHRl96aDdQQ1hMZEwyWk1xUlRsYjA?oc=5",
+        "pubdate": "Sat, 30 May 2026 00:49:47 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -228,13 +228,6 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "Bolsa chilena cierra con fuerte alza y el IPSA supera los 10.800 puntos tras progreso de conversaciones de paz en Medio Oriente",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9sX3pndjhocTA5a24ySnVfLVVUbENyQm5RSkxQMGNKSEh5aXFVRmtIMWxXbnVVaVl5YzdiSW9JaVpka0dHdm1xMDBTTFdOelZiMTQ1SXRYNWVMWnZOSUlaUnpoejcwZV8t?oc=5",
-        "pubdate": "Mon, 25 May 2026 20:25:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "Novandino y Albemarle redujeron su participación mundial en el mercado del litio durante 2025, mientras demanda aumentó 35%",
         "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNLXNtdTVZSHc0VlZ5NS1CVnNycVN3V0tLLUxFRVRGMTJlYkgtQlpzZnY2U3IyYXhIakhjWnJWdVFCS1N1NTlvdjlkMlZfNFBaMHpxYll4aVhoR3F0eFdoN0paSVNKYWNxdUNLRmFZNk5DaDZudm5mRExidWJlYUt2X1JkekhraktlWlhDMUw0UTFxenFmd18yU2puclQ0Q1o1Q21EanpSaTdrc1VBdUhqNTVyVExrSlRrVUwwYWdVc0FiSldhM1pXWXR4Qk16b2lnU0hPQkl6VU9wcU5NTnN5b1pwVTc4THFseTVFakZrSWhaSER1?oc=5",
         "pubdate": "Mon, 25 May 2026 15:57:43 GMT",
@@ -242,15 +235,8 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "Laurence Golborne respalda abrir parte de la propiedad de Codelco a privados y cuestiona continuidad de Pacheco en Novandino Litio",
-        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQbGlReUh1LUZrcVhzZGJuQVByMlhNdklCc3NEMjVvaVRiU3hiOWZkSC1WSmdEalNHTlZtNldrby01VWlocjVkSU5Nb21MUlNaeXdESmt5YUZMTGxFSnBRNTlkbGU1QmMxdVBZSXNSYkJVQ0paUWkweWxOY0xCUlFfZktadFBXUkJRRGhIZE5YQ0Vwa1Y3ekFGVnNiX3V3SFBlZUx5MjhZYVo2VXU0QVM1ank2QTZOdk1HMV9ZQ1NTNlV6ZVVtSThTdFE0TXNIWVZnV1h0bkV0N2o0TnBSemFZUzNKeGFUMTRXR2w2QTRFbF9Tek1sOHowaF9MLUZ1Q0lj?oc=5",
-        "pubdate": "Mon, 25 May 2026 15:09:22 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780320541",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780327861",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -290,8 +276,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2227,
-    "total_noticias_filtradas": 36,
-    "total_hechos_esenciales_brutos": 139
+    "total_noticias_brutas": 2221,
+    "total_noticias_filtradas": 34,
+    "total_hechos_esenciales_brutos": 143
   }
 }
