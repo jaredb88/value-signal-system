@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-01T19:10:15.202509+00:00",
+  "updated_at_utc": "2026-06-01T21:33:03.820757+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -7,22 +7,7 @@
     "El Mercurio"
   ],
   "noticias_por_ticker": {
-    "HABITAT": [
-      {
-        "title": "ILC más que duplica sus ganancias por un mejor desempeño de las filiales financieras",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWXNuM3JRaFBNNkdqVmtjWjl1dk02b21fOHBFOW5RTVRpT2hrM2hMWEZZYkRJeDVPa2hJTEVHV1p4Z3JWV09JMl9EdTI5NnN4eWV3eVFyZVhxZjZuN3JaeTFzLUlxZlNOZ0dBQ1ByM0M1OXhjaTV5UVJZa2pyMXdXWjFEbFpzVzBxcVUtbjQ4U05EZU9HRi05aXZpYkl2LVktMXA4TE1nc3U4bEY2SWprMzM2VENoTENTc2t4YjJURQ?oc=5",
-        "pubdate": "Mon, 25 May 2026 20:46:01 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "AFP Habitat"
-      },
-      {
-        "title": "ILC eleva sus utilidades en 125% por mejor desempeño operacional de filiales",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOHExcFpNMjdtaGx5a1U5VGFLRXhpZ0RodDJBc0R0YktOM3cwWU5mTEZsb2hhN21pVFlDdHp1b2RQZG5VaXZFWDdIRS1KSGMyLVJTV2J3enlic1RSaEFZUlo4QXd5Ujk5V1F0T0taVEV5T0pyWFA4ZXlweEp3RTBMZHR0LWh6N29CQUxSZ2wxS0ZfZWRoZ092V0N3cnV3TVJyYklySW5aUHFGWE0?oc=5",
-        "pubdate": "Mon, 25 May 2026 19:49:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "AFP Habitat"
-      }
-    ],
+    "HABITAT": [],
     "ZOFRI": [],
     "PEHUENCHE": [],
     "TRICAHUE": [],
@@ -75,7 +60,7 @@
     "LIPIGAS": [
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780340941",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780349402",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -88,9 +73,9 @@
     "NTGCLGAS": [],
     "SOQUICOM": [
       {
-        "title": "IPSA cae con fuerza a niveles de 10.600 puntos luego de que Irán cortara el diálogo con EEUU por ataques israelíes en el Líbano",
+        "title": "IPSA cierra con fuerte caída a niveles de 10.600 tras señales de un posible quiebre de las negociaciones de paz en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9na2VnMjVIVjFCaFp5Qnl5VVdFTHE2WE9lX3dJYXVnMU5yX3JMc0lSVFFkVmNFNUt5OXhMdHVDejVuLUNRRGZmbEFQV0ZqcU5WNmtLQlVJNnJoVXBSRzF3bzFhdVhTamhB?oc=5",
-        "pubdate": "Mon, 01 Jun 2026 16:57:00 GMT",
+        "pubdate": "Mon, 01 Jun 2026 20:25:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -105,13 +90,6 @@
         "title": "Ethic Points, roca verde y el mejor compañero: la trama tras la denuncia de sobreproducción en Codelco",
         "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcUU2SzRSOGVQU2ltcnlNTGp0UGpYT1ZBNU5fOW4xWFZjUkxXcHVyTUphblJQNlFOMDU0OFpmUzc0UzV6cEhTY2NfMnFOQmM1MEhDMnMwa1FPbTA4NUNscGRNVG9NNEx5VHFzazVvbnpadEQ5dlppQzRhZ3g1T0ZjaEJsbldYWmdUMEZnMmpQeUUtN1pEZ1ZrTTV4bzMtTTU5WTNQMzNPdGlwN1RQR1E?oc=5",
         "pubdate": "Sun, 31 May 2026 01:00:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Fuera de Libreto | Francisco Bustamante: El arte en permanente búsqueda y \"Temporal\", la exposición que inaugura pronto",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcDM0a1NOelFUYUlSVG16b1R0S3VEM2o2VjVidzlJYVN0UlNrOE9IX3lRY2xWRW9xZkFnMnJkeEJpMHkzWC1wT1VLUDZjRDNnY3o4emZOR2N0ZTk3QXFYeXp6UFdJd0lVU3ZMS3ZURmNETDdqTFpMbVltX3VOV2taYVZaMlFUOFBsSkgwVnRuTnh2dWlXRGhHRl96aDdQQ1hMZEwyWk1xUlRsYjA?oc=5",
-        "pubdate": "Sat, 30 May 2026 00:49:47 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -214,15 +192,8 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "Máximo Pacheco renuncia a directorio de Novandino Litio: “He seguido atentamente la ofensiva que han llevado algunos sectores”",
-        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNbzhnd1BraGRKUXJkYjRlajVZX0drTVdSV0RCY2hyX3dNcEFIeG1NYnVuTXZRa0tTaDRQMWJrWXJFWDhEQXdaWTYzUmZuUW1CeWhqbUZES3ZzTWIzV2J0aGx0bjdES2ltNEs3bnB4LWhsSHNtWXMxOEx4dmVkV1VGUU44ekJweTBHYzhIcnNvYWlTODBJMkh4bkRCeUxCb3FZSmh2VEx1X2xFeTZuajY4RFBrMFRjTy1ZeXhxWnk0MzRpVGVmSXVCNzl0ZXlIeTBsNWVUNzVyUWduVElDbXRLdUxDQ0Vmb2cxWE1iSVU3dWs3YlowUC1v?oc=5",
-        "pubdate": "Mon, 25 May 2026 23:27:29 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780340941",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780349402",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -262,8 +233,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2222,
-    "total_noticias_filtradas": 32,
-    "total_hechos_esenciales_brutos": 150
+    "total_noticias_brutas": 2221,
+    "total_noticias_filtradas": 28,
+    "total_hechos_esenciales_brutos": 158
   }
 }
