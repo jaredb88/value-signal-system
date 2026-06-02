@@ -73,7 +73,7 @@ def git_pull():
     """Trae cambios remotos para evitar conflictos en push."""
     log.info("Git pull (trayendo cambios remotos)...")
     result = run_command(
-        ["git", "pull", "--no-rebase", "--no-edit"],
+        ["git", "pull", "--rebase", "--autostash"],
         check=False,
     )
     if result is None:
