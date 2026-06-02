@@ -109,7 +109,10 @@ async def main():
 
     # 3. Scrapear cada ticker
     new_prices = {}
-    hubo_cambios = False
+    # Forzamos hubo_cambios=True para que SIEMPRE commitee tras cada run exitoso.
+    # Esto garantiza que el indicador de frescura del dashboard refleje la realidad.
+    # Los logs igual indican si los precios cambiaron o no (informativo).
+    hubo_cambios = True
     errores = []
 
     for ticker in TICKERS:
