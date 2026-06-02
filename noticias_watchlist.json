@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-01T21:33:03.820757+00:00",
+  "updated_at_utc": "2026-06-02T14:00:11.763634+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -7,7 +7,15 @@
     "El Mercurio"
   ],
   "noticias_por_ticker": {
-    "HABITAT": [],
+    "HABITAT": [
+      {
+        "title": "Reforma de pensiones",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5IbGlMRTlVTUVqeXNlMVJSSjRYWXhEOUpQWkFnQzVna3F4YlRMcFNkQUpFNnNLamRucFU2VXFfbjRvOW1oUnVmOGwzTG1KZ3g0UTdETlV2ZUQybE9uV1kyZElJSDRhWDFFaDdsSFk4blpqZw?oc=5",
+        "pubdate": "Mon, 01 Jun 2026 20:28:18 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "AFP Habitat"
+      }
+    ],
     "ZOFRI": [],
     "PEHUENCHE": [],
     "TRICAHUE": [],
@@ -43,13 +51,6 @@
         "matched_keyword": "Enel Chile"
       },
       {
-        "title": "FNE inicia investigación del acuerdo de compra de filial de transmisión de Enel Chile por parte de Grupo Saesa",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5OMXZpTm5wWDBYZ2tjU3JZeDhDYncyV2JwaFlyRnJoc3FWeGlGaVp1a1ZsUGhGYTRhMGxaM1IybnJCWjNMbWxZcXZXeUVRNWdqaGVvTGF0RVBBSk5KS0tPeEt3OTFQbkRVb04tYnBTUEtHZF9ldFZRVQ?oc=5",
-        "pubdate": "Thu, 28 May 2026 22:35:18 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "Enel Chile"
-      },
-      {
         "title": "Bolsa chilena cierra al alza y el IPSA bordea los 10.900 puntos tras reportes de un preacuerdo de paz en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5IZjhSc1U1allLSl81OGctcmdLQUJEZU5rRW16YVczY09VOGl4VjFWOEUxX3lpQ1dZWVZSWnptb3RhSl81MnhKTXE3Vm5LdDZyekgxQ1NXWjB1SmQtZ18tTV8wY0ZaRFFS?oc=5",
         "pubdate": "Thu, 28 May 2026 20:28:00 GMT",
@@ -60,7 +61,7 @@
     "LIPIGAS": [
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780349402",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780408621",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -70,8 +71,23 @@
         "materia_cmf": "Reparto de utilidades (pago de dividendos)"
       }
     ],
-    "NTGCLGAS": [],
+    "NTGCLGAS": [
+      {
+        "title": "Construcción el que más crece y bancos los que más ganan: cómo cerró la temporada de resultados del primer trimestre",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMzRkNGRzeW5tWnJOaVNObVRQMXdEekpFU2s0b1RGS2VjR3ZPWlctOVlZVlk0Ti0wNjN1Mm85Z1Q5djRXTGNZcVBuMFFGZ19XSTZULV9tN29meTJBcXNuQ3owMnRnTkpOQThvejlhX0RVM2wzM3ViWGM0cWY0WGtHUEtHTVFBVEYyYzM4NktaUlFhUVRlWHlMWTdveVpmU2cyaWd4bnQtcnRGTVIybnhjYjFMX3NsX1pWRkdVOXFPaHlPdGYwU1RTUFJjaDZIRE9IY2NxeTBRd0NNTHdOcEZCVDAyR2k1RHBONjltWA?oc=5",
+        "pubdate": "Tue, 02 Jun 2026 00:41:33 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "Gasco"
+      }
+    ],
     "SOQUICOM": [
+      {
+        "title": "Novandino afina ingreso ambiental de Salar Futuro, la apuesta de US$ 3.000 millones para producir litio hasta el 2060",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc21xRGVlUWtXMW5LaGctbllNS04xc2NhSzZ4QjlPUjctRWdRR1NNcnYxOGZMMFJvenAzUGhKanlxZEFWMWtWU2tWdS1IakdGdnNSWlp6dk9hZnphaGp4THBZbWUzSVFvZkhybVhiSjVFUm1qM2w1MlR3QkRFTy05WG1mQTROZ0R5ZkQ0TVlUdjBReXB4MEd0ZTctRVZjLVlpY2VSWFh1SF9uS0E?oc=5",
+        "pubdate": "Tue, 02 Jun 2026 08:00:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
       {
         "title": "IPSA cierra con fuerte caída a niveles de 10.600 tras señales de un posible quiebre de las negociaciones de paz en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9na2VnMjVIVjFCaFp5Qnl5VVdFTHE2WE9lX3dJYXVnMU5yX3JMc0lSVFFkVmNFNUt5OXhMdHVDejVuLUNRRGZmbEFQV0ZqcU5WNmtLQlVJNnJoVXBSRzF3bzFhdVhTamhB?oc=5",
@@ -83,6 +99,13 @@
         "title": "Cómo se gestó el retorno de Hernán Büchi a la vicepresidencia de SQM",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbnZySTNyZ292QWxyRWdMUzJBdkhPcFVfdUtjVTV5S1EtUkgwZEtxM0k0VkE0QWxGZGVfd1A4ZnF4ZmhMRThxQ1NhQkNxeTRkMmpfZExtTFRpeVRWXzgzOXhQenlfenR1OXVMS2JTcEF0MUI1X1NJYlowODRxaEx4cUdUQXB0aU5lQzNIOV9lYWRvZlJkemZCYldfSmNGVC1mT2RhaDdB?oc=5",
         "pubdate": "Mon, 01 Jun 2026 08:00:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "El retail se vuelca sobre Chicureo ante el auge inmobiliario que vive el sector y su alto nivel de gasto",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYkpPNVM3YkFZRmI5eFhwdzBGRF9sMlFxdGN4SExYUFlDY3R6NzFMQjdfNmRlVG5CQ3R5RHM3U0RsdHRtZXR5Mi1UUEhBWVA5R3hOZG5QQkVqbzFPcWxOdXJadVBJdFB3c1hncWhtdlBJZkRQWHZkT1BSNV9GT0g5V0E5a3VCLXRSZGFUZHFpbjJjYlVOTks5RmVlZVVueHIzN3ozVXdWVVRKQQ?oc=5",
+        "pubdate": "Mon, 01 Jun 2026 00:08:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -193,7 +216,7 @@
       },
       {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780349402",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780408621",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -233,8 +256,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2221,
-    "total_noticias_filtradas": 28,
-    "total_hechos_esenciales_brutos": 158
+    "total_noticias_brutas": 2213,
+    "total_noticias_filtradas": 31,
+    "total_hechos_esenciales_brutos": 151
   }
 }
