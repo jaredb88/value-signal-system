@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-02T19:33:02.827948+00:00",
+  "updated_at_utc": "2026-06-02T21:33:03.803406+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -61,7 +61,7 @@
     "LIPIGAS": [
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780428661",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780435681",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -82,16 +82,16 @@
     ],
     "SOQUICOM": [
       {
-        "title": "Directorio de Novandino hizo lo que todos esperaban: eligió a Bernardo Fontaine como su presidente",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZEVzM3NMZ0tiTnRGRGxtZFdlYS1uZjNpVXgxeDNrbnpCR2FoRi1ZaVRsdm1UUEtnM1JEUnhQQ3FKb29RbVVRbWYycy1FVm5NcVFxdnB2cWQzek5tS0RCMlU4NGdlYWdTaWVhekc1US1FWVMzYldDVGdUYXhYSnpEM3g3dTZzdkotY0xRaU50ZjhEekc3Xzg0LTZBOVhZb0g2c0l0aENaUQ?oc=5",
-        "pubdate": "Tue, 02 Jun 2026 19:09:00 GMT",
+        "title": "Bolsa de Santiago sufre una de las mayores caídas a nivel mundial y cierra sus peores tres sesiones desde marzo",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5YOUhqU3A2cG9ucFZNMVotQlZiZmlmdGJrSWotY2V3ZzFUbWtJXzBaTVJBZDFjUUw4Qnp1ampaMkk3YTJZTkRseVZSbERrSFp1UXdKcjZrSTJ1aFlZTUVycjdzSFMwcVBnTUE?oc=5",
+        "pubdate": "Tue, 02 Jun 2026 20:25:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
       {
-        "title": "IPSA cae con fuerza y pierde los 10.500 puntos mientras inversionistas siguen atentos el incierto proceso de paz en Medio Oriente",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5YOUhqU3A2cG9ucFZNMVotQlZiZmlmdGJrSWotY2V3ZzFUbWtJXzBaTVJBZDFjUUw4Qnp1ampaMkk3YTJZTkRseVZSbERrSFp1UXdKcjZrSTJ1aFlZTUVycjdzSFMwcVBnTUE?oc=5",
-        "pubdate": "Tue, 02 Jun 2026 17:27:00 GMT",
+        "title": "Directorio de Novandino hizo lo que todos esperaban: eligió a Bernardo Fontaine como su presidente",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZEVzM3NMZ0tiTnRGRGxtZFdlYS1uZjNpVXgxeDNrbnpCR2FoRi1ZaVRsdm1UUEtnM1JEUnhQQ3FKb29RbVVRbWYycy1FVm5NcVFxdnB2cWQzek5tS0RCMlU4NGdlYWdTaWVhekc1US1FWVMzYldDVGdUYXhYSnpEM3g3dTZzdkotY0xRaU50ZjhEekc3Xzg0LTZBOVhZb0g2c0l0aENaUQ?oc=5",
+        "pubdate": "Tue, 02 Jun 2026 19:09:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -223,7 +223,7 @@
       },
       {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780428661",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780435681",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -249,22 +249,14 @@
         "matched_keyword": "Quinenco"
       }
     ],
-    "CENCOMALLS": [
-      {
-        "title": "- Diario Financiero",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAwdk1idDhUdFRSMVk2NFdhRG1SbkN0UjNZanV6X1VnT1BINWVMNUdWd2ZVbURiZmU4djIxanRHUHEzRGtDb0otbUpVY3dzTUYwU245eHh1OGFHOGVQbkZ3RkZrakJjMWVidlB3bHc4WEljVzBMQ3lJNg?oc=5",
-        "pubdate": "Fri, 29 May 2026 01:08:45 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "Cencosud Shopping"
-      }
-    ]
+    "CENCOMALLS": []
   },
   "stats": {
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2219,
-    "total_noticias_filtradas": 32,
-    "total_hechos_esenciales_brutos": 161
+    "total_noticias_brutas": 2222,
+    "total_noticias_filtradas": 31,
+    "total_hechos_esenciales_brutos": 164
   }
 }
