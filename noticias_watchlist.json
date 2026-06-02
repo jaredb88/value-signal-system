@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-02T18:32:38.340674+00:00",
+  "updated_at_utc": "2026-06-02T19:33:02.827948+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -61,7 +61,7 @@
     "LIPIGAS": [
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780425061",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780428661",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -81,6 +81,20 @@
       }
     ],
     "SOQUICOM": [
+      {
+        "title": "Directorio de Novandino hizo lo que todos esperaban: eligió a Bernardo Fontaine como su presidente",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZEVzM3NMZ0tiTnRGRGxtZFdlYS1uZjNpVXgxeDNrbnpCR2FoRi1ZaVRsdm1UUEtnM1JEUnhQQ3FKb29RbVVRbWYycy1FVm5NcVFxdnB2cWQzek5tS0RCMlU4NGdlYWdTaWVhekc1US1FWVMzYldDVGdUYXhYSnpEM3g3dTZzdkotY0xRaU50ZjhEekc3Xzg0LTZBOVhZb0g2c0l0aENaUQ?oc=5",
+        "pubdate": "Tue, 02 Jun 2026 19:09:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "IPSA cae con fuerza y pierde los 10.500 puntos mientras inversionistas siguen atentos el incierto proceso de paz en Medio Oriente",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5YOUhqU3A2cG9ucFZNMVotQlZiZmlmdGJrSWotY2V3ZzFUbWtJXzBaTVJBZDFjUUw4Qnp1ampaMkk3YTJZTkRseVZSbERrSFp1UXdKcjZrSTJ1aFlZTUVycjdzSFMwcVBnTUE?oc=5",
+        "pubdate": "Tue, 02 Jun 2026 17:27:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
       {
         "title": "Novandino afina ingreso ambiental de Salar Futuro, la apuesta de US$ 3.000 millones para producir litio hasta el 2060",
         "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc21xRGVlUWtXMW5LaGctbllNS04xc2NhSzZ4QjlPUjctRWdRR1NNcnYxOGZMMFJvenAzUGhKanlxZEFWMWtWU2tWdS1IakdGdnNSWlp6dk9hZnphaGp4THBZbWUzSVFvZkhybVhiSjVFUm1qM2w1MlR3QkRFTy05WG1mQTROZ0R5ZkQ0TVlUdjBReXB4MEd0ZTctRVZjLVlpY2VSWFh1SF9uS0E?oc=5",
@@ -209,7 +223,7 @@
       },
       {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780425061",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780428661",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -249,8 +263,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2181,
-    "total_noticias_filtradas": 30,
+    "total_noticias_brutas": 2219,
+    "total_noticias_filtradas": 32,
     "total_hechos_esenciales_brutos": 161
   }
 }
