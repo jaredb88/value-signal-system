@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-02T14:00:11.763634+00:00",
+  "updated_at_utc": "2026-06-02T18:32:38.340674+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -11,7 +11,7 @@
       {
         "title": "Reforma de pensiones",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5IbGlMRTlVTUVqeXNlMVJSSjRYWXhEOUpQWkFnQzVna3F4YlRMcFNkQUpFNnNLamRucFU2VXFfbjRvOW1oUnVmOGwzTG1KZ3g0UTdETlV2ZUQybE9uV1kyZElJSDRhWDFFaDdsSFk4blpqZw?oc=5",
-        "pubdate": "Mon, 01 Jun 2026 20:28:18 GMT",
+        "pubdate": "Mon, 01 Jun 2026 20:28:19 GMT",
         "source": "La Tercera",
         "matched_keyword": "AFP Habitat"
       }
@@ -61,7 +61,7 @@
     "LIPIGAS": [
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780408621",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780425061",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -103,13 +103,6 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "El retail se vuelca sobre Chicureo ante el auge inmobiliario que vive el sector y su alto nivel de gasto",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYkpPNVM3YkFZRmI5eFhwdzBGRF9sMlFxdGN4SExYUFlDY3R6NzFMQjdfNmRlVG5CQ3R5RHM3U0RsdHRtZXR5Mi1UUEhBWVA5R3hOZG5QQkVqbzFPcWxOdXJadVBJdFB3c1hncWhtdlBJZkRQWHZkT1BSNV9GT0g5V0E5a3VCLXRSZGFUZHFpbjJjYlVOTks5RmVlZVVueHIzN3ozVXdWVVRKQQ?oc=5",
-        "pubdate": "Mon, 01 Jun 2026 00:08:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "Ethic Points, roca verde y el mejor compañero: la trama tras la denuncia de sobreproducción en Codelco",
         "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcUU2SzRSOGVQU2ltcnlNTGp0UGpYT1ZBNU5fOW4xWFZjUkxXcHVyTUphblJQNlFOMDU0OFpmUzc0UzV6cEhTY2NfMnFOQmM1MEhDMnMwa1FPbTA4NUNscGRNVG9NNEx5VHFzazVvbnpadEQ5dlppQzRhZ3g1T0ZjaEJsbldYWmdUMEZnMmpQeUUtN1pEZ1ZrTTV4bzMtTTU5WTNQMzNPdGlwN1RQR1E?oc=5",
         "pubdate": "Sun, 31 May 2026 01:00:00 GMT",
@@ -121,6 +114,13 @@
         "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2xadExIaVNJNzFkdFlUVGFrVGNjY1p3Nm1fUXZualJLdWUyWmpkblV3LThPVW4wY0ljTlBBZnlOOV9YMTR1Um1TOXR2ZklIQ1EyNFNiT3hWVE5Pdm1xU2ZkcmtxbTZpZVJOQVU5MjJWVXVubmFmSzduaHljaUJIQ3Zod3BwbjBhcjNjMjlFblh1NU5LTy01d1c4WWItWUxFdWE4dUtYSQ?oc=5",
         "pubdate": "Fri, 29 May 2026 22:09:55 GMT",
         "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "FNE da luz verde y Toesca entra en última etapa para compra de Frontal Trust a Andrés Echeverría",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOalNVbkJRNGFYcTdWb19RQUMwYXQ3akJfRDU5dExQVURPLWFIVFpLOFBEMnZZcGF1XzlJc1VZeWQzUDNnR0VaOENQNjU4UHJkbVAtU05xMW10T1daOEV6OVIteVNKZHVaNklVY0ptVnBsajMxZmVFVEQ5YVVvcVlUREN3OHJPNXVfTkgzRWZCMHYtTG52bkNENGVnV0hmNF8xdjdsNmhqMmFweTRoVWwxVHNpeVV4NVYt?oc=5",
+        "pubdate": "Fri, 29 May 2026 18:00:00 GMT",
+        "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
       {
@@ -208,15 +208,8 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "IPSA cierra a la baja y pierde los 10.800 puntos en medio de incertidumbre tras ataques estadounidenses contra Irán",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFByQzFRaV8xMEh1MzZ3clIxeEVBRU05bWdMdjlBZ0tfX0pIWW9rbGo1WHdLODd5ZnU0ZlBROXVGREUxbTdlQjlnam0wT0hkSFVvcF8wank0dVh3QUt1YlpXNzh1T3RXQnRf?oc=5",
-        "pubdate": "Tue, 26 May 2026 20:28:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780408621",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780425061",
         "pubdate": "26 may 2026 20:15",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "sociedad quimica y minera",
@@ -256,8 +249,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2213,
-    "total_noticias_filtradas": 31,
-    "total_hechos_esenciales_brutos": 151
+    "total_noticias_brutas": 2181,
+    "total_noticias_filtradas": 30,
+    "total_hechos_esenciales_brutos": 161
   }
 }
