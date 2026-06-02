@@ -91,7 +91,7 @@ async def main():
 
     # 1. Git pull primero para evitar conflictos
     log.info("--- Git pull ---")
-    code, out, err = ejecutar_git(['pull', '--no-rebase'])
+    code, out, err = ejecutar_git(['pull', '--rebase', '--autostash'])
     if code != 0:
         log.warning(f"git pull devolvió código {code}: {err}")
     else:

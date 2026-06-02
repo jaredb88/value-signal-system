@@ -309,7 +309,7 @@ def main():
 
     # Git pull para evitar conflictos con otras tareas (acciones, prices)
     log.info("--- Git pull ---")
-    code, out, err = ejecutar_git(["pull", "--no-rebase"])
+    code, out, err = ejecutar_git(["pull", "--rebase", "--autostash"])
     if code != 0:
         log.warning(f"git pull devolvio codigo {code}: {err}")
     else:
