@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-02T18:16:31.209496",
-  "duracion_segundos": 102.937252,
+  "fecha_actualizacion": "2026-06-03T10:58:47.678097",
+  "duracion_segundos": 114.901975,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,11 +11,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": 1341.3,
+      "precio_actual_clp": 1345,
       "razon_social": "A.F.P. HABITAT S.A.",
-      "variacion_pct": -0.86,
+      "variacion_pct": 0.28,
       "dy": {
-        "dy_pct": 7.41,
+        "dy_pct": 7.39,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 110.0,
@@ -25,13 +25,13 @@
         "promedio_anual": 99.33,
         "advertencia": null
       },
-      "cagr_3y": 0.20413820582824038,
-      "cagr_5y": 0.3746885293924145,
-      "cagr_10y": 0.10657673357074837,
+      "cagr_3y": 0.20524440154457002,
+      "cagr_5y": 0.3747761230170239,
+      "cagr_10y": 0.10688160648090039,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 0.91
+        "vs_benchmark_pp": 0.89
       },
       "cmf": {
         "periodo": "03/2026",
@@ -137,11 +137,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Operadora de la zona franca de Iquique. Negocio estable y predecible. ROE 35%, payout 74%, G=9%.",
-      "precio_actual_clp": 1009.9,
+      "precio_actual_clp": 1005,
       "razon_social": "ZONA FRANCA DE IQUIQUE S.A.",
-      "variacion_pct": -0.39,
+      "variacion_pct": -0.49,
       "dy": {
-        "dy_pct": 6.85,
+        "dy_pct": 6.89,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 67.12,
@@ -151,13 +151,13 @@
         "promedio_anual": 69.21,
         "advertencia": null
       },
-      "cagr_3y": 0.17132773908068977,
-      "cagr_5y": 0.20348728076483313,
-      "cagr_10y": 0.06801577720928575,
+      "cagr_3y": 0.16943025297556336,
+      "cagr_5y": 0.20326921615400595,
+      "cagr_10y": null,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
-        "vs_benchmark_pp": -1.65
+        "vs_benchmark_pp": -1.61
       },
       "cmf": {
         "periodo": "12/2025",
@@ -265,7 +265,7 @@
       "descripcion": "Generadora hidroelectrica del Maule. Filial de Enel Generacion. ROE 72%, payout >100% (paga mas que lo que gana, usa caja acumulada).",
       "precio_actual_clp": 2810.3,
       "razon_social": "EMPRESA ELECTRICA PEHUENCHE S.A.",
-      "variacion_pct": 5.55,
+      "variacion_pct": 0,
       "dy": {
         "dy_pct": 8.31,
         "anos_usados": 3,
@@ -515,11 +515,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 132,
+      "precio_actual_clp": 131.77,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": -2.16,
+      "variacion_pct": -0.17,
       "dy": {
-        "dy_pct": 6.02,
+        "dy_pct": 6.03,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 5.54,
@@ -529,13 +529,13 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.03228011545636722,
-      "cagr_5y": 0.04855513536519007,
-      "cagr_10y": -0.02380448835605986,
+      "cagr_3y": 0.03168021025883472,
+      "cagr_5y": 0.0523244328305581,
+      "cagr_10y": -0.02397471654559391,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.48
+        "vs_benchmark_pp": -2.47
       },
       "cmf": {
         "periodo": "03/2026",
@@ -641,11 +641,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial chilena de Enel. Principal generadora hidroelectrica del pais. ROE 19%, payout 62%, G=7%.",
-      "precio_actual_clp": 538.07,
+      "precio_actual_clp": 541,
       "razon_social": "ENEL GENERACION CHILE S.A.",
-      "variacion_pct": -0.09,
+      "variacion_pct": 0.54,
       "dy": {
-        "dy_pct": 6.24,
+        "dy_pct": 6.21,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 41.9,
@@ -655,13 +655,13 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": 0.30163409872533586,
-      "cagr_5y": 0.2079448767733414,
-      "cagr_10y": -0.008778928446893874,
+      "cagr_3y": 0.30399245746252723,
+      "cagr_5y": 0.20803595190322066,
+      "cagr_10y": -0.008240488193192452,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.26
+        "vs_benchmark_pp": -2.29
       },
       "cmf": {
         "periodo": "03/2026",
@@ -767,9 +767,9 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de GLP en Chile, Colombia y Peru. Crecimiento moderado por expansion regional. ROE 33%, payout 63%, G=12%.",
-      "precio_actual_clp": 8481.2,
+      "precio_actual_clp": 8498,
       "razon_social": "EMPRESAS LIPIGAS S.A.",
-      "variacion_pct": 0.34,
+      "variacion_pct": 0.2,
       "dy": {
         "dy_pct": 4.11,
         "anos_usados": 2,
@@ -780,8 +780,8 @@
         "promedio_anual": 349.0,
         "advertencia": "Solo 2 anos disponibles (ideal: 3)"
       },
-      "cagr_3y": 0.45602198408923056,
-      "cagr_5y": 0.1698591020944551,
+      "cagr_3y": 0.45698273790419885,
+      "cagr_5y": 0.1746449773355354,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
@@ -892,11 +892,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Distribucion de gas natural por redes en Chile. Negocio regulado, payout alto. ROE 13%, payout 68%, G=4%.",
-      "precio_actual_clp": 623.72,
+      "precio_actual_clp": 624,
       "razon_social": "NATURGY CHILE GAS NATURAL S.A.",
-      "variacion_pct": 0.06,
+      "variacion_pct": 0.04,
       "dy": {
-        "dy_pct": 6.47,
+        "dy_pct": 6.46,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 44.0,
@@ -906,13 +906,13 @@
         "promedio_anual": 40.33,
         "advertencia": null
       },
-      "cagr_3y": 0.5398385089148874,
-      "cagr_5y": 0.22179039769253306,
+      "cagr_3y": 0.5400688955630994,
+      "cagr_5y": 0.2219000750790303,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
-        "vs_benchmark_pp": -2.03
+        "vs_benchmark_pp": -2.04
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1033,7 +1033,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.0956856815939402,
-      "cagr_5y": 0.11692494707063972,
+      "cagr_5y": 0.11189118114378416,
       "cagr_10y": 0.10068228462115925,
       "evaluacion": {
         "status": "Sobre benchmark",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3830,
+      "precio_actual_clp": 3501,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": -2.47,
+      "variacion_pct": -8.59,
       "dy": {
-        "dy_pct": 10.54,
+        "dy_pct": 11.53,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.11479255558359003,
-      "cagr_5y": 0.20871445095415186,
-      "cagr_10y": 0.11413779509634048,
+      "cagr_3y": 0.08191175348013857,
+      "cagr_5y": 0.19261139270539585,
+      "cagr_10y": null,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 2.04
+        "vs_benchmark_pp": 3.03
       },
       "cmf": {
         "periodo": "12/2025",
@@ -1270,11 +1270,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2329.3,
+      "precio_actual_clp": 2300,
       "razon_social": "CENCOSUD SHOPPING S.A.",
-      "variacion_pct": -1.34,
+      "variacion_pct": -1.26,
       "dy": {
-        "dy_pct": 4.36,
+        "dy_pct": 4.42,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 91.0,
@@ -1284,13 +1284,13 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.20723017308525749,
-      "cagr_5y": 0.12915291730213996,
+      "cagr_3y": 0.2021469288922655,
+      "cagr_5y": 0.13606118222735852,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -4.14
+        "vs_benchmark_pp": -4.08
       },
       "cmf": {
         "periodo": "03/2026",
