@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-02T21:33:03.803406+00:00",
+  "updated_at_utc": "2026-06-03T15:33:03.048897+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -8,6 +8,13 @@
   ],
   "noticias_por_ticker": {
     "HABITAT": [
+      {
+        "title": "Toesca cierra compra de Primus y recibe autorización para adquirir Frontal Trust",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNV28wMUFZQ2NYaHlFN2c4NnFPTkpRYkM2QkpkZVE1UnBOVGxkUWVPZnZGa2VoMWE0MkdLV2tzcDZmQW1iQjZKQnRLREdBSTJVempsSnY2LWdMOHJ1YzhoNl9jSHRlc1hUWFpnbkdTWlRiMmk1SDVzbDZtX2ZLblAtSmRwWndCTFBoTHhpZEI1NlJkbnV5RnNveVBTSXEtY0VETWhBU1RMNWdLZWl5T21kYVVqM1FEeFpaczFFQm03T2tWMDlrLWJfMXhnWGZlQ0k0b3V1amxPTEZCTFFna1pr?oc=5",
+        "pubdate": "Wed, 03 Jun 2026 00:23:27 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "AFP Habitat"
+      },
       {
         "title": "Reforma de pensiones",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5IbGlMRTlVTUVqeXNlMVJSSjRYWXhEOUpQWkFnQzVna3F4YlRMcFNkQUpFNnNLamRucFU2VXFfbjRvOW1oUnVmOGwzTG1KZ3g0UTdETlV2ZUQybE9uV1kyZElJSDRhWDFFaDdsSFk4blpqZw?oc=5",
@@ -26,30 +33,9 @@
         "pubdate": "Fri, 29 May 2026 17:12:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "Colbun"
-      },
-      {
-        "title": "Longaví Colbún y Linares",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBoY3V0dlpjX1pUb2xxbUNETGlWNjczMWVwM1FNbGk5RmJKSjBOTkRETEtHdnhtVDk5VnpEQzBVVkJReTQxdDU2eFN1NGxlZkpHQ1BTekNHV2ZJdFZIckFZR01wR2huUHpELS1vdw?oc=5",
-        "pubdate": "Wed, 27 May 2026 10:16:54 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "Colbun"
-      },
-      {
-        "title": "Longaví Colbún Linares",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE81blJMSGNjbmlKRjdZTTBQaXFuempUTFFtb083ZFdROTEybGNIeS15eTJXU0xSRXd0cXhlWjh1dXNoNDZCdmVhZUpWTjZ6dmo4MnhsUjMyU21DeER1ZXBHYVVNVEJRY2taekE?oc=5",
-        "pubdate": "Wed, 27 May 2026 10:16:54 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "Colbun"
       }
     ],
     "ENELGXCH": [
-      {
-        "title": "A dos semanas del Mundial 2026: empresas de consumo aparecen entre las ganadoras históricas en bolsa",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQ1k0TWpXMGdGZ1RBbld5TllpZVRrUnBIU2UxRzdGQU8xczUyYTN5dlNqaENsdGxuX0phbWNZZXlIVkI3dF9BaWszb1ppcnFKMU14Wi1lQzVWMGVkT09LeUZ2WmNFVWFuSWFLbXBSdVRXd3V4QXFwUEcwM3Q0MnNPeHJRTzNkcWxxdDk4Qy05UkxwUVRzR1ltOUpoaTk0cDdVVnpDcFFzdU9DamlaN3c0?oc=5",
-        "pubdate": "Fri, 29 May 2026 22:50:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "Enel Chile"
-      },
       {
         "title": "Bolsa chilena cierra al alza y el IPSA bordea los 10.900 puntos tras reportes de un preacuerdo de paz en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5IZjhSc1U1allLSl81OGctcmdLQUJEZU5rRW16YVczY09VOGl4VjFWOEUxX3lpQ1dZWVZSWnptb3RhSl81MnhKTXE3Vm5LdDZyekgxQ1NXWjB1SmQtZ18tTV8wY0ZaRFFS?oc=5",
@@ -61,7 +47,7 @@
     "LIPIGAS": [
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780435681",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780500481",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -82,9 +68,16 @@
     ],
     "SOQUICOM": [
       {
+        "title": "Oro Blanco cita a junta de accionistas para cambiar su nombre a Pampa",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMGZQdHNuZVROaDBvc0NnZlh1MUhWSndkdXJnaVM3b3JTc2dLTE0wNG82S0lUdW5wb3M2REZyQW5ZWld5bkcwV3MwQnlLSkdZNE5mU1MtYzU1YXk4RGR6VTdTOE04U3dLbFFoWUdxbGJIbEE5OW1IbDJsRC1nYXNCNGhYLXE2elo0MUdGWUlOQkdyTWhfcHlwTW5mRllLUmZSa2xndW1yNHZza0o4bFBj?oc=5",
+        "pubdate": "Tue, 02 Jun 2026 22:20:33 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
         "title": "Bolsa de Santiago sufre una de las mayores caídas a nivel mundial y cierra sus peores tres sesiones desde marzo",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5YOUhqU3A2cG9ucFZNMVotQlZiZmlmdGJrSWotY2V3ZzFUbWtJXzBaTVJBZDFjUUw4Qnp1ampaMkk3YTJZTkRseVZSbERrSFp1UXdKcjZrSTJ1aFlZTUVycjdzSFMwcVBnTUE?oc=5",
-        "pubdate": "Tue, 02 Jun 2026 20:25:00 GMT",
+        "pubdate": "Tue, 02 Jun 2026 20:28:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -128,13 +121,6 @@
         "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2xadExIaVNJNzFkdFlUVGFrVGNjY1p3Nm1fUXZualJLdWUyWmpkblV3LThPVW4wY0ljTlBBZnlOOV9YMTR1Um1TOXR2ZklIQ1EyNFNiT3hWVE5Pdm1xU2ZkcmtxbTZpZVJOQVU5MjJWVXVubmFmSzduaHljaUJIQ3Zod3BwbjBhcjNjMjlFblh1NU5LTy01d1c4WWItWUxFdWE4dUtYSQ?oc=5",
         "pubdate": "Fri, 29 May 2026 22:09:55 GMT",
         "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "FNE da luz verde y Toesca entra en última etapa para compra de Frontal Trust a Andrés Echeverría",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOalNVbkJRNGFYcTdWb19RQUMwYXQ3akJfRDU5dExQVURPLWFIVFpLOFBEMnZZcGF1XzlJc1VZeWQzUDNnR0VaOENQNjU4UHJkbVAtU05xMW10T1daOEV6OVIteVNKZHVaNklVY0ptVnBsajMxZmVFVEQ5YVVvcVlUREN3OHJPNXVfTkgzRWZCMHYtTG52bkNENGVnV0hmNF8xdjdsNmhqMmFweTRoVWwxVHNpeVV4NVYt?oc=5",
-        "pubdate": "Fri, 29 May 2026 18:00:00 GMT",
-        "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
       {
@@ -185,52 +171,6 @@
         "pubdate": "Wed, 27 May 2026 15:56:22 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
-      },
-      {
-        "title": "“Sobreproducción” en Codelco - Diario El Mercurio |",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZVJNZWlrUnFJRWFFOGEtNGladXRYVWliSHJaMTdYanJDZ3k4MnQ2eUlkcmZuMWM0RHc0QWc3ME1seHhYU21vYjZRQUk2YWhfblFSN2xiT3JhcTZOME9vMVpMQ2JyS05xU0JsRWdZYXpHYXdzQ1dNOTBPTnhvV1BfT0tpNS15b0toZlE?oc=5",
-        "pubdate": "Wed, 27 May 2026 14:01:20 GMT",
-        "source": "Diario El Mercurio |",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Oro Blanco informa fusión legal con dos sociedades Cascada de SQM y nuevo esquema comienza a operar en junio",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbDZVZ2kyUjZ0NU1za2dFbEcyQktkTWRDZUd1TTF5QUVSNFZzUkRrZFZhREtUTGNjVF9xX0hhZmhBWnhDOHpIcDJNWEZHVlFvRXh6b0Jna2FuQXN4QXJrbEhxelVXcnBNVXo4aXNUM1VlSlhrWHRLZ0dnOUFpWGNIalJyVnBBUFZZUS02YnM3ZElscDNtUlhlY0RiSmVSQ2N5Sm82SDQ1OTJxWjVDblNCdGw2U0g?oc=5",
-        "pubdate": "Wed, 27 May 2026 00:45:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Hernán Büchi asume vicepresidencia de SQM y Josefina Montenegro pone su cargo a disposición en Novandino",
-        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQlJQUDZNek01Q0N5TzJ6QzdBLWlEVFhJT1E1QzdXWFZXdDZDYk9URGFzd01KSUxtZVNjcXotNUtpQ2NONEZ3dmIwNG01b0hiQUxSb2Y4aG00Mkx4Y2tVQ19oY1RpUHZNa2dsZTBjcjBhbVM1dFViN0lDUWtGZ1ZZbjlKM05XMFhreUsyX2FrWWtlTHZyUHM1N0JNUkFWVXp3Q2g4cHlWd09mSkZWOFVDSDJHb2dXZjJJaEVaWjBWR2kyVG9JUHpqSDlzSWNoREFaS0Z2MjhDQ3Y3LXM3VVE?oc=5",
-        "pubdate": "Wed, 27 May 2026 00:39:55 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Precio del litio mejora en el primer trimestre: SQM gana US$ 365 millones y paga a Corfo US$ 342 millones",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSzJpWFlQSkZoazhMcTJYbDdEUzlKek5uYmNTVEhvbzg5TGFGY053M3l2M1c3TFVrLThVQlV5amRDczd6YVpEc0lZMU5fUWJ0RzllQ08zZ3I4V3Jfbm1vcmk4ajlxOE1kQlgxLXhpZGtQekpyVGRfekxjdTIwQjJsT19MTFBSLUdSMFRrYkFnZjVNQ1N3NVpKSzdSWDlkS005UUFWN0JKU1RYVTdxT3hQeHk3elBDa3VtVUpURURFOUFQYkZCS0NMSlhzZkRWeGhNeFRtZDZFZ19pTWM?oc=5",
-        "pubdate": "Wed, 27 May 2026 00:33:14 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "SQM dispara sus ganancias un 165% en el primer trimestre de 2026 impulsada por el boom del litio",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaXN4cFBRX3RDSU9va3loWF9HZnJObGQ3eXd0QmJaZFRkTjdycy1NWTc1YmdPaHByUDRacHl6MnQ1RVJCbUI0ZjdkRFVsZjR3NXJxNHJMdWVpbUVpRDlfd21kM3VIN2R6dFBkdTJhOHlXRm5obXZQQldnX3laWDJXc3ZYV1N3cm50bU9qZWJEbF9FWDFWVUMwdUVoREJ0bzJneWVMT0hzWFBUOEZw?oc=5",
-        "pubdate": "Tue, 26 May 2026 23:37:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=4bc5211efc49390a30d74d4ab265af45VFdwQmVVNXFRVEZOUkUweFRYcEpNVTVSUFQwPQ==&secuencia=-1&t=1780435681",
-        "pubdate": "26 may 2026 20:15",
-        "source": "CMF (Hecho Esencial)",
-        "matched_keyword": "sociedad quimica y minera",
-        "es_hecho_esencial": true,
-        "doc_id": "2026050353255",
-        "empresa_cmf": "SOCIEDAD QUIMICA Y MINERA DE CHILE S.A.",
-        "materia_cmf": "Cambios en la administración"
       }
     ],
     "QUINENCO": [
@@ -249,14 +189,33 @@
         "matched_keyword": "Quinenco"
       }
     ],
-    "CENCOMALLS": []
+    "CENCOMALLS": [
+      {
+        "title": "Economía y Negocios Pág.1",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdmxuQV9SVG1VRXhZdWRJT3VsaVZ3Rzh5UlJPUTA3NEc2ckUySldaTktKdThPX2pyRnpJcHhqWExhQjdBTWJocGMxMUExaHQtZTA0UWhnUnhmdW85RWhILUtIWl9vTmhCN3NqMXRTYl9BZi03WURzYkUwN0p1YmI3aG41S3RBcmRSOVpNTkFGYkFWMlBCRGZSQk1rMVZQRnF5Z294N3dR?oc=5",
+        "pubdate": "Wed, 03 Jun 2026 03:56:36 GMT",
+        "source": "Diario El Mercurio |",
+        "matched_keyword": "Cencosud Shopping"
+      },
+      {
+        "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780500481",
+        "pubdate": "3 jun 2026 10:16",
+        "source": "CMF (Hecho Esencial)",
+        "matched_keyword": "cencosud shopping",
+        "es_hecho_esencial": true,
+        "doc_id": "2026060368996",
+        "empresa_cmf": "CENCOSUD SHOPPING S.A.",
+        "materia_cmf": "Activos o paquetes accionarios, adquisición o enajenación"
+      }
+    ]
   },
   "stats": {
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2222,
-    "total_noticias_filtradas": 31,
-    "total_hechos_esenciales_brutos": 164
+    "total_noticias_brutas": 2225,
+    "total_noticias_filtradas": 25,
+    "total_hechos_esenciales_brutos": 139
   }
 }
