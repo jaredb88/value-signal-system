@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-03T11:19:54.921023",
-  "duracion_segundos": 120.190834,
+  "fecha_actualizacion": "2026-06-03T11:56:35.556048",
+  "duracion_segundos": 106.277566,
   "n_acciones": 11,
   "acciones": [
     {
@@ -641,11 +641,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial chilena de Enel. Principal generadora hidroelectrica del pais. ROE 19%, payout 62%, G=7%.",
-      "precio_actual_clp": 541,
+      "precio_actual_clp": 538,
       "razon_social": "ENEL GENERACION CHILE S.A.",
-      "variacion_pct": 0.54,
+      "variacion_pct": -0.01,
       "dy": {
-        "dy_pct": 6.21,
+        "dy_pct": 6.24,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 41.9,
@@ -655,13 +655,13 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": 0.30399245746252723,
-      "cagr_5y": 0.20803595190322066,
-      "cagr_10y": -0.008240488193192452,
+      "cagr_3y": 0.30157765108942747,
+      "cagr_5y": 0.20669318909633794,
+      "cagr_10y": -0.00879182445249671,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.29
+        "vs_benchmark_pp": -2.26
       },
       "cmf": {
         "periodo": "03/2026",
@@ -767,9 +767,9 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de GLP en Chile, Colombia y Peru. Crecimiento moderado por expansion regional. ROE 33%, payout 63%, G=12%.",
-      "precio_actual_clp": 8498,
+      "precio_actual_clp": 8500,
       "razon_social": "EMPRESAS LIPIGAS S.A.",
-      "variacion_pct": 0.2,
+      "variacion_pct": 0.22,
       "dy": {
         "dy_pct": 4.11,
         "anos_usados": 2,
@@ -780,8 +780,8 @@
         "promedio_anual": 349.0,
         "advertencia": "Solo 2 anos disponibles (ideal: 3)"
       },
-      "cagr_3y": 0.45698273790419885,
-      "cagr_5y": 0.1746449773355354,
+      "cagr_3y": 0.45709702898859494,
+      "cagr_5y": 0.1747002625514502,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3793.7,
+      "precio_actual_clp": 3781,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": -0.95,
+      "variacion_pct": -1.28,
       "dy": {
-        "dy_pct": 10.64,
+        "dy_pct": 10.67,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.11125944041754487,
-      "cagr_5y": 0.21191770033855684,
+      "cagr_3y": 0.11001801623808816,
+      "cagr_5y": 0.21110519506565995,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 2.14
+        "vs_benchmark_pp": 2.17
       },
       "cmf": {
         "periodo": "12/2025",
@@ -1270,11 +1270,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2300,
+      "precio_actual_clp": 2281.9,
       "razon_social": "CENCOSUD SHOPPING S.A.",
-      "variacion_pct": -1.26,
+      "variacion_pct": -2.03,
       "dy": {
-        "dy_pct": 4.42,
+        "dy_pct": 4.46,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 91.0,
@@ -1284,13 +1284,13 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.2021469288922655,
-      "cagr_5y": 0.13606118222735852,
+      "cagr_3y": 0.19898516253580323,
+      "cagr_5y": 0.1342674654841638,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -4.08
+        "vs_benchmark_pp": -4.04
       },
       "cmf": {
         "periodo": "03/2026",
