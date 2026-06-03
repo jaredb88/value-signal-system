@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-03T10:58:47.678097",
-  "duracion_segundos": 114.901975,
+  "fecha_actualizacion": "2026-06-03T11:19:54.921023",
+  "duracion_segundos": 120.190834,
   "n_acciones": 11,
   "acciones": [
     {
@@ -515,9 +515,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 131.77,
+      "precio_actual_clp": 131.76,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": -0.17,
+      "variacion_pct": -0.18,
       "dy": {
         "dy_pct": 6.03,
         "anos_usados": 3,
@@ -529,9 +529,9 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.03168021025883472,
-      "cagr_5y": 0.0523244328305581,
-      "cagr_10y": -0.02397471654559391,
+      "cagr_3y": 0.03165411159425835,
+      "cagr_5y": 0.052308460205855,
+      "cagr_10y": -0.023982123835695868,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3501,
+      "precio_actual_clp": 3793.7,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": -8.59,
+      "variacion_pct": -0.95,
       "dy": {
-        "dy_pct": 11.53,
+        "dy_pct": 10.64,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.08191175348013857,
-      "cagr_5y": 0.19261139270539585,
+      "cagr_3y": 0.11125944041754487,
+      "cagr_5y": 0.21191770033855684,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 3.03
+        "vs_benchmark_pp": 2.14
       },
       "cmf": {
         "periodo": "12/2025",
