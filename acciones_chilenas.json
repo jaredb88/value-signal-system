@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-04T11:04:48.408332",
-  "duracion_segundos": 101.736095,
+  "fecha_actualizacion": "2026-06-04T11:35:08.351856",
+  "duracion_segundos": 123.64127,
   "n_acciones": 11,
   "acciones": [
     {
@@ -515,7 +515,7 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 132,
+      "precio_actual_clp": 131.99,
       "razon_social": "COLBUN S.A.",
       "variacion_pct": 0.76,
       "dy": {
@@ -529,9 +529,9 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.02520948180365523,
-      "cagr_5y": 0.05269153582983033,
-      "cagr_10y": -0.024643261220614776,
+      "cagr_3y": 0.025183592021533308,
+      "cagr_5y": 0.05267558547472384,
+      "cagr_10y": -0.024650650538729724,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -767,11 +767,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de GLP en Chile, Colombia y Peru. Crecimiento moderado por expansion regional. ROE 33%, payout 63%, G=12%.",
-      "precio_actual_clp": 8698.7,
+      "precio_actual_clp": 8588,
       "razon_social": "EMPRESAS LIPIGAS S.A.",
-      "variacion_pct": 2.06,
+      "variacion_pct": 0.76,
       "dy": {
-        "dy_pct": 4.01,
+        "dy_pct": 4.06,
         "anos_usados": 2,
         "anos_detalle": {
           "2025": 437.0,
@@ -780,13 +780,13 @@
         "promedio_anual": 349.0,
         "advertencia": "Solo 2 anos disponibles (ideal: 3)"
       },
-      "cagr_3y": 0.46836361737966437,
-      "cagr_5y": 0.18014168640643646,
+      "cagr_3y": 0.4621081884336513,
+      "cagr_5y": 0.17712257254562624,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.49
+        "vs_benchmark_pp": -2.44
       },
       "cmf": {
         "periodo": "03/2026",
@@ -892,11 +892,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Distribucion de gas natural por redes en Chile. Negocio regulado, payout alto. ROE 13%, payout 68%, G=4%.",
-      "precio_actual_clp": 609.71,
+      "precio_actual_clp": 608,
       "razon_social": "NATURGY CHILE GAS NATURAL S.A.",
-      "variacion_pct": -2.02,
+      "variacion_pct": -2.29,
       "dy": {
-        "dy_pct": 6.62,
+        "dy_pct": 6.63,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 44.0,
@@ -906,13 +906,13 @@
         "promedio_anual": 40.33,
         "advertencia": null
       },
-      "cagr_3y": 0.5282218063649766,
-      "cagr_5y": 0.21625163518903467,
+      "cagr_3y": 0.5267917788863015,
+      "cagr_5y": 0.21556864575730916,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
-        "vs_benchmark_pp": -1.88
+        "vs_benchmark_pp": -1.87
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,7 +1144,7 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3794,
+      "precio_actual_clp": 3793.7,
       "razon_social": "QUINENCO S.A.",
       "variacion_pct": 0.74,
       "dy": {
@@ -1158,9 +1158,9 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.1186889420813968,
-      "cagr_5y": 0.2119368670523325,
-      "cagr_10y": 0.11305185410947338,
+      "cagr_3y": 0.1186594555650784,
+      "cagr_5y": 0.21191770033855684,
+      "cagr_10y": 0.11304305264826153,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
@@ -1270,11 +1270,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2345.1,
+      "precio_actual_clp": 2320.2,
       "razon_social": "CENCOSUD SHOPPING S.A.",
-      "variacion_pct": 0.68,
+      "variacion_pct": -0.39,
       "dy": {
-        "dy_pct": 4.34,
+        "dy_pct": 4.38,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 91.0,
@@ -1284,13 +1284,13 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.20749603665352034,
-      "cagr_5y": 0.1404819780712463,
+      "cagr_3y": 0.2032071366418018,
+      "cagr_5y": 0.13804972477169253,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -4.16
+        "vs_benchmark_pp": -4.12
       },
       "cmf": {
         "periodo": "03/2026",
