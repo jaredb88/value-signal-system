@@ -1157,11 +1157,19 @@ if seccion == "₿ Bitcoin (BTC)":
     pesos = btc_data.get("pesos", {})
     historico = btc_data.get("historico_btc", [])
 
-    # ===== Header con 4 metricas =====
-    col_a, col_b, col_c, col_d = st.columns([1, 1, 1, 1])
+    # ===== Header con 5 metricas =====
+    precio_ibit = btc_data.get("precio_ibit")
+    col_a, col_b, col_c, col_d, col_e = st.columns([1, 1, 1, 1, 1])
     with col_a:
         st.metric("💵 Precio BTC", f"${precio_actual:,.2f}" if precio_actual else "—")
     with col_b:
+        st.metric(
+            "🏦 IBIT",
+            f"${precio_ibit:,.2f}" if precio_ibit else "—",
+            delta="BlackRock ETF",
+            delta_color="off"
+        )
+    with col_c:
         dd = sub_detalles.get("drawdown", {})
         if dd:
             dd_pct = dd.get("drawdown_pct", 0)
@@ -1172,9 +1180,9 @@ if seccion == "₿ Bitcoin (BTC)":
                 delta=f"ATH ${ath:,.0f}",
                 delta_color="off"
             )
-    with col_c:
-        st.metric("📊 Score", f"{score} / 100")
     with col_d:
+        st.metric("📊 Score", f"{score} / 100")
+    with col_e:
         zona_emoji = {"CARO":"🔴", "NEUTRAL":"🟡", "ATRACTIVO":"🟢", "OPORTUNIDAD":"🟢🟢"}.get(zona, "⚪")
         st.metric("🎯 Zona", f"{zona_emoji} {zona}", delta=f"x{mult}", delta_color="off")
 

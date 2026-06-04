@@ -288,6 +288,8 @@ def calcular_score_btc():
     log.info("\n--- Descargando datos ---")
     log.info("BTC-USD (5y para Pi Cycle)...")
     btc_hist = fetch_yahoo_history("BTC-USD", "5y")
+    log.info("IBIT (BlackRock Bitcoin ETF)...")
+    ibit_hist = fetch_yahoo_history("IBIT", "1mo")
     log.info("Fear & Greed Index...")
     fg_value, fg_class = fetch_fear_greed()
 
@@ -355,9 +357,15 @@ def calcular_score_btc():
                 "precio": round(float(precio), 2),
             })
 
+    # Precio actual de IBIT
+    ibit_actual = None
+    if ibit_hist is not None and not ibit_hist.empty:
+        ibit_actual = round(float(ibit_hist["Close"].iloc[-1]), 2)
+
     resultado = {
         "updated_at_utc": datetime.now(timezone.utc).isoformat(),
         "precio_btc": btc_actual,
+        "precio_ibit": ibit_actual,
         "score_final": round(score_final, 1),
         "zona": zona,
         "multiplicador": multiplicador,
