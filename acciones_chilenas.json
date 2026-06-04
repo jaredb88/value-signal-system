@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-04T13:05:14.030134",
-  "duracion_segundos": 129.335,
+  "fecha_actualizacion": "2026-06-04T13:35:16.836620",
+  "duracion_segundos": 131.385638,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,9 +11,9 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": 1350,
+      "precio_actual_clp": 1349.5,
       "razon_social": "A.F.P. HABITAT S.A.",
-      "variacion_pct": 0.04,
+      "variacion_pct": 0,
       "dy": {
         "dy_pct": 7.36,
         "anos_usados": 3,
@@ -25,9 +25,9 @@
         "promedio_anual": 99.33,
         "advertencia": null
       },
-      "cagr_3y": 0.21224174460494538,
-      "cagr_5y": 0.37579674487140835,
-      "cagr_10y": 0.10856036197186447,
+      "cagr_3y": 0.21209206665002167,
+      "cagr_5y": 0.37569481890015544,
+      "cagr_10y": 0.10851929733610954,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
@@ -767,11 +767,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de GLP en Chile, Colombia y Peru. Crecimiento moderado por expansion regional. ROE 33%, payout 63%, G=12%.",
-      "precio_actual_clp": 8550,
+      "precio_actual_clp": 8588,
       "razon_social": "EMPRESAS LIPIGAS S.A.",
-      "variacion_pct": 0.31,
+      "variacion_pct": 0.76,
       "dy": {
-        "dy_pct": 4.08,
+        "dy_pct": 4.06,
         "anos_usados": 2,
         "anos_detalle": {
           "2025": 437.0,
@@ -780,13 +780,13 @@
         "promedio_anual": 349.0,
         "advertencia": "Solo 2 anos disponibles (ideal: 3)"
       },
-      "cagr_3y": 0.45994849815782524,
-      "cagr_5y": 0.17607902252467356,
+      "cagr_3y": 0.4621081884336513,
+      "cagr_5y": 0.17712257254562624,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.42
+        "vs_benchmark_pp": -2.44
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,9 +1144,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3752.9,
+      "precio_actual_clp": 3754.4,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": -0.35,
+      "variacion_pct": -0.31,
       "dy": {
         "dy_pct": 10.75,
         "anos_usados": 3,
@@ -1158,9 +1158,9 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.11463472073797853,
-      "cagr_5y": 0.20929965798270955,
-      "cagr_10y": 0.11184017835485083,
+      "cagr_3y": 0.11478320407760711,
+      "cagr_5y": 0.20939631174640483,
+      "cagr_10y": 0.1118846096047792,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
@@ -1270,11 +1270,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2320,
+      "precio_actual_clp": 2300.1,
       "razon_social": "CENCOSUD SHOPPING S.A.",
-      "variacion_pct": -0.4,
+      "variacion_pct": -1.25,
       "dy": {
-        "dy_pct": 4.38,
+        "dy_pct": 4.42,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 91.0,
@@ -1284,13 +1284,13 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.20317256371101333,
-      "cagr_5y": 0.1380301042395573,
+      "cagr_3y": 0.19972257517380343,
+      "cagr_5y": 0.136071060848447,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -4.12
+        "vs_benchmark_pp": -4.08
       },
       "cmf": {
         "periodo": "03/2026",
