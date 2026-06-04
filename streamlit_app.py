@@ -1177,7 +1177,7 @@ if seccion == "₿ Bitcoin (BTC)":
 
     # ===== Header con 5 metricas =====
     precio_ibit = btc_data.get("precio_ibit")
-    col_a, col_b, col_c, col_d, col_e = st.columns([1, 1, 1, 1, 1])
+    col_a, col_b, col_c, col_d, col_e = st.columns([1.1, 0.9, 1, 0.9, 1.4])
     with col_a:
         st.metric("💵 Precio BTC", f"${precio_actual:,.2f}" if precio_actual else "—")
     with col_b:
@@ -1300,6 +1300,7 @@ if seccion == "₿ Bitcoin (BTC)":
         ("pi_cycle",      "📐 Pi Cycle Top",         "ratio",              "Indicador de tope de ciclo"),
         ("halving_cycle", "🔄 Halving Cycle",        "meses_desde_halving","Posición en el ciclo de 4 anos"),
         ("momentum",      "🚀 Momentum 12-1m",       "ret_12_1_pct",       "Retorno del último año"),
+        ("mvrv",          "🧠 MVRV Z-Score",         "z_score",            "Valuación on-chain (market vs realized value)"),
     ]
 
     def _explicacion_senal_btc(clave, score, detalle):
