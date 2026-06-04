@@ -123,6 +123,7 @@ with st.sidebar:
     APORTE_SCHD = 140
     APORTE_JEPQ = 60
     APORTE_GLD = 100
+    APORTE_BTC = 50
 
     # === Configuracion ETFs USA (solo en esa seccion) ===
     if seccion == "📈 ETFs USA":
