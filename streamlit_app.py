@@ -21,6 +21,7 @@ import numpy as np
 import yfinance as yf
 import urllib.request
 import io
+import json
 import warnings
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
