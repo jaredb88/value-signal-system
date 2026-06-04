@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-03T15:33:03.048897+00:00",
+  "updated_at_utc": "2026-06-04T00:17:30.100327+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -8,6 +8,13 @@
   ],
   "noticias_por_ticker": {
     "HABITAT": [
+      {
+        "title": "Qué es AAISA, la acción chilena que obtuvo las mayores ganancias en mayo",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNckZVa0UzcDFIeTBpRkVHQUlhT3REaGYyQWRfTTlrQl9fN3JiQ2tfTElKRHBtckN5M2tpZHZiQUJDblBOeXFiZlcxRTU4VDllV0V3cUt0RF9PSWRMay1fT29vVjRVWUdZV01pbldIVTQxRlpJYW9Ebmxfd1otSUxoQTQ5UnZ1bFUwdi02SWxaa1A1aF9zakNoWWdaSG5OMmZYQWc4WEJxM1kxbHRUTDBMaVZfVnBwTXdEY0M1Umw2eDk3QXVsQVlIN25TUzZ6UHNXRVBR?oc=5",
+        "pubdate": "Wed, 03 Jun 2026 16:31:43 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "AFP Habitat"
+      },
       {
         "title": "Toesca cierra compra de Primus y recibe autorización para adquirir Frontal Trust",
         "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNV28wMUFZQ2NYaHlFN2c4NnFPTkpRYkM2QkpkZVE1UnBOVGxkUWVPZnZGa2VoMWE0MkdLV2tzcDZmQW1iQjZKQnRLREdBSTJVempsSnY2LWdMOHJ1YzhoNl9jSHRlc1hUWFpnbkdTWlRiMmk1SDVzbDZtX2ZLblAtSmRwWndCTFBoTHhpZEI1NlJkbnV5RnNveVBTSXEtY0VETWhBU1RMNWdLZWl5T21kYVVqM1FEeFpaczFFQm03T2tWMDlrLWJfMXhnWGZlQ0k0b3V1amxPTEZCTFFna1pr?oc=5",
@@ -23,7 +30,26 @@
         "matched_keyword": "AFP Habitat"
       }
     ],
-    "ZOFRI": [],
+    "ZOFRI": [
+      {
+        "title": "Reordenamiento en Zofri: salen gerente general y dos altos ejecutivos tras caída de ventas y polémica por concesión",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQWNnZ1hMVnFJam5uOVpRS0lobXhUVUxWZGJUQTZSZFUzaDAyRE4tVVNVU204dDJDWk8wb3VMMHplOUhMX1lkMXduajRCTnFYUjl1ZnJhUjJUcVNENndZbXN2TEhOOEpCeklJcDdhQ2hjcVdoazhJTDlCcjYzUjZmazFKV2ZEWk1QN1JEOXdLY0VtaXA4MzlBTDFHZkIxUGh5VXJ3TEMtYjVPQzE4Unc?oc=5",
+        "pubdate": "Wed, 03 Jun 2026 22:35:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Zofri"
+      },
+      {
+        "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780532101",
+        "pubdate": "3 jun 2026 15:28",
+        "source": "CMF (Hecho Esencial)",
+        "matched_keyword": "zona franca de iquique",
+        "es_hecho_esencial": true,
+        "doc_id": "2026060370003",
+        "empresa_cmf": "ZONA FRANCA DE IQUIQUE S.A.",
+        "materia_cmf": "Cambios en la administración"
+      }
+    ],
     "PEHUENCHE": [],
     "TRICAHUE": [],
     "COLBUN": [
@@ -37,6 +63,13 @@
     ],
     "ENELGXCH": [
       {
+        "title": "A dos semanas del Mundial 2026: empresas de consumo aparecen entre las ganadoras históricas en bolsa",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQ1k0TWpXMGdGZ1RBbld5TllpZVRrUnBIU2UxRzdGQU8xczUyYTN5dlNqaENsdGxuX0phbWNZZXlIVkI3dF9BaWszb1ppcnFKMU14Wi1lQzVWMGVkT09LeUZ2WmNFVWFuSWFLbXBSdVRXd3V4QXFwUEcwM3Q0MnNPeHJRTzNkcWxxdDk4Qy05UkxwUVRzR1ltOUpoaTk0cDdVVnpDcFFzdU9DamlaN3c0?oc=5",
+        "pubdate": "Fri, 29 May 2026 22:50:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "Enel Chile"
+      },
+      {
         "title": "Bolsa chilena cierra al alza y el IPSA bordea los 10.900 puntos tras reportes de un preacuerdo de paz en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5IZjhSc1U1allLSl81OGctcmdLQUJEZU5rRW16YVczY09VOGl4VjFWOEUxX3lpQ1dZWVZSWnptb3RhSl81MnhKTXE3Vm5LdDZyekgxQ1NXWjB1SmQtZ18tTV8wY0ZaRFFS?oc=5",
         "pubdate": "Thu, 28 May 2026 20:28:00 GMT",
@@ -47,7 +80,7 @@
     "LIPIGAS": [
       {
         "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780500481",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780532101",
         "pubdate": "27 may 2026 18:42",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "empresas lipigas",
@@ -67,6 +100,27 @@
       }
     ],
     "SOQUICOM": [
+      {
+        "title": "La variopinta lista de los 17 antecesores de Jorge Gómez al mando de Codelco",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNd0Y5M1dGMWNQWmNublpETTZjNHZPbVJVUGEtWTRmWDg1VGJlNDNuYUxjSDczSzJZSTBwTVlxemo3WVJGRlVMck1Xc01WcXhmNmVwZ1lXNmR4VzNpS2ZLVU9aZEx4TFplNmFGTE1uWXdZLURIdzBzdVh4U2gxVFFzcFJZWWJyLXFldVZyeVBlVW5mNlhmaXVqQm9iSGRBSWMxQkZLaWZPVXg3NTlhdktSWV9sQi1DeFlU0gHaAUFVX3lxTE9RODFodkpNRUZRS2QwRzFvOU15MlJRUDJlMExoXzVqYWN3c19iVVJkMENfanNEaFBZRVpSWXgwdFVIaVN2bExpQW5TOWpNbDNibFZnWlh2RUV0QzZoeW9fcGNMZXFIUVJBcGJib2tFMGRUOGV3UmN2MGk4RFJIS3FUQkF3RjF6MWJCQzNJV040M3gwemRycFl2eU03V1QtZ21aekx4d2lUQ01nMDhhRHYwcjJMS2UxN0owazhkOFlXRDRyb1NYOU0yR0RTWnQwRFhFcEJnS0M5ZVdn?oc=5",
+        "pubdate": "Wed, 03 Jun 2026 23:47:14 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Bolsas globales caen y el dólar sube en medio de la incertidumbre por conflicto en Medio Oriente",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPY1ExcHU4eWw5Q2JvNERjeXBFX3p4QXFBTXI1c0V2dUo4LTlicWNIUEhpZjQ2ZFdySTJGWVJNVVJucFRjbjRKcXZPX1NyWHc3eUlBeEtXSlpQN1AxNzBJVU1URElwekpRdGN6RmVhN0NDZExtM3ViUmhoX3Jmb3JpMWlwejFyd0tTOHV0Vm1PcUJreEpwOWcta1RROG0tLUdfM1hNSlN2RUdpRUZ4Rk4yMk1FR1QyMlE5UnJVWXBINVFFem83VkhweE1YWVJaQVh5QUxJ0gH0AUFVX3lxTFA1aXBiU1lNYlZnbkhYX2dMTDMwRXkzV0lEbTFaZDBDQ0c0cnN6Zk5melZwVVVMUjNyYWxMTVZIWW9ZdTdDbTV1Y0lraE5nUWlPM2NnaVkwOXFlb0tQY0EwVU9QYl9xM0Z1ZG9JcDJnSzNCa2VWbHVjMEYwNGdvcXI3YmwtNGI5VHdDa0FPeTlRc0dnanEyTEtlNzBrSnF5S2lWZmlyeUdTRW9KejZVWkljQjV6YkVsbXZ0Rm1SOFJobDROci1oVm90N3h0RGVPN1N2Z2ItelRaS3F3NHlUR0JSRjJQdkJ5YXNuUWdZbXB1OXRialU?oc=5",
+        "pubdate": "Wed, 03 Jun 2026 22:35:29 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Rubén Alvarado presenta su renuncia a Codelco y la estatal oficializa a Jorge Gómez como presidente ejecutivo",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPUXExblFaTk5KdFRmLVk5eGhaYzdoOEpvUkdnckJrQnlRRDhlcUR3VUhkZ3FwWWVnMDJhVm16NkhQT2dnUzFueGZlSlBTU2UwaGh1cUFlUlRSUnlzWWJscWxNWmR2Y0tZa3BiVW16X1k3OUtPU0hnQmhub0Rab3RMczBrRW5ZU0M4eTBNd0ExYTdQUnk2ZTlvNFRrWVR0akx1ejJtNXBHTUNLdzdBdk1xVWYtNGNCZGhUSk81SmZtVW1CWUJYbWNQbG02NFVFUlVVZXhJQnBkRWV4WFo3R0tFRNIBggJBVV95cUxNbk1rQzBXYU5kZTJ3dWJEalpadENsb1NnWjhkUkhnRGRFUTZxU1dBZ0Y3WDdWTGtKX3FOekl4Q1FJY0hiSFlERlNyNXo5MEYxX1lKcGx6cVk5elJEYnIyNFRzajg2azRxN2lkZmM0c3JxYkhLd1hNNzd5d0IxbHF0SWZkWGlZa0lnWDdxRmJYbElJanhRLUoyd0lyY09Iakg2V0JTZHJkMTZYeFZtVHlKdmtGVk1MSnZPbV9BM0M0MVB5bzk3MndfRTlfckNVNGEybEVwTlNtV1hFazR6eHU2MmZsMTVxVXlfek4zVjhidG15VUx3WEtZZUxROXB5TDhqT0E?oc=5",
+        "pubdate": "Wed, 03 Jun 2026 18:26:42 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
       {
         "title": "Oro Blanco cita a junta de accionistas para cambiar su nombre a Pampa",
         "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMGZQdHNuZVROaDBvc0NnZlh1MUhWSndkdXJnaVM3b3JTc2dLTE0wNG82S0lUdW5wb3M2REZyQW5ZWld5bkcwV3MwQnlLSkdZNE5mU1MtYzU1YXk4RGR6VTdTOE04U3dLbFFoWUdxbGJIbEE5OW1IbDJsRC1nYXNCNGhYLXE2elo0MUdGWUlOQkdyTWhfcHlwTW5mRllLUmZSa2xndW1yNHZza0o4bFBj?oc=5",
@@ -117,13 +171,6 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "Empresas Ipsa suman ganancias por US$3.900 millones en el primer trimestre, pero casi el 45% empeoró sus resultados",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2xadExIaVNJNzFkdFlUVGFrVGNjY1p3Nm1fUXZualJLdWUyWmpkblV3LThPVW4wY0ljTlBBZnlOOV9YMTR1Um1TOXR2ZklIQ1EyNFNiT3hWVE5Pdm1xU2ZkcmtxbTZpZVJOQVU5MjJWVXVubmFmSzduaHljaUJIQ3Zod3BwbjBhcjNjMjlFblh1NU5LTy01d1c4WWItWUxFdWE4dUtYSQ?oc=5",
-        "pubdate": "Fri, 29 May 2026 22:09:55 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "Las 4 acciones del IPSA que mejor han sorteado la guerra",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeEtxSTNoWGRtUTdUWWEyUU03LXdhS0oxNGpaZ0t3X1BUOGdxcnVFYkMxNUlyMUJscnY0LXRCbm8yemZTWmxkYWNaY1VmbXI5VWh5MVMtaGo1ZnRNS01Qci1ZelVCMU9OR0REMjhCSEhPVWtidVgzSUFQVVVWaDZ4SHc1U2w1TkUzbHJVR01FRE4xVEVmRms4V3ZnNUdSZUZvckE2ZUlB?oc=5",
         "pubdate": "Fri, 29 May 2026 13:52:00 GMT",
@@ -141,34 +188,6 @@
         "title": "Primer directorio de Fontaine en Codelco: auditoría forense a producción de 2024 y 2025 y a costos de remodelación de casa matriz",
         "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPelh1RURwcGwzN253cGFDbDc4d0JSUWpyYkdnaUlQQXNTeXFUVzR3ZkI1REhOYzY4eG5ESjV1LXlXRl9LVXh3Vkx2b2F2dGhrME1VbGtBQ3B0UGppNF9Uc1BxRjl1dTJveHhQbTQ5ZlF3YTVfbkhYbzhfR2dfZmc5OUZKYUZmb2lLM0djOTB5ZlJpWWtuWllyRlpnZzcxOWRNSGkxeWxja0hQb0x3QVBhYXRGOXZScFMxaHlxX0lpWWZhVDlFMHhtREtWXzNsc1dncjhEZDlBZVB1WWhKd1FJMC1IODdmWXZMaGFROWUtak92QWEtVk9sZ2pEYw?oc=5",
         "pubdate": "Fri, 29 May 2026 00:46:34 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Bernardo Fontaine debuta como nuevo presidente del directorio de Codelco",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMjRnek10ZEVIaHBWX3ZvM3UwQk5XM2RDVzkyRUl1d1hxWDRObEVvZG9CSnVMaWxUcUtoV0RDQUtwTnRSWnc0N1hFb01IY0RzMERWTnV5ZmtPNC1FbW1HY2hienk4bFZOZlZ0akk2WFRRNXI4aFg4UVd1RXgzVDdUV2Fzc1NxNkR3dUl2M0o2TTZhdFVaQ0ZvdDloZUd2Qlp6QTZSZVdDNjVBZlhEazZKdmF6VGptR2JFVHF5c1d0VEF1VUtvNGZDaGtldHZ4Zw?oc=5",
-        "pubdate": "Wed, 27 May 2026 22:17:22 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "SQM apunta con todo al litio: invertirá US$ 3.000 millones en Salar Futuro y ampliará su producción en Australia",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcEE3Y3hIc3BOQTJXaWFfY0dvYjhUMG5yY2VUVW5ZMUVhTV94ZDRlS01acll5amlHS2VTWDdyWW9XS2RQZjhaR0FCblZsUmpQeDJuWEdEVGRKc1Y4SzNBY3NJcmh4NWtPN29kV3QyRXNwTE83SnFPa1F2Yk5YSWd5M2RnTGdnRUJuTGpDUnNwM0lCNEdaS0dTREUyZkdEMVpXSnNHdTJPSkdhUzA?oc=5",
-        "pubdate": "Wed, 27 May 2026 21:05:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Bolsa chilena cierra al alza y el IPSA recupera los 10.800 con fuerte impulso de SQM tras positivos resultados del primer trimestre",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sdDI2akhBLTN1QnZjM1VJV1BLckpxTlpuX2wzWUY0a2k0SUdmRU04VVlqT05hZWVWOXk4Y2dPTy0ydnRZcEttdU0wcTQtVFZUZzVuN0NWd2c0NWowS2RYcHdKQ0tLOXZ2?oc=5",
-        "pubdate": "Wed, 27 May 2026 20:26:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Sociedades aguas arriba: fusión de las Cascadas de SQM entra en su recta final",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTmx0T0FmMThjZTdkZjU0Z0diSkFPREVVM2EwUm9kaGNTc0tVd1pOUklySE43T3RHMkNjSTR2aUNnakhrc1VIVjdwTXpiWGVJUEsyVnVZcnNHZkd6S1lMV2xQaEdWTGJSVXptamtCT3VHSWEtX2RKbklFTENBUGZXWHc2TDhZTEdIQ2RHTTE0RngxekdkSWQ3YWh4dXJhNlhDSnowcjBJSEt4ZHpPbGtLaHY0cUlKMWJhMHc?oc=5",
-        "pubdate": "Wed, 27 May 2026 15:56:22 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
       }
@@ -198,8 +217,15 @@
         "matched_keyword": "Cencosud Shopping"
       },
       {
+        "title": "Empresas Ipsa suman ganancias por US$3.900 millones en el primer trimestre, pero casi el 45% empeoró sus resultados",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2xadExIaVNJNzFkdFlUVGFrVGNjY1p3Nm1fUXZualJLdWUyWmpkblV3LThPVW4wY0ljTlBBZnlOOV9YMTR1Um1TOXR2ZklIQ1EyNFNiT3hWVE5Pdm1xU2ZkcmtxbTZpZVJOQVU5MjJWVXVubmFmSzduaHljaUJIQ3Zod3BwbjBhcjNjMjlFblh1NU5LTy01d1c4WWItWUxFdWE4dUtYSQ?oc=5",
+        "pubdate": "Fri, 29 May 2026 22:09:55 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "Cencosud Shopping"
+      },
+      {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780500481",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780532101",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -214,8 +240,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2225,
-    "total_noticias_filtradas": 25,
-    "total_hechos_esenciales_brutos": 139
+    "total_noticias_brutas": 2227,
+    "total_noticias_filtradas": 28,
+    "total_hechos_esenciales_brutos": 163
   }
 }
