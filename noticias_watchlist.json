@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-04T15:52:38.295956+00:00",
+  "updated_at_utc": "2026-06-04T16:33:03.700421+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -8,6 +8,13 @@
   ],
   "noticias_por_ticker": {
     "HABITAT": [
+      {
+        "title": "ExCFA y exSecurity Aldo Lema es el nuevo economista y director de estrategia de AAISA",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaU5kUUhjY3NKVWhMOFJDZVU1Ui1BUlJOdlVvZzZpUHY2RGsyS3A1N3NpQmJPSU1iQWRLSGlWZzRwQzRKZzYxRkJfTUJZNGdLODdmQURlcjd2eEdLWm5ud0VzSVkyM0tHR3pUaUJuTVdNOFYwOVRzdG15Z2Y1bGhwUjhoZzdNUGp3ZEN3eFVsWVZMYzZtWUc2UmJDams4SU95R1JVQUI0X29YNTJSZnFkT1Q2LWh3M1pSa3NDU2JZM1FHMnd50gHmAUFVX3lxTE8tY004X1VnRldFT0xvUmlCcmt0cHVRXzZFOHRmOXJMbFMtRktiWjZZR29jb191d2pnV0x5V1I0eko0Z0pzdXotV3BWR1pLNzd1Y3BBdTlUdU9XUlZRajVtWkQxazJEVkstSkRTa1dOQ0I4NXlIUmFKaHJ4b0tBTnl6X0laS2JScTRrQmdYUDdHd2JsNUlOajFDZFlxYWV2S3FuY3Jjb0gzWXc2Mllla2RjbXVRenVtYUNGRHRJd3NQSDh4dTNURkJWM2poTnN2d21sa3l4Rng0RmwyemRDTWdVUUpDVmxB?oc=5",
+        "pubdate": "Thu, 04 Jun 2026 15:50:00 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "AFP Habitat"
+      },
       {
         "title": "Qué es AAISA, la acción chilena que obtuvo las mayores ganancias en mayo",
         "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNckZVa0UzcDFIeTBpRkVHQUlhT3REaGYyQWRfTTlrQl9fN3JiQ2tfTElKRHBtckN5M2tpZHZiQUJDblBOeXFiZlcxRTU4VDllV0V3cUt0RF9PSWRMay1fT29vVjRVWUdZV01pbldIVTQxRlpJYW9Ebmxfd1otSUxoQTQ5UnZ1bFUwdi02SWxaa1A1aF9zakNoWWdaSG5OMmZYQWc4WEJxM1kxbHRUTDBMaVZfVnBwTXdEY0M1Umw2eDk3QXVsQVlIN25TUzZ6UHNXRVBR?oc=5",
@@ -40,7 +47,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780588201",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780590481",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -220,7 +227,7 @@
       },
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780588201",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780590481",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -235,8 +242,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2201,
-    "total_noticias_filtradas": 28,
-    "total_hechos_esenciales_brutos": 141
+    "total_noticias_brutas": 2200,
+    "total_noticias_filtradas": 29,
+    "total_hechos_esenciales_brutos": 142
   }
 }
