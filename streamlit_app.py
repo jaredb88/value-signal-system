@@ -854,14 +854,53 @@ if seccion == "🥇 Oro (GLD)":
 
     st.divider()
 
-    # ===== Grafico de precio (1 ano) =====
+    # ===== Grafico de precio (1 ano) con escala dinamica =====
     if historico and len(historico) > 0:
         import pandas as _pd_gld
+        import altair as _alt_gld
         df_hist = _pd_gld.DataFrame(historico)
         df_hist["fecha"] = _pd_gld.to_datetime(df_hist["fecha"])
-        df_hist = df_hist.set_index("fecha")
         st.subheader("📈 Precio GLD (último año)")
-        st.line_chart(df_hist["precio"], height=280)
+
+        # Calculamos el rango con 5% de padding arriba y abajo
+        precio_min = df_hist["precio"].min()
+        precio_max = df_hist["precio"].max()
+        padding = (precio_max - precio_min) * 0.05
+        y_min = max(0, precio_min - padding)
+        y_max = precio_max + padding
+
+        chart = _alt_gld.Chart(df_hist).mark_line(
+            color="#1f77b4",
+            strokeWidth=2,
+        ).encode(
+            x=_alt_gld.X("fecha:T", title=None, axis=_alt_gld.Axis(format="%b %y", labelAngle=-30)),
+            y=_alt_gld.Y(
+                "precio:Q",
+                title="Precio (USD)",
+                scale=_alt_gld.Scale(domain=[y_min, y_max], zero=False),
+                axis=_alt_gld.Axis(format="$,.0f"),
+            ),
+            tooltip=[
+                _alt_gld.Tooltip("fecha:T", title="Fecha", format="%d-%b-%Y"),
+                _alt_gld.Tooltip("precio:Q", title="Precio", format="$,.2f"),
+            ],
+        ).properties(height=280).configure_view(strokeWidth=0)
+
+        st.altair_chart(chart, use_container_width=True)
+
+        # Mostrar rango y variacion del periodo
+        precio_ini = df_hist["precio"].iloc[0]
+        precio_fin = df_hist["precio"].iloc[-1]
+        cambio_pct = (precio_fin - precio_ini) / precio_ini * 100
+        col_g1, col_g2, col_g3, col_g4 = st.columns(4)
+        with col_g1:
+            st.caption(f"📅 Mínimo: **${precio_min:.2f}**")
+        with col_g2:
+            st.caption(f"📅 Máximo: **${precio_max:.2f}**")
+        with col_g3:
+            st.caption(f"📍 Inicio: **${precio_ini:.2f}**")
+        with col_g4:
+            st.caption(f"📊 Variación: **{cambio_pct:+.2f}%**")
 
     st.divider()
 
