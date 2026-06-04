@@ -905,6 +905,108 @@ if seccion == "🥇 Oro (GLD)":
         ("vix",          "😱 VIX (miedo)",       "vix_actual",     "indice de volatilidad"),
     ]
 
+    # Funcion auxiliar: genera explicacion + interpretacion dinamica
+    def _explicacion_senal(clave, score, detalle):
+        """Devuelve (que_mide, interpretacion_dinamica) segun el valor actual."""
+        if clave == "drawdown":
+            dd_pct = detalle.get("drawdown_pct", 0)
+            max_52w = detalle.get("max_52w", 0)
+            que = "Caida del precio actual respecto al maximo de las ultimas 52 semanas. Score alto = precio deprimido = oportunidad de promediar."
+            if abs(dd_pct) < 5:
+                interp = f"GLD esta solo {abs(dd_pct):.1f}% por debajo de su maximo de ${max_52w:.2f}. Practicamente en maximos. No hay oportunidad por correccion."
+            elif abs(dd_pct) < 10:
+                interp = f"GLD esta {abs(dd_pct):.1f}% por debajo de su maximo (${max_52w:.2f}). Correccion moderada, neutral."
+            elif abs(dd_pct) < 20:
+                interp = f"GLD esta {abs(dd_pct):.1f}% por debajo de su maximo (${max_52w:.2f}). Correccion significativa - momento atractivo para acumular."
+            else:
+                interp = f"GLD esta {abs(dd_pct):.1f}% por debajo de su maximo (${max_52w:.2f}). Caida fuerte - posible oportunidad o cambio de tendencia."
+            return que, interp
+
+        elif clave == "momentum":
+            ret = detalle.get("ret_12_1_pct", 0)
+            que = "Retorno entre hace 12 meses y hace 1 mes (factor Jegadeesh-Titman). Mide tendencia sostenida sin ruido del ultimo mes. Score alto = trend alcista validado."
+            if ret > 20:
+                interp = f"GLD subio {ret:.1f}% en el ano pasado (excluyendo ultimo mes). Tendencia alcista muy fuerte - confirma el bull market del oro."
+            elif ret > 5:
+                interp = f"GLD subio {ret:.1f}% en el ano pasado. Tendencia alcista moderada."
+            elif ret > -5:
+                interp = f"GLD se movio {ret:+.1f}% en el ano pasado. Practicamente lateral."
+            else:
+                interp = f"GLD cayo {abs(ret):.1f}% en el ano pasado. Tendencia bajista - evaluar si es punto de inflexion o caida estructural."
+            return que, interp
+
+        elif clave == "ratio_sp500":
+            pct = detalle.get("percentil_2y", 50)
+            que = "Precio relativo de GLD vs S&P 500. Cuanto vale 1 GLD en terminos del SP500. Percentil bajo = oro barato vs acciones."
+            if pct < 25:
+                interp = f"Ratio en percentil {pct:.0f}% (de los ultimos 2 anos). Oro muy barato relativo a equities - momento atractivo para rotar de acciones a oro."
+            elif pct < 50:
+                interp = f"Ratio en percentil {pct:.0f}%. Oro algo barato vs acciones. Neutral con sesgo positivo."
+            elif pct < 75:
+                interp = f"Ratio en percentil {pct:.0f}%. Oro algo caro vs acciones. Las acciones se ven mas atractivas relativamente."
+            else:
+                interp = f"Ratio en percentil {pct:.0f}%. Oro muy caro vs equities - posible momento de tomar ganancias parciales."
+            return que, interp
+
+        elif clave == "ratio_silver":
+            pct = detalle.get("percentil_2y", 50)
+            que = "Precio relativo de oro vs plata. Indicador clasico: ratio bajo historicamente = oro barato vs plata o plata sobrevalorada."
+            if pct < 25:
+                interp = f"Ratio en percentil {pct:.0f}% (2y). Oro relativamente barato vs plata - aunque ojo: a veces significa que la plata subio mas fuerte recientemente."
+            elif pct < 50:
+                interp = f"Ratio en percentil {pct:.0f}%. Oro algo barato vs plata."
+            elif pct < 75:
+                interp = f"Ratio en percentil {pct:.0f}%. Oro algo caro vs plata."
+            else:
+                interp = f"Ratio en percentil {pct:.0f}%. Oro caro vs plata - algunos lo leen como senal de fin de ciclo alcista del oro."
+            return que, interp
+
+        elif clave == "dxy":
+            dxy = detalle.get("dxy_actual", 0)
+            pct = detalle.get("percentil_2y", 50)
+            que = "Indice del dolar vs canasta de divisas. Dolar fuerte historicamente reprime el oro (correlacion inversa). DXY alto = oro reprimido = oportunidad."
+            if pct < 25:
+                interp = f"DXY en {dxy:.2f}, percentil {pct:.0f}% (2y). Dolar debil - oro suele moverse bien con dolar debil, pero como ya es bajo, poca expectativa adicional."
+            elif pct < 50:
+                interp = f"DXY en {dxy:.2f}, percentil {pct:.0f}%. Dolar en zona media. Sin viento de cola fuerte para el oro."
+            elif pct < 75:
+                interp = f"DXY en {dxy:.2f}, percentil {pct:.0f}%. Dolar relativamente fuerte - oro reprimido. Si el dolar cae, el oro deberia rebotar."
+            else:
+                interp = f"DXY en {dxy:.2f}, percentil {pct:.0f}%. Dolar muy fuerte - oro estructuralmente reprimido. Cuando el ciclo del dolar termine, el oro deberia despegar."
+            return que, interp
+
+        elif clave == "real_yield":
+            ry = detalle.get("real_yield_pct", 0)
+            que = "Tasa de interes real de bonos del Tesoro a 10 anos (TIPS). Cuando los bonos pagan poco real, el oro brilla. Negativo = bonos pierden poder adquisitivo."
+            if ry < 0:
+                interp = f"Real yield en {ry:.2f}% - NEGATIVO. Los bonos pierden poder adquisitivo - escenario IDEAL para oro. Esto fue el driver del rally 2020-2021."
+            elif ry < 1:
+                interp = f"Real yield en {ry:.2f}%. Muy bajo - bonos rinden poco real. Oro atractivo."
+            elif ry < 2:
+                interp = f"Real yield en {ry:.2f}%. Bajo - oro sigue siendo atractivo aunque bonos ya compiten algo."
+            elif ry < 3:
+                interp = f"Real yield en {ry:.2f}%. Zona media-alta - bonos rinden bien en terminos reales, son competencia para el oro."
+            else:
+                interp = f"Real yield en {ry:.2f}% - ALTO. Bonos del Tesoro ofrecen retorno real atractivo. Oro estructuralmente desventajado."
+            return que, interp
+
+        elif clave == "vix":
+            vix = detalle.get("vix_actual", 0)
+            que = "Indice de volatilidad del S&P 500. Mide el 'miedo' del mercado. VIX alto = panico = demanda de refugio = oro sube."
+            if vix < 15:
+                interp = f"VIX en {vix:.1f} - COMPLACENCIA. Mercado tranquilo, sin miedo. El oro como refugio no es necesario - poca demanda."
+            elif vix < 20:
+                interp = f"VIX en {vix:.1f}. Volatilidad normal."
+            elif vix < 30:
+                interp = f"VIX en {vix:.1f}. Volatilidad elevada - empieza a haber miedo, oro como cobertura suma sentido."
+            elif vix < 40:
+                interp = f"VIX en {vix:.1f}. MIEDO claro. Demanda de refugio activa - momento clasico para que el oro suba."
+            else:
+                interp = f"VIX en {vix:.1f} - PANICO. Crisis en curso. El oro suele ser el activo estrella en estos momentos."
+            return que, interp
+
+        return "Senal del sistema.", "Sin interpretacion disponible."
+
     for clave, label, det_key, det_desc in senales_orden:
         s = sub_scores.get(clave)
         d = sub_detalles.get(clave, {}) or {}
@@ -951,6 +1053,12 @@ if seccion == "🥇 Oro (GLD)":
             with cl2:
                 st.markdown(f"### {s:.1f}")
                 st.caption("/ 100")
+
+            # Expander con explicacion + interpretacion dinamica
+            que_mide, interpretacion = _explicacion_senal(clave, s, d)
+            with st.expander("ℹ️ ¿Que mide e interpretacion"):
+                st.markdown(f"**Que mide:** {que_mide}")
+                st.markdown(f"**📊 Tu lectura:** {interpretacion}")
 
     st.divider()
 
