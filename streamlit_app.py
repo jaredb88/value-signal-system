@@ -1060,24 +1060,6 @@ if seccion == "🥇 Oro (GLD)":
                 interp = f"VIX en {vix:.1f} - PANICO. Crisis en curso. El oro suele ser el activo estrella en estos momentos."
             return que, interp
 
-        elif clave == "mvrv":
-            z = detalle.get("z_score", 0)
-            fecha = detalle.get("fecha", "—")
-            que = "MVRV Z-Score: compara el market cap de BTC con su 'realized cap' (precio promedio al que se movieron las monedas). Es uno de los indicadores on-chain mas respetados. Z<0 = suelo historico (dic 2018, marzo 2020, nov 2022). Z>7 = tope de ciclo (nov 2013, dic 2017, abr/nov 2021)."
-            if z < 0:
-                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). NEGATIVO - zona verde clasica. Los holders en promedio estan en perdida - suelo historico de ciclo."
-            elif z < 1:
-                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). Zona de acumulacion - holders cerca de su costo base. Historicamente excelente entrada."
-            elif z < 2:
-                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). Zona neutral-acumulacion - el mercado no esta caro, hay margen para subir."
-            elif z < 5:
-                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). Caro - holders en ganancia significativa, presion vendedora moderada."
-            elif z < 7:
-                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). MUY CARO - precaucion, cercano a zonas historicas de tope."
-            else:
-                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). TOPE INMINENTE - historicamente todos los topes mayores (2013, 2017, 2021) se dieron en este rango. Considerar reducir aporte o tomar ganancias."
-            return que, interp
-
         return "Señal del sistema.", "Sin interpretación disponible."
 
     for clave, label, det_key, det_desc in senales_orden:
@@ -1386,6 +1368,24 @@ if seccion == "₿ Bitcoin (BTC)":
                 interp = f"BTC cayo {abs(ret):.1f}% en el año - bear market en curso."
             else:
                 interp = f"BTC cayo {abs(ret):.1f}% en el año - capitulación. Históricamente buenos puntos de entrada."
+            return que, interp
+
+        elif clave == "mvrv":
+            z = detalle.get("z_score", 0)
+            fecha = detalle.get("fecha", "—")
+            que = "MVRV Z-Score: compara el market cap de BTC con su 'realized cap' (precio promedio al que se movieron las monedas). Es uno de los indicadores on-chain mas respetados. Z<0 = suelo historico (dic 2018, marzo 2020, nov 2022). Z>7 = tope de ciclo (nov 2013, dic 2017, abr/nov 2021)."
+            if z < 0:
+                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). NEGATIVO - zona verde clasica. Los holders en promedio estan en perdida - suelo historico de ciclo."
+            elif z < 1:
+                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). Zona de acumulacion - holders cerca de su costo base. Historicamente excelente entrada."
+            elif z < 2:
+                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). Zona neutral-acumulacion - el mercado no esta caro, hay margen para subir."
+            elif z < 5:
+                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). Caro - holders en ganancia significativa, presion vendedora moderada."
+            elif z < 7:
+                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). MUY CARO - precaucion, cercano a zonas historicas de tope."
+            else:
+                interp = f"Z-Score en {z:.3f} (fecha: {fecha}). TOPE INMINENTE - historicamente todos los topes mayores (2013, 2017, 2021) se dieron en este rango. Considerar reducir aporte o tomar ganancias."
             return que, interp
 
         return "Señal del sistema.", "Sin interpretacion disponible."
