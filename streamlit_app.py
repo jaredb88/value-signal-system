@@ -137,9 +137,15 @@ with st.sidebar:
         APORTE_SCHD = st.number_input("Aporte SCHD (USD/mes)", value=140, min_value=0, step=10, help="Schwab US Dividend Equity ETF")
         APORTE_JEPQ = st.number_input("Aporte JEPQ (USD/mes)", value=60, min_value=0, step=10, help="JPMorgan Nasdaq Equity Premium Income ETF")
 
-    st.divider()
-    st.subheader("🥇 Gold ETF")
-    APORTE_GLD = st.number_input("Aporte GLD (USD/mes)", value=100, min_value=0, step=10, help="SPDR Gold Shares — tactico, ajustado por score")
+
+    # === Configuracion GLD (solo en esa seccion) ===
+    elif seccion == "🥇 Oro (GLD)":
+        st.divider()
+        st.title("⚙️ Configuración")
+        st.subheader("🥇 Gold ETF")
+        APORTE_GLD = st.number_input("Aporte GLD (USD/mes)", value=100, min_value=0, step=10, help="SPDR Gold Shares — tactico, ajustado por score")
+
+    # Acciones Chilenas: no requiere configuracion en sidebar
 
     st.divider()
     st.caption("Multiplicadores por zona:")
