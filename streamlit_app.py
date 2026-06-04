@@ -115,16 +115,27 @@ with st.sidebar:
     )
 
     st.divider()
-    st.title("⚙️ Configuración")
-    APORTE_SP500 = st.number_input("Aporte base S&P 500 (USD/mes)", value=140, min_value=0, step=10)
-    APORTE_NASDAQ = st.number_input("Aporte base Nasdaq (USD/mes)", value=60, min_value=0, step=10)
-    show_news = st.checkbox("Mostrar noticias", value=True)
-    max_news = st.slider("Cantidad de noticias", 4, 12, 8)
+    # Defaults globales (variables siempre existen aunque su input no se muestre)
+    APORTE_SP500 = 140
+    APORTE_NASDAQ = 60
+    show_news = True
+    max_news = 8
+    APORTE_SCHD = 140
+    APORTE_JEPQ = 60
+    APORTE_GLD = 100
 
-    st.divider()
-    st.subheader("💰 Dividend ETFs")
-    APORTE_SCHD = st.number_input("Aporte SCHD (USD/mes)", value=140, min_value=0, step=10, help="Schwab US Dividend Equity ETF")
-    APORTE_JEPQ = st.number_input("Aporte JEPQ (USD/mes)", value=60, min_value=0, step=10, help="JPMorgan Nasdaq Equity Premium Income ETF")
+    # === Configuracion ETFs USA (solo en esa seccion) ===
+    if seccion == "📈 ETFs USA":
+        st.title("⚙️ Configuración")
+        APORTE_SP500 = st.number_input("Aporte base S&P 500 (USD/mes)", value=140, min_value=0, step=10)
+        APORTE_NASDAQ = st.number_input("Aporte base Nasdaq (USD/mes)", value=60, min_value=0, step=10)
+        show_news = st.checkbox("Mostrar noticias", value=True)
+        max_news = st.slider("Cantidad de noticias", 4, 12, 8)
+
+        st.divider()
+        st.subheader("💰 Dividend ETFs")
+        APORTE_SCHD = st.number_input("Aporte SCHD (USD/mes)", value=140, min_value=0, step=10, help="Schwab US Dividend Equity ETF")
+        APORTE_JEPQ = st.number_input("Aporte JEPQ (USD/mes)", value=60, min_value=0, step=10, help="JPMorgan Nasdaq Equity Premium Income ETF")
 
     st.divider()
     st.subheader("🥇 Gold ETF")
