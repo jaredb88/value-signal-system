@@ -186,6 +186,7 @@ with st.sidebar:
         _status_archivo("acciones_chilenas.json", "Acciones Chilenas", 1, 3),
         _status_archivo("prices.json", "Precios ETFs", 1, 3),
         _status_archivo("noticias_watchlist.json", "Noticias + CMF", 3, 8),
+        _status_archivo("gld_data.json", "GLD Score", 1, 3),
     ]
 
     for emoji, msg in estados:
