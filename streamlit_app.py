@@ -1185,7 +1185,31 @@ if seccion == "₿ Bitcoin (BTC)":
         import altair as _alt_btc
         df_hist = _pd_btc.DataFrame(historico)
         df_hist["fecha"] = _pd_btc.to_datetime(df_hist["fecha"])
-        st.subheader("📈 Precio BTC (último año)")
+
+        # Selector de periodo
+        col_h1, col_h2 = st.columns([2, 1])
+        with col_h1:
+            st.subheader("📈 Precio BTC")
+        with col_h2:
+            periodo = st.radio(
+                "Periodo:",
+                ["1Y", "3Y", "5Y"],
+                index=0,
+                horizontal=True,
+                label_visibility="collapsed",
+                key="btc_periodo"
+            )
+
+        # Filtrar segun periodo seleccionado
+        from datetime import datetime as _dt_btc, timedelta as _td_btc
+        hoy_btc = _dt_btc.now()
+        if periodo == "1Y":
+            cutoff = hoy_btc - _td_btc(days=365)
+        elif periodo == "3Y":
+            cutoff = hoy_btc - _td_btc(days=365*3)
+        else:  # 5Y
+            cutoff = hoy_btc - _td_btc(days=365*5)
+        df_hist = df_hist[df_hist["fecha"] >= cutoff].reset_index(drop=True)
 
         precio_min = df_hist["precio"].min()
         precio_max = df_hist["precio"].max()
