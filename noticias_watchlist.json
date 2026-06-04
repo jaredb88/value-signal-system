@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-04T06:33:03.984771+00:00",
+  "updated_at_utc": "2026-06-04T08:33:03.693943+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -40,7 +40,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780554662",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780561861",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -213,14 +213,14 @@
       },
       {
         "title": "Empresas Ipsa suman ganancias por US$3.900 millones en el primer trimestre, pero casi el 45% empeoró sus resultados",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2xadExIaVNJNzFkdFlUVGFrVGNjY1p3Nm1fUXZualJLdWUyWmpkblV3LThPVW4wY0ljTlBBZnlOOV9YMTR1Um1TOXR2ZklIQ1EyNFNiT3hWVE5Pdm1xU2ZkcmtxbTZpZVJOQVU5MjJWVXVubmFmSzduaHljaUJIQ3Zod3BwbjBhcjNjMjlFblh1NU5LTy01d1c4WWItWUxFdWE4dUtYSQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2xadExIaVNJNzFkdFlUVGFrVGNjY1p3Nm1fUXZualJLdWUyWmpkblV3LThPVW4wY0ljTlBBZnlOOV9YMTR1Um1TOXR2ZklIQ1EyNFNiT3hWVE5Pdm1xU2ZkcmtxbTZpZVJOQVU5MjJWVXVubmFmSzduaHljaUJIQ3Zod3BwbjBhcjNjMjlFblh1NU5LTy01d1c4WWItWUxFdWE4dUtYSdIByAFBVV95cUxNaExQMjZWUE1YUkZWYkpveTVXTVZuMHpYajhfR0pReWZQbFpjc05ZZ1I1dEY1U0U0dC1ua3phS2g2YXFMSzhUelpPSENGdlhaYXZxc1dIWnFvNGk2Y1ZKNDJhTDM0SHd3b1RNWkJBUUpHM19xOUMyVnltTUhFYXc5RFRaUEdHRjBLTGV3VTdpQVdIMWk2eWJHUGZ6ZnRsdXFEUFRUYzM1bm1acEJWdnJpTFNaRFhOcU1WZDNKdkdkQ1UwTmQyZE1XNg?oc=5",
         "pubdate": "Fri, 29 May 2026 22:09:55 GMT",
         "source": "La Tercera",
         "matched_keyword": "Cencosud Shopping"
       },
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780554662",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780561861",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -235,7 +235,7 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2189,
+    "total_noticias_brutas": 2212,
     "total_noticias_filtradas": 28,
     "total_hechos_esenciales_brutos": 141
   }
