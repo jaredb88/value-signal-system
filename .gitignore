@@ -47,3 +47,15 @@ cambiar_*.py
 actualizar_desglose_*.py
 check_*.py
 agregar_*.py
+
+# Scripts auxiliares adicionales (sesion de junio 2026)
+actualizar_*.py
+ajustar_*.py
+arreglar_*.py
+config_*.py
+debug_*.py
+forzar_*.py
+inspeccionar_*.py
+mejorar_*.py
+unir_*.py
+*_debug.html
