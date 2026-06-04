@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-04T10:05:00.189577",
-  "duracion_segundos": 113.779136,
+  "fecha_actualizacion": "2026-06-04T10:34:58.934869",
+  "duracion_segundos": 112.563324,
   "n_acciones": 11,
   "acciones": [
     {
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3786.9,
+      "precio_actual_clp": 3797.8,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": 0.55,
+      "variacion_pct": 0.84,
       "dy": {
-        "dy_pct": 10.66,
+        "dy_pct": 10.63,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.11799067716896539,
-      "cagr_5y": 0.21148292925119105,
-      "cagr_10y": 0.11284338465637656,
+      "cagr_3y": 0.1190623034873175,
+      "cagr_5y": 0.21217954054445287,
+      "cagr_10y": 0.11316328510381513,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 2.16
+        "vs_benchmark_pp": 2.13
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1270,9 +1270,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2345,
+      "precio_actual_clp": 2345.1,
       "razon_social": "CENCOSUD SHOPPING S.A.",
-      "variacion_pct": 0.67,
+      "variacion_pct": 0.68,
       "dy": {
         "dy_pct": 4.34,
         "anos_usados": 3,
@@ -1284,8 +1284,8 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.20747887301870094,
-      "cagr_5y": 0.14047225139492903,
+      "cagr_3y": 0.20749603665352034,
+      "cagr_5y": 0.1404819780712463,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
