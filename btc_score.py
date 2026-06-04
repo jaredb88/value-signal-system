@@ -39,11 +39,12 @@ OUTPUT_FILE = SCRIPT_DIR / "btc_data.json"
 
 # Pesos de cada senal (suman 100)
 PESOS = {
-    "drawdown":       20,
-    "fear_greed":     25,
-    "pi_cycle":       15,
-    "halving_cycle":  25,
-    "momentum":       15,
+    "drawdown":       18,
+    "fear_greed":     20,
+    "pi_cycle":       12,
+    "halving_cycle":  22,
+    "momentum":       13,
+    "mvrv":           15,
 }
 
 # Fecha del ultimo halving (importante para el ciclo)
@@ -102,6 +103,43 @@ def fetch_fear_greed():
         return None, None
 
 
+def fetch_mvrv_zscore():
+    """
+    Descarga MVRV Z-Score desde bgeometrics (API publica gratis, sin key).
+    Retorna el ultimo valor numerico valido (NaN se descartan).
+
+    El valor del dia actual suele ser NaN porque todavia no se cierra,
+    asi que retrocedemos hasta encontrar el ultimo dato valido.
+    """
+    url = "https://api.bgeometrics.com/v1/mvrv-zscore"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Value Signal BTC Score"})
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+
+        if not isinstance(data, list) or len(data) == 0:
+            log.warning("  MVRV Z-Score: respuesta vacia o invalida")
+            return None, None
+
+        # Buscar el ultimo valor que NO sea NaN
+        for entry in reversed(data):
+            valor = entry.get("mvrvZscore")
+            if valor and valor != "NaN":
+                try:
+                    z_score = float(valor)
+                    fecha = entry.get("d", "—")
+                    log.info(f"  MVRV Z-Score: {z_score:.3f} (fecha: {fecha})")
+                    return z_score, fecha
+                except (ValueError, TypeError):
+                    continue
+
+        log.warning("  MVRV Z-Score: no se encontro ningun valor valido")
+        return None, None
+    except Exception as e:
+        log.error(f"  MVRV Z-Score error: {e}")
+        return None, None
+
+
 # ============================================================
 # CALCULO DE SUB-SCORES (cada uno devuelve 0-100)
 # ============================================================
@@ -138,6 +176,38 @@ def calc_fear_greed_score(fg_value):
     # Inversion directa: score = 100 - fg_value
     score = 100 - fg_value
     return score, {"fg_value": fg_value}
+
+
+def calc_mvrv(z_score):
+    """
+    Convierte el MVRV Z-Score a un score 0-100.
+
+    Lectura clasica:
+    - Z < 0:    zona verde (suelo) → score 100
+    - Z 0-2:    zona neutral-acumulacion → score 90-60
+    - Z 2-5:    caro → score 60-30
+    - Z 5-7:    muy caro → score 30-10
+    - Z > 7:    tope inminente → score 0
+    """
+    if z_score is None:
+        return None, None
+
+    if z_score < 0:
+        score = 100
+    elif z_score < 2:
+        # 0 -> 90, 2 -> 60
+        score = 90 - (z_score / 2) * 30
+    elif z_score < 5:
+        # 2 -> 60, 5 -> 30
+        score = 60 - ((z_score - 2) / 3) * 30
+    elif z_score < 7:
+        # 5 -> 30, 7 -> 10
+        score = 30 - ((z_score - 5) / 2) * 20
+    else:
+        score = 0
+
+    score = max(0, min(100, score))
+    return score, {"z_score": round(z_score, 3)}
 
 
 def calc_pi_cycle(btc_hist):
@@ -292,6 +362,8 @@ def calcular_score_btc():
     ibit_hist = fetch_yahoo_history("IBIT", "1mo")
     log.info("Fear & Greed Index...")
     fg_value, fg_class = fetch_fear_greed()
+    log.info("MVRV Z-Score (bgeometrics)...")
+    mvrv_z, mvrv_fecha = fetch_mvrv_zscore()
 
     # 2. Calcular sub-scores
     log.info("\n--- Calculando sub-scores ---")
@@ -324,6 +396,13 @@ def calcular_score_btc():
     sub_scores["momentum"] = s
     sub_detalles["momentum"] = d
     log.info(f"  Momentum 12-1m: score={s}, detalle={d}")
+
+    s, d = calc_mvrv(mvrv_z)
+    if d is not None:
+        d["fecha"] = mvrv_fecha
+    sub_scores["mvrv"] = s
+    sub_detalles["mvrv"] = d
+    log.info(f"  MVRV Z-Score: score={s}, detalle={d}")
 
     # 3. Score ponderado total
     log.info("\n--- Score final ---")
