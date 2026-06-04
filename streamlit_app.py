@@ -110,7 +110,7 @@ with st.sidebar:
     st.title("🧭 Sección")
     seccion = st.radio(
         "Selecciona vista:",
-        ["📈 ETFs USA", "🇨🇱 Acciones Chilenas"],
+        ["📈 ETFs USA", "🇨🇱 Acciones Chilenas", "🥇 Oro (GLD)"],
         label_visibility="collapsed",
     )
 
@@ -125,6 +125,10 @@ with st.sidebar:
     st.subheader("💰 Dividend ETFs")
     APORTE_SCHD = st.number_input("Aporte SCHD (USD/mes)", value=140, min_value=0, step=10, help="Schwab US Dividend Equity ETF")
     APORTE_JEPQ = st.number_input("Aporte JEPQ (USD/mes)", value=60, min_value=0, step=10, help="JPMorgan Nasdaq Equity Premium Income ETF")
+
+    st.divider()
+    st.subheader("🥇 Gold ETF")
+    APORTE_GLD = st.number_input("Aporte GLD (USD/mes)", value=100, min_value=0, step=10, help="SPDR Gold Shares — tactico, ajustado por score")
 
     st.divider()
     st.caption("Multiplicadores por zona:")
@@ -797,6 +801,174 @@ if seccion == "🇨🇱 Acciones Chilenas":
 # ============================================================
 # CONTINÚA EL DASHBOARD DE ETFs (sección por defecto)
 # ============================================================
+# ============================================================
+# SECCION: ORO (GLD)
+# ============================================================
+if seccion == "🥇 Oro (GLD)":
+    import json as _json_gld
+    from pathlib import Path as _Path_gld
+
+    st.title("🥇 Oro (GLD) — SPDR Gold Shares")
+    st.caption("Cobertura tactica: drawdown + momentum + macro · Update cada 30 min")
+
+    # Cargar gld_data.json
+    gld_json_path = _Path_gld(__file__).parent / "gld_data.json"
+    if not gld_json_path.exists():
+        st.error("⚠️ No se encontro gld_data.json. La tarea programada de GLD aun no ha generado datos.")
+        st.stop()
+
+    try:
+        with open(gld_json_path, "r", encoding="utf-8") as f:
+            gld_data = _json_gld.load(f)
+    except Exception as e:
+        st.error(f"⚠️ Error leyendo gld_data.json: {e}")
+        st.stop()
+
+    # ===== Encabezado: precio + drawdown =====
+    precio_actual = gld_data.get("precio_gld")
+    score = gld_data.get("score_final", 0)
+    zona = gld_data.get("zona", "NEUTRAL")
+    mult = gld_data.get("multiplicador", 1.0)
+    sub_scores = gld_data.get("sub_scores", {})
+    sub_detalles = gld_data.get("sub_detalles", {})
+    pesos = gld_data.get("pesos", {})
+    historico = gld_data.get("historico_gld", [])
+
+    col_a, col_b, col_c = st.columns([1, 1, 1])
+    with col_a:
+        st.metric("💵 Precio GLD", f"${precio_actual:,.2f}" if precio_actual else "—")
+    with col_b:
+        dd = sub_detalles.get("drawdown", {})
+        if dd:
+            dd_pct = dd.get("drawdown_pct", 0)
+            max_52w = dd.get("max_52w", 0)
+            st.metric(
+                "📉 vs max 52w",
+                f"{dd_pct:.2f}%",
+                delta=f"max ${max_52w:,.2f}",
+                delta_color="off"
+            )
+    with col_c:
+        zona_emoji = {"CARO":"🔴", "NEUTRAL":"🟡", "ATRACTIVO":"🟢", "OPORTUNIDAD":"🟢🟢"}.get(zona, "⚪")
+        st.metric("🎯 Zona", f"{zona_emoji} {zona}", delta=f"x{mult}", delta_color="off")
+
+    st.divider()
+
+    # ===== Grafico de precio (1 ano) =====
+    if historico and len(historico) > 0:
+        import pandas as _pd_gld
+        df_hist = _pd_gld.DataFrame(historico)
+        df_hist["fecha"] = _pd_gld.to_datetime(df_hist["fecha"])
+        df_hist = df_hist.set_index("fecha")
+        st.subheader("📈 Precio GLD (ultimo ano)")
+        st.line_chart(df_hist["precio"], height=280)
+
+    st.divider()
+
+    # ===== Card grande del SCORE =====
+    st.subheader(f"📊 Score: {score} / 100")
+    # Barra visual con progress
+    st.progress(min(int(score), 100))
+    color_zona = {"CARO": "#ef4444", "NEUTRAL": "#eab308", "ATRACTIVO": "#22c55e", "OPORTUNIDAD": "#16a34a"}.get(zona, "#888")
+    st.markdown(
+        f"<div style='padding:12px;border-radius:8px;background:{color_zona}22;border-left:4px solid {color_zona};'>"
+        f"<strong style='color:{color_zona};font-size:1.1em'>{zona}</strong> · Multiplicador: <strong>x{mult}</strong>"
+        f"</div>",
+        unsafe_allow_html=True
+    )
+
+    st.divider()
+
+    # ===== Recomendacion de aporte =====
+    aporte_sugerido = APORTE_GLD * mult
+    acciones_aprox = aporte_sugerido / precio_actual if precio_actual else 0
+    st.subheader("💰 Recomendacion de aporte")
+    rcol1, rcol2, rcol3 = st.columns(3)
+    with rcol1:
+        st.metric("Aporte base", f"${APORTE_GLD} USD")
+    with rcol2:
+        st.metric("Multiplicador", f"x{mult}")
+    with rcol3:
+        st.metric("Aporte sugerido", f"${aporte_sugerido:.0f} USD", delta=f"~{acciones_aprox:.3f} acciones")
+
+    st.divider()
+
+    # ===== Desglose de senales =====
+    st.subheader("🔍 Desglose de senales")
+    senales_orden = [
+        ("drawdown",     "📉 Drawdown",          "drawdown_pct",   "% desde max 52w"),
+        ("momentum",     "🚀 Momentum 12-1m",    "ret_12_1_pct",   "% retorno (Jegadeesh-Titman)"),
+        ("ratio_sp500",  "⚖️ Ratio Oro/SP500",   "percentil_2y",   "percentil 2y"),
+        ("ratio_silver", "🥈 Ratio Oro/Plata",   "percentil_2y",   "percentil 2y"),
+        ("dxy",          "💵 DXY (dolar)",       "dxy_actual",     "valor + percentil"),
+        ("real_yield",   "📊 Real Yield TIPS",   "real_yield_pct", "% real yield"),
+        ("vix",          "😱 VIX (miedo)",       "vix_actual",     "indice de volatilidad"),
+    ]
+
+    for clave, label, det_key, det_desc in senales_orden:
+        s = sub_scores.get(clave)
+        d = sub_detalles.get(clave, {}) or {}
+        peso = pesos.get(clave, 0)
+
+        if s is None:
+            with st.container():
+                cl1, cl2 = st.columns([3, 1])
+                with cl1:
+                    st.markdown(f"**{label}** (peso {peso}%)")
+                    st.caption("⚠️ Senal no disponible")
+                with cl2:
+                    st.markdown("`— / 100`")
+            continue
+
+        # Emoji segun score
+        if s >= 75:
+            emoji = "🟢"
+        elif s >= 50:
+            emoji = "🟢"
+        elif s >= 25:
+            emoji = "🟡"
+        else:
+            emoji = "🔴"
+
+        # Valor detalle textual
+        det_val = d.get(det_key)
+        if det_val is not None:
+            if "pct" in det_key:
+                det_txt = f"{det_val:+.2f}%" if "ret" in det_key or "drawdown" in det_key else f"{det_val:.2f}%"
+            elif "percentil" in det_key:
+                det_txt = f"percentil {det_val:.1f}% (2y)"
+            else:
+                det_txt = f"{det_val:.2f}"
+        else:
+            det_txt = "—"
+
+        with st.container():
+            cl1, cl2 = st.columns([3, 1])
+            with cl1:
+                st.markdown(f"**{emoji} {label}** (peso {peso}%)")
+                st.progress(min(int(s), 100))
+                st.caption(f"{det_txt}")
+            with cl2:
+                st.markdown(f"### {s:.1f}")
+                st.caption("/ 100")
+
+    st.divider()
+
+    # ===== Footer =====
+    from datetime import datetime as _dt_gld
+    updated = gld_data.get("updated_at_utc", "")
+    if updated:
+        try:
+            updated_dt = _dt_gld.fromisoformat(updated.replace("Z", "+00:00"))
+            updated_str = updated_dt.strftime("%Y-%m-%d %H:%M UTC")
+            st.caption(f"📡 Datos actualizados: {updated_str}")
+        except Exception:
+            st.caption(f"📡 Datos actualizados: {updated}")
+
+    st.caption("Sistema GLD Score · v1.0 · 7 senales: drawdown, momentum 12-1m, ratios oro/SP500 y oro/plata, DXY, real yield TIPS (FRED), VIX")
+    st.stop()
+
+
 st.title("📊 Sistema de Valores en Línea — ETFs")
 st.caption(f"Sistema cuantitativo para timing de aportes — Consulta: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 

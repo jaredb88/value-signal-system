@@ -350,6 +350,17 @@ def calcular_score_gld():
     if gld_hist is not None:
         gld_actual = round(float(gld_hist["Close"].iloc[-1]), 2)
 
+    # Historico de precios de GLD para el grafico del dashboard
+    # Guardamos ultimos 252 dias (~1 ano) con formato (fecha_iso, precio)
+    historico_gld = []
+    if gld_hist is not None:
+        ventana = gld_hist["Close"].iloc[-252:] if len(gld_hist) >= 252 else gld_hist["Close"]
+        for fecha, precio in ventana.items():
+            historico_gld.append({
+                "fecha": fecha.strftime("%Y-%m-%d"),
+                "precio": round(float(precio), 2),
+            })
+
     resultado = {
         "updated_at_utc": datetime.now(timezone.utc).isoformat(),
         "precio_gld": gld_actual,
@@ -360,6 +371,7 @@ def calcular_score_gld():
         "sub_scores": {k: (round(v, 1) if v is not None else None) for k, v in sub_scores.items()},
         "sub_detalles": sub_detalles,
         "pesos": PESOS,
+        "historico_gld": historico_gld,
     }
 
     return resultado
@@ -374,8 +386,77 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(resultado, f, ensure_ascii=False, indent=2)
     log.info(f"\nGuardado: {OUTPUT_FILE}")
+
+    # Git pull/commit/push automatico
+    git_sync_and_push()
+
     log.info(f"=== FIN ({datetime.now().strftime('%H:%M:%S')}) ===")
     return 0
+
+
+def ejecutar_git(args, cwd=None):
+    """Ejecuta un comando git y devuelve (exit_code, stdout, stderr)."""
+    import subprocess as _sp
+    cwd = cwd or SCRIPT_DIR
+    try:
+        result = _sp.run(
+            ["git"] + args,
+            cwd=cwd,
+            capture_output=True,
+            text=True,
+            timeout=60,
+        )
+        return result.returncode, result.stdout, result.stderr
+    except Exception as e:
+        return -1, "", str(e)
+
+
+def git_sync_and_push():
+    """Pull con rebase + autostash, commit, push con retry."""
+    log.info("--- Git sync ---")
+
+    # 1. Verificar si hay cambios en gld_data.json
+    code, out, err = ejecutar_git(["status", "--porcelain", "gld_data.json"])
+    if not out.strip():
+        log.info("Sin cambios en gld_data.json, nada que commitear")
+        return
+
+    # 2. Pull con rebase + autostash (maneja races con otras tareas)
+    code, out, err = ejecutar_git(["pull", "--rebase", "--autostash"])
+    if code != 0:
+        log.warning(f"git pull devolvio codigo {code}: {err}")
+    else:
+        log.info("git pull OK")
+
+    # 3. Add + commit
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M")
+    code, out, err = ejecutar_git(["add", "gld_data.json"])
+    if code != 0:
+        log.error(f"git add fallo: {err}")
+        return
+
+    code, out, err = ejecutar_git(["commit", "-m", f"chore: update GLD score {ts} [skip ci]"])
+    if code != 0:
+        log.warning(f"git commit dijo: {out or err}")
+        return
+    log.info("git commit OK")
+
+    # 4. Push con retry (1 intento si falla)
+    code, out, err = ejecutar_git(["push"])
+    if code != 0:
+        log.warning(f"git push fallo (intento 1): {err}")
+        log.info("Reintentando: pull --rebase --autostash + push...")
+        code_pull, _, err_pull = ejecutar_git(["pull", "--rebase", "--autostash"])
+        if code_pull != 0:
+            log.error(f"git pull en retry fallo: {err_pull}")
+            return
+        code, out, err = ejecutar_git(["push"])
+        if code != 0:
+            log.error(f"git push fallo (intento 2): {err}")
+            return
+        log.info("git push OK (en retry)")
+    else:
+        log.info("git push OK")
 
 
 if __name__ == "__main__":
