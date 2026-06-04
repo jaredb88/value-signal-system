@@ -851,7 +851,7 @@ if seccion == "🥇 Oro (GLD)":
     pesos = gld_data.get("pesos", {})
     historico = gld_data.get("historico_gld", [])
 
-    col_a, col_b, col_c = st.columns([1, 1, 1])
+    col_a, col_b, col_c, col_d = st.columns([1, 1, 1, 1])
     with col_a:
         st.metric("💵 Precio GLD", f"${precio_actual:,.2f}" if precio_actual else "—")
     with col_b:
@@ -866,6 +866,8 @@ if seccion == "🥇 Oro (GLD)":
                 delta_color="off"
             )
     with col_c:
+        st.metric("📊 Score", f"{score} / 100")
+    with col_d:
         zona_emoji = {"CARO":"🔴", "NEUTRAL":"🟡", "ATRACTIVO":"🟢", "OPORTUNIDAD":"🟢🟢"}.get(zona, "⚪")
         st.metric("🎯 Zona", f"{zona_emoji} {zona}", delta=f"x{mult}", delta_color="off")
 
@@ -918,20 +920,6 @@ if seccion == "🥇 Oro (GLD)":
             st.caption(f"📍 Inicio: **${precio_ini:.2f}**")
         with col_g4:
             st.caption(f"📊 Variación: **{cambio_pct:+.2f}%**")
-
-    st.divider()
-
-    # ===== Card grande del SCORE =====
-    st.subheader(f"📊 Score: {score} / 100")
-    # Barra visual con progress
-    st.progress(min(int(score), 100))
-    color_zona = {"CARO": "#ef4444", "NEUTRAL": "#eab308", "ATRACTIVO": "#22c55e", "OPORTUNIDAD": "#16a34a"}.get(zona, "#888")
-    st.markdown(
-        f"<div style='padding:12px;border-radius:8px;background:{color_zona}22;border-left:4px solid {color_zona};'>"
-        f"<strong style='color:{color_zona};font-size:1.1em'>{zona}</strong> · Multiplicador: <strong>x{mult}</strong>"
-        f"</div>",
-        unsafe_allow_html=True
-    )
 
     st.divider()
 
