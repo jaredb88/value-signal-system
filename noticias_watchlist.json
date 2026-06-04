@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-04T03:26:30.536470+00:00",
+  "updated_at_utc": "2026-06-04T04:33:02.991126+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -40,7 +40,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780543441",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780547341",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -77,19 +77,7 @@
         "matched_keyword": "Enel Chile"
       }
     ],
-    "LIPIGAS": [
-      {
-        "title": "EMPRESAS LIPIGAS S.A.: Reparto de utilidades (pago de dividendos)",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=1968cd1227641577cdc2440a6a617e47VFdwQmVVNXFRVEZOUkUweFRsUkZNMDVuUFQwPQ==&secuencia=-1&t=1780543441",
-        "pubdate": "27 may 2026 18:42",
-        "source": "CMF (Hecho Esencial)",
-        "matched_keyword": "empresas lipigas",
-        "es_hecho_esencial": true,
-        "doc_id": "2026050355176",
-        "empresa_cmf": "EMPRESAS LIPIGAS S.A.",
-        "materia_cmf": "Reparto de utilidades (pago de dividendos)"
-      }
-    ],
+    "LIPIGAS": [],
     "NTGCLGAS": [
       {
         "title": "Construcción el que más crece y bancos los que más ganan: cómo cerró la temporada de resultados del primer trimestre",
@@ -225,7 +213,7 @@
       },
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780543441",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780547341",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -240,8 +228,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2223,
-    "total_noticias_filtradas": 28,
-    "total_hechos_esenciales_brutos": 163
+    "total_noticias_brutas": 2220,
+    "total_noticias_filtradas": 27,
+    "total_hechos_esenciales_brutos": 141
   }
 }
