@@ -979,7 +979,7 @@ if seccion == "🥇 Oro (GLD)":
 
         elif clave == "momentum":
             ret = detalle.get("ret_12_1_pct", 0)
-            que = "Retorno entre hace 12 meses y hace 1 mes (factor Jegadeesh-Titman). Mide tendencia sostenida sin ruido del ultimo mes. Score alto = trend alcista validado."
+            que = "Retorno entre hace 12 meses y hace 1 mes (factor Jegadeesh-Titman). Mide tendencia sostenida sin ruido del último mes. Score alto = trend alcista validado."
             if ret > 20:
                 interp = f"GLD subio {ret:.1f}% en el año pasado (excluyendo ultimo mes). Tendencia alcista muy fuerte - confirma el bull market del oro."
             elif ret > 5:
@@ -1136,13 +1136,13 @@ if seccion == "🥇 Oro (GLD)":
 # SECCION: BITCOIN (BTC)
 # ============================================================
 if seccion == "₿ Bitcoin (BTC)":
-    st.title("₿ Bitcoin (BTC) — Cripto Tactico")
-    st.caption("Sistema cuantitativo de 5 senales: drawdown + sentimiento + ciclo halving · Update cada 30 min")
+    st.title("₿ Bitcoin (BTC) — Cripto Táctico")
+    st.caption("Sistema cuantitativo de 5 señales: drawdown + sentimiento + ciclo halving · Update cada 30 min")
 
     # Cargar btc_data.json
     btc_data_path = Path("btc_data.json")
     if not btc_data_path.exists():
-        st.warning("No se encontro btc_data.json. La tarea programada aun no ha generado los datos.")
+        st.warning("No se encontró btc_data.json. La tarea programada aún no ha generado los datos.")
         st.stop()
 
     with open(btc_data_path, "r", encoding="utf-8") as _f:
@@ -1277,11 +1277,11 @@ if seccion == "₿ Bitcoin (BTC)":
     st.subheader("🔍 Desglose de señales")
 
     senales_orden_btc = [
-        ("drawdown",      "📉 Drawdown vs ATH",      "drawdown_pct",       "Caida desde maximo historico"),
+        ("drawdown",      "📉 Drawdown vs ATH",      "drawdown_pct",       "Caida desde máximo histórico"),
         ("fear_greed",    "😱 Fear & Greed",         "fg_value",           "Sentimiento del mercado cripto"),
         ("pi_cycle",      "📐 Pi Cycle Top",         "ratio",              "Indicador de tope de ciclo"),
-        ("halving_cycle", "🔄 Halving Cycle",        "meses_desde_halving","Posicion en el ciclo de 4 anos"),
-        ("momentum",      "🚀 Momentum 12-1m",       "ret_12_1_pct",       "Retorno del ultimo ano"),
+        ("halving_cycle", "🔄 Halving Cycle",        "meses_desde_halving","Posición en el ciclo de 4 anos"),
+        ("momentum",      "🚀 Momentum 12-1m",       "ret_12_1_pct",       "Retorno del último año"),
     ]
 
     def _explicacion_senal_btc(clave, score, detalle):
@@ -1289,25 +1289,25 @@ if seccion == "₿ Bitcoin (BTC)":
         if clave == "drawdown":
             dd_pct = detalle.get("drawdown_pct", 0)
             ath = detalle.get("ath", 0)
-            que = "Caida del precio actual respecto al maximo historico (ATH). En BTC, drawdowns de -50% son normales en bear markets; -70% u -80% son zonas de panic-buy historicas."
+            que = "Caída del precio actual respecto al máximo histórico (ATH). En BTC, drawdowns de -50% son normales en bear markets; -70% u -80% son zonas de panic-buy historicas."
             if abs(dd_pct) < 15:
-                interp = f"BTC esta solo {abs(dd_pct):.1f}% por debajo de su ATH (${ath:,.0f}). Practicamente en maximos - no hay oportunidad por correccion."
+                interp = f"BTC esta solo {abs(dd_pct):.1f}% por debajo de su ATH (${ath:,.0f}). Prácticamente en máximos - no hay oportunidad por correccion."
             elif abs(dd_pct) < 30:
-                interp = f"BTC esta {abs(dd_pct):.1f}% por debajo de su ATH (${ath:,.0f}). Correccion menor en contexto cripto."
+                interp = f"BTC esta {abs(dd_pct):.1f}% por debajo de su ATH (${ath:,.0f}). Corrección menor en contexto cripto."
             elif abs(dd_pct) < 50:
                 interp = f"BTC esta {abs(dd_pct):.1f}% por debajo de su ATH (${ath:,.0f}). Bear market activo - zona atractiva para acumular."
             elif abs(dd_pct) < 70:
                 interp = f"BTC esta {abs(dd_pct):.1f}% por debajo de su ATH (${ath:,.0f}). Bear market profundo - historicamente excelente entrada."
             else:
-                interp = f"BTC esta {abs(dd_pct):.1f}% por debajo de su ATH (${ath:,.0f}). Pánico extremo - zona de capitulacion."
+                interp = f"BTC esta {abs(dd_pct):.1f}% por debajo de su ATH (${ath:,.0f}). Pánico extremo - zona de capitulación."
             return que, interp
 
         elif clave == "fear_greed":
             fg = detalle.get("fg_value", 50)
             classif = detalle.get("classification", "")
-            que = "Indice Fear & Greed (0-100) calculado por alternative.me. Combina volatilidad, momentum, social media y dominance. Indicador contrario clasico: extreme fear = oportunidad."
+            que = "Índice Fear & Greed (0-100) calculado por alternative.me. Combina volatilidad, momentum, social media y dominance. Indicador contrario clásico: extreme fear = oportunidad."
             if fg < 20:
-                interp = f"F&G en {fg}/100 ({classif}). EXTREME FEAR - señal contrarian clasica. Historicamente, los suelos de mercado se forman aqui."
+                interp = f"F&G en {fg}/100 ({classif}). EXTREME FEAR - señal contrarian clásica. Históricamente, los suelos de mercado se forman aqui."
             elif fg < 40:
                 interp = f"F&G en {fg}/100 ({classif}). FEAR - mercado pesimista, buena zona para DCA aumentado."
             elif fg < 60:
@@ -1320,15 +1320,15 @@ if seccion == "₿ Bitcoin (BTC)":
 
         elif clave == "pi_cycle":
             ratio = detalle.get("ratio", 0)
-            que = "Pi Cycle Top: ratio entre la media movil de 111 dias y 2x la media de 350 dias. Cuando se cruzan (ratio cerca de 1.0) historicamente marca topes de ciclo (2013, 2017, 2021)."
+            que = "Pi Cycle Top: ratio entre la media móvil de 111 días y 2x la media de 350 días. Cuando se cruzan (ratio cerca de 1.0) históricamente marca topes de ciclo (2013, 2017, 2021)."
             if ratio < 0.4:
-                interp = f"Ratio en {ratio:.3f}. Lejisimos del tope - zona estructuralmente atractiva."
+                interp = f"Ratio en {ratio:.3f}. Lejísimos del tope - zona estructuralmente atractiva."
             elif ratio < 0.6:
-                interp = f"Ratio en {ratio:.3f}. Lejos del tope - bear market o acumulacion temprana."
+                interp = f"Ratio en {ratio:.3f}. Lejos del tope - bear market o acumulación temprana."
             elif ratio < 0.8:
                 interp = f"Ratio en {ratio:.3f}. Zona media - mercado normal."
             elif ratio < 0.95:
-                interp = f"Ratio en {ratio:.3f}. Acercandose al tope - precaucion."
+                interp = f"Ratio en {ratio:.3f}. Acercándose al tope - precaución."
             else:
                 interp = f"Ratio en {ratio:.3f}. TOPE INMINENTE - cruce activado, vender o reducir aporte."
             return que, interp
@@ -1337,28 +1337,28 @@ if seccion == "₿ Bitcoin (BTC)":
             meses = detalle.get("meses_desde_halving", 0)
             fase = detalle.get("fase", "—")
             last = detalle.get("last_halving", "—")
-            que = "Posicion en el ciclo de 4 anos del halving de Bitcoin. Patron historico: bull market ~12m post-halving, tope ~18m, bear market 18-30m, acumulacion 30-48m."
+            que = "Posición en el ciclo de 4 años del halving de Bitcoin. Patrón histórico: bull market ~12m post-halving, tope ~18m, bear market 18-30m, acumulación 30-48m."
             if meses < 6:
-                interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - acumulacion temprana del bull cycle."
+                interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - acumulación temprana del bull cycle."
             elif meses < 12:
-                interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - momento clasico de subida fuerte."
+                interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - momento clásico de subida fuerte."
             elif meses < 18:
                 interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - peligro de tope, reducir aporte."
             elif meses < 24:
-                interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - correccion inicial del bear market."
+                interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - corrección inicial del bear market."
             elif meses < 30:
                 interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - mitad del bear market, oportunidad creciente."
             elif meses < 42:
-                interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - mejor zona historica para acumular."
+                interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - mejor zona histórica para acumular."
             else:
-                interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - acumulacion final pre-halving."
+                interp = f"Mes {meses:.1f} post-halving (último: {last}). {fase} - acumulación final pre-halving."
             return que, interp
 
         elif clave == "momentum":
             ret = detalle.get("ret_12_1_pct", 0)
-            que = "Retorno entre hace 12 meses y hace 1 mes (factor Jegadeesh-Titman). Mide trend sostenido sin ruido del ultimo mes. En BTC, momentum extremo positivo (+100%) puede ser señal de tope."
+            que = "Retorno entre hace 12 meses y hace 1 mes (factor Jegadeesh-Titman). Mide trend sostenido sin ruido del último mes. En BTC, momentum extremo positivo (+100%) puede ser señal de tope."
             if ret > 100:
-                interp = f"BTC subio {ret:.1f}% en el año - momento PARABOLICO. Suele coincidir con topes de ciclo."
+                interp = f"BTC subio {ret:.1f}% en el año - momento PARABÓLICO. Suele coincidir con topes de ciclo."
             elif ret > 30:
                 interp = f"BTC subio {ret:.1f}% en el año - bull market activo y validado."
             elif ret > -10:
@@ -1366,10 +1366,10 @@ if seccion == "₿ Bitcoin (BTC)":
             elif ret > -40:
                 interp = f"BTC cayo {abs(ret):.1f}% en el año - bear market en curso."
             else:
-                interp = f"BTC cayo {abs(ret):.1f}% en el año - capitulacion. Historicamente buenos puntos de entrada."
+                interp = f"BTC cayo {abs(ret):.1f}% en el año - capitulación. Históricamente buenos puntos de entrada."
             return que, interp
 
-        return "Senal del sistema.", "Sin interpretacion disponible."
+        return "Señal del sistema.", "Sin interpretacion disponible."
 
     for clave, label, det_key, det_desc in senales_orden_btc:
         s = sub_scores.get(clave)
