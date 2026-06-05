@@ -1,6 +1,6 @@
 {
-  "updated_at_utc": "2026-06-05T17:03:35.318606+00:00",
-  "updated_at_local": "2026-06-05T13:03:35.318623",
+  "updated_at_utc": "2026-06-05T17:33:36.358912+00:00",
+  "updated_at_local": "2026-06-05T13:33:36.358931",
   "tickers_solicitados": [
     "CFISPETF",
     "CFINASDAQ"
@@ -21,8 +21,8 @@
     },
     "CFINASDAQ": {
       "ticker": "CFINASDAQ",
-      "precio_cierre": 2151.5,
-      "precio_actual": 2151.5,
+      "precio_cierre": 2144.2,
+      "precio_actual": 2144.2,
       "razon_social": "FI ETF SINGULAR NASDAQ 100",
       "moneda": "CLP",
       "variacion_pct": null,
