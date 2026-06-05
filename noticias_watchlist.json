@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-05T16:33:04.501409+00:00",
+  "updated_at_utc": "2026-06-05T18:33:04.467545+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -17,7 +17,7 @@
       },
       {
         "title": "Qué es AAISA, la acción chilena que obtuvo las mayores ganancias en mayo",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNckZVa0UzcDFIeTBpRkVHQUlhT3REaGYyQWRfTTlrQl9fN3JiQ2tfTElKRHBtckN5M2tpZHZiQUJDblBOeXFiZlcxRTU4VDllV0V3cUt0RF9PSWRMay1fT29vVjRVWUdZV01pbldIVTQxRlpJYW9Ebmxfd1otSUxoQTQ5UnZ1bFUwdi02SWxaa1A1aF9zakNoWWdaSG5OMmZYQWc4WEJxM1kxbHRUTDBMaVZfVnBwTXdEY0M1Umw2eDk3QXVsQVlIN25TUzZ6UHNXRVBR?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORk5HTk1FUkYzYWhvNDlZcnJRS3ZycGRaVjljUW52VVJaYTM1MW9hcER2Qk8wZkMzZ3R5cFZWbjdYbUgwTTZvWjJHeUhiWWVTU2laaUpHOFoxU0xVZk1JXzdubS1pWGVDbXBTY2l5ZXEyT251aTJWdGM1NUZRYnp2STZpWWlGUEZuTGROV1BWcnJWcDEtdlZxSmdRd29hY19rLTRIUEpOWUpXUklGY2JlaUZn0gHTAUFVX3lxTE1yRlVrRTNwMUh5MGlGRUdBSWFPdERoZjJBZF9NOWtCX183cmJDa19MSUpEcG1yQ3kza2lkdmJBQkNuUE55cWJmVzFFNThUOWVXRXdxS3REX09JZExrLV9Pb29WNFVZR1lXTWluV0hVNDFGWklhb0RubF93Wi1JTGhBNDlSdnVsVTB2LTZJbFprUDVoX3NqQ2hZZ1pIbk4yZlhBZzhYQnEzWTFsdFRMMExpVl9WcHBNd0RjQzVSbDZ4OTdBdWxBWUg3blNTNnpQc1dFUFE?oc=5",
         "pubdate": "Wed, 03 Jun 2026 16:31:43 GMT",
         "source": "La Tercera",
         "matched_keyword": "AFP Habitat"
@@ -54,7 +54,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780676821",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780684261",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -66,15 +66,7 @@
     ],
     "PEHUENCHE": [],
     "TRICAHUE": [],
-    "COLBUN": [
-      {
-        "title": "Las licitaciones eléctricas que podrían mover a las acciones de Engie, Enel Chile y Colbún",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSzBiY1JSVjBpSExrM2RQc1lSYXNsYkxyc0dpVXlUVWJTNU9zM25kU1RUSFFtZnAySVdRZDRmWW5TSFBuWFNzTmNmeUo5REN6Z01OSUFWNzFvWExPR29GSEVFX2FzakVyU3RyeFc4UGd5WU94a0NXSWxYZEVEdVJscnBiSC1McFV5d1ctb285RHJPX2lOWDBLTE5CdlVZMmRPYmcyc2M0eHhvMFNUcTlMSkNTdw?oc=5",
-        "pubdate": "Fri, 29 May 2026 17:12:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "Colbun"
-      }
-    ],
+    "COLBUN": [],
     "ENELGXCH": [
       {
         "title": "A dos semanas del Mundial 2026: empresas de consumo aparecen entre las ganadoras históricas en bolsa",
@@ -114,13 +106,6 @@
         "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQRllycVprNjFhU3ZnbldLaERhU0I0SGZ5Y0xQTExEMW1SSDF4NDYtUXhmcUtVNzJuM25RelQ3Zm5qckduT1REb2JuRmNHMWtTNGIzVEdxeFY2OTNGbVZVWmpLUkM1MWEzdTc4RVNPaVZMWFoxTzFZTXAwY0s0d3lXUExOS1NNS2NHTWphQXh0ekhCbW0tNlBMWEpiNF9LSzR4em54NUl5SWFSTmlObzNWMVE5T1V0RGx6SmplSnh1ZDl5bk1KbDRqMEhKU3pndEQtU3hkSm9oZGZoUVpwUHVvckxqX2xGYno3OExUbWdqT2tqanJsdHdCOTBZUXppZU9PQkZoRXZiQnMtTE54SHhZ0gGPAkFVX3lxTFBGWXJxWms2MWFTdmduV0toRGFTQjRIZnljTFBMTEQxbVJIMXg0Ni1ReGZxS1U3Mm4zblF6VDdmbmpyR25PVERvYm5GY0cxa1M0YjNUR3F4VjY5M0ZtVlVaaktSQzUxYTN1NzhFU09pVkxYWjFPMVlNcDBjSzR3eVdQTE5LU01LY0dNamFBeHR6SEJtbS02UExYSmI0X0tLNHh6bng1SXlJYVJOaU5vM1YxUTlPVXREbHpKamVKeHVkOXluTUpsNGowSEpTemd0RC1TeGRKb2hkZmhRWnBQdW9yTGpfbEZiejc4TFRtZ2pPa2pqcmx0d0I5MFlRemllT09CRmhFdmJCcy1MTnhIeFk?oc=5",
         "pubdate": "Fri, 05 Jun 2026 14:52:05 GMT",
         "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "IPSA arriesga una sexta jornada de pérdidas mientras tasas de interés se disparan por sorpresa al alza del empleo en EEUU",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CQ09GcG16M0JDODViLTJMVHBGR1U2X25Fdk1wdVJTMWVvWHRLSzFZQVh6N1hCWUtPbE5LcmZrUHNvQnFJWElXZTNRTlpEYmtzazhka0JnLS0ySWRMb3MwRlNPeVl5ZEM1aU5V?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 13:46:00 GMT",
-        "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
       {
@@ -169,6 +154,13 @@
         "title": "Bolsas globales caen y el dólar sube en medio de la incertidumbre por conflicto en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPY1ExcHU4eWw5Q2JvNERjeXBFX3p4QXFBTXI1c0V2dUo4LTlicWNIUEhpZjQ2ZFdySTJGWVJNVVJucFRjbjRKcXZPX1NyWHc3eUlBeEtXSlpQN1AxNzBJVU1URElwekpRdGN6RmVhN0NDZExtM3ViUmhoX3Jmb3JpMWlwejFyd0tTOHV0Vm1PcUJreEpwOWcta1RROG0tLUdfM1hNSlN2RUdpRUZ4Rk4yMk1FR1QyMlE5UnJVWXBINVFFem83VkhweE1YWVJaQVh5QUxJ0gH0AUFVX3lxTFA1aXBiU1lNYlZnbkhYX2dMTDMwRXkzV0lEbTFaZDBDQ0c0cnN6Zk5melZwVVVMUjNyYWxMTVZIWW9ZdTdDbTV1Y0lraE5nUWlPM2NnaVkwOXFlb0tQY0EwVU9QYl9xM0Z1ZG9JcDJnSzNCa2VWbHVjMEYwNGdvcXI3YmwtNGI5VHdDa0FPeTlRc0dnanEyTEtlNzBrSnF5S2lWZmlyeUdTRW9KejZVWkljQjV6YkVsbXZ0Rm1SOFJobDROci1oVm90N3h0RGVPN1N2Z2ItelRaS3F3NHlUR0JSRjJQdkJ5YXNuUWdZbXB1OXRialU?oc=5",
         "pubdate": "Wed, 03 Jun 2026 22:35:29 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Oro Blanco cita a junta de accionistas para cambiar su nombre a Pampa",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMGZQdHNuZVROaDBvc0NnZlh1MUhWSndkdXJnaVM3b3JTc2dLTE0wNG82S0lUdW5wb3M2REZyQW5ZWld5bkcwV3MwQnlLSkdZNE5mU1MtYzU1YXk4RGR6VTdTOE04U3dLbFFoWUdxbGJIbEE5OW1IbDJsRC1nYXNCNGhYLXE2elo0MUdGWUlOQkdyTWhfcHlwTW5mRllLUmZSa2xndW1yNHZza0o4bFBj0gHQAUFVX3lxTE1EdS1vUVhmSEh6YVZ0Z2l3WlVTRk9zQkFYSmxxVHhNSUpidEozQnlzZGxVOFlueVNYbXA1T0JPcW5nci1WQXFXOVJDeHhMY2IzSUx3TlAtcWNqMmFwOS1VSXpJbmxwRk1KeTdFd0dzLUVmOWNEUThUN0Q5dWtlNTVaNHBxUzN6ZjFicWJDNXhUYXk0Q2hrLUhvZnc0cTJqTkc4TUNzSlBPR0tGQW1kbk9zb2hmLXdSUmZIX3YzWFZxSWlZZGhILUhuSlBPRFBOMEI?oc=5",
+        "pubdate": "Tue, 02 Jun 2026 22:20:33 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
       },
@@ -226,7 +218,7 @@
     "CENCOMALLS": [
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780676821",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780684261",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -241,8 +233,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2154,
-    "total_noticias_filtradas": 29,
-    "total_hechos_esenciales_brutos": 132
+    "total_noticias_brutas": 2175,
+    "total_noticias_filtradas": 28,
+    "total_hechos_esenciales_brutos": 137
   }
 }
