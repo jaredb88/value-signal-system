@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-05T15:02:17.797789+00:00",
+  "updated_at_utc": "2026-06-05T16:33:04.501409+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -54,7 +54,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780671721",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780676821",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -96,10 +96,24 @@
     ],
     "SOQUICOM": [
       {
-        "title": "Cinco acciones a tener en cuenta en junio: BICE, Parque Arauco, Cencosud, SQM-B y Latam",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQTV2ZF9fNGRsT2NvY2dVS2k4UUJUUlBiSi1oeHEtaDFhV1kzYlNuLVRlc0JqOS1lVC1ET3d1Z1JBeHdLaVE1WjdHd3l3U0E2X0VFMk1QMXFUTXBnenVRNVJfTGc5NC1KTWxoZV8tc3Z3MHNXekNSYlc5bU5TdjAyRkxMcGgxSXhHRkh5MUFKYWc?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 14:13:00 GMT",
+        "title": "Grupo Pampa compra acciones de SQM por más de US$60 millones en la semana",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZWVRa1R2eDloQ2VQUW9JWFBud0lvUHJZSTRVRFZpby1sQXRBR2JGZjNDUDJFa0l2UjR4cE8zZWNMT0xxdmY1SHlCRld4NnpLdGFzclFHQkpYYjN1TXN2aWdyUGlXdDJsQXVpbENDbGs5a1gyTXJxTG9aVFhMV3R2VVpCSC1pSmlqNzlvX1Y4dDRmWkRiZG9XeTU0ek54SlJJbEJDcV9wSnJlTVBNYmhsWjZYb9IB1AFBVV95cUxNb3dZVEs2SE1sMXBKclVSQ01QYmh3S1Y1NWQ2TXhXVkFWMklwV0FKaW0xVlNmYnd5MTJ1ZnR2dkg4UkNuUlFET3VtZHRLZklQSmtWRDE5Q0RhY2Z5YjJfWms2MTVVTS05UFItaFlUQ05jYnBZYWE2R1l4NEh2R1FwLUZzaU03UnhCazZzUkNwQUJKMm00S1JGQVlBLXVmYWF5NXdpUHY0WTVaNURZQ1JPUXdKdzd1aERCQ2ktT25TaE42YTlFY1VPSTFiMTA3MDR2cFh6dw?oc=5",
+        "pubdate": "Fri, 05 Jun 2026 15:50:00 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "De Ponce a los Luksic: qué holding ganó la carrera bursátil",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdS02b3pHb1lHWURUZFhFQlVjUFp2VFFiaG1uRjdYdlpZU1ozVnhUcEVvWnpkeU93dHZsb2ZPSGw2NXhuM2JsTXNMTjhKTmZuYm9iSHYxWFl1WTUyak02bE1yZElYMVpPRGVtUWtqSUtjbFdzVzZJcHRGR0Y1XzhHV3BlREVyTjRhUHlta2tLang3T2ZOMFJLWURaR3p0MDdodVJVT0p1OXY?oc=5",
+        "pubdate": "Fri, 05 Jun 2026 15:07:00 GMT",
         "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "“Sería un honor”: Jorge Alessandri dice que “si se ajustan los tiempos” está disponible a competir por presidencia UDI",
+        "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQRllycVprNjFhU3ZnbldLaERhU0I0SGZ5Y0xQTExEMW1SSDF4NDYtUXhmcUtVNzJuM25RelQ3Zm5qckduT1REb2JuRmNHMWtTNGIzVEdxeFY2OTNGbVZVWmpLUkM1MWEzdTc4RVNPaVZMWFoxTzFZTXAwY0s0d3lXUExOS1NNS2NHTWphQXh0ekhCbW0tNlBMWEpiNF9LSzR4em54NUl5SWFSTmlObzNWMVE5T1V0RGx6SmplSnh1ZDl5bk1KbDRqMEhKU3pndEQtU3hkSm9oZGZoUVpwUHVvckxqX2xGYno3OExUbWdqT2tqanJsdHdCOTBZUXppZU9PQkZoRXZiQnMtTE54SHhZ0gGPAkFVX3lxTFBGWXJxWms2MWFTdmduV0toRGFTQjRIZnljTFBMTEQxbVJIMXg0Ni1ReGZxS1U3Mm4zblF6VDdmbmpyR25PVERvYm5GY0cxa1M0YjNUR3F4VjY5M0ZtVlVaaktSQzUxYTN1NzhFU09pVkxYWjFPMVlNcDBjSzR3eVdQTE5LU01LY0dNamFBeHR6SEJtbS02UExYSmI0X0tLNHh6bng1SXlJYVJOaU5vM1YxUTlPVXREbHpKamVKeHVkOXluTUpsNGowSEpTemd0RC1TeGRKb2hkZmhRWnBQdW9yTGpfbEZiejc4TFRtZ2pPa2pqcmx0d0I5MFlRemllT09CRmhFdmJCcy1MTnhIeFk?oc=5",
+        "pubdate": "Fri, 05 Jun 2026 14:52:05 GMT",
+        "source": "La Tercera",
         "matched_keyword": "SQM"
       },
       {
@@ -208,19 +222,11 @@
         "matched_keyword": "SQM"
       }
     ],
-    "QUINENCO": [
-      {
-        "title": "Quiñenco anota caída en sus ganancias ante impacto de la guerra en Medio Oriente en su filial naviera",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdFA2dHFFUFFwS0pCS3hqOXc4UXc3LU54OE5ZSTlNYUoxNFA3N3MxYll3OWYxQV9CcUp2UVNDZjF1S19aX21DOFJyMnVCSnNQaWJxUkdlZWQ0aGdjZEc4NXdQWU05STdtNUtET0RZTkdWckc2OFZJLWpPUnFiZC1MZ2VXNWkwdjlHTjljNUNMQ3BnTmRlT3g4Z3V2SjBKa0RjaExwNzc3Sk8yM0hrVkY2VXBjSEIzeGxoQ3pSYdIB3gFBVV95cUxNbVBWeWIzWmZIb3BoUF9aMmIzYThlYkE2X3RIUkdGR0VRcnZ5dC1uenNPdWJiaXh5WENtQVlmcVJyMkVqbGw0cmx0REo5SzdudUZPNFJ6VzFCcnBQdXZjNkxfcTNYT1VxTHIwRENnS05TTHJKNndRX1dSUnJSTzc0NWlQS3paeGtDNXU3WlpUVHNINW5VOEpBSDFBSTFsd2lVQXN0elJFWEJGbE9IdEVMNGVlX0lFLV9oMmp2anNEc1VKN2xvV1lfWFZuYnJpb2U2TlQ2QzZJOEhlaFN5cUE?oc=5",
-        "pubdate": "Fri, 29 May 2026 15:38:35 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "Quinenco"
-      }
-    ],
+    "QUINENCO": [],
     "CENCOMALLS": [
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780671721",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780676821",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -235,8 +241,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2078,
-    "total_noticias_filtradas": 28,
+    "total_noticias_brutas": 2154,
+    "total_noticias_filtradas": 29,
     "total_hechos_esenciales_brutos": 132
   }
 }
