@@ -219,6 +219,7 @@ with st.sidebar:
         _status_archivo("noticias_watchlist.json", "Noticias + CMF", 3, 8),
         _status_archivo("gld_data.json", "GLD Score", 1, 3),
         _status_archivo("btc_data.json", "BTC Score", 1, 3),
+        _status_archivo("dividend_etfs_data.json", "Dividend ETFs", 1, 3),
     ]
 
     for emoji, msg in estados:
@@ -1501,19 +1502,32 @@ last_nq = nq.dropna(subset=['score']).iloc[-1]
 # Cargar Dividend ETFs (SCHD, JEPQ) temprano para usar en resumen
 div_results = {}
 if DIVIDEND_ETFS_AVAILABLE:
-    with st.spinner("Analizando Dividend ETFs..."):
-        div_aportes = {"SCHD": APORTE_SCHD, "JEPQ": APORTE_JEPQ}
-        for ticker_div in ["SCHD", "JEPQ"]:
-            try:
-                result = analyze_dividend_etf(
-                    ticker_div,
-                    aporte_base_usd=div_aportes[ticker_div],
-                    usd_clp=None,
-                )
-                if result:
+    # Leer datos pre-calculados de dividend_etfs_data.json (generado cada 30 min
+    # por update_dividend_etfs.py corriendo en la PC local, sin rate limits de Yahoo)
+    div_aportes = {"SCHD": APORTE_SCHD, "JEPQ": APORTE_JEPQ}
+    div_json_path = Path("dividend_etfs_data.json")
+    if not div_json_path.exists():
+        st.warning("dividend_etfs_data.json no encontrado. La tarea programada aún no ha generado los datos.")
+    else:
+        try:
+            with open(div_json_path, "r", encoding="utf-8") as _f_div:
+                div_data_raw = json.load(_f_div)
+
+            etfs_data = div_data_raw.get("etfs", {})
+            for ticker_div in ["SCHD", "JEPQ"]:
+                if ticker_div in etfs_data:
+                    result = dict(etfs_data[ticker_div])
+                    # Recalcular aporte sugerido con el aporte real del usuario
+                    # (el JSON guarda con un default, el usuario puede cambiarlo en el sidebar)
+                    aporte_base_real = div_aportes[ticker_div]
+                    mult = result.get("multiplicador", 1.0)
+                    result["aporte_base_usd"] = aporte_base_real
+                    result["aporte_sugerido_usd"] = aporte_base_real * mult
                     div_results[ticker_div] = result
-            except Exception as e:
-                st.warning(f"No se pudo analizar {ticker_div}: {e}")
+                else:
+                    st.info(f"{ticker_div} no disponible en datos recientes")
+        except Exception as e:
+            st.warning(f"Error leyendo dividend_etfs_data.json: {e}")
 
 
 def render_summary_card(col, ticker_label, sub_label, score, zona):
