@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-05T11:05:29.308613",
-  "duracion_segundos": 139.629865,
+  "fecha_actualizacion": "2026-06-05T11:35:15.508099",
+  "duracion_segundos": 128.764902,
   "n_acciones": 11,
   "acciones": [
     {
@@ -515,11 +515,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 129.01,
+      "precio_actual_clp": 129.62,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": -1.52,
+      "variacion_pct": -1.05,
       "dy": {
-        "dy_pct": 6.16,
+        "dy_pct": 6.13,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 5.54,
@@ -529,13 +529,13 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.019773574805724392,
-      "cagr_5y": 0.04787871729918236,
-      "cagr_10y": -0.02831690904996198,
+      "cagr_3y": 0.02137831865766615,
+      "cagr_5y": 0.04886778867177166,
+      "cagr_10y": -0.027858441272429868,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.34
+        "vs_benchmark_pp": -2.37
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,9 +1144,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3729.9,
+      "precio_actual_clp": 3731.5,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": -0.4,
+      "variacion_pct": -0.36,
       "dy": {
         "dy_pct": 10.82,
         "anos_usados": 3,
@@ -1158,9 +1158,9 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.09785329208180693,
-      "cagr_5y": 0.20781374959414234,
-      "cagr_10y": 0.10946172880612615,
+      "cagr_3y": 0.09801025019134424,
+      "cagr_5y": 0.2079173540067898,
+      "cagr_10y": 0.10950931174925715,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
