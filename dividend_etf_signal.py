@@ -415,6 +415,24 @@ def analyze_dividend_etf(ticker: str, aporte_base_usd: float = 100, usd_clp: flo
         log.error(f"Sin datos para {ticker}")
         return None
 
+    # Guard defensivo: rechazar si el ultimo precio es NaN o invalido.
+    # Esto pasa cuando Yahoo rate-limita desde IPs cloud y devuelve datos parciales.
+    import math as _math_guard
+    try:
+        ultimo_precio = float(df["Close"].iloc[-1])
+        if _math_guard.isnan(ultimo_precio) or ultimo_precio <= 0:
+            log.error(f"{ticker}: ultimo precio invalido ({ultimo_precio}) - se rechaza")
+            return None
+    except Exception as e:
+        log.error(f"{ticker}: error validando ultimo precio: {e}")
+        return None
+
+    # Tambien validamos que haya suficientes filas de datos validos
+    filas_validas = df["Close"].dropna().shape[0]
+    if filas_validas < 100:
+        log.error(f"{ticker}: solo {filas_validas} filas validas (<100) - se rechaza")
+        return None
+
     # Calcular indicadores
     dy_actual = calcular_dy_actual(df)
     dy_historico = calcular_dy_historico(df, years=3)
