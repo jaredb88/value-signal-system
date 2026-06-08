@@ -1,42 +1,6 @@
 {
-  "updated_at_utc": "2026-06-08T09:25:06.744408+00:00",
+  "updated_at_utc": "2026-06-08T16:43:55.287229+00:00",
   "etfs": {
-    "SCHD": {
-      "ticker": "SCHD",
-      "name": "SCHD",
-      "long_name": "Schwab US Dividend Equity ETF",
-      "description": "ETF pasivo que replica el Dow Jones US Dividend 100 Index. Selecciona ~100 acciones USA con: (1) historial de pago de dividendos ≥10 años, (2) ratios financieros sólidos vs sus pares (ROE, deuda/cash flow), (3) yield atractivo. Excluye REITs. Top holdings históricos: AbbVie, Cisco, Verizon, Pfizer, Texas Instruments, Coca-Cola. Dividendos cualificados (ventaja fiscal). Expense ratio 0.06%. Trimestral.",
-      "type": "Pasivo - Dividend Growth",
-      "inception": "2011-10-20",
-      "expense_ratio": 0.0006,
-      "frequency": "Trimestral",
-      "precio_usd": 32.3,
-      "precio_clp": null,
-      "usd_clp": null,
-      "dy_actual_pct": 3.27,
-      "dy_historico_3y_pct": 3.68,
-      "drawdown_pct": -1.61,
-      "cagr_precio_3y_pct": 10.93,
-      "cagr_precio_5y_pct": 4.62,
-      "dgr_3y_pct": 6.22,
-      "momentum_pct": 20.7,
-      "componentes": {
-        "dy_vs_historico": 38.69244499279944,
-        "drawdown": 4.035962263431847,
-        "balance_cagr": 94.63008049898892,
-        "momentum": 100.0,
-        "dgr": 75.0
-      },
-      "score": 50.0,
-      "zona": "ATRACTIVO",
-      "multiplicador": 1.5,
-      "emoji": "🟢",
-      "aporte_base_usd": 140,
-      "aporte_sugerido_usd": 210.0,
-      "aporte_sugerido_clp": null,
-      "fecha_analisis": "2026-06-08T05:25:06.464970",
-      "ultima_fecha_dato": "2026-06-05"
-    },
     "JEPQ": {
       "ticker": "JEPQ",
       "name": "JEPQ",
@@ -70,9 +34,11 @@
       "aporte_base_usd": 60,
       "aporte_sugerido_usd": 90.0,
       "aporte_sugerido_clp": null,
-      "fecha_analisis": "2026-06-08T05:25:06.743990",
+      "fecha_analisis": "2026-06-08T12:43:55.286327",
       "ultima_fecha_dato": "2026-06-05"
     }
   },
-  "fallidos": []
+  "fallidos": [
+    "SCHD"
+  ]
 }
