@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-08T00:33:06.261514+00:00",
+  "updated_at_utc": "2026-06-08T02:33:06.106969+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -40,7 +40,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780878661",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780885681",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -69,6 +69,13 @@
         "title": "IPSA anota su racha de caídas más extensa de 2026 por tormenta global de mercados tras datos de empleo en EEUU",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CQ09GcG16M0JDODViLTJMVHBGR1U2X25Fdk1wdVJTMWVvWHRLSzFZQVh6N1hCWUtPbE5LcmZrUHNvQnFJWElXZTNRTlpEYmtzazhka0JnLS0ySWRMb3MwRlNPeVl5ZEM1aU5V?oc=5",
         "pubdate": "Fri, 05 Jun 2026 20:29:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "El reordenamiento del gobierno corporativo de Sodimac en medio del frenazo del sector",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPM0JuM2h3WVE4cG9nSDhuM3RJanA3eVkyQkZ1WWZ4WE5ubDVfMU9GOFFZbFA2QVhHSUtVZElkWEd0OVlZRXNtNFN6VkxFMDE5ODdicDNRMzNUeFAtUnl6MUJaSXBGLW51UlJWbFkta2g0MDFOMDM2U2c0TEZydWc4bWJjc2NsSVhSWUVXRnlWdWx5UFNGTm9OX2xaWWZ6dUtBQ2RSZjQwUjlaLXYyamc?oc=5",
+        "pubdate": "Fri, 05 Jun 2026 18:50:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -175,7 +182,7 @@
     "CENCOMALLS": [
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780878661",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780885681",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -190,8 +197,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2152,
-    "total_noticias_filtradas": 22,
+    "total_noticias_brutas": 2153,
+    "total_noticias_filtradas": 23,
     "total_hechos_esenciales_brutos": 110
   }
 }
