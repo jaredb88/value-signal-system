@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-07T23:34:53.970482",
-  "duracion_segundos": 107.561591,
+  "fecha_actualizacion": "2026-06-08T00:04:54.818628",
+  "duracion_segundos": 109.854513,
   "n_acciones": 11,
   "acciones": [
     {
@@ -25,9 +25,9 @@
         "promedio_anual": 99.33,
         "advertencia": null
       },
-      "cagr_3y": 0.21172627098292285,
+      "cagr_3y": 0.22300556800737859,
       "cagr_5y": 0.3826880429406032,
-      "cagr_10y": 0.10408099235273394,
+      "cagr_10y": 0.10532927273390746,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
@@ -277,9 +277,9 @@
         "promedio_anual": 233.52,
         "advertencia": null
       },
-      "cagr_3y": 0.14355044117903448,
+      "cagr_3y": 0.13977445053315973,
       "cagr_5y": 0.0844235681674077,
-      "cagr_10y": -0.04979978349432357,
+      "cagr_10y": -0.04093434524852424,
       "evaluacion": {
         "status": "En rango",
         "emoji": "🟡",
@@ -529,9 +529,9 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.027261274098427934,
-      "cagr_5y": 0.037426965563571946,
-      "cagr_10y": -0.0266010717007632,
+      "cagr_3y": 0.02123247315026866,
+      "cagr_5y": 0.03531386651575086,
+      "cagr_10y": -0.026387602510520414,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -655,9 +655,9 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": 0.3029467886679029,
-      "cagr_5y": 0.20547677000245956,
-      "cagr_10y": -0.009611823304717992,
+      "cagr_3y": 0.3047356594459578,
+      "cagr_5y": 0.20643454284894203,
+      "cagr_10y": -0.008890425726641116,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -1158,9 +1158,9 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.10716233123164831,
-      "cagr_5y": 0.21156192090934023,
-      "cagr_10y": 0.10916690020135311,
+      "cagr_3y": 0.11242257301636838,
+      "cagr_5y": 0.21035820617179324,
+      "cagr_10y": 0.10958791679591617,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
@@ -1284,8 +1284,8 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.18844733797131874,
-      "cagr_5y": 0.1431106608338386,
+      "cagr_3y": 0.18995084148200858,
+      "cagr_5y": 0.13506148650851268,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
