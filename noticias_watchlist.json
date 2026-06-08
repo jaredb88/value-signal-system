@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-08T16:43:58.846567+00:00",
+  "updated_at_utc": "2026-06-08T20:33:04.868102+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -40,7 +40,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780936981",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780950661",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -66,9 +66,9 @@
     ],
     "SOQUICOM": [
       {
-        "title": "Bolsa chilena abre a la baja y arriesga una séptima jornada de pérdidas atenta a Medio Oriente y al suave IPC en Chile",
+        "title": "Bolsa chilena arriesga cerrar en mínimos de 2026 tras siete jornadas en rojo por la incertidumbre en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CMVhEN2NrUldQRXhuSGJBSzFQZnhVSGlYRGV6TnBMX1I2OVQ0eHdkUDhuX0UxVFJ2T2o4ZDJhbXN1SnNRZlo2el9iRHpNVGNzcEJHNTlVbDMxN1BOVERyVWZXMGVFajg3Wk1IOA?oc=5",
-        "pubdate": "Mon, 08 Jun 2026 13:52:00 GMT",
+        "pubdate": "Mon, 08 Jun 2026 16:59:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -155,20 +155,13 @@
         "pubdate": "Tue, 02 Jun 2026 08:00:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
-      },
-      {
-        "title": "IPSA cierra con fuerte caída a niveles de 10.600 tras señales de un posible quiebre de las negociaciones de paz en Medio Oriente",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9na2VnMjVIVjFCaFp5Qnl5VVdFTHE2WE9lX3dJYXVnMU5yX3JMc0lSVFFkVmNFNUt5OXhMdHVDejVuLUNRRGZmbEFQV0ZqcU5WNmtLQlVJNnJoVXBSRzF3bzFhdVhTamhB?oc=5",
-        "pubdate": "Mon, 01 Jun 2026 20:25:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
       }
     ],
     "QUINENCO": [],
     "CENCOMALLS": [
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780936981",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780950661",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -183,8 +176,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2223,
-    "total_noticias_filtradas": 21,
-    "total_hechos_esenciales_brutos": 110
+    "total_noticias_brutas": 2228,
+    "total_noticias_filtradas": 20,
+    "total_hechos_esenciales_brutos": 112
   }
 }
