@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-09T12:23:56.550594",
-  "duracion_segundos": 132.131824,
+  "fecha_actualizacion": "2026-06-09T12:35:02.219010",
+  "duracion_segundos": 109.294578,
   "n_acciones": 11,
   "acciones": [
     {
@@ -515,11 +515,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 126.75,
+      "precio_actual_clp": 127.4,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": 0.27,
+      "variacion_pct": 0.78,
       "dy": {
-        "dy_pct": 6.27,
+        "dy_pct": 6.24,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 5.54,
@@ -529,13 +529,13 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.015260216860504716,
-      "cagr_5y": 0.03253514402399471,
-      "cagr_10y": -0.028099241381376094,
+      "cagr_3y": 0.01699274618850244,
+      "cagr_5y": 0.03359198875927594,
+      "cagr_10y": -0.027601977192554528,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.23
+        "vs_benchmark_pp": -2.26
       },
       "cmf": {
         "periodo": "03/2026",
@@ -641,11 +641,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial chilena de Enel. Principal generadora hidroelectrica del pais. ROE 19%, payout 62%, G=7%.",
-      "precio_actual_clp": 534,
+      "precio_actual_clp": 530,
       "razon_social": "ENEL GENERACION CHILE S.A.",
-      "variacion_pct": -1.1,
+      "variacion_pct": -1.84,
       "dy": {
-        "dy_pct": 6.29,
+        "dy_pct": 6.34,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 41.9,
@@ -655,13 +655,13 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": 0.30544499433361816,
-      "cagr_5y": 0.20515724025647808,
-      "cagr_10y": -0.008728807962640528,
+      "cagr_3y": 0.3021772835596812,
+      "cagr_5y": 0.20334632712855627,
+      "cagr_10y": -0.009473848032947818,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.21
+        "vs_benchmark_pp": -2.16
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3701,
+      "precio_actual_clp": 3717.9,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": -0.11,
+      "variacion_pct": 0.35,
       "dy": {
-        "dy_pct": 10.9,
+        "dy_pct": 10.86,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.11052543003959503,
-      "cagr_5y": 0.20413267791035983,
-      "cagr_10y": 0.10901988500207449,
+      "cagr_3y": 0.11221320678629776,
+      "cagr_5y": 0.20523036902648006,
+      "cagr_10y": 0.10952526285058406,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 2.4
+        "vs_benchmark_pp": 2.36
       },
       "cmf": {
         "periodo": "03/2026",
