@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-09T10:44:38.708840+00:00",
+  "updated_at_utc": "2026-06-09T16:21:37.104254+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -8,6 +8,13 @@
   ],
   "noticias_por_ticker": {
     "HABITAT": [
+      {
+        "title": "Señales financieras | Una entrevista con Edgardo Gutiérrez, de Moneda Patria",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaHB1MFdRMG9abVNpWW9la1RVb05CVlBvUy15OHBXQWhPVklaTmRYZDFSNmc2WE1idkpsT21NOTc0QlNqTmltMGpqX0IzTjhKTjIxdU44a3VVY1dZTTd3RmpoYUx0RkFmWG5Ba1U3VmJTZkZteGNfOTQtdW4xMWRyMkd2NGl0bkdybmUwTW5sYTB0MGx5ZThKcHhNeWZxdmlvT1hzazJkN21RYnNIdVhGNHl3?oc=5",
+        "pubdate": "Tue, 09 Jun 2026 14:48:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "AFP Habitat"
+      },
       {
         "title": "Ex CFA y ex Security Aldo Lema es el nuevo economista y director de estrategia de AAISA",
         "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaU5kUUhjY3NKVWhMOFJDZVU1Ui1BUlJOdlVvZzZpUHY2RGsyS3A1N3NpQmJPSU1iQWRLSGlWZzRwQzRKZzYxRkJfTUJZNGdLODdmQURlcjd2eEdLWm5ud0VzSVkyM0tHR3pUaUJuTVdNOFYwOVRzdG15Z2Y1bGhwUjhoZzdNUGp3ZEN3eFVsWVZMYzZtWUc2UmJDams4SU95R1JVQUI0X29YNTJSZnFkT1Q2LWh3M1pSa3NDU2JZM1FHMnd50gHmAUFVX3lxTE8tY004X1VnRldFT0xvUmlCcmt0cHVRXzZFOHRmOXJMbFMtRktiWjZZR29jb191d2pnV0x5V1I0eko0Z0pzdXotV3BWR1pLNzd1Y3BBdTlUdU9XUlZRajVtWkQxazJEVkstSkRTa1dOQ0I4NXlIUmFKaHJ4b0tBTnl6X0laS2JScTRrQmdYUDdHd2JsNUlOajFDZFlxYWV2S3FuY3Jjb0gzWXc2Mllla2RjbXVRenVtYUNGRHRJd3NQSDh4dTNURkJWM2poTnN2d21sa3l4Rng0RmwyemRDTWdVUUpDVmxB?oc=5",
@@ -40,7 +47,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1781000101",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1781022001",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -58,16 +65,16 @@
     "NTGCLGAS": [],
     "SOQUICOM": [
       {
-        "title": "Bolsa chilena cierra en mínimos de 2026 tras siete jornadas en rojo por malos datos locales y la incertidumbre en Medio Oriente",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CMVhEN2NrUldQRXhuSGJBSzFQZnhVSGlYRGV6TnBMX1I2OVQ0eHdkUDhuX0UxVFJ2T2o4ZDJhbXN1SnNRZlo2el9iRHpNVGNzcEJHNTlVbDMxN1BOVERyVWZXMGVFajg3Wk1IOA?oc=5",
-        "pubdate": "Mon, 08 Jun 2026 20:33:00 GMT",
+        "title": "IPSA se dispara 2% en la apertura y busca dejar atrás una larga racha de caídas mientras se relajan las tensiones en Medio Oriente",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvOVUzLTE4SnB1V0JFd1ZfbG5keVlEalJqZmNQUkYxNjRPbWNVTlNqSnlHd0xIVi1qYktuU1p4RW9zMzNRVkdmYzAxeUNnYzlBUnNTT3hKdU9vWnM2OXJNdDFfYndyTE9I?oc=5",
+        "pubdate": "Tue, 09 Jun 2026 13:51:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
       {
-        "title": "La investigación sobre el Tren de Aragua reaviva el debate en Chile sobre el secreto bancario",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQ0hLd19yclZsbnZuYUhGVmg1ak5ZQ3VrV0tKWHMtTmVfREcyM1BoVFVIczRCMEw3ZGZkajFpZnVSd3ozLUJoWl9RTHRyR3FLMFdrVXpJcFhrTGk5MUxCaHZ6OE1WSDViaHhZYVk3MjB2bm1RUmtSQXY4QnZGQ2N4QlNIRllZZG1pclUyQVhROFRWWFNORDNDckZmemFUVmlHcmNTbkpiNVVvSGh0Zm9VSmg1RlA?oc=5",
-        "pubdate": "Mon, 08 Jun 2026 16:47:00 GMT",
+        "title": "Bolsa chilena cierra en mínimos de 2026 tras siete jornadas en rojo por malos datos locales y la incertidumbre en Medio Oriente",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CMVhEN2NrUldQRXhuSGJBSzFQZnhVSGlYRGV6TnBMX1I2OVQ0eHdkUDhuX0UxVFJ2T2o4ZDJhbXN1SnNRZlo2el9iRHpNVGNzcEJHNTlVbDMxN1BOVERyVWZXMGVFajg3Wk1IOA?oc=5",
+        "pubdate": "Mon, 08 Jun 2026 20:33:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -107,13 +114,6 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "EDICIÓN ESPECIAL",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMFgtRnpoWjFnS1F0cU5yeGtKbE9raVhKSVFxbC1sSS1aTEZvZURINXo5U2s0Y0JWSXlLTkJzcHk1NW02elBvSEN2Ymk2RWw0MnpodXh6SFg4OVBfRk81WUdJSUgwWkpPQTFWRlg0eXZycjFraGphUU80SHlLZHpLMllTaG5tbTZNRzhyXw?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 07:00:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "Ineludibles responsabilidades en Codelco",
         "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUmt0WkFOdUUyd3lNSVdjR2tEaFFmLWtXQWRFZ0N4QTU0Rk5aNDZqREtnQmloOHFNZ0FzQVVMUjVpVnNiUTE2TTlUOVVMWE1FWUlfVTUxZFBINm4tTDZHMEpxeUdUdnhQWjZIQjRHaEZYWDFaMmxGamRMYVB6U01Bc0RESTRUWkdqb1l2VVdR0gGvAUFVX3lxTE5kaWs4QzBlMVQ4Uy1OaHZrcVRvNTlGY0lnV2x6VzJGTld5RFdlTm41dUN4eDcwSEtmdlZDWU9qM1JHdWx1RVQtMmF0NnJEZkxMdFE0eDNEU1l1OWlYblBIcHctcUhFWHFrTHJuakZHZDE2bjVSNC1FcGNCemV3QjJkTnhJRzlhUXR5RVNEZzN1WVJsMVZUV08yLU5LZVQyU2ZLOFdNT0ljcVROZzU5dEU?oc=5",
         "pubdate": "Fri, 05 Jun 2026 00:34:40 GMT",
@@ -149,6 +149,13 @@
         "matched_keyword": "SQM"
       },
       {
+        "title": "Oro Blanco cita a junta de accionistas para cambiar su nombre a Pampa",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMGZQdHNuZVROaDBvc0NnZlh1MUhWSndkdXJnaVM3b3JTc2dLTE0wNG82S0lUdW5wb3M2REZyQW5ZWld5bkcwV3MwQnlLSkdZNE5mU1MtYzU1YXk4RGR6VTdTOE04U3dLbFFoWUdxbGJIbEE5OW1IbDJsRC1nYXNCNGhYLXE2elo0MUdGWUlOQkdyTWhfcHlwTW5mRllLUmZSa2xndW1yNHZza0o4bFBj0gHQAUFVX3lxTE1EdS1vUVhmSEh6YVZ0Z2l3WlVTRk9zQkFYSmxxVHhNSUpidEozQnlzZGxVOFlueVNYbXA1T0JPcW5nci1WQXFXOVJDeHhMY2IzSUx3TlAtcWNqMmFwOS1VSXpJbmxwRk1KeTdFd0dzLUVmOWNEUThUN0Q5dWtlNTVaNHBxUzN6ZjFicWJDNXhUYXk0Q2hrLUhvZnc0cTJqTkc4TUNzSlBPR0tGQW1kbk9zb2hmLXdSUmZIX3YzWFZxSWlZZGhILUhuSlBPRFBOMEI?oc=5",
+        "pubdate": "Tue, 02 Jun 2026 22:20:33 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
+      },
+      {
         "title": "Bolsa de Santiago sufre una de las mayores caídas a nivel mundial y cierra sus peores tres sesiones desde marzo",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5YOUhqU3A2cG9ucFZNMVotQlZiZmlmdGJrSWotY2V3ZzFUbWtJXzBaTVJBZDFjUUw4Qnp1ampaMkk3YTJZTkRseVZSbERrSFp1UXdKcjZrSTJ1aFlZTUVycjdzSFMwcVBnTUE?oc=5",
         "pubdate": "Tue, 02 Jun 2026 20:28:00 GMT",
@@ -167,7 +174,7 @@
     "CENCOMALLS": [
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1781000101",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1781022001",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -182,8 +189,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2228,
-    "total_noticias_filtradas": 21,
-    "total_hechos_esenciales_brutos": 101
+    "total_noticias_brutas": 2221,
+    "total_noticias_filtradas": 22,
+    "total_hechos_esenciales_brutos": 103
   }
 }
