@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-09T20:33:05.518166+00:00",
+  "updated_at_utc": "2026-06-09T22:33:04.910765+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -47,7 +47,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1781036881",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1781044201",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -65,17 +65,17 @@
     "NTGCLGAS": [],
     "SOQUICOM": [
       {
+        "title": "IPSA se dispara más de 3% en su mejor sesión desde abril de 2025 con fuerte protagonismo de la banca y despide siete jornadas consecutivas de pérdidas",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvOVUzLTE4SnB1V0JFd1ZfbG5keVlEalJqZmNQUkYxNjRPbWNVTlNqSnlHd0xIVi1qYktuU1p4RW9zMzNRVkdmYzAxeUNnYzlBUnNTT3hKdU9vWnM2OXJNdDFfYndyTE9I?oc=5",
+        "pubdate": "Tue, 09 Jun 2026 20:35:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
         "title": "Novandino Litio: Innovar, el camino hacia el desarrollo integral",
         "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQS3JiUTBzMGZibEkwSEUwYm5KSTh1OF9TWGpCSzZESkZ5UGNBOEkySnZCM0M4VUItVnVDS0pzWXdMOVhvUVp5cDdLeUtiX0VQdkh5NW9zS3YwMHpFS2Y3cUo2aHpEYjduNXgzck5TR0NHTC1hcGpWTTBYRTY5eDVoa2o3WUEzMHVrZDdlRHhoM2NzVTBTbEk4MVlrQl93NEZRa2VVUWRlSGPSAcoBQVVfeXFMTXpYQlV0Mlkzb1V5Rnc5bTFqQmZkNFJYbUdKZ2VqaXFsS3NfdEFOaFQ4WVQwNUlNOWE4eDZIdnhDNlVINXBFMjJBRF9LX0l4MzZGbmViajh6elVhZEJTa0ZwOWUwbTBVUmRaM0Z1ZXJGNDFDajFxVk8ydWhyUWZRMmFIdFdzMnFwTnBUTVJvRDBQejRyRl9kV2t0UTF1VmdFWEZSZl9CNUtpaVROOVduMFNUM3YyZjJXMFJyd3VmNTB3VW02QmwzOGFPdw?oc=5",
         "pubdate": "Tue, 09 Jun 2026 17:11:31 GMT",
         "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "IPSA busca dejar atrás una larga racha de caídas mientras en Wall Street vuelve la liquidación de acciones tecnológicas",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvOVUzLTE4SnB1V0JFd1ZfbG5keVlEalJqZmNQUkYxNjRPbWNVTlNqSnlHd0xIVi1qYktuU1p4RW9zMzNRVkdmYzAxeUNnYzlBUnNTT3hKdU9vWnM2OXJNdDFfYndyTE9I?oc=5",
-        "pubdate": "Tue, 09 Jun 2026 16:33:00 GMT",
-        "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
       {
@@ -89,6 +89,13 @@
         "title": "IPSA anota su racha de caídas más extensa de 2026 por tormenta global de mercados tras datos de empleo en EEUU",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CQ09GcG16M0JDODViLTJMVHBGR1U2X25Fdk1wdVJTMWVvWHRLSzFZQVh6N1hCWUtPbE5LcmZrUHNvQnFJWElXZTNRTlpEYmtzazhka0JnLS0ySWRMb3MwRlNPeVl5ZEM1aU5V?oc=5",
         "pubdate": "Fri, 05 Jun 2026 20:29:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "El reordenamiento del gobierno corporativo de Sodimac en medio del frenazo del sector",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPM0JuM2h3WVE4cG9nSDhuM3RJanA3eVkyQkZ1WWZ4WE5ubDVfMU9GOFFZbFA2QVhHSUtVZElkWEd0OVlZRXNtNFN6VkxFMDE5ODdicDNRMzNUeFAtUnl6MUJaSXBGLW51UlJWbFkta2g0MDFOMDM2U2c0TEZydWc4bWJjc2NsSVhSWUVXRnlWdWx5UFNGTm9OX2xaWWZ6dUtBQ2RSZjQwUjlaLXYyamc?oc=5",
+        "pubdate": "Fri, 05 Jun 2026 18:50:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -128,13 +135,6 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "Ineludibles responsabilidades en Codelco",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUmt0WkFOdUUyd3lNSVdjR2tEaFFmLWtXQWRFZ0N4QTU0Rk5aNDZqREtnQmloOHFNZ0FzQVVMUjVpVnNiUTE2TTlUOVVMWE1FWUlfVTUxZFBINm4tTDZHMEpxeUdUdnhQWjZIQjRHaEZYWDFaMmxGamRMYVB6U01Bc0RESTRUWkdqb1l2VVdR0gGvAUFVX3lxTE5kaWs4QzBlMVQ4Uy1OaHZrcVRvNTlGY0lnV2x6VzJGTld5RFdlTm41dUN4eDcwSEtmdlZDWU9qM1JHdWx1RVQtMmF0NnJEZkxMdFE0eDNEU1l1OWlYblBIcHctcUhFWHFrTHJuakZHZDE2bjVSNC1FcGNCemV3QjJkTnhJRzlhUXR5RVNEZzN1WVJsMVZUV08yLU5LZVQyU2ZLOFdNT0ljcVROZzU5dEU?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 00:34:40 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "Bolsa chilena se desinfla y cierra en rojo por quinta sesión consecutiva ante las dificultades del proceso de paz en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA1dU51RXlqdGpkRDF4SUtmaXBqYkhabnlGajJ1dTNSQlpyQWlwTkFjLXZDR2EtXzlCSGNtekFhb29HUFJEUzdhRU11X3JoWk55Q3IySWZDYmhXS2dFV2tDd1JIbXNXNVA3?oc=5",
         "pubdate": "Thu, 04 Jun 2026 20:16:00 GMT",
@@ -161,20 +161,13 @@
         "pubdate": "Wed, 03 Jun 2026 22:35:29 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
-      },
-      {
-        "title": "Oro Blanco cita a junta de accionistas para cambiar su nombre a Pampa",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMGZQdHNuZVROaDBvc0NnZlh1MUhWSndkdXJnaVM3b3JTc2dLTE0wNG82S0lUdW5wb3M2REZyQW5ZWld5bkcwV3MwQnlLSkdZNE5mU1MtYzU1YXk4RGR6VTdTOE04U3dLbFFoWUdxbGJIbEE5OW1IbDJsRC1nYXNCNGhYLXE2elo0MUdGWUlOQkdyTWhfcHlwTW5mRllLUmZSa2xndW1yNHZza0o4bFBj0gHQAUFVX3lxTE1EdS1vUVhmSEh6YVZ0Z2l3WlVTRk9zQkFYSmxxVHhNSUpidEozQnlzZGxVOFlueVNYbXA1T0JPcW5nci1WQXFXOVJDeHhMY2IzSUx3TlAtcWNqMmFwOS1VSXpJbmxwRk1KeTdFd0dzLUVmOWNEUThUN0Q5dWtlNTVaNHBxUzN6ZjFicWJDNXhUYXk0Q2hrLUhvZnc0cTJqTkc4TUNzSlBPR0tGQW1kbk9zb2hmLXdSUmZIX3YzWFZxSWlZZGhILUhuSlBPRFBOMEI?oc=5",
-        "pubdate": "Tue, 02 Jun 2026 22:20:33 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
       }
     ],
     "QUINENCO": [],
     "CENCOMALLS": [
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1781036881",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1781044201",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -189,8 +182,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2222,
-    "total_noticias_filtradas": 22,
-    "total_hechos_esenciales_brutos": 107
+    "total_noticias_brutas": 2217,
+    "total_noticias_filtradas": 21,
+    "total_hechos_esenciales_brutos": 117
   }
 }
