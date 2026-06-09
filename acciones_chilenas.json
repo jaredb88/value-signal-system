@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-08T23:34:50.012865",
-  "duracion_segundos": 103.541532,
+  "fecha_actualizacion": "2026-06-09T00:05:15.043486",
+  "duracion_segundos": 128.399366,
   "n_acciones": 11,
   "acciones": [
     {
@@ -26,7 +26,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.22446250402035495,
-      "cagr_5y": 0.38367610466097424,
+      "cagr_5y": 0.3918827554568878,
       "cagr_10y": 0.10572413349436793,
       "evaluacion": {
         "status": "Sobre benchmark",
@@ -530,7 +530,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.01435161045864497,
-      "cagr_5y": 0.031122764366855238,
+      "cagr_5y": 0.03198060479208831,
       "cagr_10y": -0.028360263723607115,
       "evaluacion": {
         "status": "Bajo benchmark",
@@ -656,7 +656,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.3102756597715617,
-      "cagr_5y": 0.20950550197295104,
+      "cagr_5y": 0.2078309999387804,
       "cagr_10y": -0.007629800948161125,
       "evaluacion": {
         "status": "Bajo benchmark",
@@ -1159,7 +1159,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.11092536720572199,
-      "cagr_5y": 0.209380532677244,
+      "cagr_5y": 0.20439284812379377,
       "cagr_10y": 0.10913968839321275,
       "evaluacion": {
         "status": "Sobre benchmark",
@@ -1285,7 +1285,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.184252340681049,
-      "cagr_5y": 0.13179696962959864,
+      "cagr_5y": 0.12593658724521783,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
