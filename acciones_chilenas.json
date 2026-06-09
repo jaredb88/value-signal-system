@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-09T13:05:00.251493",
-  "duracion_segundos": 112.94716,
+  "fecha_actualizacion": "2026-06-09T13:35:13.922714",
+  "duracion_segundos": 120.834471,
   "n_acciones": 11,
   "acciones": [
     {
@@ -515,9 +515,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 127.78,
+      "precio_actual_clp": 127.79,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": 1.08,
+      "variacion_pct": 1.09,
       "dy": {
         "dy_pct": 6.22,
         "anos_usados": 3,
@@ -529,9 +529,9 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.018002881317366493,
-      "cagr_5y": 0.03420783991727361,
-      "cagr_10y": -0.027312325532605986,
+      "cagr_3y": 0.018029436759698036,
+      "cagr_5y": 0.03422402673002667,
+      "cagr_10y": -0.027304713594734298,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -892,11 +892,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Distribucion de gas natural por redes en Chile. Negocio regulado, payout alto. ROE 13%, payout 68%, G=4%.",
-      "precio_actual_clp": 610,
+      "precio_actual_clp": 609,
       "razon_social": "NATURGY CHILE GAS NATURAL S.A.",
-      "variacion_pct": -0.82,
+      "variacion_pct": -0.99,
       "dy": {
-        "dy_pct": 6.61,
+        "dy_pct": 6.62,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 44.0,
@@ -906,13 +906,13 @@
         "promedio_anual": 40.33,
         "advertencia": null
       },
-      "cagr_3y": 0.5343547325852562,
-      "cagr_5y": 0.21636731178550161,
+      "cagr_3y": 0.5335158287916817,
+      "cagr_5y": 0.21596824105922674,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
-        "vs_benchmark_pp": -1.89
+        "vs_benchmark_pp": -1.88
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3725,
+      "precio_actual_clp": 3714.3,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": 0.54,
+      "variacion_pct": 0.25,
       "dy": {
-        "dy_pct": 10.83,
+        "dy_pct": 10.87,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.1129207470968494,
-      "cagr_5y": 0.2056903387159692,
-      "cagr_10y": 0.10973696482895523,
+      "cagr_3y": 0.1118541097537391,
+      "cagr_5y": 0.204996876420386,
+      "cagr_10y": 0.10941778194883534,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 2.33
+        "vs_benchmark_pp": 2.37
       },
       "cmf": {
         "periodo": "03/2026",
