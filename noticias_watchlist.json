@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-09T00:33:04.587069+00:00",
+  "updated_at_utc": "2026-06-09T02:33:06.160943+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -40,7 +40,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780965061",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1780972261",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -55,15 +55,7 @@
     "COLBUN": [],
     "ENELGXCH": [],
     "LIPIGAS": [],
-    "NTGCLGAS": [
-      {
-        "title": "Construcción el que más crece y bancos los que más ganan: cómo cerró la temporada de resultados del primer trimestre",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMzRkNGRzeW5tWnJOaVNObVRQMXdEekpFU2s0b1RGS2VjR3ZPWlctOVlZVlk0Ti0wNjN1Mm85Z1Q5djRXTGNZcVBuMFFGZ19XSTZULV9tN29meTJBcXNuQ3owMnRnTkpOQThvejlhX0RVM2wzM3ViWGM0cWY0WGtHUEtHTVFBVEYyYzM4NktaUlFhUVRlWHlMWTdveVpmU2cyaWd4bnQtcnRGTVIybnhjYjFMX3NsX1pWRkdVOXFPaHlPdGYwU1RTUFJjaDZIRE9IY2NxeTBRd0NNTHdOcEZCVDAyR2k1RHBONjltWNIBjgJBVV95cUxPUFRtR1daQ0RKLTQ2ZDFiMjI5NVZXX3Jqb1Ffa1gzSE5tX2gwYkZNdnVFNGRPdzhOU1R2TzVTWTdjbDVkTExtWWFnZE9fT25oaDdhcld3dlNmVWtSUWZ5a0xwd3d6ZWR4M1VHX0VzMTVmNy1IME9BMGVlblZBWVZMVzRNRk9hSW9FU1dSak1yNDRqc2NZWjE0UDF2cDBQTURzQWFGZG9ZS2t4Y0dSZEhuRzQ5OGdwT0xWYTVTUUtiM0p5V21jelN4eVdYWlp6TER1Rkpsb3hveEE3QV9BdkdSbUV4YzJlSF9GZF9fOUVWUzl2d3QxMkhvcHdPeDNzdUh5N0hKWDFPbjUwTlZSQ0E?oc=5",
-        "pubdate": "Tue, 02 Jun 2026 00:41:33 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "Gasco"
-      }
-    ],
+    "NTGCLGAS": [],
     "SOQUICOM": [
       {
         "title": "Bolsa chilena cierra en mínimos de 2026 tras siete jornadas en rojo por malos datos locales y la incertidumbre en Medio Oriente",
@@ -182,7 +174,7 @@
     "CENCOMALLS": [
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780965061",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1780972261",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -198,7 +190,7 @@
     "queries_exitosas": 51,
     "queries_falladas": 0,
     "total_noticias_brutas": 2232,
-    "total_noticias_filtradas": 23,
+    "total_noticias_filtradas": 22,
     "total_hechos_esenciales_brutos": 124
   }
 }
