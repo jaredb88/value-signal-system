@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-09T13:35:13.922714",
-  "duracion_segundos": 120.834471,
+  "fecha_actualizacion": "2026-06-09T14:04:54.062996",
+  "duracion_segundos": 108.151779,
   "n_acciones": 11,
   "acciones": [
     {
@@ -515,9 +515,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 127.79,
+      "precio_actual_clp": 127.75,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": 1.09,
+      "variacion_pct": 1.06,
       "dy": {
         "dy_pct": 6.22,
         "anos_usados": 3,
@@ -529,9 +529,9 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.018029436759698036,
-      "cagr_5y": 0.03422402673002667,
-      "cagr_10y": -0.027304713594734298,
+      "cagr_3y": 0.01792320667656866,
+      "cagr_5y": 0.034159273397746936,
+      "cagr_10y": -0.027335164563468295,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -1018,11 +1018,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de fertilizantes especiales en Chile. Filial de SQM. ROE 11%, ciclo de payout variable, G=11%.",
-      "precio_actual_clp": 374.5,
+      "precio_actual_clp": 374,
       "razon_social": "SOQUIMICH COMERCIAL S.A.",
-      "variacion_pct": -0.36,
+      "variacion_pct": -0.49,
       "dy": {
-        "dy_pct": 7.27,
+        "dy_pct": 7.28,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 30.4,
@@ -1032,13 +1032,13 @@
         "promedio_anual": 27.22,
         "advertencia": null
       },
-      "cagr_3y": 0.08884993887176273,
-      "cagr_5y": 0.10924988355376897,
-      "cagr_10y": 0.09222474720366391,
+      "cagr_3y": 0.0883651436434445,
+      "cagr_5y": 0.1089535303499416,
+      "cagr_10y": 0.09207883511923032,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 0.77
+        "vs_benchmark_pp": 0.78
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3714.3,
+      "precio_actual_clp": 3755.2,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": 0.25,
+      "variacion_pct": 1.35,
       "dy": {
-        "dy_pct": 10.87,
+        "dy_pct": 10.75,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.1118541097537391,
-      "cagr_5y": 0.204996876420386,
-      "cagr_10y": 0.10941778194883534,
+      "cagr_3y": 0.11592028026960333,
+      "cagr_5y": 0.20763902797649636,
+      "cagr_10y": 0.1106334053769813,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 2.37
+        "vs_benchmark_pp": 2.25
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1270,11 +1270,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2300,
+      "precio_actual_clp": 2335.4,
       "razon_social": "CENCOSUD SHOPPING S.A.",
-      "variacion_pct": -0.71,
+      "variacion_pct": 0.82,
       "dy": {
-        "dy_pct": 4.42,
+        "dy_pct": 4.35,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 91.0,
@@ -1284,13 +1284,13 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.18145090245576023,
-      "cagr_5y": 0.12433773758007893,
+      "cagr_3y": 0.1874814250711676,
+      "cagr_5y": 0.1277776293671189,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -4.08
+        "vs_benchmark_pp": -4.15
       },
       "cmf": {
         "periodo": "03/2026",
