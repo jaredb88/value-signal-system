@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T23:00:03.999829+00:00",
+  "updated_at_utc": "2026-06-10T23:01:48.674324+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -260,6 +260,20 @@
         }
       },
       {
+        "title": "China transformará a estos países de América Latina en potencias mundiales y los respaldará con tecnología de última generación",
+        "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOS3FIWjNmcUZXaEZaLTE1eTY5RG9UbWhYRHNiYkpQY2NiM2J6Xy1TWlZxSG9sazNtZGFGYlZSdlplZXJmM0xIc2hrNUxQSk1BRTkxcE43S2U1RFQ0aXZvMXYxQjhzZS1ISzVUTTNrNnEzeF9HMmthNXhCcHF6dmRSOVRxT1JYYVpuR1Z3RTROd3JjOHdDVkx3cVhlTUNKalZKQWJkMnF0YjkzRm14aHFnU1Q5RGFpVUtoaGtBRlZCc18zRzZ0cV9yNzVhdDV0bXlJRjF2dFZoZHk3RGxHeVYtWGZNazc4MkpZZjNQZ1Vaa1pLeGVLeUs5R0Jac0VlU08yeUFZakxRVVBDZGMtazZHbkZVenNMZUx0dDlWOVp4eEtwUdIBogJBVV95cUxOS3FIWjNmcUZXaEZaLTE1eTY5RG9UbWhYRHNiYkpQY2NiM2J6Xy1TWlZxSG9sazNtZGFGYlZSdlplZXJmM0xIc2hrNUxQSk1BRTkxcE43S2U1RFQ0aXZvMXYxQjhzZS1ISzVUTTNrNnEzeF9HMmthNXhCcHF6dmRSOVRxT1JYYVpuR1Z3RTROd3JjOHdDVkx3cVhlTUNKalZKQWJkMnF0YjkzRm14aHFnU1Q5RGFpVUtoaGtBRlZCc18zRzZ0cV9yNzVhdDV0bXlJRjF2dFZoZHk3RGxHeVYtWGZNazc4MkpZZjNQZ1Vaa1pLeGVLeUs5R0Jac0VlU08yeUFZakxRVVBDZGMtazZHbkZVenNMZUx0dDlWOVp4eEtwUQ?oc=5",
+        "source": "El Cronista",
+        "pubdate": "Wed, 10 Jun 2026 11:54:12 GMT",
+        "pubdate_iso": "2026-06-10T11:54:12+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Ni China ni India: Este es el país cuyo banco central ha comprado más Oro este año",
         "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcTNyZHU0YUdHRjFTbHR1bjZ6TWNickRMSWpmSHBFeTRqdzBwS3liUWN5QThKZXl1ajVqUTlPWmUxaDdmVS1wMlZBU1BYYk1OdnZ5NmhUUGlhY3REQldoc3hYT2NvTmhMTTYwLVYyM0N3anRvYnEtY0JPdGs0QW5ZT1BROGFkQTNnS3ltNFdQWmcybUxIQ3N6cWx5RU44dVljYUdsVE5KY0M4alpMQlJRWUZreDdYU1pDUC1ZcGUxMndlUUthUFFF0gHMAUFVX3lxTE5VcUNROFFEc3FkLWRRVzlWTWN4NTd4WUZWaHNiTFNnV1ZoRFY3MGY3Zjk1c2tKMFpUQkgwc0o1WlJBSUJGZVAyQWlKNGx4Vkp4b2xHdE9QQ21EZkhHZWpMNE8zT2xZemVXMzdUbUVWbENZQy1JVWppOUlPNG94VnhtSjNlVDRyX1hIcnFscU9xWk5mR2dnVGZ2RmxMX21ORi1XR3NZdnpqXzdzVEJEN1huRnhxRE9oM0FLeENVajVlODdDck5KVTZlcnl1Xw?oc=5",
         "source": "FXStreet",
@@ -299,20 +313,6 @@
           "intensidad_label": "moderado",
           "emoji": "🟢",
           "razonamiento": "Demanda institucional de oro"
-        }
-      },
-      {
-        "title": "Ni China ni India: Es el banco central del país el que ha comprado más Oro este año",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRVFSUDlKVmRkc0paWEZyVG5NVFQ1T3NUcDFZVGtyU0RMdk1Vdk5YVjBHNGgzVWc0Y1JMVkE1X2RRTFVzZ19xbEtUV3JyNGZaeHZfcFVISkVNZktUdUVQcDJsbWl6VDJ6UjhSbDVWUWtsa09jbVVTNTBseW5Jc3pVYWhNZ09xRjBkZXR4eTdzb2dHZXJGVE5USmtaYmxYRlZqekJIRXNXRE1ZR0FpeHBWd3pDeGw0aC1IRzk3OGlFRmJJOV9OZUdN0gHHAUFVX3lxTE1FUVJQOUpWZGRzSlpYRnJUbk1UVDVPc1RwMVlUa3JTREx2TVV2TlhWMEc0aDNVZzRjUkxWQTVfZFFMVXNnX3FsS1RXcnI0Zlp4dl9wVUhKRU1mS1R1RVBwMmxtaXpUMnpSOFJsNVZRa2xrT2NtVVM1MGx5bklzelVhaE1nT3FGMGRldHh5N3NvZ0dlckZUTlRKa1pibFhGVmp6QkhFc1dETVlHQWl4cFZ3ekN4bDRoLUhHOTc4aUVGYkk5X05lR00?oc=5",
-        "source": "FXStreet",
-        "pubdate": "Tue, 09 Jun 2026 10:44:07 GMT",
-        "pubdate_iso": "2026-06-09T10:44:07+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
         }
       }
     ],
