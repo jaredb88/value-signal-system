@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T10:55:04.634967+00:00",
+  "updated_at_utc": "2026-06-10T11:47:42.600645+00:00",
   "etfs": {
     "SCHD": {
       "ticker": "SCHD",
@@ -34,7 +34,7 @@
       "aporte_base_usd": 140,
       "aporte_sugerido_usd": 140.0,
       "aporte_sugerido_clp": null,
-      "fecha_analisis": "2026-06-10T06:55:04.416200",
+      "fecha_analisis": "2026-06-10T07:47:42.358413",
       "ultima_fecha_dato": "2026-06-08"
     },
     "JEPQ": {
@@ -70,7 +70,7 @@
       "aporte_base_usd": 60,
       "aporte_sugerido_usd": 60.0,
       "aporte_sugerido_clp": null,
-      "fecha_analisis": "2026-06-10T06:55:04.634805",
+      "fecha_analisis": "2026-06-10T07:47:42.600445",
       "ultima_fecha_dato": "2026-06-08"
     }
   },
