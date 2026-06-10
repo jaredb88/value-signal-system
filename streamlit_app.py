@@ -2231,7 +2231,7 @@ render_score_card(col2, last_nq, etf_nq, "Nasdaq 100", "CFINASDAQ", APORTE_NASDA
 # ============================================================
 # TABS DE DETALLE
 # ============================================================
-tab1, tab2, tab3, tab4 = st.tabs(["📈 Componentes", "📰 Noticias", "📅 Histórico", "ℹ️ Sobre el sistema"])
+tab1, tab3, tab4 = st.tabs(["📈 Componentes", "📅 Histórico", "ℹ️ Sobre el sistema"])
 
 # ============================================================
 # TAB 1: Componentes detallados
@@ -2280,78 +2280,6 @@ with tab1:
 
 # ============================================================
 # TAB 2: Noticias
-# ============================================================
-with tab2:
-    if not show_news:
-        st.info("Activa el toggle de noticias en el sidebar para ver el contexto.")
-    else:
-        with st.spinner("Descargando contexto de noticias..."):
-            try:
-                from news_context import fetch_news_context
-                news = fetch_news_context(days_back=7)
-
-                # Enrich con Groq si está disponible
-                try:
-                    import os
-                    # En Streamlit Cloud, leer la API key desde st.secrets
-                    if 'GROQ_API_KEY' in st.secrets:
-                        key_value = st.secrets['GROQ_API_KEY']
-                        # Limpiar duplicado "gsk_gsk_" si existe (bug histórico)
-                        if key_value.startswith('gsk_gsk_'):
-                            key_value = key_value[4:]
-                        os.environ['GROQ_API_KEY'] = key_value
-
-                    # Procesar con IA si hay API key disponible
-                    if os.environ.get('GROQ_API_KEY'):
-                        from news_context import enrich_with_groq
-                        with st.spinner("Procesando con IA (~20-30s)..."):
-                            enrich_with_groq(news, max_items=max_news, verbose=False)
-                except Exception:
-                    # Si Groq falla, mostramos las noticias sin traducción
-                    pass
-            except Exception as e:
-                st.error(f"Error cargando noticias: {e}")
-                news = None
-
-        if news and news.get('items'):
-            # Temas dominantes
-            if news.get('category_counts'):
-                st.subheader("Temas dominantes esta semana")
-                cat_df = pd.DataFrame([
-                    {'Tema': k, 'Menciones': v}
-                    for k, v in sorted(news['category_counts'].items(), key=lambda x: -x[1])
-                ])
-                st.bar_chart(cat_df.set_index('Tema'))
-
-            # Noticias
-            st.subheader(f"Top {min(max_news, len(news['items']))} titulares relevantes")
-            for item in news['items'][:max_news]:
-                impacto = (item.get('impacto') or '').lower()
-                if 'positivo' in impacto and 'negativo' not in impacto:
-                    border = 'news-impact-positive'
-                elif 'negativo' in impacto:
-                    border = 'news-impact-negative'
-                else:
-                    border = 'news-impact-neutral'
-
-                date_str = item['date'].strftime('%Y-%m-%d') if item.get('date') else 'sin fecha'
-                cats = ', '.join(item.get('categories', [])[:2]) or 'general'
-
-                st.markdown(f'<div class="news-card {border}">', unsafe_allow_html=True)
-                st.markdown(f"**[{date_str}]** *{item['source']}* — {cats}")
-                st.markdown(f"**EN:** {item['title']}")
-                if item.get('traduccion'):
-                    st.markdown(f"**ES:** {item['traduccion']}")
-                if item.get('impacto'):
-                    st.markdown(f"**Impacto:** {item['impacto']}")
-                if item.get('link'):
-                    st.markdown(f"[Leer original →]({item['link']})")
-                st.markdown('</div>', unsafe_allow_html=True)
-        else:
-            st.warning("No se pudieron cargar noticias.")
-
-# ============================================================
-# TAB 3: Histórico
 # ============================================================
 with tab3:
     st.subheader("Evolución del score (últimos 5 años)")
