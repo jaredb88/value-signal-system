@@ -1,0 +1,316 @@
+{
+  "updated_at_utc": "2026-06-10T23:27:32.468493+00:00",
+  "ventana_dias": 3,
+  "categorias_meta": {
+    "bcch_tpm": {
+      "emoji": "🏦",
+      "label": "Banco Central / TPM"
+    },
+    "ipsa": {
+      "emoji": "📈",
+      "label": "IPSA / Bolsa local"
+    },
+    "dolar_cobre": {
+      "emoji": "🪙",
+      "label": "Dolar / Cobre"
+    },
+    "economia_chile": {
+      "emoji": "🇨🇱",
+      "label": "Economia Chile"
+    },
+    "politica_regulacion": {
+      "emoji": "⚖️",
+      "label": "Politica / Regulacion"
+    },
+    "sectores_watchlist": {
+      "emoji": "🏢",
+      "label": "Sectores del watchlist"
+    }
+  },
+  "noticias_por_categoria": {
+    "bcch_tpm": [
+      {
+        "title": "El Euro se mantiene estable frente a la Libra Esterlina mientras los operadores se preparan para la decisión de tasas del BCE",
+        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNUFFROE9oMVNwZlhyY0dEM084d3hYTjNQQjhBamlsREc0TmtXT2tTMlhxMlk2dnYzeDVfeVNfZWtOdE5NdHE1UXlEeW9tYXhqd0taTV8yUU45ak40T1VoZl9JMWFTYXhiMHNqU0xkNzV1Q01TWmhjX1BucHNXQ3J5NDNkb3p3bmpjd3ZMRm5vdnFaZ2VGbnNuNlNYMy1JVHhHVUNoTDhYSlp4NVc0VG4tYnV1cTBQMlJNR0Jybmo4VG83c014NUZCUWNEZGwwUzJWU2FvdXNXTXJSWTdmbi1fQ1F2TGw4cEh6RlRZQ1FaZmwyejNIcGRtTVRHa9IBgAJBVV95cUxOb0NPSU5ZVW1JQ3BmUW00WmFjTVctUndfOXI1YmZxSHp4NjhpdTR1QVd4Yy00VXZMZTgyTVVOUlRtXzBXQVpxbVNsbUVzQjZwRHBrLVJxUHpwOEJla2prVmxQV01fTTJVaFdmbnZLSmhqLVA5WDZSSFJOSVowSUpndGxwQ2djRVdMblZtNmRjUG1fR2c3ZG9qdk1xakJFNVNyRUZsNEEzMkNpeDI1eld4ZjF3eVdTbWIyTW9idW8xa3JmdTN2SnpZbzdrZ1ZjWm9vWUlfRWYxWXJnemxlcV9qSC1YZVQ0bVF3UmFZS2ZscW5YY2JFX0J6MkdyUWRCM3lV?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Wed, 10 Jun 2026 06:56:55 GMT",
+        "pubdate_iso": "2026-06-10T06:56:55+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Banco Central usó figura de \"funcionario de hecho\" en última decisión sobre tasas de interés",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSlNIUDhDczdTWF9oQUNvSmllZy1pamtJVTVQdkVuUVhkUXE5NndKU0ViNllTTldxbFMxMlBxaGpUTVpKRVRFY20wVE5WSGdhLUxyUGg5WUtiWGlmZlJodFNicjRRZkN4R1hVV1k1ZEJVRnh2R01YWl9veW4waEtQSEU2MWxhRDRMNXA3MHNscjYtOWZvWlg4TTd2R1dSSWxMRDkzYjI4Nm5LVlBOdWZPLUdHTk5JR2FGR2Z5RHFvUk41Wjh6WFFSbE15OV83bWsyMHc?oc=5",
+        "source": "El Observador CR",
+        "pubdate": "Tue, 09 Jun 2026 06:02:30 GMT",
+        "pubdate_iso": "2026-06-09T06:02:30+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Inflación de Chile sorprende a la baja antes de la decisión de tasas de interés",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdHdFWFViTWcyR1JTMVVIc2pETThWaG8yRFFYVWR1TXVSV0tNVHlvTnVHQTR3a2dhaVl4N0g5NnlQV25STlBudmJiQkF3MDhCNE5INU1RdlZOSFRhMVdZUVdrdzVURjhZQnV3M3lXc0RhcGhJZnF3MGpTaTZqcWFGQ21ISzIzWHVRYk13Uy1fRWZjcFl0bHFWeENRcllSOEVjajJIOUpKcGQ3UGRXdzRQTF9Mb3lFM05YblBQcDZKanFUR1lJazBSNnVvOHNpVFpMTVVHZTJLRml4ZXBueS1VbzNR?oc=5",
+        "source": "MSN",
+        "pubdate": "Mon, 08 Jun 2026 22:10:32 GMT",
+        "pubdate_iso": "2026-06-08T22:10:32+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Inflación en Chile sube menos de lo previsto antes de la decisión de tasas",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaEpjNUp2NmY0SjF0WERYeDRrRGdyMUN1U09GdDczZ0JWb2RwQ2E3eGREMzREUHNjVG1XRVZyT3FtSGEzem1mVUJYMklqNlRpN2RvTHhwSjkzdWpSUi02c01JbW44OFdqV1Z0MUlFUDJSejM2OGhmY2I1ZklzdDhwTldGRVB4VkdXdWx3UlBfenRfQmZEWmxNRTBBanFacU54VE1MOG9odEhnVWZJTExnR0FMczZtRjh0cFNFbXF0ODJNYVR60gHYAUFVX3lxTE8tc2RFQ0lzN0cydC1lOVYySGdXbG44TDNvRkxJV2x3ZGRjTHdYdUVpV3A1YU5DQ0UxZmllSW45ejBBN0FNNzBqejY3M3pLMjdaQU5OQjRvbXV3UmNYT1Y4UXhDaV9jQTdLdHJfbEJuRW5HZ1ctQ05qY2JaUEZOZ2tyamttVDJCUGE1aURSVy00ZlMycGpWazdGV21LX1dWbl9JX0p4NS1mUXlrZXVZUzdSMkotN1BoQTBQcVQyZUh6VlhzdklhWnVWckVCMDhoRVdZZ1pOMEJ4NA?oc=5",
+        "source": "Bloomberg Línea",
+        "pubdate": "Mon, 08 Jun 2026 13:14:21 GMT",
+        "pubdate_iso": "2026-06-08T13:14:21+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Cuenta regresiva para la decisión del Banco Central Europeo: la suba de tasas ya no es una incógnita, el enfoque de Lagarde respecto al camino de septiembre se convierte en clave.",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB2a0RwTHlqV3dYa0pNeXQxN1Zvckx5d0Y1THFodFkyb05ETzJqWl9BSUI1NVgzcWM2Wlp0bkU1aUNPWDhLdTcxMGs3YzA4X2syOVFQdkxqY0dJV2Q1RHVFWmV30gFnQVVfeXFMUDJpQ250RTRoZ0s5SGY5eF81R2RVSk9tSmduTkE2Y1VsWVJWVXJLNUtzQ0g0SkdnUTFSNWtiWEZxM2pHODBVaVVadU54NjZXay1QQ1dkbXhLVUlMMHEzbWZWRTZQUFlwdw?oc=5",
+        "source": "Bitget",
+        "pubdate": "Mon, 08 Jun 2026 09:59:02 GMT",
+        "pubdate_iso": "2026-06-08T09:59:02+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "ipsa": [
+      {
+        "title": "SP IPSA: La Bolsa de Santiago este miércoles cerró a la baja con variación de 0,48%",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZWZ6UlRnU3c1NnhXYXkwdkdtSkVSV0ZmM1pMOXZHcFVKRWNvM095TnNQT2V4eUFOcUR5TTFPWjRCS3c2ZXV2SlE1Tk1HMC0tVXhzYmhpdWtxckJtaDdZd3YzeHBzWEF5WXZKekhXdUhPT1M2VXZGNWRBemJES0JlV0VPYzl4Q1dFcDhtci05NDFIVHQ2NWRtc3JJbFdnY1g0elNUSEJnN0JZeWJ6WXY2SmhJc2dUalJ3OHc?oc=5",
+        "source": "diarioestrategia.cl",
+        "pubdate": "Wed, 10 Jun 2026 21:50:20 GMT",
+        "pubdate_iso": "2026-06-10T21:50:20+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "IPSA se dispara más de 3% en su mejor sesión desde abril de 2025 con fuerte protagonismo de la banca y despide siete jornadas consecutivas de pérdidas",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvOVUzLTE4SnB1V0JFd1ZfbG5keVlEalJqZmNQUkYxNjRPbWNVTlNqSnlHd0xIVi1qYktuU1p4RW9zMzNRVkdmYzAxeUNnYzlBUnNTT3hKdU9vWnM2OXJNdDFfYndyTE9I?oc=5",
+        "source": "Diario Financiero",
+        "pubdate": "Tue, 09 Jun 2026 20:36:00 GMT",
+        "pubdate_iso": "2026-06-09T20:36:00+00:00",
+        "impacto": {
+          "direccion": "negativo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🔴",
+          "razonamiento": "Perdidas reportadas"
+        }
+      }
+    ],
+    "dolar_cobre": [
+      {
+        "title": "Peso chileno hoy, 10 de junio: la cotización clave para quienes cruzan la cordillera para comprar en Chile",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOcENJYk1jQ2s2djEycWxTVVZDWjdQQlhWeXUzWl9kbHNneGhoM1FtOFhBcEVvdlhfVG9LYlc5aTVBWV92SWtBb20taC1SUmxHYnFYYnpIRWRVZUM1Mjg1QWlKSDdQb3luekhMckRsWFJ5Xy1CUWtVcTB0M3piOC1FZVFnMmREYlZ1el9KWkRhR3U3alo4amNpbkFrZC1TV3RjNVFxekdPaENVMDJIa1FOTEFEb1F4c2JCTUxyX1NMV2llaGRxTklmWTNhcGFUNVkyT2tNcDBZU3RpOWZUV0hZV1lUU01lbU1aQXZGZ3JMVTDSAfgBQVVfeXFMTmNKX1p4N29HN0Z5U0o5d3htSnNHTjRiYW1KU0dpUFktOHFKUkpNZ0txUWFQc0NWTHltSF82cWdTMWE1QlhLMTlvYVZCdFgxdlU1R0VaeUc5NDMxUEg3Z25MMGktNGhOejZYVFlNbnZ2SndEb2gzdXZmRFM1bWxyakRRV2xJeXZvcDN4enpRMXFHNnlZZE5XdUFKT20yaXpzb1FsLVNvUkNCLXlZSmNMYWE5cC1hWFR6cmxfX0xSNFVhZU55d0ZfaEt6U0h3R0wzMmpyUno5S19RenBFNWZfYy1wQnZMSEVZazl0Q0NwdHN1QTM4YVR5SHY?oc=5",
+        "source": "Diario Río Negro",
+        "pubdate": "Wed, 10 Jun 2026 14:42:00 GMT",
+        "pubdate_iso": "2026-06-10T14:42:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Precio del Dólar en Chile hoy: El Peso chileno cotiza a la baja tras la inflación elevada de Estados Unidos",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdVZmcm1ia0J6YS1JdDJOeTVhbHJIQ3NUNm5KVVNwRWd2cHpQaGlBeTduWWE0Tm56d0pLNzZ6RGtpemhfRG1uUHV4dU9NWFFNWktacjVkQjdfTS1ubFhYVmxvaElSR1dKNTBTcjg3SF84UWQyQ1ZxVmZXdE9sWS00Y1R0S2g4ZFlQVERlTllNQTNEQmxwMXJGM1NCNG1TdWRid1BtSzRfOE1feHlKNFlOa2RfUzJpT0tBSE5pc1VaRHNUamNnQTl5M1I0RzMtQ3FfNDdPT1hySlhWM0RkV2ppN0tR0gHnAUFVX3lxTE5wbHlvVmk3UUtSZU9xVkxsa2hpZXpycFpNOUNQWHBUX2FfYnRlUkdndkU3eWJ6djRtSE05aUh6b1FsRXhkRmpfcUNmYjRlQkxqX3U5VHdMQlBlZUZJZ3F2TkJRc3dKbEhZdVZ6YVdEaWJaeXEwekx4bXlUS1BFVGtPRzJDTFE3V2lEdWZJa2xNSTZDd3lzSzNTY254Qk9WVFpPOWFpenNGcWhsMTR5bGJ6dDJLMjd0b29uT1owbGU4aG8xdmZRYmkwcUJCSzV5Tk9WQ3pjQkw1UG1zZFltSHRuTF9aT0RNOA?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Wed, 10 Jun 2026 14:04:34 GMT",
+        "pubdate_iso": "2026-06-10T14:04:34+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "¿A cuánto está el dólar hoy? Divisa cae y se acerca a los $916 en Chile",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNOFNIRnZVejBmUU1hZ2c2WFl5eDlQN2xIci1xei11SEw4clNDSk5aWWRTcnR6SlJPTFBpZ2ZzNlpIbkh6b3dNdWJfclZrcXk2WnQ2Y1A4cFJZcDc3b1JDdjRmRE96OEpFbW9yQkZnOG5QUGJQd1lzRmNjVDNoeC00NlY1dVlyX0dnakJNY2xDNldndl9ueFNIWUF1R21TOS1TcG56ZWhnZGgxZUxxOTFrUzhsSUt5SzFvWWlsbWp3TnVnWTZSS2tV?oc=5",
+        "source": "Radio Agricultura",
+        "pubdate": "Wed, 10 Jun 2026 13:33:21 GMT",
+        "pubdate_iso": "2026-06-10T13:33:21+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Dólar hoy en Chile: cotización de apertura del 10 de junio",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeWxfTEpKcGVXSUs0dWZKR01paTRFQXkwYTlaUmxrZ3BsX3NET2FIWXkwZTFTdlRoN1FJLVFoMUFNUHNpcmx5YVZvSUVranEwa1hwbGNVUDJEaDZLVmtSeWx1NjVsR1lwOGFhLWZBTUtVVnhkb2lGQlVuQmpIRG9XamlnejhuTGszclhnSTRVREdhTHNnd0x0TFBUV0pwOVowMzNRYdIBvwFBVV95cUxPMFAzaWEyMjVzeGUyTjgzLTlUQVhyOGd4LUU4aURZRzNDS2pFQkl4OWxUYUN3MkRzUlRPb016TXJIam5wMll4Z0hNTllyQ0ZFRGVrQ1MwbmtySmcwR3Y1ZjA5dVp1bWhGclN0Nm9LTl90VjB3RWpaNTRkWmJpbG1KREs3anI1VGlST0xrd1hBbk5pZnpxMEFYbWo2TENSRHN4UmptT0UxaGtFZkpPTzd3aWtGZHZUemU4Z1ZpbWQtdw?oc=5",
+        "source": "Infobae",
+        "pubdate": "Wed, 10 Jun 2026 12:07:19 GMT",
+        "pubdate_iso": "2026-06-10T12:07:19+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Precio del dólar hoy en Chile: Peso chileno gana terreno frente a la divisa estadounidense este 9 de junio",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOb1oyVGdYcERyVUJxcFluNC1fX1dJaDFWZkR3dDVIbXB4Wk5LbXFxZVM5b0JvOEFmbHg5MU1maS1ScjFIQjRlTFJaZ2NFMlZhSEdmTUs5Mi1DbVNzcmdCU1ZlRkpXX19IbUt4dkV4Z1RuWFc3V1g1U01TX1pIN3J3dktzTXVLeko0Y0M5TXFIODlEY1JOQXlfaElXOE1FdmNxTC1SNnM5YzJvM3gyUmxF0gHKAUFVX3lxTFBweW13alIxTGcxMHFuZHEwQlplLVhvQVJ6NlZ3dGJiNUxqUE5oMy02ZlFCSjlBcHBNYlJucWVRdlYtQmcxVkRhaWp1enJTOXd3Wm12eV91SG0zVEN5N2VtcHNSVlZiTFFldU9GVkROSlpNSXJ4MTRoRTQ2ejdyVGVmUWxsX3ROSEZmQ2h6RUZMbG03cnVoSFk4aU16M1JGWGZNTEhnUjBFSGZ2eVZSa1Z0bVFVS2xfMm91Nm4yc1V0SEVOaFhPSEZ6Mmc?oc=5",
+        "source": "Infobae",
+        "pubdate": "Tue, 09 Jun 2026 21:51:00 GMT",
+        "pubdate_iso": "2026-06-09T21:51:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "economia_chile": [
+      {
+        "title": "Ministro Quiroz ajusta proyecciones económicas: Hacienda prevé crecimiento de 3,5% al 2030 y descarta llegar al 4% prometido por Kast",
+        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNOS1YYXlXZmxIZ2ZSSWR2OXhIQjZ4YXhfS0V1dlBreDROWEM4N1BWOXF3ekFFbFhvcHdOaU95TTA1UmxlZDNyWHh5azc3VXFXTnNXYkZOM00xQWRLcWpHaGtuaXRzQXBTQlU0THBjYnlnZUJPR3Nhb1VZUjhUYUQ1MUh5ZWlQTnNON2dDVXItNFg3ZnVoNC1PZ1YtZmIyUHFjV2RhdHdoYnVGRHEyRlFWd3lNd2F4M3FNTEhrNFNjY0loa29BZ0dJT3kzWVczM2xuNVZLS0I0b1QxeU11dFpPaW9yQ05tWldSS290bUhCOFIzbi1TYVE?oc=5",
+        "source": "Radio Pauta 100.5",
+        "pubdate": "Wed, 10 Jun 2026 22:27:37 GMT",
+        "pubdate_iso": "2026-06-10T22:27:37+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Chile proyecta crecimiento económico de 3% al 2028",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZ1J4Y2Job2h4UmNrMTdXQ2Z2V2pza2RzYWRTR2Z0RXk5YnQ4T2ZDVnNEUUlsSnQ0YlM2QzNkX3pSWmhfREQ3MzJwSHIxcnc2UU9pdVRLZEM4UWpqQjJVSC1Sem5heUFBOXVzOVN1eElOS0dvQXR4QnlWU1lIMUlnWHlyMVlxUFJXWnlMa0J0WHQzVmlWZUZUcm5YMk5yU0dhVk1LTXdZM2FoeHJa?oc=5",
+        "source": "Rumbo Minero",
+        "pubdate": "Wed, 10 Jun 2026 20:11:30 GMT",
+        "pubdate_iso": "2026-06-10T20:11:30+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 1,
+          "intensidad_label": "leve",
+          "emoji": "🟢",
+          "razonamiento": "Crecimiento: soporte macro"
+        }
+      },
+      {
+        "title": "Inflación en Chile: analistas ven favorable el IPC de mayo para la política monetaria",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQT3RJLVp0aTZIem84cHJfVFJKcjJUM1h0TTVVT2VUZjJkMzdtQTIyREFNQ2JlYWE0dXdETjRxQUNwdmUxZGpiRGxZcXIzT1BldkRDamVDMkpuX3VWWHNna2RrRWV4dWhpWndqMk8zTHNyNW9WaHE1cUwwMlBLa05vdWwwZVZWNmRTeEZvS1laeG5BX3ZBdjcxWDBsQmxzeUpFTnZQalhNYzNaLWE3UTdRTWhUTjVLblM3dk1QWU42TWlhejM1NUpYclhCa0JlZ1RT0gHkAUFVX3lxTE5Ic0ZrbWdKeUpWRkRTWXRJdUI4djMwX3hfSUxMREQ1YTRIdWpwdW1uRmZhUnVlNlZDWXhzalY2OEF3ZzM0bm1QYU1SNV9CdjBEWVdMLWNHRGZ4M2ljeHhLbXZTc01WcTNIUm5MMVNPbUZaZ2o2REFlY0VESzdXa2llcEE2WE9VTGgyVGlMNTYxbjBfZFFscUpQY2hnMVZSQ3JOZ3dmbWZNaU94T1hzOWZyY2tiN0hRcFRSenFGV193OVl6ZWtuaWhRZV95TVB4MFJzRDgtb2llb1kyNF9NMk5wUXBtbA?oc=5",
+        "source": "Bloomberg Línea",
+        "pubdate": "Tue, 09 Jun 2026 16:11:48 GMT",
+        "pubdate_iso": "2026-06-09T16:11:48+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Inflación en Chile: IPC sube 0,2% en mayo y llega a 3,9% anual",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcVFqMDNUR09lTGdLTlExTEllc1FLdXVBSkFrdXdjWnk1WU41NzJ3Q29ZcEZKQkJLbHNyYjFWczUzb0t5dFNaMlljdl9EQzdFNlJ3bGJ1S01aLTk3OTVUMU9LOE05Z1FwU21ycXliRW03Y2FiTjlQY3d4Q20tWWg2LTludWhJMmdtc1UzN3NhUk1zd3FlYnp2YkxxeUY5LUhfQmFF?oc=5",
+        "source": "elciudadano.com",
+        "pubdate": "Mon, 08 Jun 2026 20:50:54 GMT",
+        "pubdate_iso": "2026-06-08T20:50:54+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Dólar cierra sobre $ 920 por primera vez en dos meses tras ataques en Medio Oriente y datos de inflación bajo lo esperado en Chile",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9uS2Z4UFR0cmtGUmZFNUJKUzZGX1ZhcTAyR1hoQ3gtRFhCQ2NtSHVhSldQbE01el81U28wajlYR0VCSlViSW9iWEE0a2NiaXI2ci1weGttSlV6dTlSNF93RjFTaDI3bHJ3clliN0xpN0ZBM1E?oc=5",
+        "source": "Diario Financiero",
+        "pubdate": "Mon, 08 Jun 2026 20:09:00 GMT",
+        "pubdate_iso": "2026-06-08T20:09:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "politica_regulacion": [
+      {
+        "title": "La reforma tributaria y la inteligencia artificial: la apuesta que puede cambiar el crecimiento de Chile",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQT1JwSUNOOUJYUWxVSk9vX1Y3c0pnR201V1M5QWhFcTFSYVBDM2lQWGpkM3NkNllyVmRFaFFYMS00T3F5MWoxQzFyaWFNWU16dDNERkhCZXV3cU91Q2I2cExzOXU2aVdVRVI5NnZtQzVqcTJDTkgzTVBwVHBHUmdCbHdLQjZjV3QxdE5aNXFyQm9xNVktZ0FTOWdfeTB1YTRaXzhwcmFkU1duc0pxVlZHczNlY0pzNGk3VXF0bC1ydzdULXo2M25V?oc=5",
+        "source": "academia.cl",
+        "pubdate": "Mon, 08 Jun 2026 21:04:22 GMT",
+        "pubdate_iso": "2026-06-08T21:04:22+00:00",
+        "impacto": {
+          "direccion": "negativo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🔴",
+          "razonamiento": "Reforma tributaria: incertidumbre impositiva"
+        }
+      }
+    ],
+    "sectores_watchlist": []
+  },
+  "stats": {
+    "total_noticias": 18,
+    "por_categoria": {
+      "bcch_tpm": 5,
+      "ipsa": 2,
+      "dolar_cobre": 5,
+      "economia_chile": 5,
+      "politica_regulacion": 1,
+      "sectores_watchlist": 0
+    }
+  },
+  "resumen_ejecutivo": {
+    "sentimiento": "levemente bajista",
+    "score_neto": -3,
+    "n_positivas": 1,
+    "n_negativas": 2,
+    "n_neutrales": 15,
+    "narrativa": "El feed muestra 1 senales positivas y 2 negativas (neto -3). Factores dominantes: Perdidas reportadas; Reforma tributaria: incertidumbre impositiva.",
+    "narrativa_fuente": "plantilla",
+    "veredicto": "Levemente BAJISTA"
+  }
+}
