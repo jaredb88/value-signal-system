@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T22:39:30.966235+00:00",
+  "updated_at_utc": "2026-06-10T22:56:32.379055+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -29,6 +29,20 @@
   },
   "noticias_por_categoria": {
     "precio": [
+      {
+        "title": "Precios del oro hoy (11 de junio): Caída en picado",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBqSGVoN3d3QXIyelNUUmQ0cV9XRFpiTklhSHRMd1ZoU2V3ay1LSTViaWpHMmdQa1Y4bVFvR2Rrd1FLd2lUWkpKMHlENDJsRlRhU3RvRVBQbWl2bVZPcVhuQU1YZHJIZw?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Wed, 10 Jun 2026 22:40:06 GMT",
+        "pubdate_iso": "2026-06-10T22:40:06+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Precios del oro hoy, 11 de junio de 2026: Precios de lingotes de oro SJC 9999, anillos lisos y precios mundiales del oro a mediados de semana.",
         "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUnVfX0pzLTA2dW5xdUxSMnJiNDROMEpvcjBsMEMyaklKdDRmRjBub19HaW5HOG1KaGJhMFdWamJQNDRtTXZBR2k4ZjZ5dnVLLXBmUEVoaXd0dk9JeDN5X2N0Nk8wemU0V2hTUlk4M1JuQW9BRlUxV1hwZjd1Y2h0dFlaZFR2ZFJhTzB2N0VYR21rMHQ5Q3dIS3NqSzZ3cGs0elEycXB3VVA4dDFKRXlnOXRKdw?oc=5",
@@ -77,20 +91,6 @@
         "source": "Vietnam.vn",
         "pubdate": "Wed, 10 Jun 2026 22:05:56 GMT",
         "pubdate_iso": "2026-06-10T22:05:56+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Actualización del precio del oro hoy, 11 de junio de 2026: Precio del oro de 9999 y de los anillos BTMC DOJI Phu Quy lisos.",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTExvam5uQ3NaMG1DQjlMZHVla3lEbTdnTy1UZjdlNmlsNjNsQVpwVXpCZWxRY0lMYmtIWjlNZGo2V1gzZnNXcGZoRDB6QkgzSFNYY3VENEIwWTJaVXIySjBfZFFRTEFjQ2w5WmFXeGlmVENSbnE2bDhxQXM3MFh4anJKeXdVT1F0UlVDejhjYkJrRWRXcU5XWGthNEF4Rm92RGJ3bWpB?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Wed, 10 Jun 2026 21:04:58 GMT",
-        "pubdate_iso": "2026-06-10T21:04:58+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -277,8 +277,8 @@
         "title": "Gold and bitcoin: the assets the rally forgot",
         "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeG44ZG5ob21HOWlQNGg5TUZyejJFQjFGcW5RN09zX1VNY2k2Rk93SDlpejFQa2Y2eHlqcG1Gbm9ub3dVdmxiOFl1d3g1aHlpTGdYaU1HdDZZelZhTXRaOE94WTRtX3BSV1ZDNXhkQUdMQlJnTnFfV3FlTk9GbEJJUVBVR2U?oc=5",
         "source": "Financial Times",
-        "pubdate": "Wed, 10 Jun 2026 05:30:04 GMT",
-        "pubdate_iso": "2026-06-10T05:30:04+00:00",
+        "pubdate": "Wed, 10 Jun 2026 05:31:47 GMT",
+        "pubdate_iso": "2026-06-10T05:31:47+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -415,5 +415,15 @@
       "geopolitica": 3,
       "proyecciones": 3
     }
+  },
+  "resumen_ejecutivo": {
+    "sentimiento": "alcista",
+    "score_neto": 15,
+    "n_positivas": 9,
+    "n_negativas": 1,
+    "n_neutrales": 16,
+    "narrativa": "El feed muestra 9 senales positivas y 1 negativas (neto +15). Factores dominantes: Inflacion mas alta: oro como cobertura; Core inflation persistente: positivo para oro.",
+    "narrativa_fuente": "plantilla",
+    "veredicto": "ALCISTA a corto plazo"
   }
 }
