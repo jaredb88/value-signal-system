@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-09T23:34:43.794525",
-  "duracion_segundos": 96.858086,
+  "fecha_actualizacion": "2026-06-10T00:04:50.195717",
+  "duracion_segundos": 103.172647,
   "n_acciones": 11,
   "acciones": [
     {
@@ -26,7 +26,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.22576473807638808,
-      "cagr_5y": 0.39277073942135354,
+      "cagr_5y": 0.3949052212977995,
       "cagr_10y": 0.10607678846649171,
       "evaluacion": {
         "status": "Sobre benchmark",
@@ -153,7 +153,7 @@
       },
       "cagr_3y": 0.16521691815588402,
       "cagr_5y": 0.2015666579047264,
-      "cagr_10y": 0.06700851756931869,
+      "cagr_10y": null,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
@@ -530,7 +530,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.015927273699498867,
-      "cagr_5y": 0.03294213474721297,
+      "cagr_5y": 0.02545625772014337,
       "cagr_10y": -0.02790771491177957,
       "evaluacion": {
         "status": "Bajo benchmark",
@@ -656,7 +656,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.30413987474888304,
-      "cagr_5y": 0.2044341815445272,
+      "cagr_5y": 0.2062427878019384,
       "cagr_10y": -0.009026219282266879,
       "evaluacion": {
         "status": "Bajo benchmark",
@@ -781,7 +781,7 @@
         "advertencia": "Solo 2 anos disponibles (ideal: 3)"
       },
       "cagr_3y": 0.45363750164984284,
-      "cagr_5y": 0.17302604066167437,
+      "cagr_5y": 0.1753237957702085,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
@@ -1159,7 +1159,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.12034043786212001,
-      "cagr_5y": 0.21050683169993967,
+      "cagr_5y": 0.2108051249071854,
       "cagr_10y": 0.1119513447059215,
       "evaluacion": {
         "status": "Sobre benchmark",
@@ -1285,7 +1285,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.18537601734477538,
-      "cagr_5y": 0.12657747194662083,
+      "cagr_5y": 0.11715539924798835,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
