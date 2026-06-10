@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T22:13:47.611273+00:00",
+  "updated_at_utc": "2026-06-10T22:16:31.875217+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -36,11 +36,11 @@
         "pubdate": "Wed, 10 Jun 2026 21:57:52 GMT",
         "pubdate_iso": "2026-06-10T21:57:52+00:00",
         "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "BTC aumenta valor"
         }
       },
       {
@@ -137,10 +137,10 @@
         "pubdate_iso": "2026-06-10T12:13:54+00:00",
         "impacto": {
           "direccion": "negativo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🔴",
-          "razonamiento": "Extreme fear: contrarian, suelo historico"
+          "intensidad": 3,
+          "intensidad_label": "fuerte",
+          "emoji": "🔴🔴",
+          "razonamiento": "Salidas de ETF: muy negativo institucional"
         }
       },
       {
@@ -198,7 +198,7 @@
           "intensidad": 2,
           "intensidad_label": "moderado",
           "emoji": "🔴",
-          "razonamiento": "Prohibicion: muy negativo"
+          "razonamiento": "Pierden terreno: presion negativa"
         }
       },
       {
@@ -252,11 +252,11 @@
         "pubdate": "Wed, 10 Jun 2026 12:28:28 GMT",
         "pubdate_iso": "2026-06-10T12:28:28+00:00",
         "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
+          "direccion": "negativo",
+          "intensidad": 3,
+          "intensidad_label": "fuerte",
+          "emoji": "🔴🔴",
+          "razonamiento": "Desplome: muy negativo"
         }
       },
       {
@@ -397,10 +397,10 @@
         "pubdate_iso": "2026-06-10T12:13:54+00:00",
         "impacto": {
           "direccion": "negativo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🔴",
-          "razonamiento": "Extreme fear: contrarian, suelo historico"
+          "intensidad": 3,
+          "intensidad_label": "fuerte",
+          "emoji": "🔴🔴",
+          "razonamiento": "Salidas de ETF: muy negativo institucional"
         }
       },
       {
@@ -410,11 +410,11 @@
         "pubdate": "Wed, 10 Jun 2026 11:37:21 GMT",
         "pubdate_iso": "2026-06-10T11:37:21+00:00",
         "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Miedo extremo: contrarian, suelo historico"
         }
       },
       {
