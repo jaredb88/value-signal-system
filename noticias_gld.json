@@ -1,0 +1,237 @@
+{
+  "updated_at_utc": "2026-06-10T21:45:14.062429+00:00",
+  "ventana_dias": 3,
+  "categorias_meta": {
+    "precio": {
+      "emoji": "💰",
+      "label": "Precio del oro"
+    },
+    "fed_macro": {
+      "emoji": "🏦",
+      "label": "Fed / Macro"
+    },
+    "dolar": {
+      "emoji": "💵",
+      "label": "DXY / Dolar"
+    },
+    "bancos_centrales": {
+      "emoji": "🏛️",
+      "label": "Bancos centrales"
+    },
+    "geopolitica": {
+      "emoji": "🌍",
+      "label": "Geopolitica"
+    },
+    "proyecciones": {
+      "emoji": "📈",
+      "label": "Proyecciones"
+    }
+  },
+  "noticias_por_categoria": {
+    "precio": [
+      {
+        "title": "Actualización del precio del oro hoy, 11 de junio de 2026: Precio del oro de 9999 y de los anillos BTMC DOJI Phu Quy lisos.",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTExvam5uQ3NaMG1DQjlMZHVla3lEbTdnTy1UZjdlNmlsNjNsQVpwVXpCZWxRY0lMYmtIWjlNZGo2V1gzZnNXcGZoRDB6QkgzSFNYY3VENEIwWTJaVXIySjBfZFFRTEFjQ2w5WmFXeGlmVENSbnE2bDhxQXM3MFh4anJKeXdVT1F0UlVDejhjYkJrRWRXcU5XWGthNEF4Rm92RGJ3bWpB?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Wed, 10 Jun 2026 21:04:58 GMT",
+        "pubdate_iso": "2026-06-10T21:04:58+00:00"
+      },
+      {
+        "title": "XAUT se consolida cerca de los 1.950 dólares en junio de 2026",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1WMzFIaVBSMDN1UDBDQ3E3WDFPZG4wR1VyVUhvTWZMMmtHSndGT0Z3eUVFYmNsZmdxQ0V1Q3hLVllIcXNJQWtBdmZoQ3ZKNkM1c2NpNS1INkdUWlZJeVVr?oc=5",
+        "source": "Cryptonews.net",
+        "pubdate": "Wed, 10 Jun 2026 15:12:09 GMT",
+        "pubdate_iso": "2026-06-10T15:12:09+00:00"
+      },
+      {
+        "title": "Los precios del oro continúan su drástica caída hoy, 11 de junio de 2026, convirtiéndolo en un activo extremadamente arriesgado. Citi redujo inesperadamente su pronóstico a 4000 dólares.",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNaWhUVTlXTGNGOXlNWk1SNWFxTlBoS0ZzemVPVU5kcVo1cVY0amppSkRMbXZtUEtNOXZKUkVyM3RoeDR0MmxmUVk0WFlTNHhMTG1CT3ZwaldZSlA4Z0x0WWQyeXo5bTZrd0RZcHFpeDlkVzVtekxRaXNLUHFjWjQtZVhrSzFIdGdZNEppS3AtRkhHZXoyN1U3cW5tbmg2a0E0ZUstVGx6VlpqTVRpWEdpa3JhSnVieVAyVVZoTy11U1FXNDBmMXdiRjRxZGxMWkQxN1pCeGFubmJzV0JYQ2Z3SFZB?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Wed, 10 Jun 2026 14:54:41 GMT",
+        "pubdate_iso": "2026-06-10T14:54:41+00:00"
+      },
+      {
+        "title": "Previsión del precio del oro (XAUUSD): El precio del oro se desploma mientras un IPC elevado refuerza la senda de subidas de la Fed",
+        "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQUTNqcmFrMnVqUkFkc0RwZHRGUERKZFdRN1Y4MEhBTTB0OVBUMDQ3NW10YVdWcDhobXcyR3lBSTRKa2pQbFhENFF4WjVJUFpKNkdOZk9kR0Rma0NVdk10WnNrZkZYNFRjMldOalBTdEpaeTJNWGlkSHZOcHZLelNDdk5HX1VFM2s4aUlXSWRNaEF2TS1TS1dZSWQyV3djbkNuUkQtem1sQ0VSRDlrUjR5dnRIVmtabzltU0U2cmlCdmhCOVNYWlBaLXV1NHQtOFdwejUxa09aX1dkVk1PNTFTaG5tS0d1eTBhWkNFUWdNblR1VzhYNlZkMy1lNEhuR1V4dk1pVTFJMkU?oc=5",
+        "source": "FXEmpire",
+        "pubdate": "Wed, 10 Jun 2026 14:09:00 GMT",
+        "pubdate_iso": "2026-06-10T14:09:00+00:00"
+      },
+      {
+        "title": "Actualización del precio del oro 10 de junio de 2026: Precio del oro de 9999, anillos lisos BTMC DOJI Phu Quy a mediados de semana.",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTVpmbDhPaTJ2RFFZU0lQMXQ3Q1I4Ym9GYVhkSVFyWlotNWNRdUZXUHMyTlpPTUtIMW02Zk45NTZNa1R6X0JPSWRDNU1iN1VBbUJGWUhYZlV0M2ZFUi1QM2NLZ2xoZUtoSy03amw3VVVCSDc5Vm9PQXdLX1R4R3B3dnZaZUtEcXI3Q3RKTEF6RFh1OExkWXJQbUQ2WUY1ZlktenZGeEt0cG9XOTZ0N09V?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Wed, 10 Jun 2026 14:00:47 GMT",
+        "pubdate_iso": "2026-06-10T14:00:47+00:00"
+      }
+    ],
+    "fed_macro": [
+      {
+        "title": "Bitcoin al borde de USD $60.000 por temor a una inflación más alta en Estados Unidos",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOenQ5eENJX3RMdWZxXy1iSzBLZGZocFBsNnVEME9uZ0Z4SFFoTEwwNEZraW5CSGRsX2xIYjlDdkRXWjU0MWY0QU5vU2tsbFQzT1M1dVdVRWt3TWxWTm5LT0xTLU5NU3lLeHlzVzRHNDJTS1lZMmc2eGRBZHM5MGdYZTJsQmxCaHZpMm5aMTJnMU5Vb3cwNkdCS0lRSEh5aTJBeExsc1FrX1l3SFNoT21yMXJueEJ0dFJKekRtRk90OA?oc=5",
+        "source": "DiarioBitcoin",
+        "pubdate": "Wed, 10 Jun 2026 17:47:53 GMT",
+        "pubdate_iso": "2026-06-10T17:47:53+00:00"
+      },
+      {
+        "title": "El IPC de EE. UU. cumple expectativas pero la inflación subyacente se desacelera, ¿Bitcoin a 60,000 dólares?",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBLWGY2d2tHNHdOYkdrVm9NQjcwZjBkZlpZbndIZ24yM2RVTGRVaUtKeHBCQ28xd1BjMXg2MUNMMnhjRFpPMjhZZUl1aGZ1aXVYeHZIT00waWxWTld4?oc=5",
+        "source": "BeInCrypto",
+        "pubdate": "Wed, 10 Jun 2026 12:34:00 GMT",
+        "pubdate_iso": "2026-06-10T12:34:00+00:00"
+      },
+      {
+        "title": "Bitcoin y Ethereum, pendientes del CPI de Estados Unidos: el dato que puede mover al mercado cripto",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVnU1RkhOemRjem9xRjVHZjYwZUxwQjd6dmdVcDhMbHFjazlLMWVkdkxYS3RBaHJVWUlLOTg1TTFlVl95X3ZrYzRmeEhiU1duU1V5cDdjQzRCMTVJaEF3NWpxVk5RTEpSNXhSOFF1NzgzWFh3UW53QjNsMWdxT0FnbmZTRTZVY01HWUpoN1E3UWkzOEsyTXRYbkpfWFRxdGZpVU1mYVJYdXI0YWFldEpabDY3S21LNWNNUXd6VEs2NWdJRzdOQ3NVczgxSktxWEY2azREQ3FQQQ?oc=5",
+        "source": "Cripto247",
+        "pubdate": "Wed, 10 Jun 2026 12:16:43 GMT",
+        "pubdate_iso": "2026-06-10T12:16:43+00:00"
+      },
+      {
+        "title": "Inflación en EEUU: precios al consumidor están en su nivel más alto desde 2023",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdUFmbFYzYXllU0NhbDRkVmgyUUxnZjRxNlExa1pVSDBkbjk0VnZnT2VoNnhZcjl2X2VFaHJYd3FXVFlrMld2RlJ4MHhaREFZeVZobEdWNjNVYmNTTWR3LXloODMtcjV6aFViVEk1WkpSeDZBbVd2WVpYNHptNE1FTTQ5eWVTVGwwMVVQVjBsMXJKM3dRSnB3TGg2ajIwS3RaYjllUGQyTW9pQVBuRk9aajlsa3BteHVw0gHAAUFVX3lxTE5NbWhzVW1KY1JTdV9TSnpSMGNRaUt0bUdvLWhGQ3FDYVRISVUwU2N6NkV2UzlBNG9PbEp0M3JqVnFZRThyRDg2cG1WbThaeFpMY3VodlVKU1VSSkNBSlRrSFpzVnhzYU5uWkxlMHlEblBoRVpCUG5lZ282ZEJJc2ZtZGg1a2FxMjB5UTdjbDFKdXhsR2VPdnFzU0I1ZmJ3UXB2RnQ3dzNCMWhRZ2hWNk1wVTdBSHRRWDl5YlRRa3NFbA?oc=5",
+        "source": "Telemundo Denver",
+        "pubdate": "Wed, 10 Jun 2026 11:20:28 GMT",
+        "pubdate_iso": "2026-06-10T11:20:28+00:00"
+      },
+      {
+        "title": "Inflación en EEUU: se espera otro repunte en el reporte de mayo por la guerra con Irán",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNLURTYnczVUVqWm9fYnpKZW9YVEx6eEg3OUtuM2xhSmswUkV3cTdieWxHLWZKS085OERNZnN6dTRKdzNPRmJnMHlWRE10ZV94TFJHUDRLdkhvYm56UEQzRTI5SzZXdG9nQmJoRlM0c3Bycmh3dmMxN3FtdDBhY3lsUERuV1ZYZFlndnVWWEtDS2JfSno0UVlsX2tISExlNlBWbXdPQ2ZQbnJJX3c1dkEyYmVLN0JrNUdOUjVyVEVRWVhDUdIByAFBVV95cUxOWFE2Q3loUExoR0x6X21tUG92QmtLSWZ0cExJZUx1QWVhVDh0NGVnMG1IQXJmek5zQmFPTV9pNm1PUXZFb2RLRnNXQzRQNkcyekotTk1GUEFudndQTktzcFVGa1BMcWFDS2xkU2s5c2ozR0hwWWRXQ3hENkdvcXVQV1d3OV9LSGVzRVMyUmlaQkZyZml2UWxRaFp1eHZVakxqeHhKcW5mUUd6aEd3MkhEZ24ydE9NOUg2Z2JIUVVuanhfT1lvUGtQWA?oc=5",
+        "source": "Telemundo Washington DC",
+        "pubdate": "Wed, 10 Jun 2026 11:20:28 GMT",
+        "pubdate_iso": "2026-06-10T11:20:28+00:00"
+      }
+    ],
+    "dolar": [
+      {
+        "title": "XAUT cae levemente mientras los inversores evalúan la fortaleza del oro digital en medio de incertidumbre macro",
+        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNU2lqVW9wc0drazhhdDFTWkpjVy16TnNRaENCdlJMaXpLdHV4TkFXNlRIM2d2YUFqRlJCWVB3UDJ5N3I5d0dhX0dhRFdJU1VXWGJlLS1SZ3hoMXRUbWVGd29id0UxZUx4SmRGU2VjNlNvQlYxbll5WEg3SG9mVjBDNV9veUNONzNQczVsSUFQTW15aHNSUVJlQm01RmZmZGxuMDBFNk00cXZtWTFJUjdTR3Z2RUhpeXZwUnJ2WEZSaFZpRkhqa2xDN1lTUktRMEIzakFrTTIwa0s2TVNTeXk4bWZJZWJqdw?oc=5",
+        "source": "DiarioBitcoin",
+        "pubdate": "Wed, 10 Jun 2026 17:29:00 GMT",
+        "pubdate_iso": "2026-06-10T17:29:00+00:00"
+      },
+      {
+        "title": "Pronóstico del Precio del Índice del Dólar: Enfrentando presión de venta antes de los datos del IPC de EE.UU.",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOaEtNQ3pNSm1yekFfYm1tRnRHOXRmZW1Kc0pJZzFXVDBUaGpMZUpldXJjdUFMZHo3bmVMMkVaeDh2eWdpaVZXT0d3Mk5rX0dGSHhzZGZFT1h4MjJiVTRhdFVCM0ZTU1I5Z3d1d3Jwc3ljTzNSeklaWS1ScmQ0RGd0VlgzdlJsVDNpOWxQTDdIYWJiTkRncVdhNjgtWG5NU0RraWI2Mzc2S3RwaTNEVGQ3NEtITVJCbHd5OTVoZ2U3bG1HRUE2QmkyMWtSX2NTWW95ZVRCUmVFY18xLWE3aHfSAeMBQVVfeXFMTkE2ZDFtY0xWY3plNFVVamlqdjBwMnI1UEd1aXlveVRZclZRVVJXUnZQcGlrbENfaFM1R095MF9obXdvbFBuamRzc09uWkd3d0RhLVNyWENJRTI3YW5OMm02UkZCcnJBZy1nLU1hSTNwdUN2S3BDYmpjYnVnSmJYNEJETlVsZTIwdzJZTHY3Y3NLS0d6STVNek01M2cwOFNsX0JZT3lHTjRUU1VUOWR3aklfQ2lUYjZsRDhMc2xpX0JRREVickU0Vy1HMGFLSk9jeWVvRlp3blJncjdRMnN1YmIzek0?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Wed, 10 Jun 2026 07:57:09 GMT",
+        "pubdate_iso": "2026-06-10T07:57:09+00:00"
+      },
+      {
+        "title": "Índice del Dólar: IPC y geopolítica respaldan la fortaleza – MUFG",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORlZkUm1WSzhYOU5ycnBLSThURm5aQ0tuRVIyRlQxRUlQVW5TUmx4UGZUX2pTLUxPMmdpVFQzSl9PMlZQYTJBbjhEU1dPOF9YZ1VTNmRmck1ZOGpEM1E1dlNlbTZXNFdtbjVYLXZ0Y3BpZ2sxdDNDZGpWVGEyQ3ZKSG1vcHVYbjZWNDEtVVNYbFFPMjV0aEk5cWpGQk03VVdic2dqbnlMY9IBrAFBVV95cUxOdUhSbHlEV2pmWnZoTkZrVUhyUVBoVmkwTlFKUEU3c1lDbTVld2NLU0JRSXZrZWhpdzFCaUhuVWhBdUxGeWl4UUlnV291NFVORjdXQy1yWmZQQzNVY3BaNGpfdlRKa3NIeDVvRFNGQ2pQcERGXzc2RWdrSEdZZllJeG9qYXJ3VEYyWXNkT0dpYzdPYWl0VEhGVThUcnNZSWNmeVRlYzVYQmRrVmFm?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Wed, 10 Jun 2026 07:00:38 GMT",
+        "pubdate_iso": "2026-06-10T07:00:38+00:00"
+      },
+      {
+        "title": "EURUSD sube 0.286% por anticipación de alza de tasas del BCE y debilidad del dólar",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZUlRbXRiNjhyalFKUWxnbk1JNWxkbmNvZmhYWXdxZlMtWFdOR19XUGNVZENWcXlNRFRoUWc3NFpELUt0RGo4aEVveElXVDdtRFVMUHRRZGVKTHROSURLN0tJYWo3bEpwTWZaWldFMHBQLUtwQWtxQ3hWM2xKcUNhRTQzR0FESlZtNzBSVVlsUFBaR1VlZ1pjT1BURWtCRlhROWp3YXhWUGUtOUtHaG5qTUcxZW5pRi1UZzdxa2V6RUVoZjNLdFE?oc=5",
+        "source": "InteractiveCrypto",
+        "pubdate": "Wed, 10 Jun 2026 05:05:04 GMT",
+        "pubdate_iso": "2026-06-10T05:05:04+00:00"
+      },
+      {
+        "title": "El Índice del Dólar estadounidense registra ganancias modestas cerca de 100.00 tras el aumento de las tensiones en Oriente Medio",
+        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNZWJRWERhQVZDcVNLVmJlMWFMejJzN0Rmdzc0dF9TS1ZsY3RSZVBPR01IOW9ZcWlSUFhfd2oxNFB6VnhqN3RKV3NSd3YtZXplSWJLbTdZN3BMdVY3ZUxPbDhJZUk1ZjkxQzRHUWkwTE5EN2hzeU1fdko1RmdTZkUtcjVDdHl0OGdWR1NqVWFSellpUnN4VldxMmtxUlY3al9nRkNUcVRiSEZaNUN5M1FLMFhCSGhXaTJPeTNTM3NjZWkzNldMWWZkeHBSc3dCTkN2RTA4ZkY1T3ItalBoMDF6ellOUExJdDduYXlDSExPSTd0eUVuV2MzX0JnZkdzczM1Qk1uNdIBigJBVV95cUxOWDdTZHZyVHdpTDVuM0tDRm55a0VBRWtjUmNPUE51akN3T3IyVVFNeWs4cEh5VkUtYkFSMWZCazVxU1pBV0hlOV9fTnk1clBjZXBhU2tQSVRHN2IySG5IbVVxTDItOVQ1RDFEYnc4VGFfNnJyREg1WUpPdE5qWU1aOEtHbTRtV2R5b1F3R3ZSTksyS3BVM0NmX2VLSElqdjRGekZGc2pRNFpsLWNSMzNnbUJCSGNYOXlwajd6cTlRSFFnaW1XRjBLRDZnS0stQ1hacmV6alNseFV3TzNoSWRQdW5YRWg2TDN0VEtZa3BVN256YWVIcVNoeVg2MlZmcFpheXVlQ3dOU3lSZw?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Wed, 10 Jun 2026 02:47:23 GMT",
+        "pubdate_iso": "2026-06-10T02:47:23+00:00"
+      }
+    ],
+    "bancos_centrales": [
+      {
+        "title": "Peso drops most over eight weeks since midterm sell-off",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOajREblFkSFlzdnZPR2VPa2J3eEE4bVFhNVEzd0xEbF9PWmRGVDRaT3BOVTRzcWQ3YU4zVU13ZnQ0NmNYUWtzeFJuVjV4M2NkU08zcnpLQVdVSTBLbEdKVWljZGVxcHhiWDFhaVdETnFvWjhZN2dwVjhLVlNWek1oTmhVV2stRmFVSElOdDNUY1FobHlMQlJvTWpmaWlrUVJ0OVBrcHJhT2w1ZjZhZ0R5M9IBtgFBVV95cUxOS1NlQncwMTlMZlBfR2Z3NWsxVjgwclhMS2Y2bFd5ME9IQklBcDRFR1ZRQ0tsYnVPSlE5TFpBWnRlbWYtcGEtQk8wbEMxZmNpNUhyZExzZGRZeWg1dEp1amxYb0l4ZERZZDdHOVdMR0MwdVptdF9Sb251ejFxUWc1LU1hN05XSHdFN1hYV2FlZkZfQmktNU5icWxBLVAtOVNtMG5sTFdXY1FIM2pXVGVYY3hfclM3dw?oc=5",
+        "source": "Buenos Aires Times",
+        "pubdate": "Wed, 10 Jun 2026 18:44:26 GMT",
+        "pubdate_iso": "2026-06-10T18:44:26+00:00"
+      },
+      {
+        "title": "Ni China ni India: Este es el país cuyo banco central ha comprado más Oro este año",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcTNyZHU0YUdHRjFTbHR1bjZ6TWNickRMSWpmSHBFeTRqdzBwS3liUWN5QThKZXl1ajVqUTlPWmUxaDdmVS1wMlZBU1BYYk1OdnZ5NmhUUGlhY3REQldoc3hYT2NvTmhMTTYwLVYyM0N3anRvYnEtY0JPdGs0QW5ZT1BROGFkQTNnS3ltNFdQWmcybUxIQ3N6cWx5RU44dVljYUdsVE5KY0M4alpMQlJRWUZreDdYU1pDUC1ZcGUxMndlUUthUFFF0gHMAUFVX3lxTE5VcUNROFFEc3FkLWRRVzlWTWN4NTd4WUZWaHNiTFNnV1ZoRFY3MGY3Zjk1c2tKMFpUQkgwc0o1WlJBSUJGZVAyQWlKNGx4Vkp4b2xHdE9QQ21EZkhHZWpMNE8zT2xZemVXMzdUbUVWbENZQy1JVWppOUlPNG94VnhtSjNlVDRyX1hIcnFscU9xWk5mR2dnVGZ2RmxMX21ORi1XR3NZdnpqXzdzVEJEN1huRnhxRE9oM0FLeENVajVlODdDck5KVTZlcnl1Xw?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Wed, 10 Jun 2026 09:21:41 GMT",
+        "pubdate_iso": "2026-06-10T09:21:41+00:00"
+      },
+      {
+        "title": "Gold and bitcoin: the assets the rally forgot",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeG44ZG5ob21HOWlQNGg5TUZyejJFQjFGcW5RN09zX1VNY2k2Rk93SDlpejFQa2Y2eHlqcG1Gbm9ub3dVdmxiOFl1d3g1aHlpTGdYaU1HdDZZelZhTXRaOE94WTRtX3BSV1ZDNXhkQUdMQlJnTnFfV3FlTk9GbEJJUVBVR2U?oc=5",
+        "source": "Financial Times",
+        "pubdate": "Wed, 10 Jun 2026 05:30:04 GMT",
+        "pubdate_iso": "2026-06-10T05:30:04+00:00"
+      },
+      {
+        "title": "El banco central de China extiende la racha de compras de Oro por 18 meses consecutivos",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYU1jcEpSU1I4d3RTRzhLVjZ1dTAtM3ItQ3V1RUNyOXV3aklfRm9qbXZudUJwdm9WWkU3Z2c4VjVKaHRmbWVIenFraVJfUDF1VVhSOXRtT3ZfWTc4SmhHVFVTdkZFN1pmalpXUG5Gc1lpUG9Db293S21yRWswSkNqMG8tX2lFS1Y3NWNUU19namdOQVdJU2FxVkN4TEpHRmdSbG5RVmVNSVFNNkFTSXJMeTluWUpnQkZHMml6dklyY0hvclBpZ1RtUGl3bS00RDJ6dVHSAdcBQVVfeXFMTXR3a0VYZVFuOU1NNHdMcGJsenJSa0d2SHRpV1poWXFWVVhON3FrazM0TWNOaExIU0sxSUpaVWhBd1RaWU1VbmRvXzM0SXZackdLcVJlY01WVjZMYmZmd19sclZpTzAxSFFQZk5JbHNqVHhjUnIyMTVQM0ZBOW9PY1hJODdIVUs2QWg4RUFOUHRYeGE2ZWxzZTh3SV9hTkkzbDdBYkRQNnJsVTVCTVpqZ2pLZTUyZ0lTajM3azF6NWtHSWdVbXZ3YUJ2QnVLRDVneDJSNWozSW8?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Tue, 09 Jun 2026 17:02:24 GMT",
+        "pubdate_iso": "2026-06-09T17:02:24+00:00"
+      },
+      {
+        "title": "Ni China ni India: Es el banco central del país el que ha comprado más Oro este año",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRVFSUDlKVmRkc0paWEZyVG5NVFQ1T3NUcDFZVGtyU0RMdk1Vdk5YVjBHNGgzVWc0Y1JMVkE1X2RRTFVzZ19xbEtUV3JyNGZaeHZfcFVISkVNZktUdUVQcDJsbWl6VDJ6UjhSbDVWUWtsa09jbVVTNTBseW5Jc3pVYWhNZ09xRjBkZXR4eTdzb2dHZXJGVE5USmtaYmxYRlZqekJIRXNXRE1ZR0FpeHBWd3pDeGw0aC1IRzk3OGlFRmJJOV9OZUdN0gHHAUFVX3lxTE1FUVJQOUpWZGRzSlpYRnJUbk1UVDVPc1RwMVlUa3JTREx2TVV2TlhWMEc0aDNVZzRjUkxWQTVfZFFMVXNnX3FsS1RXcnI0Zlp4dl9wVUhKRU1mS1R1RVBwMmxtaXpUMnpSOFJsNVZRa2xrT2NtVVM1MGx5bklzelVhaE1nT3FGMGRldHh5N3NvZ0dlckZUTlRKa1pibFhGVmp6QkhFc1dETVlHQWl4cFZ3ekN4bDRoLUhHOTc4aUVGYkk5X05lR00?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Tue, 09 Jun 2026 10:44:07 GMT",
+        "pubdate_iso": "2026-06-09T10:44:07+00:00"
+      }
+    ],
+    "geopolitica": [
+      {
+        "title": "El nuevo destino para las reservas de oro en el sudeste asiático.",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1KYUk5TDA2d1RZYmZCVHROTml1YTdmZzhLZUc4SmtsR1RDdmZlaUc5NkRZTVZCc3VFYVVLQjFhOE9Oa3g4SDNZVUVZanRwR0M0TWRid3laeFJjYWllT3AwMS1ZWkN5RzREbWRlbmY1NUQ5ZEw0UVdyZQ?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Wed, 10 Jun 2026 01:22:25 GMT",
+        "pubdate_iso": "2026-06-10T01:22:25+00:00"
+      },
+      {
+        "title": "Gold regains Rs 1.6 lakh/10gm level as weak US dollar lifts sentiment",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQY01xd1dqX3psSHJDZkRpSXB1VUZBV1RQaHA1SjRKekd5WU5peWg0RGgxRXFsNFBfSGgybmtBZ3plSlpJd2ctdF9VYjBWMEp3RE1RZ0FFLXZPVDU3SGV0b0VYeDZkRFJJS2ttMU43cUpJYlp0NHJpRk9jaWV0VzVITHBQdnA2SzJ6anMxdzIzRzFlQXlUZjJveHhsYWpjRGt3VGFSeER4NUNMbTNtUVhFaExQb3hBMmZVSHJFYmdFbjJrakpyaG1rUTdxWQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Tue, 09 Jun 2026 11:38:14 GMT",
+        "pubdate_iso": "2026-06-09T11:38:14+00:00"
+      },
+      {
+        "title": "Commodity Corner: Oil surges on Middle East tensions; gold extends losses",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORTBOR09qelJrM1M3dko0bzN1cG9Hcm9lajhvTjdlanVWNjUwRXQ5NS1yUF9OTjM3R2N0U3IyaktZeFY4S1dXcEhWSk9vV05hSHMxZjVoRHlfdUdHcE5nS3g1bkNONExHenlfMU5vcWExLUVTdjNjZl83bVE2SDZZb3dKVFppRk1WVldWb0RQTUpyd2lERk5WdVdyT1BtZjVCeXJESUVjOG9TZjltMWJiNzUzQ2t1UGpsT3hYRWQ3VU80WWNZLVNuUmtLWWFuUQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Mon, 08 Jun 2026 02:42:00 GMT",
+        "pubdate_iso": "2026-06-08T02:42:00+00:00"
+      }
+    ],
+    "proyecciones": [
+      {
+        "title": "Venezuela Deploys Troops in Mafia-Run Gold Mining Heartland",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ1FxcTBxUUhLTkdnZW5CY3NMOGh3Tkg2a2l6NjhFc2lTR2NEck5ETVV1V2hraHFaMXFWZ3RCNEV0SE5rMVUxdnpISGNzYUdtWWZNSVNVUWZnMi1RYkx6cXhBZlQyZDNOR24zYzVmSDQ1OEZ4Y2tIaHV5YUN2bDZQSmIzdWJhUzExZlhocWJxZ3VYUzMyYlZ4VmtsV3YxY3pMVTE5ekxySGducUV3ZktR?oc=5",
+        "source": "Bloomberg",
+        "pubdate": "Tue, 09 Jun 2026 22:18:51 GMT",
+        "pubdate_iso": "2026-06-09T22:18:51+00:00"
+      },
+      {
+        "title": "Gold rises on weaker oil; inflation, rate outlook in focus",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOLTgxc0FTY21tVXhOTHdzRndaU1l6RVhFNUNaVHBMVk10S194Q2JPMUluZ0x4VUktdDRUcnU4WFBvTGNBSVhUbF9vejRqT19XanJuUVFiRUdDX1dteXZneUt4bnN1M0pxOHdrSzJPN2RhczlvXzN2a0R5aHJyMEEwVnJRWnV1RVBPOXZsVHdFTHlXM21jVFppdW9BMlVwZGNISHZMZ1FZOXk1R2FjaVU0c0hJelJDWFZwXzBSMXJYQUJQdmM?oc=5",
+        "source": "TradingView",
+        "pubdate": "Tue, 09 Jun 2026 06:24:00 GMT",
+        "pubdate_iso": "2026-06-09T06:24:00+00:00"
+      },
+      {
+        "title": "La peor caída del oro en lo que va del año no ha hecho tambalear a los optimistas de Wall Street",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMlhDM0pNRUFIYi0zZjF5cXdEWkowQjc4RDBkYzctRDNBQXRZTXBlQ25HNlkyUk1KcEU5V2trVHMxOEFFSnpfSDF1cjloSTEyc1M1b0w1SHQ5YzEycFdMcFRfY2g1SS1jYW13dnZWTXhGZzY3d1ZjZnVHZnAzSTNlSQ?oc=5",
+        "source": "Cryptopolitan",
+        "pubdate": "Mon, 08 Jun 2026 23:20:10 GMT",
+        "pubdate_iso": "2026-06-08T23:20:10+00:00"
+      }
+    ]
+  },
+  "stats": {
+    "total_noticias": 26,
+    "por_categoria": {
+      "precio": 5,
+      "fed_macro": 5,
+      "dolar": 5,
+      "bancos_centrales": 5,
+      "geopolitica": 3,
+      "proyecciones": 3
+    }
+  }
+}
