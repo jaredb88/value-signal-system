@@ -290,7 +290,7 @@ def calcular_score_gld():
     # 1. Descargar datos
     log.info("\n--- Descargando datos ---")
     log.info("GLD...")
-    gld_hist = fetch_yahoo_history("GLD", "2y")
+    gld_hist = fetch_yahoo_history("GLD", "5y")
     log.info("S&P 500 (^GSPC)...")
     sp_hist = fetch_yahoo_history("^GSPC", "2y")
     log.info("Silver futures (SI=F)...")
@@ -368,10 +368,11 @@ def calcular_score_gld():
         gld_actual = round(float(gld_hist["Close"].iloc[-1]), 2)
 
     # Historico de precios de GLD para el grafico del dashboard
-    # Guardamos ultimos 252 dias (~1 ano) con formato (fecha_iso, precio)
+    # Guardamos historico completo para el selector de periodo (1Y/3Y/5Y)
     historico_gld = []
     if gld_hist is not None:
-        ventana = gld_hist["Close"].iloc[-252:] if len(gld_hist) >= 252 else gld_hist["Close"]
+        # Guardamos 5 anos para el selector de periodo del dashboard (1Y/3Y/5Y)
+        ventana = gld_hist["Close"]
         for fecha, precio in ventana.items():
             historico_gld.append({
                 "fecha": fecha.strftime("%Y-%m-%d"),
