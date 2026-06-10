@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-10T14:35:14.900638",
-  "duracion_segundos": 126.301825,
+  "fecha_actualizacion": "2026-06-10T15:04:39.489513",
+  "duracion_segundos": 92.612991,
   "n_acciones": 11,
   "acciones": [
     {
@@ -137,11 +137,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Operadora de la zona franca de Iquique. Negocio estable y predecible. ROE 35%, payout 74%, G=9%.",
-      "precio_actual_clp": 995,
+      "precio_actual_clp": 997,
       "razon_social": "ZONA FRANCA DE IQUIQUE S.A.",
-      "variacion_pct": -0.29,
+      "variacion_pct": -0.09,
       "dy": {
-        "dy_pct": 6.96,
+        "dy_pct": 6.94,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 67.12,
@@ -151,13 +151,13 @@
         "promedio_anual": 69.21,
         "advertencia": null
       },
-      "cagr_3y": 0.16408318781675346,
-      "cagr_5y": 0.2008650626418551,
+      "cagr_3y": 0.16486262105118454,
+      "cagr_5y": 0.2013474347848916,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
-        "vs_benchmark_pp": -1.54
+        "vs_benchmark_pp": -1.56
       },
       "cmf": {
         "periodo": "03/2026",
@@ -515,9 +515,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 126.13,
+      "precio_actual_clp": 126.01,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": -0.69,
+      "variacion_pct": -0.78,
       "dy": {
         "dy_pct": 6.3,
         "anos_usados": 3,
@@ -529,9 +529,9 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.013602122256138438,
-      "cagr_5y": 0.024047436202422334,
-      "cagr_10y": -0.028575698170180353,
+      "cagr_3y": 0.013280573460747735,
+      "cagr_5y": 0.02385250639285319,
+      "cagr_10y": -0.028668159007240956,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -641,11 +641,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial chilena de Enel. Principal generadora hidroelectrica del pais. ROE 19%, payout 62%, G=7%.",
-      "precio_actual_clp": 531,
+      "precio_actual_clp": 535.99,
       "razon_social": "ENEL GENERACION CHILE S.A.",
-      "variacion_pct": -0.26,
+      "variacion_pct": 0.67,
       "dy": {
-        "dy_pct": 6.33,
+        "dy_pct": 6.27,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 41.9,
@@ -655,13 +655,13 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": 0.3029957484411445,
-      "cagr_5y": 0.2056077318304721,
-      "cagr_10y": -0.009287114798455787,
+      "cagr_3y": 0.3070646043080256,
+      "cagr_5y": 0.20786516893210472,
+      "cagr_10y": -0.008360019680769493,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.17
+        "vs_benchmark_pp": -2.23
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1270,11 +1270,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2346.6,
+      "precio_actual_clp": 2328.1,
       "razon_social": "CENCOSUD SHOPPING S.A.",
-      "variacion_pct": 1.02,
+      "variacion_pct": 0.22,
       "dy": {
-        "dy_pct": 4.33,
+        "dy_pct": 4.37,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 91.0,
@@ -1284,13 +1284,13 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.18937668749439363,
-      "cagr_5y": 0.11941612905368637,
+      "cagr_3y": 0.1862428560541327,
+      "cagr_5y": 0.1176454978896253,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -4.17
+        "vs_benchmark_pp": -4.13
       },
       "cmf": {
         "periodo": "03/2026",
