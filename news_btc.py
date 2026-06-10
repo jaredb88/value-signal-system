@@ -33,6 +33,7 @@ log = logging.getLogger(__name__)
 OUTPUT_FILE = SCRIPT_DIR / "noticias_btc.json"
 VENTANA_DIAS = 3
 MAX_POR_CATEGORIA = 5
+ASSET_LABEL_RESUMEN = "Bitcoin (BTC) y su ETF IBIT"
 
 QUERIES = {
     "precio": [
@@ -373,6 +374,103 @@ def analizar_impacto(titulo, categoria):
     }
 
 
+def generar_resumen_ejecutivo(noticias_por_categoria):
+    """
+    Calcula sentimiento neto del feed y genera narrativa (Groq con fallback a plantilla).
+    Retorna dict con sentimiento, contadores, narrativa y veredicto.
+    """
+    # --- 1. Sentimiento neto desde los impactos ya calculados ---
+    score_neto = 0
+    n_pos = 0
+    n_neg = 0
+    n_neu = 0
+    titulares_con_senal = []
+    for cat, items in noticias_por_categoria.items():
+        for it in items:
+            imp = it.get("impacto", {}) or {}
+            d = imp.get("direccion", "neutral")
+            i = imp.get("intensidad", 0)
+            if d == "positivo":
+                score_neto += i
+                n_pos += 1
+                titulares_con_senal.append(("+", i, it.get("title", ""), imp.get("razonamiento", "")))
+            elif d == "negativo":
+                score_neto -= i
+                n_neg += 1
+                titulares_con_senal.append(("-", i, it.get("title", ""), imp.get("razonamiento", "")))
+            else:
+                n_neu += 1
+
+    # --- 2. Veredicto direccional ---
+    if score_neto >= 4:
+        sentimiento = "alcista"
+        veredicto = "ALCISTA a corto plazo"
+    elif score_neto <= -4:
+        sentimiento = "bajista"
+        veredicto = "BAJISTA a corto plazo"
+    elif score_neto >= 2:
+        sentimiento = "levemente alcista"
+        veredicto = "Levemente ALCISTA"
+    elif score_neto <= -2:
+        sentimiento = "levemente bajista"
+        veredicto = "Levemente BAJISTA"
+    else:
+        sentimiento = "neutral"
+        veredicto = "NEUTRAL - sin sesgo dominante"
+
+    # --- 3. Narrativa: Groq con fallback a plantilla ---
+    narrativa = None
+    narrativa_fuente = "plantilla"
+    try:
+        from groq_interpreter import groq_available, query_groq
+        available, api_key = groq_available()
+        if available and titulares_con_senal:
+            # Ordenar por intensidad y tomar los 10 mas fuertes
+            top_senales = sorted(titulares_con_senal, key=lambda x: x[1], reverse=True)[:10]
+            lista_txt = "\n".join(
+                f"[{s}{i}] {t[:100]} ({r})" for s, i, t, r in top_senales
+            )
+            prompt = (
+                f"Eres analista financiero. Estas son las noticias de hoy sobre {ASSET_LABEL_RESUMEN}, "
+                f"con su impacto estimado ([+N] positivo, [-N] negativo, N=intensidad 1-3):\n\n"
+                f"{lista_txt}\n\n"
+                f"El sentimiento neto del feed es {sentimiento} (score {score_neto:+d}, "
+                f"{n_pos} positivas vs {n_neg} negativas).\n\n"
+                f"Escribe un resumen de maximo 3 frases y 60 palabras en espanol que sintetice el panorama "
+                f"y los principales catalizadores. Sin markdown, sin titulos, solo el texto plano."
+            )
+            respuesta = query_groq(prompt, api_key)
+            if respuesta and len(respuesta.strip()) > 20:
+                narrativa = respuesta.strip()[:600]
+                narrativa_fuente = "groq"
+    except Exception as e:
+        log.warning(f"Groq no disponible para resumen: {e}")
+
+    if not narrativa:
+        # Plantilla determinista
+        if titulares_con_senal:
+            top = sorted(titulares_con_senal, key=lambda x: x[1], reverse=True)[:2]
+            razones_top = "; ".join(r for _, _, _, r in top if r)
+            narrativa = (
+                f"El feed muestra {n_pos} senales positivas y {n_neg} negativas "
+                f"(neto {score_neto:+d}). Factores dominantes: {razones_top}."
+            )
+        else:
+            narrativa = "Sin senales direccionales claras en las noticias de las ultimas 72 horas."
+
+    log.info(f"Resumen ejecutivo: {sentimiento} (neto {score_neto:+d}) via {narrativa_fuente}")
+    return {
+        "sentimiento": sentimiento,
+        "score_neto": score_neto,
+        "n_positivas": n_pos,
+        "n_negativas": n_neg,
+        "n_neutrales": n_neu,
+        "narrativa": narrativa,
+        "narrativa_fuente": narrativa_fuente,
+        "veredicto": veredicto,
+    }
+
+
 def fetch_categoria(categoria, keywords, cutoff):
     log.info(f"\n--- Categoria: {categoria} ---")
     items_brutos = []
@@ -439,6 +537,7 @@ def main():
         noticias = fetch_categoria(categoria, keywords, cutoff)
         noticias_por_categoria[categoria] = noticias
         total += len(noticias)
+    resumen_ejecutivo = generar_resumen_ejecutivo(noticias_por_categoria)
     output = {
         "updated_at_utc": datetime.now(timezone.utc).isoformat(),
         "ventana_dias": VENTANA_DIAS,
@@ -448,6 +547,7 @@ def main():
             "total_noticias": total,
             "por_categoria": {k: len(v) for k, v in noticias_por_categoria.items()},
         },
+        "resumen_ejecutivo": resumen_ejecutivo,
     }
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)

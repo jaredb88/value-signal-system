@@ -1173,6 +1173,73 @@ if seccion == "🥇 Oro (GLD)":
             _updated_news_gld = _news_gld_data.get("updated_at_utc", "")[:16].replace("T", " ")
             st.caption(f"📊 {_total_news_gld} noticias · Ultima actualizacion: {_updated_news_gld} UTC")
 
+            # --- Resumen ejecutivo ---
+            _res_ej = _news_gld_data.get("resumen_ejecutivo") or {}
+            if _res_ej:
+                _sent_ej = _res_ej.get("sentimiento", "neutral")
+                _neto_ej = _res_ej.get("score_neto", 0)
+                _npos_ej = _res_ej.get("n_positivas", 0)
+                _nneg_ej = _res_ej.get("n_negativas", 0)
+                _narr_ej = _res_ej.get("narrativa", "")
+                _vered_ej = _res_ej.get("veredicto", "")
+
+                try:
+                    with open(_Path_news_gld(__file__).parent / "gld_data.json", "r", encoding="utf-8") as _fs_ej:
+                        _sj_ej = _json_news_gld.load(_fs_ej)
+                    _zona_ej = _sj_ej.get("zona", "?")
+                    _scoreq_ej = _sj_ej.get("score_final")
+                except Exception:
+                    _zona_ej, _scoreq_ej = "?", None
+
+                _es_alcista_ej = "alcista" in _sent_ej
+                _es_bajista_ej = "bajista" in _sent_ej
+                _zona_compra_ej = _zona_ej in ("OPORTUNIDAD", "ATRACTIVO")
+                _zona_cara_ej = _zona_ej == "CARO"
+
+                if _zona_compra_ej and _es_bajista_ej:
+                    _alin_emoji_ej = "✅"
+                    _alin_ej = "CONTRARIAN — el pesimismo del feed explica el precio bajo. Historicamente buen punto de entrada DCA, aunque puede seguir cayendo en el corto plazo."
+                elif _zona_compra_ej and _es_alcista_ej:
+                    _alin_emoji_ej = "✅✅"
+                    _alin_ej = "DOBLE SEÑAL — precio atractivo y noticias a favor. La ventana de entrada puede cerrarse rapido."
+                elif _zona_compra_ej:
+                    _alin_emoji_ej = "✅"
+                    _alin_ej = "SCORE MANDA — el precio es atractivo y las noticias no muestran catalizadores en contra."
+                elif _zona_cara_ej and _es_alcista_ej:
+                    _alin_emoji_ej = "⚠️"
+                    _alin_ej = "EUFORIA — precio caro con optimismo alto en noticias. Riesgo de FOMO: mejor reducir aportes."
+                elif _zona_cara_ej and _es_bajista_ej:
+                    _alin_emoji_ej = "⏳"
+                    _alin_ej = "CORRECCION EN CURSO — precio caro y noticias negativas. Esperar mejores precios."
+                elif _zona_cara_ej:
+                    _alin_emoji_ej = "⏳"
+                    _alin_ej = "CARO SIN CATALIZADORES — aportes minimos hasta que mejore el precio."
+                else:
+                    _alin_emoji_ej = "🟡"
+                    _alin_ej = "SIN SEÑAL FUERTE — zona neutral. Mantener DCA normal."
+
+                if _es_alcista_ej:
+                    _sent_color_ej = "#2e7d32"
+                    _sent_emoji_ej = "🟢"
+                elif _es_bajista_ej:
+                    _sent_color_ej = "#c62828"
+                    _sent_emoji_ej = "🔴"
+                else:
+                    _sent_color_ej = "#666"
+                    _sent_emoji_ej = "⚪"
+
+                _scoreq_txt_ej = f" · Score: {_scoreq_ej:.1f}" if _scoreq_ej is not None else ""
+                st.markdown(
+                    f"""<div style="border:1px solid #ddd;border-radius:10px;padding:14px 18px;margin:8px 0 16px 0;background:#fafafa;">
+<b>🎯 Resumen ejecutivo</b><br>
+<span style="color:{_sent_color_ej};"><b>{_sent_emoji_ej} Sentimiento del feed: {_sent_ej.upper()}</b> (neto {_neto_ej:+d} · {_npos_ej} positivas vs {_nneg_ej} negativas)</span><br>
+<span style="font-size:0.95em;">{_narr_ej}</span><br>
+<span style="font-size:0.9em;color:#555;">Veredicto noticias: <b>{_vered_ej}</b> · Zona Value Signal: <b>{_zona_ej}</b>{_scoreq_txt_ej}</span><br>
+<span style="font-size:0.95em;">{_alin_emoji_ej} <b>{_alin_ej}</b></span>
+</div>""",
+                    unsafe_allow_html=True,
+                )
+
             _categorias_meta_gld = _news_gld_data.get("categorias_meta", {})
             _noticias_por_cat_gld = _news_gld_data.get("noticias_por_categoria", {})
 
@@ -1561,6 +1628,73 @@ if seccion == "₿ Bitcoin (BTC)":
             _total_news_gld = _news_gld_data.get("stats", {}).get("total_noticias", 0)
             _updated_news_gld = _news_gld_data.get("updated_at_utc", "")[:16].replace("T", " ")
             st.caption(f"📊 {_total_news_gld} noticias · Ultima actualizacion: {_updated_news_gld} UTC")
+
+            # --- Resumen ejecutivo ---
+            _res_ej = _news_gld_data.get("resumen_ejecutivo") or {}
+            if _res_ej:
+                _sent_ej = _res_ej.get("sentimiento", "neutral")
+                _neto_ej = _res_ej.get("score_neto", 0)
+                _npos_ej = _res_ej.get("n_positivas", 0)
+                _nneg_ej = _res_ej.get("n_negativas", 0)
+                _narr_ej = _res_ej.get("narrativa", "")
+                _vered_ej = _res_ej.get("veredicto", "")
+
+                try:
+                    with open(_Path_news_gld(__file__).parent / "btc_data.json", "r", encoding="utf-8") as _fs_ej:
+                        _sj_ej = _json_news_gld.load(_fs_ej)
+                    _zona_ej = _sj_ej.get("zona", "?")
+                    _scoreq_ej = _sj_ej.get("score_final")
+                except Exception:
+                    _zona_ej, _scoreq_ej = "?", None
+
+                _es_alcista_ej = "alcista" in _sent_ej
+                _es_bajista_ej = "bajista" in _sent_ej
+                _zona_compra_ej = _zona_ej in ("OPORTUNIDAD", "ATRACTIVO")
+                _zona_cara_ej = _zona_ej == "CARO"
+
+                if _zona_compra_ej and _es_bajista_ej:
+                    _alin_emoji_ej = "✅"
+                    _alin_ej = "CONTRARIAN — el pesimismo del feed explica el precio bajo. Historicamente buen punto de entrada DCA, aunque puede seguir cayendo en el corto plazo."
+                elif _zona_compra_ej and _es_alcista_ej:
+                    _alin_emoji_ej = "✅✅"
+                    _alin_ej = "DOBLE SEÑAL — precio atractivo y noticias a favor. La ventana de entrada puede cerrarse rapido."
+                elif _zona_compra_ej:
+                    _alin_emoji_ej = "✅"
+                    _alin_ej = "SCORE MANDA — el precio es atractivo y las noticias no muestran catalizadores en contra."
+                elif _zona_cara_ej and _es_alcista_ej:
+                    _alin_emoji_ej = "⚠️"
+                    _alin_ej = "EUFORIA — precio caro con optimismo alto en noticias. Riesgo de FOMO: mejor reducir aportes."
+                elif _zona_cara_ej and _es_bajista_ej:
+                    _alin_emoji_ej = "⏳"
+                    _alin_ej = "CORRECCION EN CURSO — precio caro y noticias negativas. Esperar mejores precios."
+                elif _zona_cara_ej:
+                    _alin_emoji_ej = "⏳"
+                    _alin_ej = "CARO SIN CATALIZADORES — aportes minimos hasta que mejore el precio."
+                else:
+                    _alin_emoji_ej = "🟡"
+                    _alin_ej = "SIN SEÑAL FUERTE — zona neutral. Mantener DCA normal."
+
+                if _es_alcista_ej:
+                    _sent_color_ej = "#2e7d32"
+                    _sent_emoji_ej = "🟢"
+                elif _es_bajista_ej:
+                    _sent_color_ej = "#c62828"
+                    _sent_emoji_ej = "🔴"
+                else:
+                    _sent_color_ej = "#666"
+                    _sent_emoji_ej = "⚪"
+
+                _scoreq_txt_ej = f" · Score: {_scoreq_ej:.1f}" if _scoreq_ej is not None else ""
+                st.markdown(
+                    f"""<div style="border:1px solid #ddd;border-radius:10px;padding:14px 18px;margin:8px 0 16px 0;background:#fafafa;">
+<b>🎯 Resumen ejecutivo</b><br>
+<span style="color:{_sent_color_ej};"><b>{_sent_emoji_ej} Sentimiento del feed: {_sent_ej.upper()}</b> (neto {_neto_ej:+d} · {_npos_ej} positivas vs {_nneg_ej} negativas)</span><br>
+<span style="font-size:0.95em;">{_narr_ej}</span><br>
+<span style="font-size:0.9em;color:#555;">Veredicto noticias: <b>{_vered_ej}</b> · Zona Value Signal: <b>{_zona_ej}</b>{_scoreq_txt_ej}</span><br>
+<span style="font-size:0.95em;">{_alin_emoji_ej} <b>{_alin_ej}</b></span>
+</div>""",
+                    unsafe_allow_html=True,
+                )
 
             _categorias_meta_gld = _news_gld_data.get("categorias_meta", {})
             _noticias_por_cat_gld = _news_gld_data.get("noticias_por_categoria", {})
