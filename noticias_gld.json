@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T22:05:16.128797+00:00",
+  "updated_at_utc": "2026-06-10T22:16:46.441765+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -30,6 +30,48 @@
   "noticias_por_categoria": {
     "precio": [
       {
+        "title": "Precio del oro hoy (11 de junio): Se acerca a los 4.000 dólares.",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5EUkFZMDZlc3hfbW50bHRVVmwtWU1FUVhua1pnUUMwdDlOTkl1cjdUSmVod29UNFZXZ1NXWXZWWF9jVHZxSDNzVXRMbTNyS0V1LVVzd1cxUGxWaFpjZjhYUVZVZi16WmRHcDE3eHlaY0JkVU03SThBWlNB?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Wed, 10 Jun 2026 22:09:45 GMT",
+        "pubdate_iso": "2026-06-10T22:09:45+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Precios del oro hoy, 11 de junio: ¿Seguirán cayendo los precios del oro en SJC, BTMC, PNJ y DOJI?",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNC1BMVhycEdtdWdaWGFrZzVnMkRtS2c3Rk1CeEZPbWk3ck04cjFHWTZtQXlyMGRsWG9WX2NqczBnclRPQ0x0a0lMcUFrNndXd2hMS2I1c253QXc1OE5zVnZ0cFFiR1FCeXVrQk5JS0FMVU40NldfNHUwV0lCSUZVNllKRnBQbUYtUzVV?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Wed, 10 Jun 2026 22:09:35 GMT",
+        "pubdate_iso": "2026-06-10T22:09:35+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Precios del oro hoy, 11 de junio de 2026: Precios de los lingotes de oro SJC, anillos de oro de 9999 y precios mundiales del oro.",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaGVoTEUwd0hoTF9Jc2sxdVZjc1hlQms4aUsxRmxvUk9BdWpCbXVvZG9fcDZDbTV6S2R5T25BcFZOWFU3R1BodzU5MjF5TS00bWwyR21yNDJ6anpET2N0WENZZGhYa2ZlckEzZXBRcGtJbS1SYURJdXIydmJDcU1OTXdGUk84STdsTkx6akxmQ3Y2Z0J2MENuX1cxNVlKV1daWGlqQQ?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Wed, 10 Jun 2026 22:05:56 GMT",
+        "pubdate_iso": "2026-06-10T22:05:56+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Actualización del precio del oro hoy, 11 de junio de 2026: Precio del oro de 9999 y de los anillos BTMC DOJI Phu Quy lisos.",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTExvam5uQ3NaMG1DQjlMZHVla3lEbTdnTy1UZjdlNmlsNjNsQVpwVXpCZWxRY0lMYmtIWjlNZGo2V1gzZnNXcGZoRDB6QkgzSFNYY3VENEIwWTJaVXIySjBfZFFRTEFjQ2w5WmFXeGlmVENSbnE2bDhxQXM3MFh4anJKeXdVT1F0UlVDejhjYkJrRWRXcU5XWGthNEF4Rm92RGJ3bWpB?oc=5",
         "source": "Vietnam.vn",
@@ -49,48 +91,6 @@
         "source": "Cryptonews.net",
         "pubdate": "Wed, 10 Jun 2026 15:12:09 GMT",
         "pubdate_iso": "2026-06-10T15:12:09+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Los precios del oro continúan su drástica caída hoy, 11 de junio de 2026, convirtiéndolo en un activo extremadamente arriesgado. Citi redujo inesperadamente su pronóstico a 4000 dólares.",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNaWhUVTlXTGNGOXlNWk1SNWFxTlBoS0ZzemVPVU5kcVo1cVY0amppSkRMbXZtUEtNOXZKUkVyM3RoeDR0MmxmUVk0WFlTNHhMTG1CT3ZwaldZSlA4Z0x0WWQyeXo5bTZrd0RZcHFpeDlkVzVtekxRaXNLUHFjWjQtZVhrSzFIdGdZNEppS3AtRkhHZXoyN1U3cW5tbmg2a0E0ZUstVGx6VlpqTVRpWEdpa3JhSnVieVAyVVZoTy11U1FXNDBmMXdiRjRxZGxMWkQxN1pCeGFubmJzV0JYQ2Z3SFZB?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Wed, 10 Jun 2026 14:54:41 GMT",
-        "pubdate_iso": "2026-06-10T14:54:41+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Previsión del precio del oro (XAUUSD): El precio del oro se desploma mientras un IPC elevado refuerza la senda de subidas de la Fed",
-        "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQUTNqcmFrMnVqUkFkc0RwZHRGUERKZFdRN1Y4MEhBTTB0OVBUMDQ3NW10YVdWcDhobXcyR3lBSTRKa2pQbFhENFF4WjVJUFpKNkdOZk9kR0Rma0NVdk10WnNrZkZYNFRjMldOalBTdEpaeTJNWGlkSHZOcHZLelNDdk5HX1VFM2s4aUlXSWRNaEF2TS1TS1dZSWQyV3djbkNuUkQtem1sQ0VSRDlrUjR5dnRIVmtabzltU0U2cmlCdmhCOVNYWlBaLXV1NHQtOFdwejUxa09aX1dkVk1PNTFTaG5tS0d1eTBhWkNFUWdNblR1VzhYNlZkMy1lNEhuR1V4dk1pVTFJMkU?oc=5",
-        "source": "FXEmpire",
-        "pubdate": "Wed, 10 Jun 2026 14:09:00 GMT",
-        "pubdate_iso": "2026-06-10T14:09:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Actualización del precio del oro 10 de junio de 2026: Precio del oro de 9999, anillos lisos BTMC DOJI Phu Quy a mediados de semana.",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTVpmbDhPaTJ2RFFZU0lQMXQ3Q1I4Ym9GYVhkSVFyWlotNWNRdUZXUHMyTlpPTUtIMW02Zk45NTZNa1R6X0JPSWRDNU1iN1VBbUJGWUhYZlV0M2ZFUi1QM2NLZ2xoZUtoSy03amw3VVVCSDc5Vm9PQXdLX1R4R3B3dnZaZUtEcXI3Q3RKTEF6RFh1OExkWXJQbUQ2WUY1ZlktenZGeEt0cG9XOTZ0N09V?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Wed, 10 Jun 2026 14:00:47 GMT",
-        "pubdate_iso": "2026-06-10T14:00:47+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
