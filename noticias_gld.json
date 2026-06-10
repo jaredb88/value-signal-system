@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T22:00:48.739238+00:00",
+  "updated_at_utc": "2026-06-10T22:05:16.128797+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -108,11 +108,11 @@
         "pubdate": "Wed, 10 Jun 2026 17:47:53 GMT",
         "pubdate_iso": "2026-06-10T17:47:53+00:00",
         "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Inflacion mas alta: oro como cobertura"
         }
       },
       {
@@ -122,11 +122,11 @@
         "pubdate": "Wed, 10 Jun 2026 12:34:00 GMT",
         "pubdate_iso": "2026-06-10T12:34:00+00:00",
         "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Core inflation persistente: positivo para oro"
         }
       },
       {
@@ -180,11 +180,11 @@
         "pubdate": "Wed, 10 Jun 2026 17:29:00 GMT",
         "pubdate_iso": "2026-06-10T17:29:00+00:00",
         "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
+          "direccion": "positivo",
+          "intensidad": 1,
+          "intensidad_label": "leve",
+          "emoji": "🟢",
+          "razonamiento": "Incertidumbre: leve flujo a oro"
         }
       },
       {
@@ -294,11 +294,11 @@
         "pubdate": "Tue, 09 Jun 2026 17:02:24 GMT",
         "pubdate_iso": "2026-06-09T17:02:24+00:00",
         "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Demanda institucional de oro"
         }
       },
       {
@@ -338,11 +338,11 @@
         "pubdate": "Tue, 09 Jun 2026 11:38:14 GMT",
         "pubdate_iso": "2026-06-09T11:38:14+00:00",
         "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Dolar debil favorece oro"
         }
       },
       {
@@ -382,11 +382,11 @@
         "pubdate": "Tue, 09 Jun 2026 06:24:00 GMT",
         "pubdate_iso": "2026-06-09T06:24:00+00:00",
         "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Oro al alza"
         }
       },
       {
