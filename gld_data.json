@@ -1,7 +1,7 @@
 {
-  "updated_at_utc": "2026-06-10T08:57:05.315681+00:00",
+  "updated_at_utc": "2026-06-10T09:27:05.379038+00:00",
   "precio_gld": NaN,
-  "score_final": 57.3,
+  "score_final": 57.6,
   "zona": "ATRACTIVO",
   "multiplicador": 1.5,
   "peso_aplicado_pct": 100,
@@ -12,7 +12,7 @@
     "ratio_silver": 100.0,
     "dxy": 51.9,
     "real_yield": 44.8,
-    "vix": 27.6
+    "vix": 30.6
   },
   "sub_detalles": {
     "drawdown": {
@@ -32,14 +32,14 @@
       "percentil_2y": 0.0
     },
     "dxy": {
-      "dxy_actual": 99.92,
+      "dxy_actual": 99.91,
       "percentil_2y": 51.9
     },
     "real_yield": {
       "real_yield_pct": 2.21
     },
     "vix": {
-      "vix_actual": 20.51
+      "vix_actual": 21.11
     }
   },
   "pesos": {
