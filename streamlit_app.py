@@ -223,6 +223,7 @@ with st.sidebar:
         _status_archivo("noticias_gld.json", "Noticias GLD", 3, 8),
         _status_archivo("noticias_btc.json", "Noticias BTC", 3, 8),
         _status_archivo("noticias_etfs.json", "Noticias ETFs USA", 3, 8),
+        _status_archivo("noticias_chile.json", "Noticias Chile", 3, 8),
     ]
 
     for emoji, msg in estados:
@@ -827,6 +828,137 @@ if seccion == "🇨🇱 Acciones Chilenas":
     # Footer y stop para no ejecutar el código de ETFs
     st.divider()
     st.caption("Sistema de Valores en Línea · v2.4 · Datos: BCS Chile + CMF Chile · Update: cada 30 min")
+
+    # ===== Noticias Macro Chile =====
+    st.divider()
+    st.header("📰 Noticias Macro — Chile")
+    st.caption("Cobertura de BCCh/TPM, IPSA, dolar/cobre, economia, regulacion y sectores del watchlist - Actualizacion cada 2h")
+
+    try:
+        from pathlib import Path as _Path_cl
+        import json as _json_cl
+        _cl_path = _Path_cl(__file__).parent / "noticias_chile.json"
+        if not _cl_path.exists():
+            st.info("⏳ Las noticias macro de Chile aun no se han generado. Esperando la primera ejecucion de la tarea programada.")
+        else:
+            with open(_cl_path, "r", encoding="utf-8") as _f_cl:
+                _cl_data = _json_cl.load(_f_cl)
+
+            _total_cl = _cl_data.get("stats", {}).get("total_noticias", 0)
+            _updated_cl = _cl_data.get("updated_at_utc", "")[:16].replace("T", " ")
+            st.caption(f"📊 {_total_cl} noticias · Ultima actualizacion: {_updated_cl} UTC")
+
+            # --- Resumen ejecutivo (alineacion vs benchmark del watchlist) ---
+            _res_cl = _cl_data.get("resumen_ejecutivo") or {}
+            if _res_cl:
+                _sent_cl = _res_cl.get("sentimiento", "neutral")
+                _neto_cl = _res_cl.get("score_neto", 0)
+                _npos_cl = _res_cl.get("n_positivas", 0)
+                _nneg_cl = _res_cl.get("n_negativas", 0)
+                _narr_cl = _res_cl.get("narrativa", "")
+                _vered_cl = _res_cl.get("veredicto", "")
+
+                # Conteo de acciones sobre benchmark (recalculo defensivo)
+                try:
+                    _n_sobre_cl = sum(1 for a in acciones if (a.get("evaluacion") or {}).get("status") == "Sobre benchmark")
+                    _n_total_cl = len(acciones)
+                except Exception:
+                    try:
+                        with open(_Path_cl(__file__).parent / "acciones_chilenas.json", "r", encoding="utf-8") as _fa_cl:
+                            _acc_cl = _json_cl.load(_fa_cl).get("acciones", [])
+                        _n_sobre_cl = sum(1 for a in _acc_cl if (a.get("evaluacion") or {}).get("status") == "Sobre benchmark")
+                        _n_total_cl = len(_acc_cl)
+                    except Exception:
+                        _n_sobre_cl, _n_total_cl = 0, 0
+
+                _es_alc_cl = "alcista" in _sent_cl
+                _es_baj_cl = "bajista" in _sent_cl
+                _varias_cl = _n_sobre_cl >= 3
+
+                if _varias_cl and _es_baj_cl:
+                    _emoji_al_cl = "✅"
+                    _al_cl = f"CONTRARIAN — el pesimismo macro mantiene yields altos: {_n_sobre_cl} acciones sobre benchmark justo cuando nadie las quiere. Revisar esas primero."
+                    _esp_cl = "El pesimismo macro mantiene precios bajos y yields altos: esperable que mas acciones del watchlist entren en zona sobre benchmark — mas candidatas a compra por dividendo."
+                elif _varias_cl and _es_alc_cl:
+                    _emoji_al_cl = "✅✅"
+                    _al_cl = f"DOBLE SEÑAL — optimismo macro con {_n_sobre_cl} acciones aun sobre benchmark. Las oportunidades podrian comprimirse rapido."
+                    _esp_cl = "Optimismo con yields aun altos: esperable que los precios suban y los DY se compriman. Priorizar las que estan sobre benchmark ahora."
+                elif _varias_cl:
+                    _emoji_al_cl = "✅"
+                    _al_cl = f"YIELDS MANDAN — {_n_sobre_cl} acciones sobre benchmark sin presion macro en contra."
+                    _esp_cl = "Sin presion macro clara: los yields del watchlist se mueven por fundamentales de cada empresa mas que por el entorno."
+                elif _es_alc_cl:
+                    _emoji_al_cl = "⏳"
+                    _al_cl = f"POCO QUE COMPRAR — optimismo macro pero solo {_n_sobre_cl} sobre benchmark: los precios ya subieron y comprimieron yields."
+                    _esp_cl = "Esperable que los precios sigan firmes y aparezcan pocas oportunidades nuevas. Paciencia para el DCA dividendero."
+                elif _es_baj_cl:
+                    _emoji_al_cl = "👀"
+                    _al_cl = f"ATENCION — pesimismo macro con solo {_n_sobre_cl} sobre benchmark. El mercado podria abrir oportunidades pronto."
+                    _esp_cl = "El pesimismo macro podria presionar precios a la baja y subir yields: esperable que aparezcan nuevas oportunidades sobre benchmark en las proximas semanas."
+                else:
+                    _emoji_al_cl = "🟡"
+                    _al_cl = f"SIN SEÑAL FUERTE — macro neutral, {_n_sobre_cl} de {_n_total_cl} sobre benchmark."
+                    _esp_cl = "Sin catalizadores: el watchlist deberia mantenerse estable. Monitorear resultados trimestrales y anuncios de dividendos."
+
+                if _es_alc_cl:
+                    _color_cl, _semoji_cl = "#2e7d32", "🟢"
+                elif _es_baj_cl:
+                    _color_cl, _semoji_cl = "#c62828", "🔴"
+                else:
+                    _color_cl, _semoji_cl = "#666", "⚪"
+
+                st.markdown(
+                    f"""<div style="border:1px solid #ddd;border-radius:10px;padding:14px 18px;margin:8px 0 16px 0;background:#fafafa;">
+<b>🎯 Resumen ejecutivo</b><br>
+<span style="color:{_color_cl};"><b>{_semoji_cl} Sentimiento macro Chile: {_sent_cl.upper()}</b> (neto {_neto_cl:+d} · {_npos_cl} positivas vs {_nneg_cl} negativas)</span><br>
+<span style="font-size:0.95em;">{_narr_cl}</span><br>
+<span style="font-size:0.9em;color:#555;">Veredicto noticias: <b>{_vered_cl}</b> · Watchlist: <b>{_n_sobre_cl} de {_n_total_cl} sobre benchmark sectorial</b></span><br>
+<span style="font-size:0.95em;">{_emoji_al_cl} <b>{_al_cl}</b></span><br>
+<span style="font-size:0.95em;">📈 <b>Que esperar:</b> {_esp_cl}</span>
+</div>""",
+                    unsafe_allow_html=True,
+                )
+                with st.expander("ℹ️ ¿Cómo leer este resumen?"):
+                    st.markdown("""
+- **Sentimiento macro Chile**: suma ponderada de las senales detectadas en titulares de las ultimas 72h (TPM, cobre, IPSA, regulacion, hidrologia, AFPs). No predice precios: indica la presion direccional de corto plazo.
+- **Sobre benchmark sectorial**: acciones cuyo dividend yield supera el maximo del rango tipico de su sector — las candidatas a compra por yield segun tu metodologia.
+- **Contrarian dividendero**: el pesimismo macro baja los precios y SUBE los yields. Para el inversionista de dividendos, los malos momentos del mercado son los buenos momentos de compra — siempre que los fundamentales de cada empresa se mantengan.
+- **Que esperar**: sesgo condicional del cruce sentimiento + estado del watchlist. No es prediccion: las noticias de 72h tienen poder predictivo limitado.
+- **Nota watchlist**: keywords especificas como sequia (PEHUENCHE/COLBUN), retiros AFP (HABITAT) o congelamiento de tarifas afectan sectores puntuales mas que al conjunto.
+""")
+
+            _meta_cl = _cl_data.get("categorias_meta", {})
+            _porcat_cl = _cl_data.get("noticias_por_categoria", {})
+            for _cat_cl in ["bcch_tpm", "ipsa", "dolar_cobre", "economia_chile", "politica_regulacion", "sectores_watchlist"]:
+                _items_cl = _porcat_cl.get(_cat_cl, [])
+                if not _items_cl:
+                    continue
+                _m_cl = _meta_cl.get(_cat_cl, {"emoji": "📰", "label": _cat_cl})
+                with st.expander(f"{_m_cl.get('emoji','📰')}  **{_m_cl.get('label',_cat_cl)}**  ({len(_items_cl)} noticias)", expanded=(_cat_cl == "bcch_tpm")):
+                    for _it_cl in _items_cl:
+                        _imp_cl = _it_cl.get("impacto", {}) or {}
+                        _dir_cl = _imp_cl.get("direccion", "neutral")
+                        if _dir_cl == "positivo":
+                            _c_cl = "#2e7d32"
+                            _t_cl = f"Impacto: {_imp_cl.get('intensidad_label','')} al alza"
+                        elif _dir_cl == "negativo":
+                            _c_cl = "#c62828"
+                            _t_cl = f"Impacto: {_imp_cl.get('intensidad_label','')} a la baja"
+                        else:
+                            _c_cl = "#666"
+                            _t_cl = "Sin sesgo direccional"
+                        st.markdown(
+                            f"**[{_it_cl.get('title','')}]({_it_cl.get('link','')})**  \n"
+                            f"<span style=\"color:{_c_cl};font-size:0.9em;\">"
+                            f"{_imp_cl.get('emoji','⚪')} <b>{_t_cl}</b> — {_imp_cl.get('razonamiento','')}"
+                            f"</span>  \n"
+                            f"<span style=\"color:#888;font-size:0.8em;\">📅 {_it_cl.get('pubdate_iso','')[:10]} · 🗞️ {_it_cl.get('source','')}</span>",
+                            unsafe_allow_html=True,
+                        )
+                        st.markdown("")
+    except Exception as _e_cl:
+        st.warning(f"No se pudieron cargar las noticias macro de Chile: {_e_cl}")
+
     st.stop()
 
 
