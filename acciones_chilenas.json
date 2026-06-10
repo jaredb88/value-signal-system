@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-10T02:35:18.186405",
-  "duracion_segundos": 131.592567,
+  "fecha_actualizacion": "2026-06-10T03:04:39.152014",
+  "duracion_segundos": 93.318605,
   "n_acciones": 11,
   "acciones": [
     {
@@ -655,7 +655,7 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": null,
+      "cagr_3y": 0.30413987474888304,
       "cagr_5y": 0.2062427878019384,
       "cagr_10y": -0.009026219282266879,
       "evaluacion": {
@@ -767,14 +767,27 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de GLP en Chile, Colombia y Peru. Crecimiento moderado por expansion regional. ROE 33%, payout 63%, G=12%.",
-      "precio_actual_clp": null,
-      "razon_social": null,
-      "variacion_pct": null,
-      "dy": null,
+      "precio_actual_clp": 8439.6,
+      "razon_social": "EMPRESAS LIPIGAS S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 4.14,
+        "anos_usados": 2,
+        "anos_detalle": {
+          "2025": 437.0,
+          "2024": 261.0
+        },
+        "promedio_anual": 349.0,
+        "advertencia": "Solo 2 anos disponibles (ideal: 3)"
+      },
       "cagr_3y": 0.45363750164984284,
       "cagr_5y": 0.1753237957702085,
       "cagr_10y": null,
-      "evaluacion": null,
+      "evaluacion": {
+        "status": "Bajo benchmark",
+        "emoji": "🔴",
+        "vs_benchmark_pp": -2.36
+      },
       "cmf": {
         "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
