@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T10:33:03.770328+00:00",
+  "updated_at_utc": "2026-06-10T17:50:32.235092+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -8,6 +8,13 @@
   ],
   "noticias_por_ticker": {
     "HABITAT": [
+      {
+        "title": "Superintendencia de Pensiones advierte por vendedores que ofrecen bonos de dinero para cambiarse de AFP",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWlNXMUxHY0I5UTNORElMR0gzYkE2NzF0ZXAwVVJwTW1hcGFaLWVuNjRwcUJjbmFaMklrVFg1eTFJT3pCSW5KRUM2WmR4Z0liOHJyWHotNGk4RkxVdmx5MTVjeVVqWVZDWGppTkdoM0hTQ1d6SDZpdFIwbG0zc1RYQ3o1dlJsb0JJRVJESmlITWJEMDJGRUZOUTBVY3pqRGJfU0tQeFp4ZVdENkREb05GaQ?oc=5",
+        "pubdate": "Wed, 10 Jun 2026 08:00:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "AFP Habitat"
+      },
       {
         "title": "Señales financieras | Una entrevista con Edgardo Gutiérrez, de Moneda Patria",
         "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaHB1MFdRMG9abVNpWW9la1RVb05CVlBvUy15OHBXQWhPVklaTmRYZDFSNmc2WE1idkpsT21NOTc0QlNqTmltMGpqX0IzTjhKTjIxdU44a3VVY1dZTTd3RmpoYUx0RkFmWG5Ba1U3VmJTZkZteGNfOTQtdW4xMWRyMkd2NGl0bkdybmUwTW5sYTB0MGx5ZThKcHhNeWZxdmlvT1hzazJkN21RYnNIdVhGNHl3?oc=5",
@@ -19,13 +26,6 @@
         "title": "Ex CFA y ex Security Aldo Lema es el nuevo economista y director de estrategia de AAISA",
         "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaU5kUUhjY3NKVWhMOFJDZVU1Ui1BUlJOdlVvZzZpUHY2RGsyS3A1N3NpQmJPSU1iQWRLSGlWZzRwQzRKZzYxRkJfTUJZNGdLODdmQURlcjd2eEdLWm5ud0VzSVkyM0tHR3pUaUJuTVdNOFYwOVRzdG15Z2Y1bGhwUjhoZzdNUGp3ZEN3eFVsWVZMYzZtWUc2UmJDams4SU95R1JVQUI0X29YNTJSZnFkT1Q2LWh3M1pSa3NDU2JZM1FHMnd50gHmAUFVX3lxTE8tY004X1VnRldFT0xvUmlCcmt0cHVRXzZFOHRmOXJMbFMtRktiWjZZR29jb191d2pnV0x5V1I0eko0Z0pzdXotV3BWR1pLNzd1Y3BBdTlUdU9XUlZRajVtWkQxazJEVkstSkRTa1dOQ0I4NXlIUmFKaHJ4b0tBTnl6X0laS2JScTRrQmdYUDdHd2JsNUlOajFDZFlxYWV2S3FuY3Jjb0gzWXc2Mllla2RjbXVRenVtYUNGRHRJd3NQSDh4dTNURkJWM2poTnN2d21sa3l4Rng0RmwyemRDTWdVUUpDVmxB?oc=5",
         "pubdate": "Thu, 04 Jun 2026 15:50:00 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "AFP Habitat"
-      },
-      {
-        "title": "Qué es AAISA, la acción chilena que obtuvo las mayores ganancias en mayo",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORk5HTk1FUkYzYWhvNDlZcnJRS3ZycGRaVjljUW52VVJaYTM1MW9hcER2Qk8wZkMzZ3R5cFZWbjdYbUgwTTZvWjJHeUhiWWVTU2laaUpHOFoxU0xVZk1JXzdubS1pWGVDbXBTY2l5ZXEyT251aTJWdGM1NUZRYnp2STZpWWlGUEZuTGROV1BWcnJWcDEtdlZxSmdRd29hY19rLTRIUEpOWUpXUklGY2JlaUZn0gHTAUFVX3lxTE1yRlVrRTNwMUh5MGlGRUdBSWFPdERoZjJBZF9NOWtCX183cmJDa19MSUpEcG1yQ3kza2lkdmJBQkNuUE55cWJmVzFFNThUOWVXRXdxS3REX09JZExrLV9Pb29WNFVZR1lXTWluV0hVNDFGWklhb0RubF93Wi1JTGhBNDlSdnVsVTB2LTZJbFprUDVoX3NqQ2hZZ1pIbk4yZlhBZzhYQnEzWTFsdFRMMExpVl9WcHBNd0RjQzVSbDZ4OTdBdWxBWUg3blNTNnpQc1dFUFE?oc=5",
-        "pubdate": "Wed, 03 Jun 2026 16:31:43 GMT",
         "source": "La Tercera",
         "matched_keyword": "AFP Habitat"
       }
@@ -40,7 +40,7 @@
       },
       {
         "title": "ZONA FRANCA DE IQUIQUE S.A.: Cambios en la administración",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1781087341",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=02f66c2f52fb516a59a13d8f8507372fVFdwQmVVNXFRVEpOUkUwelRVUkJkMDEzUFQwPQ==&secuencia=-1&t=1781113562",
         "pubdate": "3 jun 2026 15:28",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "zona franca de iquique",
@@ -79,16 +79,16 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "IPSA anota su racha de caídas más extensa de 2026 por tormenta global de mercados tras datos de empleo en EEUU",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CQ09GcG16M0JDODViLTJMVHBGR1U2X25Fdk1wdVJTMWVvWHRLSzFZQVh6N1hCWUtPbE5LcmZrUHNvQnFJWElXZTNRTlpEYmtzazhka0JnLS0ySWRMb3MwRlNPeVl5ZEM1aU5V?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 20:29:00 GMT",
+        "title": "La investigación sobre el Tren de Aragua reaviva el debate en Chile sobre el secreto bancario",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQ0hLd19yclZsbnZuYUhGVmg1ak5ZQ3VrV0tKWHMtTmVfREcyM1BoVFVIczRCMEw3ZGZkajFpZnVSd3ozLUJoWl9RTHRyR3FLMFdrVXpJcFhrTGk5MUxCaHZ6OE1WSDViaHhZYVk3MjB2bm1RUmtSQXY4QnZGQ2N4QlNIRllZZG1pclUyQVhROFRWWFNORDNDckZmemFUVmlHcmNTbkpiNVVvSGh0Zm9VSmg1RlA?oc=5",
+        "pubdate": "Mon, 08 Jun 2026 16:47:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
       {
-        "title": "El reordenamiento del gobierno corporativo de Sodimac en medio del frenazo del sector",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPM0JuM2h3WVE4cG9nSDhuM3RJanA3eVkyQkZ1WWZ4WE5ubDVfMU9GOFFZbFA2QVhHSUtVZElkWEd0OVlZRXNtNFN6VkxFMDE5ODdicDNRMzNUeFAtUnl6MUJaSXBGLW51UlJWbFkta2g0MDFOMDM2U2c0TEZydWc4bWJjc2NsSVhSWUVXRnlWdWx5UFNGTm9OX2xaWWZ6dUtBQ2RSZjQwUjlaLXYyamc?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 18:50:00 GMT",
+        "title": "IPSA anota su racha de caídas más extensa de 2026 por tormenta global de mercados tras datos de empleo en EEUU",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CQ09GcG16M0JDODViLTJMVHBGR1U2X25Fdk1wdVJTMWVvWHRLSzFZQVh6N1hCWUtPbE5LcmZrUHNvQnFJWElXZTNRTlpEYmtzazhka0JnLS0ySWRMb3MwRlNPeVl5ZEM1aU5V?oc=5",
+        "pubdate": "Fri, 05 Jun 2026 20:29:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -167,7 +167,7 @@
     "CENCOMALLS": [
       {
         "title": "CENCOSUD SHOPPING S.A.: Activos o paquetes accionarios, adquisición o enajenación",
-        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1781087341",
+        "link": "https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=153314cf3a0d5d6de3160a6bd7f0c5ffVFdwQmVVNXFRVEpOUkUweVQwUnJOVTVuUFQwPQ==&secuencia=-1&t=1781113562",
         "pubdate": "3 jun 2026 10:16",
         "source": "CMF (Hecho Esencial)",
         "matched_keyword": "cencosud shopping",
@@ -182,8 +182,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2218,
+    "total_noticias_brutas": 2221,
     "total_noticias_filtradas": 21,
-    "total_hechos_esenciales_brutos": 101
+    "total_hechos_esenciales_brutos": 103
   }
 }
