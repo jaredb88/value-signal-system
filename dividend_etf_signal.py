@@ -508,6 +508,12 @@ def analyze_dividend_etf(ticker: str, aporte_base_usd: float = 100, usd_clp: flo
         # Metadatos
         "fecha_analisis": datetime.now().isoformat(),
         "ultima_fecha_dato": df.index[-1].strftime('%Y-%m-%d'),
+
+        # Historico de precios (5y) para grafico con selector en dashboard
+        "historico": [
+            {"fecha": idx.strftime('%Y-%m-%d'), "close": round(float(c), 2)}
+            for idx, c in df["Close"].items()
+        ],
     }
 
 

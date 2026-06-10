@@ -2413,6 +2413,27 @@ if DIVIDEND_ETFS_AVAILABLE:
                         st.markdown(f"**{color_d} {nombre_d}** ({peso_d:.0%}) — {label_d}")
                         st.progress(v_d/100, text=f"{v_d:.1f}/100 · {desc_d}")
 
+    # --- Evolucion del precio con selector (estandarizado con tab Historico de indices) ---
+    if div_results:
+        st.subheader("Evolución del precio")
+        periodo_div = st.radio("Período", ["1Y", "3Y", "5Y"], index=2, horizontal=True, key="div_periodo")
+        _dias_div = {"1Y": 365, "3Y": 365 * 3, "5Y": 365 * 5}[periodo_div]
+        _col_g1, _col_g2 = st.columns(2)
+        for _col_g, _tk_g in [(_col_g1, "SCHD"), (_col_g2, "JEPQ")]:
+            if _tk_g not in div_results:
+                continue
+            _hist_g = div_results[_tk_g].get("historico") or []
+            with _col_g:
+                st.markdown(f"**{_tk_g}**")
+                if _hist_g:
+                    _dfg = pd.DataFrame(_hist_g)
+                    _dfg["fecha"] = pd.to_datetime(_dfg["fecha"])
+                    _dfg = _dfg.set_index("fecha")
+                    _cut_g = _dfg.index.max() - pd.Timedelta(days=_dias_div)
+                    st.line_chart(_dfg[_dfg.index >= _cut_g]["close"], height=300)
+                else:
+                    st.info("Histórico aún no disponible. Se generará en la próxima corrida de la tarea (cada 30 min).")
+
     with st.expander("ℹ️ ¿Cómo se calcula el score de Dividend ETFs?"):
         st.markdown("""
         A diferencia de los ETFs de índices (S&P 500, Nasdaq), los Dividend ETFs se evalúan con criterios específicos de income investing:
