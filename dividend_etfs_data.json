@@ -1,8 +1,78 @@
 {
-  "updated_at_utc": "2026-06-10T10:34:19.597843+00:00",
-  "etfs": {},
-  "fallidos": [
-    "SCHD",
-    "JEPQ"
-  ]
+  "updated_at_utc": "2026-06-10T10:47:16.293885+00:00",
+  "etfs": {
+    "SCHD": {
+      "ticker": "SCHD",
+      "name": "SCHD",
+      "long_name": "Schwab US Dividend Equity ETF",
+      "description": "ETF pasivo que replica el Dow Jones US Dividend 100 Index. Selecciona ~100 acciones USA con: (1) historial de pago de dividendos ≥10 años, (2) ratios financieros sólidos vs sus pares (ROE, deuda/cash flow), (3) yield atractivo. Excluye REITs. Top holdings históricos: AbbVie, Cisco, Verizon, Pfizer, Texas Instruments, Coca-Cola. Dividendos cualificados (ventaja fiscal). Expense ratio 0.06%. Trimestral.",
+      "type": "Pasivo - Dividend Growth",
+      "inception": "2011-10-20",
+      "expense_ratio": 0.0006,
+      "frequency": "Trimestral",
+      "precio_usd": 32.29,
+      "precio_clp": null,
+      "usd_clp": null,
+      "dy_actual_pct": 3.27,
+      "dy_historico_3y_pct": 3.68,
+      "drawdown_pct": -1.64,
+      "cagr_precio_3y_pct": 10.53,
+      "cagr_precio_5y_pct": 4.7,
+      "dgr_3y_pct": 6.22,
+      "momentum_pct": 19.14,
+      "componentes": {
+        "dy_vs_historico": 38.792651577715006,
+        "drawdown": 4.112099340613986,
+        "balance_cagr": 92.00890168428205,
+        "momentum": 97.8522960480945,
+        "dgr": 75.0
+      },
+      "score": 49.4,
+      "zona": "NEUTRAL",
+      "multiplicador": 1.0,
+      "emoji": "🟡",
+      "aporte_base_usd": 140,
+      "aporte_sugerido_usd": 140.0,
+      "aporte_sugerido_clp": null,
+      "fecha_analisis": "2026-06-10T06:47:16.095052",
+      "ultima_fecha_dato": "2026-06-08"
+    },
+    "JEPQ": {
+      "ticker": "JEPQ",
+      "name": "JEPQ",
+      "long_name": "JPMorgan Nasdaq Equity Premium Income ETF",
+      "description": "ETF activo de JPMorgan. Estrategia: (1) ~80% portfolio en acciones del Nasdaq-100 seleccionadas con criterios ESG y data science, (2) ~20% en ELNs (notas equity-linked) que ejecutan covered calls sobre el Nasdaq-100. Las primas de las calls generan ingreso mensual. Trade-off: yield alto (~10%) a cambio de capear upside en mercados alcistas fuertes. Dividendos NO cualificados. Expense ratio 0.35%. Pago mensual. Gestor: Hamilton Reiner.",
+      "type": "Activo - Covered Call Income",
+      "inception": "2022-05-03",
+      "expense_ratio": 0.0035,
+      "frequency": "Mensual",
+      "precio_usd": 59.63,
+      "precio_clp": null,
+      "usd_clp": null,
+      "dy_actual_pct": 10.26,
+      "dy_historico_3y_pct": 10.54,
+      "drawdown_pct": -2.49,
+      "cagr_precio_3y_pct": 8.04,
+      "cagr_precio_5y_pct": 3.84,
+      "dgr_3y_pct": 2.73,
+      "momentum_pct": 13.11,
+      "componentes": {
+        "dy_vs_historico": 47.39644991947228,
+        "drawdown": 6.214229026308373,
+        "balance_cagr": 100.0,
+        "momentum": 82.77988494960076,
+        "dgr": 50.0
+      },
+      "score": 48.9,
+      "zona": "NEUTRAL",
+      "multiplicador": 1.0,
+      "emoji": "🟡",
+      "aporte_base_usd": 60,
+      "aporte_sugerido_usd": 60.0,
+      "aporte_sugerido_clp": null,
+      "fecha_analisis": "2026-06-10T06:47:16.293713",
+      "ultima_fecha_dato": "2026-06-08"
+    }
+  },
+  "fallidos": []
 }
