@@ -68,12 +68,29 @@ def zona_de_score(score):
 # ============================================================
 
 def fetch_yahoo_history(ticker, period="5y"):
-    """Descarga historial de Yahoo. BTC necesita 5y para Pi Cycle (350d MA)."""
+    """Descarga historial de Yahoo. BTC necesita 5y para Pi Cycle (350d MA).
+
+    Filtra automaticamente filas con Close=NaN para evitar el bug donde
+    Yahoo sirve dias con volumen pero sin OHLC (pasa con tickers grandes
+    como SCHD/JEPQ/SPY/GLD/IBIT en ciertos momentos).
+    """
     try:
         data = yf.Ticker(ticker).history(period=period)
         if data.empty:
             log.warning(f"  {ticker}: sin datos en Yahoo")
             return None
+
+        # Filtrar filas con Close NaN (bug intermitente de Yahoo)
+        filas_antes = len(data)
+        data = data.dropna(subset=["Close"]).copy()
+        filas_despues = len(data)
+        if filas_antes != filas_despues:
+            log.warning(f"  {ticker}: filtradas {filas_antes - filas_despues} filas con Close=NaN")
+
+        if data.empty:
+            log.error(f"  {ticker}: dataframe vacio despues de filtrar NaN")
+            return None
+
         return data
     except Exception as e:
         log.error(f"  {ticker}: error Yahoo: {e}")
