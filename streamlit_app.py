@@ -2237,11 +2237,13 @@ with tab1:
 # TAB 2: Noticias
 # ============================================================
 with tab3:
-    st.subheader("Evolución del score (últimos 5 años)")
+    st.subheader("Evolución del score")
+    periodo_hist = st.radio("Período", ["1Y", "3Y", "5Y"], index=2, horizontal=True, key="hist_periodo")
+    _n_meses_hist = {"1Y": 12, "3Y": 36, "5Y": 60}[periodo_hist]
 
     c1, c2 = st.columns(2)
-    sp5 = sp.dropna(subset=['score']).tail(60)
-    nq5 = nq.dropna(subset=['score']).tail(60)
+    sp5 = sp.dropna(subset=['score']).tail(_n_meses_hist)
+    nq5 = nq.dropna(subset=['score']).tail(_n_meses_hist)
 
     with c1:
         st.markdown("**S&P 500**")
@@ -2249,6 +2251,15 @@ with tab3:
     with c2:
         st.markdown("**Nasdaq 100**")
         st.line_chart(nq5['score'], height=300)
+
+    st.subheader("Evolución del precio")
+    c1p, c2p = st.columns(2)
+    with c1p:
+        st.markdown("**S&P 500**")
+        st.line_chart(data['sp500'].dropna().tail(_n_meses_hist), height=300)
+    with c2p:
+        st.markdown("**Nasdaq 100**")
+        st.line_chart(data['nasdaq'].dropna().tail(_n_meses_hist), height=300)
 
     # CSV histórico si existe
     history_file = Path('value_signal_history.csv')
