@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T21:27:04.831779+00:00",
+  "updated_at_utc": "2026-06-10T21:57:04.864730+00:00",
   "precio_gld": 374.58,
   "score_final": 68.0,
   "zona": "ATRACTIVO",
@@ -32,7 +32,7 @@
       "percentil_2y": 20.3
     },
     "dxy": {
-      "dxy_actual": 100.02,
+      "dxy_actual": 100.03,
       "percentil_2y": 53.0
     },
     "real_yield": {
