@@ -891,7 +891,29 @@ if seccion == "🥇 Oro (GLD)":
         import altair as _alt_gld
         df_hist = _pd_gld.DataFrame(historico)
         df_hist["fecha"] = _pd_gld.to_datetime(df_hist["fecha"])
-        st.subheader("📈 Precio GLD (último año)")
+        # Selector de periodo
+        col_g_h1, col_g_h2 = st.columns([2, 1])
+        with col_g_h1:
+            st.subheader("📈 Precio GLD")
+        with col_g_h2:
+            periodo_gld = st.radio(
+                "Periodo:",
+                ["1Y", "3Y", "5Y"],
+                index=0,
+                horizontal=True,
+                label_visibility="collapsed",
+                key="gld_periodo"
+            )
+        # Filtrar segun periodo seleccionado
+        from datetime import datetime as _dt_gld, timedelta as _td_gld
+        hoy_gld = _dt_gld.now()
+        if periodo_gld == "1Y":
+            cutoff_gld = hoy_gld - _td_gld(days=365)
+        elif periodo_gld == "3Y":
+            cutoff_gld = hoy_gld - _td_gld(days=365*3)
+        else:  # 5Y
+            cutoff_gld = hoy_gld - _td_gld(days=365*5)
+        df_hist = df_hist[df_hist["fecha"] >= cutoff_gld].reset_index(drop=True)
 
         # Calculamos el rango con 5% de padding arriba y abajo
         precio_min = df_hist["precio"].min()
