@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T22:16:46.441765+00:00",
+  "updated_at_utc": "2026-06-10T22:39:30.966235+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -29,6 +29,20 @@
   },
   "noticias_por_categoria": {
     "precio": [
+      {
+        "title": "Precios del oro hoy, 11 de junio de 2026: Precios de lingotes de oro SJC 9999, anillos lisos y precios mundiales del oro a mediados de semana.",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUnVfX0pzLTA2dW5xdUxSMnJiNDROMEpvcjBsMEMyaklKdDRmRjBub19HaW5HOG1KaGJhMFdWamJQNDRtTXZBR2k4ZjZ5dnVLLXBmUEVoaXd0dk9JeDN5X2N0Nk8wemU0V2hTUlk4M1JuQW9BRlUxV1hwZjd1Y2h0dFlaZFR2ZFJhTzB2N0VYR21rMHQ5Q3dIS3NqSzZ3cGs0elEycXB3VVA4dDFKRXlnOXRKdw?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Wed, 10 Jun 2026 22:37:49 GMT",
+        "pubdate_iso": "2026-06-10T22:37:49+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Precio del oro hoy (11 de junio): Se acerca a los 4.000 dólares.",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5EUkFZMDZlc3hfbW50bHRVVmwtWU1FUVhua1pnUUMwdDlOTkl1cjdUSmVod29UNFZXZ1NXWXZWWF9jVHZxSDNzVXRMbTNyS0V1LVVzd1cxUGxWaFpjZjhYUVZVZi16WmRHcDE3eHlaY0JkVU03SThBWlNB?oc=5",
@@ -77,20 +91,6 @@
         "source": "Vietnam.vn",
         "pubdate": "Wed, 10 Jun 2026 21:04:58 GMT",
         "pubdate_iso": "2026-06-10T21:04:58+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "XAUT se consolida cerca de los 1.950 dólares en junio de 2026",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1WMzFIaVBSMDN1UDBDQ3E3WDFPZG4wR1VyVUhvTWZMMmtHSndGT0Z3eUVFYmNsZmdxQ0V1Q3hLVllIcXNJQWtBdmZoQ3ZKNkM1c2NpNS1INkdUWlZJeVVr?oc=5",
-        "source": "Cryptonews.net",
-        "pubdate": "Wed, 10 Jun 2026 15:12:09 GMT",
-        "pubdate_iso": "2026-06-10T15:12:09+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -364,7 +364,7 @@
       {
         "title": "Venezuela Deploys Troops in Mafia-Run Gold Mining Heartland",
         "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ1FxcTBxUUhLTkdnZW5CY3NMOGh3Tkg2a2l6NjhFc2lTR2NEck5ETVV1V2hraHFaMXFWZ3RCNEV0SE5rMVUxdnpISGNzYUdtWWZNSVNVUWZnMi1RYkx6cXhBZlQyZDNOR24zYzVmSDQ1OEZ4Y2tIaHV5YUN2bDZQSmIzdWJhUzExZlhocWJxZ3VYUzMyYlZ4VmtsV3YxY3pMVTE5ekxySGducUV3ZktR?oc=5",
-        "source": "Bloomberg",
+        "source": "Bloomberg.com",
         "pubdate": "Tue, 09 Jun 2026 22:18:51 GMT",
         "pubdate_iso": "2026-06-09T22:18:51+00:00",
         "impacto": {
