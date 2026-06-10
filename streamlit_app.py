@@ -2012,51 +2012,6 @@ def render_summary_card(col, ticker_label, sub_label, score, zona):
 
 
 # ============================================================
-# SECCIÓN RESUMEN - 4 ETFs en 2x2
-# ============================================================
-st.header("📋 Resumen de inversiones")
-st.caption("Vista rápida de todos los ETFs. Detalle completo más abajo.")
-
-# Fila 1: Growth ETFs
-sum_row1_col1, sum_row1_col2 = st.columns(2)
-
-mult_sp = MULT.get(last_sp['zona'], 1.0)
-render_summary_card(
-    sum_row1_col1, "CFISPETF", "S&P 500 · Growth ETF",
-    last_sp['score'], last_sp['zona'],
-)
-
-mult_nq = MULT.get(last_nq['zona'], 1.0)
-render_summary_card(
-    sum_row1_col2, "CFINASDAQ", "Nasdaq 100 · Growth ETF",
-    last_nq['score'], last_nq['zona'],
-)
-
-# Fila 2: Dividend ETFs
-sum_row2_col1, sum_row2_col2 = st.columns(2)
-
-if "SCHD" in div_results:
-    r_schd = div_results["SCHD"]
-    render_summary_card(
-        sum_row2_col1, "SCHD", "Dividend Growth",
-        r_schd['score'], r_schd['zona'],
-    )
-else:
-    with sum_row2_col1:
-        st.info("SCHD no disponible")
-
-if "JEPQ" in div_results:
-    r_jepq = div_results["JEPQ"]
-    render_summary_card(
-        sum_row2_col2, "JEPQ", "Covered Call Income",
-        r_jepq['score'], r_jepq['zona'],
-    )
-else:
-    with sum_row2_col2:
-        st.info("JEPQ no disponible")
-
-
-# ============================================================
 # CÓMO DISTRIBUIR LA INVERSIÓN (justo después del resumen)
 # ============================================================
 st.divider()
