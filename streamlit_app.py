@@ -222,6 +222,7 @@ with st.sidebar:
         _status_archivo("dividend_etfs_data.json", "Dividend ETFs", 1, 3),
         _status_archivo("noticias_gld.json", "Noticias GLD", 3, 8),
         _status_archivo("noticias_btc.json", "Noticias BTC", 3, 8),
+        _status_archivo("noticias_etfs.json", "Noticias ETFs USA", 3, 8),
     ]
 
     for emoji, msg in estados:
@@ -2401,6 +2402,141 @@ if DIVIDEND_ETFS_AVAILABLE:
 
 else:
     st.warning("Módulo de Dividend ETFs no disponible. Verifica que dividend_etf_signal.py esté en el repo.")
+
+
+
+# ===== Noticias Macro Mercado USA =====
+st.divider()
+st.header("📰 Noticias Macro — Mercado USA")
+st.caption("Cobertura de Fed, S&P 500, Nasdaq, economia, earnings y sentimiento - Actualizacion cada 2h")
+
+try:
+    from pathlib import Path as _Path_etf
+    import json as _json_etf
+    _etf_path = _Path_etf(__file__).parent / "noticias_etfs.json"
+    if not _etf_path.exists():
+        st.info("⏳ Las noticias macro USA aun no se han generado. Esperando la primera ejecucion de la tarea programada.")
+    else:
+        with open(_etf_path, "r", encoding="utf-8") as _f_etf:
+            _etf_data = _json_etf.load(_f_etf)
+
+        _total_etf = _etf_data.get("stats", {}).get("total_noticias", 0)
+        _updated_etf = _etf_data.get("updated_at_utc", "")[:16].replace("T", " ")
+        st.caption(f"📊 {_total_etf} noticias · Ultima actualizacion: {_updated_etf} UTC")
+
+        # --- Resumen ejecutivo (doble zona: SP500 + NASDAQ) ---
+        _res_etf = _etf_data.get("resumen_ejecutivo") or {}
+        if _res_etf:
+            _sent_etf = _res_etf.get("sentimiento", "neutral")
+            _neto_etf = _res_etf.get("score_neto", 0)
+            _npos_etf = _res_etf.get("n_positivas", 0)
+            _nneg_etf = _res_etf.get("n_negativas", 0)
+            _narr_etf = _res_etf.get("narrativa", "")
+            _vered_etf = _res_etf.get("veredicto", "")
+
+            try:
+                _zona_sp_etf = str(last_sp["zona"])
+                _zona_nq_etf = str(last_nq["zona"])
+            except Exception:
+                _zona_sp_etf, _zona_nq_etf = "?", "?"
+
+            _zonas_etf = [_zona_sp_etf, _zona_nq_etf]
+            _nc_etf = sum(1 for z in _zonas_etf if z in ("OPORTUNIDAD", "ATRACTIVO"))
+            _nk_etf = sum(1 for z in _zonas_etf if z == "CARO")
+            _es_alc_etf = "alcista" in _sent_etf
+            _es_baj_etf = "bajista" in _sent_etf
+
+            if _nc_etf == 2 and _es_baj_etf:
+                _emoji_al_etf = "✅"
+                _al_etf = "CONTRARIAN — ambos indices en zona de compra con noticias pesimistas. El pesimismo explica los precios bajos: historicamente buen punto de entrada DCA."
+                _esp_etf = "Presion vendedora a corto plazo: los indices podrian seguir bajando antes de estabilizar. Para DCA, posibles aportes a mejores precios en las proximas semanas."
+            elif _nc_etf == 2 and _es_alc_etf:
+                _emoji_al_etf = "✅✅"
+                _al_etf = "DOBLE SEÑAL — ambos indices atractivos y noticias a favor. La ventana de entrada puede cerrarse rapido."
+                _esp_etf = "Presion compradora con precios aun atractivos: el rebote podria acelerarse y cerrar la ventana de entrada."
+            elif _nc_etf == 2:
+                _emoji_al_etf = "✅"
+                _al_etf = "SCORE MANDA — ambos indices en zona de compra sin catalizadores en contra en las noticias."
+                _esp_etf = "Sin presion clara desde noticias: los indices deberian moverse por factores tecnicos. La zona de compra se mantiene mientras el score no cambie."
+            elif _nk_etf == 2 and _es_alc_etf:
+                _emoji_al_etf = "⚠️"
+                _al_etf = "EUFORIA — ambos indices caros con optimismo alto. Riesgo de FOMO: mejor reducir aportes."
+                _esp_etf = "Momentum alcista sobre precios ya caros: puede seguir subiendo por inercia, pero el riesgo de correccion crece con cada tramo."
+            elif _nk_etf == 2 and _es_baj_etf:
+                _emoji_al_etf = "⏳"
+                _al_etf = "CORRECCION EN CURSO — indices caros y noticias negativas. Esperar mejores precios."
+                _esp_etf = "Correccion probable en curso: esperable que los indices retrocedan hacia zonas mas razonables. La paciencia suele pagar."
+            elif _nk_etf == 2:
+                _emoji_al_etf = "⏳"
+                _al_etf = "CARO SIN CATALIZADORES — aportes minimos hasta que mejoren los precios."
+                _esp_etf = "Precios caros sin catalizadores: esperable lateralizacion o correccion gradual."
+            elif _nc_etf == 1 and _nk_etf == 1:
+                _emoji_al_etf = "🔀"
+                _al_etf = f"SEÑAL MIXTA — SP500 ({_zona_sp_etf}) y Nasdaq ({_zona_nq_etf}) en zonas distintas. Priorizar el indice en zona de compra."
+                _esp_etf = "Divergencia entre indices: esperable que se muevan a ritmos distintos. El sesgo de noticias pesa mas sobre el indice mas caro."
+            else:
+                _emoji_al_etf = "🟡"
+                _al_etf = "SIN SEÑAL FUERTE — zonas neutrales. Mantener DCA normal."
+                _esp_etf = "Sin catalizadores dominantes: esperable que los indices se muevan por factores tecnicos mas que por noticias."
+
+            if _es_alc_etf:
+                _color_etf, _semoji_etf = "#2e7d32", "🟢"
+            elif _es_baj_etf:
+                _color_etf, _semoji_etf = "#c62828", "🔴"
+            else:
+                _color_etf, _semoji_etf = "#666", "⚪"
+
+            st.markdown(
+                f"""<div style="border:1px solid #ddd;border-radius:10px;padding:14px 18px;margin:8px 0 16px 0;background:#fafafa;">
+<b>🎯 Resumen ejecutivo</b><br>
+<span style="color:{_color_etf};"><b>{_semoji_etf} Sentimiento del feed: {_sent_etf.upper()}</b> (neto {_neto_etf:+d} · {_npos_etf} positivas vs {_nneg_etf} negativas)</span><br>
+<span style="font-size:0.95em;">{_narr_etf}</span><br>
+<span style="font-size:0.9em;color:#555;">Veredicto noticias: <b>{_vered_etf}</b> · Zona SP500: <b>{_zona_sp_etf}</b> · Zona Nasdaq: <b>{_zona_nq_etf}</b></span><br>
+<span style="font-size:0.95em;">{_emoji_al_etf} <b>{_al_etf}</b></span><br>
+<span style="font-size:0.95em;">📈 <b>Que esperar:</b> {_esp_etf}</span>
+</div>""",
+                unsafe_allow_html=True,
+            )
+            with st.expander("ℹ️ ¿Cómo leer este resumen?"):
+                st.markdown("""
+- **Sentimiento del feed**: suma ponderada de las senales detectadas en los titulares de las ultimas 72h. No predice el precio: indica la presion direccional de corto plazo segun las noticias.
+- **Zonas SP500 / Nasdaq**: la recomendacion cuantitativa del score de cada indice (precio vs su propia historia). Independiente de las noticias.
+- **Contrarian**: el pesimismo extremo suele coincidir con precios bajos (suelos) y la euforia con precios altos (techos). Por eso noticias negativas + zona de compra pueden ser una **confirmacion**, no una contradiccion.
+- **Que esperar**: sesgo condicional del cruce sentimiento + zonas. No es una prediccion: las noticias de 72h tienen poder predictivo limitado.
+- **Nota**: la inflacion alta es negativa para acciones (Fed hawkish) pero positiva para el oro (hedge) — por eso este feed puede divergir del feed del oro con las mismas noticias.
+""")
+
+        _meta_etf = _etf_data.get("categorias_meta", {})
+        _porcat_etf = _etf_data.get("noticias_por_categoria", {})
+        for _cat_etf in ["fed_tasas", "mercado", "tech_nasdaq", "economia", "earnings", "sentimiento"]:
+            _items_etf = _porcat_etf.get(_cat_etf, [])
+            if not _items_etf:
+                continue
+            _m_etf = _meta_etf.get(_cat_etf, {"emoji": "📰", "label": _cat_etf})
+            with st.expander(f"{_m_etf.get('emoji','📰')}  **{_m_etf.get('label',_cat_etf)}**  ({len(_items_etf)} noticias)", expanded=(_cat_etf == "fed_tasas")):
+                for _it_etf in _items_etf:
+                    _imp_etf = _it_etf.get("impacto", {}) or {}
+                    _dir_etf = _imp_etf.get("direccion", "neutral")
+                    if _dir_etf == "positivo":
+                        _c_etf = "#2e7d32"
+                        _t_etf = f"Impacto: {_imp_etf.get('intensidad_label','')} al alza"
+                    elif _dir_etf == "negativo":
+                        _c_etf = "#c62828"
+                        _t_etf = f"Impacto: {_imp_etf.get('intensidad_label','')} a la baja"
+                    else:
+                        _c_etf = "#666"
+                        _t_etf = "Sin sesgo direccional"
+                    st.markdown(
+                        f"**[{_it_etf.get('title','')}]({_it_etf.get('link','')})**  \n"
+                        f"<span style=\"color:{_c_etf};font-size:0.9em;\">"
+                        f"{_imp_etf.get('emoji','⚪')} <b>{_t_etf}</b> — {_imp_etf.get('razonamiento','')}"
+                        f"</span>  \n"
+                        f"<span style=\"color:#888;font-size:0.8em;\">📅 {_it_etf.get('pubdate_iso','')[:10]} · 🗞️ {_it_etf.get('source','')}</span>",
+                        unsafe_allow_html=True,
+                    )
+                    st.markdown("")
+except Exception as _e_etf:
+    st.warning(f"No se pudieron cargar las noticias macro USA: {_e_etf}")
 
 
 # Footer
