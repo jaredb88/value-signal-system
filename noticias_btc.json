@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T22:16:31.875217+00:00",
+  "updated_at_utc": "2026-06-10T22:39:31.645309+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -174,6 +174,20 @@
     ],
     "regulacion": [
       {
+        "title": "Estados Unidos redefine la regulación de las stablecoins mientras crece la presión sobre el sector cripto",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNczJ3ZjJzYmZubVlDZWJRdjRmVmxmeHRNejEwZUVWMlRpSXc4WEF5YkNFamVPUnh0enJwQzJWU292N2hVaUtfRU9DcWVyTXZsdnFwNzViNE45SWFIUHA0MnNXQjBJbG9pMGQ0VHpXcVRmeGVaeXBVNWZnQWNLMGpsV18tYlNHbE1WT2dFSXE0MmhOSjVyRE0zNzctdDVxQ1FBcDBSWmxwM3lOUUsxYTIzZERZck50ZWVoV0YxV19xUldfN21fck5LRlJUeldIRlFFTjFlcV85b3RiR09KM1F1NQ?oc=5",
+        "source": "CriptoTendencia",
+        "pubdate": "Wed, 10 Jun 2026 22:18:00 GMT",
+        "pubdate_iso": "2026-06-10T22:18:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "La licencia de cripto gana relevancia global en medio de una nueva ola regulatoria",
         "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdkxoeXdJX0xQdFRaZkwxZ3R0cGNPSktwc0Z3YjZpMkwzV2x4VE9WOGt4ZkJSVzRhODdwQ2NQM1Z0dGJGRjZQanpZTmhYVlg0TTNZWEc1aWxaRlJRVVF6VE1IUmRKd01aanBrZjV3WWxyUzl1THZZWXNmLTlUajBocGpSemVWSGFaVW13OUk2RFVMZmtaVzV5WENNamVNV3k3bTVjUWtTR0Z5bG9aWTZQalc4aGQzbTVVY3FVdTRKTWZxeGx4VGRDdWJ2dDU2Y0xnSHdfaU1JaU8tamkyTGg5SzRTONIB6AFBVV95cUxNWS1GZDZnd25sRmVEZE9HOERrR2VoLXJBZzRKdHlKTjJlU2VzREJpTlZtZi0wdVJ0UHYxbjdyOWFmV2xfM1RYWUdyUS0wN1JhazBmWV9jYmE2OWtBcGVVZHZuVWJCV1hRUnY2RmFzUHV4NjFJOW0xWVdBbGN1b2ZJVWs4Q0czaTN3YzRKdWhuYnFpSjVic0c0d0VzNlRLSlNnNWtGVERXMXp4VjVpbTg5X05qSG9QRXl6b29YcGdoM0gtVkRLdGFJcTVPbldzQXVCMjI1aHVjamlGejJMVU9yM2xxNFFER1d3?oc=5",
         "source": "La Comarca de Puertollano",
@@ -221,20 +235,6 @@
         "source": "TradingView",
         "pubdate": "Tue, 09 Jun 2026 12:30:52 GMT",
         "pubdate_iso": "2026-06-09T12:30:52+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Coinbase, Ripple y más de 200 organizaciones piden al Senado votar la Ley Clarity",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91c3F0R1oyQ3dubFN6RVZjN0NnTDd2Rk5tNDI2bEpzVkhjdU1RS3lQNHR0MkhvdGg1UXR4OW1lOTFsS3JnM0JRUGUzLXhWaFh1b1hHYV9fLWE3dw?oc=5",
-        "source": "Cryptonews.net",
-        "pubdate": "Tue, 09 Jun 2026 10:12:07 GMT",
-        "pubdate_iso": "2026-06-09T10:12:07+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -321,8 +321,8 @@
         "title": "La inflación en Estados Unidos alcanzó su nivel más alto en tres años, mientras todas las miradas se centran en el nuevo presidente de la Reserva Federal, cuyo historial aún no ha sido probado",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVWxVZGZHTnJRcTFnUDdTTUx3WDdMTWd3V0xMRW9waVdZb3lEeE9WS3k1cFhhQlFicmNlZ2ZURHFQRGJuN1MwVmVTMjRpZnlUVmYtenh3M0RXZHprV0Y3Ml9nTmlQVmRxcFJMMXplNU5mTVNpckdzTm1vTU0xRnpiVw?oc=5",
         "source": "Cryptopolitan",
-        "pubdate": "Wed, 10 Jun 2026 18:23:58 GMT",
-        "pubdate_iso": "2026-06-10T18:23:58+00:00",
+        "pubdate": "Wed, 10 Jun 2026 22:18:45 GMT",
+        "pubdate_iso": "2026-06-10T22:18:45+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
