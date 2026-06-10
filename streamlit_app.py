@@ -1199,24 +1199,31 @@ if seccion == "🥇 Oro (GLD)":
                 if _zona_compra_ej and _es_bajista_ej:
                     _alin_emoji_ej = "✅"
                     _alin_ej = "CONTRARIAN — el pesimismo del feed explica el precio bajo. Historicamente buen punto de entrada DCA, aunque puede seguir cayendo en el corto plazo."
+                    _esperar_ej = "Presion vendedora a corto plazo: el precio podria seguir bajando antes de estabilizar. Para DCA, eso significa posibles aportes a mejores precios en las proximas semanas."
                 elif _zona_compra_ej and _es_alcista_ej:
                     _alin_emoji_ej = "✅✅"
                     _alin_ej = "DOBLE SEÑAL — precio atractivo y noticias a favor. La ventana de entrada puede cerrarse rapido."
+                    _esperar_ej = "Presion compradora con precio aun atractivo: el rebote podria acelerarse y cerrar la ventana de entrada antes de lo esperado."
                 elif _zona_compra_ej:
                     _alin_emoji_ej = "✅"
                     _alin_ej = "SCORE MANDA — el precio es atractivo y las noticias no muestran catalizadores en contra."
+                    _esperar_ej = "Sin presion clara desde noticias: el precio deberia moverse por factores tecnicos. La zona de compra se mantiene mientras el score no cambie."
                 elif _zona_cara_ej and _es_alcista_ej:
                     _alin_emoji_ej = "⚠️"
                     _alin_ej = "EUFORIA — precio caro con optimismo alto en noticias. Riesgo de FOMO: mejor reducir aportes."
+                    _esperar_ej = "Momentum alcista sobre precio ya caro: puede seguir subiendo por inercia, pero el riesgo de correccion crece con cada tramo adicional."
                 elif _zona_cara_ej and _es_bajista_ej:
                     _alin_emoji_ej = "⏳"
                     _alin_ej = "CORRECCION EN CURSO — precio caro y noticias negativas. Esperar mejores precios."
+                    _esperar_ej = "Correccion probable en curso: esperable que el precio retroceda hacia zonas mas razonables. La paciencia suele pagar en este escenario."
                 elif _zona_cara_ej:
                     _alin_emoji_ej = "⏳"
                     _alin_ej = "CARO SIN CATALIZADORES — aportes minimos hasta que mejore el precio."
+                    _esperar_ej = "Precio caro sin catalizadores en noticias: esperable lateralizacion o correccion gradual."
                 else:
                     _alin_emoji_ej = "🟡"
                     _alin_ej = "SIN SEÑAL FUERTE — zona neutral. Mantener DCA normal."
+                    _esperar_ej = "Sin catalizadores dominantes: esperable que el precio se mueva por factores tecnicos mas que por noticias."
 
                 if _es_alcista_ej:
                     _sent_color_ej = "#2e7d32"
@@ -1235,10 +1242,18 @@ if seccion == "🥇 Oro (GLD)":
 <span style="color:{_sent_color_ej};"><b>{_sent_emoji_ej} Sentimiento del feed: {_sent_ej.upper()}</b> (neto {_neto_ej:+d} · {_npos_ej} positivas vs {_nneg_ej} negativas)</span><br>
 <span style="font-size:0.95em;">{_narr_ej}</span><br>
 <span style="font-size:0.9em;color:#555;">Veredicto noticias: <b>{_vered_ej}</b> · Zona Value Signal: <b>{_zona_ej}</b>{_scoreq_txt_ej}</span><br>
-<span style="font-size:0.95em;">{_alin_emoji_ej} <b>{_alin_ej}</b></span>
+<span style="font-size:0.95em;">{_alin_emoji_ej} <b>{_alin_ej}</b></span><br>
+<span style="font-size:0.95em;">📈 <b>Que esperar:</b> {_esperar_ej}</span>
 </div>""",
                     unsafe_allow_html=True,
                 )
+                with st.expander("ℹ️ ¿Cómo leer este resumen?"):
+                    st.markdown("""
+- **Sentimiento del feed**: suma ponderada de las senales detectadas en los titulares de las ultimas 72h. No predice el precio: indica la presion direccional de corto plazo segun las noticias.
+- **Zona Value Signal**: la recomendacion cuantitativa del score (precio vs su propia historia), actualizada cada 30-60 min. Es independiente de las noticias.
+- **Contrarian**: principio del value investing — el pesimismo extremo suele coincidir con precios bajos (suelos) y la euforia con precios altos (techos). *"Se temeroso cuando otros son codiciosos, y codicioso cuando otros son temerosos"* (Buffett). Por eso noticias negativas + zona de compra pueden ser una **confirmacion**, no una contradiccion.
+- **Que esperar**: traduccion del cruce sentimiento + zona a un sesgo de precio probable. Es un **sesgo condicional, no una prediccion**: las noticias de 72h tienen poder predictivo limitado sobre el precio.
+""")
 
             _categorias_meta_gld = _news_gld_data.get("categorias_meta", {})
             _noticias_por_cat_gld = _news_gld_data.get("noticias_por_categoria", {})
@@ -1655,24 +1670,31 @@ if seccion == "₿ Bitcoin (BTC)":
                 if _zona_compra_ej and _es_bajista_ej:
                     _alin_emoji_ej = "✅"
                     _alin_ej = "CONTRARIAN — el pesimismo del feed explica el precio bajo. Historicamente buen punto de entrada DCA, aunque puede seguir cayendo en el corto plazo."
+                    _esperar_ej = "Presion vendedora a corto plazo: el precio podria seguir bajando antes de estabilizar. Para DCA, eso significa posibles aportes a mejores precios en las proximas semanas."
                 elif _zona_compra_ej and _es_alcista_ej:
                     _alin_emoji_ej = "✅✅"
                     _alin_ej = "DOBLE SEÑAL — precio atractivo y noticias a favor. La ventana de entrada puede cerrarse rapido."
+                    _esperar_ej = "Presion compradora con precio aun atractivo: el rebote podria acelerarse y cerrar la ventana de entrada antes de lo esperado."
                 elif _zona_compra_ej:
                     _alin_emoji_ej = "✅"
                     _alin_ej = "SCORE MANDA — el precio es atractivo y las noticias no muestran catalizadores en contra."
+                    _esperar_ej = "Sin presion clara desde noticias: el precio deberia moverse por factores tecnicos. La zona de compra se mantiene mientras el score no cambie."
                 elif _zona_cara_ej and _es_alcista_ej:
                     _alin_emoji_ej = "⚠️"
                     _alin_ej = "EUFORIA — precio caro con optimismo alto en noticias. Riesgo de FOMO: mejor reducir aportes."
+                    _esperar_ej = "Momentum alcista sobre precio ya caro: puede seguir subiendo por inercia, pero el riesgo de correccion crece con cada tramo adicional."
                 elif _zona_cara_ej and _es_bajista_ej:
                     _alin_emoji_ej = "⏳"
                     _alin_ej = "CORRECCION EN CURSO — precio caro y noticias negativas. Esperar mejores precios."
+                    _esperar_ej = "Correccion probable en curso: esperable que el precio retroceda hacia zonas mas razonables. La paciencia suele pagar en este escenario."
                 elif _zona_cara_ej:
                     _alin_emoji_ej = "⏳"
                     _alin_ej = "CARO SIN CATALIZADORES — aportes minimos hasta que mejore el precio."
+                    _esperar_ej = "Precio caro sin catalizadores en noticias: esperable lateralizacion o correccion gradual."
                 else:
                     _alin_emoji_ej = "🟡"
                     _alin_ej = "SIN SEÑAL FUERTE — zona neutral. Mantener DCA normal."
+                    _esperar_ej = "Sin catalizadores dominantes: esperable que el precio se mueva por factores tecnicos mas que por noticias."
 
                 if _es_alcista_ej:
                     _sent_color_ej = "#2e7d32"
@@ -1691,10 +1713,18 @@ if seccion == "₿ Bitcoin (BTC)":
 <span style="color:{_sent_color_ej};"><b>{_sent_emoji_ej} Sentimiento del feed: {_sent_ej.upper()}</b> (neto {_neto_ej:+d} · {_npos_ej} positivas vs {_nneg_ej} negativas)</span><br>
 <span style="font-size:0.95em;">{_narr_ej}</span><br>
 <span style="font-size:0.9em;color:#555;">Veredicto noticias: <b>{_vered_ej}</b> · Zona Value Signal: <b>{_zona_ej}</b>{_scoreq_txt_ej}</span><br>
-<span style="font-size:0.95em;">{_alin_emoji_ej} <b>{_alin_ej}</b></span>
+<span style="font-size:0.95em;">{_alin_emoji_ej} <b>{_alin_ej}</b></span><br>
+<span style="font-size:0.95em;">📈 <b>Que esperar:</b> {_esperar_ej}</span>
 </div>""",
                     unsafe_allow_html=True,
                 )
+                with st.expander("ℹ️ ¿Cómo leer este resumen?"):
+                    st.markdown("""
+- **Sentimiento del feed**: suma ponderada de las senales detectadas en los titulares de las ultimas 72h. No predice el precio: indica la presion direccional de corto plazo segun las noticias.
+- **Zona Value Signal**: la recomendacion cuantitativa del score (precio vs su propia historia), actualizada cada 30-60 min. Es independiente de las noticias.
+- **Contrarian**: principio del value investing — el pesimismo extremo suele coincidir con precios bajos (suelos) y la euforia con precios altos (techos). *"Se temeroso cuando otros son codiciosos, y codicioso cuando otros son temerosos"* (Buffett). Por eso noticias negativas + zona de compra pueden ser una **confirmacion**, no una contradiccion.
+- **Que esperar**: traduccion del cruce sentimiento + zona a un sesgo de precio probable. Es un **sesgo condicional, no una prediccion**: las noticias de 72h tienen poder predictivo limitado sobre el precio.
+""")
 
             _categorias_meta_gld = _news_gld_data.get("categorias_meta", {})
             _noticias_por_cat_gld = _news_gld_data.get("noticias_por_categoria", {})
