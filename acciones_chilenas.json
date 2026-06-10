@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-10T13:53:02.812859",
-  "duracion_segundos": 145.56171,
+  "fecha_actualizacion": "2026-06-10T14:05:07.960165",
+  "duracion_segundos": 122.063865,
   "n_acciones": 11,
   "acciones": [
     {
@@ -641,11 +641,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial chilena de Enel. Principal generadora hidroelectrica del pais. ROE 19%, payout 62%, G=7%.",
-      "precio_actual_clp": 535,
+      "precio_actual_clp": 536,
       "razon_social": "ENEL GENERACION CHILE S.A.",
-      "variacion_pct": 0.49,
+      "variacion_pct": 0.68,
       "dy": {
-        "dy_pct": 6.28,
+        "dy_pct": 6.27,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 41.9,
@@ -655,13 +655,13 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": 0.3062593707109835,
-      "cagr_5y": 0.20741864158334855,
-      "cagr_10y": -0.00854333289887066,
+      "cagr_3y": 0.30707273292034887,
+      "cagr_5y": 0.20786967594214212,
+      "cagr_10y": -0.008358169587195041,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.22
+        "vs_benchmark_pp": -2.23
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3757.3,
+      "precio_actual_clp": 3766.4,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": -1.12,
+      "variacion_pct": -0.88,
       "dy": {
-        "dy_pct": 10.74,
+        "dy_pct": 10.72,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.1161282581748393,
-      "cagr_5y": 0.20807168584856606,
-      "cagr_10y": 0.11069549909837484,
+      "cagr_3y": 0.11702860136725968,
+      "cagr_5y": 0.2086562980725779,
+      "cagr_10y": 0.1109642114756133,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 2.24
+        "vs_benchmark_pp": 2.22
       },
       "cmf": {
         "periodo": "03/2026",
