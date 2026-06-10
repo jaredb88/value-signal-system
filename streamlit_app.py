@@ -221,6 +221,7 @@ with st.sidebar:
         _status_archivo("btc_data.json", "BTC Score", 1, 3),
         _status_archivo("dividend_etfs_data.json", "Dividend ETFs", 1, 3),
         _status_archivo("noticias_gld.json", "Noticias GLD", 3, 8),
+        _status_archivo("noticias_btc.json", "Noticias BTC", 3, 8),
     ]
 
     for emoji, msg in estados:
@@ -1175,7 +1176,7 @@ if seccion == "🥇 Oro (GLD)":
             _categorias_meta_gld = _news_gld_data.get("categorias_meta", {})
             _noticias_por_cat_gld = _news_gld_data.get("noticias_por_categoria", {})
 
-            _orden_categorias_gld = ["precio", "fed_macro", "dolar", "bancos_centrales", "geopolitica", "proyecciones"]
+            _orden_categorias_gld = ["precio", "etf_flows", "regulacion", "adopcion", "fed_macro", "sentimiento_onchain"]
 
             for _cat_gld in _orden_categorias_gld:
                 _items_gld = _noticias_por_cat_gld.get(_cat_gld, [])
@@ -1541,6 +1542,73 @@ if seccion == "₿ Bitcoin (BTC)":
             with st.expander("ℹ️ ¿Qué mide e interpretación"):
                 st.markdown(f"**Qué mide:** {que_mide}")
                 st.markdown(f"**📊 Tu lectura:** {interpretacion}")
+
+    # ===== Noticias Macro de Bitcoin =====
+    st.divider()
+    st.header("📰 Noticias Macro de Bitcoin")
+    st.caption("Cobertura de Fed, ETF spot (IBIT), regulacion, adopcion y on-chain - Actualizacion cada 2h")
+
+    try:
+        from pathlib import Path as _Path_news_gld
+        import json as _json_news_gld
+        _news_gld_path = _Path_news_gld(__file__).parent / "noticias_btc.json"
+        if not _news_gld_path.exists():
+            st.info("⏳ Las noticias de BTC aun no se han generado. Esperando la primera ejecucion de la tarea programada.")
+        else:
+            with open(_news_gld_path, "r", encoding="utf-8") as _f_news_gld:
+                _news_gld_data = _json_news_gld.load(_f_news_gld)
+
+            _total_news_gld = _news_gld_data.get("stats", {}).get("total_noticias", 0)
+            _updated_news_gld = _news_gld_data.get("updated_at_utc", "")[:16].replace("T", " ")
+            st.caption(f"📊 {_total_news_gld} noticias · Ultima actualizacion: {_updated_news_gld} UTC")
+
+            _categorias_meta_gld = _news_gld_data.get("categorias_meta", {})
+            _noticias_por_cat_gld = _news_gld_data.get("noticias_por_categoria", {})
+
+            _orden_categorias_gld = ["precio", "fed_macro", "dolar", "bancos_centrales", "geopolitica", "proyecciones"]
+
+            for _cat_gld in _orden_categorias_gld:
+                _items_gld = _noticias_por_cat_gld.get(_cat_gld, [])
+                if not _items_gld:
+                    continue
+                _meta_gld = _categorias_meta_gld.get(_cat_gld, {"emoji": "📰", "label": _cat_gld})
+                _emoji_gld = _meta_gld.get("emoji", "📰")
+                _label_gld = _meta_gld.get("label", _cat_gld)
+
+                with st.expander(f"{_emoji_gld}  **{_label_gld}**  ({len(_items_gld)} noticias)", expanded=(_cat_gld == "precio")):
+                    for _it_gld in _items_gld:
+                        _titulo_gld = _it_gld.get("title", "")
+                        _link_gld = _it_gld.get("link", "")
+                        _source_gld = _it_gld.get("source", "")
+                        _pubdate_gld = _it_gld.get("pubdate_iso", "")[:10]
+                        _imp_gld = _it_gld.get("impacto", {}) or {}
+                        _imp_emoji_gld = _imp_gld.get("emoji", "⚪")
+                        _imp_label_gld = _imp_gld.get("intensidad_label", "neutral")
+                        _imp_dir_gld = _imp_gld.get("direccion", "neutral")
+                        _imp_razon_gld = _imp_gld.get("razonamiento", "")
+
+                        # Color del badge segun direccion
+                        if _imp_dir_gld == "positivo":
+                            _imp_color_gld = "#2e7d32"   # verde
+                            _imp_texto_gld = f"Impacto: {_imp_label_gld} al alza"
+                        elif _imp_dir_gld == "negativo":
+                            _imp_color_gld = "#c62828"   # rojo
+                            _imp_texto_gld = f"Impacto: {_imp_label_gld} a la baja"
+                        else:
+                            _imp_color_gld = "#666"      # gris
+                            _imp_texto_gld = "Sin sesgo direccional"
+
+                        st.markdown(
+                            f"**[{_titulo_gld}]({_link_gld})**  \n"
+                            f"<span style=\"color:{_imp_color_gld};font-size:0.9em;\">"
+                            f"{_imp_emoji_gld} <b>{_imp_texto_gld}</b> — {_imp_razon_gld}"
+                            f"</span>  \n"
+                            f"<span style=\"color:#888;font-size:0.8em;\">📅 {_pubdate_gld} · 🗞️ {_source_gld}</span>",
+                            unsafe_allow_html=True,
+                        )
+                        st.markdown("")  # separador visual
+    except Exception as _e_news_gld:
+        st.warning(f"No se pudieron cargar las noticias de BTC: {_e_news_gld}")
 
     st.stop()
 

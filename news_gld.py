@@ -341,25 +341,33 @@ IMPACTO_KEYWORDS = {
 
 def analizar_impacto(titulo, categoria):
     """
-    Analiza el titulo de una noticia y retorna un dict con direccion, intensidad
-    y razonamiento de como podria afectar el precio del oro.
+    Analiza el titulo. Mejoras v2:
+    - Word boundaries para keywords de 1 palabra (evita matches "ban" en "banco")
+    - Razon del factor de mayor peso dominante en la direccion final
     """
+    import re as _re
     titulo_norm = normalizar(titulo)
 
     score_positivo = 0
     score_negativo = 0
-    razones = []
+    matches_pos = []
+    matches_neg = []
 
     for kw, (direccion, peso, razon) in IMPACTO_KEYWORDS.items():
         kw_norm = normalizar(kw)
-        if kw_norm in titulo_norm:
+        # Si la keyword tiene >1 palabra: substring match. Si es 1 palabra: word boundary
+        if " " in kw_norm:
+            matched = kw_norm in titulo_norm
+        else:
+            matched = bool(_re.search(r"\b" + _re.escape(kw_norm) + r"\b", titulo_norm))
+        if matched:
             if direccion == "positivo":
                 score_positivo += peso
+                matches_pos.append((peso, razon))
             else:
                 score_negativo += peso
-            razones.append(razon)
+                matches_neg.append((peso, razon))
 
-    # Determinar direccion final
     diferencia = score_positivo - score_negativo
     if abs(diferencia) < 1:
         direccion = "neutral"
@@ -368,11 +376,11 @@ def analizar_impacto(titulo, categoria):
     elif diferencia > 0:
         direccion = "positivo"
         intensidad = min(3, max(1, abs(diferencia) // 2 + 1))
-        razonamiento = razones[0] if razones else "Sesgo positivo para oro"
+        razonamiento = max(matches_pos, key=lambda x: x[0])[1] if matches_pos else "Sesgo positivo para oro"
     else:
         direccion = "negativo"
         intensidad = min(3, max(1, abs(diferencia) // 2 + 1))
-        razonamiento = razones[0] if razones else "Sesgo negativo para oro"
+        razonamiento = max(matches_neg, key=lambda x: x[0])[1] if matches_neg else "Sesgo negativo para oro"
 
     # Mapear a emoji
     emoji_map = {

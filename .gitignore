@@ -68,3 +68,9 @@ probar_*.py
 reorganizar_*.py
 verificar_*.py
 test_*.py
+
+# Scripts auxiliares temporales
+inspect_*
+limpiar_*
+patch_*
+expandir_*
