@@ -161,6 +161,243 @@ def normalizar(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
+# ============================================================
+# ANALISIS DE IMPACTO
+# ============================================================
+
+# Diccionario de keywords con peso (+) positivo para oro / (-) negativo para oro
+# Peso 3 = factor muy fuerte, 2 = fuerte, 1 = moderado
+IMPACTO_KEYWORDS = {
+    # === POSITIVO PARA EL ORO (presion al alza) ===
+    # --- Tasas / Fed dovish ---
+    "baja tasas":          ("positivo", 3, "Fed dovish: tasas mas bajas favorecen oro"),
+    "bajar tasas":         ("positivo", 3, "Fed dovish: tasas mas bajas favorecen oro"),
+    "recorte de tasas":    ("positivo", 3, "Fed dovish: recorte de tasas favorece oro"),
+    "recortes de tasas":   ("positivo", 3, "Fed dovish: recortes de tasas favorecen oro"),
+    "rate cut":            ("positivo", 3, "Fed dovish: rate cut favorece oro"),
+    "rate cuts":           ("positivo", 3, "Fed dovish: rate cuts favorecen oro"),
+    "tasas mas bajas":     ("positivo", 2, "Expectativa de tasas bajas favorece oro"),
+    "lower rates":         ("positivo", 2, "Lower rates favorece oro"),
+    "dovish":              ("positivo", 2, "Tono dovish de la Fed favorece oro"),
+    "fed dovish":          ("positivo", 3, "Fed dovish favorece oro"),
+    "rate cuts ahead":     ("positivo", 3, "Expectativa de recortes futuros favorece oro"),
+    "pause rate hikes":    ("positivo", 2, "Fed en pausa: positivo para oro"),
+
+    # --- Inflacion alta ---
+    "inflacion alta":      ("positivo", 3, "Inflacion al alza: oro como cobertura"),
+    "inflacion mas alta":  ("positivo", 3, "Inflacion mas alta: oro como cobertura"),
+    "inflacion sube":      ("positivo", 3, "Inflacion sube: oro como cobertura"),
+    "inflacion creciente": ("positivo", 3, "Inflacion creciente: oro como cobertura"),
+    "inflacion al alza":   ("positivo", 3, "Inflacion al alza: oro como cobertura"),
+    "inflacion subyacente":("positivo", 2, "Core inflation persistente: positivo para oro"),
+    "high inflation":      ("positivo", 3, "Alta inflacion favorece oro"),
+    "higher inflation":    ("positivo", 3, "Inflacion mas alta: positivo para oro"),
+    "rising inflation":    ("positivo", 3, "Inflacion creciente favorece oro"),
+    "inflation rises":     ("positivo", 3, "Inflacion sube: positivo para oro"),
+    "inflation jumps":     ("positivo", 3, "Inflacion salta: positivo para oro"),
+    "sticky inflation":    ("positivo", 2, "Inflacion persistente: positivo para oro"),
+    "cpi sube":            ("positivo", 2, "CPI al alza favorece oro"),
+    "cpi rises":           ("positivo", 2, "CPI al alza: positivo para oro"),
+    "core cpi":            ("positivo", 1, "Mencion de core CPI: posible relevancia para oro"),
+    "presion inflacionaria":("positivo", 2, "Presion inflacionaria favorece oro"),
+    "stagflation":         ("positivo", 3, "Estanflacion: muy positivo para oro"),
+
+    # --- Dolar debil ---
+    "dolar cae":           ("positivo", 2, "Dolar debil: oro sube por correlacion inversa"),
+    "dolar baja":          ("positivo", 2, "Dolar debil: oro sube por correlacion inversa"),
+    "dolar debil":         ("positivo", 2, "Dolar debil favorece oro"),
+    "dxy cae":             ("positivo", 2, "DXY debil favorece oro"),
+    "dxy baja":            ("positivo", 2, "DXY debil favorece oro"),
+    "dollar weak":         ("positivo", 2, "Dolar debil favorece oro"),
+    "weaker dollar":       ("positivo", 2, "Dolar mas debil favorece oro"),
+    "weak dollar":         ("positivo", 2, "Dolar debil favorece oro"),
+    "weak us dollar":      ("positivo", 2, "Dolar debil favorece oro"),
+    "dollar drops":        ("positivo", 2, "Dolar baja: positivo para oro"),
+    "dollar falls":        ("positivo", 2, "Dolar baja: positivo para oro"),
+    "dollar slips":        ("positivo", 1, "Dolar baja levemente: leve positivo para oro"),
+    "dollar declines":     ("positivo", 2, "Dolar baja: positivo para oro"),
+    "dollar tumbles":      ("positivo", 2, "Dolar cae fuerte: positivo para oro"),
+    "presion del dolar":   ("positivo", 1, "Dolar bajo presion: leve positivo para oro"),
+
+    # --- Bancos centrales comprando ---
+    "central banks buy":   ("positivo", 3, "Bancos centrales compran oro: demanda institucional"),
+    "central bank buying": ("positivo", 3, "Bancos centrales comprando oro: demanda institucional"),
+    "central bank purchases":("positivo", 3, "Compras de bancos centrales: demanda institucional"),
+    "comprar oro":         ("positivo", 2, "Demanda institucional de oro"),
+    "comprado oro":        ("positivo", 2, "Demanda institucional de oro"),
+    "compra de oro":       ("positivo", 2, "Demanda institucional de oro"),
+    "compras de oro":      ("positivo", 2, "Demanda institucional de oro"),
+    "banco central compra":("positivo", 3, "Banco central comprando oro: demanda institucional"),
+    "gold reserves":       ("positivo", 2, "Acumulacion de reservas de oro"),
+    "reservas de oro":     ("positivo", 2, "Acumulacion de reservas de oro"),
+    "china gold":          ("positivo", 2, "China acumulando oro: demanda institucional"),
+    "india gold":          ("positivo", 1, "Demanda india de oro"),
+    "gold buying":         ("positivo", 2, "Compra de oro: demanda creciente"),
+    "gold demand":         ("positivo", 1, "Demanda de oro mencionada"),
+
+    # --- Geopolitica / safe haven ---
+    "tensiones":           ("positivo", 2, "Tensiones geopoliticas: flujo a safe haven"),
+    "tension geopolitica": ("positivo", 2, "Tension geopolitica: flujo a safe haven"),
+    "geopolitical":        ("positivo", 2, "Tension geopolitica: flujo a safe haven"),
+    "war":                 ("positivo", 2, "Conflicto belico: flujo a oro como refugio"),
+    "guerra":              ("positivo", 2, "Conflicto belico: flujo a oro como refugio"),
+    "safe haven":          ("positivo", 2, "Demanda de activos refugio"),
+    "refugio":             ("positivo", 1, "Demanda de activo refugio"),
+    "haven demand":        ("positivo", 2, "Flujo a activos refugio"),
+    "crisis":              ("positivo", 2, "Crisis aumenta demanda de oro como refugio"),
+    "recesion":            ("positivo", 2, "Temor recesivo favorece oro"),
+    "recession":           ("positivo", 2, "Recession fears favorecen oro"),
+    "uncertainty":         ("positivo", 1, "Incertidumbre: leve flujo a oro"),
+    "incertidumbre":       ("positivo", 1, "Incertidumbre: leve flujo a oro"),
+
+    # --- Yields reales bajos ---
+    "yields fall":         ("positivo", 2, "Yields reales caen: positivo para oro"),
+    "yields drop":         ("positivo", 2, "Yields reales bajan: positivo para oro"),
+    "real yields drop":    ("positivo", 2, "Yields reales bajan: positivo para oro"),
+    "treasury yields fall":("positivo", 2, "Treasury yields bajan: positivo para oro"),
+
+    # --- Oro sube directo ---
+    "gold rises":          ("positivo", 2, "Oro al alza"),
+    "gold rallies":        ("positivo", 2, "Rally del oro"),
+    "gold surges":         ("positivo", 3, "Oro salta con fuerza"),
+    "gold jumps":          ("positivo", 2, "Oro al alza"),
+    "gold climbs":         ("positivo", 2, "Oro al alza"),
+    "gold gains":          ("positivo", 2, "Oro al alza"),
+    "gold up":             ("positivo", 1, "Oro sube"),
+    "oro sube":            ("positivo", 2, "Oro al alza"),
+    "oro rebota":          ("positivo", 2, "Rebote del oro"),
+    "record high gold":    ("positivo", 3, "Oro en maximos historicos"),
+    "oro maximo":          ("positivo", 2, "Oro en maximos"),
+
+    # === NEGATIVO PARA EL ORO (presion a la baja) ===
+    # --- Tasas / Fed hawkish ---
+    "sube tasas":          ("negativo", 3, "Fed hawkish: tasas mas altas presionan oro"),
+    "subir tasas":         ("negativo", 3, "Fed hawkish: tasas mas altas presionan oro"),
+    "alza de tasas":       ("negativo", 3, "Fed hawkish: tasas mas altas presionan oro"),
+    "rate hike":           ("negativo", 3, "Fed hawkish: rate hike presiona oro"),
+    "rate hikes":          ("negativo", 3, "Fed hawkish: rate hikes presionan oro"),
+    "higher rates":        ("negativo", 2, "Expectativa de tasas altas presiona oro"),
+    "hawkish":             ("negativo", 2, "Tono hawkish de la Fed presiona oro"),
+    "fed hawkish":         ("negativo", 3, "Fed hawkish: presion negativa para oro"),
+
+    # --- Inflacion baja ---
+    "inflacion cae":       ("negativo", 3, "Inflacion baja: menos demanda de cobertura"),
+    "inflacion baja":      ("negativo", 3, "Inflacion baja: menos demanda de cobertura"),
+    "inflation falls":     ("negativo", 3, "Inflacion baja: menos demanda de cobertura"),
+    "inflation drops":     ("negativo", 3, "Inflacion baja: presion negativa para oro"),
+    "inflation cools":     ("negativo", 2, "Inflacion se enfria: presion negativa para oro"),
+    "cooling inflation":   ("negativo", 2, "Inflacion enfriando: presion negativa para oro"),
+    "cpi cae":             ("negativo", 2, "CPI baja: presion negativa para oro"),
+    "cpi falls":           ("negativo", 2, "CPI baja: presion negativa para oro"),
+    "disinflation":        ("negativo", 2, "Desinflacion: presion negativa para oro"),
+
+    # --- Dolar fuerte ---
+    "dolar fuerte":        ("negativo", 2, "Dolar fortalecido presiona oro"),
+    "dolar sube":          ("negativo", 2, "Dolar fortalecido presiona oro"),
+    "fortaleza del dolar": ("negativo", 2, "Fortaleza del dolar presiona oro"),
+    "dxy sube":            ("negativo", 2, "DXY fuerte presiona oro"),
+    "dollar strength":     ("negativo", 2, "Dolar fortalecido presiona oro"),
+    "stronger dollar":     ("negativo", 2, "Dolar fortalecido presiona oro"),
+    "strong dollar":       ("negativo", 2, "Dolar fuerte: presion negativa para oro"),
+    "dollar rallies":      ("negativo", 2, "Dolar rallea: presion negativa para oro"),
+    "dollar surges":       ("negativo", 2, "Dolar salta: presion negativa para oro"),
+    "dollar climbs":       ("negativo", 2, "Dolar al alza: presion negativa para oro"),
+
+    # --- Bancos centrales vendiendo ---
+    "central banks sell":  ("negativo", 3, "Bancos centrales venden oro: oferta institucional"),
+    "vender oro":          ("negativo", 2, "Liquidacion institucional de oro"),
+    "selling gold":        ("negativo", 2, "Venta de oro: presion negativa"),
+
+    # --- Resolucion / risk-on ---
+    "alto el fuego":       ("negativo", 2, "Cese de hostilidades: risk-on, oro cae"),
+    "ceasefire":           ("negativo", 2, "Ceasefire: risk-on, oro pierde refugio"),
+    "peace deal":          ("negativo", 2, "Acuerdo de paz: risk-on, oro cae"),
+    "risk-on":             ("negativo", 2, "Risk-on de mercado: oro pierde demanda"),
+    "risk on":             ("negativo", 2, "Risk-on de mercado: oro pierde demanda"),
+    "stocks rally":        ("negativo", 1, "Bolsa fuerte: leve presion negativa para oro"),
+    "stocks surge":        ("negativo", 1, "Bolsa salta: leve presion negativa para oro"),
+    "record high stocks":  ("negativo", 1, "Maximos en bolsa: presion sobre oro"),
+    "sp 500 record":       ("negativo", 1, "S&P en maximos: presion sobre oro"),
+
+    # --- Yields reales altos ---
+    "yields rise":         ("negativo", 2, "Yields reales suben: presion para oro"),
+    "yields jump":         ("negativo", 2, "Yields reales saltan: presion para oro"),
+    "real yields jump":    ("negativo", 2, "Yields reales suben: presion para oro"),
+    "treasury yields rise":("negativo", 2, "Treasury yields suben: presion para oro"),
+    "10-year yield":       ("negativo", 1, "Treasury 10Y al alza: presion para oro"),
+
+    # --- Oro baja directo ---
+    "gold falls":          ("negativo", 2, "Oro a la baja"),
+    "gold drops":          ("negativo", 2, "Oro cae"),
+    "gold tumbles":        ("negativo", 3, "Oro cae fuerte"),
+    "gold slips":          ("negativo", 1, "Oro baja levemente"),
+    "gold declines":       ("negativo", 2, "Oro a la baja"),
+    "gold sinks":          ("negativo", 2, "Oro cae"),
+    "oro cae":             ("negativo", 2, "Oro a la baja"),
+    "oro baja":            ("negativo", 2, "Oro a la baja"),
+    "oro retrocede":       ("negativo", 2, "Oro retrocede"),
+}
+
+
+def analizar_impacto(titulo, categoria):
+    """
+    Analiza el titulo de una noticia y retorna un dict con direccion, intensidad
+    y razonamiento de como podria afectar el precio del oro.
+    """
+    titulo_norm = normalizar(titulo)
+
+    score_positivo = 0
+    score_negativo = 0
+    razones = []
+
+    for kw, (direccion, peso, razon) in IMPACTO_KEYWORDS.items():
+        kw_norm = normalizar(kw)
+        if kw_norm in titulo_norm:
+            if direccion == "positivo":
+                score_positivo += peso
+            else:
+                score_negativo += peso
+            razones.append(razon)
+
+    # Determinar direccion final
+    diferencia = score_positivo - score_negativo
+    if abs(diferencia) < 1:
+        direccion = "neutral"
+        intensidad = 0
+        razonamiento = "Sin senal direccional clara en el titular"
+    elif diferencia > 0:
+        direccion = "positivo"
+        intensidad = min(3, max(1, abs(diferencia) // 2 + 1))
+        razonamiento = razones[0] if razones else "Sesgo positivo para oro"
+    else:
+        direccion = "negativo"
+        intensidad = min(3, max(1, abs(diferencia) // 2 + 1))
+        razonamiento = razones[0] if razones else "Sesgo negativo para oro"
+
+    # Mapear a emoji
+    emoji_map = {
+        ("positivo", 3): "🟢🟢",
+        ("positivo", 2): "🟢",
+        ("positivo", 1): "🟢",
+        ("negativo", 3): "🔴🔴",
+        ("negativo", 2): "🔴",
+        ("negativo", 1): "🔴",
+        ("neutral",  0): "⚪",
+    }
+    emoji = emoji_map.get((direccion, intensidad), "⚪")
+
+    # Label de intensidad
+    intensidad_label = {0: "neutral", 1: "leve", 2: "moderado", 3: "fuerte"}[intensidad]
+
+    return {
+        "direccion": direccion,
+        "intensidad": intensidad,
+        "intensidad_label": intensidad_label,
+        "emoji": emoji,
+        "razonamiento": razonamiento,
+    }
+
+
 def fetch_categoria(categoria, keywords, cutoff):
     """Fetch + filter + dedupe para una categoria."""
     log.info(f"\n--- Categoria: {categoria} ---")
@@ -183,12 +420,15 @@ def fetch_categoria(categoria, keywords, cutoff):
         clave = normalizar(clean_title(it["title"]))
         if clave and clave not in vistos:
             vistos.add(clave)
+            titulo_limpio = clean_title(it["title"])
+            impacto = analizar_impacto(titulo_limpio, categoria)
             unicos.append({
-                "title": clean_title(it["title"]),
+                "title": titulo_limpio,
                 "link": it["link"],
                 "source": it["source"],
                 "pubdate": it["pubdate"],
                 "pubdate_iso": parse_pubdate(it["pubdate"]).isoformat() if parse_pubdate(it["pubdate"]) else "",
+                "impacto": impacto,
             })
 
     # Ordenar por fecha desc y top N

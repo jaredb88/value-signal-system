@@ -1191,12 +1191,32 @@ if seccion == "🥇 Oro (GLD)":
                         _link_gld = _it_gld.get("link", "")
                         _source_gld = _it_gld.get("source", "")
                         _pubdate_gld = _it_gld.get("pubdate_iso", "")[:10]
+                        _imp_gld = _it_gld.get("impacto", {}) or {}
+                        _imp_emoji_gld = _imp_gld.get("emoji", "⚪")
+                        _imp_label_gld = _imp_gld.get("intensidad_label", "neutral")
+                        _imp_dir_gld = _imp_gld.get("direccion", "neutral")
+                        _imp_razon_gld = _imp_gld.get("razonamiento", "")
+
+                        # Color del badge segun direccion
+                        if _imp_dir_gld == "positivo":
+                            _imp_color_gld = "#2e7d32"   # verde
+                            _imp_texto_gld = f"Impacto: {_imp_label_gld} al alza"
+                        elif _imp_dir_gld == "negativo":
+                            _imp_color_gld = "#c62828"   # rojo
+                            _imp_texto_gld = f"Impacto: {_imp_label_gld} a la baja"
+                        else:
+                            _imp_color_gld = "#666"      # gris
+                            _imp_texto_gld = "Sin sesgo direccional"
 
                         st.markdown(
-                            f"- [{_titulo_gld}]({_link_gld})  \n"
-                            f"  <span style=\"color:#888;font-size:0.85em;\">📅 {_pubdate_gld} · 🗞️ {_source_gld}</span>",
+                            f"**[{_titulo_gld}]({_link_gld})**  \n"
+                            f"<span style=\"color:{_imp_color_gld};font-size:0.9em;\">"
+                            f"{_imp_emoji_gld} <b>{_imp_texto_gld}</b> — {_imp_razon_gld}"
+                            f"</span>  \n"
+                            f"<span style=\"color:#888;font-size:0.8em;\">📅 {_pubdate_gld} · 🗞️ {_source_gld}</span>",
                             unsafe_allow_html=True,
                         )
+                        st.markdown("")  # separador visual
     except Exception as _e_news_gld:
         st.warning(f"No se pudieron cargar las noticias del oro: {_e_news_gld}")
 
