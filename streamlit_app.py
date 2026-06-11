@@ -509,7 +509,8 @@ if seccion == "🎯 Oportunidades":
             with _c1_op:
                 st.markdown(f"**{_a_op.get('ticker','?')}** · {_a_op.get('sector','')}")
             with _c2_op:
-                _dy_op = _a_op.get("dy")
+                _dy_raw = _a_op.get("dy")
+                _dy_op = _dy_raw.get("dy_pct") if isinstance(_dy_raw, dict) else _dy_raw
                 try:
                     _dy_op = float(str(_dy_op).replace("%", "").replace(",", "."))
                 except (TypeError, ValueError):
