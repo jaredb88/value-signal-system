@@ -489,7 +489,7 @@ if seccion == "🎯 Oportunidades":
             _c1_op, _c2_op, _c3_op, _c4_op = st.columns([3, 2, 2, 2])
             with _c1_op:
                 st.markdown(
-                    f'<div style="font-size:2.4rem; font-weight:800; line-height:1.15; letter-spacing:-0.5px;">{_o_op["ticker"]}</div>'
+                    f'<div style="font-size:2.0rem; font-weight:800; line-height:1.15; letter-spacing:-0.5px;">{_o_op["ticker"]}</div>'
                     f'<div style="font-size:1.05rem; color:#666;">{_o_op["nombre"]}</div>',
                     unsafe_allow_html=True,
                 )
@@ -512,7 +512,7 @@ if seccion == "🎯 Oportunidades":
             _c1_op, _c2_op, _c3_op, _c4_op = st.columns([3, 2, 2, 2])
             with _c1_op:
                 st.markdown(
-                    f'<div style="font-size:2.4rem; font-weight:800; line-height:1.15; letter-spacing:-0.5px;">{_a_op.get("ticker", "?")}</div>'
+                    f'<div style="font-size:2.0rem; font-weight:800; line-height:1.15; letter-spacing:-0.5px;">{_a_op.get("ticker", "?")}</div>'
                     f'<div style="font-size:1.05rem; color:#666;">{_a_op.get("sector", "")}</div>',
                     unsafe_allow_html=True,
                 )
