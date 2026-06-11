@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T16:33:04.514500+00:00",
+  "updated_at_utc": "2026-06-11T18:33:04.483236+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -32,9 +32,9 @@
     "NTGCLGAS": [],
     "SOQUICOM": [
       {
-        "title": "IPSA abre con alza de 1,5% ya que bolsas mundiales repuntan pese a que Trump promete seguir atacando a Irán",
+        "title": "Bolsa chilena avanza 2% ya que acciones mundiales repuntan pese a que Trump promete seguir atacando a Irán",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YN2VuZW9wZmJ0eGptdlFtZzFwMEdyY3JNYnltaFpoQUUtcWcycVlUTWQwemUwSVFPS21NTEdSaENKaEs2bGY3eFBSem1IcVlQQy1JdXNKb2pldVRXZjQ2NC1TZXBaTjV3?oc=5",
-        "pubdate": "Thu, 11 Jun 2026 13:48:00 GMT",
+        "pubdate": "Thu, 11 Jun 2026 16:56:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -63,13 +63,6 @@
         "title": "IPSA anota su racha de caídas más extensa de 2026 por tormenta global de mercados tras datos de empleo en EEUU",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CQ09GcG16M0JDODViLTJMVHBGR1U2X25Fdk1wdVJTMWVvWHRLSzFZQVh6N1hCWUtPbE5LcmZrUHNvQnFJWElXZTNRTlpEYmtzazhka0JnLS0ySWRMb3MwRlNPeVl5ZEM1aU5V?oc=5",
         "pubdate": "Fri, 05 Jun 2026 20:29:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "El reordenamiento del gobierno corporativo de Sodimac en medio del frenazo del sector",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPM0JuM2h3WVE4cG9nSDhuM3RJanA3eVkyQkZ1WWZ4WE5ubDVfMU9GOFFZbFA2QVhHSUtVZElkWEd0OVlZRXNtNFN6VkxFMDE5ODdicDNRMzNUeFAtUnl6MUJaSXBGLW51UlJWbFkta2g0MDFOMDM2U2c0TEZydWc4bWJjc2NsSVhSWUVXRnlWdWx5UFNGTm9OX2xaWWZ6dUtBQ2RSZjQwUjlaLXYyamc?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 18:50:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -116,8 +109,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2239,
-    "total_noticias_filtradas": 13,
-    "total_hechos_esenciales_brutos": 94
+    "total_noticias_brutas": 2242,
+    "total_noticias_filtradas": 12,
+    "total_hechos_esenciales_brutos": 100
   }
 }
