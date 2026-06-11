@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T13:24:52.768712+00:00",
+  "updated_at_utc": "2026-06-11T14:33:05.290357+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -31,6 +31,13 @@
     "LIPIGAS": [],
     "NTGCLGAS": [],
     "SOQUICOM": [
+      {
+        "title": "IPSA abre con alza de 1,5% ya que bolsas mundiales repuntan pese a que Trump promete seguir atacando a Irán",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YN2VuZW9wZmJ0eGptdlFtZzFwMEdyY3JNYnltaFpoQUUtcWcycVlUTWQwemUwSVFPS21NTEdSaENKaEs2bGY3eFBSem1IcVlQQy1JdXNKb2pldVRXZjQ2NC1TZXBaTjV3?oc=5",
+        "pubdate": "Thu, 11 Jun 2026 13:48:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
       {
         "title": "IPSA se dispara más de 3% en su mejor sesión desde abril de 2025 con fuerte protagonismo de la banca y despide siete jornadas consecutivas de pérdidas",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvOVUzLTE4SnB1V0JFd1ZfbG5keVlEalJqZmNQUkYxNjRPbWNVTlNqSnlHd0xIVi1qYktuU1p4RW9zMzNRVkdmYzAxeUNnYzlBUnNTT3hKdU9vWnM2OXJNdDFfYndyTE9I?oc=5",
@@ -107,13 +114,6 @@
         "pubdate": "Fri, 05 Jun 2026 07:00:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
-      },
-      {
-        "title": "Bolsa chilena se desinfla y cierra en rojo por quinta sesión consecutiva ante las dificultades del proceso de paz en Medio Oriente",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA1dU51RXlqdGpkRDF4SUtmaXBqYkhabnlGajJ1dTNSQlpyQWlwTkFjLXZDR2EtXzlCSGNtekFhb29HUFJEUzdhRU11X3JoWk55Q3IySWZDYmhXS2dFV2tDd1JIbXNXNVA3?oc=5",
-        "pubdate": "Thu, 04 Jun 2026 20:16:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
       }
     ],
     "QUINENCO": [],
@@ -123,8 +123,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2237,
+    "total_noticias_brutas": 2238,
     "total_noticias_filtradas": 14,
-    "total_hechos_esenciales_brutos": 92
+    "total_hechos_esenciales_brutos": 94
   }
 }
