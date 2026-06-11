@@ -111,8 +111,9 @@ with st.sidebar:
     st.title("🧭 Sección")
     seccion = st.radio(
         "Selecciona vista:",
-        ["📈 ETFs USA", "🇨🇱 Acciones Chilenas", "🥇 Oro (GLD)", "₿ Bitcoin (BTC)"],
+        ["🎯 Oportunidades", "📈 ETFs USA", "🇨🇱 Acciones Chilenas", "🥇 Oro (GLD)", "₿ Bitcoin (BTC)"],
         label_visibility="collapsed",
+        key="vista_seccion",
     )
 
     st.divider()
@@ -402,6 +403,130 @@ def analyze_etf(daily, name, ticker, bcs_data=None, bcs_ticker=None):
 # ============================================================
 
 # Si el usuario eligió "Acciones Chilenas", mostrar esa vista y detener
+if seccion == "🎯 Oportunidades":
+    st.title("🎯 Dashboard de Oportunidades")
+    st.caption(f"Resumen de todas las señales de compra del sistema — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+
+    import json as _json_op
+    from pathlib import Path as _Path_op
+
+    _MULT_OP = {"CARO": 0.5, "NEUTRAL": 1.0, "ATRACTIVO": 1.5, "OPORTUNIDAD": 2.5}
+
+    def _ir_a_vista(_destino):
+        st.session_state["vista_seccion"] = _destino
+
+    _ops = []
+    _resto = []
+
+    def _add_op(nombre, ticker, score, zona, mult, destino, extra=""):
+        item = {"nombre": nombre, "ticker": ticker, "score": score, "zona": zona, "mult": mult, "destino": destino, "extra": extra}
+        if zona in ("ATRACTIVO", "OPORTUNIDAD"):
+            _ops.append(item)
+        else:
+            _resto.append(item)
+
+    try:
+        with open(_Path_op(__file__).parent / "gld_data.json", encoding="utf-8") as _f_op:
+            _g_op = _json_op.load(_f_op)
+        _add_op("Oro", "GLD", _g_op.get("score_final"), _g_op.get("zona", "?"), _g_op.get("multiplicador"), "🥇 Oro (GLD)", f"${_g_op.get('precio_gld', 0):,.2f}")
+    except Exception:
+        pass
+
+    try:
+        with open(_Path_op(__file__).parent / "btc_data.json", encoding="utf-8") as _f_op:
+            _b_op = _json_op.load(_f_op)
+        _add_op("Bitcoin", "BTC", _b_op.get("score_final"), _b_op.get("zona", "?"), _b_op.get("multiplicador"), "₿ Bitcoin (BTC)", f"${_b_op.get('precio_btc', 0):,.0f}")
+    except Exception:
+        pass
+
+    try:
+        with open(_Path_op(__file__).parent / "dividend_etfs_data.json", encoding="utf-8") as _f_op:
+            _de_op = _json_op.load(_f_op).get("etfs", {})
+        for _tk_op in ("SCHD", "JEPQ"):
+            if _tk_op in _de_op:
+                _r_op = _de_op[_tk_op]
+                _add_op(_r_op.get("name", _tk_op), _tk_op, _r_op.get("score"), _r_op.get("zona", "?"), _r_op.get("multiplicador"), "📈 ETFs USA", f"${_r_op.get('precio_usd', 0):,.2f}")
+    except Exception:
+        pass
+
+    try:
+        _sp_op = fetch_monthly('^GSPC')
+        _nq_op = fetch_monthly('^NDX')
+        _r10_op = fetch_monthly('^TNX')
+        _r3_op = fetch_monthly('^IRX')
+        _cape_op = fetch_cape()
+        if _sp_op is not None and _nq_op is not None:
+            _data_op = pd.DataFrame({'sp500': _sp_op, 'nasdaq': _nq_op, 'rate_10y': _r10_op, 'rate_3m': _r3_op})
+            _data_op['yield_curve'] = _data_op['rate_10y'] - _data_op['rate_3m']
+            _sps_op = calc_scores(_data_op['sp500'], _data_op['rate_10y'], _data_op['yield_curve'], _cape_op)
+            _nqs_op = calc_scores(_data_op['nasdaq'], _data_op['rate_10y'], _data_op['yield_curve'], None)
+            _lsp_op = _sps_op.dropna(subset=['score']).iloc[-1]
+            _lnq_op = _nqs_op.dropna(subset=['score']).iloc[-1]
+            _add_op("S&P 500 (Racional)", "CFISPETF", float(_lsp_op['score']), str(_lsp_op['zona']), _MULT_OP.get(str(_lsp_op['zona']), 1.0), "📈 ETFs USA")
+            _add_op("Nasdaq 100 (Racional)", "CFINASDAQ", float(_lnq_op['score']), str(_lnq_op['zona']), _MULT_OP.get(str(_lnq_op['zona']), 1.0), "📈 ETFs USA")
+    except Exception:
+        pass
+
+    _cl_sobre = []
+    try:
+        with open(_Path_op(__file__).parent / "acciones_chilenas.json", encoding="utf-8") as _f_op:
+            _accs_op = _json_op.load(_f_op).get("acciones", [])
+        for _a_op in _accs_op:
+            if (_a_op.get("evaluacion") or {}).get("status") == "Sobre benchmark":
+                _cl_sobre.append(_a_op)
+    except Exception:
+        pass
+
+    _n_total_ops = len(_ops) + len(_cl_sobre)
+    if _n_total_ops > 0:
+        st.success(f"**Hoy: {_n_total_ops} oportunidades de compra activas** — {len(_ops)} ETFs/activos + {len(_cl_sobre)} acciones chilenas sobre benchmark")
+    else:
+        st.info("**Sin oportunidades activas hoy** — todo en zona neutral o cara. El DCA base se mantiene.")
+
+    if _ops:
+        st.subheader("🟢 Oportunidades activas")
+        for _o_op in sorted(_ops, key=lambda x: x["score"] or 0, reverse=True):
+            _c1_op, _c2_op, _c3_op, _c4_op = st.columns([3, 2, 2, 2])
+            with _c1_op:
+                st.markdown(f"**{_o_op['ticker']}** · {_o_op['nombre']}")
+                if _o_op['extra']:
+                    st.caption(_o_op['extra'])
+            with _c2_op:
+                st.metric("Score", f"{_o_op['score']:.1f}" if _o_op['score'] is not None else "?")
+            with _c3_op:
+                _ez_op = "🟢🟢" if _o_op['zona'] == "OPORTUNIDAD" else "🟢"
+                st.markdown(f"{_ez_op} **{_o_op['zona']}**")
+                if _o_op['mult']:
+                    st.caption(f"x{_o_op['mult']}")
+            with _c4_op:
+                st.button("Ver detalle →", key=f"btn_op_{_o_op['ticker']}", on_click=_ir_a_vista, args=(_o_op['destino'],))
+            st.divider()
+
+    if _cl_sobre:
+        st.subheader("🇨🇱 Acciones sobre benchmark sectorial")
+        for _a_op in _cl_sobre:
+            _c1_op, _c2_op, _c3_op, _c4_op = st.columns([3, 2, 2, 2])
+            with _c1_op:
+                st.markdown(f"**{_a_op.get('ticker','?')}** · {_a_op.get('sector','')}")
+            with _c2_op:
+                _dy_op = _a_op.get("dy")
+                st.metric("DY", f"{_dy_op:.2f}%" if _dy_op is not None else "?")
+            with _c3_op:
+                st.caption(f"Benchmark sector: {_a_op.get('benchmark_min_pct','?')}-{_a_op.get('benchmark_max_pct','?')}%")
+            with _c4_op:
+                st.button("Ver detalle →", key=f"btn_cl_{_a_op.get('ticker','x')}", on_click=_ir_a_vista, args=("🇨🇱 Acciones Chilenas",))
+            st.divider()
+
+    if _resto:
+        with st.expander(f"⚪ Sin señal de compra ({len(_resto)} activos en NEUTRAL/CARO)"):
+            for _o_op in sorted(_resto, key=lambda x: x["score"] or 0, reverse=True):
+                _sc_op = f"{_o_op['score']:.1f}" if _o_op['score'] is not None else "?"
+                st.markdown(f"- **{_o_op['ticker']}** ({_o_op['nombre']}) — score {_sc_op} · {_o_op['zona']}")
+
+    st.caption("Scores actualizados cada 30-60 min · Benchmark chileno cada 30 min · El contexto macro de noticias está en cada pestaña de detalle.")
+    st.stop()
+
+
 if seccion == "🇨🇱 Acciones Chilenas":
     # ============================================================
     # SECCIÓN: ACCIONES CHILENAS WATCHLIST
