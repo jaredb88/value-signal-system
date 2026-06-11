@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-11T13:04:48.337709",
-  "duracion_segundos": 101.388991,
+  "fecha_actualizacion": "2026-06-11T13:34:42.347068",
+  "duracion_segundos": 96.992415,
   "n_acciones": 11,
   "acciones": [
     {
@@ -515,11 +515,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 128,
+      "precio_actual_clp": 127.71,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": 1.19,
+      "variacion_pct": 0.96,
       "dy": {
-        "dy_pct": 6.21,
+        "dy_pct": 6.22,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 5.54,
@@ -529,13 +529,13 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.010639096385713032,
-      "cagr_5y": 0.027066087089351765,
-      "cagr_10y": -0.025936210231446655,
+      "cagr_3y": 0.00987527618399442,
+      "cagr_5y": 0.026600275435327836,
+      "cagr_10y": -0.02615712187880126,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.29
+        "vs_benchmark_pp": -2.28
       },
       "cmf": {
         "periodo": "03/2026",
