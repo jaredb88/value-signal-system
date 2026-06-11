@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T18:33:04.483236+00:00",
+  "updated_at_utc": "2026-06-11T20:33:05.087059+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -32,9 +32,9 @@
     "NTGCLGAS": [],
     "SOQUICOM": [
       {
-        "title": "Bolsa chilena avanza 2% ya que acciones mundiales repuntan pese a que Trump promete seguir atacando a Irán",
+        "title": "IPSA se dispara 2,6% y supera los 10.700 puntos tras anuncio de Trump que apunta a un inminente acuerdo con Irán",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YN2VuZW9wZmJ0eGptdlFtZzFwMEdyY3JNYnltaFpoQUUtcWcycVlUTWQwemUwSVFPS21NTEdSaENKaEs2bGY3eFBSem1IcVlQQy1JdXNKb2pldVRXZjQ2NC1TZXBaTjV3?oc=5",
-        "pubdate": "Thu, 11 Jun 2026 16:56:00 GMT",
+        "pubdate": "Thu, 11 Jun 2026 18:39:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -56,6 +56,13 @@
         "title": "Bolsa chilena cierra en mínimos de 2026 tras siete jornadas en rojo por malos datos locales y la incertidumbre en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CMVhEN2NrUldQRXhuSGJBSzFQZnhVSGlYRGV6TnBMX1I2OVQ0eHdkUDhuX0UxVFJ2T2o4ZDJhbXN1SnNRZlo2el9iRHpNVGNzcEJHNTlVbDMxN1BOVERyVWZXMGVFajg3Wk1IOA?oc=5",
         "pubdate": "Mon, 08 Jun 2026 20:33:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "La investigación sobre el Tren de Aragua reaviva el debate en Chile sobre el secreto bancario",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQ0hLd19yclZsbnZuYUhGVmg1ak5ZQ3VrV0tKWHMtTmVfREcyM1BoVFVIczRCMEw3ZGZkajFpZnVSd3ozLUJoWl9RTHRyR3FLMFdrVXpJcFhrTGk5MUxCaHZ6OE1WSDViaHhZYVk3MjB2bm1RUmtSQXY4QnZGQ2N4QlNIRllZZG1pclUyQVhROFRWWFNORDNDckZmemFUVmlHcmNTbkpiNVVvSGh0Zm9VSmg1RlA?oc=5",
+        "pubdate": "Mon, 08 Jun 2026 16:47:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -100,6 +107,13 @@
         "pubdate": "Fri, 05 Jun 2026 07:00:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
+      },
+      {
+        "title": "Ineludibles responsabilidades en Codelco",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUmt0WkFOdUUyd3lNSVdjR2tEaFFmLWtXQWRFZ0N4QTU0Rk5aNDZqREtnQmloOHFNZ0FzQVVMUjVpVnNiUTE2TTlUOVVMWE1FWUlfVTUxZFBINm4tTDZHMEpxeUdUdnhQWjZIQjRHaEZYWDFaMmxGamRMYVB6U01Bc0RESTRUWkdqb1l2VVdR0gGvAUFVX3lxTE5kaWs4QzBlMVQ4Uy1OaHZrcVRvNTlGY0lnV2x6VzJGTld5RFdlTm41dUN4eDcwSEtmdlZDWU9qM1JHdWx1RVQtMmF0NnJEZkxMdFE0eDNEU1l1OWlYblBIcHctcUhFWHFrTHJuakZHZDE2bjVSNC1FcGNCemV3QjJkTnhJRzlhUXR5RVNEZzN1WVJsMVZUV08yLU5LZVQyU2ZLOFdNT0ljcVROZzU5dEU?oc=5",
+        "pubdate": "Fri, 05 Jun 2026 00:34:40 GMT",
+        "source": "La Tercera",
+        "matched_keyword": "SQM"
       }
     ],
     "QUINENCO": [],
@@ -109,8 +123,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2242,
-    "total_noticias_filtradas": 12,
-    "total_hechos_esenciales_brutos": 100
+    "total_noticias_brutas": 2243,
+    "total_noticias_filtradas": 14,
+    "total_hechos_esenciales_brutos": 102
   }
 }
