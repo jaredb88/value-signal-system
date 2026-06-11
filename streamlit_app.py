@@ -488,7 +488,11 @@ if seccion == "🎯 Oportunidades":
         for _o_op in sorted(_ops, key=lambda x: x["score"] or 0, reverse=True):
             _c1_op, _c2_op, _c3_op, _c4_op = st.columns([3, 2, 2, 2])
             with _c1_op:
-                st.markdown(f"**{_o_op['ticker']}** · {_o_op['nombre']}")
+                st.markdown(
+                    f'<div style="font-size:1.7rem; font-weight:700; line-height:1.2;">{_o_op["ticker"]}</div>'
+                    f'<div style="font-size:0.95rem; color:#666;">{_o_op["nombre"]}</div>',
+                    unsafe_allow_html=True,
+                )
                 if _o_op['extra']:
                     st.caption(_o_op['extra'])
             with _c2_op:
@@ -507,7 +511,11 @@ if seccion == "🎯 Oportunidades":
         for _a_op in _cl_sobre:
             _c1_op, _c2_op, _c3_op, _c4_op = st.columns([3, 2, 2, 2])
             with _c1_op:
-                st.markdown(f"**{_a_op.get('ticker','?')}** · {_a_op.get('sector','')}")
+                st.markdown(
+                    f'<div style="font-size:1.7rem; font-weight:700; line-height:1.2;">{_a_op.get("ticker", "?")}</div>'
+                    f'<div style="font-size:0.95rem; color:#666;">{_a_op.get("sector", "")}</div>',
+                    unsafe_allow_html=True,
+                )
             with _c2_op:
                 _dy_raw = _a_op.get("dy")
                 _dy_op = _dy_raw.get("dy_pct") if isinstance(_dy_raw, dict) else _dy_raw
