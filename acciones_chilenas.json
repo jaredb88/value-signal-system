@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-11T11:04:43.137123",
-  "duracion_segundos": 95.411852,
+  "fecha_actualizacion": "2026-06-11T11:34:37.457372",
+  "duracion_segundos": 91.472965,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,9 +11,9 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": 1350,
+      "precio_actual_clp": 1349,
       "razon_social": "A.F.P. HABITAT S.A.",
-      "variacion_pct": 1.31,
+      "variacion_pct": 1.23,
       "dy": {
         "dy_pct": 7.36,
         "anos_usados": 3,
@@ -25,9 +25,9 @@
         "promedio_anual": 99.33,
         "advertencia": null
       },
-      "cagr_3y": 0.2396778187342079,
-      "cagr_5y": 0.3947812627762204,
-      "cagr_10y": 0.10602764151101507,
+      "cagr_3y": 0.23937164983592418,
+      "cagr_5y": 0.3945745672628769,
+      "cagr_10y": 0.10594568621542666,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
@@ -263,11 +263,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Generadora hidroelectrica del Maule. Filial de Enel Generacion. ROE 72%, payout >100% (paga mas que lo que gana, usa caja acumulada).",
-      "precio_actual_clp": 2750,
+      "precio_actual_clp": 2645,
       "razon_social": "EMPRESA ELECTRICA PEHUENCHE S.A.",
-      "variacion_pct": 3.99,
+      "variacion_pct": 0.02,
       "dy": {
-        "dy_pct": 8.49,
+        "dy_pct": 8.83,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 234.9,
@@ -277,13 +277,13 @@
         "promedio_anual": 233.52,
         "advertencia": null
       },
-      "cagr_3y": 0.1468520650493801,
-      "cagr_5y": 0.08845890735664197,
-      "cagr_10y": -0.03677605504792281,
+      "cagr_3y": 0.13206595116193665,
+      "cagr_5y": 0.08001710619661218,
+      "cagr_10y": -0.040518581541767795,
       "evaluacion": {
         "status": "En rango",
         "emoji": "🟡",
-        "vs_benchmark_pp": -0.01
+        "vs_benchmark_pp": 0.33
       },
       "cmf": {
         "periodo": "03/2026",
@@ -515,9 +515,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 128,
+      "precio_actual_clp": 127.99,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": 1.19,
+      "variacion_pct": 1.18,
       "dy": {
         "dy_pct": 6.21,
         "anos_usados": 3,
@@ -529,9 +529,9 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.010639096385713032,
-      "cagr_5y": 0.027066087089351765,
-      "cagr_10y": -0.025936210231446655,
+      "cagr_3y": 0.01061277697383134,
+      "cagr_5y": 0.027050038680220156,
+      "cagr_10y": -0.0259438203723521,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -641,11 +641,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial chilena de Enel. Principal generadora hidroelectrica del pais. ROE 19%, payout 62%, G=7%.",
-      "precio_actual_clp": 520.01,
+      "precio_actual_clp": 530,
       "razon_social": "ENEL GENERACION CHILE S.A.",
-      "variacion_pct": -2.24,
+      "variacion_pct": -0.36,
       "dy": {
-        "dy_pct": 6.46,
+        "dy_pct": 6.34,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 41.9,
@@ -655,13 +655,13 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": 0.2939796691694687,
-      "cagr_5y": 0.20057545268855725,
-      "cagr_10y": -0.010974514609236263,
+      "cagr_3y": 0.3022134526391682,
+      "cagr_5y": 0.20515329983858543,
+      "cagr_10y": -0.009090709761036764,
       "evaluacion": {
-        "status": "Cerca",
-        "emoji": "🟠",
-        "vs_benchmark_pp": -2.04
+        "status": "Bajo benchmark",
+        "emoji": "🔴",
+        "vs_benchmark_pp": -2.16
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3787.9,
+      "precio_actual_clp": 3810.8,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": 0.47,
+      "variacion_pct": 1.08,
       "dy": {
-        "dy_pct": 10.65,
+        "dy_pct": 10.59,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.12015961717378398,
-      "cagr_5y": 0.21003304921449972,
-      "cagr_10y": 0.11202031423748693,
+      "cagr_3y": 0.12241241645824341,
+      "cagr_5y": 0.21149259093410522,
+      "cagr_10y": 0.11269077150723139,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 2.15
+        "vs_benchmark_pp": 2.09
       },
       "cmf": {
         "periodo": "03/2026",
