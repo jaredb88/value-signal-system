@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T20:39:36.064244+00:00",
+  "updated_at_utc": "2026-06-11T22:39:36.298980+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -29,6 +29,20 @@
   },
   "noticias_por_categoria": {
     "precio": [
+      {
+        "title": "La cifra impacta: cuánto dinero tendría hoy Adorni si no vendía sus Bitcoin",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOU2Z1cFhhczNUb3h0TFFfbERwT3FkaUtaMVBSbW5wM1dlRFRSeWktUEpvclVSTUR1ZVMtTmdtbERNbk1GbkQ3aENnU2tvRzFUT2J4QTBZcThSQklFbENHU2pmQ3ptdm5NRW5RQU9ZZ2w1UVVYa3FRU25rWU5JaDNTZ19tdW9iYU9NbUtCVFZxWHdSTkZfOURGaUJScTR0VG1vbkpfMXNfMFVSMzJYS1c2QmRUR0J6VmE5VWl6VdIBwgFBVV95cUxQWDdicjIwNy1ybWFONFlucDZfZzhkZmpzTzJTZ1BpeHdoeHM3T1MwNFF0eGhFMTZSZ2cwWUs3VHdWY21tRGF0ZmJHbURWWm1BZnpzQUJMT2RUcHlmY2NmNVZYUE5BZzVQQk9nV3N6NlBwNThZRmNLNDVGczF1Yk5GN1FOVGh1b2xtNXhhbmRGYmw4VkdwWVkyeUpkdUZaRGp0bUsxbjJDRGxBWFJTeERMX1FDTWlzWE9jQzNzaVZXcTNrZw?oc=5",
+        "source": "iProUP",
+        "pubdate": "Thu, 11 Jun 2026 20:19:13 GMT",
+        "pubdate_iso": "2026-06-11T20:19:13+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Los Bitcoin declarados por Adorni: cómo evolucionó la criptomoneda que hoy investiga la Justicia",
         "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPajgwanpFZ1lTN0tjOFlrZC10RWxsS21uZTd0TlpFc1dTWkJod3RsaUtaWGVXM1pidUxpWllKVFE1UUNscVh2TG5JVFBCdW8xRjhPeTZjTUpCMWs0X05VVWZsdWNQb3JsRlpRMFJyUjJvNlVEdTIxbjlRVm5yYVBtTGc3anlSVG04aG9mOWI3RWg0NlQ2X3VCMjhXeUtFYW9CalkyN2w1NjVaY0RlS1Z0MmI0ZnJQYW1lRXFxdW5DT3F4d1NQSnJzVUJVM1pER0NPaEHSAcsBQVVfeXFMTW9DUE5sN0Rwa05tWE1HTkxScnNmd1pJOXoxMlAxR21rSHNFSmVnZGduOGhDZEZGRENQTWdxeUxOWjlSTmNIRFlkVVRPTWZjOEtJWUQxaG9GV1d1emdVbW1ac0w2U1c4clh6dXpGNXd1WC10LTZFY2RMOWw3ZG1VSU1hTjZQZk8wcDdhdVI2Mkc0ZGFvclBUT3hRcWYtdHFTUjk4RW1wV2h1bUNSckd1NlI2MDhNT1ZkZDlKYVdDSU0zellPcm5LbDg0ZmM?oc=5",
@@ -84,13 +98,15 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
+      }
+    ],
+    "etf_flows": [
       {
-        "title": "Cómo se mueve el bitcoin hoy, 11 de junio: se recupera tras dura caída del 50% en su valor",
-        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPelRCMmNnNjROUk42UjBrTU1vSGo5TVdIcFR3cmVJTFUybjhFUjViVmd4Q3BtTGsxVFd1NFhDVGZhOGU0OGw2cWNiaFVyZW1JendwNUlTLXc3NklqX1pGd1M5YS1peEVtSzE3UUVibGMxU0kzV2JhZ2VaMFlOclVOTTdWOVRJcUpDdnBuUmwxcDRGRHUyRVJ2MG8yNTBTd005bk1IVW8tNFg3T2xnSW4xTlpNZjBVMDB0Wm9zZ0ZzSzBaWWI4R3BKckpFVF9fc3dOVnprN0doZkVpSlZjM2J4bnI0aTLSAeoBQVVfeXFMTUoxZGl5WDZ1NUxqWEU4ZTJ3N0tSaV9LZnFvNHhFLVo2QzN2OGFOMTE1YnRTYXJNaHBDdTJhZC05Rm4tSnVpeDJnbVdkV0VhYllGcFJpUlFRek5GdGFvYy00Vkw0SUxMQVA2SURyajBCa1ZTYjFMeVBaYmJKS3R0MHUtQXVPa3dLRTlGd3ZKcGZvZDRfU2hRcTJXd3BnTm14LU5LWUc4Y09Idjhrb0VWSkpzTE9HaTBFLThHbGY1azg3YVZ5NlVOUWdBT1hueXRBWHhzbUJDa3luZmNQVjdabWh2NjluMGMxRlF3?oc=5",
-        "source": "Revista Semana",
-        "pubdate": "Thu, 11 Jun 2026 14:53:52 GMT",
-        "pubdate_iso": "2026-06-11T14:53:52+00:00",
+        "title": "BlackRock y el éxito del iShares Bitcoin Trust (IBIT)",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbS1wNjB2RHZTY0tIaDRzaHJOSzVMeHFxdEVXY0hKWGhTVmpiM2VSbTVXQ2ctNW4xMmF1QVBPZHhrRl93UThWdzJWYU41d2VGZHdYX21ndTBObjJzMG1tYlh1ZmxramppblowU3FfX3JfQ2I4b2V3dVpONVFuemFPY2x0emJmbDBYM2plbDdDUXpraXNUbmNuSm9KQmxSMk0?oc=5",
+        "source": "99Bitcoins",
+        "pubdate": "Thu, 11 Jun 2026 17:55:05 GMT",
+        "pubdate_iso": "2026-06-11T17:55:05+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -98,9 +114,7 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      }
-    ],
-    "etf_flows": [
+      },
       {
         "title": "El ETF de bitcoin con distribución de ingresos de BlackRock se acerca a su lanzamiento con una tarifa que es más baja que la de sus competidores",
         "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUjZHaExMV2xsdXk4UHRpdGdMZHR1dG9PZnc5R295YU9FblM3d1dfV18xVmpSVlp3SE9tNlBuaTZLaVU4cXhoN2daTk50cFZKOTZERUZidF9oUHFkOEh4ZUhuUExnOE40U2wxdUIxSFY3bjB4RDdlQTZPN0xPejd4YVN5ajAtNEJYS1NuSm1RMC1TVTd4bFd0eFhXdDZabW9uOGpwb2JVeHJoRGprbjZybUd4TnUxZVh3cThRZFlWUmUtd2Y0NEhR?oc=5",
@@ -156,23 +170,23 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Why is XRP falling even as institutional ETF inflows turn positive?",
-        "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPdWdQVzRkZHRXT2F2S0l1QzhGdnlOaFB6TVB6X0NvZHF0eTVSNUNQUy0xNFkyMks5YnZ5TWxqOUVfWFBMeVpLWERqTmpzdHllQmFJMmxBZmJ1LUVsbzZQbjBKcnEtU3dJNHduRFJDTnh1cFE5OGJ1X0Q4UXZ3MnpLMlBsN19jU0xJVHNEVTVGSFctN053TllIeHRqdlkyb3hySmhSbVpndURxZmNGSmlyZWxRYkcxdUlNR282ekRoTFdGdW01cUhnSC1vV21Kb0ZtaUd3VFEwQ2ttU1VPcmFnUzlpLVlGZXFyR1NINm5yUURPekx0UTRQZ2JRY0UxN0JkeXpaU2xVWmpPWEx2SHg5WmhnZEJSSGw0LTJ4dm9jYzhmakdzTWlkN0o1QWFlTHhROUN0MUo0eFF6MzItQzB0a2t1MWxUamk2MFY5YTNn?oc=5",
-        "source": "MSN",
-        "pubdate": "Wed, 10 Jun 2026 15:17:05 GMT",
-        "pubdate_iso": "2026-06-10T15:17:05+00:00",
-        "impacto": {
-          "direccion": "positivo",
-          "intensidad": 3,
-          "intensidad_label": "fuerte",
-          "emoji": "🟢🟢",
-          "razonamiento": "Flujos institucionales hacia ETF: muy positivo"
-        }
       }
     ],
     "regulacion": [
+      {
+        "title": "Japan will regulate the crypto sector like the stock market",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWm9SN1lUYkFVcERMcGZ1Q2NKMDg5OHBPeHczVTA1aFFuVk04SndoVUJSeVlad0M4RVNSV3NQVFlvdVRTLU8zZDJzZU9USl8yWTlNam5vNE9TS3doaG5LLVJOWGlGWmVSd2tMWnh2SUpTTk55RV9UZjFVa0RqTGtOdWFwT1pRcDdfMnFTaXUwOUM?oc=5",
+        "source": "Bit2Me News",
+        "pubdate": "Thu, 11 Jun 2026 15:00:04 GMT",
+        "pubdate_iso": "2026-06-11T15:00:04+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Hungría despenalizará el comercio cripto y revertirá normas que contemplaban cárcel",
         "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcVdzbm5YakdUQnoyQVlVUTBpYnNEZE1tTThXMUV1a1pJNUtqSW1FaUlkUFljeUQwbjBhVXM4dXlNUXc1N1V2cGEtVjRSSVR2R2RzdTZPYXJzZ0hucXpRdF9CenlGMjNKTzAyekdmZV9kcFVaVXpIamNSTzJIQWoxWWNSRTAzOGtTVjRiN2xXeHJaV3ltbEV2NUJyWlpvXzBrSHFZaVFOMjlydkJLeFdEVldqYUJnU09WZW9zZHlQb0s?oc=5",
@@ -221,20 +235,6 @@
         "source": "The Coin Republic",
         "pubdate": "Thu, 11 Jun 2026 09:30:00 GMT",
         "pubdate_iso": "2026-06-11T09:30:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "EE. UU. debate nuevas leyes sobre impuestos cripto",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5vUWhhTmowRGZFdnVGa0J3YVZCWlFxaktoYzhETTMzZE5rWmltYl9JOHljVVdRLTRwTDF6aHlYVFEzSFgtcVB5YUYwQVVmemhqalFybUJSNmJ5X096cndwYlFFY0twd3VGZFB5QXFORXBiTUxkMnZMYkFyQThQdw?oc=5",
-        "source": "Bit2Me News",
-        "pubdate": "Thu, 11 Jun 2026 09:00:06 GMT",
-        "pubdate_iso": "2026-06-11T09:00:06+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -445,13 +445,13 @@
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "neutral",
-    "score_neto": 0,
-    "n_positivas": 3,
+    "sentimiento": "levemente bajista",
+    "score_neto": -3,
+    "n_positivas": 2,
     "n_negativas": 2,
-    "n_neutrales": 23,
-    "narrativa": "El feed muestra 3 senales positivas y 2 negativas (neto +0). Factores dominantes: Flujos institucionales hacia ETF: muy positivo; Desplome: muy negativo.",
+    "n_neutrales": 24,
+    "narrativa": "El feed muestra 2 senales positivas y 2 negativas (neto -3). Factores dominantes: Desplome: muy negativo; Salidas de ETF: muy negativo institucional.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "NEUTRAL - sin sesgo dominante"
+    "veredicto": "Levemente BAJISTA"
   }
 }
