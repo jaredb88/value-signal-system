@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T15:33:48.090328+00:00",
+  "updated_at_utc": "2026-06-11T17:33:48.368532+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -31,7 +31,7 @@
     "bcch_tpm": [
       {
         "title": "Banco Central Europeo sube sus tasas a 2.25%; decisión se debe a la inflación causada por la guerra en Irán",
-        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQOVRHTGlDZmxMclA5VGNQcGNUSXRWaUltbFpCY1NBdHFhY1pic0dEdEtZS3VRcDdDTlgwRm5remlCUngwRXdmNFJOejVVTDdKTXRFWm1GUTd5YkZYYUJScEVTZW9BcHN1R3A4RWhQX2N3ajRna09BcHdBT1NjN1lLX3pHUk84eFhaMm5vem8tUHVQNm5XQlBDdm1VcGhVRmhRcEE0YUN0R2FXQTJPQjNIbFNSWTEwUmtoMU9TczFGaVp6UG81QTRDUjVMTkNuQ0xzaTN6NHBFLUkxZw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQOVRHTGlDZmxMclA5VGNQcGNUSXRWaUltbFpCY1NBdHFhY1pic0dEdEtZS3VRcDdDTlgwRm5remlCUngwRXdmNFJOejVVTDdKTXRFWm1GUTd5YkZYYUJScEVTZW9BcHN1R3A4RWhQX2N3ajRna09BcHdBT1NjN1lLX3pHUk84eFhaMm5vem8tUHVQNm5XQlBDdm1VcGhVRmhRcEE0YUN0R2FXQTJPQjNIbFNSWTEwUmtoMU9TczFGaVp6UG81QTRDUjVMTkNuQ0xzaTN6NHBFLUkxZ9IB7gFBVV95cUxPSHNBTXZzU3BtaE1aODJiX2Y4TVpKRFV5eXJjNzVJRGpOWE9rV19PWFBsd3F4d3J3Z05QMzdoVjEzMGVYdGs1eUFqT2x1a1YxM3FnNGdzNkNNeXZhNTdoNXNFQWFTNDVxaklTNWNZcFJvdnBOcUF3Q1BJZk5tcU13TTE2QnN4dG1CMTVwa3R5ZWM5cVBiM1lUbjl4VDl0MU11NWFwTllFUjhHbGdVOEpXemplRW11TXp0OU9VT3VUWmRvRmJPYXE0MTZjcF9UYWZobUtvenBQUWMxd2lJQXk1cDFCRURPLUZPcm1wUzhB?oc=5",
         "source": "El Universal",
         "pubdate": "Thu, 11 Jun 2026 13:19:11 GMT",
         "pubdate_iso": "2026-06-11T13:19:11+00:00",
@@ -49,6 +49,20 @@
         "source": "Finanzas Digital",
         "pubdate": "Thu, 11 Jun 2026 13:00:16 GMT",
         "pubdate_iso": "2026-06-11T13:00:16+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Rueda de prensa del BCE: Lagarde habla sobre las perspectivas de la política tras la subida de tipos en junio",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdkVFVzRLVy1yeXRjUVJydU4zRUlWRXFibTJpTlNRQ0JGUlZ0OFlXR0ItV0psUVhCdktybmh4ZVIzV0JWaHI5Rl93RkNPSE9RaUhuTUpMTU5YekZpWDJpNFNsaVB2TjIzb0ZZNXJlanNtOGNSSnVYbUdLazhfaE5KTmoxajllNnhXUlNTR0JNU2RQZTI4Und5WVdRWms5TG9mZlJZOWxUUHFDSHZrN1oyVml4SnRCTzFDdmZLR1BmcWZpUFllT1F1SVlJMjhKd1I2Rmt3cVR0VdIB3AFBVV95cUxQdENKcTg4eDRKajIxOG1adXhRM3ZnY0haRjhUWHhGNmlWYk1WaWtXRHFXOE1GTW9RM1FCcDlxYlNUWHRRdWdrVWV2d0ZNMzhwaXZmM1drTHdMazE4X2U3VVZOdmh1ZjFNTmszbWFvbWotZVZ0dW1CTnJKdjFzbmZEVFo1NzRodk1lSUJVbmo1b21NXzBEaUZkZUw0eDRmeDdMT25uUHFpZVFYZE9XSHFETl90enIzbzJlYjhpWllCVjQyLW13aThwNVJ1QjBMdGxUTTJOUHRwaGhzQVVt?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Thu, 11 Jun 2026 12:47:46 GMT",
+        "pubdate_iso": "2026-06-11T12:47:46+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -77,20 +91,6 @@
         "source": "El Observador CR",
         "pubdate": "Tue, 09 Jun 2026 06:02:30 GMT",
         "pubdate_iso": "2026-06-09T06:02:30+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Inflación de Chile sorprende a la baja antes de la decisión de tasas de interés",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdHdFWFViTWcyR1JTMVVIc2pETThWaG8yRFFYVWR1TXVSV0tNVHlvTnVHQTR3a2dhaVl4N0g5NnlQV25STlBudmJiQkF3MDhCNE5INU1RdlZOSFRhMVdZUVdrdzVURjhZQnV3M3lXc0RhcGhJZnF3MGpTaTZqcWFGQ21ISzIzWHVRYk13Uy1fRWZjcFl0bHFWeENRcllSOEVjajJIOUpKcGQ3UGRXdzRQTF9Mb3lFM05YblBQcDZKanFUR1lJazBSNnVvOHNpVFpMTVVHZTJLRml4ZXBueS1VbzNR?oc=5",
-        "source": "MSN",
-        "pubdate": "Mon, 08 Jun 2026 22:10:32 GMT",
-        "pubdate_iso": "2026-06-08T22:10:32+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -147,7 +147,7 @@
       },
       {
         "title": "Precio del Dólar en Chile hoy: El Peso chileno gana terreno tras datos económicos clave de EE.UU.",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRHNmWDJQY21vdF9yTHlNOFVFdnBWLVlZb0RmYjZjMEt0MC1xNDFOWjZ4X0lHSTdTVWFWcWw5bi1NLUV3MzJIV2p5X0tHRVdBTnNaTTNKWEpoT2xoUnpnQVlVUmxKQVBEdHhla3hQRTdPbzZ3dUIzWGRVNWVhVFVvN3laMmhLaE13NEo2a2ZhZ2lpQzk1ZnltRi1KNmphdzZtSXFobmxfMGFjLVFxMGFQczhpVkhEMHBNanRFRFdjOFhUWllHRG5pN0QxMVF0SWxsd3fSAdcBQVVfeXFMTVZ0dGJxZnlGVHV3OUY4Ti1adFd6NVFYTTVaa0JJWmRjZHhPc2ZZTk1MdjE0N21nbDNIRVdQU0RMVkEySWxIVDVqN3QtU29Hb0ZtcXRyTW1RTHdkR1A1Z3BpeVpFOHNMOTY4LVVaOHlDRTJuMnNSVHY5Y3BNNkE3YVFnaGNSY2dqbm1BYWpFRl9yeDJ3SEdJTVVKWkVXckJHanlMVEY1S2d5SEVBQ3dReURsMldJeWZ0QTE2aUdMU1pWRHZqYmNEM0NacGp6dkRRcEVOcUpZYWM?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVnR0YnFmeUZUdXc5RjhOLVp0V3o1UVhNNVprQklaZGNkeE9zZllOTUx2MTQ3bWdsM0hFV1BTRExWQTJJbEhUNWo3dC1Tb0dvRm1xdHJNbVFMd2RHUDVncGl5WkU4c0w5NjgtVVo4eUNFMm4yc1JUdjljcE02QTdhUWdoY1JjZ2pubUFhakVGX3J4MndIR0lNVUpaRVdyQkdqeUxURjVLZ3lIRUFDd1F5RGwyV0l5ZnRBMTZpR0xTWlZEdmpiY0QzQ1pwanp2RFFwRU5xSllhY9IB1wFBVV95cUxNVnR0YnFmeUZUdXc5RjhOLVp0V3o1UVhNNVprQklaZGNkeE9zZllOTUx2MTQ3bWdsM0hFV1BTRExWQTJJbEhUNWo3dC1Tb0dvRm1xdHJNbVFMd2RHUDVncGl5WkU4c0w5NjgtVVo4eUNFMm4yc1JUdjljcE02QTdhUWdoY1JjZ2pubUFhakVGX3J4MndIR0lNVUpaRVdyQkdqeUxURjVLZ3lIRUFDd1F5RGwyV0l5ZnRBMTZpR0xTWlZEdmpiY0QzQ1pwanp2RFFwRU5xSllhYw?oc=5",
         "source": "FXStreet",
         "pubdate": "Thu, 11 Jun 2026 13:53:59 GMT",
         "pubdate_iso": "2026-06-11T13:53:59+00:00",
@@ -204,6 +204,34 @@
     ],
     "economia_chile": [
       {
+        "title": "Pese a altos precios del cobre, Banco Mundial recorta proyección de crecimiento para Chile",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSGs4eVpXdVMwYWphSkV0RGhsMWxER1VGcGdJVnNDRGxydHpzVkhMOEx1c0Q1dEhzbDRWdlkxUGNNVEhnYW00YnE1a19Mb092d0w2NXEyMDlDc1QwS3h5Tjk2Sk5kcjhOSUdRWW1TYmw3V3ZxRjhjMzRmZXI1eG9QdktrRE5fYXBGMXdoMlJldExBSGFEUEVVRjJnOGZSLUtGMWNENGQzUThTSEJBTnhQQWtWQTM0cWhkT21ISEJFZGxydlJHMmU0bXQ1X1VTWDJZN2Mw?oc=5",
+        "source": "El Mostrador",
+        "pubdate": "Thu, 11 Jun 2026 15:52:03 GMT",
+        "pubdate_iso": "2026-06-11T15:52:03+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Banco Mundial baja su proyección de crecimiento para Chile este año",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQUlKQ1hIckNpSFNwcy1NMEQ1X1JhNHRGYUd0VHltZWEyT19CLVR0ckh5SHBYV2pKaHhTeHVxb3RndU1MZ1BXRzB1UlN6aDV3VW9lSWlpY1ZmRjF6NGNPdUlFbG9CSlRRN3Z4UnFfNVVrVzNCTGROQTBqRUplUlNRN0NWQ1RXMklkUnhteW5XdXFLalBIa3VfRGRJQU5zOFhGRldFMksyTE04N3BkWlh5Yw?oc=5",
+        "source": "Diario Financiero",
+        "pubdate": "Thu, 11 Jun 2026 15:36:00 GMT",
+        "pubdate_iso": "2026-06-11T15:36:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Banco Mundial recorta proyección de crecimiento para Chile, a la vez que destaca alto precio del cobre",
         "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPSnczcFRldkVtTXZvM0dEMENncy1MSFNndHY2aVBRSG9oaHhjVHl6VEZ4SXNodzRSWTZ0VjFTaEFFdGxOX3hteUpjekY4YlpjWkpNc1gtMjZCNGhRc25nQkZUMXBoRlE3REpNZkx5WG8xMzZQeHd3NEt1QnpZMTJmSGh5QUU5dDY3TnQwMlBjOTVmaHNhQlVUdjFNaEphNm9OWTFnYkU4d25RTUpjRE5Yc1dqLTRoNVE3T2NHZ2pSSEQ0TUE2VTJBcm1kUk9aUkI3bUwxd2Q0RTJOWk1sT09GanRCa3RpSkt0c3VXQk5scDhKRlgtYVlZQTF6NUV2T0tWVFVQYVEyWEtOLUJ5LVZfdkhB?oc=5",
         "source": "BioBioChile",
@@ -244,34 +272,6 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Quiroz proyecta crecimiento de 3% para 2027 y 2028, pero insiste en objetivo de llegar al 4%",
-        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNOS1YYXlXZmxIZ2ZSSWR2OXhIQjZ4YXhfS0V1dlBreDROWEM4N1BWOXF3ekFFbFhvcHdOaU95TTA1UmxlZDNyWHh5azc3VXFXTnNXYkZOM00xQWRLcWpHaGtuaXRzQXBTQlU0THBjYnlnZUJPR3Nhb1VZUjhUYUQ1MUh5ZWlQTnNON2dDVXItNFg3ZnVoNC1PZ1YtZmIyUHFjV2RhdHdoYnVGRHEyRlFWd3lNd2F4M3FNTEhrNFNjY0loa29BZ0dJT3kzWVczM2xuNVZLS0I0b1QxeU11dFpPaW9yQ05tWldSS290bUhCOFIzbi1TYVE?oc=5",
-        "source": "Radio Pauta 100.5",
-        "pubdate": "Wed, 10 Jun 2026 22:27:37 GMT",
-        "pubdate_iso": "2026-06-10T22:27:37+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Chile proyecta crecimiento económico de 3% al 2028",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZ1J4Y2Job2h4UmNrMTdXQ2Z2V2pza2RzYWRTR2Z0RXk5YnQ4T2ZDVnNEUUlsSnQ0YlM2QzNkX3pSWmhfREQ3MzJwSHIxcnc2UU9pdVRLZEM4UWpqQjJVSC1Sem5heUFBOXVzOVN1eElOS0dvQXR4QnlWU1lIMUlnWHlyMVlxUFJXWnlMa0J0WHQzVmlWZUZUcm5YMk5yU0dhVk1LTXdZM2FoeHJa?oc=5",
-        "source": "Rumbo Minero",
-        "pubdate": "Wed, 10 Jun 2026 19:50:30 GMT",
-        "pubdate_iso": "2026-06-10T19:50:30+00:00",
-        "impacto": {
-          "direccion": "positivo",
-          "intensidad": 1,
-          "intensidad_label": "leve",
-          "emoji": "🟢",
-          "razonamiento": "Crecimiento: soporte macro"
-        }
       }
     ],
     "politica_regulacion": [
@@ -304,13 +304,13 @@
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "levemente bajista",
-    "score_neto": -3,
-    "n_positivas": 1,
+    "sentimiento": "bajista",
+    "score_neto": -4,
+    "n_positivas": 0,
     "n_negativas": 2,
-    "n_neutrales": 15,
-    "narrativa": "El feed muestra 1 senales positivas y 2 negativas (neto -3). Factores dominantes: Perdidas reportadas; Reforma tributaria: incertidumbre impositiva.",
+    "n_neutrales": 16,
+    "narrativa": "El feed muestra 0 senales positivas y 2 negativas (neto -4). Factores dominantes: Perdidas reportadas; Reforma tributaria: incertidumbre impositiva.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "Levemente BAJISTA"
+    "veredicto": "BAJISTA a corto plazo"
   }
 }
