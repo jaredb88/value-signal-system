@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T01:33:49.356320+00:00",
+  "updated_at_utc": "2026-06-11T03:33:49.948443+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -132,8 +132,22 @@
     ],
     "dolar_cobre": [
       {
+        "title": "Valor de la UF hoy miércoles 10 de junio de 2026 en Chile: precio actualizado",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcDYySERETW9YUTg5azZqUHlITzh2cnBMVkRRVGdXR0ZuT1dLcmM1eVRWWkludjgzVkxsOC1MYzdaZ2pLQTdnMG1BYmlSWlV6dTFsSG1tUlB2aVU1eVdjR19IMkJMbmQtbTBFRWJQZExidUxRUjYyeUd2Vk9nV2J0Wk40WkIybkF2Y0pFV2xDVUI2emJpY0kzZ1pxYnhUUUloZzV3YTBZbm83RkNTekgybHJnWmhRb2M?oc=5",
+        "source": "Radio Pauta 100.5",
+        "pubdate": "Wed, 10 Jun 2026 19:36:19 GMT",
+        "pubdate_iso": "2026-06-10T19:36:19+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Peso chileno hoy, 10 de junio: la cotización clave para quienes cruzan la cordillera para comprar en Chile",
-        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOcENJYk1jQ2s2djEycWxTVVZDWjdQQlhWeXUzWl9kbHNneGhoM1FtOFhBcEVvdlhfVG9LYlc5aTVBWV92SWtBb20taC1SUmxHYnFYYnpIRWRVZUM1Mjg1QWlKSDdQb3luekhMckRsWFJ5Xy1CUWtVcTB0M3piOC1FZVFnMmREYlZ1el9KWkRhR3U3alo4amNpbkFrZC1TV3RjNVFxekdPaENVMDJIa1FOTEFEb1F4c2JCTUxyX1NMV2llaGRxTklmWTNhcGFUNVkyT2tNcDBZU3RpOWZUV0hZV1lUU01lbU1aQXZGZ3JMVTDSAfgBQVVfeXFMTmNKX1p4N29HN0Z5U0o5d3htSnNHTjRiYW1KU0dpUFktOHFKUkpNZ0txUWFQc0NWTHltSF82cWdTMWE1QlhLMTlvYVZCdFgxdlU1R0VaeUc5NDMxUEg3Z25MMGktNGhOejZYVFlNbnZ2SndEb2gzdXZmRFM1bWxyakRRV2xJeXZvcDN4enpRMXFHNnlZZE5XdUFKT20yaXpzb1FsLVNvUkNCLXlZSmNMYWE5cC1hWFR6cmxfX0xSNFVhZU55d0ZfaEt6U0h3R0wzMmpyUno5S19RenBFNWZfYy1wQnZMSEVZazl0Q0NwdHN1QTM4YVR5SHY?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPYXp5bjdXZVF1OV9NOGoxZVhlMHBRNjY2d0FiOHRvc2FHVFdKZVhpeEJTa1psNFZkaHNSUDMwWFpOaDliRElZaGl6c2VoWDJvb05fOUd4T1FFemhSSGlvalhBQ19WdkZRQnBVTzc1T05iUlVMM2JSWGZPbENBTWNIQVpRWHpWTFpiNGx3UDNIWXNCdHRBQU9LYWJGdTBGdWFWdGRDXzRtSmhLUDNDdG5kYm94U3RiV3dJRFdaR1JISGNMMjdETXJ4bEFFWGtsaG1nNU1HQS1aQW93TUk2NVhHMVFjeDjSAewBQVVfeXFMTTRnNW5pczhCUl9zbGxaVnAzcGI2WnllaGstamV0NWt5SXFNNjI5ai1DQ1pWRnJDVDBiQXlMNW5jbnMzYVdLT3VMOFRsYnU1OWpOVUFkUzh6U3FsMjlpVUp1ZTVnazk0anRueVR5V1JOLXNzcHVBY0tkeHk0MFdnckJqUWtvX2xfWUtwX0lORTBjRVZYTFVGX0FYcXdRakROVUo5c2RSQmRsVG9aU1NrZ1owNlZaUllZYzZpVFNzMGhrZG1LcE9admpNVWNlUVoyQW82SUZjekR4MUtQZGZ5enp0dmJ3U3VjZklkTlE?oc=5",
         "source": "Diario Río Negro",
         "pubdate": "Wed, 10 Jun 2026 14:42:00 GMT",
         "pubdate_iso": "2026-06-10T14:42:00+00:00",
@@ -186,20 +200,6 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Precio del dólar hoy en Chile: Peso chileno gana terreno frente a la divisa estadounidense este 9 de junio",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOb1oyVGdYcERyVUJxcFluNC1fX1dJaDFWZkR3dDVIbXB4Wk5LbXFxZVM5b0JvOEFmbHg5MU1maS1ScjFIQjRlTFJaZ2NFMlZhSEdmTUs5Mi1DbVNzcmdCU1ZlRkpXX19IbUt4dkV4Z1RuWFc3V1g1U01TX1pIN3J3dktzTXVLeko0Y0M5TXFIODlEY1JOQXlfaElXOE1FdmNxTC1SNnM5YzJvM3gyUmxF0gHKAUFVX3lxTFBweW13alIxTGcxMHFuZHEwQlplLVhvQVJ6NlZ3dGJiNUxqUE5oMy02ZlFCSjlBcHBNYlJucWVRdlYtQmcxVkRhaWp1enJTOXd3Wm12eV91SG0zVEN5N2VtcHNSVlZiTFFldU9GVkROSlpNSXJ4MTRoRTQ2ejdyVGVmUWxsX3ROSEZmQ2h6RUZMbG03cnVoSFk4aU16M1JGWGZNTEhnUjBFSGZ2eVZSa1Z0bVFVS2xfMm91Nm4yc1V0SEVOaFhPSEZ6Mmc?oc=5",
-        "source": "Infobae",
-        "pubdate": "Tue, 09 Jun 2026 21:51:00 GMT",
-        "pubdate_iso": "2026-06-09T21:51:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ],
     "economia_chile": [
@@ -218,7 +218,7 @@
         }
       },
       {
-        "title": "Ministro Quiroz ajusta proyecciones económicas: Hacienda prevé crecimiento de 3,5% al 2030 y descarta llegar al 4% prometido por Kast",
+        "title": "Quiroz proyecta crecimiento de 3% para 2027 y 2028, pero insiste en objetivo de llegar al 4%",
         "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNOS1YYXlXZmxIZ2ZSSWR2OXhIQjZ4YXhfS0V1dlBreDROWEM4N1BWOXF3ekFFbFhvcHdOaU95TTA1UmxlZDNyWHh5azc3VXFXTnNXYkZOM00xQWRLcWpHaGtuaXRzQXBTQlU0THBjYnlnZUJPR3Nhb1VZUjhUYUQ1MUh5ZWlQTnNON2dDVXItNFg3ZnVoNC1PZ1YtZmIyUHFjV2RhdHdoYnVGRHEyRlFWd3lNd2F4M3FNTEhrNFNjY0loa29BZ0dJT3kzWVczM2xuNVZLS0I0b1QxeU11dFpPaW9yQ05tWldSS290bUhCOFIzbi1TYVE?oc=5",
         "source": "Radio Pauta 100.5",
         "pubdate": "Wed, 10 Jun 2026 22:27:37 GMT",
@@ -235,8 +235,8 @@
         "title": "Chile proyecta crecimiento económico de 3% al 2028",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZ1J4Y2Job2h4UmNrMTdXQ2Z2V2pza2RzYWRTR2Z0RXk5YnQ4T2ZDVnNEUUlsSnQ0YlM2QzNkX3pSWmhfREQ3MzJwSHIxcnc2UU9pdVRLZEM4UWpqQjJVSC1Sem5heUFBOXVzOVN1eElOS0dvQXR4QnlWU1lIMUlnWHlyMVlxUFJXWnlMa0J0WHQzVmlWZUZUcm5YMk5yU0dhVk1LTXdZM2FoeHJa?oc=5",
         "source": "Rumbo Minero",
-        "pubdate": "Wed, 10 Jun 2026 20:11:30 GMT",
-        "pubdate_iso": "2026-06-10T20:11:30+00:00",
+        "pubdate": "Wed, 10 Jun 2026 19:50:30 GMT",
+        "pubdate_iso": "2026-06-10T19:50:30+00:00",
         "impacto": {
           "direccion": "positivo",
           "intensidad": 1,
