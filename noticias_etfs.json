@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T19:26:57.916738+00:00",
+  "updated_at_utc": "2026-06-11T21:26:59.784362+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -30,6 +30,20 @@
   "noticias_por_categoria": {
     "fed_tasas": [
       {
+        "title": "Senado aprueba al nominado de Trump como nuevo presidente de la Reserva Federal",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObWhYS3liU2lManNneGwxWWZfdE9kYWVwUW1XeVozVTBkRUN3VWlqSU8zR2NKbDhYRnVMUEZkQWR4dXFoTVRITEtXUmpxMjV2SVUyUlB5cERJMWZ6UFl0eW1kZmNySnV1MWkxcnk3Zk8wX1l2cmEtdEpmX0t1ODBxbHYwMGwxc1JhbFNnVQ?oc=5",
+        "source": "AOL.com",
+        "pubdate": "Thu, 11 Jun 2026 01:46:28 GMT",
+        "pubdate_iso": "2026-06-11T01:46:28+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "CPI Inflation Rate +4.2%: Hottest in 3 Years",
         "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOczVSZUNORC1zVGNuc2FEQ194TlE0d1NLUnRhT1QwczFnWGtpM2YtMWxmclRKMWpxdG5vMnFHSnVaSmsxcEpvY3RGOTlHNm1UZ185RTlaWFBKWE5yNVpfMERkSnFkZlVMSE1peUl6ejRoMTdOWnByalRWNVJOUC14U0t6SkwtYUFyVkNsM29Kc2ZaZ1N5cjVsT1k2R2w?oc=5",
         "source": "TradingView",
@@ -42,13 +56,15 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
+      }
+    ],
+    "mercado": [
       {
-        "title": "Broader Market Settles Higher as Chipmakers Rally",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQS1kYUZvNGdIU2haWHI5Vms5SnlMb1UtYU9hMXRPWmdCRG54VU5KcmdBTFFkaVRxYVpiU2x5UFVEaHN0MjNRNFNmZlNMeTBxUTctbVdLTXotM3RLR0MtQ3Q5OWpIeHNOLWlFcmRuMWRGYVNOME00X3h0S25KdnF5ZHVtRzdnSnI4aF9tM2xQUnZ4T1VhQ0FYenhTak1IN3hGeVhwMzJ3SDJ0Tjg?oc=5",
-        "source": "TradingView",
-        "pubdate": "Mon, 08 Jun 2026 20:33:03 GMT",
-        "pubdate_iso": "2026-06-08T20:33:03+00:00",
+        "title": "Wall Street cierra en verde con fuertes subidas tras cancelar Trump ataques a Irán - AlbertoNews",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTFBONmNkZzdiQS1IODhCZHhNMjdaRS1VMHRRQWtwV1htTTNXdS1ZQ1hheWhwNHNwTE5SaHRQOUpCbXZEbk1RUkdpVHE4RVQxQ3YxZ1BFZUozWWhfMUJJVHg5N2R4SjlNVXRROHRaVkt0dS1DMjY2Qng0TmVsZzZQVW04azFHbmVzWWZVaktXbFhaS2lrUDNiUDNTNk1PTlE1NHdBdVZvYTkyVEllSm9SZDFnSmVobFZmU2VDaEN3bUc?oc=5",
+        "source": "AlbertoNews - Periodismo sin censura",
+        "pubdate": "Thu, 11 Jun 2026 20:41:05 GMT",
+        "pubdate_iso": "2026-06-11T20:41:05+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -56,71 +72,55 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      }
-    ],
-    "mercado": [
+      },
+      {
+        "title": "Sensex rises 550 pts from day's low, Nifty above 23,200: 4 key reasons behind markets turning green",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPdXdoczYteVB3eVNvcG9qRDBNQkZDN0hDclBUUmNheUczaEFKMC1KamFXNzFObkJnc1QwOVFXUm10MzN2MFVFd21HN2YyNDFzVl9ZVmx6UFRwVW1yQ2l5dWRCVnNmV0pUckJmakhyM0ZqOXNsTGVMVW5OeWllQ2EzRU96dVBrc3NVdXFSVk9MbzlsVTVvRHNKbDBORG5OeEdtZ0NzclJZR3RiT1lKNG1OSHB1LVhZRkxpM2ZBamZmVmMzenQ5NHB3Sjk1WFFMYUZfMzhtVF9aVW56czlucEpGbXJxandKVjlhRHFvakFDWU4?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 04:53:00 GMT",
+        "pubdate_iso": "2026-06-11T04:53:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "NYSE Content Update: ERock Sees $5.9 Billion Market Cap after its IPO Prices",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcVNMSE9wamtDRnhfUDlnbEJrYU1wWWdqWEswRGNDU3RqZHpjVy03eWpWcXVPclpBLURYUG1PTmxQblpQbEtkTGlkWWJ2cXhmc0J5d3dLcnUxRjZIU2x6UmZ1aVdRWnRhTmd3OXA4MVJ4Uk1GWGFUNzFNa0VacVZveHp6dGo0ampDV3diNGNPNWRFTHI0cHdIWUM4Wld6bkctdGp1bnMxRDhYeTZCYTBVb1dqQ0tEdDdwMzVaVlhJc1BPdTgyaGwwSVlkWEhReWs?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 13:15:00 GMT",
+        "pubdate_iso": "2026-06-10T13:15:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Here Are Wednesday’s Top Wall Street Analyst Research Calls: BILL Holdings, Cava Group, Entergy, GlobalFoundries, Hess Midstream, Nike, Pfizer, SharkNinja, STMicroelectronics, and More",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUnFFVzFkRjRxSWdyVDhDaVgxY210MUN6QUxiTWhsOXp4eDNwamJQQ0N6UXRTeno3T3JWQktaZURjZVZYSkxIaUlOMTl2RFk1VkZMTldqS0JTY3FOQUQzdjl1X0U5OVZfU0RoeXkwY1BOdkxsbjJKcDY3Y3QtbDZHZUdoRQ?oc=5",
+        "source": "AOL.com",
+        "pubdate": "Wed, 10 Jun 2026 12:09:26 GMT",
+        "pubdate_iso": "2026-06-10T12:09:26+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "US Stock Market Today S&P 500 Futures Rise As Traders Eye Key Inflation Data",
         "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZGhHTjNJOTdYY0NRdUZRaVUtYnppeGZJWmxjOU9qSHhnSVJxQ2xuSDN0SWlQNlhGU3ZqSzl2RlVCc09BcGs5cXJueHNyanlObzBHWEZjb25MRUlrUTlvazg0LUl4cDRMdkpBbDZZRFZxWjlyNUF3blZVM2pJcE9RT1ZOYk0zb3RGbVc2d29IWFlySmxFd1lnRHg0SGlWS1pDaGw2bWp3Q0xRQlhRSEQ5ZG1mXzltOENWUk1mbk9sa9IBxAFBVV95cUxPNlRlRmJhUFRfZFRJeF9sTVNCdk85WlVubjhLNmRmTGtwWWUteDlPcEo5UlEzY2htSUFhQTdHamlCWldlaEZBVTJPZ2ppRXU2MnBaQkVRQi1FaFVDNk9QWDFKN0ZrMlJLX25pc2RiMmx4LWEteGczeXlEYmhNbnVJWGNleUpMdFo4cjRMcC0yMjNiSTRETnc2TXMzcVlZQ3ZjZTdoYThDNTdQLWtvVnVXVFVwUUg3VkpJLUE4V19ySnMzNFl0?oc=5",
         "source": "simplywall.st",
         "pubdate": "Wed, 10 Jun 2026 08:33:07 GMT",
         "pubdate_iso": "2026-06-10T08:33:07+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Bolsa hoy, 10 de junio: Europa ignora la crisis de Oriente Medio y las ventas masivas de chips, y abre al alza. Milán lidera la jornada en el juego Risk. Se prevé inflación en Estados Unidos.",
-        "link": "https://news.google.com/rss/articles/CBMihANBVV95cUxOMVduWGVPRnBoaFp4M1djdWdFWGl6cFNKTmo2cGJTQ2NWZzkwWEZ0VWRRTlluRHk0OWtSZnEwMmZlR1hLUlBHU0xyOU9ZYVNoeDRaaEVndHhMNkpWQjVzTUtBY0prUi0xQ2Z1UkdYLWM5MTRMOWs4R1lmRW1KN09FOTBBbVV6Y1h4aDBDaHdfaXdVWjVUYnA1TlVFSzI0Wm1LeEpKVHRXRzdycHdZem5BT0NCX3haVmNvbkxodWtYc19NblNUbWRWblhaa0UzTkJSV0duSU5QUGhxYmRwbnFCRjhFT1hvN1NPQ2Q2Y2NiYTFwZEJPR3FaZXFIZktjUFVWRzUzMG5BMzBCc281TC1jWF9VVEcxblFqcW1HMmtDTlpqOG95bnZqbXJSR1p4WnJJQzdGeEswcWJ5d3BXSkZlcmdiMTRGMXpmYVB1dDJoNXhyU0tnS0tBdzQ2cmZGTTFoTjZoQXNkM20wb29YMV9WQW1CYWdjT3RrbFQtaEo2UDRQOU55?oc=5",
-        "source": "firstonline.info",
-        "pubdate": "Wed, 10 Jun 2026 07:47:23 GMT",
-        "pubdate_iso": "2026-06-10T07:47:23+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Another sell-off for AI stocks knocks Wall Street back to where it was 5 weeks ago",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBoblZzaU9nWmRPMXRKbHNOSndORjJONEZRakxsS1duYWt4SDNjaF9BOHRtWndNOTl1U0tnVjRkV2NhWjZleURZeEhON0NQazhudzg5NzhiWXRSYlQ4UGM2YkpTN1pUb2JJWTIwWjNlcTFjSVQtU2YzRFVZNA?oc=5",
-        "source": "AOL.com",
-        "pubdate": "Wed, 10 Jun 2026 04:54:19 GMT",
-        "pubdate_iso": "2026-06-10T04:54:19+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 3,
-          "intensidad_label": "fuerte",
-          "emoji": "🔴🔴",
-          "razonamiento": "Selloff: presion vendedora"
-        }
-      },
-      {
-        "title": "Why Is RDW Stock Falling Today?",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPN0hQRGhFb1NSaUVMZXMwYzJpTldybWxFNVRLZHVFWFBBcjBmZFl6US1DR25SSkh3QTlrdmlXZUU0MkhGTFczUHlBdXZ5S2NZT2doMjhid3pBbDFkckxSeXotbjU0dTZQYXZLeFR3YngxbGYtZU5EeEMwbVBZVGt5YWtEN293Yk1zZHFScE9yTlctZV9a?oc=5",
-        "source": "TradingView",
-        "pubdate": "Tue, 09 Jun 2026 14:15:29 GMT",
-        "pubdate_iso": "2026-06-09T14:15:29+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Dow futures climb 125 points: 5 things to know before Wall Street opens",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYTN6dnZaVzdObExxQzc5OTFyeHBKS1RPQ0FpN2ZTLVlvRWxFeGFDS0dnWWJsbTU3VGxHR0V0UUljRXBMaUNPdW5VV1NGZ3pkNmNWZHdoMmJwN3BrOFBpWHZHbTY0TjV3MGl2aXhmUzhTSEdHX3NfQ0dyQk0wd2pOMlNIOUg0aE9nVVAyNGdvSUlFTE5kX3dZSWRNZFhrSmhqZV9LWTBwVmlnTlFXdUJRbWRqMm1oLWt5ODB3dVBmWFFYZ3Jl?oc=5",
-        "source": "TradingView",
-        "pubdate": "Tue, 09 Jun 2026 11:04:00 GMT",
-        "pubdate_iso": "2026-06-09T11:04:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -402,42 +402,28 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Why Is Oscar Health (OSCR) Stock Rocketing Higher Today",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWkQ2UXZlVm5hT05oNGYzeHNwdnBMSzE4VkZ5TVZicW9ORGtMbFJ1S3pOZ3g3SjVHYUdNQWdhOUNDV0pELVNhUkcwejJMaXJnRTNNQzc0LWxFWURMV01lNjRvc21IUnk5ckFJWmhYRTZ2bVQ0Sl9zYkFYU0h5OVY3ajRmSTdFMGdhVHpVVG5EYWVpTWVvVl81ZmNsT1djd0VvVHlpOWpzeVk5RmVkOU1ORWJpSQ?oc=5",
-        "source": "TradingView",
-        "pubdate": "Mon, 08 Jun 2026 19:35:43 GMT",
-        "pubdate_iso": "2026-06-08T19:35:43+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ]
   },
   "stats": {
-    "total_noticias": 27,
+    "total_noticias": 26,
     "por_categoria": {
       "fed_tasas": 2,
       "mercado": 5,
       "tech_nasdaq": 5,
       "economia": 5,
       "earnings": 5,
-      "sentimiento": 5
+      "sentimiento": 4
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "levemente bajista",
-    "score_neto": -3,
+    "sentimiento": "neutral",
+    "score_neto": 0,
     "n_positivas": 0,
-    "n_negativas": 1,
+    "n_negativas": 0,
     "n_neutrales": 26,
-    "narrativa": "El feed muestra 0 senales positivas y 1 negativas (neto -3). Factores dominantes: Selloff: presion vendedora.",
+    "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "Levemente BAJISTA"
+    "veredicto": "NEUTRAL - sin sesgo dominante"
   }
 }
