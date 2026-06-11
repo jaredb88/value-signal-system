@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-11T05:34:45.372182",
-  "duracion_segundos": 99.525906,
+  "fecha_actualizacion": "2026-06-11T09:26:53.255312",
+  "duracion_segundos": 112.791677,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,11 +11,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": 1332.6,
+      "precio_actual_clp": 1336,
       "razon_social": "A.F.P. HABITAT S.A.",
-      "variacion_pct": 0,
+      "variacion_pct": 0.26,
       "dy": {
-        "dy_pct": 7.45,
+        "dy_pct": 7.44,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 110.0,
@@ -31,7 +31,7 @@
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 0.95
+        "vs_benchmark_pp": 0.94
       },
       "cmf": {
         "periodo": "03/2026",
@@ -515,11 +515,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 126.5,
+      "precio_actual_clp": 125,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": 0,
+      "variacion_pct": -1.19,
       "dy": {
-        "dy_pct": 6.28,
+        "dy_pct": 6.36,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 5.54,
@@ -535,7 +535,7 @@
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.22
+        "vs_benchmark_pp": -2.14
       },
       "cmf": {
         "periodo": "03/2026",
