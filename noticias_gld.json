@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T18:39:37.258534+00:00",
+  "updated_at_utc": "2026-06-11T20:39:36.307266+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -102,25 +102,11 @@
     ],
     "fed_macro": [
       {
-        "title": "Inflación al 4,2%: la gasolina sube 40% y los salarios no alcanzan",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONzJTc2k1OEpXV3BsTXVGcjhRc1NlZkFUbWZIWEdub2VWZ1NSM2tnbEJZV0M1ek5zaUo5NVROejJqSUk1R1lZMUlQTnZWRkk5M3FibUMtT2Y0aVg5bF9iNXEtb2p1YmRhamYxWGZ0aXhXUnktYnJvUnBsX3M5dDJ0eTFRM0pzRDVkS2ZkVXBHc3VoMnZRS25pc1Z1ZXBlLW8tOXJKX241Tl9WRnBhVDVoLWVaTQ?oc=5",
-        "source": "El Tiempo Latino",
-        "pubdate": "Thu, 11 Jun 2026 15:32:21 GMT",
-        "pubdate_iso": "2026-06-11T15:32:21+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "Inflación mayorista en EE. UU. salta a 6,5% en mayo y reaviva temor a más tasas de la Fed",
         "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbUdGb0ZRU2tSdjdSVGtvM3VSUjhGOVlkRmgyQjVUYlVWZDg3MzRaSTJkdmUxd0pNLTdOODhJZTNaN0xaV2dSY2pwSlBuWWZxV1kzT2M5ZlY5MmtBRkJ6eVZCTS1mcVRMYXc1d3hsOXRGbVBFYmVlT2xxZXZ3Ry04S29lVmNCOERfVkNmVGR3NFlaRXhNSWhXdXpVVEhIZ3JDdzN0NGl3clByVDE3R0dQR1lVSGZuNi1EUlJ4RWdndVY1Z2d3TzYwdXJSVQ?oc=5",
         "source": "DiarioBitcoin",
-        "pubdate": "Thu, 11 Jun 2026 13:38:36 GMT",
-        "pubdate_iso": "2026-06-11T13:38:36+00:00",
+        "pubdate": "Thu, 11 Jun 2026 13:39:15 GMT",
+        "pubdate_iso": "2026-06-11T13:39:15+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -170,9 +156,37 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
+      },
+      {
+        "title": "Inflación en EEUU: se espera otro repunte en el reporte de mayo por la guerra con Irán",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNLURTYnczVUVqWm9fYnpKZW9YVEx6eEg3OUtuM2xhSmswUkV3cTdieWxHLWZKS085OERNZnN6dTRKdzNPRmJnMHlWRE10ZV94TFJHUDRLdkhvYm56UEQzRTI5SzZXdG9nQmJoRlM0c3Bycmh3dmMxN3FtdDBhY3lsUERuV1ZYZFlndnVWWEtDS2JfSno0UVlsX2tISExlNlBWbXdPQ2ZQbnJJX3c1dkEyYmVLN0JrNUdOUjVyVEVRWVhDUdIByAFBVV95cUxOWFE2Q3loUExoR0x6X21tUG92QmtLSWZ0cExJZUx1QWVhVDh0NGVnMG1IQXJmek5zQmFPTV9pNm1PUXZFb2RLRnNXQzRQNkcyekotTk1GUEFudndQTktzcFVGa1BMcWFDS2xkU2s5c2ozR0hwWWRXQ3hENkdvcXVQV1d3OV9LSGVzRVMyUmlaQkZyZml2UWxRaFp1eHZVakxqeHhKcW5mUUd6aEd3MkhEZ24ydE9NOUg2Z2JIUVVuanhfT1lvUGtQWA?oc=5",
+        "source": "Telemundo Washington DC",
+        "pubdate": "Wed, 10 Jun 2026 11:20:28 GMT",
+        "pubdate_iso": "2026-06-10T11:20:28+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Conflicto belico: flujo a oro como refugio"
+        }
       }
     ],
     "dolar": [
+      {
+        "title": "El Índice del Dólar retrocede tras la cancelación de los ataques contra Irán planeados por Trump",
+        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOajU0eFN3WEdZQ1F1SFJyeVNhZi14UWVwYjhRd25DaFBuaVN5QnoybUtqalNhR1lHMFpsLXpUVDBJYzNYUGJ1WVB2UEwzS01LdXZWRlQwRWpfc18wYk9BVV9GTnFkdWRlWkwzVFRmYzcwa1ZCWVNUcmRxNGlFeENwUjZuNzd2U0RJQ3NaODAwTVZMY25QMGs1Z1UycUR3MTdnQ3kxOVFzd0I4c0dfa1ZkZVlhMW1Zc2pKME9XODRadzFJekFvcnVkUUJOTXlRQTJSQTJ4dmQzRWxzdGdfSHJQYWNHT3hOM1pVUHhlN0I4ZXpDMnllQ0gtMFI1am85SXRLTzZJMtIBigJBVV95cUxPMHk0NDJkdUlmcmhRR0kzVG9zZllUT0hUa1BzQ01zdnVHWm5wXzBSV09QYmVnOGE5SEhwOGt0RTRzbFdBTGZYQzBkeWs0ZmduYmtlb3lyVEV0NEprTlUwN201T2RIU3RVM0c5bDVDRXoxOUpmYUxmWnVrYkVJVzRFNnJZU254Sk85TTVkRzdGUkVHbTVOUnZZTTU3X3p2Zy05SGRmdDBrRjRoMVFncFRSV28yTV9Bdy1QMF9aYmxYcll5blFjc012TGlBUEFoenlCcDRab2w1QWE3aGNSQ3B6ckZFcDU5aWlwc1I2Q3hRLVFyT3JZYUZMVlN6SHVuTnVRUmVDOUxPX2REZw?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Thu, 11 Jun 2026 18:33:48 GMT",
+        "pubdate_iso": "2026-06-11T18:33:48+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "El Índice del Dólar estadounidense rebota ante la incertidumbre por el alto el fuego entre EE.UU. e Irán",
         "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNRTIyMWRRSEZEclZldHgwNU5LaVJGaDhjU0U5QmRzRTdUTXlqOFhzYmdmdzExakZFTm4wQnZlODFBenpHRFNUNHF1YlJManR4b3RhdDVmdFVGWkM5VmZwT29CZVVZLVE5Tk1pTGVKaUNjdnBJOTBUY0lfWE54NnpMa3hrZ3NYX1RTNURVV0tZbmZyTzhZaG9ld2NOTTVYUmxRb1NUa3ZGbVo1NjVSUU5NRTNXV0VDRW5XQlFnVWljRllSYUtDYndPcGdVTm9INFkxYWt6ZUg1R2gxYW92NHZtQzdKTG1Hd9IB6wFBVV95cUxQajJzLWR2NVpJU0p3bG9GTnN0VXBTT09FSjVlQmI2TlZPd1ZtOXlkOWRoZnFOYThXZGtpLUU5Y1RuR1l6Z2lYS3dUcEJ0QWw2MjNQTFRIS2xHc0dKTnRyU2hPcWl0RW9lRjFNZWhDYncwVDhWUF84RVJkMUZQNVFtdW1nNWFmT3BpTXZiaDU1ZnVJSEdsYjJYckNDRU9Qbm1COWNSN3VlMGZwZlBaODZsbTRPX1lRNVBjYWpJV2JlVHc1cHRKSThnazFaUVc1akZPUzM0SzNTWllrd2lTNmJ3U3lfN2tWZDg3RzNv?oc=5",
@@ -221,20 +235,6 @@
         "source": "FXStreet",
         "pubdate": "Thu, 11 Jun 2026 01:24:11 GMT",
         "pubdate_iso": "2026-06-11T01:24:11+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Alerta carry trade global: Japón amenaza con intervenir para fortalecer el yen",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa25LMFd2Mkc2dTYyTnNEcmltcWNlWklBRENIRm5ubkpuOC1QUWNWc3k3MXp0QlhMUm5kVWt4ZEpEY0t1NXpQNzd2WmV6dnZtcy1WSjdOR0s4bGdVdmhaT1ZJSUFFcFJwNDBrTlVUNjhzU25kaTFBbXFjSFdyOVRUZ29wcWM5SGhUbXBGemhENjQzeWNpdDVLb0ZiY0R6LXhLdl8xZ9IBqgFBVV95cUxQc0hFa1A1Y2pnMmNaSlNHcVNLdEdhM3lVRDl6S2R2SmdLNmw2RHBTaTVlT2VaNzZFSDRkWElCcnctaVU3eXNyQ21NeWFCU3d1VVk5M1NWM09QeWJWWUZoa0N3RzNwNlJxZzZjOFc5UnpYSWYzVkhMZ3JNdlFqcEJDRlRPem5aWVF6b0VKb0lVQTQtVjRkc28zcmplVnh0TWVSSDQ2TnVEa3FZdw?oc=5",
-        "source": "Ambito",
-        "pubdate": "Wed, 10 Jun 2026 10:00:00 GMT",
-        "pubdate_iso": "2026-06-10T10:00:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -362,6 +362,20 @@
     ],
     "proyecciones": [
       {
+        "title": "Mercados a Observar Hoy: GOLD, SILVER y TNOTE (11.06.2026)",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaWl0TFJlQTV6V1h5WEhKeDJOaFlnSmc5UWd4UksxTDVzaWFEWDV4cHNoaWFsY2JBRlJjUXJ0OTZEOERXTHF5RU51a2t1VE0xc1RPWWdPUzJFM1BTLUMzaDN2azV6b3g1MXdpbkxRcVd4QWN4WmNCSVpHWTFzdnp3ZVgzV0pMMjZDeE9jY0FwenhSV0Vna0RreXNRUGsxWmJMNGlDeEJpbFByVUJuY0lqTzMwcExaWGJibVE?oc=5",
+        "source": "XTB.com",
+        "pubdate": "Thu, 11 Jun 2026 13:11:26 GMT",
+        "pubdate_iso": "2026-06-11T13:11:26+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Gold Coast Knights vs Lions Previa | Queensland NPL | 16/06/2026",
         "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5WTGx6X3NfM2FpMkxQazZLUnpXT1UwS1p2ZXgtVlBQLVVVX0FZMmNCakJZb2I5R3Q3QzgxZnl5Z2FSQ0RwYURrVUwzSVBqSEJ2eDZyOEp5SWdMUG5hUGRVd3otM0dCY1dySzVPblYtYUpfcmI0?oc=5",
         "source": "bono.ec",
@@ -406,23 +420,23 @@
     ]
   },
   "stats": {
-    "total_noticias": 26,
+    "total_noticias": 27,
     "por_categoria": {
       "precio": 5,
       "fed_macro": 5,
       "dolar": 5,
       "bancos_centrales": 5,
       "geopolitica": 3,
-      "proyecciones": 3
+      "proyecciones": 4
     }
   },
   "resumen_ejecutivo": {
     "sentimiento": "alcista",
-    "score_neto": 9,
-    "n_positivas": 5,
+    "score_neto": 11,
+    "n_positivas": 6,
     "n_negativas": 1,
     "n_neutrales": 20,
-    "narrativa": "El feed muestra 5 senales positivas y 1 negativas (neto +9). Factores dominantes: Core inflation persistente: positivo para oro; Acumulacion de reservas de oro.",
+    "narrativa": "El feed muestra 6 senales positivas y 1 negativas (neto +11). Factores dominantes: Core inflation persistente: positivo para oro; Conflicto belico: flujo a oro como refugio.",
     "narrativa_fuente": "plantilla",
     "veredicto": "ALCISTA a corto plazo"
   }
