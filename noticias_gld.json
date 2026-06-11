@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T06:39:35.043348+00:00",
+  "updated_at_utc": "2026-06-11T08:39:33.422695+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -29,6 +29,34 @@
   },
   "noticias_por_categoria": {
     "precio": [
+      {
+        "title": "Los precios del oro hoy (11 de junio) continúan su fuerte caída: compradores y vendedores hacen cola en grandes multitudes.",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTk0yTm42Rzh6SFdfdG9PczFWVTc1WVZqbFF6WTdXUlFzSjdXRllqV2Q3LTZiTGVKREEtNTNRTmRYOE9NLWk4U2swZnpMNFZXU0IzZHhPS21oOEotbEtvamJTdUtVUExXd0VkSWt0SUg2REFVbVhoVWh5TFgyakxOVnA2eW1IaG0xd2MtXzhxaHBYSDZEU0RYYU9PSElVdkVwTWJtRmE0Q0U0RnMtS3JiWg?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Thu, 11 Jun 2026 07:46:52 GMT",
+        "pubdate_iso": "2026-06-11T07:46:52+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Precios de la plata hoy, 11 de junio: Razones por las que el oro y la plata han caído a mínimos históricos.",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTHNranRZSW5tT1RaRnFFcW91TlpRay1UNmNoajZuY1E2aXoxRTRERXB3NUpId0NPQWQxaWVuTkh5ZWVISDh4TWp1ejNDd1dId25ObjUzUEVmeF9jLWx6Uk9sRG0xM1dIWXJKQzJ2NzE1eEI5clM1Z2k1QldZTzBZRjZNTm1DQQ?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Thu, 11 Jun 2026 07:45:52 GMT",
+        "pubdate_iso": "2026-06-11T07:45:52+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "¿Por qué ha caído tan bruscamente el precio del oro y deberían los inversores vender ahora con pérdidas?",
         "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNks3OVhFeEd4MWhmeGNjMld0N0UwR3RtM0JMaXlXRVpCaTNUSnN0TkFjWVdiLVRpMml3R1NreEM4R2lLZUhXNE9FSEVmWDNRR1NmdHdUXy1RR1RNaGlhYzVEdTBDcUlOY2l2MlprTlR6MjZjLVY5UkhOQjBqeTRFc3hxQzlwMW13TG91Yzg4Z3ZsTXM?oc=5",
@@ -63,34 +91,6 @@
         "source": "Vietnam.vn",
         "pubdate": "Thu, 11 Jun 2026 05:13:43 GMT",
         "pubdate_iso": "2026-06-11T05:13:43+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precios del oro hoy, 11 de junio: Cayeron bruscamente en casi 3 millones de VND por onza.",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPN25mSWNTRU9VcnRYQi03YXB1clREMmt3Tlo2WVlXWUt2bWRpMi1PMnUzdFc4bUltS3Y0T0o5SjZfMVlKVXRheUVvakF6MjlMN01KT1hHTDZZQ1lQR2xFR094dGtsZGtlTEpwVWxCTDlKb1l5MWxicGpycnVKQmJ3RTNFOF9OZw?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Thu, 11 Jun 2026 04:28:54 GMT",
-        "pubdate_iso": "2026-06-11T04:28:54+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precios del oro hoy, 11 de junio: ¿Cuánto más bajarán los precios del oro de SJC, los anillos de oro de Bao Tin Minh Chau, Doji y Phu Quy?",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU1hmUldETF9aQXpVSW5NMlhwcUdxb2NnaWlYTloyM1B4R2dqeURDRzBISG10cjBJTE4yeEFyd0dCcFJ0SGdseTNxTWsxVGRQd1dfZWpZRzBqTkJFQmQ4dkhLQURFb1llck1QUlFWYjRETi03Q0p2TnpNa3pvanREMjFwaDV3cm54RHJkVEUwcG1VVFZoOU0zWlNfejJaMXFFeElITDZOYnY4NnRVeTNWZlo2NzBmMkE?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Thu, 11 Jun 2026 04:18:09 GMT",
-        "pubdate_iso": "2026-06-11T04:18:09+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -260,6 +260,20 @@
         }
       },
       {
+        "title": "Peso drops most over eight weeks since midterm sell-off",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOajREblFkSFlzdnZPR2VPa2J3eEE4bVFhNVEzd0xEbF9PWmRGVDRaT3BOVTRzcWQ3YU4zVU13ZnQ0NmNYUWtzeFJuVjV4M2NkU08zcnpLQVdVSTBLbEdKVWljZGVxcHhiWDFhaVdETnFvWjhZN2dwVjhLVlNWek1oTmhVV2stRmFVSElOdDNUY1FobHlMQlJvTWpmaWlrUVJ0OVBrcHJhT2w1ZjZhZ0R5M9IBtgFBVV95cUxOS1NlQncwMTlMZlBfR2Z3NWsxVjgwclhMS2Y2bFd5ME9IQklBcDRFR1ZRQ0tsYnVPSlE5TFpBWnRlbWYtcGEtQk8wbEMxZmNpNUhyZExzZGRZeWg1dEp1amxYb0l4ZERZZDdHOVdMR0MwdVptdF9Sb251ejFxUWc1LU1hN05XSHdFN1hYV2FlZkZfQmktNU5icWxBLVAtOVNtMG5sTFdXY1FIM2pXVGVYY3hfclM3dw?oc=5",
+        "source": "Buenos Aires Times",
+        "pubdate": "Wed, 10 Jun 2026 18:44:26 GMT",
+        "pubdate_iso": "2026-06-10T18:44:26+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "China transformará a estos países de América Latina en potencias mundiales y los respaldará con tecnología de última generación",
         "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOS3FIWjNmcUZXaEZaLTE1eTY5RG9UbWhYRHNiYkpQY2NiM2J6Xy1TWlZxSG9sazNtZGFGYlZSdlplZXJmM0xIc2hrNUxQSk1BRTkxcE43S2U1RFQ0aXZvMXYxQjhzZS1ISzVUTTNrNnEzeF9HMmthNXhCcHF6dmRSOVRxT1JYYVpuR1Z3RTROd3JjOHdDVkx3cVhlTUNKalZKQWJkMnF0YjkzRm14aHFnU1Q5RGFpVUtoaGtBRlZCc18zRzZ0cV9yNzVhdDV0bXlJRjF2dFZoZHk3RGxHeVYtWGZNazc4MkpZZjNQZ1Vaa1pLeGVLeUs5R0Jac0VlU08yeUFZakxRVVBDZGMtazZHbkZVenNMZUx0dDlWOVp4eEtwUdIBogJBVV95cUxOS3FIWjNmcUZXaEZaLTE1eTY5RG9UbWhYRHNiYkpQY2NiM2J6Xy1TWlZxSG9sazNtZGFGYlZSdlplZXJmM0xIc2hrNUxQSk1BRTkxcE43S2U1RFQ0aXZvMXYxQjhzZS1ISzVUTTNrNnEzeF9HMmthNXhCcHF6dmRSOVRxT1JYYVpuR1Z3RTROd3JjOHdDVkx3cVhlTUNKalZKQWJkMnF0YjkzRm14aHFnU1Q5RGFpVUtoaGtBRlZCc18zRzZ0cV9yNzVhdDV0bXlJRjF2dFZoZHk3RGxHeVYtWGZNazc4MkpZZjNQZ1Vaa1pLeGVLeUs5R0Jac0VlU08yeUFZakxRVVBDZGMtazZHbkZVenNMZUx0dDlWOVp4eEtwUQ?oc=5",
         "source": "El Cronista",
@@ -277,8 +291,8 @@
         "title": "Gold and bitcoin: the assets the rally forgot",
         "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeG44ZG5ob21HOWlQNGg5TUZyejJFQjFGcW5RN09zX1VNY2k2Rk93SDlpejFQa2Y2eHlqcG1Gbm9ub3dVdmxiOFl1d3g1aHlpTGdYaU1HdDZZelZhTXRaOE94WTRtX3BSV1ZDNXhkQUdMQlJnTnFfV3FlTk9GbEJJUVBVR2U?oc=5",
         "source": "Financial Times",
-        "pubdate": "Wed, 10 Jun 2026 05:30:04 GMT",
-        "pubdate_iso": "2026-06-10T05:30:04+00:00",
+        "pubdate": "Wed, 10 Jun 2026 05:31:47 GMT",
+        "pubdate_iso": "2026-06-10T05:31:47+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -299,20 +313,6 @@
           "intensidad_label": "moderado",
           "emoji": "🟢",
           "razonamiento": "Demanda institucional de oro"
-        }
-      },
-      {
-        "title": "Ni China ni India: Este es el país cuyo banco central ha comprado más Oro este año",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVjNFTlAxMTRUYkd2cWh0Sklvc3JSN1V6U0hTZ3RtVnE4ODFKZDJnTW03WnlhVmY2cXIzRmx3MG1BYWxpT21xcmo1U3E1UmJfVEZoWjRpNXBvMkl0TlVMLWlxVkxzVE15VURjai00cGx0TnB3akktVDMxYkJSbWRwRUJmOFR3bnNnWFoyVGRRSnRycTBzOW5oRmlHOS0xSmlHQWhVYWZ4MUx6WXFvZ2NraHl5VXZkRlNlU0JsckRiRlR6d9IBxwFBVV95cUxNRVFSUDlKVmRkc0paWEZyVG5NVFQ1T3NUcDFZVGtyU0RMdk1Vdk5YVjBHNGgzVWc0Y1JMVkE1X2RRTFVzZ19xbEtUV3JyNGZaeHZfcFVISkVNZktUdUVQcDJsbWl6VDJ6UjhSbDVWUWtsa09jbVVTNTBseW5Jc3pVYWhNZ09xRjBkZXR4eTdzb2dHZXJGVE5USmtaYmxYRlZqekJIRXNXRE1ZR0FpeHBWd3pDeGw0aC1IRzk3OGlFRmJJOV9OZUdN?oc=5",
-        "source": "FXStreet",
-        "pubdate": "Tue, 09 Jun 2026 10:43:49 GMT",
-        "pubdate_iso": "2026-06-09T10:43:49+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
         }
       }
     ],
