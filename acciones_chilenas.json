@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-11T10:05:05.102191",
-  "duracion_segundos": 119.315323,
+  "fecha_actualizacion": "2026-06-11T10:34:37.679103",
+  "duracion_segundos": 90.240777,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,9 +11,9 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": 1349,
+      "precio_actual_clp": 1350,
       "razon_social": "A.F.P. HABITAT S.A.",
-      "variacion_pct": 1.23,
+      "variacion_pct": 1.31,
       "dy": {
         "dy_pct": 7.36,
         "anos_usados": 3,
@@ -25,9 +25,9 @@
         "promedio_anual": 99.33,
         "advertencia": null
       },
-      "cagr_3y": 0.23937164983592418,
-      "cagr_5y": 0.3945745672628769,
-      "cagr_10y": 0.10594568621542666,
+      "cagr_3y": 0.2396778187342079,
+      "cagr_5y": 0.3947812627762204,
+      "cagr_10y": 0.10602764151101507,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
@@ -137,11 +137,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Operadora de la zona franca de Iquique. Negocio estable y predecible. ROE 35%, payout 74%, G=9%.",
-      "precio_actual_clp": 988.4,
+      "precio_actual_clp": 985,
       "razon_social": "ZONA FRANCA DE IQUIQUE S.A.",
-      "variacion_pct": -0.01,
+      "variacion_pct": -0.35,
       "dy": {
-        "dy_pct": 7.0,
+        "dy_pct": 7.03,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 67.12,
@@ -151,13 +151,13 @@
         "promedio_anual": 69.21,
         "advertencia": null
       },
-      "cagr_3y": 0.15896746127584938,
-      "cagr_5y": 0.19926771138249189,
-      "cagr_10y": 0.06639065520720888,
+      "cagr_3y": 0.15763702274787383,
+      "cagr_5y": 0.19844150087621104,
+      "cagr_10y": 0.06602325810538145,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
-        "vs_benchmark_pp": -1.5
+        "vs_benchmark_pp": -1.47
       },
       "cmf": {
         "periodo": "03/2026",
@@ -641,11 +641,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial chilena de Enel. Principal generadora hidroelectrica del pais. ROE 19%, payout 62%, G=7%.",
-      "precio_actual_clp": 525,
+      "precio_actual_clp": 530,
       "razon_social": "ENEL GENERACION CHILE S.A.",
-      "variacion_pct": -1.3,
+      "variacion_pct": -0.36,
       "dy": {
-        "dy_pct": 6.4,
+        "dy_pct": 6.34,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 41.9,
@@ -655,13 +655,13 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": 0.29810549647016993,
-      "cagr_5y": 0.2028707961379561,
-      "cagr_10y": -0.010029522296998716,
+      "cagr_3y": 0.3022134526391682,
+      "cagr_5y": 0.20515329983858543,
+      "cagr_10y": -0.009090709761036764,
       "evaluacion": {
-        "status": "Cerca",
-        "emoji": "🟠",
-        "vs_benchmark_pp": -2.1
+        "status": "Bajo benchmark",
+        "emoji": "🔴",
+        "vs_benchmark_pp": -2.16
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,9 +1144,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3780,
+      "precio_actual_clp": 3779.5,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": 0.27,
+      "variacion_pct": 0.25,
       "dy": {
         "dy_pct": 10.68,
         "anos_usados": 3,
@@ -1158,9 +1158,9 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.11938034457019331,
-      "cagr_5y": 0.20952790146741918,
-      "cagr_10y": 0.11178817462967627,
+      "cagr_3y": 0.1193309869994883,
+      "cagr_5y": 0.20949590168163268,
+      "cagr_10y": 0.11177346756144835,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
