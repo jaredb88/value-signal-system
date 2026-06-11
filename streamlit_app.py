@@ -510,6 +510,10 @@ if seccion == "🎯 Oportunidades":
                 st.markdown(f"**{_a_op.get('ticker','?')}** · {_a_op.get('sector','')}")
             with _c2_op:
                 _dy_op = _a_op.get("dy")
+                try:
+                    _dy_op = float(str(_dy_op).replace("%", "").replace(",", "."))
+                except (TypeError, ValueError):
+                    _dy_op = None
                 st.metric("DY", f"{_dy_op:.2f}%" if _dy_op is not None else "?")
             with _c3_op:
                 st.caption(f"Benchmark sector: {_a_op.get('benchmark_min_pct','?')}-{_a_op.get('benchmark_max_pct','?')}%")
