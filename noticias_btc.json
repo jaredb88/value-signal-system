@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T06:39:35.710261+00:00",
+  "updated_at_utc": "2026-06-11T08:39:33.281516+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -130,20 +130,6 @@
         }
       },
       {
-        "title": "Why is XRP falling even as institutional ETF inflows turn positive?",
-        "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPdWdQVzRkZHRXT2F2S0l1QzhGdnlOaFB6TVB6X0NvZHF0eTVSNUNQUy0xNFkyMks5YnZ5TWxqOUVfWFBMeVpLWERqTmpzdHllQmFJMmxBZmJ1LUVsbzZQbjBKcnEtU3dJNHduRFJDTnh1cFE5OGJ1X0Q4UXZ3MnpLMlBsN19jU0xJVHNEVTVGSFctN053TllIeHRqdlkyb3hySmhSbVpndURxZmNGSmlyZWxRYkcxdUlNR282ekRoTFdGdW01cUhnSC1vV21Kb0ZtaUd3VFEwQ2ttU1VPcmFnUzlpLVlGZXFyR1NINm5yUURPekx0UTRQZ2JRY0UxN0JkeXpaU2xVWmpPWEx2SHg5WmhnZEJSSGw0LTJ4dm9jYzhmakdzTWlkN0o1QWFlTHhROUN0MUo0eFF6MzItQzB0a2t1MWxUamk2MFY5YTNn?oc=5",
-        "source": "MSN",
-        "pubdate": "Wed, 10 Jun 2026 15:17:05 GMT",
-        "pubdate_iso": "2026-06-10T15:17:05+00:00",
-        "impacto": {
-          "direccion": "positivo",
-          "intensidad": 3,
-          "intensidad_label": "fuerte",
-          "emoji": "🟢🟢",
-          "razonamiento": "Flujos institucionales hacia ETF: muy positivo"
-        }
-      },
-      {
         "title": "Key facts: BTC ETF Outflows $2.97B; Res ~65K tgt 72–74K; Extreme Fear",
         "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQnlRanN4U21jNHBqal96LUptZDhsN1JYMGhwZkRXRkhTZVpOYk1ZbnlfTHEzMGhMZE9FZUpXaGozbXpza1ZxOHV4OEtWdVRsc3Y5OFF5NjVPMXI2UG9xS0pCSkx2LW01MGNVbUpsZlBHZ3dRZE1sQm5wSW1qQ1M5bjNzZFhKNHFIV3RIa3hWek1SM1g5ZGhxajlaaEtDNjhBTV9zZVFhenBBSnM1em54XzJTTlNJdHlETjNXenZOamx4dms?oc=5",
         "source": "TradingView",
@@ -158,11 +144,25 @@
         }
       },
       {
-        "title": "Can XRP (Ripple) bounce back after reaching a 19-month low?",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdVdnRDFsVUdBWkVoZlJ6c2lGai1LdGlOQlFac3JxRDl0aVEySkY0cXpRdUVCVlBvWENCUUliVkxhNzJlNnBPTW1sM1JuZ3hiTkNTeVhyQkpXM1FwcnFUaGhjQVVUNkFhbDNOQ2tIWDVmMlk2eGJYRl9rNlh3RVp3ak0xeXdweU5kd200OV9Ic21jSUxRWTJwbHJ1OUtoNU45S3dvN1g4TlJlcVlERlVn?oc=5",
+        "title": "Which of Bitcoin, XRP, Ethereum, or Solana recovers first?",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV1VjbEFfOUwyZ1EzdnZoYW80YVBOa3hDcWd6MkFvRXdUQlB0NUpGUS1fbVZmTDAyVnpDNWNKbWZ5RTAtNWQyTHM2M0Q1TzJTNTlIbUJUd2RXUlR0aXRrQUdnM0o4NXltdUhxdmZES1QxVkxkMlNEVzFBYkxVN245a292QlU3azd4TmZpTWRydGp6R3V2Z3NXU0wxSmFsZkpNX2NRTFhJRnNnU2pK?oc=5",
         "source": "MSN",
-        "pubdate": "Wed, 10 Jun 2026 02:37:18 GMT",
-        "pubdate_iso": "2026-06-10T02:37:18+00:00",
+        "pubdate": "Wed, 10 Jun 2026 01:06:32 GMT",
+        "pubdate_iso": "2026-06-10T01:06:32+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "BlackRock vende $230 millones en Bitcoin y compra Ethereum: ¿Qué está sucediendo?",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQa0FleVc4TnE4emMzSW55SWhYWFFvTmltVHZON0ItLTlpSDVkSk9YVVdTZ2owYXlUQ0JtOUQ5eU5jRlRnbWl5QThndFA4V3lYckU3M2pJaGllWGpPaS04U2NBamZWWjFZLXRuakpGNm9HU1NhRGlrUHhYZGgxTkp0RmE3YmJpOVQxQ2dkWkhaR1VBSWs?oc=5",
+        "source": "Yahoo",
+        "pubdate": "Tue, 09 Jun 2026 13:18:10 GMT",
+        "pubdate_iso": "2026-06-09T13:18:10+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -173,6 +173,20 @@
       }
     ],
     "regulacion": [
+      {
+        "title": "Por qué la CLARITY Act podría no aprobarse en 2026 y qué implica para el mercado cripto",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOSUpvaEQwdDlfcnFYQTJpazk5U3hmSTlBbkxNcVBfanZUTFRydG5oeTVfYU5FTF9FaE0xUkxTNmdURGZuLU5MaWNYMDZEeGtSdjlmZGdtUUJTQ1U2WUVqMS1yMEE5cFFrQzNQZmhPN3UxTUUxeWQxSl8yc1lGQjlVTXI3c1VCRHRVX0tSZ0lQU2ZiM003MmZKY3IwclZ2U0prVVZBUk12Q1RQUkVqWHFaQjdxNnNTRkNJc1F3SmozXzZYenAyT1V6TTF2aDJpLWVibmFjTV9oaUxjcVl1?oc=5",
+        "source": "Cripto247",
+        "pubdate": "Thu, 11 Jun 2026 07:00:00 GMT",
+        "pubdate_iso": "2026-06-11T07:00:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Parlamento de Venezuela evalúa reformas a la regulación de las criptomonedas",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxON0lJSXhieXcwaFNSZDI1TS1LV1NCclFmQm40M0UtY1d3MHd2X1dUZHhUQVVTSnNRVEIzdU1WVHdFMHlDSl9wSV92R0E4M1B4dndHWkVLMGVlWGRaNW1VYlJ1TWxiM3VXTTlMek9wMDM0TFNPTlRGZDlhUWpWbnd0TFZNazdJTzB1dlpkOFJnRlhRWXpHLUFIZFUzUDVHdw?oc=5",
@@ -221,20 +235,6 @@
         "source": "Bit2Me News",
         "pubdate": "Wed, 10 Jun 2026 15:00:04 GMT",
         "pubdate_iso": "2026-06-10T15:00:04+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "La licencia de cripto gana relevancia global en medio de una nueva ola regulatoria",
-        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdkxoeXdJX0xQdFRaZkwxZ3R0cGNPSktwc0Z3YjZpMkwzV2x4VE9WOGt4ZkJSVzRhODdwQ2NQM1Z0dGJGRjZQanpZTmhYVlg0TTNZWEc1aWxaRlJRVVF6VE1IUmRKd01aanBrZjV3WWxyUzl1THZZWXNmLTlUajBocGpSemVWSGFaVW13OUk2RFVMZmtaVzV5WENNamVNV3k3bTVjUWtTR0Z5bG9aWTZQalc4aGQzbTVVY3FVdTRKTWZxeGx4VGRDdWJ2dDU2Y0xnSHdfaU1JaU8tamkyTGg5SzRTONIB6AFBVV95cUxNWS1GZDZnd25sRmVEZE9HOERrR2VoLXJBZzRKdHlKTjJlU2VzREJpTlZtZi0wdVJ0UHYxbjdyOWFmV2xfM1RYWUdyUS0wN1JhazBmWV9jYmE2OWtBcGVVZHZuVWJCV1hRUnY2RmFzUHV4NjFJOW0xWVdBbGN1b2ZJVWs4Q0czaTN3YzRKdWhuYnFpSjVic0c0d0VzNlRLSlNnNWtGVERXMXp4VjVpbTg5X05qSG9QRXl6b29YcGdoM0gtVkRLdGFJcTVPbldzQXVCMjI1aHVjamlGejJMVU9yM2xxNFFER1d3?oc=5",
-        "source": "La Comarca de Puertollano",
-        "pubdate": "Tue, 09 Jun 2026 22:11:23 GMT",
-        "pubdate_iso": "2026-06-09T22:11:23+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -418,20 +418,6 @@
         }
       },
       {
-        "title": "Can XRP defend the $1.0 support level amid bearish sentiment?",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbTZzS20wS2s1V0Zyc0VhZndkZ0xkU1ZIcU5SWmFaQXZXeXhlYWZSRi1EZGpIemx0ZTE2ajY5QUNJMkNTbTN4bHpFUXF3MzRUaGRNOUhJSVYzbDNJVjBRQm1SSmU1YTRrT1Qzb1VyRExXTHhGbGgwR2NFWW5yOTZoSExUcTJlX3FxRERMOW9uRHFHMnBlRVlzUEdtdkM4R1RFMXJFYzBFZWg5bzVreGgzLTZtZk9rUQ?oc=5",
-        "source": "TradingView",
-        "pubdate": "Wed, 10 Jun 2026 10:39:15 GMT",
-        "pubdate_iso": "2026-06-10T10:39:15+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "'Best thesis' for Bitcoin accumulation surfaces despite current downside risk: Analyst",
         "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNekRPWk5adnhuY01RV2hvQTRVeHFjMENxNzE1c0NaVl9mWnBqdWJVTUljUk5jOTU1WUZWVzE2OE1vTDNSbWxkWHUtXy1zaXRuQmNtTEJMeVBrU1l5N0VnZ1pNQ0ZXY19ieXdjZ2VBNW42OHlybkk1dzVSSWVXcllSaWVmUVVOLTVIcVFUVG1jMGNSNngxQWNmTjktUVA5eF9sYUtFVktUT0RhbklqZTlZbjl6RHhyYkFWcl9ETlh3?oc=5",
         "source": "mx.advfn.com",
@@ -448,24 +434,24 @@
     ]
   },
   "stats": {
-    "total_noticias": 29,
+    "total_noticias": 28,
     "por_categoria": {
       "precio": 5,
       "etf_flows": 5,
       "regulacion": 5,
       "adopcion": 5,
       "fed_macro": 5,
-      "sentimiento_onchain": 4
+      "sentimiento_onchain": 3
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "neutral",
-    "score_neto": 0,
-    "n_positivas": 4,
+    "sentimiento": "levemente bajista",
+    "score_neto": -3,
+    "n_positivas": 3,
     "n_negativas": 3,
     "n_neutrales": 22,
-    "narrativa": "El feed muestra 4 senales positivas y 3 negativas (neto +0). Factores dominantes: Flujos institucionales hacia ETF: muy positivo; Salidas de ETF: muy negativo institucional.",
+    "narrativa": "El feed muestra 3 senales positivas y 3 negativas (neto -3). Factores dominantes: Salidas de ETF: muy negativo institucional; Desplome: muy negativo.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "NEUTRAL - sin sesgo dominante"
+    "veredicto": "Levemente BAJISTA"
   }
 }
