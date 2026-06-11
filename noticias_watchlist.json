@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T20:33:05.087059+00:00",
+  "updated_at_utc": "2026-06-11T22:33:05.278290+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -32,10 +32,17 @@
     "NTGCLGAS": [],
     "SOQUICOM": [
       {
-        "title": "IPSA se dispara 2,6% y supera los 10.700 puntos tras anuncio de Trump que apunta a un inminente acuerdo con Irán",
+        "title": "IPSA se dispara casi 3% y cierra sobre 10.700 puntos tras anuncio de Trump que apunta a un inminente acuerdo con Irán",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YN2VuZW9wZmJ0eGptdlFtZzFwMEdyY3JNYnltaFpoQUUtcWcycVlUTWQwemUwSVFPS21NTEdSaENKaEs2bGY3eFBSem1IcVlQQy1JdXNKb2pldVRXZjQ2NC1TZXBaTjV3?oc=5",
-        "pubdate": "Thu, 11 Jun 2026 18:39:00 GMT",
+        "pubdate": "Thu, 11 Jun 2026 20:26:00 GMT",
         "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Bolsas extienden su alza y el petróleo cae luego que Trump retirara amenaza de ataques a Irán",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN1A4UjNtSklxaVpFUHBTU1I2Q3lickdTNE9Icm1YWlNDVnpRamhQUmdJR0paNUJBSVJsdFpia1dyWjVMeHRzTHNET0c1cENvLUhBal9UeVJNRWRrZGc3aEFRa19oNlNBbUVYczVZWGM0djBJaGVnN1Y5SmctcndhZDhYM3hJeTBBZGt4djg2YmF0OUJ1TlVIRNIBugFBVV95cUxQbGpRQlR0UXZOZVA1YWJVcWJXdi1lSkI5dnV2TFVka2NvTVJzNXRuM2xFVzlUV0w2OGJZVHIzQmItNUpxdU9xX1MtM25TdWd4MUxNUFJsazlVSUFITFpqaTNjMkZVVjNNZ3JVZmsxTk1ISjM0amw0NjRSSEZnTmFrMHUyNmtERE9TVzNBWjV3aXdqSHhIaUc0RjVUam52V1RNQmw0akw5M3pWc0VDdWdxQ1RfQUZHTXZpelE?oc=5",
+        "pubdate": "Thu, 11 Jun 2026 16:21:33 GMT",
+        "source": "La Tercera",
         "matched_keyword": "SQM"
       },
       {
@@ -123,8 +130,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2243,
-    "total_noticias_filtradas": 14,
-    "total_hechos_esenciales_brutos": 102
+    "total_noticias_brutas": 2245,
+    "total_noticias_filtradas": 15,
+    "total_hechos_esenciales_brutos": 112
   }
 }
