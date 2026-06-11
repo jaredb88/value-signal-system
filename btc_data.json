@@ -1,13 +1,13 @@
 {
-  "updated_at_utc": "2026-06-11T04:45:12.308386+00:00",
-  "precio_btc": 62599.0,
+  "updated_at_utc": "2026-06-11T05:15:06.540378+00:00",
+  "precio_btc": 62549.46,
   "precio_ibit": 35.14,
   "score_final": 76.1,
   "zona": "OPORTUNIDAD",
   "multiplicador": 2.5,
   "peso_aplicado_pct": 100,
   "sub_scores": {
-    "drawdown": 83.0,
+    "drawdown": 83.1,
     "fear_greed": 88,
     "pi_cycle": 100,
     "halving_cycle": 65,
@@ -16,17 +16,17 @@
   },
   "sub_detalles": {
     "drawdown": {
-      "drawdown_pct": -49.82,
+      "drawdown_pct": -49.86,
       "ath": 124752.53,
-      "precio_actual": 62599.0
+      "precio_actual": 62549.46
     },
     "fear_greed": {
       "fg_value": 12,
       "classification": "Extreme Fear"
     },
     "pi_cycle": {
-      "ma_111": 72271.62,
-      "ma_350_x2": 185158.1,
+      "ma_111": 72271.17,
+      "ma_350_x2": 185157.81,
       "ratio": 0.39
     },
     "halving_cycle": {
@@ -7354,7 +7354,7 @@
     },
     {
       "fecha": "2026-06-11",
-      "precio": 62599.0
+      "precio": 62549.46
     }
   ]
 }
