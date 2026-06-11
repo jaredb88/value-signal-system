@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T01:27:00.132926+00:00",
+  "updated_at_utc": "2026-06-11T03:27:00.627864+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -132,34 +132,6 @@
     ],
     "tech_nasdaq": [
       {
-        "title": "Regenerative Medical Technology Group Inc. 1Q 2026: Revenue $2.64M, EPS ($0.07) — 10-Q Summary",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNRGxVRXZMeV9YVEczLXAzLXNXSmM2UDJ0QnppWmhXRXUyanZvRDJqTENXendpZmptbHNCSUItQ0ZiYW8tMXVhNEJRODd5VVN2c0tWZ1NyUVB4aVJ4NlF0QVh6TEdSdlBuS1hwa1ROazR5Mm1qRWJDbzg1WC1vcl9mVXMyMmhhRFpPblNGSU0tcnVrN3lFcmZQdWdiVmxuMk54b0xxYUNKdy1HSHJ5bkVidF9UbGVxcWF0WUh3eHNOLWxXS2RRYTlxMFJwVWluWTByWTYzVlp5VGQwXzMyS0dN?oc=5",
-        "source": "TradingView",
-        "pubdate": "Tue, 09 Jun 2026 20:51:02 GMT",
-        "pubdate_iso": "2026-06-09T20:51:02+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Dow Falls Over 500 Points, Nasdaq Sinks As Tech Stocks Tumble — Wells Fargo Warns 'Sugar Rush' Behind Recent Surge Likely Over",
-        "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNY1ZqNVVDRXZlQ0I1T3RpMmhzNGs0OEVmNk1BUERSWG1HN2FleFZxdnZvczNIbGNLbnFpSGlidEdLN3NmWENudEVUUjMxUHp6TldVZDViWFpmMXliVUJqWUlZallGTXl3cXZHUVpVMVdsOUdfZEdIQk1pNFJCRGVYdW84dFdrRkNDSkVfMHBwN19PeU1vVHBtY1VmZHpuQ09wVnhxa2JrZXJBUEZsbzIxTDJGR0RHbVN4emszQjd0VXowRWZza2Z5SzBITElVMDhfdWQxYVFfLVhLOUgxNWRyVDFQVlZfSkVLTE1TXy16MWZuTnluME9CWVBLdTluWjU3ZW1iRTdjRjd3VlV0T2c?oc=5",
-        "source": "TradingView",
-        "pubdate": "Tue, 09 Jun 2026 16:59:20 GMT",
-        "pubdate_iso": "2026-06-09T16:59:20+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🔴",
-          "razonamiento": "Acciones caen fuerte"
-        }
-      },
-      {
         "title": "S&P, Nasdaq fall as tech shares weigh",
         "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOR1N3VjBEeDlHYm50TGlPOTB1NGRJaHV0bk5OU0Z4NTNpTEZraUxWSmRuMGlmZ0lJSEJYYXZKTVRPUzIzUEt0cHBkZGRVRVVfTHhGVW00WEY1aFdYcThUd21KdVN1aFhId08yb1V2YzBnQXpiREdDeENYOXozaGpPY0NreU9wblNhWkhEY2ZMYzJCWnJGaUstdUw1cDh4Nno2YVI0OVNVblI?oc=5",
         "source": "TradingView",
@@ -188,11 +160,39 @@
         }
       },
       {
-        "title": "Broader Market Settles Higher as Chipmakers Rally",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQS1kYUZvNGdIU2haWHI5Vms5SnlMb1UtYU9hMXRPWmdCRG54VU5KcmdBTFFkaVRxYVpiU2x5UFVEaHN0MjNRNFNmZlNMeTBxUTctbVdLTXotM3RLR0MtQ3Q5OWpIeHNOLWlFcmRuMWRGYVNOME00X3h0S25KdnF5ZHVtRzdnSnI4aF9tM2xQUnZ4T1VhQ0FYenhTak1IN3hGeVhwMzJ3SDJ0Tjg?oc=5",
+        "title": "Why Nasdaq is Surging Today",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUjlTODI0eHJ6dEpRdEVEbWZVdWs4RkVnY1VodUI4dTBpRVlXUFowUmhuQVJjWUdzMkhGLVBodTV2UVJGTWNkbVN2VDVlTHFoa3lQVWVVOEFLLXVqa0tjaDhTVDE5WXhSTFRlbjdpaHZQWGh2OXJ2T1BmcV9UVmc5VVBPd2MyaVNwTmR2UnRKOA?oc=5",
         "source": "TradingView",
-        "pubdate": "Mon, 08 Jun 2026 20:33:03 GMT",
-        "pubdate_iso": "2026-06-08T20:33:03+00:00",
+        "pubdate": "Mon, 08 Jun 2026 20:11:16 GMT",
+        "pubdate_iso": "2026-06-08T20:11:16+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "South Korea Stocks Slide 8.8% As AI Trade Selloff Hits Chip Giants",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOThsRkY2OEZlZzNjSFdOZ0xRa0FpYlFPajZpRldJeldFMHRDOEFXSllIMWhWU2lkZmlSUGdaQW1IbmtOQWgwY2w3bHpkb0txRGdDZGlhcnBQbVJzcmRrZ2xlS0hCT0JpUm5NYXVkb0t0UURRZzFXbWdTbDZuN00xRVc0X1pvNmRPeVVBa2NPR2Q4R2FmcGphZkFkdmdrMG9zeERGRGg4Tk9fX2NNQ2RVNnQwVVlEdnJmYW4yTUs0R0RCUQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Mon, 08 Jun 2026 20:00:39 GMT",
+        "pubdate_iso": "2026-06-08T20:00:39+00:00",
+        "impacto": {
+          "direccion": "negativo",
+          "intensidad": 3,
+          "intensidad_label": "fuerte",
+          "emoji": "🔴🔴",
+          "razonamiento": "Selloff: presion vendedora"
+        }
+      },
+      {
+        "title": "Goldman Sachs Issues Blunt Warning on AI-Driven Market Conditions",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcUFYa2xiOHZnZ2ZzaXpCUk5sZG5aXy1meUlxakl0b0ZaS01iYnpjeGQ3RVVHaFhYQ1lxUHVJNmxsMWJ1NFUwX3BLdmhQRXI3dFJNa3NkbldfdFJ4RThmcGl5VmUzeEQta3ZSOUJzOW1KNUJTVHpSdmlBR2s2SzhoSm5JbjJGNlZUWjBGb1N5MVpwcExXRDZnaDZEa3BUR1FkRENrYWJuVmRwczVZQVpDLWRWYTRUczJQSzl1YmRxZWxadw?oc=5",
+        "source": "TradingView",
+        "pubdate": "Mon, 08 Jun 2026 19:53:47 GMT",
+        "pubdate_iso": "2026-06-08T19:53:47+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -334,6 +334,20 @@
     ],
     "sentimiento": [
       {
+        "title": "Small, mid-cap valuations cool but froth remains",
+        "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOFl2Ym1iSTljZUdrXzdvblRxa2U4M1lhMWVBWTFkMVpnWXlxQ1Bsc0ZmT1BfOTZ6MXpOOWZaTktVRktSb2xfZEpxbVFKUmNtbUZzU3ZFRk1aU3BVRXRZZGxwYW1fUENBSnBJdlBjcGhLYTRSNUh0Wm9JNEF4LVp6QW1lUWFsNFZ0TFpTbWFBajFhTmg3SEgxS3p3eDBaOWFsVFRHbGxTNUFtczNOVGloNk1ycnkyODByQzN1WXZ4V2dsYUZ2YXdtSFlzbmFFVXBIXzRhaVgyMXdjUXM4eGJzOWI3NlkydlhDSUHSAe8BQVVfeXFMT3JzX253N1hVM3R2S3R0Q0VMRDNsYnBabGoyN21Kb2d4WVNsMjZkSDdEUWtDVkg2TmF1V0RCem10QTlQb0t4NEluZWk3aGNieGZZTXNHdGZ4NnJlbHUtZXdxMmNlMmRmTjFXUVdHakMtc1hqdjJTc1VMUDJ6blF0Y3g0dmxlZkZoeXRUS1AxTlJoVEpjcHZJSHdxdlhYbWlvaHV6Zkc2VFJQQTVuSTBja3VlVm9FNlg2MmtrQkxJWXhQam1OZ1Q3SGlPUnRaMV9iczU4UFlvRXRjbW5NaGlEZXJiMGhNaHhIZ2NNckFGbEE?oc=5",
+        "source": "Mint",
+        "pubdate": "Wed, 10 Jun 2026 00:30:51 GMT",
+        "pubdate_iso": "2026-06-10T00:30:51+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "MU Stock Slides 2% After-Hours As Goldman Sachs Doubles Price Target But Keeps Neutral Rating",
         "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZVFvVVZMblpkYVFIRExka19NQVQyMlNDaGVDdGVKU251aERVZ1pZWWZPMVhrcnVaLU1FaXBTdk5yamNfTTFyTzNRRHhTYjdrZzdFRnpzOGJFaEw5d2hpNUhMS3VaMW9YejBLVFo4SDF1X2g3TmN2dzRwa2RjT3o4NU02NGVRcG01Y2EzZjREcU5laTRubDg2NS1YN0g0VU1TZ0NZbm40dlNYNi01OE9RQzZ3WU9pdlk3Z2lLamRJNzNVZVBRWGVNclI1Qi1JX0ZTV2NFbXlZT2NMek1kWmtoNEwyNW9RYUU?oc=5",
         "source": "TradingView",
@@ -388,20 +402,6 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Bad News For Bitcoin: Historical Lows Show The Bottom Actually Lies Below $30,000",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORFNrNDlxOEpEeHJfaHM3QmRKNUEtOTJGZUE4RExoUWN5SHpRWl9nZWJOZXM1TGZBdHJ4ZlBaMHZTaTFjeDJUb0E4c090cV9rTHV3V1R0MHAxWTNpZkg3Q0ZTWFBvUTNhb1FrQW5qMm9Rb0o3UXVZSDR2ZkQzb1YyVjVYelM1WjdvTlVJVDlJUTNkcjhuRV9lYXBWbUpyY2ZZd0FySWV1RTVRY3BWRzZVUnY1TGFaR2ZrOGF1emsxWC0tU1JsVTJKQlFVQ25PZ1hNeVE?oc=5",
-        "source": "TradingView",
-        "pubdate": "Mon, 08 Jun 2026 10:30:21 GMT",
-        "pubdate_iso": "2026-06-08T10:30:21+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ]
   },
@@ -418,11 +418,11 @@
   },
   "resumen_ejecutivo": {
     "sentimiento": "bajista",
-    "score_neto": -7,
+    "score_neto": -8,
     "n_positivas": 1,
     "n_negativas": 3,
     "n_neutrales": 22,
-    "narrativa": "El feed muestra 1 senales positivas y 3 negativas (neto -7). Factores dominantes: Selloff: presion vendedora; Selloff: presion vendedora.",
+    "narrativa": "El feed muestra 1 senales positivas y 3 negativas (neto -8). Factores dominantes: Selloff: presion vendedora; Selloff: presion vendedora.",
     "narrativa_fuente": "plantilla",
     "veredicto": "BAJISTA a corto plazo"
   }
