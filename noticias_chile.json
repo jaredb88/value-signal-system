@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T17:33:48.368532+00:00",
+  "updated_at_utc": "2026-06-11T19:33:48.668396+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -102,6 +102,20 @@
     ],
     "ipsa": [
       {
+        "title": "Bolsa chilena sube 2% a medida que resurge el apetito por riesgo aun cuando Trump prometió seguir atacando a Irán",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YN2VuZW9wZmJ0eGptdlFtZzFwMEdyY3JNYnltaFpoQUUtcWcycVlUTWQwemUwSVFPS21NTEdSaENKaEs2bGY3eFBSem1IcVlQQy1JdXNKb2pldVRXZjQ2NC1TZXBaTjV3?oc=5",
+        "source": "Diario Financiero",
+        "pubdate": "Thu, 11 Jun 2026 17:05:00 GMT",
+        "pubdate_iso": "2026-06-11T17:05:00+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Bolsa local al alza"
+        }
+      },
+      {
         "title": "SP IPSA: La Bolsa de Santiago este miércoles cerró a la baja con variación de 0,48%",
         "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZWZ6UlRnU3c1NnhXYXkwdkdtSkVSV0ZmM1pMOXZHcFVKRWNvM095TnNQT2V4eUFOcUR5TTFPWjRCS3c2ZXV2SlE1Tk1HMC0tVXhzYmhpdWtxckJtaDdZd3YzeHBzWEF5WXZKekhXdUhPT1M2VXZGNWRBemJES0JlV0VPYzl4Q1dFcDhtci05NDFIVHQ2NWRtc3JJbFdnY1g0elNUSEJnN0JZeWJ6WXY2SmhJc2dUalJ3OHc?oc=5",
         "source": "diarioestrategia.cl",
@@ -131,6 +145,34 @@
       }
     ],
     "dolar_cobre": [
+      {
+        "title": "Dólar cierra bajo los $910 en Chile apoyado por fuerte repunte del cobre",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOek40UHJaaWxxeTU1Q2NPeDJwVHpLSlJKYXFjMzNnTVlheENTREQwcTdqbW9wbnpLVklDcUZudm52eF9vd200aXNhVy12Q0NQd0xkajBxM3U0YjVJOC1UQkw3Qzg1T0pHU0RRa1N0MU9QZ2IyOFBKMGRrZzNUMW1DbENFYjF3ODEtR01UQmY1RXYwRWx2cVJjM21EUjJacWtIeV95MUUtLUswdUxZUXFiOU5lbGtSdEJaSHlzRUUtTEdneHRMdWJkcktuYw?oc=5",
+        "source": "Radio Agricultura",
+        "pubdate": "Thu, 11 Jun 2026 19:23:09 GMT",
+        "pubdate_iso": "2026-06-11T19:23:09+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Precio del dólar hoy en Chile: cotización de cierre del 11 de junio",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVGpkT1BtRG8yZU93dkFZVUh1SnJKWERzT0ttTFdrY3ZadW5oQzVmQ3dTblhmVE82ZXRHNGVhTzE4MFlaV1pzRkw4NEl4dDdWdG44Q1l3ckUxaFMzSWdRNlVpTFpGQlgwLXBkLUpRdWhRRlRSd2pyVE1zRlhWXzVlOTZjMW03dEdld2NFelU1aHRBblZjYkZ1Zi1BeEo3aTQ4UkNfNjJWU0FEcTk0UUtCd9IBywFBVV95cUxOd0ZqTEIwYWM5djJ4WnlsYmc2TzFFV3R0aXZ1WDZ6SEdyR3Q1S3hrNjJUcGRzUDE2ZU51Z2YyT2llaXRqZnFJSVJ3WFZhQlFacXEtaXAydWJFbno1VjNKNkpxeXVYSjJtN2xqZm1jQ2xZUnUxZVhkXzRRUXpzMXk2aDhrX1JpcXZGdXN6UFVSLV9vUnh4bnJ5S09PMG12VXRuR2xsWmNsNmJuOVBnV2hfWTl3VTdZalRFVkJfeGd2Q0dGeHBNb2FIVjhJVQ?oc=5",
+        "source": "Infobae",
+        "pubdate": "Thu, 11 Jun 2026 18:47:59 GMT",
+        "pubdate_iso": "2026-06-11T18:47:59+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Peso chileno hoy, 11 de junio: cuánto rinde el peso argentino para compras y viajes a Chile",
         "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRUNpb1NfbmVJbVhkcFViV2Q3MHY2WVlKR2RRWmFjbXVDMF9YdjdmWEpxbVhTWmZfQ1BkM1FvWFMxaUp2QUMtTUZLMTlHZUowZ1E2RUcxTUNvODRuZmM0V2dYam9MZlFOckxxWnNQbUl2UmJBbHhXS2JYYjZsdERnRy1RZzZvMUxYVHU2TGp0bFVyRzZ6UXVnZkJIc296dmdTVVkwdjBXYVhBTFMyRW1aTXJScXVnNGdUM21oQmRZajBDRTlmLXd4dE56dVdMYmlC0gHYAUFVX3lxTE1ybTZ2bXJqMkN1ZmpkR2sydTBZSHlsY0I1cWJXaERjQ21VUl9oanBYODJOUzJjZEdxNGtZRXhWUzNtNEl2UEZoN1hfYVhqV0d3UERDUmFndDMwdTk0Y2hGb1FNNm8tSWd2NDVyN3JLUGwyejNwRnR5aTAySGk1X01JRlNKZmRRa1NHMWNDLUwzQ21lU041Z3JfcG43aFBxN3QxYmRwMXlfbmo2RmpaaHdBOWVwZk10d3pHSHFyWmZXYmNyTDI4bmlrbVJUcmRCR0ZSU3pjd1pldw?oc=5",
@@ -165,34 +207,6 @@
         "source": "Radio Agricultura",
         "pubdate": "Thu, 11 Jun 2026 13:19:40 GMT",
         "pubdate_iso": "2026-06-11T13:19:40+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precio del dólar hoy en Chile: cotización de apertura del 11 de junio",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcDdjUVhBdy1QalJvcWtPcnVPMnY5MERUMzhkQ0IyWWoydThWZG02VXBQdmhuRUptMXdQY2JCVjA1eFNSQXFkMm1DT2JYeXNzUmVzX0dJblJLSzc3VUVDZWp5cjkxWHpvaHFFdzRsWGM0TXNTRDR0LWczWjhhSlRnNVpla2Z4UzRMOE1hWFBSa3JwOUR2Z1gxakFyTTFmQUdURVdjTXpoNk5MMU9UdmJlQXRSZ9IBzgFBVV95cUxNXzE5MWJ6cE92dnBZdENXWWVUelVrWEc2S2VkUkJBZTh6TVpXb2ZNRUxoMXBzOG9IaERSSkI5RjhKTXF3SmducUJXMVdxZzJjTzc3Q3dXVld5Si1LRTd0bGhLQUVxdTRacXpZYlJaa3R2aTlOd1QxRVRMZE5jSC1MM1Y2YllWZmNETVR2SkN4UGdFeGsyNFI1M2JncHN4Tnc5QVhFSUZVNjllbjVvRWFGbWhUR0pSNTI4dnQyNTFPQmE2d3Q5UUFYc01DWlZGQQ?oc=5",
-        "source": "Infobae",
-        "pubdate": "Thu, 11 Jun 2026 11:37:09 GMT",
-        "pubdate_iso": "2026-06-11T11:37:09+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Valor de la UF hoy miércoles 10 de junio de 2026 en Chile: precio actualizado",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcDYySERETW9YUTg5azZqUHlITzh2cnBMVkRRVGdXR0ZuT1dLcmM1eVRWWkludjgzVkxsOC1MYzdaZ2pLQTdnMG1BYmlSWlV6dTFsSG1tUlB2aVU1eVdjR19IMkJMbmQtbTBFRWJQZExidUxRUjYyeUd2Vk9nV2J0Wk40WkIybkF2Y0pFV2xDVUI2emJpY0kzZ1pxYnhUUUloZzV3YTBZbm83RkNTekgybHJnWmhRb2M?oc=5",
-        "source": "Radio Pauta 100.5",
-        "pubdate": "Wed, 10 Jun 2026 19:36:19 GMT",
-        "pubdate_iso": "2026-06-10T19:36:19+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -293,10 +307,10 @@
     "sectores_watchlist": []
   },
   "stats": {
-    "total_noticias": 18,
+    "total_noticias": 19,
     "por_categoria": {
       "bcch_tpm": 5,
-      "ipsa": 2,
+      "ipsa": 3,
       "dolar_cobre": 5,
       "economia_chile": 5,
       "politica_regulacion": 1,
@@ -304,13 +318,13 @@
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "bajista",
-    "score_neto": -4,
-    "n_positivas": 0,
+    "sentimiento": "levemente bajista",
+    "score_neto": -2,
+    "n_positivas": 1,
     "n_negativas": 2,
     "n_neutrales": 16,
-    "narrativa": "El feed muestra 0 senales positivas y 2 negativas (neto -4). Factores dominantes: Perdidas reportadas; Reforma tributaria: incertidumbre impositiva.",
+    "narrativa": "El feed muestra 1 senales positivas y 2 negativas (neto -2). Factores dominantes: Bolsa local al alza; Perdidas reportadas.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "BAJISTA a corto plazo"
+    "veredicto": "Levemente BAJISTA"
   }
 }
