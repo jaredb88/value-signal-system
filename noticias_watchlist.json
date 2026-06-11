@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T06:33:04.093643+00:00",
+  "updated_at_utc": "2026-06-11T13:24:52.768712+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -102,6 +102,13 @@
         "matched_keyword": "SQM"
       },
       {
+        "title": "EDICIÓN ESPECIAL",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMFgtRnpoWjFnS1F0cU5yeGtKbE9raVhKSVFxbC1sSS1aTEZvZURINXo5U2s0Y0JWSXlLTkJzcHk1NW02elBvSEN2Ymk2RWw0MnpodXh6SFg4OVBfRk81WUdJSUgwWkpPQTFWRlg0eXZycjFraGphUU80SHlLZHpLMllTaG5tbTZNRzhyXw?oc=5",
+        "pubdate": "Fri, 05 Jun 2026 07:00:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
         "title": "Bolsa chilena se desinfla y cierra en rojo por quinta sesión consecutiva ante las dificultades del proceso de paz en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA1dU51RXlqdGpkRDF4SUtmaXBqYkhabnlGajJ1dTNSQlpyQWlwTkFjLXZDR2EtXzlCSGNtekFhb29HUFJEUzdhRU11X3JoWk55Q3IySWZDYmhXS2dFV2tDd1JIbXNXNVA3?oc=5",
         "pubdate": "Thu, 04 Jun 2026 20:16:00 GMT",
@@ -116,8 +123,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2238,
-    "total_noticias_filtradas": 13,
+    "total_noticias_brutas": 2237,
+    "total_noticias_filtradas": 14,
     "total_hechos_esenciales_brutos": 92
   }
 }
