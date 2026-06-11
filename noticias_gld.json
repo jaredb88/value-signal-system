@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T14:39:35.458175+00:00",
+  "updated_at_utc": "2026-06-11T16:39:35.059458+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -29,6 +29,34 @@
   },
   "noticias_por_categoria": {
     "precio": [
+      {
+        "title": "Los precios del oro se desplomaron hoy, 12 de junio de 2026, acercándose a los 4000 dólares a nivel mundial, atrayendo a compradores en busca de gangas. ¿Cuándo se recuperará el mercado?",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPQ0ZKZFlza3B4LTRoTHEzU1JBc0VCVmZQRFYwMmdkMUN1WTNyRk5mczhpOXpDZEk1ZUtIZlhSbjNVRms4d0c3eHd5eHlqdWNGRDdqX0dmaENaaC1tT2I0WF8wbnZ4c2VZSTdFRTgxdWpLREgxcWMxMXFXempCWFVPZFFiZlF1eC10b2wxOWRkaVgwa1VMU0QxV3lvcVYzSnNLdER5YVRUeVkzUnBhRnBFSloxclhySUZCcFJVUjZueWFxRDFwLWxGR0hyem5UNDFJQzR5RmtGeTBIZ0JR?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Thu, 11 Jun 2026 14:59:28 GMT",
+        "pubdate_iso": "2026-06-11T14:59:28+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Actualización del precio del oro, 11 de junio de 2026: Precio del oro de 9999 y anillos lisos BTMC DOJI Phu Quy, jueves",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcldtWG5XWVNmMVdpRHNncFNoWVJtakc1b0hPcUtuNkxOMUdVbVJVVjhXTXJsdUtBUUQzRS1NMkpxaWhJcHNUNWpjQ0Zlak90YVY1cnJ3cGVrR2VDTU9fQVh5ZGpvVDVTQk5neWNDUWR6a1Eya2FxTFRBbXZPb3g3am51YTF3UHMzYzZGRjQ0VTB6a0RIeHd1ZlBFbE4xNDhrOVgwQXJpOXVFbWNX?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Thu, 11 Jun 2026 14:40:57 GMT",
+        "pubdate_iso": "2026-06-11T14:40:57+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "El precio del oro de hoy, 11 de junio, mostró fluctuaciones muy inusuales.",
         "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UZ3FQTXNCUFUxdUR3aHE2a0M5aGR3ZnlJTUc0QlBQeWRsb21DX2hDNnVZRzZpYXp1blkySzZDUF9QTEhPbUtNMHhfMUtaUVJSVklLNmNDQVdjY2hUd05Qak10ejRBdHQtclltbXJZdlVub1dDQkR0d1NmQzducXc?oc=5",
@@ -63,34 +91,6 @@
         "source": "Vietnam.vn",
         "pubdate": "Thu, 11 Jun 2026 10:57:32 GMT",
         "pubdate_iso": "2026-06-11T10:57:32+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Los precios del oro hoy (11 de junio) continúan su fuerte caída: compradores y vendedores hacen cola en grandes multitudes.",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTk0yTm42Rzh6SFdfdG9PczFWVTc1WVZqbFF6WTdXUlFzSjdXRllqV2Q3LTZiTGVKREEtNTNRTmRYOE9NLWk4U2swZnpMNFZXU0IzZHhPS21oOEotbEtvamJTdUtVUExXd0VkSWt0SUg2REFVbVhoVWh5TFgyakxOVnA2eW1IaG0xd2MtXzhxaHBYSDZEU0RYYU9PSElVdkVwTWJtRmE0Q0U0RnMtS3JiWg?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Thu, 11 Jun 2026 07:46:52 GMT",
-        "pubdate_iso": "2026-06-11T07:46:52+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precios de la plata hoy, 11 de junio: Razones por las que el oro y la plata han caído a mínimos históricos.",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTHNranRZSW5tT1RaRnFFcW91TlpRay1UNmNoajZuY1E2aXoxRTRERXB3NUpId0NPQWQxaWVuTkh5ZWVISDh4TWp1ejNDd1dId25ObjUzUEVmeF9jLWx6Uk9sRG0xM1dIWXJKQzJ2NzE1eEI5clM1Z2k1QldZTzBZRjZNTm1DQQ?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Thu, 11 Jun 2026 07:45:52 GMT",
-        "pubdate_iso": "2026-06-11T07:45:52+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -246,6 +246,20 @@
     ],
     "bancos_centrales": [
       {
+        "title": "¿Por qué cayeron en más de $700 millones las reservas de oro de Ecuador?",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaFZvcUdVMlllTmxtN0cyc0J6NU9aUVhVQ1Rya29RbWc4aFctXy1vSUpQVnBiNW5KYm42dGhNUmNZUWxCQS1lOEFpQktQcGlCS2plb1hXUDZ5RWZ1UnNzVG9WRnk0bzUxd19YMlBYdTl1QVpRYnF6aDZBdUstSmN2X0lJY1hNcWFTc3dCR0ZiUi1jWnZzM2V1RVRGd3duUGJEcjZGMDhUd0VuZEh2anVFZC1PdDJhT0JQRllTNzUzZ1U?oc=5",
+        "source": "Diario La Hora",
+        "pubdate": "Thu, 11 Jun 2026 15:12:47 GMT",
+        "pubdate_iso": "2026-06-11T15:12:47+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Acumulacion de reservas de oro"
+        }
+      },
+      {
         "title": "¿Por qué el oro puede caer incluso cuando bancos centrales siguen comprando?",
         "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUzc1RC1kU0ZYdlIzRDFQWUhwR2U3amJjZC1BMGN4NUNDV1ROWXpzaEYzLVlyMXJGQ1o0VGRkd3prOFo0aEhJUWRTb3hlX0RhOTNGNzRlT0dZeWVWVDhuRFpzLW9DWk51TExuVy1uSWhaQUdDQlJ6bFRtbWJlMHBmY1l6emhBQlNqcktTR09XaG9xNmxfNE5FZmpJcUliSnJ3WVhmbHRINjAzRVU?oc=5",
         "source": "EBC Financial Group",
@@ -300,13 +314,29 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
+      }
+    ],
+    "geopolitica": [
+      {
+        "title": "Pronóstico del precio de la plata: ¿puede XAG/USD mantener su rebote ante las tensiones con Irán?",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE56WVdMT1VxaFlEeTVENnN3amxmVTVTanBrQ085bVpDejRQNTNMS2l3UkJqT09jVWUxUWk2TVNxUkpxSFlQVWZNZE12RjZnZXA3WGZjS2RIX2hKQ2l1d1I0ZWZMT2p2QQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 05:15:00 GMT",
+        "pubdate_iso": "2026-06-11T05:15:00+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Tensiones geopoliticas: flujo a safe haven"
+        }
       },
       {
-        "title": "Gold and bitcoin: the assets the rally forgot",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeG44ZG5ob21HOWlQNGg5TUZyejJFQjFGcW5RN09zX1VNY2k2Rk93SDlpejFQa2Y2eHlqcG1Gbm9ub3dVdmxiOFl1d3g1aHlpTGdYaU1HdDZZelZhTXRaOE94WTRtX3BSV1ZDNXhkQUdMQlJnTnFfV3FlTk9GbEJJUVBVR2U?oc=5",
-        "source": "Financial Times",
-        "pubdate": "Wed, 10 Jun 2026 05:31:47 GMT",
-        "pubdate_iso": "2026-06-10T05:31:47+00:00",
+        "title": "Gold ETFs fall over 3%, silver ETFs drop nearly 5% as bullion prices hit multi-week lows on US-Iran tensions",
+        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNR09KMHZJWWlPTUh2UG01WEZiNGc0X2ZkS1IwSzRwb052SE5oR2NoeFJPWVU4bG5UVmEwQmZWVnNlTlgyLW8zSlJWNG00WW5kdFd3b0M2YWxMaExMWUREdTVjZFlibjRfTUc2VXpsWGFaenI3T25IaF9wd0lNM3RjSjZKeHlPeGlaSWVUQzJBZkRQTmVveVdtYi03TExZTWpKS2Q3Vk94NVZDRXFjdzlqckYtbUU0Vi1KZXpuRUZtU3pzNlFOQlZxM1EyY0lOaDd2WVdRc0tZX3ZNYlZJSEpYR1pSVVBNS2h1WjU2clhORXFMT1h6TWNLNVc1cw?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 05:35:00 GMT",
+        "pubdate_iso": "2026-06-10T05:35:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -314,9 +344,7 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      }
-    ],
-    "geopolitica": [
+      },
       {
         "title": "Gold regains Rs 1.6 lakh/10gm level as weak US dollar lifts sentiment",
         "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQY01xd1dqX3psSHJDZkRpSXB1VUZBV1RQaHA1SjRKekd5WU5peWg0RGgxRXFsNFBfSGgybmtBZ3plSlpJd2ctdF9VYjBWMEp3RE1RZ0FFLXZPVDU3SGV0b0VYeDZkRFJJS2ttMU43cUpJYlp0NHJpRk9jaWV0VzVITHBQdnA2SzJ6anMxdzIzRzFlQXlUZjJveHhsYWpjRGt3VGFSeER4NUNMbTNtUVhFaExQb3hBMmZVSHJFYmdFbjJrakpyaG1rUTdxWQ?oc=5",
@@ -392,23 +420,23 @@
     ]
   },
   "stats": {
-    "total_noticias": 25,
+    "total_noticias": 27,
     "por_categoria": {
       "precio": 5,
       "fed_macro": 5,
       "dolar": 5,
       "bancos_centrales": 5,
-      "geopolitica": 1,
+      "geopolitica": 3,
       "proyecciones": 4
     }
   },
   "resumen_ejecutivo": {
     "sentimiento": "alcista",
-    "score_neto": 7,
-    "n_positivas": 4,
+    "score_neto": 11,
+    "n_positivas": 6,
     "n_negativas": 1,
     "n_neutrales": 20,
-    "narrativa": "El feed muestra 4 senales positivas y 1 negativas (neto +7). Factores dominantes: Core inflation persistente: positivo para oro; Conflicto belico: flujo a oro como refugio.",
+    "narrativa": "El feed muestra 6 senales positivas y 1 negativas (neto +11). Factores dominantes: Core inflation persistente: positivo para oro; Conflicto belico: flujo a oro como refugio.",
     "narrativa_fuente": "plantilla",
     "veredicto": "ALCISTA a corto plazo"
   }
