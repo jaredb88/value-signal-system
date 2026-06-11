@@ -499,9 +499,9 @@ if seccion == "🎯 Oportunidades":
                 st.metric("Score", f"{_o_op['score']:.1f}" if _o_op['score'] is not None else "?")
             with _c3_op:
                 _ez_op = "🟢🟢" if _o_op['zona'] == "OPORTUNIDAD" else "🟢"
-                st.markdown(f"{_ez_op} **{_o_op['zona']}**")
+                st.markdown(f'<div style="font-size:1.25rem; font-weight:700;">{_ez_op} {_o_op["zona"]}</div>', unsafe_allow_html=True)
                 if _o_op['mult']:
-                    st.caption(f"x{_o_op['mult']}")
+                    st.markdown(f'<div style="font-size:1.05rem; color:#666;">x{_o_op["mult"]}</div>', unsafe_allow_html=True)
             with _c4_op:
                 st.button("Ver detalle →", key=f"btn_op_{_o_op['ticker']}", on_click=_ir_a_vista, args=(_o_op['destino'],))
             st.divider()
@@ -533,7 +533,7 @@ if seccion == "🎯 Oportunidades":
                     _btxt_op = "?"
                 _vsbm_op = (_a_op.get("evaluacion") or {}).get("vs_benchmark_pp")
                 _vstxt_op = f" · +{_vsbm_op:.2f} pp sobre máx" if isinstance(_vsbm_op, (int, float)) else ""
-                st.caption(f"Benchmark sector: {_btxt_op}{_vstxt_op}")
+                st.markdown(f'<div style="font-size:1.0rem; color:#555;">Benchmark sector: {_btxt_op}<br><b>{_vstxt_op.replace(" · ", "")}</b></div>', unsafe_allow_html=True)
             with _c4_op:
                 st.button("Ver detalle →", key=f"btn_cl_{_a_op.get('ticker','x')}", on_click=_ir_a_vista, args=("🇨🇱 Acciones Chilenas",))
             st.divider()
