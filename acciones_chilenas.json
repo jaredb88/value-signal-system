@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-11T02:04:44.569663",
-  "duracion_segundos": 98.544648,
+  "fecha_actualizacion": "2026-06-11T02:36:28.142384",
+  "duracion_segundos": 201.703139,
   "n_acciones": 11,
   "acciones": [
     {
@@ -140,25 +140,11 @@
       "precio_actual_clp": 988.47,
       "razon_social": "ZONA FRANCA DE IQUIQUE S.A.",
       "variacion_pct": 0,
-      "dy": {
-        "dy_pct": 7.0,
-        "anos_usados": 3,
-        "anos_detalle": {
-          "2025": 67.12,
-          "2024": 80.4,
-          "2023": 60.11
-        },
-        "promedio_anual": 69.21,
-        "advertencia": null
-      },
+      "dy": null,
       "cagr_3y": 0.15899482057949443,
       "cagr_5y": 0.19928469769607893,
       "cagr_10y": 0.06639820730827961,
-      "evaluacion": {
-        "status": "Cerca",
-        "emoji": "🟠",
-        "vs_benchmark_pp": -1.5
-      },
+      "evaluacion": null,
       "cmf": {
         "periodo": "03/2026",
         "tipo_balance": "INDIVIDUAL",
@@ -171,88 +157,7 @@
         "capital_trabajo": 23106647.0,
         "patrimonio_total": 63916369.0
       },
-      "dividendos_recientes": [
-        {
-          "fecha_pago": "2026-11-27",
-          "fecha_limite": "2026-11-21",
-          "monto_clp": 36.19,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF. 74 $ 36,19"
-        },
-        {
-          "fecha_pago": "2026-05-22",
-          "fecha_limite": "2026-05-15",
-          "monto_clp": 36.19,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 73 $ 36,19"
-        },
-        {
-          "fecha_pago": "2025-11-28",
-          "fecha_limite": "2025-11-22",
-          "monto_clp": 33.56,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 72 $ 33,56"
-        },
-        {
-          "fecha_pago": "2025-05-23",
-          "fecha_limite": "2025-05-16",
-          "monto_clp": 33.56,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 71 $ 33,56"
-        },
-        {
-          "fecha_pago": "2024-11-29",
-          "fecha_limite": "2024-11-23",
-          "monto_clp": 40.2,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 70 $ 40,2"
-        },
-        {
-          "fecha_pago": "2024-05-31",
-          "fecha_limite": "2024-05-25",
-          "monto_clp": 40.2,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 69 $ 40,2"
-        },
-        {
-          "fecha_pago": "2023-11-24",
-          "fecha_limite": "2023-11-18",
-          "monto_clp": 30.055,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 68 $ 30,055"
-        },
-        {
-          "fecha_pago": "2023-05-26",
-          "fecha_limite": "2023-05-20",
-          "monto_clp": 30.055,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 67 $ 30,055"
-        },
-        {
-          "fecha_pago": "2022-11-30",
-          "fecha_limite": "2022-11-24",
-          "monto_clp": 36.3834,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 66 $ 36,3834"
-        },
-        {
-          "fecha_pago": "2022-05-27",
-          "fecha_limite": "2022-05-20",
-          "monto_clp": 21.8301,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 65 $ 21,8301"
-        }
-      ],
+      "dividendos_recientes": [],
       "error": null
     },
     {
@@ -389,28 +294,14 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Electrica regulada chilena. ROE 8%, payout >100%, G negativo.",
-      "precio_actual_clp": 1482,
-      "razon_social": "INVERSIONES TRICAHUE S.A.",
-      "variacion_pct": 0,
-      "dy": {
-        "dy_pct": 4.78,
-        "anos_usados": 3,
-        "anos_detalle": {
-          "2025": 72.11,
-          "2024": 86.6,
-          "2023": 54.0
-        },
-        "promedio_anual": 70.9,
-        "advertencia": null
-      },
+      "precio_actual_clp": null,
+      "razon_social": null,
+      "variacion_pct": null,
+      "dy": null,
       "cagr_3y": 0.2997407116529842,
       "cagr_5y": 0.1459281498546543,
       "cagr_10y": null,
-      "evaluacion": {
-        "status": "Bajo benchmark",
-        "emoji": "🔴",
-        "vs_benchmark_pp": -3.72
-      },
+      "evaluacion": null,
       "cmf": {
         "periodo": "03/2026",
         "tipo_balance": "INDIVIDUAL",
@@ -767,27 +658,14 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de GLP en Chile, Colombia y Peru. Crecimiento moderado por expansion regional. ROE 33%, payout 63%, G=12%.",
-      "precio_actual_clp": 8381.9,
-      "razon_social": "EMPRESAS LIPIGAS S.A.",
-      "variacion_pct": 0,
-      "dy": {
-        "dy_pct": 4.16,
-        "anos_usados": 2,
-        "anos_detalle": {
-          "2025": 437.0,
-          "2024": 261.0
-        },
-        "promedio_anual": 349.0,
-        "advertencia": "Solo 2 anos disponibles (ideal: 3)"
-      },
+      "precio_actual_clp": null,
+      "razon_social": null,
+      "variacion_pct": null,
+      "dy": null,
       "cagr_3y": 0.4503171721346926,
       "cagr_5y": 0.17371228796948301,
       "cagr_10y": null,
-      "evaluacion": {
-        "status": "Bajo benchmark",
-        "emoji": "🔴",
-        "vs_benchmark_pp": -2.34
-      },
+      "evaluacion": null,
       "cmf": {
         "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
