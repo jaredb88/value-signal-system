@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T19:33:48.668396+00:00",
+  "updated_at_utc": "2026-06-11T21:33:48.211866+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -102,20 +102,6 @@
     ],
     "ipsa": [
       {
-        "title": "Bolsa chilena sube 2% a medida que resurge el apetito por riesgo aun cuando Trump prometió seguir atacando a Irán",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YN2VuZW9wZmJ0eGptdlFtZzFwMEdyY3JNYnltaFpoQUUtcWcycVlUTWQwemUwSVFPS21NTEdSaENKaEs2bGY3eFBSem1IcVlQQy1JdXNKb2pldVRXZjQ2NC1TZXBaTjV3?oc=5",
-        "source": "Diario Financiero",
-        "pubdate": "Thu, 11 Jun 2026 17:05:00 GMT",
-        "pubdate_iso": "2026-06-11T17:05:00+00:00",
-        "impacto": {
-          "direccion": "positivo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🟢",
-          "razonamiento": "Bolsa local al alza"
-        }
-      },
-      {
         "title": "SP IPSA: La Bolsa de Santiago este miércoles cerró a la baja con variación de 0,48%",
         "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZWZ6UlRnU3c1NnhXYXkwdkdtSkVSV0ZmM1pMOXZHcFVKRWNvM095TnNQT2V4eUFOcUR5TTFPWjRCS3c2ZXV2SlE1Tk1HMC0tVXhzYmhpdWtxckJtaDdZd3YzeHBzWEF5WXZKekhXdUhPT1M2VXZGNWRBemJES0JlV0VPYzl4Q1dFcDhtci05NDFIVHQ2NWRtc3JJbFdnY1g0elNUSEJnN0JZeWJ6WXY2SmhJc2dUalJ3OHc?oc=5",
         "source": "diarioestrategia.cl",
@@ -145,6 +131,20 @@
       }
     ],
     "dolar_cobre": [
+      {
+        "title": "Valor de la UF hoy jueves 11 de junio de 2026 en Chile: precio actualizado",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUW9DSHlHYjFNU3JpUkQ1X21jbWlNeEVyb0FPMjJaN3dHdFlWMmxqVFRaWWx3UFZGTmNPUEl4ckdvWC1Qa2R6V0paMXhzbFJBN0dPMWJlaVJYM3BvdF9rSFlWWTZxVHYzNVlpaXNYcGc4dS01bGI4VzhjZlZKOXNsNG9FbEFuS2NzU2paX2x0MUxNNjRDXzRKVkl2VDcxMHVXRGoyRkFDLUVRNUpnNU0xV2xEZw?oc=5",
+        "source": "Radio Pauta 100.5",
+        "pubdate": "Thu, 11 Jun 2026 19:53:03 GMT",
+        "pubdate_iso": "2026-06-11T19:53:03+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Dólar cierra bajo los $910 en Chile apoyado por fuerte repunte del cobre",
         "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOek40UHJaaWxxeTU1Q2NPeDJwVHpLSlJKYXFjMzNnTVlheENTREQwcTdqbW9wbnpLVklDcUZudm52eF9vd200aXNhVy12Q0NQd0xkajBxM3U0YjVJOC1UQkw3Qzg1T0pHU0RRa1N0MU9QZ2IyOFBKMGRrZzNUMW1DbENFYjF3ODEtR01UQmY1RXYwRWx2cVJjM21EUjJacWtIeV95MUUtLUswdUxZUXFiOU5lbGtSdEJaSHlzRUUtTEdneHRMdWJkcktuYw?oc=5",
@@ -189,7 +189,7 @@
       },
       {
         "title": "Precio del Dólar en Chile hoy: El Peso chileno gana terreno tras datos económicos clave de EE.UU.",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVnR0YnFmeUZUdXc5RjhOLVp0V3o1UVhNNVprQklaZGNkeE9zZllOTUx2MTQ3bWdsM0hFV1BTRExWQTJJbEhUNWo3dC1Tb0dvRm1xdHJNbVFMd2RHUDVncGl5WkU4c0w5NjgtVVo4eUNFMm4yc1JUdjljcE02QTdhUWdoY1JjZ2pubUFhakVGX3J4MndIR0lNVUpaRVdyQkdqeUxURjVLZ3lIRUFDd1F5RGwyV0l5ZnRBMTZpR0xTWlZEdmpiY0QzQ1pwanp2RFFwRU5xSllhY9IB1wFBVV95cUxNVnR0YnFmeUZUdXc5RjhOLVp0V3o1UVhNNVprQklaZGNkeE9zZllOTUx2MTQ3bWdsM0hFV1BTRExWQTJJbEhUNWo3dC1Tb0dvRm1xdHJNbVFMd2RHUDVncGl5WkU4c0w5NjgtVVo4eUNFMm4yc1JUdjljcE02QTdhUWdoY1JjZ2pubUFhakVGX3J4MndIR0lNVUpaRVdyQkdqeUxURjVLZ3lIRUFDd1F5RGwyV0l5ZnRBMTZpR0xTWlZEdmpiY0QzQ1pwanp2RFFwRU5xSllhYw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRHNmWDJQY21vdF9yTHlNOFVFdnBWLVlZb0RmYjZjMEt0MC1xNDFOWjZ4X0lHSTdTVWFWcWw5bi1NLUV3MzJIV2p5X0tHRVdBTnNaTTNKWEpoT2xoUnpnQVlVUmxKQVBEdHhla3hQRTdPbzZ3dUIzWGRVNWVhVFVvN3laMmhLaE13NEo2a2ZhZ2lpQzk1ZnltRi1KNmphdzZtSXFobmxfMGFjLVFxMGFQczhpVkhEMHBNanRFRFdjOFhUWllHRG5pN0QxMVF0SWxsd3fSAdcBQVVfeXFMTVZ0dGJxZnlGVHV3OUY4Ti1adFd6NVFYTTVaa0JJWmRjZHhPc2ZZTk1MdjE0N21nbDNIRVdQU0RMVkEySWxIVDVqN3QtU29Hb0ZtcXRyTW1RTHdkR1A1Z3BpeVpFOHNMOTY4LVVaOHlDRTJuMnNSVHY5Y3BNNkE3YVFnaGNSY2dqbm1BYWpFRl9yeDJ3SEdJTVVKWkVXckJHanlMVEY1S2d5SEVBQ3dReURsMldJeWZ0QTE2aUdMU1pWRHZqYmNEM0NacGp6dkRRcEVOcUpZYWM?oc=5",
         "source": "FXStreet",
         "pubdate": "Thu, 11 Jun 2026 13:53:59 GMT",
         "pubdate_iso": "2026-06-11T13:53:59+00:00",
@@ -200,13 +200,15 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
+      }
+    ],
+    "economia_chile": [
       {
-        "title": "Dólar vuelve a subir en Chile: revisa el valor con el que inicia la jornada",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPeUYzQnNyaWRWVENDSEhCeVFfbnJPRkJYQVdteFBpbHlZRjZzMEpCMzQ4Y0dFVUZSSnFzaklRV2x0WGN1OTB4YWRPUVB0eWNDOW50c0VZcl9CdjVEazdNTmdWVjc4SzNmTWpveFhZa2JoWHFSUzZDdEQ5ZWlXRUFacmRWRktWaHdTdFRrWGJQcGJEUjI4WmVneUZrelBPdlhzWHpZZkdMel9DNTVDYThKQ2UxWTdBb2QyNzZaV3h0MjdvbjlGUHAtWkZXM1hON1k?oc=5",
-        "source": "Radio Agricultura",
-        "pubdate": "Thu, 11 Jun 2026 13:19:40 GMT",
-        "pubdate_iso": "2026-06-11T13:19:40+00:00",
+        "title": "Banco Mundial reduce proyección de crecimiento para Chile el 2026, pero sigue viendo un aumento mayor a 2%",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZmUxSy1uZ1NLQlpkNDVVdEg5d0k1X1FTZk9tU3hjMjNzdnYtU0hINnBjSnZBYVQxLXowM2ktd2NubXE1d0diZkdYcFg0ejB3dXZ2REV6OTg2bnRrdmZoeXdRZUxVNl8zbm1HTHVNMnB4elB0NUhydFdnQjcyWEI4RVFqN01wVzNjeDdkTDZweDJ2YWZscjZCNjJzV2xtWGk5Rk00bnNhc0h3OGlyMFR3WGtUNHFYbmREMlZfaGo2SGVNa3F6TFBfdEtWM2s0M0JsSERDX3VOcWZpZTl1NXfSAf8BQVVfeXFMTmhiWjFvMnFHMFpvYWZSSmVfTEM1MlphNm14V1RpcThCUFF1NDlheFhENFlGQTRWekNOY0RpREk3UXZXaHVQN2FLbV9Tb3daeDdZS0gwaGsycWk4WVg2aGxNWDlkbHV1d3l1WEdtcUw4RGUxaEx2aG1tZXJ1NFFlRUVyQ1UxOXd3ZU9BNHlRM1JwN1hYbjc4bUF2TGMwN2pQVG9zRG4wV0hKckhRTlEwQkp0eF83dXJ3am9pVEQ5cEFPWmdXcDBjTnROelNQRmVBdGZjbEExbS1yaEV0Um1fazAyRkxYd2pPV2hNMFhiYUpSQ0F2SmRkY2JPU0ZNbkJR?oc=5",
+        "source": "La Tercera",
+        "pubdate": "Thu, 11 Jun 2026 20:21:28 GMT",
+        "pubdate_iso": "2026-06-11T20:21:28+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -214,9 +216,7 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      }
-    ],
-    "economia_chile": [
+      },
       {
         "title": "Pese a altos precios del cobre, Banco Mundial recorta proyección de crecimiento para Chile",
         "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSGs4eVpXdVMwYWphSkV0RGhsMWxER1VGcGdJVnNDRGxydHpzVkhMOEx1c0Q1dEhzbDRWdlkxUGNNVEhnYW00YnE1a19Mb092d0w2NXEyMDlDc1QwS3h5Tjk2Sk5kcjhOSUdRWW1TYmw3V3ZxRjhjMzRmZXI1eG9QdktrRE5fYXBGMXdoMlJldExBSGFEUEVVRjJnOGZSLUtGMWNENGQzUThTSEJBTnhQQWtWQTM0cWhkT21ISEJFZGxydlJHMmU0bXQ1X1VTWDJZN2Mw?oc=5",
@@ -272,58 +272,29 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Mercado recorta crecimiento Chile a 1,6% en 2026",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOM09OV3N3d3RLa1VlVGJ1ZTVMQVhxRXVkbUFiZllZRWVKTmZwQjZJekZJeG95ekpWcmlZa3dlM3llaVlfbTl3NDFXRTRWNWlNejZHbFNKb00zR3JHd3JrVEYwS3prYTh3eGk2TVBpRzhfbUgyZVZndTdLdExwMnVuMkg4ODlkUFEzNDhQYzQ3VDJQLW9tVnFwdldLcnplUjRGcUJRZg?oc=5",
-        "source": "thetimeslatino.press",
-        "pubdate": "Wed, 10 Jun 2026 23:23:00 GMT",
-        "pubdate_iso": "2026-06-10T23:23:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ],
-    "politica_regulacion": [
-      {
-        "title": "La reforma tributaria y la inteligencia artificial: la apuesta que puede cambiar el crecimiento de Chile",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQT1JwSUNOOUJYUWxVSk9vX1Y3c0pnR201V1M5QWhFcTFSYVBDM2lQWGpkM3NkNllyVmRFaFFYMS00T3F5MWoxQzFyaWFNWU16dDNERkhCZXV3cU91Q2I2cExzOXU2aVdVRVI5NnZtQzVqcTJDTkgzTVBwVHBHUmdCbHdLQjZjV3QxdE5aNXFyQm9xNVktZ0FTOWdfeTB1YTRaXzhwcmFkU1duc0pxVlZHczNlY0pzNGk3VXF0bC1ydzdULXo2M25V?oc=5",
-        "source": "academia.cl",
-        "pubdate": "Mon, 08 Jun 2026 21:04:22 GMT",
-        "pubdate_iso": "2026-06-08T21:04:22+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🔴",
-          "razonamiento": "Reforma tributaria: incertidumbre impositiva"
-        }
-      }
-    ],
+    "politica_regulacion": [],
     "sectores_watchlist": []
   },
   "stats": {
-    "total_noticias": 19,
+    "total_noticias": 17,
     "por_categoria": {
       "bcch_tpm": 5,
-      "ipsa": 3,
+      "ipsa": 2,
       "dolar_cobre": 5,
       "economia_chile": 5,
-      "politica_regulacion": 1,
+      "politica_regulacion": 0,
       "sectores_watchlist": 0
     }
   },
   "resumen_ejecutivo": {
     "sentimiento": "levemente bajista",
     "score_neto": -2,
-    "n_positivas": 1,
-    "n_negativas": 2,
+    "n_positivas": 0,
+    "n_negativas": 1,
     "n_neutrales": 16,
-    "narrativa": "El feed muestra 1 senales positivas y 2 negativas (neto -2). Factores dominantes: Bolsa local al alza; Perdidas reportadas.",
+    "narrativa": "El feed muestra 0 senales positivas y 1 negativas (neto -2). Factores dominantes: Perdidas reportadas.",
     "narrativa_fuente": "plantilla",
     "veredicto": "Levemente BAJISTA"
   }
