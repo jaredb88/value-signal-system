@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T16:39:35.051603+00:00",
+  "updated_at_utc": "2026-06-11T18:39:36.616886+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -30,8 +30,22 @@
   "noticias_por_categoria": {
     "precio": [
       {
+        "title": "Los Bitcoin declarados por Adorni: cómo evolucionó la criptomoneda que hoy investiga la Justicia",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPajgwanpFZ1lTN0tjOFlrZC10RWxsS21uZTd0TlpFc1dTWkJod3RsaUtaWGVXM1pidUxpWllKVFE1UUNscVh2TG5JVFBCdW8xRjhPeTZjTUpCMWs0X05VVWZsdWNQb3JsRlpRMFJyUjJvNlVEdTIxbjlRVm5yYVBtTGc3anlSVG04aG9mOWI3RWg0NlQ2X3VCMjhXeUtFYW9CalkyN2w1NjVaY0RlS1Z0MmI0ZnJQYW1lRXFxdW5DT3F4d1NQSnJzVUJVM1pER0NPaEHSAcsBQVVfeXFMTW9DUE5sN0Rwa05tWE1HTkxScnNmd1pJOXoxMlAxR21rSHNFSmVnZGduOGhDZEZGRENQTWdxeUxOWjlSTmNIRFlkVVRPTWZjOEtJWUQxaG9GV1d1emdVbW1ac0w2U1c4clh6dXpGNXd1WC10LTZFY2RMOWw3ZG1VSU1hTjZQZk8wcDdhdVI2Mkc0ZGFvclBUT3hRcWYtdHFTUjk4RW1wV2h1bUNSckd1NlI2MDhNT1ZkZDlKYVdDSU0zellPcm5LbDg0ZmM?oc=5",
+        "source": "BAE Negocios",
+        "pubdate": "Thu, 11 Jun 2026 18:21:00 GMT",
+        "pubdate_iso": "2026-06-11T18:21:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Cuántos millones hubiera ganado Adorni si no vendía sus Bitcoin: las cifras en juego en la apuesta cripto del Jefe de Gabinete",
-        "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNeVNWbFhKRUJ6REYwZkFyYkx2LWYzMGZ4UjdDZnNpSzR2dzNBcnd1TjRwV1FSa3NBZFR3alRuYzRQdlgtUF9Cck9lZFRGU2ZlX29ManRKYjM2am02SFk3RlVpNUFkRjFTaGZ6ZkhMUUoxelNpNzJRaHl2UFRGM1F0aXJsMEVmQW1MNkwtR3pxdi1SekFoQmlWV1Vjbi1BVE92MGUtenU2YnZPWUw0MG00ZmlPM1NheEhNZzJMMHBTejV0TTdHa1A5RHlEandqeHpDTlJDY3VqU1ZCaDE1b0pmVDFSa3l0ZkUySmxkS2N0T21RNVp5ZGQ3MkRSNHFQZms?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNeVNWbFhKRUJ6REYwZkFyYkx2LWYzMGZ4UjdDZnNpSzR2dzNBcnd1TjRwV1FSa3NBZFR3alRuYzRQdlgtUF9Cck9lZFRGU2ZlX29ManRKYjM2am02SFk3RlVpNUFkRjFTaGZ6ZkhMUUoxelNpNzJRaHl2UFRGM1F0aXJsMEVmQW1MNkwtR3pxdi1SekFoQmlWV1Vjbi1BVE92MGUtenU2YnZPWUw0MG00ZmlPM1NheEhNZzJMMHBTejV0TTdHa1A5RHlEandqeHpDTlJDY3VqU1ZCaDE1b0pmVDFSa3l0ZkUySmxkS2N0T21RNVp5ZGQ3MkRSNHFQZmvSAZoCQVVfeXFMTndaWWQyOFdodjRrOEIzUWFvaE1rQ0g0VFQ1aXJOaFpwSWRRWXdId0lmZmQ5dkFxcm9abW1VWE1GcnEzOWNzR05BOG96M1l1VmlOR0Q1UjhrS3R5OHQ2WlJ5aC1HZl82TTMyc1dxQnRMVldPYnp6cnRnQXdpVGFubnRwQm5JdjQweXdJYmJFOGpiaktfaVRvUVRLN1d0Zmp2QlN2dmwteGVhYzllbXhONXJ5Z2t0MXdKUnFPS2JGeEhYQjR6WEdlWU9rc2MyZnVLVUdtY3VacEtJQ3NrY3c2RVJSeGlIQ0JjeXRJSk5iNmNXZEozajJNcW1ENERadzJ5NHBqaWhZMGtMMU13MW5NT1kxQUxiLXhKMU1R?oc=5",
         "source": "Infobae",
         "pubdate": "Thu, 11 Jun 2026 16:22:01 GMT",
         "pubdate_iso": "2026-06-11T16:22:01+00:00",
@@ -45,7 +59,7 @@
       },
       {
         "title": "El petróleo sigue estable a pesar de ataques de EU a Irán; ¿pasa lo mismo con el precio del dólar hoy?",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSGhNb1QzV0VYOUJSSTl5WUpOQWxEOG5feTE4V2VBTG84LWR4U2JiSXR5Y2V1dVBad01uNlZqRldoSmhFU1o5QVhhRmZuRkwzeFdXanlNYkxGYVlZSnRCNUt0bGd0ZUhRWENjLWcxcElkU3dvRGJpaEhWTklyMGNsWkhQd1dRSHkteDFhYjhKaDdTUjFmWlR5ejBVR1lUR0FPWHlBWWFQdWYtaDRzakRhatIBvgFBVV95cUxORDhNdkNJaUFXd3dnb0dMVTV2RHkxWjkzUmVYYUl4UmdPVGlmX01zOFdsYVRSQTNnTVNKWURUZlllLVFkbnJyMnF3NDY1V1Nxb1FVNzhLczNPMm9mQzdDbHZtak1TQkVaYmxtQ0R4NVBOR3BNVHdpaTRoYUtMOTA5NVV4ZTBZSUVtYTVLTW1sTlllYXUtb05XaS1xN1hjVEtTeW1WQWZ6NU40OU1QSS11S2NGSUl1UkZJcHRabGR3?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSGhNb1QzV0VYOUJSSTl5WUpOQWxEOG5feTE4V2VBTG84LWR4U2JiSXR5Y2V1dVBad01uNlZqRldoSmhFU1o5QVhhRmZuRkwzeFdXanlNYkxGYVlZSnRCNUt0bGd0ZUhRWENjLWcxcElkU3dvRGJpaEhWTklyMGNsWkhQd1dRSHkteDFhYjhKaDdTUjFmWlR5ejBVR1lUR0FPWHlBWWFQdWYtaDRzakRhag?oc=5",
         "source": "TV Azteca",
         "pubdate": "Thu, 11 Jun 2026 14:59:06 GMT",
         "pubdate_iso": "2026-06-11T14:59:06+00:00",
@@ -77,20 +91,6 @@
         "source": "Expansión",
         "pubdate": "Thu, 11 Jun 2026 13:18:15 GMT",
         "pubdate_iso": "2026-06-11T13:18:15+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "La rentabilidad a 10 años de EE. UU., el USD/JPY, BTC/USD y el DAX: piezas móviles por todas partes",
-        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNdVJvVEZZcXVTeXJ0ODA1ZWNOOC14dTBRZGlmT05vdTYzYmV2Y2dObmhGVXVHVW5XRXo5REw3YlpMWkFPakpMWWk3MC1uZlYtMmswS1BDNjJfRHJVdTZWMlYxMVpqYWpia1RLanV6cjNRTlh4UHVyNUp2dURCMmxxcE5nTGF5UnJveHJPTWdnb2xtOGgzVWtBQUkxRjV5NjM2Mkg0TTdLX3dXQ0Q1b3kxcTNWUUdEdkZGTWY5Y1dta1Y0UVNUcFFTMmh3WUgybjF1Q0VTUzZqSjQtLWJpT3doUlJsaVROdw?oc=5",
-        "source": "FXEmpire",
-        "pubdate": "Thu, 11 Jun 2026 12:59:00 GMT",
-        "pubdate_iso": "2026-06-11T12:59:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -275,38 +275,10 @@
       },
       {
         "title": "STRC de MicroStrategy sigue a la baja mientras inicia el dividendo semimensual",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUW5ReXBaaXdxU01abXprVHM4Y3hPZG9hQzNxVVFiM2Rsdzg1cVpoVW91M3cwSy1xZ05jX3kxc1c4elJRS2E5WW1USUVFc0llLS1UZ3V3emlYMFNXUTU5RlRSVlNiX3lZalVlcUtRTHVWejhDYW1iMGtzQTNCNlpNTnhyaXpQQUlmRHFfUkpISUpQcFJlbjhacw?oc=5",
-        "source": "Yahoo",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Jd1dFQWxwUXZPLXB4N1dCNHNaS3RKWG93QUdmbXZnWGRXOV8xckI5VlBUSmJPZjhNaGhHYUJZcjk0enNjZGUzWm9PRGhTNkZiNXJNc3c4R1kweUJpNVE3eVpXaG1ha3Q0Z1NDUlBNOGxRLUxvQkRUTkJZd1liQQ?oc=5",
+        "source": "BeInCrypto",
         "pubdate": "Tue, 09 Jun 2026 15:59:00 GMT",
         "pubdate_iso": "2026-06-09T15:59:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "¿Insinúa Estrategia (MSTR) la venta de Bitcoin para financiar los dividendos preferentes un nuevo libro de jugadas del Tesoro?",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNc1RlaXYyUEF4dXRFNkNwRmNaUm5wQ0ZyZ0QwZEExSkR2X0RTc2J1SXBXRFVuWmE3SjdCVFRNVGY4UU52Q3V0WGMzUGtqakNSTUhMRnRmeV9XMjNROWxrQzBQdG1zb0RuTVZ2S2ItRGlsQnhmcjNaUG1wZDl4eDk4NGZXSFVkNDU2QkpEeVVncFZaZTRJd2xuRm9xdU1LT2dQbzEwa1JiNzV4Z1I2S2tsRjRwUllZZkdvbU1GSFg5MUpQN2dBQkd0R2VBcEV3U3PSAc8BQVVfeXFMTXNUZWl2MlBBeHV0RTZDcEZjWlJucENGcmdEMGRBMUpEdl9EU3NidUlwV0RVblphN0o3QlRUTVRmOFFOdkN1dFhjM1BrampDUk1ITEZ0ZnlfVzIzUTlsa0MwUHRtc29Ebk1WdktiLURpbEJ4ZnIzWlBtcGQ5eHg5ODRmV0hVZDQ1NkJKRHlVZ3BWWmU0SXdsbkZvcXVNS09nUG8xMGtSYjc1eGdSNktrbEY0cFJZWWZHb21NRkhYOTFKUDdnQUJHdEdlQXBFd1Nz?oc=5",
-        "source": "simplywall.st",
-        "pubdate": "Tue, 09 Jun 2026 01:33:19 GMT",
-        "pubdate_iso": "2026-06-09T01:33:19+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "MicroStrategy posee 843.706 BTC, valorados en $53.09 mil millones",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMmZIaXd3eGNTcF8wSW9FbUpnVVRhUXBVQzVPOFhxU0dpVUtMMElFMFdZa19MVEFKSDBNNjZNcE1mTHVwWlVJbzZlT2hoeEhMMlJNSWhndWw0X2s2bVM0VVpUekxVRzBDaHowVVJKTG1VT0tzTlU2US1Sb3RzT3lqRTVhS0VWNUFmM2Z5ZEx0cmRGRTdBeVhJ?oc=5",
-        "source": "KuCoin",
-        "pubdate": "Mon, 08 Jun 2026 22:17:39 GMT",
-        "pubdate_iso": "2026-06-08T22:17:39+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -430,32 +402,18 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "'Best thesis' for Bitcoin accumulation surfaces despite current downside risk: Analyst",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNekRPWk5adnhuY01RV2hvQTRVeHFjMENxNzE1c0NaVl9mWnBqdWJVTUljUk5jOTU1WUZWVzE2OE1vTDNSbWxkWHUtXy1zaXRuQmNtTEJMeVBrU1l5N0VnZ1pNQ0ZXY19ieXdjZ2VBNW42OHlybkk1dzVSSWVXcllSaWVmUVVOLTVIcVFUVG1jMGNSNngxQWNmTjktUVA5eF9sYUtFVktUT0RhbklqZTlZbjl6RHhyYkFWcl9ETlh3?oc=5",
-        "source": "mx.advfn.com",
-        "pubdate": "Mon, 08 Jun 2026 18:11:29 GMT",
-        "pubdate_iso": "2026-06-08T18:11:29+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ]
   },
   "stats": {
-    "total_noticias": 29,
+    "total_noticias": 26,
     "por_categoria": {
       "precio": 5,
       "etf_flows": 5,
       "regulacion": 5,
-      "adopcion": 5,
+      "adopcion": 3,
       "fed_macro": 5,
-      "sentimiento_onchain": 4
+      "sentimiento_onchain": 3
     }
   },
   "resumen_ejecutivo": {
@@ -463,7 +421,7 @@
     "score_neto": 0,
     "n_positivas": 3,
     "n_negativas": 2,
-    "n_neutrales": 24,
+    "n_neutrales": 21,
     "narrativa": "El feed muestra 3 senales positivas y 2 negativas (neto +0). Factores dominantes: Flujos institucionales hacia ETF: muy positivo; Desplome: muy negativo.",
     "narrativa_fuente": "plantilla",
     "veredicto": "NEUTRAL - sin sesgo dominante"
