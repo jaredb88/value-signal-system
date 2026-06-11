@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T16:39:35.059458+00:00",
+  "updated_at_utc": "2026-06-11T18:39:37.258534+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -102,6 +102,20 @@
     ],
     "fed_macro": [
       {
+        "title": "Inflación al 4,2%: la gasolina sube 40% y los salarios no alcanzan",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONzJTc2k1OEpXV3BsTXVGcjhRc1NlZkFUbWZIWEdub2VWZ1NSM2tnbEJZV0M1ek5zaUo5NVROejJqSUk1R1lZMUlQTnZWRkk5M3FibUMtT2Y0aVg5bF9iNXEtb2p1YmRhamYxWGZ0aXhXUnktYnJvUnBsX3M5dDJ0eTFRM0pzRDVkS2ZkVXBHc3VoMnZRS25pc1Z1ZXBlLW8tOXJKX241Tl9WRnBhVDVoLWVaTQ?oc=5",
+        "source": "El Tiempo Latino",
+        "pubdate": "Thu, 11 Jun 2026 15:32:21 GMT",
+        "pubdate_iso": "2026-06-11T15:32:21+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Inflación mayorista en EE. UU. salta a 6,5% en mayo y reaviva temor a más tasas de la Fed",
         "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbUdGb0ZRU2tSdjdSVGtvM3VSUjhGOVlkRmgyQjVUYlVWZDg3MzRaSTJkdmUxd0pNLTdOODhJZTNaN0xaV2dSY2pwSlBuWWZxV1kzT2M5ZlY5MmtBRkJ6eVZCTS1mcVRMYXc1d3hsOXRGbVBFYmVlT2xxZXZ3Ry04S29lVmNCOERfVkNmVGR3NFlaRXhNSWhXdXpVVEhIZ3JDdzN0NGl3clByVDE3R0dQR1lVSGZuNi1EUlJ4RWdndVY1Z2d3TzYwdXJSVQ?oc=5",
         "source": "DiarioBitcoin",
@@ -156,20 +170,6 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Inflación en EEUU: se espera otro repunte en el reporte de mayo por la guerra con Irán",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNLURTYnczVUVqWm9fYnpKZW9YVEx6eEg3OUtuM2xhSmswUkV3cTdieWxHLWZKS085OERNZnN6dTRKdzNPRmJnMHlWRE10ZV94TFJHUDRLdkhvYm56UEQzRTI5SzZXdG9nQmJoRlM0c3Bycmh3dmMxN3FtdDBhY3lsUERuV1ZYZFlndnVWWEtDS2JfSno0UVlsX2tISExlNlBWbXdPQ2ZQbnJJX3c1dkEyYmVLN0JrNUdOUjVyVEVRWVhDUdIByAFBVV95cUxOWFE2Q3loUExoR0x6X21tUG92QmtLSWZ0cExJZUx1QWVhVDh0NGVnMG1IQXJmek5zQmFPTV9pNm1PUXZFb2RLRnNXQzRQNkcyekotTk1GUEFudndQTktzcFVGa1BMcWFDS2xkU2s5c2ozR0hwWWRXQ3hENkdvcXVQV1d3OV9LSGVzRVMyUmlaQkZyZml2UWxRaFp1eHZVakxqeHhKcW5mUUd6aEd3MkhEZ24ydE9NOUg2Z2JIUVVuanhfT1lvUGtQWA?oc=5",
-        "source": "Telemundo Washington DC",
-        "pubdate": "Wed, 10 Jun 2026 11:20:28 GMT",
-        "pubdate_iso": "2026-06-10T11:20:28+00:00",
-        "impacto": {
-          "direccion": "positivo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🟢",
-          "razonamiento": "Conflicto belico: flujo a oro como refugio"
-        }
       }
     ],
     "dolar": [
@@ -185,20 +185,6 @@
           "intensidad_label": "leve",
           "emoji": "🔴",
           "razonamiento": "Cese de hostilidades: risk-on, oro cae"
-        }
-      },
-      {
-        "title": "Tipo de cambio USD/VND hoy, 11 de junio: el índice DXY fluctúa en niveles altos, mientras que la cotización en el mercado negro cae bruscamente.",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdm9xRUpwdmxfcGxPdWlBVTZkd05VbXllQ0hyTUpYUDVXQnh2UHpnbU0zLVNwWXZxODRucWs3dkFuZzc5QXBFT0tNNjRJc0JQajdoUUNManQ2UjdzblgzZ2VCbTdNZ0RkM2NPekZJb0tBU3VWUHhxR0VCY1lYQllhRmo0YXVXTjFiRnc3MWNqaTJyTzNuc0Y2STJ4QXFsWUMzbnUwY1R3?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Thu, 11 Jun 2026 04:42:29 GMT",
-        "pubdate_iso": "2026-06-11T04:42:29+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
         }
       },
       {
@@ -235,6 +221,20 @@
         "source": "FXStreet",
         "pubdate": "Thu, 11 Jun 2026 01:24:11 GMT",
         "pubdate_iso": "2026-06-11T01:24:11+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Alerta carry trade global: Japón amenaza con intervenir para fortalecer el yen",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa25LMFd2Mkc2dTYyTnNEcmltcWNlWklBRENIRm5ubkpuOC1QUWNWc3k3MXp0QlhMUm5kVWt4ZEpEY0t1NXpQNzd2WmV6dnZtcy1WSjdOR0s4bGdVdmhaT1ZJSUFFcFJwNDBrTlVUNjhzU25kaTFBbXFjSFdyOVRUZ29wcWM5SGhUbXBGemhENjQzeWNpdDVLb0ZiY0R6LXhLdl8xZ9IBqgFBVV95cUxQc0hFa1A1Y2pnMmNaSlNHcVNLdEdhM3lVRDl6S2R2SmdLNmw2RHBTaTVlT2VaNzZFSDRkWElCcnctaVU3eXNyQ21NeWFCU3d1VVk5M1NWM09QeWJWWUZoa0N3RzNwNlJxZzZjOFc5UnpYSWYzVkhMZ3JNdlFqcEJDRlRPem5aWVF6b0VKb0lVQTQtVjRkc28zcmplVnh0TWVSSDQ2TnVEa3FZdw?oc=5",
+        "source": "Ambito",
+        "pubdate": "Wed, 10 Jun 2026 10:00:00 GMT",
+        "pubdate_iso": "2026-06-10T10:00:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -376,20 +376,6 @@
         }
       },
       {
-        "title": "白毛股神 Price Prediction y Forecast (junio 2026): ¿potencial rebote de +15–35% a 7 días y +60–120% a 12 meses?",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTnROblM5eDFxOVd0SzYyUE51U083NlktLTBYeXZHODBCLXdOSzdtLTZRUGlSLWNXclV0OGdRaTl0SERJQmFHV21LWXVqM2ZhV2hSN00wQ3BGNXJBcllwbzJ0SkJZUGhVV1RVUzlZOFlqaGtJc0VPVkxna1RwdHlJVUZSUW9XclQ0TDkyYWY4aXlxLVNLUGliVnhLanFXc0xUT0RIV2xnLUNfSVBRR3FORFRkU1lycG9TcE9fNTY5eVN4cHpha0VHdzhQMTRmX3YwcXh5RXkxV0VUWVYz?oc=5",
-        "source": "WEEX",
-        "pubdate": "Tue, 09 Jun 2026 08:07:32 GMT",
-        "pubdate_iso": "2026-06-09T08:07:32+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "Gold rises on weaker oil; inflation, rate outlook in focus",
         "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOLTgxc0FTY21tVXhOTHdzRndaU1l6RVhFNUNaVHBMVk10S194Q2JPMUluZ0x4VUktdDRUcnU4WFBvTGNBSVhUbF9vejRqT19XanJuUVFiRUdDX1dteXZneUt4bnN1M0pxOHdrSzJPN2RhczlvXzN2a0R5aHJyMEEwVnJRWnV1RVBPOXZsVHdFTHlXM21jVFppdW9BMlVwZGNISHZMZ1FZOXk1R2FjaVU0c0hJelJDWFZwXzBSMXJYQUJQdmM?oc=5",
         "source": "TradingView",
@@ -420,23 +406,23 @@
     ]
   },
   "stats": {
-    "total_noticias": 27,
+    "total_noticias": 26,
     "por_categoria": {
       "precio": 5,
       "fed_macro": 5,
       "dolar": 5,
       "bancos_centrales": 5,
       "geopolitica": 3,
-      "proyecciones": 4
+      "proyecciones": 3
     }
   },
   "resumen_ejecutivo": {
     "sentimiento": "alcista",
-    "score_neto": 11,
-    "n_positivas": 6,
+    "score_neto": 9,
+    "n_positivas": 5,
     "n_negativas": 1,
     "n_neutrales": 20,
-    "narrativa": "El feed muestra 6 senales positivas y 1 negativas (neto +11). Factores dominantes: Core inflation persistente: positivo para oro; Conflicto belico: flujo a oro como refugio.",
+    "narrativa": "El feed muestra 5 senales positivas y 1 negativas (neto +9). Factores dominantes: Core inflation persistente: positivo para oro; Acumulacion de reservas de oro.",
     "narrativa_fuente": "plantilla",
     "veredicto": "ALCISTA a corto plazo"
   }
