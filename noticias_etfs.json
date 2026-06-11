@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T21:26:59.784362+00:00",
+  "updated_at_utc": "2026-06-11T23:26:59.889167+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -63,8 +63,8 @@
         "title": "Wall Street cierra en verde con fuertes subidas tras cancelar Trump ataques a Irán - AlbertoNews",
         "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTFBONmNkZzdiQS1IODhCZHhNMjdaRS1VMHRRQWtwV1htTTNXdS1ZQ1hheWhwNHNwTE5SaHRQOUpCbXZEbk1RUkdpVHE4RVQxQ3YxZ1BFZUozWWhfMUJJVHg5N2R4SjlNVXRROHRaVkt0dS1DMjY2Qng0TmVsZzZQVW04azFHbmVzWWZVaktXbFhaS2lrUDNiUDNTNk1PTlE1NHdBdVZvYTkyVEllSm9SZDFnSmVobFZmU2VDaEN3bUc?oc=5",
         "source": "AlbertoNews - Periodismo sin censura",
-        "pubdate": "Thu, 11 Jun 2026 20:41:05 GMT",
-        "pubdate_iso": "2026-06-11T20:41:05+00:00",
+        "pubdate": "Thu, 11 Jun 2026 21:22:30 GMT",
+        "pubdate_iso": "2026-06-11T21:22:30+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -132,6 +132,20 @@
     ],
     "tech_nasdaq": [
       {
+        "title": "Oracle Financial Services shares fall 2% as post-US parent's Q4 results",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ3BsdDNNOF9mNzNvUmxxTndYS19tTkZlWTBiWU8tSVdHdmlnb0x4Wk1CSFM4QVFGT2IwbC1nZ3R4SDdxaGg2TG1SSHZPRHZrR3NWN2ZNd3pnVjFqdE9hb1BVSl84TUZET2dnZVlrS1dnaW5oZ0xkQmp5WFVYQ05WcjJuZkNZTWpmVzFMODdZc0owbm1pUUx3VFJFZWp3bjdNaXZ0SmJCNkJyRWNIa2Z5dzBYUW9MTF8wT1hjR3Y3NzZzRGZsbEhLWGxQeU4?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 08:34:40 GMT",
+        "pubdate_iso": "2026-06-11T08:34:40+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Intel Stock Took a Hit This Week After Its Record Rally. Here's How Much Traders See It Moving Next Week",
         "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1aU2dNOHNkODh3ZURFNUpjWUg0QUJrYkxhdTNtSXFCcWt2RTlJQnVzZmY3aWF5OGsySFV4UFRfU3REa29VMkJHT0NBUEc0QXR1Mmx6R25jWUMwcG5HTUdNNVpzTjhkZ1NpVjNudzNqbG4xSjRmYjFV?oc=5",
         "source": "AOL.com",
@@ -146,11 +160,25 @@
         }
       },
       {
-        "title": "Is It Time To Reassess Palantir Technologies (PLTR) After Its Recent Share Price Pullback?",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOYURhaUxOWXVKaE5PaVl4TjFKYmVHcGNGUW1Dd0dBR3BvWmJzUm9FUEUwQnQ0VXBwMENBQkx6MG55bEdkSDUwZnBLMkpobzFvTENmbi1Ubm8zOHYxNndsTW5lSXZTTEZsQ1hlQzdubjh4cHNEV3drZjAyUTFUUlR1MS1Fd1NpcFU1V1N4cWtwWjFWbU9oNm5RbGI1T2FVQks2MFFjZk5qSXFFT0Q4MWN2c1owVWxBY3BhT0xicWh2UFNLMFdZd3d6elRlUTZ2emR1OV9meXpn0gHbAUFVX3lxTE5NVzRjc1ctWkZmYVdHMGxvOThEemhYN3ZzVjdhVGdfZHhzdUg4ZmFKZXZreklWZWEwcUJ6V0R0REZ3eDBqWmJkYWt6bDRqWEpYRXZiY0xYbWJzOGZ5RUpIZGkwTVFSYXhlQk5hUTNEdG1FNXhuRWFHSEZubHZNWlppU3JnTHRRckZHTlRFV1FqOWxsbmxqWHZXcFFKSHBCNzNtZ1lTSFMtUElGWEV5M2ExM3YzSF9fRFpvbzFuODlqSGZEbVlzZG9aRFhfV09yZkdLUXRkWnQtanZkdw?oc=5",
-        "source": "simplywall.st",
-        "pubdate": "Wed, 10 Jun 2026 21:22:26 GMT",
-        "pubdate_iso": "2026-06-10T21:22:26+00:00",
+        "title": "S&P 500, Nasdaq, Dow Futures Extend Slide As US-Iran Hormuz Tensions Flare Again, Inflation Data Stings: ORCL, DJT, SMCI, TSLA In Focus",
+        "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOQU55UDBsdnFPczYxWGhsMW5Ka0lxSDRVNlM0U3pvUi1NdG1ZcDBKU2p3YndRUWpLb0NPZEhHdkdnNDJmWEtDSmR5RUFNeVF1cEt4U2ZsWE8tZnpPR2VQWXJBM2xSd3NOX3NUTTBSX0txbUZiSzdpRlY5Snk2dGJQOHVWSUt5c09ManFWX3VxbC1EcHJUdE1rSm1aMHAtSnkyMktxdldZdnpqVl9SRjRhdi1rVnNQQ3lpdW9tM2VDRDRrazVxeTFvUEp3N2R4Zk1ScHFRTnJ6R1paRUhRZGlwSnBMbHVBdkdmREdTdUhPRGhNU2xKMVVycXNsNVNVTGtuaGI2TERXUXU0NGJZZXdWbTM0STZMZ1k?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 01:31:00 GMT",
+        "pubdate_iso": "2026-06-11T01:31:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Everpure: AI Storage Uncertainty Overshadows Breakneck Growth",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaHQ0Y2ZDWWZUbjlsSzFlLWdKN0ZSdFVqd2RDUnktSG5qUzBncjN2dHMzUkRpSTVVM3paZGs5VjIyazZVV3hZSjhSbGtWMmhOWkhiNXd1ZjUybThoTzk0MkVtRnlHZUY0S1Z1dWZKdXAzY0ZicjFIMFMyREhzWkpIMHQxcWdqTXh5SnFIbHhVTklBZDFOTGhnVzhSSklVZjdlWHZ2SnRtS09KV3BTN043bGVuMWkybFh5ems4WQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 20:05:00 GMT",
+        "pubdate_iso": "2026-06-10T20:05:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -165,34 +193,6 @@
         "source": "simplywall.st",
         "pubdate": "Wed, 10 Jun 2026 08:33:07 GMT",
         "pubdate_iso": "2026-06-10T08:33:07+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "S&P, Nasdaq fall as tech shares weigh",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOR1N3VjBEeDlHYm50TGlPOTB1NGRJaHV0bk5OU0Z4NTNpTEZraUxWSmRuMGlmZ0lJSEJYYXZKTVRPUzIzUEt0cHBkZGRVRVVfTHhGVW00WEY1aFdYcThUd21KdVN1aFhId08yb1V2YzBnQXpiREdDeENYOXozaGpPY0NreU9wblNhWkhEY2ZMYzJCWnJGaUstdUw1cDh4Nno2YVI0OVNVblI?oc=5",
-        "source": "TradingView",
-        "pubdate": "Tue, 09 Jun 2026 15:19:38 GMT",
-        "pubdate_iso": "2026-06-09T15:19:38+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Nasdaq, S&P 500 Futures Gain After Tech-Led Rebound: Why NVDA, QCOM, AAPL, APLD, ASTS, NUVL Are Keeping Traders Engaged Today",
-        "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPd09rcFRLazFKREwtc18yc2VJeWt4VFBrQ2hfbzZzT1RIM01PQzJna3lIR3pOSXpJek8yYS1zZ1M2UnhGRmlDWm5aVFEwdXdRdkpSNVRmY1U2TzZUdHZnMnF2Z3ZDNXVfVlZlRUhMaXBRVWxES2FYS3ZBSlpFM1hHa24zU0dMdnFJWlBVOU92QjFQaEVHZG9NVV9qUmtJNVh0aDExb0pXaG4wNHZfSnV1aU9rNmJLaHcycFFaVEFVRjFxR3BvNFlucTRNNFJNTFQwOEpTQVNDS01lOTJTcHlQaGJYMHZ4UkxiVTRKdEFKemVYa0UtZkMxcm4tdXhua0xSWk9MeDhMY1VWdw?oc=5",
-        "source": "TradingView",
-        "pubdate": "Tue, 09 Jun 2026 08:49:10 GMT",
-        "pubdate_iso": "2026-06-09T08:49:10+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -290,6 +290,20 @@
         }
       },
       {
+        "title": "Everpure: AI Storage Uncertainty Overshadows Breakneck Growth",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaHQ0Y2ZDWWZUbjlsSzFlLWdKN0ZSdFVqd2RDUnktSG5qUzBncjN2dHMzUkRpSTVVM3paZGs5VjIyazZVV3hZSjhSbGtWMmhOWkhiNXd1ZjUybThoTzk0MkVtRnlHZUY0S1Z1dWZKdXAzY0ZicjFIMFMyREhzWkpIMHQxcWdqTXh5SnFIbHhVTklBZDFOTGhnVzhSSklVZjdlWHZ2SnRtS09KV3BTN043bGVuMWkybFh5ems4WQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 20:05:00 GMT",
+        "pubdate_iso": "2026-06-10T20:05:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Key facts: Adobe Revenue +9.8% YoY; AI Rollout Raises Analyst Warnings",
         "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTmRwa2VQaktxei14VFlNSmRJOF9LM3ItMjNpZGxQRzdLeDJNOFVoR0hrdkFWRm8tbFBld1NhYzRIZzRjNTZqbGFmU0hrUjI2RTNHUVJTRTlWVzRzQ0I0bTRMNkQ0SWxSbFE0Ykd4SjJjNkR1QlFsSmVIWFVGV0kyNnBUc1FvaW1BblVxUC1vQy1mbktpNUFWQjNZX3dEWGpxdjZlQ1c2aXNTYnl2QnhmdjQ1c1hUT2xGYUdZUUVTTkhOU2ZDZFE?oc=5",
         "source": "TradingView",
@@ -330,37 +344,9 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Campbell's Soup Stock: Deep Value and a 7% Dividend Yield",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZl90RHlMeGhhRURCd29DUUNNZzFNUWRlT2JvTTRMSW81UjdVNVROT0lLYnl2eHRoNEM1Z3Y3NlBobGFQS3QzX0kyVkdoQjh3S3diUWlUZkpRSTVDZnRpRDUtcGRwNi1YOUFROURmTnNNaXBqeUYxZlhvcUd6TDMzbFV6M2E1NndSXzhZZTZ0UXEtTlJ3YlNkUWEzMFQ1QVNBNXN0VjZwaU9uMGZ0X0xWZTZHMGptQQ?oc=5",
-        "source": "TradingView",
-        "pubdate": "Tue, 09 Jun 2026 11:15:00 GMT",
-        "pubdate_iso": "2026-06-09T11:15:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ],
     "sentimiento": [
-      {
-        "title": "ADBE Stock Rises Ahead Of Q2 Earnings Report Today – Michael Burry Thinks The Market May Be Underpricing Adobe",
-        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNN0I5ZUZTRFkwZHI4NEhtSGYtSmZBLTV4ZlZfem1zWW9WS19nN1dBV1FVVjF6OGVleDd0OFVfR2tnQ0NGQTVGMk1nckFVM2ViZ0RkNTdGTF9WLWFGRU5hUnZGRDJ2YV9jTjBfaFRzYnk5YVIwVjV1dHU1bUZhVFlmeWwyazZGLXFkMHdFWjh5bXg1SnRzRFN5dFg3UmZZZDZOT29BWnQzbXlqMnJXYjlXcXppWHlLZ1BLWmhLZ2FyZFRNSXU5Y20yWmtFdFZCdUZsUURrVHVEZmYtSVdrYlZWeFM0V1ZqVWhvcUFhSVhxc3RCdldmNHNVRXd2aWY?oc=5",
-        "source": "TradingView",
-        "pubdate": "Thu, 11 Jun 2026 09:15:18 GMT",
-        "pubdate_iso": "2026-06-11T09:15:18+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
       {
         "title": "Small, mid-cap valuations cool but froth remains",
         "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOFl2Ym1iSTljZUdrXzdvblRxa2U4M1lhMWVBWTFkMVpnWXlxQ1Bsc0ZmT1BfOTZ6MXpOOWZaTktVRktSb2xfZEpxbVFKUmNtbUZzU3ZFRk1aU3BVRXRZZGxwYW1fUENBSnBJdlBjcGhLYTRSNUh0Wm9JNEF4LVp6QW1lUWFsNFZ0TFpTbWFBajFhTmg3SEgxS3p3eDBaOWFsVFRHbGxTNUFtczNOVGloNk1ycnkyODByQzN1WXZ4V2dsYUZ2YXdtSFlzbmFFVXBIXzRhaVgyMXdjUXM4eGJzOWI3NlkydlhDSUHSAe8BQVVfeXFMT3JzX253N1hVM3R2S3R0Q0VMRDNsYnBabGoyN21Kb2d4WVNsMjZkSDdEUWtDVkg2TmF1V0RCem10QTlQb0t4NEluZWk3aGNieGZZTXNHdGZ4NnJlbHUtZXdxMmNlMmRmTjFXUVdHakMtc1hqdjJTc1VMUDJ6blF0Y3g0dmxlZkZoeXRUS1AxTlJoVEpjcHZJSHdxdlhYbWlvaHV6Zkc2VFJQQTVuSTBja3VlVm9FNlg2MmtrQkxJWXhQam1OZ1Q3SGlPUnRaMV9iczU4UFlvRXRjbW5NaGlEZXJiMGhNaHhIZ2NNckFGbEE?oc=5",
@@ -388,32 +374,18 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "UnitedHealth Tokenized Stock (Ondo) (UNHON) Price Prediction y Forecast – Junio 2026: $412.27 (+2,33% 24h), ¿rumbo a $430 esta semana?",
-        "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNTDVzSkYwaElBbjhDdWFfdkRCMnBkMzloNXZ6b3M5R0pfWXFORi1keUxDR09GdGNMRktCZlJ3Z3hwd1BJM3VfcXpYWnd1THdZNHlMQTVZRGhrNDFpM3pPZXVaVmZtYjlGNmpWT1ZwRTBXSmlEdlFSYV9NenFRV29XRjBDX3Z0Y2hneTZoU1l0VmFlV1lySUh3VFc1Vm92eE5oT1Q0cEdIRnhzdGk0LU9pMjVPLV9vUnBrWE1RaEtvNUxxeGczdG5tX29td3djZk10ZzFYcFhCYTJwRWllZFlKdGVvT0lGTFZPNnJKS1VtRWpBdFZPR2lXQzBLM3R3SThIaW1RQy0tNA?oc=5",
-        "source": "WEEX",
-        "pubdate": "Tue, 09 Jun 2026 08:07:31 GMT",
-        "pubdate_iso": "2026-06-09T08:07:31+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ]
   },
   "stats": {
-    "total_noticias": 26,
+    "total_noticias": 24,
     "por_categoria": {
       "fed_tasas": 2,
       "mercado": 5,
       "tech_nasdaq": 5,
       "economia": 5,
       "earnings": 5,
-      "sentimiento": 4
+      "sentimiento": 2
     }
   },
   "resumen_ejecutivo": {
@@ -421,7 +393,7 @@
     "score_neto": 0,
     "n_positivas": 0,
     "n_negativas": 0,
-    "n_neutrales": 26,
+    "n_neutrales": 24,
     "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
     "narrativa_fuente": "plantilla",
     "veredicto": "NEUTRAL - sin sesgo dominante"
