@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T13:33:46.721297+00:00",
+  "updated_at_utc": "2026-06-11T15:33:48.090328+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -132,6 +132,34 @@
     ],
     "dolar_cobre": [
       {
+        "title": "Peso chileno hoy, 11 de junio: cuánto rinde el peso argentino para compras y viajes a Chile",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRUNpb1NfbmVJbVhkcFViV2Q3MHY2WVlKR2RRWmFjbXVDMF9YdjdmWEpxbVhTWmZfQ1BkM1FvWFMxaUp2QUMtTUZLMTlHZUowZ1E2RUcxTUNvODRuZmM0V2dYam9MZlFOckxxWnNQbUl2UmJBbHhXS2JYYjZsdERnRy1RZzZvMUxYVHU2TGp0bFVyRzZ6UXVnZkJIc296dmdTVVkwdjBXYVhBTFMyRW1aTXJScXVnNGdUM21oQmRZajBDRTlmLXd4dE56dVdMYmlC0gHYAUFVX3lxTE1ybTZ2bXJqMkN1ZmpkR2sydTBZSHlsY0I1cWJXaERjQ21VUl9oanBYODJOUzJjZEdxNGtZRXhWUzNtNEl2UEZoN1hfYVhqV0d3UERDUmFndDMwdTk0Y2hGb1FNNm8tSWd2NDVyN3JLUGwyejNwRnR5aTAySGk1X01JRlNKZmRRa1NHMWNDLUwzQ21lU041Z3JfcG43aFBxN3QxYmRwMXlfbmo2RmpaaHdBOWVwZk10d3pHSHFyWmZXYmNyTDI4bmlrbVJUcmRCR0ZSU3pjd1pldw?oc=5",
+        "source": "Diario Río Negro",
+        "pubdate": "Thu, 11 Jun 2026 14:39:00 GMT",
+        "pubdate_iso": "2026-06-11T14:39:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Precio del Dólar en Chile hoy: El Peso chileno gana terreno tras datos económicos clave de EE.UU.",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRHNmWDJQY21vdF9yTHlNOFVFdnBWLVlZb0RmYjZjMEt0MC1xNDFOWjZ4X0lHSTdTVWFWcWw5bi1NLUV3MzJIV2p5X0tHRVdBTnNaTTNKWEpoT2xoUnpnQVlVUmxKQVBEdHhla3hQRTdPbzZ3dUIzWGRVNWVhVFVvN3laMmhLaE13NEo2a2ZhZ2lpQzk1ZnltRi1KNmphdzZtSXFobmxfMGFjLVFxMGFQczhpVkhEMHBNanRFRFdjOFhUWllHRG5pN0QxMVF0SWxsd3fSAdcBQVVfeXFMTVZ0dGJxZnlGVHV3OUY4Ti1adFd6NVFYTTVaa0JJWmRjZHhPc2ZZTk1MdjE0N21nbDNIRVdQU0RMVkEySWxIVDVqN3QtU29Hb0ZtcXRyTW1RTHdkR1A1Z3BpeVpFOHNMOTY4LVVaOHlDRTJuMnNSVHY5Y3BNNkE3YVFnaGNSY2dqbm1BYWpFRl9yeDJ3SEdJTVVKWkVXckJHanlMVEY1S2d5SEVBQ3dReURsMldJeWZ0QTE2aUdMU1pWRHZqYmNEM0NacGp6dkRRcEVOcUpZYWM?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Thu, 11 Jun 2026 13:53:59 GMT",
+        "pubdate_iso": "2026-06-11T13:53:59+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Dólar vuelve a subir en Chile: revisa el valor con el que inicia la jornada",
         "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPeUYzQnNyaWRWVENDSEhCeVFfbnJPRkJYQVdteFBpbHlZRjZzMEpCMzQ4Y0dFVUZSSnFzaklRV2x0WGN1OTB4YWRPUVB0eWNDOW50c0VZcl9CdjVEazdNTmdWVjc4SzNmTWpveFhZa2JoWHFSUzZDdEQ5ZWlXRUFacmRWRktWaHdTdFRrWGJQcGJEUjI4WmVneUZrelBPdlhzWHpZZkdMel9DNTVDYThKQ2UxWTdBb2QyNzZaV3h0MjdvbjlGUHAtWkZXM1hON1k?oc=5",
         "source": "Radio Agricultura",
@@ -172,37 +200,23 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Peso chileno hoy, 10 de junio: la cotización clave para quienes cruzan la cordillera para comprar en Chile",
-        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPYXp5bjdXZVF1OV9NOGoxZVhlMHBRNjY2d0FiOHRvc2FHVFdKZVhpeEJTa1psNFZkaHNSUDMwWFpOaDliRElZaGl6c2VoWDJvb05fOUd4T1FFemhSSGlvalhBQ19WdkZRQnBVTzc1T05iUlVMM2JSWGZPbENBTWNIQVpRWHpWTFpiNGx3UDNIWXNCdHRBQU9LYWJGdTBGdWFWdGRDXzRtSmhLUDNDdG5kYm94U3RiV3dJRFdaR1JISGNMMjdETXJ4bEFFWGtsaG1nNU1HQS1aQW93TUk2NVhHMVFjeDjSAewBQVVfeXFMTTRnNW5pczhCUl9zbGxaVnAzcGI2WnllaGstamV0NWt5SXFNNjI5ai1DQ1pWRnJDVDBiQXlMNW5jbnMzYVdLT3VMOFRsYnU1OWpOVUFkUzh6U3FsMjlpVUp1ZTVnazk0anRueVR5V1JOLXNzcHVBY0tkeHk0MFdnckJqUWtvX2xfWUtwX0lORTBjRVZYTFVGX0FYcXdRakROVUo5c2RSQmRsVG9aU1NrZ1owNlZaUllZYzZpVFNzMGhrZG1LcE9admpNVWNlUVoyQW82SUZjekR4MUtQZGZ5enp0dmJ3U3VjZklkTlE?oc=5",
-        "source": "Diario Río Negro",
-        "pubdate": "Wed, 10 Jun 2026 14:42:00 GMT",
-        "pubdate_iso": "2026-06-10T14:42:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precio del Dólar en Chile hoy: El Peso chileno cotiza a la baja tras la inflación elevada de Estados Unidos",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdVZmcm1ia0J6YS1JdDJOeTVhbHJIQ3NUNm5KVVNwRWd2cHpQaGlBeTduWWE0Tm56d0pLNzZ6RGtpemhfRG1uUHV4dU9NWFFNWktacjVkQjdfTS1ubFhYVmxvaElSR1dKNTBTcjg3SF84UWQyQ1ZxVmZXdE9sWS00Y1R0S2g4ZFlQVERlTllNQTNEQmxwMXJGM1NCNG1TdWRid1BtSzRfOE1feHlKNFlOa2RfUzJpT0tBSE5pc1VaRHNUamNnQTl5M1I0RzMtQ3FfNDdPT1hySlhWM0RkV2ppN0tR0gHnAUFVX3lxTE5wbHlvVmk3UUtSZU9xVkxsa2hpZXpycFpNOUNQWHBUX2FfYnRlUkdndkU3eWJ6djRtSE05aUh6b1FsRXhkRmpfcUNmYjRlQkxqX3U5VHdMQlBlZUZJZ3F2TkJRc3dKbEhZdVZ6YVdEaWJaeXEwekx4bXlUS1BFVGtPRzJDTFE3V2lEdWZJa2xNSTZDd3lzSzNTY254Qk9WVFpPOWFpenNGcWhsMTR5bGJ6dDJLMjd0b29uT1owbGU4aG8xdmZRYmkwcUJCSzV5Tk9WQ3pjQkw1UG1zZFltSHRuTF9aT0RNOA?oc=5",
-        "source": "FXStreet",
-        "pubdate": "Wed, 10 Jun 2026 14:04:34 GMT",
-        "pubdate_iso": "2026-06-10T14:04:34+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ],
     "economia_chile": [
+      {
+        "title": "Banco Mundial recorta proyección de crecimiento para Chile, a la vez que destaca alto precio del cobre",
+        "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPSnczcFRldkVtTXZvM0dEMENncy1MSFNndHY2aVBRSG9oaHhjVHl6VEZ4SXNodzRSWTZ0VjFTaEFFdGxOX3hteUpjekY4YlpjWkpNc1gtMjZCNGhRc25nQkZUMXBoRlE3REpNZkx5WG8xMzZQeHd3NEt1QnpZMTJmSGh5QUU5dDY3TnQwMlBjOTVmaHNhQlVUdjFNaEphNm9OWTFnYkU4d25RTUpjRE5Yc1dqLTRoNVE3T2NHZ2pSSEQ0TUE2VTJBcm1kUk9aUkI3bUwxd2Q0RTJOWk1sT09GanRCa3RpSkt0c3VXQk5scDhKRlgtYVlZQTF6NUV2T0tWVFVQYVEyWEtOLUJ5LVZfdkhB?oc=5",
+        "source": "BioBioChile",
+        "pubdate": "Thu, 11 Jun 2026 14:38:51 GMT",
+        "pubdate_iso": "2026-06-11T14:38:51+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Prevén crecimiento menor de lo esperado para la economía chilena",
         "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNY3JzWnFpRHZicDd4TV9xTy1URThjcENPWVAtWmhVdkFPWmtKY2JraW0wWk1JMC1pdGZPdjVmcFplNXBPb2d0V1l3TE5COVdzR045UU96MGRqRU5OZVlCRUhldG1HWUN0MV9mQWtxWXZFTGdzWmxaQmdwNzV0NTRmc1JvRHZPcEtNWU5vRmZBYjNURnJJWEE?oc=5",
@@ -257,20 +271,6 @@
           "intensidad_label": "leve",
           "emoji": "🟢",
           "razonamiento": "Crecimiento: soporte macro"
-        }
-      },
-      {
-        "title": "Inflación en Chile: analistas ven favorable el IPC de mayo para la política monetaria",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQT3RJLVp0aTZIem84cHJfVFJKcjJUM1h0TTVVT2VUZjJkMzdtQTIyREFNQ2JlYWE0dXdETjRxQUNwdmUxZGpiRGxZcXIzT1BldkRDamVDMkpuX3VWWHNna2RrRWV4dWhpWndqMk8zTHNyNW9WaHE1cUwwMlBLa05vdWwwZVZWNmRTeEZvS1laeG5BX3ZBdjcxWDBsQmxzeUpFTnZQalhNYzNaLWE3UTdRTWhUTjVLblM3dk1QWU42TWlhejM1NUpYclhCa0JlZ1RT0gHkAUFVX3lxTE5Ic0ZrbWdKeUpWRkRTWXRJdUI4djMwX3hfSUxMREQ1YTRIdWpwdW1uRmZhUnVlNlZDWXhzalY2OEF3ZzM0bm1QYU1SNV9CdjBEWVdMLWNHRGZ4M2ljeHhLbXZTc01WcTNIUm5MMVNPbUZaZ2o2REFlY0VESzdXa2llcEE2WE9VTGgyVGlMNTYxbjBfZFFscUpQY2hnMVZSQ3JOZ3dmbWZNaU94T1hzOWZyY2tiN0hRcFRSenFGV193OVl6ZWtuaWhRZV95TVB4MFJzRDgtb2llb1kyNF9NMk5wUXBtbA?oc=5",
-        "source": "Bloomberg Línea",
-        "pubdate": "Tue, 09 Jun 2026 16:11:48 GMT",
-        "pubdate_iso": "2026-06-09T16:11:48+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
         }
       }
     ],
