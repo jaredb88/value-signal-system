@@ -517,7 +517,15 @@ if seccion == "🎯 Oportunidades":
                     _dy_op = None
                 st.metric("DY", f"{_dy_op:.2f}%" if _dy_op is not None else "?")
             with _c3_op:
-                st.caption(f"Benchmark sector: {_a_op.get('benchmark_min_pct','?')}-{_a_op.get('benchmark_max_pct','?')}%")
+                _bmin_op = _a_op.get("benchmark_min_pct")
+                _bmax_op = _a_op.get("benchmark_max_pct")
+                if isinstance(_bmin_op, (int, float)) and isinstance(_bmax_op, (int, float)):
+                    _btxt_op = f"{_bmin_op:.1f}-{_bmax_op:.1f}%"
+                else:
+                    _btxt_op = "?"
+                _vsbm_op = (_a_op.get("evaluacion") or {}).get("vs_benchmark_pp")
+                _vstxt_op = f" · +{_vsbm_op:.2f} pp sobre máx" if isinstance(_vsbm_op, (int, float)) else ""
+                st.caption(f"Benchmark sector: {_btxt_op}{_vstxt_op}")
             with _c4_op:
                 st.button("Ver detalle →", key=f"btn_cl_{_a_op.get('ticker','x')}", on_click=_ir_a_vista, args=("🇨🇱 Acciones Chilenas",))
             st.divider()
