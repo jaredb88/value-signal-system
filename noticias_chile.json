@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T07:33:47.012975+00:00",
+  "updated_at_utc": "2026-06-11T09:33:48.719774+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -146,6 +146,20 @@
         }
       },
       {
+        "title": "Dólar hoy en Chile: cotización de cierre del 10 de junio",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVlBQZEJaVVVJaTY3VGN0UkpYS0ZES1dZbkhOcTNfd3E1V1EteF9PbHZ2VUpUR1lGMERST2M1emNvd3dxWWxjSlJYOUVheUQ4M2I5bzdHckxzMTFWYl9LWDQ3VmtRQXFaUDBYZi03d2dVdzdNT1pSUUtiVS1hbmI0WTc5T3h0eEk4cDF6SS1sU2R6Z29iT25xTjFOWnhTUjZ1VWfSAbwBQVVfeXFMTlJ0b2pVVmhfeFdERWhfQ1gtUnBpY2ZFWEFONjlmSHJBYW9aM1Fva1dtUWVQcHQ4eFRuaS1SRHV1VlN1TVpQNzFGYmxyNDBHVkVpZTJodWRPNVNwZUVURzZyOFFtMk9YZ0J0dThPTWpuUjBQaGk3ODJYY3RjU09XYjFaaFdaSXdBQXFxSUhlZ0dvX1g3am94NlRxbEMweXdfOXc4Ukk5Um85ZVBLTThVOG5uR2RKSXJsWGdDZ0Q?oc=5",
+        "source": "Infobae",
+        "pubdate": "Wed, 10 Jun 2026 18:32:07 GMT",
+        "pubdate_iso": "2026-06-10T18:32:07+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Peso chileno hoy, 10 de junio: la cotización clave para quienes cruzan la cordillera para comprar en Chile",
         "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOcENJYk1jQ2s2djEycWxTVVZDWjdQQlhWeXUzWl9kbHNneGhoM1FtOFhBcEVvdlhfVG9LYlc5aTVBWV92SWtBb20taC1SUmxHYnFYYnpIRWRVZUM1Mjg1QWlKSDdQb3luekhMckRsWFJ5Xy1CUWtVcTB0M3piOC1FZVFnMmREYlZ1el9KWkRhR3U3alo4amNpbkFrZC1TV3RjNVFxekdPaENVMDJIa1FOTEFEb1F4c2JCTUxyX1NMV2llaGRxTklmWTNhcGFUNVkyT2tNcDBZU3RpOWZUV0hZV1lUU01lbU1aQXZGZ3JMVTDSAfgBQVVfeXFMTmNKX1p4N29HN0Z5U0o5d3htSnNHTjRiYW1KU0dpUFktOHFKUkpNZ0txUWFQc0NWTHltSF82cWdTMWE1QlhLMTlvYVZCdFgxdlU1R0VaeUc5NDMxUEg3Z25MMGktNGhOejZYVFlNbnZ2SndEb2gzdXZmRFM1bWxyakRRV2xJeXZvcDN4enpRMXFHNnlZZE5XdUFKT20yaXpzb1FsLVNvUkNCLXlZSmNMYWE5cC1hWFR6cmxfX0xSNFVhZU55d0ZfaEt6U0h3R0wzMmpyUno5S19RenBFNWZfYy1wQnZMSEVZazl0Q0NwdHN1QTM4YVR5SHY?oc=5",
         "source": "Diario Río Negro",
@@ -179,20 +193,6 @@
         "source": "Radio Agricultura",
         "pubdate": "Wed, 10 Jun 2026 13:33:21 GMT",
         "pubdate_iso": "2026-06-10T13:33:21+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Dólar hoy en Chile: cotización de apertura del 10 de junio",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeWxfTEpKcGVXSUs0dWZKR01paTRFQXkwYTlaUmxrZ3BsX3NET2FIWXkwZTFTdlRoN1FJLVFoMUFNUHNpcmx5YVZvSUVranEwa1hwbGNVUDJEaDZLVmtSeWx1NjVsR1lwOGFhLWZBTUtVVnhkb2lGQlVuQmpIRG9XamlnejhuTGszclhnSTRVREdhTHNnd0x0TFBUV0pwOVowMzNRYdIBvwFBVV95cUxPMFAzaWEyMjVzeGUyTjgzLTlUQVhyOGd4LUU4aURZRzNDS2pFQkl4OWxUYUN3MkRzUlRPb016TXJIam5wMll4Z0hNTllyQ0ZFRGVrQ1MwbmtySmcwR3Y1ZjA5dVp1bWhGclN0Nm9LTl90VjB3RWpaNTRkWmJpbG1KREs3anI1VGlST0xrd1hBbk5pZnpxMEFYbWo2TENSRHN4UmptT0UxaGtFZkpPTzd3aWtGZHZUemU4Z1ZpbWQtdw?oc=5",
-        "source": "Infobae",
-        "pubdate": "Wed, 10 Jun 2026 12:07:19 GMT",
-        "pubdate_iso": "2026-06-10T12:07:19+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
