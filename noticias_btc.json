@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T04:39:38.693230+00:00",
+  "updated_at_utc": "2026-06-11T06:39:35.710261+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -158,11 +158,11 @@
         }
       },
       {
-        "title": "BlackRock vende $230 millones en Bitcoin y compra Ethereum: ¿Qué está sucediendo?",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQa0FleVc4TnE4emMzSW55SWhYWFFvTmltVHZON0ItLTlpSDVkSk9YVVdTZ2owYXlUQ0JtOUQ5eU5jRlRnbWl5QThndFA4V3lYckU3M2pJaGllWGpPaS04U2NBamZWWjFZLXRuakpGNm9HU1NhRGlrUHhYZGgxTkp0RmE3YmJpOVQxQ2dkWkhaR1VBSWs?oc=5",
-        "source": "Yahoo",
-        "pubdate": "Tue, 09 Jun 2026 13:18:10 GMT",
-        "pubdate_iso": "2026-06-09T13:18:10+00:00",
+        "title": "Can XRP (Ripple) bounce back after reaching a 19-month low?",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdVdnRDFsVUdBWkVoZlJ6c2lGai1LdGlOQlFac3JxRDl0aVEySkY0cXpRdUVCVlBvWENCUUliVkxhNzJlNnBPTW1sM1JuZ3hiTkNTeVhyQkpXM1FwcnFUaGhjQVVUNkFhbDNOQ2tIWDVmMlk2eGJYRl9rNlh3RVp3ak0xeXdweU5kd200OV9Ic21jSUxRWTJwbHJ1OUtoNU45S3dvN1g4TlJlcVlERlVn?oc=5",
+        "source": "MSN",
+        "pubdate": "Wed, 10 Jun 2026 02:37:18 GMT",
+        "pubdate_iso": "2026-06-10T02:37:18+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -202,6 +202,20 @@
         }
       },
       {
+        "title": "UK crypto advocates launch campaign against banks blocking exchange transfers",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQNlU3T2RRb3E5dWpDcEJWM085UEJKVUdGUUdzVHdLMkhSbWtOdXFiQW9tUHlKMm5odno0cHJQQU1MQjdNUXFtX0RHR1FlbEQ4Ui1qUzZHZmtZeDR1dlo0SGJGVUhBY292RUdTRHRQY2JlRnpVeUtId0FRZ0hWQ2M5T3otQjZ2ejFhcGhZY0ZyNHZ3NjB1ZXl2NV9KMWlmWGl1SF9PSngyOExwX3dYRzEtUkZfTXhjWm9rREFNRm5LYXhPcEVMdDRVbHdCT04zOFBJTUtkZzM4VQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 18:55:00 GMT",
+        "pubdate_iso": "2026-06-10T18:55:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "El impacto de la normativa MiCA en el ecosistema cripto europeo",
         "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOejRNYXhkNTQyZUlNMm5yMG5ydUJwNnFsWTg1cWstbmg3b2thTWtVU2NDQkdzR1lLUFFRai1Namd5YWFhVlcyTDNtTk55U2diU0NCRkFOT1NORDdYR3BvQkZPczhjaldaQjgxSFYyUk5VbmhGRnM5aUpnVVNaSjBVdWdyV1BsU08zNEc4d0lMWURIZw?oc=5",
         "source": "Bit2Me News",
@@ -227,20 +241,6 @@
           "intensidad_label": "neutral",
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Ley MiCA: por qué las startups cripto pierden terreno frente a los bancos en Europa",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWEluTnJ4ajlKV0pJYVgtN3ZVdjRsSTZqeENlWkM5aE9wVFJkUk00TjVScDZZd3hHRW82Z2o4S2l6NHUyX0dOa1RDcWFsb1NaYUJCMkkxendXUzBZM2FFZ2dDYkxNb0lvN2R4SFE0ODZ5aWZYbzZwY2dTVzRuY1VVNVJQZzBiMDJhbVVIa1BXZ1dEaW84ekhuWG1neEFfZEM4Nkpna3pEWW96MmRiT2Z4UkpoamZrTHMzRloyYdIBwgFBVV95cUxNVXFTbDZqWnBIaVhSVkJOdFJLR3lWZkpqSVk5YktBd2kzc29GWk01WFY4VVFIOU1mOU10aVhVeDVHTU90dWRPc2dRZHVwMk1CT3FiQ0FjMlIzU0c2Y0QtSjZYYnY0WGVFdXVENWgxS2d2c2t2NFpCVS0wOVVsb2VXeS1xdmtqV3VSR2RhZWZ0MGdhTVB0OThHMzNzZVppWFZEdk45YVBMNU5WSlJfaDBZcVc3MnN4YmN6RG9wTW9YT3Mtdw?oc=5",
-        "source": "iProUP",
-        "pubdate": "Tue, 09 Jun 2026 17:45:00 GMT",
-        "pubdate_iso": "2026-06-09T17:45:00+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🔴",
-          "razonamiento": "Pierden terreno: presion negativa"
         }
       }
     ],
@@ -318,6 +318,20 @@
     ],
     "fed_macro": [
       {
+        "title": "XRPUSD - Analysts tip pressure for Bitcoin, gold as US inflation tops 4%",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNVpCNjRFZ0hLTW1nT2wxeWNDeHNfZ254MjA0cmMzMGJQb2Q4cFhBLUx5T3lvMlRZSW9ZaU1JdWlxQ1pCY2FfQkNRMXVXUjRITFFZcTNpbXlMYWVpLU83MHRUMFJUNjNQdEtHNnBsX1dzM3c1eWwtdDRoVmFDVGxjOFJaa19xOTFadk1tQWV5dWppYklBRHpFX2I1RTNzQUx1LUZqYXFCSjlTNE1IbHYxM0ZhdG9peWs3ci1nZQ?oc=5",
+        "source": "mx.advfn.com",
+        "pubdate": "Thu, 11 Jun 2026 04:51:52 GMT",
+        "pubdate_iso": "2026-06-11T04:51:52+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "BTCUSD - Pending Bank of Japan rate decision may impact Bitcoin price: Should traders prepare?",
         "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTFZwaVlaNUlqTkhfbEN5YWNJcGRlbThsclU0QWlhbW1peFlpcUNldElUQ2lSWXkweFRValF3cTh3Ykpqc1Z0RHZPZW1Ub05lV3lJUlRBMWFQbndubTJ1Wm5BRXUyNjZsZ3V0RlNGeWcwYXEwRklraV85Qi1FeU5PQVc2VFlLMzRIZWVvR3I1czJFVkV5MTlCVEgzZGRXZEFaRmhFS1E0QmF2NXMxUTJmd0J6MTZoUU1LR3cwVTFn?oc=5",
         "source": "mx.advfn.com",
@@ -365,20 +379,6 @@
         "source": "CoinDesk",
         "pubdate": "Wed, 10 Jun 2026 11:27:41 GMT",
         "pubdate_iso": "2026-06-10T11:27:41+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "U.S CPI Report Today: Will Bitcoin Crash or Bounce?",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNX2dFZ3JRb09NRmc1UmNhUTF4YjNzZUI4dU95WlBrMi1MbjAxRS01aWxXaGk0cVVVMFVCT3Fna193Vm50cHdfaFJNanIzd2E1UGFBUHFhWVh0amZyT0F6cFBYZW9weXkxU05WODdDVkFEUGwzQUduRmhwQ25UNXQ4WFZzdG9jZDgxQUhMWnJ0YlVBMURsWGlVcGZWUi03bFZYczQwUFBfbzBnZFE2?oc=5",
-        "source": "TradingView",
-        "pubdate": "Wed, 10 Jun 2026 05:14:00 GMT",
-        "pubdate_iso": "2026-06-10T05:14:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -459,13 +459,13 @@
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "levemente bajista",
-    "score_neto": -2,
+    "sentimiento": "neutral",
+    "score_neto": 0,
     "n_positivas": 4,
-    "n_negativas": 4,
-    "n_neutrales": 21,
-    "narrativa": "El feed muestra 4 senales positivas y 4 negativas (neto -2). Factores dominantes: Flujos institucionales hacia ETF: muy positivo; Salidas de ETF: muy negativo institucional.",
+    "n_negativas": 3,
+    "n_neutrales": 22,
+    "narrativa": "El feed muestra 4 senales positivas y 3 negativas (neto +0). Factores dominantes: Flujos institucionales hacia ETF: muy positivo; Salidas de ETF: muy negativo institucional.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "Levemente BAJISTA"
+    "veredicto": "NEUTRAL - sin sesgo dominante"
   }
 }
