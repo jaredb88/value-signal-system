@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-10T23:33:45.270645+00:00",
+  "updated_at_utc": "2026-06-11T01:33:49.356320+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -204,6 +204,20 @@
     ],
     "economia_chile": [
       {
+        "title": "Mercado recorta crecimiento Chile a 1,6% en 2026",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOM09OV3N3d3RLa1VlVGJ1ZTVMQVhxRXVkbUFiZllZRWVKTmZwQjZJekZJeG95ekpWcmlZa3dlM3llaVlfbTl3NDFXRTRWNWlNejZHbFNKb00zR3JHd3JrVEYwS3prYTh3eGk2TVBpRzhfbUgyZVZndTdLdExwMnVuMkg4ODlkUFEzNDhQYzQ3VDJQLW9tVnFwdldLcnplUjRGcUJRZg?oc=5",
+        "source": "thetimeslatino.press",
+        "pubdate": "Wed, 10 Jun 2026 23:23:00 GMT",
+        "pubdate_iso": "2026-06-10T23:23:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Ministro Quiroz ajusta proyecciones económicas: Hacienda prevé crecimiento de 3,5% al 2030 y descarta llegar al 4% prometido por Kast",
         "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNOS1YYXlXZmxIZ2ZSSWR2OXhIQjZ4YXhfS0V1dlBreDROWEM4N1BWOXF3ekFFbFhvcHdOaU95TTA1UmxlZDNyWHh5azc3VXFXTnNXYkZOM00xQWRLcWpHaGtuaXRzQXBTQlU0THBjYnlnZUJPR3Nhb1VZUjhUYUQ1MUh5ZWlQTnNON2dDVXItNFg3ZnVoNC1PZ1YtZmIyUHFjV2RhdHdoYnVGRHEyRlFWd3lNd2F4M3FNTEhrNFNjY0loa29BZ0dJT3kzWVczM2xuNVZLS0I0b1QxeU11dFpPaW9yQ05tWldSS290bUhCOFIzbi1TYVE?oc=5",
         "source": "Radio Pauta 100.5",
@@ -246,25 +260,11 @@
         }
       },
       {
-        "title": "Inflación en Chile: IPC sube 0,2% en mayo y llega a 3,9% anual",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcVFqMDNUR09lTGdLTlExTEllc1FLdXVBSkFrdXdjWnk1WU41NzJ3Q29ZcEZKQkJLbHNyYjFWczUzb0t5dFNaMlljdl9EQzdFNlJ3bGJ1S01aLTk3OTVUMU9LOE05Z1FwU21ycXliRW03Y2FiTjlQY3d4Q20tWWg2LTludWhJMmdtc1UzN3NhUk1zd3FlYnp2YkxxeUY5LUhfQmFF?oc=5",
-        "source": "elciudadano.com",
-        "pubdate": "Mon, 08 Jun 2026 20:50:54 GMT",
-        "pubdate_iso": "2026-06-08T20:50:54+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Dólar cierra sobre $ 920 por primera vez en dos meses tras ataques en Medio Oriente y datos de inflación bajo lo esperado en Chile",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9uS2Z4UFR0cmtGUmZFNUJKUzZGX1ZhcTAyR1hoQ3gtRFhCQ2NtSHVhSldQbE01el81U28wajlYR0VCSlViSW9iWEE0a2NiaXI2ci1weGttSlV6dTlSNF93RjFTaDI3bHJ3clliN0xpN0ZBM1E?oc=5",
-        "source": "Diario Financiero",
-        "pubdate": "Mon, 08 Jun 2026 20:09:00 GMT",
-        "pubdate_iso": "2026-06-08T20:09:00+00:00",
+        "title": "Dura caída de la economía chilena: Imacec de abril fue de -1,2%, el peor en tres años",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQczc0aXRuZVVRVG91NGtfaS1Gekl6UVdCMHlSTm50VG56TDlPWXJxc2dLMXBJVDBGcF9lR1JDOFRMcnNNbXh1YUVWZEZ1cW8wZFdfNFhuWWQwdVZjOHdvVGhJMmctdU0zdlRqbkVEX2tTdDRTd2FjZVJhLVBqcDNVU3RJWjVpU2VHdE56V3p2SzdtVlRKNFBkNWQzUGNiN3hRYVNaUk4zVjRlZ2VrOUIyR1oycldqd1JaR1JoN3gzeWpFc3lvRWV5aE1KN0dINVZmWjRGOUpJdWhwVXBwY2tmU2tn?oc=5",
+        "source": "MSN",
+        "pubdate": "Tue, 09 Jun 2026 08:32:54 GMT",
+        "pubdate_iso": "2026-06-09T08:32:54+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
