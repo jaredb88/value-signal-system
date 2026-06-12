@@ -61,8 +61,8 @@ img,canvas,svg,video{max-width:100%}
 .kv .v{text-align:right;word-break:break-word}
 
 /* ---------- evaluación fundamental ---------- */
-.ev-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-@media(max-width:680px){.ev-grid{grid-template-columns:1fr}}
+.ev-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+@media(max-width:680px){.ev-grid{grid-template-columns:minmax(0,1fr)}}
 .ev-col h4{margin:0 0 6px;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--tx-3)}
 .ev-row{display:flex;gap:9px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line);font-size:12.5px;color:var(--tx-2);line-height:1.45}
 .ev-row:last-child{border-bottom:0}
@@ -185,11 +185,11 @@ main{padding:26px 0 70px;min-height:60vh}
 
 /* ---------- grids ---------- */
 .grid{display:grid;gap:14px}
-.grid.c2{grid-template-columns:repeat(2,1fr)}
-.grid.c3{grid-template-columns:repeat(3,1fr)}
-.grid.c4{grid-template-columns:repeat(4,1fr)}
-@media(max-width:1000px){.grid.c3,.grid.c4{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:680px){.grid.c2,.grid.c3,.grid.c4{grid-template-columns:1fr}}
+.grid.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1000px){.grid.c3,.grid.c4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.grid.c2,.grid.c3,.grid.c4{grid-template-columns:minmax(0,1fr)}}
 
 /* ---------- asset card ---------- */
 .card{
@@ -266,7 +266,7 @@ main{padding:26px 0 70px;min-height:60vh}
 .spark{margin-top:12px;height:40px;width:100%;display:block}
 
 /* ---------- chile rows ---------- */
-.cl-row{display:grid;grid-template-columns:1.4fr .9fr 1.5fr auto;gap:16px;align-items:center;
+.cl-row{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.9fr) minmax(0,1.5fr) auto;gap:16px;align-items:center;
   padding:13px 16px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
   cursor:pointer;transition:.15s}
 .cl-row:hover{border-color:var(--line-2);background:var(--panel-2)}
@@ -281,7 +281,7 @@ main{padding:26px 0 70px;min-height:60vh}
 .cl-bm .pp.pos{color:var(--pos)} .cl-bm .pp.neg{color:var(--tx-3)}
 .cl-bm .bar{margin-top:7px}
 @media(max-width:760px){
-  .cl-row{grid-template-columns:1fr auto;gap:8px 14px}
+  .cl-row{grid-template-columns:minmax(0,1fr) auto;gap:8px 14px}
   .cl-bm{grid-column:1/-1}
 }
 
@@ -303,14 +303,14 @@ main{padding:26px 0 70px;min-height:60vh}
 /* component bars */
 .comp{display:flex;flex-direction:column;gap:11px}
 .comp .crow{display:flex;flex-direction:column;gap:3px}
-.comp .row{display:grid;grid-template-columns:140px 1fr 64px;gap:12px;align-items:center}
+.comp .row{display:grid;grid-template-columns:140px minmax(0,1fr) 64px;gap:12px;align-items:center}
 .comp .row .nm{font-size:12px;color:var(--tx-2)}
 .comp .row .nm small{display:block;color:var(--mut);font-size:10px}
 .comp .row .tr{height:7px;background:var(--panel-2);border-radius:4px;overflow:hidden;border:1px solid var(--line)}
 .comp .row .tr i{display:block;height:100%;background:linear-gradient(90deg,var(--teal),var(--teal-2));border-radius:4px}
 .comp .row .vl{text-align:right;font-family:var(--f-mono);font-size:12px;color:var(--tx)}
 .comp .row .vl small{color:var(--mut)}
-@media(max-width:560px){.comp .row{grid-template-columns:100px 1fr 50px}}
+@media(max-width:560px){.comp .row{grid-template-columns:100px minmax(0,1fr) 50px}}
 
 /* tabs (sub) */
 .subtabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:16px}
@@ -330,8 +330,10 @@ main{padding:26px 0 70px;min-height:60vh}
 .chart-box.sm{height:180px}
 
 /* ---------- news ---------- */
-.layout-split{display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start}
-@media(max-width:980px){.layout-split{grid-template-columns:1fr}}
+.layout-split{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:18px;align-items:start}
+.layout-split>*{min-width:0}
+.grid>*{min-width:0}
+@media(max-width:980px){.layout-split{grid-template-columns:minmax(0,1fr)}}
 
 .exec{border-radius:var(--r);border:1px solid var(--line-2);padding:16px;background:var(--panel)}
 .exec .sent{display:flex;align-items:center;gap:10px;margin-bottom:10px}
