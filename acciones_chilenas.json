@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-12T11:04:46.759499",
-  "duracion_segundos": 98.747651,
+  "fecha_actualizacion": "2026-06-12T11:34:46.508577",
+  "duracion_segundos": 98.614647,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,11 +11,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": 1331.6,
+      "precio_actual_clp": 1338.1,
       "razon_social": "A.F.P. HABITAT S.A.",
-      "variacion_pct": 0,
+      "variacion_pct": 0.49,
       "dy": {
-        "dy_pct": 7.46,
+        "dy_pct": 7.42,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 110.0,
@@ -25,13 +25,13 @@
         "promedio_anual": 99.33,
         "advertencia": null
       },
-      "cagr_3y": 0.2316029753926787,
-      "cagr_5y": 0.3909582929006077,
-      "cagr_10y": 0.10451084034654934,
+      "cagr_3y": 0.23360368351563543,
+      "cagr_5y": 0.392313598861163,
+      "cagr_10y": 0.10504880962475616,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 0.96
+        "vs_benchmark_pp": 0.92
       },
       "cmf": {
         "periodo": "03/2026",
@@ -515,9 +515,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 130,
+      "precio_actual_clp": 130.1,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": 1.56,
+      "variacion_pct": 1.64,
       "dy": {
         "dy_pct": 6.11,
         "anos_usados": 3,
@@ -529,9 +529,9 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.020005283131651064,
-      "cagr_5y": 0.030255794755612575,
-      "cagr_10y": -0.024536109347737423,
+      "cagr_3y": 0.020266755914991386,
+      "cagr_5y": 0.03041424690010519,
+      "cagr_10y": -0.024461099625084803,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -767,11 +767,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de GLP en Chile, Colombia y Peru. Crecimiento moderado por expansion regional. ROE 33%, payout 63%, G=12%.",
-      "precio_actual_clp": 8360,
+      "precio_actual_clp": 8350,
       "razon_social": "EMPRESAS LIPIGAS S.A.",
-      "variacion_pct": -0.1,
+      "variacion_pct": -0.22,
       "dy": {
-        "dy_pct": 4.17,
+        "dy_pct": 4.18,
         "anos_usados": 2,
         "anos_detalle": {
           "2025": 437.0,
@@ -780,13 +780,13 @@
         "promedio_anual": 349.0,
         "advertencia": "Solo 2 anos disponibles (ideal: 3)"
       },
-      "cagr_3y": 0.44905295405598067,
-      "cagr_5y": 0.1730983172684697,
+      "cagr_3y": 0.44847495122080305,
+      "cagr_5y": 0.17281753736141048,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.33
+        "vs_benchmark_pp": -2.32
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3890,
+      "precio_actual_clp": 3912.4,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": 1.01,
+      "variacion_pct": 1.59,
       "dy": {
-        "dy_pct": 10.37,
+        "dy_pct": 10.32,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.12458459635644159,
-      "cagr_5y": 0.21648694186306305,
-      "cagr_10y": 0.11583665785346442,
+      "cagr_3y": 0.12673905194606627,
+      "cagr_5y": 0.21788471867579973,
+      "cagr_10y": 0.1164775372492477,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 1.87
+        "vs_benchmark_pp": 1.82
       },
       "cmf": {
         "periodo": "03/2026",
