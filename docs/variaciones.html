@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Value Signal · Tarjeta de activo — variaciones</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body{background:#0e1117}
+  .vexp{max-width:1500px;margin:0 auto;padding:30px 24px 80px}
+  .vexp .lead{margin:0 0 6px;font-size:24px;font-weight:600}
+  .vexp .leadsub{color:var(--tx-3);font-size:13px;margin-bottom:26px;max-width:720px;line-height:1.5}
+  .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:start}
+  @media(max-width:1200px){.cols{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:680px){.cols{grid-template-columns:1fr}}
+  .vcol{min-width:0}
+  .vcol > .vh{position:sticky;top:0;background:#0e1117;padding:8px 0 12px;z-index:2}
+  .vcol .vt{font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px}
+  .vcol .vt .tag{font-family:var(--f-mono);font-size:11px;color:var(--bg);background:var(--teal);padding:1px 7px;border-radius:5px}
+  .vcol .vd{font-size:11.5px;color:var(--tx-3);margin-top:4px;line-height:1.4}
+  .vstack{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+
+  /* B — compact row */
+  .vb{display:grid;grid-template-columns:1fr auto;gap:10px 14px;align-items:center;background:var(--panel);
+    border:1px solid var(--line);border-radius:var(--r);padding:13px 15px}
+  .vb.opp{border-color:var(--z-opp-bd)}
+  .vb .l .tk{font-size:17px;font-weight:700}
+  .vb .l .nm{font-size:11px;color:var(--tx-3)}
+  .vb .l .pr{font-family:var(--f-mono);font-size:12px;color:var(--tx-2);margin-top:3px}
+  .vb .r{text-align:right}
+  .vb .r .sc{font-family:var(--f-mono);font-size:26px;font-weight:700;line-height:1}
+  .vb .r .mu{font-family:var(--f-mono);font-size:11px;color:var(--tx-3)}
+  .vb .barfull{grid-column:1/-1}
+
+  /* C — gauge */
+  .vc{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px;text-align:center}
+  .vc.opp{border-color:var(--z-opp-bd)}
+  .vc .top{display:flex;justify-content:space-between;align-items:flex-start}
+  .vc .top .tk{font-size:18px;font-weight:700;text-align:left}
+  .vc .top .nm{font-size:11px;color:var(--tx-3);text-align:left}
+  .vc .gauge{position:relative;margin:2px auto 0;width:200px;max-width:100%}
+  .vc .gauge .gv{position:absolute;left:0;right:0;bottom:14px;font-family:var(--f-mono);font-weight:700;font-size:34px;line-height:1}
+  .vc .gauge .gl{position:absolute;left:0;right:0;bottom:-2px;font-size:10px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+  .vc .ft{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-family:var(--f-mono);font-size:12px;color:var(--tx-3)}
+
+  /* D — hero */
+  .vd2{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;padding:16px}
+  .vd2.opp{border-color:var(--z-opp-bd)}
+  .vd2 .bgspark{position:absolute;left:0;right:0;bottom:0;height:62%;opacity:.5}
+  .vd2 .bgspark svg{width:100%;height:100%}
+  .vd2 .inner{position:relative;z-index:2}
+  .vd2 .rib{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    padding:3px 9px;border-radius:5px}
+  .vd2 .tk{font-size:30px;font-weight:700;margin-top:10px;line-height:1}
+  .vd2 .nm{font-size:12px;color:var(--tx-3)}
+  .vd2 .big{display:flex;align-items:flex-end;gap:8px;margin-top:36px}
+  .vd2 .big .n{font-family:var(--f-mono);font-size:46px;font-weight:700;line-height:.9}
+  .vd2 .big .den{font-family:var(--f-mono);font-size:13px;color:var(--mut);margin-bottom:6px}
+  .vd2 .big .mu{margin-left:auto;font-family:var(--f-mono);font-size:12px;color:var(--tx-3);margin-bottom:6px}
+</style>
+</head>
+<body>
+<div class="vexp">
+  <h1 class="lead">Tarjeta de activo · 4 variaciones</h1>
+  <p class="leadsub">El componente clave del sistema, en cuatro tratamientos. Cada columna muestra los tres estados de zona
+    (OPORTUNIDAD, ATRACTIVO, NEUTRAL) con datos en vivo. Todas conservan la barra-firma de 4 segmentos.
+    Dime cuál prefieres (o una mezcla) y la dejo como tarjeta por defecto del dashboard.</p>
+  <div class="cols" id="cols">
+    <div class="hint">Cargando datos en vivo…</div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/cards.js"></script>
+<script>
+window.go = function(){};
+
+/* gauge SVG (semicircle) */
+function polar(cx,cy,r,a){const rad=(a-90)*Math.PI/180;return [cx+r*Math.cos(rad),cy+r*Math.sin(rad)];}
+function arc(cx,cy,r,a0,a1){const[x0,y0]=polar(cx,cy,r,a0),[x1,y1]=polar(cx,cy,r,a1);
+  const large=Math.abs(a1-a0)>180?1:0;return `M ${x0} ${y0} A ${r} ${r} 0 ${large} 1 ${x1} ${y1}`;}
+function gauge(score,zona){
+  const p=Math.max(0,Math.min(100,score))/100;
+  const cx=100,cy=104,r=82;
+  const col=zoneColorVar(zona);
+  const a0=-90,a1=90; // left to right top semicircle
+  const va=a0+(a1-a0)*p;
+  return `<svg viewBox="0 0 200 120" width="200" height="120">
+    <path d="${arc(cx,cy,r,a0,a1)}" fill="none" stroke="#2a2e39" stroke-width="11" stroke-linecap="round"/>
+    <path d="${arc(cx,cy,r,a0,va)}" fill="none" stroke="${col}" stroke-width="11" stroke-linecap="round"/>
+    ${[35,50,70].map(t=>{const aa=a0+(a1-a0)*t/100;const[tx,ty]=polar(cx,cy,r,aa);const[ix,iy]=polar(cx,cy,r-11,aa);
+      return `<line x1="${ix}" y1="${iy}" x2="${tx}" y2="${ty}" stroke="#0e1117" stroke-width="2"/>`;}).join("")}
+  </svg>`;
+}
+
+function cardB(a){
+  const opp=isBuyZone(a.zona);
+  return `<div class="vb ${opp?'opp':''}">
+    <div class="l"><div class="tk">${a.ticker}</div><div class="nm">${esc(a.name)}</div><div class="pr">${a.price}</div></div>
+    <div class="r"><div class="sc" style="color:${zoneColorVar(a.zona)}">${fmt.score(a.score)}</div><div class="mu">/100 · x${a.mult}</div></div>
+    <div class="barfull">${scoreBar(a.score,a.zona)}</div>
+  </div>`;
+}
+function cardC(a){
+  const opp=isBuyZone(a.zona);
+  return `<div class="vc ${opp?'opp':''}">
+    <div class="top"><div><div class="tk">${a.ticker}</div><div class="nm">${esc(a.name)}</div></div>${zoneBadge(a.zona)}</div>
+    <div class="gauge">${gauge(a.score,a.zona)}
+      <div class="gv" style="color:${zoneColorVar(a.zona)}">${fmt.score(a.score)}</div>
+      <div class="gl">score</div></div>
+    <div class="ft"><span>${a.price}</span><span>aporte <b style="color:var(--tx)">x${a.mult}</b></span></div>
+  </div>`;
+}
+function cardD(a){
+  const opp=isBuyZone(a.zona);
+  const col=zoneColorVar(a.zona);
+  const ribBg=opp?'var(--z-opp)':a.zona==='CARO'?'var(--z-caro)':'var(--z-neu-bg)';
+  const ribCol=opp?'#0b1f1c':a.zona==='CARO'?'#fff':'var(--z-neu)';
+  return `<div class="vd2 ${opp?'opp':''}">
+    <div class="bgspark">${sparkline(a.hist,a.valKey,col)}</div>
+    <div class="inner">
+      <span class="rib" style="background:${ribBg};color:${ribCol}">${a.zona}</span>
+      <div class="tk">${a.ticker}</div><div class="nm">${esc(a.name)}</div>
+      <div class="big"><span class="n" style="color:${col}">${fmt.score(a.score)}</span><span class="den">/100</span><span class="mu">aporte x${a.mult}</span></div>
+      ${scoreBar(a.score,a.zona)}
+    </div>
+  </div>`;
+}
+
+function pick(scored,tk){return scored.find(x=>x.ticker===tk);}
+
+(async()=>{
+  await fetchAll();
+  const scored=collectScored();
+  const samples=[pick(scored,"BTC"),pick(scored,"GLD"),pick(scored,"SCHD")].filter(Boolean);
+  const cols=[
+    {tag:"A",t:"Actual (en uso)",d:"Score dominante + sparkline + cruce contrarian. Densidad media, la del dashboard ahora.",fn:a=>assetCard(a,{contra:true})},
+    {tag:"B",t:"Compacta / tabla",d:"Fila densa estilo terminal. Ideal para listas largas; sin sparkline ni noticias.",fn:cardB},
+    {tag:"C",t:"Gauge",d:"Medidor semicircular coloreado por zona. Más visual, lectura rápida del score.",fn:cardC},
+    {tag:"D",t:"Editorial / hero",d:"Sparkline de fondo + cinta de zona. Más grande y expresiva, menos por fila.",fn:cardD},
+  ];
+  document.getElementById("cols").innerHTML=cols.map(c=>`
+    <div class="vcol">
+      <div class="vh"><div class="vt"><span class="tag">${c.tag}</span> ${c.t}</div><div class="vd">${c.d}</div></div>
+      <div class="vstack">${samples.map(c.fn).join("")}</div>
+    </div>`).join("");
+})();
+</script>
+</body>
+</html>
