@@ -77,6 +77,11 @@ img,canvas,svg,video{max-width:100%}
 .ev-concl.bad{border-color:var(--z-caro-bd);background:var(--z-caro-bg)}
 .ev-note{margin-top:10px;font-size:11px;color:var(--mut);line-height:1.45}
 .row-news{margin-top:8px;font-size:11.5px;color:var(--tx-3);line-height:1.4;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.card-news{margin-top:16px;padding:11px 13px;background:var(--panel-2);border:1px solid var(--line);border-radius:var(--r-sm)}
+.card-news .cn-hd{font-size:11.5px;color:var(--tx-3);display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:7px}
+.card-news .cn-hd .sent{font-weight:600}
+.card-news .cn-row{font-size:12px;color:var(--tx-2);line-height:1.45;padding:3px 0}
+.card-news .cn-row.dim{color:var(--mut)}
 .row-news .sent{font-weight:600}
 .row-news .top-r{color:var(--mut)}
 html,body{margin:0;padding:0}
@@ -1324,6 +1329,7 @@ function clRow(a){
         · <span class="pp ${ppCls}">${fmt.pp(ev.vs_benchmark_pp)}</span> ${ev.emoji||""}${edBm.icon}</div>
       <div class="bar">${benchBar(a.dy?.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
       ${edBm.inline}
+      ${newsMiniLine(VS.data.n_chile, clCats(a.sector))}
     </div>
     <div class="right"><span class="pill-link">Ver detalle ›</span></div>
   </div>`;
@@ -1393,6 +1399,7 @@ function renderAsset(which){
       </div>
       ${scoreBar(d.score_final, d.zona)}
       ${alignCard(d.zona, d.score_final, news)}
+      ${newsMiniBlock(news, null, meta.title)}
     </div>
 
     <div class="panel" style="margin-bottom:16px">
@@ -1531,6 +1538,8 @@ function etfPanel(x){
       </div>
     </div>
 
+    ${newsMiniBlock(VS.data.n_etfs, ETF_NEWS_CATS[x.ticker], x.ticker)}
+
     ${evalETFBlock(x)}
 
     <div style="display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px">
@@ -1597,6 +1606,8 @@ function growthPanel(x){
         ${compBars(x.componentes, GROWTH_PESOS, {})}
       </div>
     </div>
+
+    ${newsMiniBlock(VS.data.n_etfs, ETF_NEWS_CATS[x.ticker], x.indice)}
 
     <div style="display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px">
       <h3 style="margin:0">${esc(x.indice)} histórico</h3>${rangeSel(chId)}
@@ -1792,28 +1803,68 @@ function newsCatForTicker(news, ticker){
   return Object.keys(news.categorias_meta).find(c=>
     (news.categorias_meta[c].label||"").toUpperCase().includes(T)) || null;
 }
-function stockNewsStats(news, ticker){
-  const cat = newsCatForTicker(news, ticker);
-  if(!cat) return null;
-  const items = (news.noticias_por_categoria||{})[cat]||[];
-  let neto=0,pos=0,neg=0,top=null;
-  items.forEach(it=>{
-    const im=it.impacto||{}; const i=im.intensidad||0;
-    if(im.direccion==="positivo"){neto+=i;pos++;}
-    else if(im.direccion==="negativo"){neto-=i;neg++;}
-    if(i>0 && (!top||i>top.i)) top={i,r:im.razonamiento||"",d:im.direccion};
-  });
+function catsStats(news, cats){
+  // Agrega impactos de las categorías dadas (null = todas)
+  if(!news) return null;
+  const npc = news.noticias_por_categoria||{};
+  const keys = cats ? cats.filter(c=>npc[c]) : Object.keys(npc);
+  let neto=0,pos=0,neg=0,n=0; const tops=[];
+  keys.forEach(c=>(npc[c]||[]).forEach(it=>{
+    n++; const im=it.impacto||{}; const i=im.intensidad||0;
+    if(im.direccion==="positivo"){neto+=i;pos++; if(i>0)tops.push({i,d:1,r:im.razonamiento||it.title});}
+    else if(im.direccion==="negativo"){neto-=i;neg++; if(i>0)tops.push({i,d:-1,r:im.razonamiento||it.title});}
+  }));
+  tops.sort((a,b)=>b.i-a.i);
   const sent = neto>=2?["alcista","var(--pos)"]:neto<=-2?["bajista","var(--neg)"]
              : neto>0?["lev. alcista","var(--pos)"]:neto<0?["lev. bajista","var(--neg)"]
              : ["neutral","var(--tx-3)"];
-  return {cat, n:items.length, pos, neg, neto, sent, top};
+  return {n,pos,neg,neto,sent,tops};
 }
-function stockNewsMini(news, ticker){
-  const s = news ? stockNewsStats(news, ticker) : null;
+function newsMiniLine(news, cats){
+  const s = catsStats(news, cats);
   if(!s || !s.n) return "";
+  const top = s.tops[0];
   return `<div class="row-news">📰 <span class="sent" style="color:${s.sent[1]}">${esc(s.sent[0])}</span>
     <span class="dim">· ${s.pos}🟢 ${s.neg}🔴 de ${s.n}</span>
-    ${s.top?`<span class="top-r">— ${esc(s.top.r)}</span>`:""}</div>`;
+    ${top?`<span class="top-r">— ${top.d>0?"↑":"↓"} ${esc(top.r)}</span>`:""}</div>`;
+}
+function newsMiniBlock(news, cats, label){
+  const s = catsStats(news, cats);
+  if(!s || !s.n) return "";
+  const drivers = s.tops.slice(0,2).map(t=>
+    `<div class="cn-row"><span style="color:${t.d>0?'var(--pos)':'var(--neg)'};font-family:var(--f-mono)">${t.d>0?"↑":"↓"}</span> ${esc(t.r)}</div>`).join("");
+  return `<div class="card-news">
+    <div class="cn-hd">📰 Noticias${label?` relevantes · ${esc(label)}`:""} (72h):
+      <span class="sent" style="color:${s.sent[1]}">${esc(s.sent[0])}</span>
+      <span class="dim">${s.pos}🟢 ${s.neg}🔴 de ${s.n}</span></div>
+    ${drivers||`<div class="cn-row dim">Sin drivers direccionales en el período.</div>`}
+  </div>`;
+}
+function newsFilteredObj(news, cats){
+  if(!news||!cats) return news;
+  const meta={}, npc={};
+  cats.forEach(c=>{ if(news.categorias_meta?.[c]){ meta[c]=news.categorias_meta[c]; npc[c]=(news.noticias_por_categoria||{})[c]||[]; }});
+  return {...news, categorias_meta:meta, noticias_por_categoria:npc};
+}
+function stockNewsMini(news, ticker){
+  const cat = newsCatForTicker(news, ticker);
+  return cat ? newsMiniLine(news, [cat]) : "";
+}
+
+/* mapeo activo → categorías de noticias relevantes */
+const ETF_NEWS_CATS = {
+  CFISPETF:  ["mercado","fed_tasas","economia","earnings","sentimiento"],
+  CFINASDAQ: ["tech_nasdaq","fed_tasas","economia","sentimiento"],
+  SCHD:      ["mercado","fed_tasas","economia","earnings"],
+  JEPQ:      ["tech_nasdaq","fed_tasas","sentimiento"],
+};
+function clCats(sector){
+  const s = (sector||"").toLowerCase();
+  if(s.includes("afp")) return ["bcch_tpm","ipsa","economia_chile","politica_regulacion","sectores_watchlist"];
+  if(s.includes("eléctr")||s.includes("electr")||s.includes("energ")||s.includes("gas"))
+    return ["bcch_tpm","economia_chile","politica_regulacion","dolar_cobre","sectores_watchlist"];
+  if(s.includes("fertil")) return ["dolar_cobre","economia_chile","ipsa","sectores_watchlist"];
+  return ["ipsa","economia_chile","bcch_tpm","politica_regulacion","sectores_watchlist"];
 }
 function usaNewsFiltered(news, ticker, todosTickers){
   // noticias de ESTA acción + categorías compartidas (excluye las de otras acciones)
@@ -2086,7 +2137,7 @@ function renderChile(param){
     ${VS.status.n_chile==="error"?errBox("n_chile","noticias"):""}
     ${news?execSummary(news):""}
     ${news?chileAlign(nSobre, acc.length, news):""}
-    <div style="margin-top:14px">${news?newsSection(news):""}</div>
+    <div class="hint" style="margin-top:14px;line-height:1.5">Toca <b>Ver detalle</b> en una acción para desplegar las noticias relevantes a su sector con interpretación de impacto.</div>
   </div></div>`;
 
   const main = `
@@ -2196,9 +2247,19 @@ function renderChileDetail(ticker){
       ${divTable||'<div class="hint">Sin registros recientes.</div>'}
     </div>`;
 
+  const newsCl = VS.data.n_chile;
+  const cats = clCats(a.sector);
+  const sidebarCl = `<div><div class="sidebar-news">
+    <div class="hd">📰 Noticias · ${esc(a.sector)}${eduIconStatic('news')} ${newsCl?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated.n_chile)}</span>`:""}</div>
+    ${VS.status.n_chile==="error"?errBox("n_chile","noticias"):""}
+    ${newsMiniLine(newsCl, cats)}
+    ${newsCl?execSummary(newsCl):""}
+    <div style="margin-top:14px">${newsCl?newsSection(newsFilteredObj(newsCl, cats)):`<div class="hint">Sin noticias disponibles.</div>`}</div>
+  </div></div>`;
+
   return `<div class="detail-back" onclick="go('chile')">‹ Volver al watchlist</div>` +
     viewHead("🇨🇱", a.ticker, srcStamp("chile"), a.razon_social) +
-    main;
+    `<div class="layout-split"><div>${main}</div>${sidebarCl}</div>`;
 }
 
 /* ===== js/app.js ===== */
