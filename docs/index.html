@@ -8,7 +8,470 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<style>
+/* ============================================================
+   VALUE SIGNAL — dark financial theme (TradingView / Yahoo Finance)
+   ============================================================ */
+:root{
+  /* surfaces */
+  --bg:#131722;
+  --panel:#1b1f29;
+  --panel-2:#212630;
+  --elev:#262b36;
+  --line:#2a2e39;
+  --line-2:#363b47;
+  --hover:#222732;
+
+  /* text */
+  --tx:#d1d4dc;
+  --tx-2:#9aa1ad;
+  --tx-3:#787b86;
+  --mut:#5d6471;
+
+  /* brand / zones */
+  --teal:#26a69a;
+  --teal-2:#2fd4c4;
+  --red:#ef5350;
+  --amber:#e0a33a;
+  --gray:#787b86;
+
+  --z-opp:#26a69a;        --z-opp-bg:rgba(38,166,154,.16);  --z-opp-bd:rgba(38,166,154,.55);
+  --z-atr:#5ccabd;        --z-atr-bg:rgba(38,166,154,.09);  --z-atr-bd:rgba(38,166,154,.32);
+  --z-neu:#9aa1ad;        --z-neu-bg:rgba(134,137,147,.12); --z-neu-bd:rgba(134,137,147,.30);
+  --z-caro:#ef5350;       --z-caro-bg:rgba(239,83,80,.12);  --z-caro-bd:rgba(239,83,80,.38);
+
+  --pos:#26a69a;
+  --neg:#ef5350;
+
+  --f-sans:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+
+  --r:10px;
+  --r-sm:7px;
+  --maxw:1240px;
+  --shadow:0 1px 0 rgba(255,255,255,.02), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+/* fix mobile: evitar overflow horizontal que desencaja el header sticky */
+html,body{overflow-x:clip}
+@supports not (overflow:clip){html,body{overflow-x:hidden}}
+img,canvas,svg,video{max-width:100%}
+.kv{flex-wrap:wrap;gap:4px 12px}
+.kv .v{text-align:right;word-break:break-word}
+
+/* ---------- evaluación fundamental ---------- */
+.ev-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:680px){.ev-grid{grid-template-columns:1fr}}
+.ev-col h4{margin:0 0 6px;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--tx-3)}
+.ev-row{display:flex;gap:9px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line);font-size:12.5px;color:var(--tx-2);line-height:1.45}
+.ev-row:last-child{border-bottom:0}
+.ev-row b{color:var(--tx);font-weight:600}
+.vchip{flex-shrink:0;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;margin-top:1px;font-family:var(--f-mono)}
+.vchip.ok{background:var(--z-opp-bg);color:var(--z-opp);border:1px solid var(--z-opp-bd)}
+.vchip.mid{background:rgba(224,163,58,.12);color:var(--amber);border:1px solid rgba(224,163,58,.4)}
+.vchip.bad{background:var(--z-caro-bg);color:var(--z-caro);border:1px solid var(--z-caro-bd)}
+.ev-concl{margin-top:14px;padding:11px 13px;border-radius:var(--r-sm);font-size:12.5px;line-height:1.55;border:1px solid var(--line-2);background:var(--panel-2);color:var(--tx-2)}
+.ev-concl b{color:var(--tx)}
+.ev-concl.ok{border-color:var(--z-opp-bd);background:var(--z-opp-bg)}
+.ev-concl.bad{border-color:var(--z-caro-bd);background:var(--z-caro-bg)}
+.ev-note{margin-top:10px;font-size:11px;color:var(--mut);line-height:1.45}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg);
+  color:var(--tx);
+  font-family:var(--f-sans);
+  font-size:14px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(38,166,154,.35);color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:#2c313c;border-radius:8px;border:2px solid var(--bg)}
+::-webkit-scrollbar-thumb:hover{background:#3a404c}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* ---------- header ---------- */
+header.top{
+  position:sticky;top:0;z-index:40;
+  background:rgba(19,23,34,.86);
+  backdrop-filter:saturate(140%) blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.top-row{display:flex;align-items:center;gap:22px;height:60px}
+.brand{display:flex;align-items:baseline;gap:9px;cursor:pointer;user-select:none}
+.brand .tri{color:var(--teal);font-size:13px;transform:translateY(-1px)}
+.brand .b1{font-weight:400;letter-spacing:.14em;font-size:17px;color:var(--tx)}
+.brand .b2{font-weight:700;letter-spacing:.14em;font-size:17px;color:var(--teal)}
+.brand .tag{margin-left:12px;padding-left:13px;border-left:1px solid var(--line-2);
+  font-size:11px;color:var(--tx-3);letter-spacing:.02em;line-height:1.25;max-width:210px}
+@media(max-width:1120px){.brand .tag{display:none}}
+
+nav.tabs{display:flex;gap:2px;margin-left:auto;align-items:center;height:100%}
+nav.tabs a{
+  position:relative;display:flex;align-items:center;gap:7px;height:100%;
+  padding:0 13px;font-size:13px;font-weight:500;color:var(--tx-3);
+  border-bottom:2px solid transparent;transition:color .15s;white-space:nowrap;
+}
+nav.tabs a .ico{font-size:13px;opacity:.9}
+nav.tabs a:hover{color:var(--tx)}
+nav.tabs a.active{color:var(--tx);border-bottom-color:var(--teal)}
+nav.tabs a.active .ico{opacity:1}
+
+.refresh{display:flex;align-items:center;gap:10px;margin-left:6px;padding-left:14px;border-left:1px solid var(--line);flex-shrink:0}
+.rf-btn{display:flex;align-items:center;gap:6px;background:var(--panel-2);border:1px solid var(--line-2);
+  color:var(--tx-2);font-size:12px;padding:6px 10px;border-radius:var(--r-sm);cursor:pointer;font-family:var(--f-sans);
+  transition:.15s}
+.rf-btn:hover{background:var(--elev);color:var(--tx);border-color:#454b58}
+.rf-btn{flex-shrink:0;white-space:nowrap}
+.rf-btn .spin{display:inline-block;width:11px;height:11px;border:1.6px solid var(--tx-3);border-top-color:var(--teal);
+  border-radius:50%;}
+.rf-btn.loading .spin{animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.rf-time{font-size:11px;color:var(--mut);white-space:nowrap}
+.rf-time b{color:var(--tx-2);font-weight:500}
+@media(max-width:1000px){.rf-time{display:none}}
+
+/* mobile nav scroll */
+@media(max-width:960px){
+  .top-row{gap:12px;height:auto;flex-wrap:wrap;padding:10px 0}
+  nav.tabs{order:3;width:100%;margin-left:0;overflow-x:auto;border-top:1px solid var(--line);height:46px}
+  nav.tabs a{height:46px;padding:0 12px}
+  .refresh{margin-left:auto;border-left:0;padding-left:0}
+}
+
+/* ---------- layout ---------- */
+main{padding:26px 0 70px;min-height:60vh}
+.view-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:20px;flex-wrap:wrap}
+.view-head h1{margin:0;font-size:22px;font-weight:600;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.view-head h1 .em{font-size:20px}
+.view-head .sub{color:var(--tx-3);font-size:13px;margin-top:3px}
+.src-stamp{font-size:11px;color:var(--mut);display:flex;align-items:center;gap:7px;font-family:var(--f-mono)}
+.src-stamp .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 8px rgba(38,166,154,.7)}
+.src-stamp .dot.err{background:var(--red);box-shadow:0 0 8px rgba(239,83,80,.7)}
+.src-stamp .dot.loading{background:var(--amber);animation:pulse 1s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.3}}
+
+.section-title{display:flex;align-items:center;gap:10px;margin:30px 0 14px;font-size:13px;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--tx-2)}
+.section-title .count{background:var(--panel-2);border:1px solid var(--line-2);color:var(--tx-2);
+  font-size:11px;padding:1px 8px;border-radius:20px;font-family:var(--f-mono)}
+.section-title .rule{flex:1;height:1px;background:var(--line)}
+
+/* ---------- banner ---------- */
+.banner{
+  display:flex;align-items:center;gap:20px;padding:22px 26px;border-radius:var(--r);
+  border:1px solid var(--line-2);background:
+    radial-gradient(120% 160% at 0% 0%, rgba(38,166,154,.12), transparent 55%),
+    var(--panel);
+  margin-bottom:8px;box-shadow:var(--shadow);
+}
+.banner.zero{background:var(--panel)}
+.banner .big{font-size:54px;font-weight:700;line-height:1;font-family:var(--f-mono);color:var(--teal)}
+.banner.zero .big{color:var(--tx-3)}
+.banner .btxt{flex:1}
+.banner .btxt h2{margin:0 0 4px;font-size:18px;font-weight:600}
+.banner .btxt p{margin:0;color:var(--tx-2);font-size:13px}
+.banner .bbreak{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.banner .chip{font-size:12px;padding:4px 11px;border-radius:20px;background:var(--z-opp-bg);
+  border:1px solid var(--z-opp-bd);color:var(--teal-2);font-weight:500}
+.banner .chip.cl{background:rgba(224,163,58,.12);border-color:rgba(224,163,58,.35);color:var(--amber)}
+@media(max-width:560px){.banner{flex-direction:column;align-items:flex-start;gap:12px}.banner .big{font-size:44px}}
+
+/* ---------- grids ---------- */
+.grid{display:grid;gap:14px}
+.grid.c2{grid-template-columns:repeat(2,1fr)}
+.grid.c3{grid-template-columns:repeat(3,1fr)}
+.grid.c4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1000px){.grid.c3,.grid.c4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.grid.c2,.grid.c3,.grid.c4{grid-template-columns:1fr}}
+
+/* ---------- asset card ---------- */
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:16px 16px 15px;position:relative;transition:border-color .15s,transform .15s,background .15s;
+  cursor:pointer;overflow:hidden;
+}
+.card:hover{border-color:var(--line-2);background:var(--panel-2)}
+.card.opp{border-color:var(--z-opp-bd)}
+.card.opp::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 100% 0%, rgba(38,166,154,.10), transparent 60%)}
+.card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;position:relative}
+.tk{display:flex;flex-direction:column;gap:2px;min-width:0}
+.tk .ticker{font-size:20px;font-weight:700;letter-spacing:.02em;line-height:1.05}
+.tk .name{font-size:12px;color:var(--tx-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:165px}
+.tk .price{margin-top:5px;font-family:var(--f-mono);font-size:14px;color:var(--tx-2)}
+.tk .price .chg{margin-left:7px;font-size:12px}
+.chg.up{color:var(--pos)} .chg.down{color:var(--neg)}
+
+.score-wrap{text-align:right;flex-shrink:0}
+.score-num{font-family:var(--f-mono);font-weight:700;font-size:38px;line-height:.95;letter-spacing:-.02em}
+.score-num .den{font-size:14px;color:var(--mut);font-weight:400}
+.mult{font-family:var(--f-mono);font-size:12px;color:var(--tx-3);margin-top:2px}
+.mult b{color:var(--tx)}
+
+/* zone badge */
+.zbadge{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:20px;
+  font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;border:1px solid;cursor:help}
+.mult{cursor:help}
+.z-OPORTUNIDAD{background:var(--z-opp);color:#0b1f1c;border-color:var(--z-opp)}
+.z-ATRACTIVO{background:var(--z-atr-bg);color:var(--z-atr);border-color:var(--z-atr-bd)}
+.z-NEUTRAL{background:var(--z-neu-bg);color:var(--z-neu);border-color:var(--z-neu-bd)}
+.z-CARO{background:var(--z-caro-bg);color:var(--z-caro);border-color:var(--z-caro-bd)}
+
+/* ---------- signature score bar ---------- */
+.scorebar{margin-top:14px}
+.scorebar .track{position:relative;height:8px;border-radius:5px;overflow:hidden;display:flex;
+  border:1px solid rgba(0,0,0,.25)}
+.scorebar .seg{height:100%}
+.scorebar .seg.s-caro{background:rgba(239,83,80,.5)}
+.scorebar .seg.s-neu{background:rgba(120,123,134,.42)}
+.scorebar .seg.s-atr{background:rgba(38,166,154,.45)}
+.scorebar .seg.s-opp{background:rgba(38,166,154,.85)}
+.scorebar .marker{position:absolute;top:50%;transform:translate(-50%,-50%);z-index:2}
+.scorebar .marker .tri{position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+  width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid var(--tx)}
+.scorebar .marker .dot{width:13px;height:13px;border-radius:50%;border:2.5px solid var(--bg);
+  box-shadow:0 0 0 1px rgba(255,255,255,.25),0 0 10px rgba(38,166,154,.5)}
+.scorebar .labels{display:flex;justify-content:space-between;margin-top:6px;
+  font-size:9.5px;letter-spacing:.05em;color:var(--mut);text-transform:uppercase}
+.scorebar .labels span.on{color:var(--tx-2);font-weight:600}
+
+/* gauge card (variante C elegida) */
+.gauge-wrap{position:relative;margin:4px auto 0;width:200px;max-width:100%;text-align:center}
+.gauge-wrap .gsvg{display:block;width:100%;height:auto}
+.gauge-wrap .gv{position:absolute;left:0;right:0;bottom:16px;font-family:var(--f-mono);font-weight:700;font-size:34px;line-height:1;letter-spacing:-.02em}
+.gauge-wrap .gl{position:absolute;left:0;right:0;bottom:0;font-size:9.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.1em}
+.gauge-wrap.sm{width:168px;margin:0 0 0 auto}
+.gauge-wrap.sm .gv{font-size:29px;bottom:14px}
+.gfoot{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-size:13px;color:var(--tx-2)}
+.gfoot .mult{margin:0;font-family:var(--f-mono);font-size:12px;color:var(--tx-3)}
+.gfoot .mult b{color:var(--tx)}
+
+/* contrarian badge inline (home cards) */
+.contra{display:flex;align-items:center;gap:8px;margin-top:13px;padding:8px 10px;border-radius:var(--r-sm);
+  background:var(--panel-2);border:1px solid var(--line);font-size:11.5px;color:var(--tx-2);line-height:1.35}
+.card:hover .contra{background:var(--elev)}
+.contra .ic{font-size:13px}
+.contra.good{border-color:var(--z-opp-bd)}
+.contra.warn{border-color:rgba(224,163,58,.4)}
+.contra b{color:var(--tx);font-weight:600}
+
+/* sparkline */
+.spark{margin-top:12px;height:40px;width:100%;display:block}
+
+/* ---------- chile rows ---------- */
+.cl-row{display:grid;grid-template-columns:1.4fr .9fr 1.5fr auto;gap:16px;align-items:center;
+  padding:13px 16px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  cursor:pointer;transition:.15s}
+.cl-row:hover{border-color:var(--line-2);background:var(--panel-2)}
+.cl-row.opp{border-color:var(--z-opp-bd)}
+.cl-id .t{font-weight:700;font-size:15px}
+.cl-id .s{font-size:11px;color:var(--tx-3)}
+.cl-dy{text-align:left}
+.cl-dy .v{font-family:var(--f-mono);font-size:24px;font-weight:700;line-height:1}
+.cl-dy .l{font-size:10px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+.cl-bm{font-size:12px;color:var(--tx-2)}
+.cl-bm .pp{font-family:var(--f-mono);font-weight:700}
+.cl-bm .pp.pos{color:var(--pos)} .cl-bm .pp.neg{color:var(--tx-3)}
+.cl-bm .bar{margin-top:7px}
+@media(max-width:760px){
+  .cl-row{grid-template-columns:1fr auto;gap:8px 14px}
+  .cl-bm{grid-column:1/-1}
+}
+
+/* benchmark mini bar */
+.bmbar{position:relative;height:6px;background:var(--panel-2);border-radius:4px;overflow:visible;border:1px solid var(--line)}
+.bmbar .range{position:absolute;top:0;bottom:0;background:rgba(134,137,147,.35);border-radius:3px}
+.bmbar .pin{position:absolute;top:50%;width:9px;height:9px;border-radius:50%;transform:translate(-50%,-50%);
+  border:2px solid var(--bg)}
+
+/* ---------- panels / tables ---------- */
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.panel h3{margin:0 0 14px;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--tx-2)}
+
+.kv{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px}
+.kv:last-child{border-bottom:0}
+.kv .k{color:var(--tx-3)}
+.kv .v{font-family:var(--f-mono);color:var(--tx);font-weight:500}
+
+/* component bars */
+.comp{display:flex;flex-direction:column;gap:11px}
+.comp .crow{display:flex;flex-direction:column;gap:3px}
+.comp .row{display:grid;grid-template-columns:140px 1fr 64px;gap:12px;align-items:center}
+.comp .row .nm{font-size:12px;color:var(--tx-2)}
+.comp .row .nm small{display:block;color:var(--mut);font-size:10px}
+.comp .row .tr{height:7px;background:var(--panel-2);border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.comp .row .tr i{display:block;height:100%;background:linear-gradient(90deg,var(--teal),var(--teal-2));border-radius:4px}
+.comp .row .vl{text-align:right;font-family:var(--f-mono);font-size:12px;color:var(--tx)}
+.comp .row .vl small{color:var(--mut)}
+@media(max-width:560px){.comp .row{grid-template-columns:100px 1fr 50px}}
+
+/* tabs (sub) */
+.subtabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:16px}
+.subtabs button{background:none;border:0;border-bottom:2px solid transparent;color:var(--tx-3);
+  font-family:var(--f-sans);font-size:13px;padding:8px 12px;cursor:pointer;font-weight:500}
+.subtabs button:hover{color:var(--tx)}
+.subtabs button.on{color:var(--tx);border-bottom-color:var(--teal)}
+
+/* range selector */
+.rng{display:inline-flex;gap:2px;background:var(--panel-2);border:1px solid var(--line);border-radius:var(--r-sm);padding:2px}
+.rng button{background:none;border:0;color:var(--tx-3);font-family:var(--f-mono);font-size:11px;padding:4px 9px;
+  border-radius:5px;cursor:pointer}
+.rng button.on{background:var(--elev);color:var(--tx)}
+
+/* chart */
+.chart-box{position:relative;height:300px;width:100%}
+.chart-box.sm{height:180px}
+
+/* ---------- news ---------- */
+.layout-split{display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start}
+@media(max-width:980px){.layout-split{grid-template-columns:1fr}}
+
+.exec{border-radius:var(--r);border:1px solid var(--line-2);padding:16px;background:var(--panel)}
+.exec .sent{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.sent-pill{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.03em}
+.sent-pos{background:var(--z-opp-bg);color:var(--teal-2);border:1px solid var(--z-opp-bd)}
+.sent-neg{background:var(--z-caro-bg);color:var(--red);border:1px solid var(--z-caro-bd)}
+.sent-neu{background:var(--z-neu-bg);color:var(--z-neu);border:1px solid var(--z-neu-bd)}
+.exec .counts{margin-left:auto;font-family:var(--f-mono);font-size:12px;color:var(--tx-3)}
+.exec .counts .p{color:var(--pos)} .exec .counts .n{color:var(--neg)}
+.exec .narr{font-size:13px;color:var(--tx);line-height:1.5;margin:4px 0 0}
+.exec .verd{margin-top:10px;font-size:12px;color:var(--tx-2);padding-top:10px;border-top:1px solid var(--line)}
+.exec .verd b{color:var(--tx)}
+.exec .contra-line{margin-top:10px;font-size:12px;color:var(--tx-2);padding-top:10px;border-top:1px solid var(--line);line-height:1.5}
+.exec .contra-line b{color:var(--tx)}
+
+/* ---------- capa educativa ---------- */
+.edu-i{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;
+  border:1px solid var(--line-2);background:transparent;color:var(--mut);font-size:9.5px;font-family:var(--f-mono);
+  font-style:italic;cursor:pointer;margin-left:6px;vertical-align:middle;padding:0;line-height:1;flex-shrink:0;
+  transition:.15s}
+.edu-i:hover{color:var(--teal-2);border-color:var(--teal)}
+#eduWrap .edu-back{position:fixed;inset:0;z-index:90;background:transparent}
+#eduWrap .edu-pop{position:fixed;z-index:91;width:340px;max-width:calc(100vw - 24px);background:var(--elev);
+  border:1px solid var(--line-2);border-radius:12px;box-shadow:0 18px 50px -10px rgba(0,0,0,.75);padding:16px 18px}
+.edu-hd{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:13.5px;margin-bottom:10px;gap:12px}
+.edu-hd button{background:none;border:0;color:var(--mut);cursor:pointer;font-size:14px;padding:2px;line-height:1}
+.edu-hd button:hover{color:var(--tx)}
+.edu-lab{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);margin-bottom:4px}
+.edu-sec{margin-bottom:13px}
+.edu-sec:last-child{margin-bottom:0}
+.edu-sec .bd{font-size:12.5px;line-height:1.55;color:var(--tx-2)}
+#eduLect b{font-family:var(--f-mono)}
+@media(max-width:680px){
+  #eduWrap .edu-back{background:rgba(0,0,0,.55)}
+  #eduWrap .edu-pop{left:0!important;right:0;bottom:0;top:auto!important;width:100%;max-width:none;
+    border-radius:16px 16px 0 0;border-left:0;border-right:0;border-bottom:0;
+    padding:20px 22px calc(22px + env(safe-area-inset-bottom));animation:sheetUp .22s ease}
+  @keyframes sheetUp{from{transform:translateY(45%);opacity:.4}to{transform:none;opacity:1}}
+}
+.edu-inline{display:none;font-size:11.5px;line-height:1.45;margin-top:2px}
+.edu-inline b{font-family:var(--f-mono)}
+body.explain-on .edu-inline{display:block}
+.rf-btn.edu-on{border-color:var(--teal);color:var(--teal-2);background:rgba(38,166,154,.08)}
+
+/* contrarian alignment card */
+.align{border-radius:var(--r);border:1px solid var(--line-2);padding:16px 18px;margin-top:14px;
+  background:radial-gradient(130% 120% at 0 0, rgba(38,166,154,.08), transparent 60%), var(--panel)}
+.align.warn{background:radial-gradient(130% 120% at 0 0, rgba(224,163,58,.09), transparent 60%), var(--panel)}
+.align .hd{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:600}
+.align .hd .ic{font-size:20px}
+.align .mx{display:flex;gap:14px;margin:12px 0;flex-wrap:wrap}
+.align .mx .b{flex:1;min-width:130px;background:var(--panel-2);border:1px solid var(--line);border-radius:var(--r-sm);padding:10px 12px}
+.align .mx .b .l{font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
+.align .mx .b .v{font-size:14px;font-weight:600;margin-top:3px}
+.align .desc{font-size:12.5px;color:var(--tx-2);line-height:1.45}
+
+.news-list{display:flex;flex-direction:column;gap:9px}
+.news-cat{margin-bottom:8px}
+.news-cat .ch{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--tx-2);margin:14px 0 9px}
+.news-cat .ch .cnt{color:var(--mut);font-family:var(--f-mono);font-weight:400}
+.nitem{display:flex;gap:11px;padding:11px 12px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r-sm);
+  transition:.15s}
+.nitem:hover{border-color:var(--line-2);background:var(--panel-2)}
+.nitem .imp{flex-shrink:0;width:30px;text-align:center}
+.nitem .imp .e{font-size:15px}
+.nitem .imp .i{font-size:9px;font-family:var(--f-mono);color:var(--mut);margin-top:2px}
+.nitem .tirow{display:flex;gap:8px;align-items:flex-start}
+.nitem .nbadge{flex-shrink:0;font-size:10.5px;line-height:1.6;letter-spacing:1px}
+.nitem .impline{font-size:11.5px;margin-top:4px;line-height:1.4}
+.nitem .impline.pos{color:var(--pos)}
+.nitem .impline.neg{color:var(--neg)}
+.nitem .impline.neu{color:var(--mut)}
+.nitem .body{min-width:0;width:100%}
+.nitem .ti{font-size:13px;color:var(--tx);line-height:1.35;font-weight:500;display:block}
+.nitem:hover .ti{color:#fff}
+.nitem .meta{font-size:11px;color:var(--mut);margin-top:4px;display:flex;gap:8px;flex-wrap:wrap;font-family:var(--f-mono)}
+.nitem .razon{font-size:11.5px;color:var(--tx-3);margin-top:5px;line-height:1.35;font-style:italic}
+.imp-pos{color:var(--pos)} .imp-neg{color:var(--neg)}
+
+.sidebar-news{position:sticky;top:78px}
+.sidebar-news .hd{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--tx-2);
+  margin-bottom:12px;display:flex;align-items:center;gap:8px}
+
+/* dividend year breakdown */
+.divbars{display:flex;gap:10px;align-items:flex-end;height:90px;margin-top:6px}
+.divbars .c{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end}
+.divbars .c .bar{width:100%;max-width:48px;background:linear-gradient(180deg,var(--teal),rgba(38,166,154,.4));
+  border-radius:4px 4px 0 0;min-height:4px}
+.divbars .c .yr{font-size:11px;color:var(--tx-3);font-family:var(--f-mono)}
+.divbars .c .am{font-size:11px;color:var(--tx);font-family:var(--f-mono);font-weight:600}
+
+/* accordion */
+.acc{margin-top:30px}
+.acc-head{display:flex;align-items:center;gap:10px;width:100%;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--r);padding:13px 16px;cursor:pointer;color:var(--tx-2);font-size:13px;font-weight:500}
+.acc-head:hover{background:var(--panel-2)}
+.acc-head .chev{margin-left:auto;transition:transform .2s;color:var(--tx-3)}
+.acc.open .acc-head .chev{transform:rotate(90deg)}
+.acc-body{display:none;margin-top:12px}
+.acc.open .acc-body{display:block}
+
+/* loading skeleton + error */
+.skel{background:linear-gradient(90deg,var(--panel) 25%,var(--panel-2) 37%,var(--panel) 63%);
+  background-size:400% 100%;animation:sk 1.3s ease infinite;border-radius:var(--r)}
+@keyframes sk{0%{background-position:100% 0}100%{background-position:-100% 0}}
+.err-box{padding:16px 18px;border:1px solid var(--z-caro-bd);background:var(--z-caro-bg);border-radius:var(--r);
+  color:var(--tx-2);font-size:13px;display:flex;align-items:center;gap:12px}
+.err-box .rt{margin-left:auto;background:var(--panel-2);border:1px solid var(--line-2);color:var(--tx);
+  padding:5px 11px;border-radius:6px;cursor:pointer;font-size:12px}
+
+.pill-link{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--teal-2);font-weight:500}
+.detail-back{display:inline-flex;align-items:center;gap:6px;color:var(--tx-3);font-size:13px;margin-bottom:14px;cursor:pointer}
+.detail-back:hover{color:var(--tx)}
+
+/* footer */
+footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px}
+footer .fbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--mut)}
+footer .fbrand{font-weight:600;color:var(--tx-2);letter-spacing:.1em}
+footer .fbrand b{color:var(--teal)}
+footer .disc{max-width:560px;line-height:1.5}
+footer a.src{color:var(--tx-3);border-bottom:1px dotted var(--line-2)}
+footer a.src:hover{color:var(--teal-2)}
+
+.soon{border:1px dashed var(--line-2);border-radius:var(--r);padding:18px 20px;color:var(--tx-3);font-size:13px;
+  display:flex;align-items:center;gap:12px;background:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(255,255,255,.012) 9px,rgba(255,255,255,.012) 18px)}
+.soon .tag{font-family:var(--f-mono);font-size:11px;color:var(--mut);border:1px solid var(--line-2);padding:2px 7px;border-radius:5px}
+
+.fade-in{animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.hint{font-size:11px;color:var(--mut)}
+.right{text-align:right}
+.gap{height:14px}
+.dim{color:var(--tx-3)}
+
+
+/* tagline debajo del logo */
+.brand{flex-wrap:wrap}
+.brand .tag{display:block;flex-basis:100%;width:100%;margin-left:0;padding-left:0;border-left:none;margin-top:3px;white-space:nowrap}
+</style>
 </head>
 <body>
 <header class="top">
@@ -22,6 +485,7 @@
       <nav class="tabs" id="nav"></nav>
       <div class="refresh">
         <span class="rf-time" id="rfTime"></span>
+        <button class="rf-btn" id="eduBtn" title="Mostrar todas las lecturas explicadas">💡 Explicar</button>
         <button class="rf-btn" id="rfBtn" title="Actualizar datos"><span class="spin"></span>Actualizar</button>
       </div>
     </div>
@@ -49,11 +513,1400 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
-<script src="js/data.js"></script>
-<script src="js/ui.js"></script>
-<script src="js/cards.js"></script>
-<script src="js/views.js"></script>
-<script src="js/views2.js"></script>
-<script src="js/app.js"></script>
+<script>
+
+/* ===== js/data.js ===== */
+/* ============================================================
+   VALUE SIGNAL — data layer
+   ============================================================ */
+const VS = {
+  BASE: "https://raw.githubusercontent.com/jaredbellov/value-signal-system/main/",
+  FILES: {
+    gld:    "gld_data.json",
+    btc:    "btc_data.json",
+    etfs:   "dividend_etfs_data.json",
+    chile:  "acciones_chilenas.json",
+    n_gld:  "noticias_gld.json",
+    n_btc:  "noticias_btc.json",
+    n_etfs: "noticias_etfs.json",
+    n_chile:"noticias_chile.json",
+  },
+  data: {},          // key -> parsed json
+  status: {},        // key -> 'loading'|'ok'|'error'
+  updated: {},       // key -> ISO string of source
+  loadedAt: null,
+  AUTO_MIN: 15,      // auto-refresh interval (minutes)
+};
+
+/* ---- zone config (universal) ---- */
+const ZONES = ["CARO","NEUTRAL","ATRACTIVO","OPORTUNIDAD"];
+const ZONE_MULT = {CARO:0.5,NEUTRAL:1.0,ATRACTIVO:1.5,OPORTUNIDAD:2.5};
+// thresholds used ONLY to draw the signature bar segments (visual scale 0-100)
+const ZONE_BOUNDS = [0,35,50,70,100]; // caro|neutral|atractivo|oportunidad
+const isBuyZone = z => z==="ATRACTIVO" || z==="OPORTUNIDAD";
+
+/* ---- fetch ---- */
+async function fetchSource(key){
+  VS.status[key] = "loading";
+  if (typeof onStatusChange==="function") onStatusChange(key);
+  try{
+    const r = await fetch(VS.BASE + VS.FILES[key] + "?t=" + Date.now(), {cache:"no-store"});
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    const j = await r.json();
+    VS.data[key] = j;
+    VS.updated[key] = j.updated_at_utc || j.fecha_actualizacion || null;
+    VS.status[key] = "ok";
+  }catch(e){
+    VS.status[key] = "error";
+    VS.data[key] = VS.data[key] || null;
+    console.warn("fetch fail", key, e.message);
+  }
+  if (typeof onStatusChange==="function") onStatusChange(key);
+}
+
+async function fetchAll(){
+  VS.loadedAt = new Date();
+  await Promise.all(Object.keys(VS.FILES).map(fetchSource));
+}
+
+/* ---- formatting ---- */
+const fmt = {
+  usd(n,dec){ if(n==null||isNaN(n)) return "—"; return "$"+Number(n).toLocaleString("en-US",{minimumFractionDigits:dec??2,maximumFractionDigits:dec??2}); },
+  clp(n){ if(n==null||isNaN(n)) return "—"; return "$"+Math.round(n).toLocaleString("es-CL"); },
+  pct(n,dec){ if(n==null||isNaN(n)) return "—"; return Number(n).toFixed(dec??1)+"%"; },
+  signpct(n,dec){ if(n==null||isNaN(n)) return "—"; const v=Number(n); return (v>=0?"+":"")+v.toFixed(dec??2)+"%"; },
+  pp(n){ if(n==null||isNaN(n)) return "—"; const v=Number(n); return (v>=0?"+":"")+v.toFixed(2)+" pp"; },
+  num(n,dec){ if(n==null||isNaN(n)) return "—"; return Number(n).toFixed(dec??1); },
+  score(n){ if(n==null||isNaN(n)) return "—"; return Number(n).toFixed(1); },
+  ago(iso){
+    if(!iso) return "—";
+    const d = new Date(iso); if(isNaN(d)) return "—";
+    const s = Math.floor((Date.now()-d.getTime())/1000);
+    if(s<60) return "hace "+s+"s";
+    if(s<3600) return "hace "+Math.floor(s/60)+" min";
+    if(s<86400) return "hace "+Math.floor(s/3600)+" h";
+    return "hace "+Math.floor(s/86400)+" d";
+  },
+  clock(d){ d=d||new Date(); return d.toLocaleTimeString("es-CL",{hour:"2-digit",minute:"2-digit"}); },
+  date(iso){ const d=new Date(iso); if(isNaN(d)) return "—"; return d.toLocaleDateString("es-CL",{day:"2-digit",month:"short",year:"numeric"}); },
+};
+
+/* ---- sentiment helpers ---- */
+function sentSign(s){
+  if(!s) return 0;
+  s = s.toLowerCase();
+  if(s.includes("bajista")) return -1;
+  if(s.includes("alcista")) return 1;
+  return 0;
+}
+function sentClass(s){ const v=sentSign(s); return v>0?"sent-pos":v<0?"sent-neg":"sent-neu"; }
+
+/* ---- the contrarian cross (zone x news sentiment) ---- */
+function contrarian(zona, sentimiento){
+  const buy = isBuyZone(zona);
+  const caro = zona==="CARO";
+  const sg = sentSign(sentimiento);
+  if(buy && sg<0)  return {ic:"✅", cls:"good", tag:"Señal contrarian", desc:"Zona de compra + noticias bajistas: comprar con miedo es exactamente el plan."};
+  if(buy && sg>0)  return {ic:"✅✅", cls:"good", tag:"Doble señal", desc:"Zona de compra y momentum de noticias a favor: convicción reforzada."};
+  if(buy && sg===0)return {ic:"✅", cls:"good", tag:"Zona de compra", desc:"Score en zona atractiva; el flujo de noticias no aporta sesgo direccional claro."};
+  if(caro && sg>0) return {ic:"⚠️", cls:"warn", tag:"Euforia", desc:"Precio caro y noticias alcistas: no perseguir. Aportar menos este mes."};
+  if(caro && sg<0) return {ic:"⏳", cls:"muted", tag:"Posible corrección", desc:"Caro pero con noticias bajistas: esperar; el descuento aún no llega."};
+  return {ic:"•", cls:"muted", tag:"Neutral", desc:"Sin cruce relevante: mantener el aporte base del mes."};
+}
+
+/* ---- human labels for score components ---- */
+const SUB_LABELS = {
+  // GLD
+  drawdown:{n:"Drawdown",d:"caída desde máx. 52s"},
+  momentum:{n:"Momentum",d:"retorno 12-1m"},
+  ratio_sp500:{n:"Ratio vs S&P 500",d:"percentil 2y"},
+  ratio_silver:{n:"Ratio Oro/Plata",d:"percentil 2y"},
+  dxy:{n:"DXY (dólar)",d:"percentil 2y"},
+  real_yield:{n:"Tasa real",d:"TIPS 10y"},
+  vix:{n:"VIX",d:"volatilidad"},
+  // BTC
+  fear_greed:{n:"Fear & Greed",d:"índice de sentimiento"},
+  pi_cycle:{n:"Pi Cycle Top",d:"MA111 vs MA350×2"},
+  halving_cycle:{n:"Ciclo de halving",d:"fase del ciclo"},
+  mvrv:{n:"MVRV Z-Score",d:"valor vs realizado"},
+  // dividend ETFs componentes
+  dy_vs_historico:{n:"DY vs histórico",d:"yield actual vs 3y"},
+  balance_cagr:{n:"Balance CAGR+DY",d:"crecimiento + renta"},
+  dgr:{n:"DGR",d:"crecimiento del dividendo"},
+};
+const subLabel = k => SUB_LABELS[k] || {n:k, d:""};
+
+/* ===== js/ui.js ===== */
+/* ============================================================
+   VALUE SIGNAL — UI components (return HTML strings)
+   ============================================================ */
+const esc = s => String(s??"").replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function zoneBadge(zona, mult){
+  const m = mult!=null ? ` · x${mult}` : "";
+  return `<span class="zbadge z-${zona}" onclick="openEduStatic('zonas',event)" title="¿Qué significan las zonas?">${esc(zona)}${m}</span>`;
+}
+
+/* semicircular score gauge (zone-colored arc + zone ticks at 35/50/70) */
+function vsGauge(score, zona){
+  const p = Math.max(0,Math.min(100,score||0))/100;
+  const cx=100, cy=104, R=82;
+  const pol = (rr,a)=>{const rad=(a-90)*Math.PI/180; return [cx+rr*Math.cos(rad), cy+rr*Math.sin(rad)];};
+  const garc = (rr,a0,a1)=>{const[x0,y0]=pol(rr,a0),[x1,y1]=pol(rr,a1);const lg=Math.abs(a1-a0)>180?1:0;
+    return `M ${x0.toFixed(2)} ${y0.toFixed(2)} A ${rr} ${rr} 0 ${lg} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`;};
+  const col = zoneColorVar(zona);
+  const a0=-90, a1=90, va=a0+(a1-a0)*p;
+  return `<svg viewBox="0 0 200 120" class="gsvg">
+    <path d="${garc(R,a0,a1)}" fill="none" stroke="var(--line)" stroke-width="11" stroke-linecap="round"/>
+    <path d="${garc(R,a0,va)}" fill="none" stroke="${col}" stroke-width="11" stroke-linecap="round"/>
+    ${[35,50,70].map(t=>{const aa=a0+(a1-a0)*t/100;const[tx,ty]=pol(R+5.5,aa);const[ix,iy]=pol(R-5.5,aa);
+      return `<line x1="${ix.toFixed(2)}" y1="${iy.toFixed(2)}" x2="${tx.toFixed(2)}" y2="${ty.toFixed(2)}" stroke="var(--panel)" stroke-width="2.5"/>`;}).join("")}
+  </svg>`;
+}
+
+/* signature 4-segment score bar with position marker */
+function scoreBar(score, zona){
+  const p = Math.max(0,Math.min(100,score||0));
+  const segs = [
+    ["s-caro","Caro","CARO"],["s-neu","Neutral","NEUTRAL"],
+    ["s-atr","Atractivo","ATRACTIVO"],["s-opp","Oportunidad","OPORTUNIDAD"],
+  ];
+  const segW = [35,15,20,30]; // matches ZONE_BOUNDS widths
+  const color = {CARO:"var(--z-caro)",NEUTRAL:"var(--z-neu)",ATRACTIVO:"var(--z-atr)",OPORTUNIDAD:"var(--z-opp)"}[zona]||"var(--teal)";
+  return `<div class="scorebar">
+    <div class="track">
+      ${segs.map((s,i)=>`<div class="seg ${s[0]}" style="width:${segW[i]}%"></div>`).join("")}
+      <div class="marker" style="left:${p}%">
+        <div class="tri"></div>
+        <div class="dot" style="background:${color}"></div>
+      </div>
+    </div>
+    <div class="labels">
+      ${segs.map(s=>`<span class="${s[2]===zona?'on':''}">${s[1]}</span>`).join("")}
+    </div>
+  </div>`;
+}
+
+/* tiny inline SVG sparkline from [{...,close|precio}] */
+function sparkline(points, valKey, color){
+  if(!points||!points.length) return "";
+  const vals = points.map(p=>p[valKey]).filter(v=>v!=null);
+  if(vals.length<2) return "";
+  const w=300,h=40,pad=2;
+  const min=Math.min(...vals),max=Math.max(...vals),rng=(max-min)||1;
+  const step=(w-pad*2)/(vals.length-1);
+  const pts=vals.map((v,i)=>[pad+i*step, pad+(h-pad*2)*(1-(v-min)/rng)]);
+  const line=pts.map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
+  const area=line+` L${pts[pts.length-1][0].toFixed(1)} ${h} L${pts[0][0].toFixed(1)} ${h} Z`;
+  const up=vals[vals.length-1]>=vals[0];
+  const c=color||(up?"var(--teal)":"var(--red)");
+  const id="g"+Math.random().toString(36).slice(2,8);
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+    <defs><linearGradient id="${id}" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="${c}" stop-opacity=".28"/><stop offset="1" stop-color="${c}" stop-opacity="0"/>
+    </linearGradient></defs>
+    <path d="${area}" fill="url(#${id})"/>
+    <path d="${line}" fill="none" stroke="${c}" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+  </svg>`;
+}
+
+/* inline contrarian strip for home cards */
+function contrarianStrip(zona, sentimiento){
+  const c = contrarian(zona, sentimiento);
+  const sl = sentimiento ? `noticias ${esc(sentimiento)}` : "sin noticias";
+  return `<div class="contra ${c.cls}">
+    <span class="ic">${c.ic}</span>
+    <span><b>${esc(zona)}</b> · ${sl} → <b>${c.tag}</b></span>
+  </div>`;
+}
+
+/* benchmark mini bar for chilean stocks: DY vs [min,max] sector range */
+function benchBar(dy, min, max, status){
+  // scale 0 .. max*1.6
+  const top = Math.max(max*1.6, dy*1.15, max+2);
+  const x = v => Math.max(0,Math.min(100,(v/top)*100));
+  const color = status==="Sobre benchmark"?"var(--z-opp)":status==="Bajo benchmark"?"var(--z-caro)":"var(--z-neu)";
+  return `<div class="bmbar">
+    <div class="range" style="left:${x(min)}%;width:${x(max)-x(min)}%"></div>
+    <div class="pin" style="left:${x(dy)}%;background:${color}"></div>
+  </div>`;
+}
+
+/* component score bars (0-100) with optional weights + educational layer */
+function compBars(comp, pesos, edus){
+  const keys = Object.keys(comp||{});
+  return `<div class="comp">${keys.map(k=>{
+    const v = comp[k]; const lab = subLabel(k);
+    const w = pesos && pesos[k]!=null ? `${pesos[k]}%` : "";
+    const ed = edus && edus[k];
+    return `<div class="crow"><div class="row">
+      <div class="nm">${esc(lab.n)}${ed?ed.icon:""}${lab.d?`<small>${esc(lab.d)}</small>`:""}</div>
+      <div class="tr"><i style="width:${Math.max(0,Math.min(100,v))}%"></i></div>
+      <div class="vl">${fmt.num(v,0)}${w?`<small> · ${w}</small>`:""}</div>
+    </div>${ed?ed.inline:""}</div>`;
+  }).join("")}</div>`;
+}
+
+/* executive summary block (+ lectura contrarian en lenguaje simple) */
+function execSummary(news, ctx){
+  if(!news||!news.resumen_ejecutivo) return "";
+  const r = news.resumen_ejecutivo;
+  let contraLine = "";
+  if(ctx && ctx.zona){
+    const sg = sentSign(r.sentimiento);
+    const mood = sg>0?"optimista":sg<0?"pesimista":"neutro";
+    const buy = isBuyZone(ctx.zona), caro = ctx.zona==="CARO";
+    const verdict = buy ? "buena noticia: el plan es comprar cuando otros dudan"
+      : caro && sg>0 ? "señal de cautela: no perseguir"
+      : caro && sg<0 ? "razón para esperar"
+      : "neutral: mantener el aporte base";
+    contraLine = `<div class="contra-line">El mercado está <b>${mood}</b> con ${esc(ctx.label||"el activo")}. Para una estrategia contrarian, eso es <b>${verdict}</b>.</div>`;
+  }
+  return `<div class="exec">
+    <div class="sent">
+      <span class="sent-pill ${sentClass(r.sentimiento)}">${esc(r.sentimiento)}</span>
+      <span class="counts"><span class="p">▲${r.n_positivas??0}</span> · <span class="n">▼${r.n_negativas??0}</span> · ${r.n_neutrales??0} neutr.</span>
+    </div>
+    <p class="narr">${esc(r.narrativa)}</p>
+    ${r.veredicto?`<div class="verd"><b>Veredicto:</b> ${esc(r.veredicto)}</div>`:""}
+    ${contraLine}
+  </div>`;
+}
+
+/* contrarian alignment card (zone x sentiment) */
+function alignCard(zona, score, news){
+  if(!news||!news.resumen_ejecutivo) return "";
+  const r = news.resumen_ejecutivo;
+  const c = contrarian(zona, r.sentimiento);
+  return `<div class="align ${c.cls==='warn'?'warn':''}">
+    <div class="hd"><span class="ic">${c.ic}</span> ${esc(c.tag)}</div>
+    <div class="mx">
+      <div class="b"><div class="l">Zona (score ${fmt.score(score)})</div><div class="v" style="color:${zoneColorVar(zona)}">${esc(zona)}</div></div>
+      <div class="b"><div class="l">Noticias 3 días</div><div class="v">${esc(r.sentimiento)}</div></div>
+    </div>
+    <div class="desc">${esc(c.desc)}</div>
+  </div>`;
+}
+function zoneColorVar(z){ return {CARO:"var(--z-caro)",NEUTRAL:"var(--z-neu)",ATRACTIVO:"var(--z-atr)",OPORTUNIDAD:"var(--z-opp)"}[z]||"var(--tx)"; }
+
+/* one news item — badge dirección+intensidad SIEMPRE visible + razonamiento legible */
+function newsItem(it){
+  const imp = it.impacto||{};
+  const dir = imp.direccion;
+  const n = Math.min(3, Math.max(1, imp.intensidad||1));
+  const badge = dir==="positivo" ? "🟢".repeat(n) : dir==="negativo" ? "🔴".repeat(n) : "⚪";
+  const impline = dir==="positivo" ? `<div class="impline pos">↑ Empuja al alza: ${esc(imp.razonamiento||"")}</div>`
+    : dir==="negativo" ? `<div class="impline neg">↓ Presiona a la baja: ${esc(imp.razonamiento||"")}</div>`
+    : `<div class="impline neu">− Sin impacto direccional claro</div>`;
+  return `<a class="nitem" href="${esc(it.link||'#')}" target="_blank" rel="noopener">
+    <div class="body">
+      <div class="tirow"><span class="nbadge">${badge}</span><span class="ti">${esc(it.title)}</span></div>
+      ${impline}
+      <div class="meta"><span>${esc(it.source||"")}</span><span>${fmt.ago(it.pubdate_iso||it.pubdate)}</span></div>
+    </div>
+  </a>`;
+}
+
+/* full news section grouped by category (sorted by impact intensity) */
+function newsSection(news, opts){
+  if(!news||!news.noticias_por_categoria) return `<div class="hint">Sin noticias disponibles.</div>`;
+  const meta = news.categorias_meta||{};
+  const cats = Object.keys(news.noticias_por_categoria).filter(c=>(news.noticias_por_categoria[c]||[]).length);
+  const compact = opts&&opts.compact;
+  return cats.map(cat=>{
+    let items = (news.noticias_por_categoria[cat]||[]).slice();
+    items.sort((a,b)=>(Math.abs((b.impacto||{}).intensidad||0))-(Math.abs((a.impacto||{}).intensidad||0)));
+    if(compact) items = items.slice(0,3);
+    const m = meta[cat]||{emoji:"•",label:cat};
+    return `<div class="news-cat">
+      <div class="ch">${m.emoji||"•"} ${esc(m.label||cat)} <span class="cnt">${items.length}</span></div>
+      <div class="news-list">${items.map(newsItem).join("")}</div>
+    </div>`;
+  }).join("");
+}
+
+/* loading / error helpers */
+function skeletonCards(n){ return `<div class="grid c3">${Array.from({length:n||3}).map(()=>`<div class="skel" style="height:200px"></div>`).join("")}</div>`; }
+function errBox(key,label){
+  return `<div class="err-box">⚠️ No se pudo cargar <b style="margin:0 4px">${esc(label||key)}</b>. El resto del panel sigue disponible.
+    <button class="rt" onclick="retrySource('${key}')">Reintentar</button></div>`;
+}
+function srcStamp(key){
+  const st = VS.status[key];
+  const cls = st==="error"?"err":st==="loading"?"loading":"";
+  const t = st==="error"?"error de carga":st==="loading"?"actualizando…":"actualizado "+fmt.ago(VS.updated[key]);
+  return `<span class="src-stamp"><span class="dot ${cls}"></span>${esc(t)}</span>`;
+}
+
+/* ===== js/edu.js ===== */
+/* ============================================================
+   VALUE SIGNAL — capa educativa
+   Diccionario QUÉ MIDE + lecturas dinámicas (umbrales del
+   paquete educativo) + popover/bottom-sheet + modo explicar.
+   ============================================================ */
+VS.eduReg = [];
+
+const EDU_COLORS = { vi:"#2fd4c4", v:"#26a69a", vs:"#5ccabd", g:"#9aa1ad", a:"#e0a33a", r:"#ef5350" };
+
+const EDU = {
+  /* ---------- compartidos ---------- */
+  drawdown52: { t:"Drawdown (52 semanas)",
+    mide:"Cuánto ha caído el precio desde su punto más alto del último año. Es el “descuento” actual respecto al mejor momento reciente.",
+    leer(c){ const d=c.dd, v=`<b>${fmt.signpct(d,1)}</b> — `;
+      if(d>=-3)  return {h:v+"Cerca de máximos. Sin descuento: comprar aquí es pagar precio completo.", c:"r"};
+      if(d>=-10) return {h:v+"Retroceso moderado. Descuento leve frente a máximos.", c:"g"};
+      if(d>=-20) return {h:v+"Corrección importante. Zona donde el contrarian empieza a interesarse.", c:"v"};
+      return {h:v+"Caída profunda. Históricamente, comprar en estas zonas ha premiado la paciencia.", c:"vi"}; } },
+
+  momentum: { t:"Momentum 12-1m",
+    mide:"La tendencia de fondo del último año (se excluye el último mes porque suele ser ruido). Positivo = viene subiendo; negativo = viene cayendo.",
+    leer(c){ const m=c.m, v=`<b>${fmt.signpct(m,1)}</b> — `;
+      if(m>20)  return {h:v+"Tendencia alcista fuerte. El activo viene corriendo — cuidado con comprar euforia.", c:"a"};
+      if(m>5)   return {h:v+"Tendencia alcista saludable.", c:"vs"};
+      if(m>=-5) return {h:v+"Sin tendencia clara.", c:"g"};
+      return {h:v+"Tendencia bajista. Para el contrarian, las caídas sostenidas crean los mejores precios de entrada.", c:c.buy?"v":"g"}; } },
+
+  /* ---------- oro ---------- */
+  ratio_sp500: { t:"Ratio vs S&P 500",
+    mide:"Si el oro está caro o barato COMPARADO con las acciones americanas. Percentil alto = oro caro vs bolsa; bajo = oro barato vs bolsa.",
+    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 años) — `;
+      if(p<25) return {h:v+"El oro está barato frente a las acciones. Punto a favor de rotar aportes hacia oro.", c:"v"};
+      if(p<=75) return {h:v+"Relación oro/bolsa en rango normal.", c:"g"};
+      return {h:v+"El oro está caro frente a las acciones. La bolsa ofrece mejor valor relativo.", c:"r"}; } },
+
+  ratio_silver: { t:"Ratio Oro/Plata",
+    mide:"Cuántas onzas de plata compra una de oro. Cuando el ratio es alto, el oro está caro frente a la plata (o hay miedo en el mercado).",
+    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 años) — `;
+      if(p<25) return {h:v+"El oro está barato frente a la plata. Punto a favor de rotar aportes hacia oro.", c:"v"};
+      if(p<=75) return {h:v+"Relación oro/plata en rango normal.", c:"g"};
+      return {h:v+"El oro está caro frente a la plata. La plata ofrece mejor valor relativo.", c:"r"}; } },
+
+  dxy: { t:"DXY (índice dólar)",
+    mide:"La fuerza del dólar frente a otras monedas. El oro se mueve al revés del dólar: dólar fuerte = viento en contra del oro.",
+    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 años) — `;
+      if(p>75) return {h:v+"Dólar muy fuerte — viento en contra para el oro. Si el dólar se debilita, el oro tiene espacio para subir.", c:"v"};
+      if(p>=25) return {h:v+"Dólar en rango normal.", c:"g"};
+      return {h:v+"Dólar débil — el oro ya recibió ese impulso; queda menos combustible por ese lado.", c:"a"}; } },
+
+  real_yield: { t:"Tasa real 10y (TIPS)",
+    mide:"Lo que paga un bono americano descontando la inflación. Es el “costo de oportunidad” de tener oro (que no paga interés). Tasa real alta = el bono compite mejor contra el oro.",
+    leer(c){ const r=c.v, v=`<b>${fmt.pct(r,2)}</b> — `;
+      if(r>2)  return {h:v+"Tasas reales altas: los bonos compiten fuerte contra el oro. Freno estructural.", c:"r"};
+      if(r>=1) return {h:v+"Costo de oportunidad moderado.", c:"g"};
+      if(r>=0) return {h:v+"Tasas reales bajas: ambiente cómodo para el oro.", c:"v"};
+      return {h:v+"Tasas reales negativas: el escenario dorado del oro — el bono pierde contra la inflación.", c:"vi"}; } },
+
+  vix: { t:"VIX (índice del miedo)",
+    mide:"Cuánto miedo hay en la bolsa americana. Picos de VIX = pánico; el oro suele recibir flujos de refugio.",
+    leer(c){ const x=c.v, v=`<b>${fmt.num(x,1)}</b> — `;
+      if(x<15) return {h:v+"Mercado tranquilo, sin demanda de refugio.", c:"g"};
+      if(x<=25) return {h:v+"Nerviosismo normal.", c:"g"};
+      if(x<=35) return {h:v+"Miedo elevado: flujos de refugio hacia el oro.", c:"v"};
+      return {h:v+"Pánico en los mercados. El refugio se paga caro — y el contrarian mira la bolsa, no solo el oro.", c:"a"}; } },
+
+  /* ---------- bitcoin ---------- */
+  drawdown_ath: { t:"Drawdown desde ATH",
+    mide:"Cuánto cayó BTC desde su máximo de todos los tiempos. BTC es cíclico: ha caído 50-85% varias veces y luego marcó nuevos máximos.",
+    leer(c){ const d=c.dd, v=`<b>${fmt.signpct(d,1)}</b> — `;
+      if(d>=-15) return {h:v+"Cerca de máximos. Zona de euforia típica — el contrarian aporta lo mínimo.", c:"r"};
+      if(d>=-35) return {h:v+"Corrección típica de mercado alcista.", c:"g"};
+      if(d>=-55) return {h:v+"Caída mayor. Históricamente, acumular en esta zona ha dado buenos resultados a 2-4 años.", c:"v"};
+      return {h:v+"Capitulación histórica. Las mejores compras de la historia de BTC se hicieron aquí — con estómago.", c:"vi"}; } },
+
+  fear_greed: { t:"Fear & Greed",
+    mide:"El termómetro emocional del mercado cripto (0 = pánico total, 100 = euforia total). Se construye con volatilidad, volumen, redes sociales y dominancia.",
+    leer(c){ const f=c.v, v=`<b>${fmt.num(f,0)}</b>${c.cl?` (${esc(c.cl)})`:""} — `;
+      if(f<=25) return {h:v+"MIEDO EXTREMO. “Sé codicioso cuando otros tienen miedo” — Buffett. Las zonas de miedo extremo han sido históricamente los mejores puntos de compra.", c:"vi"};
+      if(f<=45) return {h:v+"Miedo. El mercado pesimista suele regalar precios.", c:"v"};
+      if(f<=55) return {h:v+"Neutral.", c:"g"};
+      if(f<=75) return {h:v+"Codicia. Precaución: no perseguir.", c:"a"};
+      return {h:v+"CODICIA EXTREMA. Cuando todos celebran, el contrarian guarda la billetera.", c:"r"}; } },
+
+  pi_cycle: { t:"Pi Cycle Top",
+    mide:"Un detector de techos de ciclo: compara dos promedios móviles. Cuando la media corta cruza por encima del doble de la larga, históricamente BTC estuvo en zona de techo (2013, 2017, 2021).",
+    leer(c){ const r=c.r, v=`Ratio <b>${fmt.num(r,3)}</b> — `;
+      if(r<0.6)  return {h:v+"Muy lejos de zona de techo. El ciclo tiene cuerda.", c:"v"};
+      if(r<=0.85) return {h:v+"Distancia cómoda al techo de ciclo.", c:"vs"};
+      if(r<=0.95) return {h:v+"Acercándose a zona de techo histórica. Reducir agresividad.", c:"a"};
+      return {h:v+"Señal de techo de ciclo activa o inminente. Zona donde históricamente convino aportar lo mínimo.", c:"r"}; } },
+
+  halving: { t:"Ciclo de halving",
+    mide:"BTC reduce a la mitad su emisión cada ~4 años (halving). El precio ha seguido un patrón cíclico alrededor de estos eventos: acumulación → alza → techo → bear market → repetición.",
+    leer(c){ const f=c.fase||"", v=`<b>${esc(f)}</b>${c.meses!=null?` (${fmt.num(c.meses,1)} meses desde el halving)`:""} — `;
+      if(/bear/i.test(f)) return {h:v+"Fase históricamente de ACUMULACIÓN: precios deprimidos mientras el mercado olvida a BTC. Aquí se siembran los retornos del próximo ciclo.", c:"v"};
+      if(/bull/i.test(f)) return {h:v+"Fase de expansión. Disfrutar el viaje, pero aportar con cabeza fría.", c:"a"};
+      return {h:v+"Fase de transición: el mercado empieza a anticipar la reducción de oferta.", c:"g"}; } },
+
+  mvrv: { t:"MVRV Z-Score",
+    mide:"Compara el precio de mercado contra el precio promedio al que se movieron las monedas por última vez (“lo que pagaron los tenedores”). Alto = mercado sobrecalentado; bajo o negativo = mercado deprimido.",
+    leer(c){ const z=c.z, v=`<b>${fmt.num(z,2)}</b> — `;
+      if(z<0)  return {h:v+"Territorio de capitulación: el tenedor promedio pierde dinero. Históricamente suelo de ciclo.", c:"vi"};
+      if(z<=1) return {h:v+"Mercado deprimido o en recuperación temprana — zona de valor.", c:"v"};
+      if(z<=3) return {h:v+"Valoración media del ciclo.", c:"g"};
+      if(z<=5) return {h:v+"Mercado caliente.", c:"a"};
+      return {h:v+"Zona de euforia histórica de techos.", c:"r"}; } },
+
+  /* ---------- dividend ETFs ---------- */
+  dy_vs_hist: { t:"DY vs histórico (35%)",
+    mide:"El dividend yield de HOY comparado con su propio promedio de 3 años. Como el yield sube cuando el precio baja, un yield sobre su promedio significa precio castigado = oportunidad de comprar renta “en oferta”.",
+    leer(c){ const a=c.a, h=c.h, v=`<b>${fmt.pct(a)}</b> vs <b>${fmt.pct(h)}</b> hist — `;
+      if(a>h+0.4) return {h:v+"Yield muy por sobre su promedio: estás comprando el mismo flujo de dividendos más barato que de costumbre.", c:"vi"};
+      if(Math.abs(a-h)<=0.1) return {h:v+"Yield en línea con su historia.", c:"g"};
+      if(a>h) return {h:v+"Yield sobre su promedio histórico — precio levemente castigado.", c:"v"};
+      return {h:v+"Yield bajo su promedio: el precio corrió más rápido que el dividendo. Pagas premium.", c:"r"}; } },
+
+  balance_cagr: { t:"Balance CAGR+DY (15%)",
+    mide:"La suma de crecimiento del precio (CAGR) + renta por dividendo. Es el “retorno total” que entrega el ETF: un buen dividendero combina ambos.",
+    leer(c){ const t=c.v, v=`<b>${fmt.pct(t)}</b> total — `;
+      if(t>12) return {h:v+"Retorno total excelente: crecimiento y renta trabajando juntos.", c:"v"};
+      if(t>=8) return {h:v+"Retorno total saludable.", c:"vs"};
+      if(t>=4) return {h:v+"Retorno total modesto.", c:"g"};
+      return {h:v+"Retorno total pobre — el ETF no está entregando ni crecimiento ni renta suficiente.", c:"r"}; } },
+
+  dgr: { t:"DGR — crecimiento del dividendo (15%)",
+    mide:"A qué ritmo CRECE el dividendo año a año (promedio 3 años). Un dividendo creciente es señal de negocio sano y protege contra la inflación. Es el corazón de la estrategia DGI.",
+    leer(c){ const g=c.g, v=`<b>${fmt.signpct(g,1)}</b> anual — `;
+      if(g>8)  return {h:v+"Dividendo creciendo fuerte: cada año cobras más por las mismas cuotas.", c:"vi"};
+      if(g>=4) return {h:v+"Crecimiento de dividendo saludable, sobre la inflación.", c:"v"};
+      if(g>=0) return {h:v+"Dividendo casi plano: pierde poder de compra frente a la inflación.", c:"a"};
+      return {h:v+"ALERTA: dividendo recortado. Revisar si es puntual o tendencia.", c:"r"}; } },
+
+  /* ---------- acciones chilenas ---------- */
+  cl_dy: { t:"DY 3 años",
+    mide:"El dividendo promedio de los últimos 3 años dividido por el precio de HOY. Usamos 3 años para no dejarnos engañar por un año excepcional. IMPORTANTE: excluye dividendos EVENTUALES (pagos únicos que no se repiten) — incluirlos infla la rentabilidad esperada y es el error clásico del dividendero novato.",
+    leer(c){ const v=`<b>${fmt.pct(c.dy)}</b> — `;
+      const col = c.status==="Sobre benchmark"?"v":c.status==="Bajo benchmark"?"r":"g";
+      return {h:v+"Se evalúa contra el rango normal de SU sector (ver benchmark sectorial), no contra un número universal.", c:col}; } },
+
+  cl_benchmark: { t:"Benchmark sectorial",
+    mide:"El rango de dividend yield “normal” para el sector de la acción (AFPs rinden distinto que eléctricas o que holdings). Un yield se evalúa contra SU sector, no contra un número universal.",
+    leer(c){
+      if(c.status==="Sobre benchmark") return {h:`<b>${fmt.pp(c.pp)}</b> sobre el máximo sectorial — Rinde MÁS que el techo de su sector: el mercado está castigando el precio o el dividendo creció. Para el cazador de rentas, es la señal de compra.`, c:"v"};
+      if(c.status==="Bajo benchmark") return {h:`<b>${fmt.pp(c.pp)}</b> vs máximo sectorial — Rinde menos que su sector: o el precio está caro o el dividendo se debilitó.`, c:"r"};
+      return {h:`<b>${fmt.pp(c.pp)}</b> vs máximo sectorial — Rinde lo normal para su sector. Precio justo, sin descuento.`, c:"g"}; } },
+
+  cl_clasificacion: { t:"Clasificación",
+    mide:"El tipo de empresa según su crecimiento (G = ROE × utilidades retenidas). Define cuánto yield se le exige.",
+    leer(c){ const k=(c.c||"").toLowerCase();
+      if(k.includes("vaca")) return {h:"<b>VACA LECHERA</b> (G<10%, payout >80%): reparte casi todo, no crece. Se le exige yield alto (8-9%) porque el dividendo es todo lo que da.", c:"g"};
+      if(k.includes("dgi")) return {h:"<b>DGI</b> (G 10-15%, payout 30-80%): reparte y crece — el dividendo debería SUBIR año a año. Se acepta yield menor (6-7%) a cambio de crecimiento.", c:"vs"};
+      if(k.includes("crec")) return {h:"<b>CRECIMIENTO</b> (G>15%): reinvierte todo, casi no reparte. No es para estrategia de dividendos (aún).", c:"a"};
+      return {h:`<b>${esc(c.c||"—")}</b>`, c:"g"}; } },
+
+  cl_cagr: { t:"CAGR 3 / 5 / 10 años",
+    mide:"Crecimiento anual compuesto del precio en distintas ventanas. Complementa al yield: una acción puede rendir 8% de dividendo pero perder valor año a año (trampa de yield).",
+    leer(c){ const v=`<b>${fmt.pct(c.c3)} / ${fmt.pct(c.c5)} / ${fmt.pct(c.c10)}</b> — `;
+      if(c.c3>0 && c.c5>0 && c.c10>0) return {h:v+"Precio estable o creciente: el dividendo es ganancia real.", c:"v"};
+      if(c.c3<0 && c.c5<0) return {h:v+"OJO: el precio cae en el tiempo — parte del “dividendo” es devolución de tu propio capital vía pérdida de precio. Posible trampa de yield.", c:"r"};
+      return {h:v+"Ventanas mixtas: revisar la tendencia de largo plazo.", c:"g"}; } },
+};
+
+/* microcopy fijo (Sección 6 + tooltip del panel de noticias) */
+const STATIC_EDU = {
+  score: { t:"Score 0-100", mide:"Qué tan atractivo está el precio HOY para aportar. No predice el futuro: mide cuánto descuento ofrece el presente. Más alto = más barato frente a su propia historia.", static:true },
+  zonas: { t:"Zonas y multiplicadores", mide:"El score define cuánto aportar este mes: CARO ×0.5 (la mitad del aporte base), NEUTRAL ×1.0, ATRACTIVO ×1.5, OPORTUNIDAD ×2.5. Nunca es “vender”: es un sistema de acumulación disciplinada.", static:true },
+  mult: { t:"Multiplicador de aporte", mide:"Tu aporte base × el multiplicador de la zona. Ejemplo: si aportas $100 al mes y la zona es OPORTUNIDAD, este mes corresponde aportar $250.", static:true },
+  news: { t:"Cómo se analizan las noticias", mide:"Cada noticia se analiza automáticamente: detectamos si empuja el precio al alza o a la baja y con qué fuerza. El resumen combina todas las noticias de las últimas 72 h en una sola lectura.", static:true },
+};
+
+/* ---- builders ---- */
+function eduFor(id, ctx){
+  const d = EDU[id]; if(!d) return {icon:"", inline:""};
+  const lect = d.leer(ctx||{});
+  VS.eduReg.push({t:d.t, mide:d.mide, lect});
+  const i = VS.eduReg.length-1;
+  return {
+    icon: `<button class="edu-i" onclick="openEdu(${i},event)" aria-label="Explicación: ${esc(d.t)}">i</button>`,
+    inline: `<div class="edu-inline" style="color:${EDU_COLORS[lect.c]||EDU_COLORS.g}">↳ ${lect.h}</div>`,
+  };
+}
+function eduIconStatic(key){
+  return `<button class="edu-i" onclick="openEduStatic('${key}',event)" aria-label="Explicación">i</button>`;
+}
+
+/* ---- popover / bottom-sheet ---- */
+function ensureEduDom(){
+  if(document.getElementById("eduWrap")) return;
+  const d = document.createElement("div");
+  d.id = "eduWrap"; d.hidden = true;
+  d.innerHTML = `<div class="edu-back" onclick="closeEdu()"></div>
+    <div class="edu-pop" role="dialog" aria-modal="true">
+      <div class="edu-hd"><span id="eduTitle"></span><button onclick="closeEdu()" aria-label="Cerrar">✕</button></div>
+      <div class="edu-sec" id="eduMideSec"><div class="edu-lab" id="eduMideLab">Qué mide</div><div class="bd" id="eduMide"></div></div>
+      <div class="edu-sec" id="eduLectSec"><div class="edu-lab">Lectura actual</div><div class="bd" id="eduLect"></div></div>
+    </div>`;
+  document.body.appendChild(d);
+  document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeEdu(); });
+}
+function showEdu(d, ev){
+  ensureEduDom();
+  const wrap = document.getElementById("eduWrap");
+  const pop = wrap.querySelector(".edu-pop");
+  document.getElementById("eduTitle").textContent = d.t;
+  document.getElementById("eduMide").innerHTML = d.mide;
+  document.getElementById("eduMideLab").style.display = d.static ? "none" : "";
+  const ls = document.getElementById("eduLectSec");
+  if(d.lect){ ls.style.display=""; const el=document.getElementById("eduLect");
+    el.innerHTML = d.lect.h; el.style.color = EDU_COLORS[d.lect.c]||EDU_COLORS.g; }
+  else ls.style.display = "none";
+  wrap.hidden = false;
+  // desktop positioning near click; mobile uses CSS bottom-sheet
+  if(window.matchMedia("(min-width:681px)").matches && ev){
+    pop.style.left = "0px"; pop.style.top = "0px";
+    const w = pop.offsetWidth, h = pop.offsetHeight;
+    let x = Math.min(Math.max(12, ev.clientX - w/2), window.innerWidth - w - 12);
+    let y = ev.clientY + 14;
+    if(y + h > window.innerHeight - 12) y = Math.max(12, ev.clientY - h - 14);
+    pop.style.left = x+"px"; pop.style.top = y+"px";
+  } else { pop.style.left=""; pop.style.top=""; }
+}
+window.openEdu = function(i, ev){ ev.stopPropagation(); ev.preventDefault(); const d=VS.eduReg[i]; if(d) showEdu(d, ev); };
+window.openEduStatic = function(k, ev){ ev.stopPropagation(); ev.preventDefault(); const d=STATIC_EDU[k]; if(d) showEdu(d, ev); };
+window.closeEdu = function(){ const w=document.getElementById("eduWrap"); if(w) w.hidden = true; };
+
+/* ---- modo explicar (toggle global) ---- */
+document.addEventListener("DOMContentLoaded", ()=>{
+  const b = document.getElementById("eduBtn"); if(!b) return;
+  const apply = on => { document.body.classList.toggle("explain-on", on); b.classList.toggle("edu-on", on); };
+  apply(localStorage.getItem("vs_explain")==="1");
+  b.addEventListener("click", ()=>{
+    const on = !document.body.classList.contains("explain-on");
+    apply(on); localStorage.setItem("vs_explain", on?"1":"0");
+  });
+});
+
+/* ===== js/cards.js ===== */
+/* ============================================================
+   VALUE SIGNAL — asset normalization + the asset card component
+   ============================================================ */
+
+/* normalize every scored asset into one shape */
+function collectScored(){
+  const out = [];
+  const g = VS.data.gld;
+  if(g) out.push({route:"oro", ticker:"GLD", name:"SPDR Gold (Oro)", price:fmt.usd(g.precio_gld),
+    chg:null, score:g.score_final, zona:g.zona, mult:g.multiplicador,
+    hist:g.historico_gld, valKey:"precio", newsKey:"n_gld", emoji:"🥇"});
+  const b = VS.data.btc;
+  if(b) out.push({route:"bitcoin", ticker:"BTC", name:"Bitcoin", price:fmt.usd(b.precio_btc,0),
+    chg:null, score:b.score_final, zona:b.zona, mult:b.multiplicador,
+    hist:b.historico_btc, valKey:"precio", newsKey:"n_btc", emoji:"₿"});
+  const e = VS.data.etfs;
+  if(e&&e.etfs) Object.values(e.etfs).forEach(x=>{
+    out.push({route:"etfs", ticker:x.ticker, name:x.long_name||x.name, price:fmt.usd(x.precio_usd),
+      chg:null, score:x.score, zona:x.zona, mult:x.multiplicador,
+      hist:x.historico, valKey:"close", newsKey:"n_etfs", emoji:x.emoji,
+      sub:`DY ${fmt.pct(x.dy_actual_pct)} · aporte ${fmt.usd(x.aporte_sugerido_usd,0)}`});
+  });
+  return out;
+}
+
+function sentimientoOf(newsKey){
+  const n = VS.data[newsKey];
+  return n && n.resumen_ejecutivo ? n.resumen_ejecutivo.sentimiento : null;
+}
+
+/* the default asset card — variante C (gauge) + franja contrarian de A */
+function assetCard(a, opts){
+  opts = opts||{};
+  const opp = isBuyZone(a.zona);
+  const sent = sentimientoOf(a.newsKey);
+  return `<div class="card gcard ${opp?'opp':''}" onclick="go('${a.route}')">
+    <div class="card-top">
+      <div class="tk">
+        <div class="ticker">${esc(a.ticker)}</div>
+        <div class="name">${esc(a.name)}</div>
+      </div>
+      ${zoneBadge(a.zona)}
+    </div>
+    <div class="gauge-wrap">
+      ${vsGauge(a.score, a.zona)}
+      <div class="gv" style="color:${zoneColorVar(a.zona)}">${fmt.score(a.score)}${eduIconStatic('score')}</div>
+      <div class="gl">score</div>
+    </div>
+    <div class="gfoot">
+      <span class="num">${a.price}</span>
+      <span class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>x${a.mult}</b></span>
+    </div>
+    ${opts.contra!==false ? contrarianStrip(a.zona, sent) : ""}
+  </div>`;
+}
+
+/* versión anterior (score numérico + sparkline) — conservada para la página de variaciones */
+function assetCardLegacy(a, opts){
+  opts = opts||{};
+  const opp = isBuyZone(a.zona);
+  const sent = sentimientoOf(a.newsKey);
+  const chg = a.chg!=null ? `<span class="chg ${a.chg>=0?'up':'down'}">${fmt.signpct(a.chg)}</span>` : "";
+  return `<div class="card ${opp?'opp':''}" onclick="go('${a.route}')">
+    <div class="card-top">
+      <div class="tk">
+        <div class="ticker">${esc(a.ticker)}</div>
+        <div class="name">${esc(a.name)}</div>
+        <div class="price">${a.price}${chg}</div>
+      </div>
+      <div class="score-wrap">
+        <div class="score-num" style="color:${zoneColorVar(a.zona)}">${fmt.score(a.score)}<span class="den">/100</span>${eduIconStatic('score')}</div>
+        <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>x${a.mult}</b></div>
+        <div style="margin-top:6px">${zoneBadge(a.zona)}</div>
+      </div>
+    </div>
+    ${scoreBar(a.score, a.zona)}
+    ${opts.spark!==false ? sparkline(a.hist, a.valKey) : ""}
+    ${opts.contra!==false ? contrarianStrip(a.zona, sent) : ""}
+  </div>`;
+}
+
+/* ===== js/views.js ===== */
+/* ============================================================
+   VALUE SIGNAL — views + charts
+   ============================================================ */
+VS.charts = {};
+VS.chartData = {};
+VS._pending = [];
+
+function queueChart(id, points, valKey, color, range){
+  VS._pending.push({id, points, valKey, color, range:range||"3Y"});
+}
+function flushCharts(){
+  VS._pending.forEach(c=>{ VS.chartData[c.id]={points:c.points,valKey:c.valKey,color:c.color}; drawChart(c.id,c.range); });
+  VS._pending = [];
+}
+function filterRange(points, range){
+  if(!points||!points.length) return [];
+  if(range==="MAX") return points;
+  const yrs = {"1Y":1,"3Y":3,"5Y":5}[range]||3;
+  const last = new Date(points[points.length-1].fecha);
+  const cut = new Date(last); cut.setFullYear(cut.getFullYear()-yrs);
+  return points.filter(p=>new Date(p.fecha)>=cut);
+}
+function drawChart(id, range){
+  const cv = document.getElementById(id); if(!cv) return;
+  const cfg = VS.chartData[id]; if(!cfg) return;
+  let pts = filterRange(cfg.points, range);
+  if(pts.length>340){ const s=Math.ceil(pts.length/340); pts=pts.filter((_,i)=>i%s===0); }
+  const labels = pts.map(p=>p.fecha);
+  const data = pts.map(p=>p[cfg.valKey]);
+  const color = cfg.color||"#26a69a";
+  if(VS.charts[id]) VS.charts[id].destroy();
+  const ctx = cv.getContext("2d");
+  const grad = ctx.createLinearGradient(0,0,0,cv.height||300);
+  grad.addColorStop(0, "rgba(38,166,154,.22)"); grad.addColorStop(1,"rgba(38,166,154,0)");
+  VS.charts[id] = new Chart(ctx,{
+    type:"line",
+    data:{labels, datasets:[{data, borderColor:color, backgroundColor:grad, fill:true,
+      borderWidth:1.6, pointRadius:0, tension:.12}]},
+    options:{
+      responsive:true, maintainAspectRatio:false, animation:false,
+      interaction:{intersect:false, mode:"index"},
+      plugins:{legend:{display:false}, tooltip:{
+        backgroundColor:"#262b36", borderColor:"#363b47", borderWidth:1, titleColor:"#9aa1ad",
+        bodyColor:"#d1d4dc", padding:10, displayColors:false,
+        callbacks:{title:i=>i[0].label, label:c=>"  "+Number(c.raw).toLocaleString("en-US",{maximumFractionDigits:2})}
+      }},
+      scales:{
+        x:{grid:{display:false}, ticks:{color:"#5d6471", maxTicksLimit:6, font:{family:"IBM Plex Mono",size:10}}},
+        y:{position:"right", grid:{color:"rgba(54,59,71,.5)"}, ticks:{color:"#5d6471",
+          font:{family:"IBM Plex Mono",size:10}, maxTicksLimit:6,
+          callback:v=>Number(v).toLocaleString("en-US",{maximumFractionDigits:0})}}
+      }
+    }
+  });
+}
+function vsSetRange(id, range, btn){
+  if(btn){ btn.parentNode.querySelectorAll("button").forEach(b=>b.classList.remove("on")); btn.classList.add("on"); }
+  drawChart(id, range);
+}
+function rangeSel(id, def){
+  const opts=["1Y","3Y","5Y","MAX"];
+  return `<div class="rng">${opts.map(o=>`<button class="${o===(def||'3Y')?'on':''}" onclick="vsSetRange('${id}','${o}',this)">${o}</button>`).join("")}</div>`;
+}
+
+/* =================== HOME / OPORTUNIDADES =================== */
+function renderHome(){
+  const scored = collectScored();
+  const opps = scored.filter(a=>isBuyZone(a.zona)).sort((x,y)=>y.score-x.score);
+  const rest = scored.filter(a=>!isBuyZone(a.zona)).sort((x,y)=>y.score-x.score);
+
+  const ch = VS.data.chile;
+  const acc = ch&&ch.acciones?ch.acciones.slice():[];
+  const sobre = acc.filter(a=>a.evaluacion&&a.evaluacion.status==="Sobre benchmark")
+    .sort((x,y)=>(y.evaluacion.vs_benchmark_pp)-(x.evaluacion.vs_benchmark_pp));
+  const clRest = acc.filter(a=>!a.evaluacion||a.evaluacion.status!=="Sobre benchmark")
+    .sort((x,y)=>(y.evaluacion?.vs_benchmark_pp??-99)-(x.evaluacion?.vs_benchmark_pp??-99));
+
+  const total = opps.length + sobre.length;
+  const errs = ["gld","btc","etfs","chile"].filter(k=>VS.status[k]==="error");
+
+  let html = "";
+  if(errs.length) html += `<div style="margin-bottom:16px">${errs.map(k=>errBox(k,VS.FILES[k])).join("")}</div>`;
+
+  // banner
+  html += `<div class="banner ${total===0?'zero':''}">
+    <div class="big">${total}</div>
+    <div class="btxt">
+      <h2>${total>0?`oportunidad${total>1?'es':''} de compra activa${total>1?'s':''} hoy`:"sin oportunidades activas hoy"}</h2>
+      <p>Suma de activos con score en zona de compra más acciones chilenas sobre su benchmark sectorial.</p>
+      <div class="bbreak">
+        <span class="chip">${opps.length} activos con score · ATRACTIVO / OPORTUNIDAD</span>
+        <span class="chip cl">${sobre.length} acciones chilenas · sobre benchmark</span>
+      </div>
+    </div>
+  </div>`;
+
+  // opportunities
+  html += sectionTitle("Oportunidades activas", opps.length, "score descendente");
+  if(VS.status.gld==="loading"&&!scored.length){ html += skeletonCards(3); }
+  else if(opps.length){ html += `<div class="grid c3">${opps.map(a=>assetCard(a)).join("")}</div>`; }
+  else { html += `<div class="hint" style="padding:8px 0">Ningún activo con score está en zona de compra ahora mismo.</div>`; }
+
+  // chilean over benchmark
+  html += sectionTitle("Acciones chilenas sobre benchmark", sobre.length, "exceso sobre el máximo sectorial");
+  if(sobre.length){ html += `<div class="grid">${sobre.map(clRow).join("")}</div>`; }
+  else { html += `<div class="hint" style="padding:8px 0">Ninguna acción supera hoy el máximo de su rango sectorial.</div>`; }
+
+  // collapsed rest
+  const restCount = rest.length + clRest.length;
+  html += `<div class="acc" id="accRest">
+    <div class="acc-head" onclick="document.getElementById('accRest').classList.toggle('open')">
+      Sin señal activa — NEUTRAL / CARO y acciones dentro/bajo benchmark
+      <span class="section-title" style="margin:0"><span class="count">${restCount}</span></span>
+      <span class="chev">›</span>
+    </div>
+    <div class="acc-body">
+      ${rest.length?`<div class="grid c3" style="margin-bottom:14px">${rest.map(a=>assetCard(a)).join("")}</div>`:""}
+      ${clRest.length?`<div class="grid">${clRest.map(clRow).join("")}</div>`:""}
+    </div>
+  </div>`;
+
+  return html;
+}
+
+function clRow(a){
+  const ev = a.evaluacion||{};
+  const sobre = ev.status==="Sobre benchmark";
+  const ppCls = (ev.vs_benchmark_pp>=0)?"pos":"neg";
+  const edDy = eduFor('cl_dy',{dy:a.dy?.dy_pct, status:ev.status});
+  const edBm = eduFor('cl_benchmark',{status:ev.status, pp:ev.vs_benchmark_pp});
+  return `<div class="cl-row ${sobre?'opp':''}" onclick="go('chile','${esc(a.ticker)}')">
+    <div class="cl-id"><div class="t">${esc(a.ticker)}</div><div class="s">${esc(a.nombre)} · ${esc(a.sector)}</div></div>
+    <div class="cl-dy"><div class="v" style="color:${sobre?'var(--z-opp)':'var(--tx)'}">${fmt.pct(a.dy?.dy_pct)}</div><div class="l">DY 3 años${edDy.icon}</div></div>
+    <div class="cl-bm">
+      <div>Benchmark ${esc(a.sector)}: <span class="num">${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%</span>
+        · <span class="pp ${ppCls}">${fmt.pp(ev.vs_benchmark_pp)}</span> ${ev.emoji||""}${edBm.icon}</div>
+      <div class="bar">${benchBar(a.dy?.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
+      ${edBm.inline}
+    </div>
+    <div class="right"><span class="pill-link">Ver detalle ›</span></div>
+  </div>`;
+}
+
+function sectionTitle(txt, count, hint){
+  return `<div class="section-title">${esc(txt)}${count!=null?`<span class="count">${count}</span>`:""}
+    ${hint?`<span class="hint" style="text-transform:none;letter-spacing:0;font-weight:400">${esc(hint)}</span>`:""}
+    <span class="rule"></span></div>`;
+}
+
+/* =================== ORO / BITCOIN =================== */
+function renderAsset(which){
+  const key = which==="oro"?"gld":"btc";
+  const d = VS.data[key];
+  const newsKey = which==="oro"?"n_gld":"n_btc";
+  const news = VS.data[newsKey];
+  const meta = which==="oro"
+    ? {em:"🥇",title:"Oro",ticker:"GLD",priceLabel:"Precio GLD",price:d?fmt.usd(d.precio_gld):"—",hist:d?.historico_gld,valKey:"precio"}
+    : {em:"₿",title:"Bitcoin",ticker:"BTC",priceLabel:"Precio BTC",price:d?fmt.usd(d.precio_btc,0):"—",hist:d?.historico_btc,valKey:"precio"};
+
+  if(VS.status[key]==="error" && !d) return viewHead(meta.em,meta.title,"")+errBox(key,VS.FILES[key]);
+  if(!d) return viewHead(meta.em,meta.title,"")+skeletonCards(2);
+
+  const chId = "chart_"+key;
+  queueChart(chId, meta.hist, meta.valKey, "#26a69a", "3Y");
+
+  const detailRows = subDetailRows(d.sub_detalles, which);
+  const det = d.sub_detalles||{};
+  const buy = isBuyZone(d.zona);
+  const edus = {};
+  if(which==="oro"){
+    if(det.drawdown) edus.drawdown = eduFor('drawdown52',{dd:det.drawdown.drawdown_pct});
+    if(det.momentum) edus.momentum = eduFor('momentum',{m:det.momentum.ret_12_1_pct, buy});
+    if(det.ratio_sp500) edus.ratio_sp500 = eduFor('ratio_sp500',{p:det.ratio_sp500.percentil_2y});
+    if(det.ratio_silver) edus.ratio_silver = eduFor('ratio_silver',{p:det.ratio_silver.percentil_2y});
+    if(det.dxy) edus.dxy = eduFor('dxy',{p:det.dxy.percentil_2y});
+    if(det.real_yield) edus.real_yield = eduFor('real_yield',{v:det.real_yield.real_yield_pct});
+    if(det.vix) edus.vix = eduFor('vix',{v:det.vix.vix_actual});
+  }else{
+    if(det.drawdown) edus.drawdown = eduFor('drawdown_ath',{dd:det.drawdown.drawdown_pct});
+    if(det.fear_greed) edus.fear_greed = eduFor('fear_greed',{v:det.fear_greed.fg_value, cl:det.fear_greed.classification});
+    if(det.pi_cycle) edus.pi_cycle = eduFor('pi_cycle',{r:det.pi_cycle.ratio});
+    if(det.halving_cycle) edus.halving_cycle = eduFor('halving',{fase:det.halving_cycle.fase, meses:det.halving_cycle.meses_desde_halving});
+    if(det.momentum) edus.momentum = eduFor('momentum',{m:det.momentum.ret_12_1_pct, buy});
+    if(det.mvrv) edus.mvrv = eduFor('mvrv',{z:det.mvrv.z_score});
+  }
+
+  const main = `
+    <div class="panel" style="margin-bottom:16px">
+      <div class="card-top">
+        <div class="tk">
+          <div class="ticker" style="font-size:26px">${meta.ticker}</div>
+          <div class="name">${esc(meta.title)}</div>
+          <div class="price" style="font-size:18px;margin-top:8px">${meta.price}
+            ${which==="bitcoin"&&d.precio_ibit?`<span class="dim" style="font-size:12px;margin-left:8px">IBIT ${fmt.usd(d.precio_ibit)}</span>`:""}</div>
+        </div>
+        <div class="score-wrap">
+          <div class="gauge-wrap sm">
+            ${vsGauge(d.score_final, d.zona)}
+            <div class="gv" style="color:${zoneColorVar(d.zona)}">${fmt.score(d.score_final)}${eduIconStatic('score')}</div>
+            <div class="gl">score</div>
+          </div>
+          <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte del mes <b>x${d.multiplicador}</b></div>
+          <div style="margin-top:8px">${zoneBadge(d.zona)}</div>
+        </div>
+      </div>
+      ${scoreBar(d.score_final, d.zona)}
+      ${alignCard(d.zona, d.score_final, news)}
+    </div>
+
+    <div class="panel" style="margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <h3 style="margin:0">Precio histórico</h3>${rangeSel(chId)}
+      </div>
+      <div class="chart-box"><canvas id="${chId}"></canvas></div>
+    </div>
+
+    <div class="grid c2">
+      <div class="panel">
+        <h3>Componentes del score</h3>
+        ${compBars(d.sub_scores, d.pesos, edus)}
+      </div>
+      <div class="panel">
+        <h3>Detalle de indicadores</h3>
+        ${detailRows}
+      </div>
+    </div>`;
+
+  const sidebar = newsSidebar(news, newsKey, meta.title, {zona:d.zona, label:meta.title});
+  return viewHead(meta.em, meta.title, srcStamp(key)) +
+    `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
+}
+
+function subDetailRows(det, which){
+  if(!det) return "";
+  const rows = [];
+  const push=(k,v)=>rows.push(`<div class="kv"><span class="k">${esc(k)}</span><span class="v">${v}</span></div>`);
+  if(which==="oro"){
+    if(det.drawdown) push("Drawdown desde máx. 52s", fmt.signpct(det.drawdown.drawdown_pct,1));
+    if(det.momentum) push("Momentum 12-1m", fmt.signpct(det.momentum.ret_12_1_pct,1));
+    if(det.ratio_silver) push("Ratio Oro/Plata", fmt.num(det.ratio_silver.ratio_actual,2)+" · p"+fmt.num(det.ratio_silver.percentil_2y,0));
+    if(det.real_yield) push("Tasa real 10y", fmt.pct(det.real_yield.real_yield_pct,2));
+    if(det.dxy) push("DXY (dólar)", fmt.num(det.dxy.dxy_actual,2));
+    if(det.vix) push("VIX", fmt.num(det.vix.vix_actual,2));
+  }else{
+    if(det.drawdown) push("Drawdown desde ATH", fmt.signpct(det.drawdown.drawdown_pct,1));
+    if(det.fear_greed) push("Fear & Greed", det.fear_greed.fg_value+" · "+esc(det.fear_greed.classification||""));
+    if(det.mvrv) push("MVRV Z-Score", fmt.num(det.mvrv.z_score,2));
+    if(det.pi_cycle) push("Pi Cycle ratio", fmt.num(det.pi_cycle.ratio,3));
+    if(det.halving_cycle) push("Ciclo halving", esc(det.halving_cycle.fase||"")+" · "+fmt.num(det.halving_cycle.meses_desde_halving,1)+"m");
+    if(det.momentum) push("Momentum 12-1m", fmt.signpct(det.momentum.ret_12_1_pct,1));
+  }
+  return rows.join("");
+}
+
+/* news sidebar shared */
+function newsSidebar(news, newsKey, label, ctx){
+  const errored = VS.status[newsKey]==="error";
+  return `<div><div class="sidebar-news">
+    <div class="hd">📰 Noticias · ${esc(label)}${eduIconStatic('news')} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated[newsKey])}</span>`:""}</div>
+    ${errored?errBox(newsKey,"noticias"):""}
+    ${news?execSummary(news, ctx):""}
+    <div style="margin-top:14px">${news?newsSection(news):""}</div>
+  </div></div>`;
+}
+
+function viewHead(em, title, stamp, sub){
+  return `<div class="view-head">
+    <div><h1><span class="em">${em}</span> ${esc(title)}</h1>${sub?`<div class="sub">${esc(sub)}</div>`:""}</div>
+    ${stamp||""}
+  </div>`;
+}
+
+/* ===== js/views2.js ===== */
+/* ============================================================
+   VALUE SIGNAL — ETFs USA + Acciones Chilenas views
+   ============================================================ */
+const ETF_PESOS = {dy_vs_historico:35, drawdown:25, balance_cagr:15, momentum:10, dgr:15};
+
+/* =================== ETFs USA =================== */
+function renderETFs(){
+  const e = VS.data.etfs;
+  const news = VS.data.n_etfs;
+  if(VS.status.etfs==="error" && !e) return viewHead("📊","ETFs USA","")+errBox("etfs",VS.FILES.etfs);
+  if(!e||!e.etfs) return viewHead("📊","ETFs USA","")+skeletonCards(2);
+
+  const etfs = Object.values(e.etfs);
+  const main = etfs.map(etfPanel).join("") + spSlot();
+  const sidebar = newsSidebar(news, "n_etfs", "Macro USA");
+
+  return viewHead("📊","ETFs USA", srcStamp("etfs"),
+    "Dividend ETFs · score de timing para DCA · "+etfs.map(x=>x.ticker).join(" · ")) +
+    `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
+}
+
+function etfPanel(x){
+  const chId = "chart_etf_"+x.ticker;
+  queueChart(chId, x.historico, "close", "#26a69a", "3Y");
+  const buy = isBuyZone(x.zona);
+  const edus = {
+    dy_vs_historico: eduFor('dy_vs_hist',{a:x.dy_actual_pct, h:x.dy_historico_3y_pct}),
+    drawdown: eduFor('drawdown52',{dd:x.drawdown_pct}),
+    balance_cagr: eduFor('balance_cagr',{v:(x.cagr_precio_3y_pct||0)+(x.dy_actual_pct||0)}),
+    momentum: eduFor('momentum',{m:x.momentum_pct, buy}),
+    dgr: eduFor('dgr',{g:x.dgr_3y_pct}),
+  };
+  const er = x.expense_ratio!=null ? fmt.pct(x.expense_ratio*100,2) : "—";
+  const dyDelta = (x.dy_actual_pct!=null && x.dy_historico_3y_pct!=null)
+    ? `<span class="${x.dy_actual_pct>=x.dy_historico_3y_pct?'chg up':'chg down'}" style="font-size:12px">vs ${fmt.pct(x.dy_historico_3y_pct)} hist</span>`:"";
+  return `<div class="panel" style="margin-bottom:16px">
+    <div class="card-top">
+      <div class="tk">
+        <div class="ticker" style="font-size:24px">${esc(x.ticker)}</div>
+        <div class="name">${esc(x.long_name||x.name)}</div>
+        <div class="price" style="margin-top:8px">${fmt.usd(x.precio_usd)} <span class="dim" style="font-size:11px">· ${esc(x.type||"")}</span></div>
+      </div>
+      <div class="score-wrap">
+        <div class="gauge-wrap sm">
+          ${vsGauge(x.score, x.zona)}
+          <div class="gv" style="color:${zoneColorVar(x.zona)}">${fmt.score(x.score)}${eduIconStatic('score')}</div>
+          <div class="gl">score</div>
+        </div>
+        <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>${fmt.usd(x.aporte_sugerido_usd,0)}</b> · x${x.multiplicador}</div>
+        <div style="margin-top:8px">${zoneBadge(x.zona)}</div>
+      </div>
+    </div>
+    ${scoreBar(x.score, x.zona)}
+    ${x.description?`<div class="hint" style="margin-top:14px;line-height:1.55;color:var(--tx-3)">${esc(x.description)}</div>`:""}
+
+    <div class="grid c2" style="margin-top:18px">
+      <div>
+        <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">Métricas</h3>
+        <div class="kv"><span class="k">Dividend Yield actual</span><span class="v">${fmt.pct(x.dy_actual_pct)} ${dyDelta}</span></div>
+        <div class="kv"><span class="k">DY histórico 3y</span><span class="v">${fmt.pct(x.dy_historico_3y_pct)}</span></div>
+        <div class="kv"><span class="k">DGR 3y (crec. dividendo)</span><span class="v">${fmt.signpct(x.dgr_3y_pct,1)}</span></div>
+        <div class="kv"><span class="k">Drawdown 52s</span><span class="v">${fmt.signpct(x.drawdown_pct,1)}</span></div>
+        <div class="kv"><span class="k">Momentum 12-1m</span><span class="v">${fmt.signpct(x.momentum_pct,1)}</span></div>
+        <div class="kv"><span class="k">CAGR precio 3y / 5y</span><span class="v">${fmt.pct(x.cagr_precio_3y_pct)} / ${fmt.pct(x.cagr_precio_5y_pct)}</span></div>
+        <div class="kv"><span class="k">Expense ratio · frecuencia</span><span class="v">${er} · ${esc(x.frequency||"")}</span></div>
+      </div>
+      <div>
+        <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">Componentes del score</h3>
+        ${compBars(x.componentes, ETF_PESOS, edus)}
+      </div>
+    </div>
+
+    ${evalETFBlock(x)}
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px">
+      <h3 style="margin:0">Precio histórico</h3>${rangeSel(chId)}
+    </div>
+    <div class="chart-box sm"><canvas id="${chId}"></canvas></div>
+  </div>`;
+}
+
+function spSlot(){
+  return `<div class="soon"><span class="tag">PRÓXIMAMENTE</span>
+    S&P 500 (CFISPETF) y Nasdaq 100 (CFINASDAQ) — score en vivo con CAPE de Shiller. Slot preparado para <span class="mono">sp_nq_data.json</span> con la misma estructura de score/zona.</div>`;
+}
+
+/* =================== EVALUACIÓN FUNDAMENTAL =================== */
+/* Metodología propia: salud financiera (balance/EERR) + valoración por
+   benchmark sectorial y Gordon-Shapiro simplificado (div 3y / tasa exigencia).
+   Sin DCF: demasiado sensible a supuestos para el inversionista minoritario.
+   Genérico: funciona para cualquier activo futuro (ej. acciones USA) que
+   entregue los mismos campos en su JSON. */
+
+const EV_TASAS = {VACA:{min:0.08,max:0.09,label:"8–9%"}, DGI:{min:0.06,max:0.07,label:"6–7%"}};
+
+function evRow(cls,label,txt){
+  const sym = cls==="ok"?"✓":cls==="mid"?"~":"✗";
+  return `<div class="ev-row"><span class="vchip ${cls}">${sym}</span><div><b>${label}</b> — ${txt}</div></div>`;
+}
+function evConcl(cls,html){ return `<div class="ev-concl ${cls}">${html}</div>`; }
+function evScore(rows){ // rows = [[cls,...]] → balance ok vs bad
+  let ok=0,bad=0; rows.forEach(r=>{ if(r[0]==="ok")ok++; if(r[0]==="bad")bad++; });
+  return {ok,bad};
+}
+
+/* ---------- salud financiera: acción chilena (datos CMF) ---------- */
+function evalSaludChile(a){
+  const c=a.cmf||{}, rows=[];
+  const sector=(a.sector||"").toUpperCase();
+  const finSector = sector.includes("AFP")||sector.includes("BANCO");
+
+  if(c.roe_pct!=null){
+    const v=c.roe_pct, cls=v>=15?"ok":v>=8?"mid":"bad";
+    rows.push([cls,`ROE ${fmt.pct(v)}`, v>=15?"alto valor al accionista (≥15%).":v>=8?"rentabilidad media sobre patrimonio.":"rentabilidad baja en el período reportado."]);
+  }
+  if(c.margen_neto_pct!=null){
+    const v=c.margen_neto_pct, cls=v>=20?"ok":v>=10?"mid":"bad";
+    rows.push([cls,`Margen neto ${fmt.pct(v)}`, v>=20?"muy bueno (≥20%): negocio de alta rentabilidad.":v>=10?"margen razonable.":"margen bajo: probablemente negocio de volumen."]);
+  }
+  if(c.razon_endeudamiento_pct!=null){
+    const v=c.razon_endeudamiento_pct;
+    let cls=v<50?"ok":v<=70?"mid":"bad";
+    let txt=v<50?"bajo 50%: nivel de deuda sano.":v<=70?"deuda moderada: vigilar tendencia.":"deuda alta: financiado mayormente por terceros.";
+    if(finSector && v>=50){ cls="mid"; txt+=" En "+(sector.includes("AFP")?"AFPs":"bancos")+" el pasivo alto es parte del modelo de negocio, no necesariamente una red flag."; }
+    rows.push([cls,`Endeudamiento ${fmt.pct(v)}`,txt]);
+  }
+  if(c.razon_corriente!=null){
+    const v=c.razon_corriente, cls=v>=1?"ok":v>=0.8?"mid":"bad";
+    let txt=v>=1?"cubre cada peso de deuda de corto plazo.":"bajo 1: liquidez ajustada si la venta cae.";
+    if(c.capital_trabajo!=null && c.capital_trabajo<0 && v<1) txt+=" Capital de trabajo negativo: revisar si el giro se financia con flujo operativo (normal en algunos modelos).";
+    rows.push([cls,`Razón corriente ${fmt.num(v,2)}`,txt]);
+  }
+  const cagr=(a.cagr_5y!=null?a.cagr_5y*100:null);
+  if(cagr!=null){
+    const cls=cagr>=10?"ok":cagr>=0?"mid":"bad";
+    rows.push([cls,`Crec. dividendo 5y ${fmt.signpct(cagr,1)}`, cagr>=10?"dividendo creciente sostenido: perfil DGI.":cagr>=0?"dividendo estable, sin gran crecimiento.":"dividendo decreciente en 5 años: revisar causa."]);
+  }
+  const s=evScore(rows);
+  const concl = s.bad===0 && s.ok>=2 ? ["ok","<b>Situación financiera sólida</b> en el período reportado: rentabilidad, deuda y liquidez sin alertas relevantes."] :
+                s.bad>=2 ? ["bad","<b>Situación financiera débil o en deterioro</b>: hay más de una alerta. Revisar el Análisis Razonado en la CMF antes de aportar."] :
+                ["","<b>Situación financiera mixta</b>: fortalezas y alertas conviven. Revisar la tendencia de 5 años antes de concluir."];
+  const periodo=c.periodo||"";
+  const parcial=/^(03|06|09)\//.test(periodo);
+  const note = `Datos CMF ${esc(periodo)}${parcial?" (período parcial: el ROE y márgenes no están anualizados — para el filtro de compra usa el promedio de 5 años)":""}. La foto de un período no reemplaza la tendencia de 5 años.`;
+  return {rows,concl,note};
+}
+
+/* ---------- valoración: acción chilena (benchmark + Gordon-Shapiro) ---------- */
+function evalValorChile(a){
+  const rows=[]; let pmaxHtml="";
+  const ev=a.evaluacion||{}, dy=a.dy||{};
+  if(dy.dy_pct!=null && a.benchmark_min_pct!=null){
+    const pp=ev.vs_benchmark_pp;
+    const cls = ev.status==="Sobre benchmark"||(pp!=null&&pp>=0) ? "ok" : ev.status==="Bajo benchmark"?"bad":"mid";
+    rows.push([cls,`DY ${fmt.pct(dy.dy_pct)} vs sector ${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%`,
+      cls==="ok"?"rinde sobre el máximo de su rango sectorial: descuento real, no solo yield alto.":
+      cls==="bad"?"rinde bajo el mínimo sectorial: cara en términos de dividendo.":
+      "dentro del rango normal del sector: precio justo, sin descuento."]);
+  }
+  const clasif=(a.clasificacion||"").toUpperCase();
+  const tasa = clasif.includes("VACA")?EV_TASAS.VACA : clasif.includes("DGI")?EV_TASAS.DGI : null;
+  if(tasa && dy.promedio_anual>0 && a.precio_actual_clp>0){
+    const pmaxExigente = dy.promedio_anual/tasa.max;
+    const pmaxLaxo     = dy.promedio_anual/tasa.min;
+    const p=a.precio_actual_clp;
+    const cls = p<=pmaxExigente?"ok" : p<=pmaxLaxo?"mid":"bad";
+    rows.push([cls,`Precio máx. Gordon-Shapiro: ${fmt.clp(pmaxExigente)}–${fmt.clp(pmaxLaxo)}`,
+      `dividendo prom. 3y (${fmt.clp(dy.promedio_anual)}) / tasa de exigencia ${tasa.label} (${esc(a.clasificacion)}). Precio actual ${fmt.clp(p)}: `+
+      (cls==="ok"?"bajo el máximo incluso con la tasa más exigente — zona de compra.":
+       cls==="mid"?"dentro del rango — comprable solo con la tasa menos exigente.":
+       "sobre el precio máximo a pagar — esperar corrección.")]);
+  } else if(clasif.includes("CRECIMIENTO")){
+    rows.push(["mid","Empresa de Crecimiento (G≥15%)","reinvierte utilidades; la valoración por dividendo aplica parcialmente. Evaluar PER y Bolsa/Libro según ROE, con Graham (<22.5) como desempate."]);
+  }
+  const s=evScore(rows);
+  const concl = s.bad===0 && s.ok>=1 ? ["ok","<b>Precio razonable o con descuento</b> según dividendo: cumple los filtros de compra de la metodología."] :
+                s.bad>=1 && s.ok===0 ? ["bad","<b>Acción cara hoy</b> según dividendo: mantener en watchlist y esperar mejor precio."] :
+                ["","<b>Valoración intermedia</b>: ni claramente barata ni cara. Aportar solo la base, sin reforzar."];
+  return {rows,concl};
+}
+
+function evalChilePanel(a){
+  try{
+    const sal=evalSaludChile(a), val=evalValorChile(a);
+    if(!sal.rows.length && !val.rows.length) return "";
+    return `<div class="panel" style="margin-bottom:16px">
+      <h3>🔬 Evaluación fundamental</h3>
+      <div class="ev-grid">
+        <div class="ev-col"><h4>Salud financiera</h4>${sal.rows.map(r=>evRow(...r)).join("")}${evConcl(sal.concl[0],sal.concl[1])}</div>
+        <div class="ev-col"><h4>Valoración</h4>${val.rows.map(r=>evRow(...r)).join("")}${evConcl(val.concl[0],val.concl[1])}</div>
+      </div>
+      <div class="ev-note">${sal.note} Valoración por múltiplos y dividendo — sin flujo de caja descontado (muy sensible a supuestos para el inversionista minoritario).</div>
+    </div>`;
+  }catch(e){ console.warn("evalChilePanel",e); return ""; }
+}
+
+/* ---------- evaluación: ETF de dividendos (SCHD/JEPQ y futuros) ---------- */
+function evalETFBlock(x){
+  try{
+    const sal=[], val=[];
+    if(x.dgr_3y_pct!=null){
+      const v=x.dgr_3y_pct, cls=v>=5?"ok":v>=0?"mid":"bad";
+      sal.push([cls,`DGR 3y ${fmt.signpct(v,1)}`, v>=5?"dividendo creciendo a buen ritmo.":v>=0?"dividendo estable, crecimiento bajo.":"dividendo decreciente: vigilar."]);
+    }
+    if(x.expense_ratio!=null){
+      const v=x.expense_ratio*100, cls=v<=0.10?"ok":v<=0.40?"mid":"bad";
+      sal.push([cls,`Expense ratio ${fmt.pct(v,2)}`, v<=0.10?"costo muy bajo: casi no erosiona el retorno compuesto.":v<=0.40?"costo razonable para gestión activa/estrategia.":"costo alto: exige retorno extra para justificarse."]);
+    }
+    if(x.cagr_precio_5y_pct!=null){
+      const v=x.cagr_precio_5y_pct, cls=v>=8?"ok":v>=0?"mid":"bad";
+      sal.push([cls,`CAGR precio 5y ${fmt.pct(v)}`, v>=8?"apreciación de capital sólida además del yield.":v>=0?"apreciación moderada: el retorno depende más del dividendo.":"precio decreciente a 5 años."]);
+    }
+    if(x.dy_actual_pct!=null && x.dy_historico_3y_pct!=null){
+      const r=x.dy_actual_pct/x.dy_historico_3y_pct;
+      const cls=r>=1.1?"ok":r>=0.9?"mid":"bad";
+      val.push([cls,`DY ${fmt.pct(x.dy_actual_pct)} vs ${fmt.pct(x.dy_historico_3y_pct)} hist.`,
+        cls==="ok"?"yield sobre su promedio 3y: el precio ofrece descuento frente a su historia.":
+        cls==="mid"?"yield en línea con su historia: precio justo.":
+        "yield bajo su promedio: precio caro frente a su historia."]);
+    }
+    if(x.drawdown_pct!=null){
+      const v=x.drawdown_pct, cls=v<=-10?"ok":v<=-3?"mid":"bad";
+      val.push([cls,`Drawdown 52s ${fmt.signpct(v,1)}`, v<=-10?"descuento relevante desde máximos: zona contrarian.":v<=-3?"descuento leve.":"cerca de máximos: comprar aquí es pagar precio completo."]);
+    }
+    if(!sal.length && !val.length) return "";
+    const zona=x.zona||"";
+    const cZona = zona==="OPORTUNIDAD"||zona==="ATRACTIVO" ? ["ok",`<b>Zona ${zona}</b>: el score (${fmt.score(x.score)}) confirma precio con descuento — reforzar el aporte según multiplicador.`] :
+                  zona==="CARO" ? ["bad",`<b>Zona CARA</b>: score ${fmt.score(x.score)} — reducir el aporte de este mes; no perseguir el precio.`] :
+                  ["",`<b>Zona NEUTRAL</b>: score ${fmt.score(x.score)} — mantener el aporte base del mes (DCA normal).`];
+    return `<div style="margin-top:18px">
+      <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">🔬 Evaluación fundamental</h3>
+      <div class="ev-grid">
+        <div class="ev-col"><h4>Salud del fondo</h4>${sal.map(r=>evRow(...r)).join("")}</div>
+        <div class="ev-col"><h4>Valoración</h4>${val.map(r=>evRow(...r)).join("")}</div>
+      </div>
+      ${evConcl(cZona[0],cZona[1])}
+    </div>`;
+  }catch(e){ console.warn("evalETFBlock",e); return ""; }
+}
+
+/* =================== ACCIONES CHILENAS =================== */
+function renderChile(param){
+  if(param) return renderChileDetail(param);
+  const ch = VS.data.chile;
+  const news = VS.data.n_chile;
+  if(VS.status.chile==="error" && !ch) return viewHead("🇨🇱","Acciones Chilenas","")+errBox("chile",VS.FILES.chile);
+  if(!ch||!ch.acciones) return viewHead("🇨🇱","Acciones Chilenas","")+skeletonCards(3);
+
+  const acc = ch.acciones.slice();
+  const order = {"Sobre benchmark":0,"Dentro benchmark":1,"Bajo benchmark":2};
+  acc.sort((a,b)=>{
+    const oa=order[a.evaluacion?.status]??3, ob=order[b.evaluacion?.status]??3;
+    if(oa!==ob) return oa-ob;
+    return (b.evaluacion?.vs_benchmark_pp??-99)-(a.evaluacion?.vs_benchmark_pp??-99);
+  });
+  const nSobre = acc.filter(a=>a.evaluacion?.status==="Sobre benchmark").length;
+
+  const sidebar = `<div><div class="sidebar-news">
+    <div class="hd">📰 Noticias · Chile${eduIconStatic('news')} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated.n_chile)}</span>`:""}</div>
+    ${VS.status.n_chile==="error"?errBox("n_chile","noticias"):""}
+    ${news?execSummary(news):""}
+    ${news?chileAlign(nSobre, acc.length, news):""}
+    <div style="margin-top:14px">${news?newsSection(news):""}</div>
+  </div></div>`;
+
+  const main = `
+    <div class="section-title" style="margin-top:0">Watchlist dividenderas<span class="count">${acc.length}</span>
+      <span class="hint" style="text-transform:none;letter-spacing:0;font-weight:400">${nSobre} sobre benchmark · ordenadas por exceso sectorial</span>
+      <span class="rule"></span></div>
+    <div class="grid">${acc.map(clRow).join("")}</div>`;
+
+  return viewHead("🇨🇱","Acciones Chilenas", srcStamp("chile"),
+    "Dividend Yield (promedio 3 años, definitivos+provisorios) vs rango sectorial") +
+    `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
+}
+
+function chileAlign(nSobre, total, news){
+  const sent = news.resumen_ejecutivo?.sentimiento;
+  const sg = sentSign(sent);
+  let ic,cls,tag,desc;
+  if(nSobre>=3 && sg<0){ ic="✅";cls="good";tag="Contrarian en bloque";
+    desc=`${nSobre} de ${total} acciones sobre benchmark con noticias bajistas: castigo de precio que sube el DY. Buen momento para reforzar las mejores.`; }
+  else if(nSobre>=3 && sg>=0){ ic="✅";cls="good";tag="Varias oportunidades";
+    desc=`${nSobre} acciones sobre su benchmark sectorial. El DY elevado es estructural, no solo por caída de precio.`; }
+  else if(nSobre===0){ ic="⏳";cls="muted";tag="Sin oportunidades";
+    desc="Ninguna acción supera hoy el máximo de su rango sectorial. Mantener aportes base."; }
+  else { ic="•";cls="muted";tag=`${nSobre} sobre benchmark`;
+    desc="Algunas acciones puntuales superan su rango sectorial. Revisar caso a caso."; }
+  return `<div class="align ${cls==='warn'?'warn':''}" style="margin-top:14px">
+    <div class="hd"><span class="ic">${ic}</span> ${tag}</div>
+    <div class="mx">
+      <div class="b"><div class="l">Sobre benchmark</div><div class="v" style="color:var(--z-opp)">${nSobre} / ${total}</div></div>
+      <div class="b"><div class="l">Noticias Chile</div><div class="v">${esc(sent||"—")}</div></div>
+    </div>
+    <div class="desc">${esc(desc)}</div>
+  </div>`;
+}
+
+function renderChileDetail(ticker){
+  const ch = VS.data.chile;
+  const a = ch&&ch.acciones?ch.acciones.find(x=>x.ticker===ticker):null;
+  if(!a) return `<div class="detail-back" onclick="go('chile')">‹ Volver al watchlist</div><div class="hint">Acción no encontrada.</div>`;
+  const ev = a.evaluacion||{}; const dy=a.dy||{}; const cmf=a.cmf||{};
+  const sobre = ev.status==="Sobre benchmark";
+  const years = dy.anos_detalle ? Object.keys(dy.anos_detalle).sort() : [];
+  const maxY = years.length?Math.max(...years.map(y=>dy.anos_detalle[y])):1;
+  const edDy = eduFor('cl_dy',{dy:dy.dy_pct, status:ev.status});
+  const edBm = eduFor('cl_benchmark',{status:ev.status, pp:ev.vs_benchmark_pp});
+  const edCl = eduFor('cl_clasificacion',{c:a.clasificacion});
+  const edCagr = eduFor('cl_cagr',{c3:(a.cagr_3y||0)*100, c5:(a.cagr_5y||0)*100, c10:(a.cagr_10y||0)*100});
+
+  const divbars = years.length ? `<div class="divbars">${years.map(y=>{
+    const v=dy.anos_detalle[y]; const h=Math.max(6,(v/maxY)*100);
+    return `<div class="c"><div class="am">${fmt.clp(v)}</div><div class="bar" style="height:${h}%"></div><div class="yr">${y}</div></div>`;
+  }).join("")}</div>` : "";
+
+  const divs = (a.dividendos_recientes||[]).slice(0,6);
+  const divTable = divs.length?`<div class="comp">${divs.map(d=>`
+    <div class="kv"><span class="k">${fmt.date(d.fecha_pago)} · <span class="dim">${esc(d.tipo)}</span></span><span class="v">${fmt.clp(d.monto_clp)}</span></div>`).join("")}</div>`:"";
+
+  const status = sobre?"Sobre benchmark":ev.status;
+  const statusColor = sobre?"var(--z-opp)":ev.status==="Bajo benchmark"?"var(--z-caro)":"var(--z-neu)";
+
+  const main = `
+    <div class="panel" style="margin-bottom:16px">
+      <div class="card-top">
+        <div class="tk">
+          <div class="ticker" style="font-size:24px">${esc(a.ticker)}</div>
+          <div class="name" style="max-width:none">${esc(a.nombre)} · ${esc(a.sector)} · <span class="dim">${esc(a.clasificacion||"")}</span>${edCl.icon}</div>
+          <div class="price" style="margin-top:8px">${fmt.clp(a.precio_actual_clp)}
+            <span class="chg ${a.variacion_pct>=0?'up':'down'}">${fmt.signpct(a.variacion_pct)}</span></div>
+        </div>
+        <div class="score-wrap">
+          <div class="score-num" style="font-size:40px;color:${sobre?'var(--z-opp)':'var(--tx)'}">${fmt.pct(dy.dy_pct)}</div>
+          <div class="mult">DY promedio ${dy.anos_usados||3} años${edDy.icon}</div>
+          <div style="margin-top:8px"><span class="zbadge" style="background:${sobre?'var(--z-opp-bg)':'var(--z-neu-bg)'};color:${statusColor};border-color:${statusColor}">${esc(status)}</span></div>
+        </div>
+      </div>
+      ${a.descripcion?`<div class="hint" style="margin-top:14px;line-height:1.55;color:var(--tx-3)">${esc(a.descripcion)}</div>`:""}
+      <div style="margin-top:16px">
+        <div class="cl-bm">Benchmark ${esc(a.sector)}: <span class="num">${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%</span>
+          · <span class="pp ${ev.vs_benchmark_pp>=0?'pos':'neg'}" style="font-family:var(--f-mono);font-weight:700">${fmt.pp(ev.vs_benchmark_pp)} sobre el máximo</span>${edBm.icon}</div>
+        <div class="bar" style="margin-top:10px">${benchBar(dy.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
+        ${edBm.inline}
+      </div>
+    </div>
+
+    ${evalChilePanel(a)}
+
+    <div class="grid c2">
+      <div class="panel">
+        <h3>Dividendos por año <span class="dim" style="font-weight:400;text-transform:none">(CLP/acción)</span></h3>
+        ${divbars}
+        <div class="kv" style="margin-top:14px"><span class="k">Promedio anual</span><span class="v">${fmt.clp(dy.promedio_anual)}</span></div>
+        <div class="kv"><span class="k">CAGR 3y / 5y / 10y${edCagr.icon}</span><span class="v">${fmt.pct((a.cagr_3y||0)*100)} / ${fmt.pct((a.cagr_5y||0)*100)} / ${fmt.pct((a.cagr_10y||0)*100)}</span></div>
+        ${edCagr.inline}
+      </div>
+      <div class="panel">
+        <h3>Fundamentales CMF <span class="dim" style="font-weight:400;text-transform:none">${esc(cmf.periodo||"")}</span></h3>
+        <div class="kv"><span class="k">ROE</span><span class="v">${fmt.pct(cmf.roe_pct)}</span></div>
+        <div class="kv"><span class="k">Margen neto</span><span class="v">${fmt.pct(cmf.margen_neto_pct)}</span></div>
+        <div class="kv"><span class="k">Endeudamiento</span><span class="v">${fmt.pct(cmf.razon_endeudamiento_pct)}</span></div>
+        <div class="kv"><span class="k">Razón corriente</span><span class="v">${fmt.num(cmf.razon_corriente,2)}</span></div>
+        <div class="kv"><span class="k">Patrimonio</span><span class="v">${cmf.patrimonio_total?fmt.clp(cmf.patrimonio_total)+"k":"—"}</span></div>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:16px">
+      <h3>Dividendos recientes</h3>
+      ${divTable||'<div class="hint">Sin registros recientes.</div>'}
+    </div>`;
+
+  return `<div class="detail-back" onclick="go('chile')">‹ Volver al watchlist</div>` +
+    viewHead("🇨🇱", a.ticker, srcStamp("chile"), a.razon_social) +
+    main;
+}
+
+/* ===== js/app.js ===== */
+/* ============================================================
+   VALUE SIGNAL — router + app shell
+   ============================================================ */
+const ROUTES = {
+  home:    {label:"Oportunidades", ico:"🎯", render:renderHome},
+  etfs:    {label:"ETFs USA",      ico:"📊", render:renderETFs},
+  chile:   {label:"Chile",         ico:"🇨🇱", render:p=>renderChile(p)},
+  oro:     {label:"Oro",           ico:"🥇", render:()=>renderAsset("oro")},
+  bitcoin: {label:"Bitcoin",       ico:"₿",  render:()=>renderAsset("bitcoin")},
+};
+
+function parseHash(){
+  const h = (location.hash||"#home").replace(/^#/,"");
+  const [route, param] = h.split("/");
+  return {route: ROUTES[route]?route:"home", param: param?decodeURIComponent(param):null};
+}
+function go(route, param){
+  location.hash = param ? `${route}/${encodeURIComponent(param)}` : route;
+}
+window.retrySource = async function(key){
+  await fetchSource(key);
+  scheduleRender();
+};
+
+let _pendingRender = null;
+function scheduleRender(){
+  if(_pendingRender) return;
+  // setTimeout (not rAF): must also fire in background/hidden tabs
+  _pendingRender = setTimeout(()=>{ _pendingRender=null; render(); }, 60);
+}
+
+function render(){
+  VS.eduReg = [];
+  const {route, param} = parseHash();
+  // nav active
+  document.querySelectorAll("nav.tabs a").forEach(a=>a.classList.toggle("active", a.dataset.route===route));
+  // content
+  const view = document.getElementById("view");
+  try{
+    view.innerHTML = ROUTES[route].render(param);
+  }catch(e){
+    view.innerHTML = `<div class="err-box">⚠️ Error al renderizar la vista: ${esc(e.message)}</div>`;
+    console.error(e);
+  }
+  flushCharts();
+  updateHeader();
+  window.scrollTo({top:0});
+}
+
+function updateHeader(){
+  const keys = Object.keys(VS.FILES);
+  const anyLoading = keys.some(k=>VS.status[k]==="loading");
+  const okTimes = keys.map(k=>VS.updated[k]).filter(Boolean).map(t=>new Date(t).getTime());
+  const newest = okTimes.length?new Date(Math.max(...okTimes)):null;
+  const nErr = keys.filter(k=>VS.status[k]==="error").length;
+
+  const btn = document.getElementById("rfBtn");
+  if(btn) btn.classList.toggle("loading", anyLoading);
+  const t = document.getElementById("rfTime");
+  if(t){
+    if(anyLoading) t.innerHTML = `<b>actualizando…</b>`;
+    else if(newest) t.innerHTML = `datos <b>${fmt.ago(newest.toISOString())}</b>${nErr?` · <span style="color:var(--red)">${nErr} con error</span>`:""}`;
+    else t.innerHTML = `<b>—</b>`;
+  }
+}
+
+async function refresh(){
+  await fetchAll();
+  scheduleRender();
+}
+
+/* status callback during fetches → keep header + view live */
+function onStatusChange(key){
+  updateHeader();
+  // re-render current view as its data lands (cheap, coalesced)
+  scheduleRender();
+}
+
+function buildNav(){
+  const nav = document.getElementById("nav");
+  nav.innerHTML = Object.entries(ROUTES).map(([r,c])=>
+    `<a href="#${r}" data-route="${r}"><span class="ico">${c.ico}</span>${esc(c.label)}</a>`).join("");
+}
+
+function init(){
+  buildNav();
+  window.addEventListener("hashchange", render);
+  document.getElementById("rfBtn").addEventListener("click", refresh);
+  document.getElementById("brand").addEventListener("click", ()=>go("home"));
+  render();            // initial (skeletons)
+  fetchAll().then(scheduleRender);
+  // auto refresh
+  setInterval(refresh, VS.AUTO_MIN*60*1000);
+  // refresh "ago" labels every 30s
+  setInterval(updateHeader, 30000);
+}
+document.addEventListener("DOMContentLoaded", init);
+
+</script>
 </body>
 </html>
