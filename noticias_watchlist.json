@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T12:33:07.918447+00:00",
+  "updated_at_utc": "2026-06-12T14:33:08.557648+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -8,6 +8,13 @@
   ],
   "noticias_por_ticker": {
     "HABITAT": [
+      {
+        "title": "Superintendencia de Pensiones advierte por vendedores que ofrecen bonos de dinero para cambiarse de AFP",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWlNXMUxHY0I5UTNORElMR0gzYkE2NzF0ZXAwVVJwTW1hcGFaLWVuNjRwcUJjbmFaMklrVFg1eTFJT3pCSW5KRUM2WmR4Z0liOHJyWHotNGk4RkxVdmx5MTVjeVVqWVZDWGppTkdoM0hTQ1d6SDZpdFIwbG0zc1RYQ3o1dlJsb0JJRVJESmlITWJEMDJGRUZOUTBVY3pqRGJfU0tQeFp4ZVdENkREb05GaQ?oc=5",
+        "pubdate": "Wed, 10 Jun 2026 08:00:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "AFP Habitat"
+      },
       {
         "title": "Señales financieras | Una entrevista con Edgardo Gutiérrez, de Moneda Patria",
         "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaHB1MFdRMG9abVNpWW9la1RVb05CVlBvUy15OHBXQWhPVklaTmRYZDFSNmc2WE1idkpsT21NOTc0QlNqTmltMGpqX0IzTjhKTjIxdU44a3VVY1dZTTd3RmpoYUx0RkFmWG5Ba1U3VmJTZkZteGNfOTQtdW4xMWRyMkd2NGl0bkdybmUwTW5sYTB0MGx5ZThKcHhNeWZxdmlvT1hzazJkN21RYnNIdVhGNHl3?oc=5",
@@ -40,6 +47,13 @@
     ],
     "NTGCLGAS": [],
     "SOQUICOM": [
+      {
+        "title": "IPSA abre al alza sobre 10.800 puntos por compras globales frente a posible acuerdo de paz y ad portas de la histórica apertura de SpaceX",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85bS1VRnRSVXJleUk4aFNIaW9wSzBfWi12d3ZYelliSmpBNElsRjVieEdYdEthM1M3cGtISGxRaHBrQXNWb1FVYWFFUU5tdHgwZkp1eXJQUXpOOUxvcWR5RmpLaEkyTHRX?oc=5",
+        "pubdate": "Fri, 12 Jun 2026 13:32:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
       {
         "title": "El Ipsa sube acotadamente en primeros tres meses del gobierno de Kast, influido por el contexto internacional",
         "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOT0RITkMzZU1jejRRRHZpZ3NPYkJ1YlFZdENTb1NJc0JkMWFHMGJNejNDRHUtYkQ0Q0JTZFhTci1aWXZiUDRucHdxVXpZTkpwelkyV1ptTzZIdE9YMFZCNHYtRWl1VGQzTlNCdVZxUUtLWGtjMjFzZkVCOG15Vzc3UTIzbEUtTnZLVU9oSzlSdkZIQm1HRGo1a1pCS0xRQzhZQVZNRXFYQVRHUV9kMGNQWHlCc1V0UHp3Y21ucmVYLWhnNUotbGNqN2pHS0ItZVZpNG5QWWZESFlaLWhaQXBMdk9xY9IBhAJBVV95cUxOTFF1ZnpXWGs1NmZLcVVwYVlROUFURkVZU0lRdFJuVnJlQzVCYUdLQ29jQ2xjdDBaaFNZUHRfbHVzdmxQOFRQWHZZRzNIVjhEUkdJSTBKSkExc0pOVThlQlJKSFcyeUNPbUc1M0FYaVRFTDNsQy1VQXJzRDk0YjdNbVphVWstelpuMXB4U0ZrVk1kY3B4RVNKdjNYMnU3T19qMHRaZEFCSEIyTGlTeEU0aUxzNXJ5SnJzNUprUGFpbTdndWlLR0NFNDdhZVdqOXRFM0M4NzRvWTVyMEYzSkVRTkFLYmplZk9qMkVpOGVoWnVieUlFX1FRQW54UHJQNERvaFJyeQ?oc=5",
@@ -83,38 +97,10 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "La investigación sobre el Tren de Aragua reaviva el debate en Chile sobre el secreto bancario",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQ0hLd19yclZsbnZuYUhGVmg1ak5ZQ3VrV0tKWHMtTmVfREcyM1BoVFVIczRCMEw3ZGZkajFpZnVSd3ozLUJoWl9RTHRyR3FLMFdrVXpJcFhrTGk5MUxCaHZ6OE1WSDViaHhZYVk3MjB2bm1RUmtSQXY4QnZGQ2N4QlNIRllZZG1pclUyQVhROFRWWFNORDNDckZmemFUVmlHcmNTbkpiNVVvSGh0Zm9VSmg1RlA?oc=5",
-        "pubdate": "Mon, 08 Jun 2026 16:47:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
         "title": "Grupo Pampa compra acciones de SQM por más de US$60 millones en la semana",
         "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZWVRa1R2eDloQ2VQUW9JWFBud0lvUHJZSTRVRFZpby1sQXRBR2JGZjNDUDJFa0l2UjR4cE8zZWNMT0xxdmY1SHlCRld4NnpLdGFzclFHQkpYYjN1TXN2aWdyUGlXdDJsQXVpbENDbGs5a1gyTXJxTG9aVFhMV3R2VVpCSC1pSmlqNzlvX1Y4dDRmWkRiZG9XeTU0ek54SlJJbEJDcV9wSnJlTVBNYmhsWjZYb9IB1AFBVV95cUxNb3dZVEs2SE1sMXBKclVSQ01QYmh3S1Y1NWQ2TXhXVkFWMklwV0FKaW0xVlNmYnd5MTJ1ZnR2dkg4UkNuUlFET3VtZHRLZklQSmtWRDE5Q0RhY2Z5YjJfWms2MTVVTS05UFItaFlUQ05jYnBZYWE2R1l4NEh2R1FwLUZzaU03UnhCazZzUkNwQUJKMm00S1JGQVlBLXVmYWF5NXdpUHY0WTVaNURZQ1JPUXdKdzd1aERCQ2ktT25TaE42YTlFY1VPSTFiMTA3MDR2cFh6dw?oc=5",
         "pubdate": "Fri, 05 Jun 2026 15:50:00 GMT",
         "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "“Sería un honor”: Jorge Alessandri dice que “si se ajustan los tiempos” está disponible a competir por presidencia UDI",
-        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPOVRuODQ0M1ZVWDhjR0R5aEtEd1JiZFB2SmJKcXIxZEFnWExKcFQ1VVNQRXhWX0t4N0VnRFJqVjJXYnVtUEpvY0RvRHVETEpwcFNkZmJsSXVuLTdOTldnRFdSaHZSLWlVVzN4dWdQVEJoU0NxcDlXWUhNLUxaamNkUlMwTzhqajlCZTV0X055OWRibklpOTYxSi1qelVsbjR2TUhUZzVSdDRSejFVcGg5c0dBNVpZVDk4UWZuYVZLWnZ3WmpFSG5yUTNjeER0X2pXSVhBSmlDQ0lwWWVSLU9XZUw5RlAzckNkR0NxeTFR0gGPAkFVX3lxTFBGWXJxWms2MWFTdmduV0toRGFTQjRIZnljTFBMTEQxbVJIMXg0Ni1ReGZxS1U3Mm4zblF6VDdmbmpyR25PVERvYm5GY0cxa1M0YjNUR3F4VjY5M0ZtVlVaaktSQzUxYTN1NzhFU09pVkxYWjFPMVlNcDBjSzR3eVdQTE5LU01LY0dNamFBeHR6SEJtbS02UExYSmI0X0tLNHh6bng1SXlJYVJOaU5vM1YxUTlPVXREbHpKamVKeHVkOXluTUpsNGowSEpTemd0RC1TeGRKb2hkZmhRWnBQdW9yTGpfbEZiejc4TFRtZ2pPa2pqcmx0d0I5MFlRemllT09CRmhFdmJCcy1MTnhIeFk?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 14:52:05 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Cinco acciones a tener en cuenta en junio: BICE, Parque Arauco, Cencosud, SQM-B y Latam",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTTl3YXg1ME9sUFFXTnJ0VGFvOXhJaEhuaXY2bEtFclZTcDQzOElMbHVpbEFWMG9zcXV5RlprTk5aYVYwU25LV1ZLX1RBMUxHdDNGZ3Zvd01URExCUGpkbVpSUnFxSlJJakxteUhBaGtwS2xXaUpsRFdBY3JWZWlLSHRtbFg5aVNvZnBPT2JHNzF6UmNfa1Nhd1dzX2pDSElBY2ZqZDJoX1hsb2VDbjItbm5MZHV2NUk?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 14:13:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Grupo Pampa invierte más de US$ 60 millones en SQM a través de nuevas operaciones en el mercado esta semana",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWkQwdXVsWUViOVBucTBFZ0JCNXAtS2IxXzRScmcxZEdaUzdOTlllWVBmUzdNby1oaTlkYl95UTRhTXNSdjJoN1EtUWVpTXVfa1d5ajJnVlZfR19CNE9yNmhvbXVXcG9PZjRtVWw2dnpiTFc3ak92MXVNNFRfbEJ2cktxNE8xSUxfYkxzLVNjVlFsX3hMdkwwcS1RS0sxN3pWM0NVNDNBMHZrM0V0Y2c?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 13:26:00 GMT",
-        "source": "Diario Financiero",
         "matched_keyword": "SQM"
       }
     ],
@@ -125,8 +111,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2259,
-    "total_noticias_filtradas": 14,
-    "total_hechos_esenciales_brutos": 99
+    "total_noticias_brutas": 2260,
+    "total_noticias_filtradas": 12,
+    "total_hechos_esenciales_brutos": 100
   }
 }
