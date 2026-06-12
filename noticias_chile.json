@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T06:12:47.000788+00:00",
+  "updated_at_utc": "2026-06-12T07:33:51.775367+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -140,20 +140,6 @@
         }
       },
       {
-        "title": "Dólar a peso chileno: precio del dólar en Chile para este jueves 11 de junio",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRWw2Z1ZKMVN1TjAtYlVBTXR4TWJGVmlTekE2b2plblVvMl9ZbVpKVDR3Nkoxd0dVTy1yaHZnQlZ5QVpGU2RQR3hxcDlyRnNXTVFfWlJnS050aElhbDVNdC1jbW1JYTFheTJQWkV5Q205Y1dlOTNqR2tkNnJQbmJjejBNOFd3MS1zMFZiUER2QzZwUUMxMlBpang4OU1tT25wQTVRbUR2QUplWEkyNDhNeWFpWmdDRFRCNXlnNlU4TS04Y3Jt?oc=5",
-        "source": "Radio Pauta 100.5",
-        "pubdate": "Thu, 11 Jun 2026 19:42:15 GMT",
-        "pubdate_iso": "2026-06-11T19:42:15+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "Dólar cierra bajo los $910 en Chile apoyado por fuerte repunte del cobre",
         "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOek40UHJaaWxxeTU1Q2NPeDJwVHpLSlJKYXFjMzNnTVlheENTREQwcTdqbW9wbnpLVklDcUZudm52eF9vd200aXNhVy12Q0NQd0xkajBxM3U0YjVJOC1UQkw3Qzg1T0pHU0RRa1N0MU9QZ2IyOFBKMGRrZzNUMW1DbENFYjF3ODEtR01UQmY1RXYwRWx2cVJjM21EUjJacWtIeV95MUUtLUswdUxZUXFiOU5lbGtSdEJaSHlzRUUtTEdneHRMdWJkcktuYw?oc=5",
         "source": "Radio Agricultura",
@@ -187,6 +173,20 @@
         "source": "Diario Río Negro",
         "pubdate": "Thu, 11 Jun 2026 14:39:00 GMT",
         "pubdate_iso": "2026-06-11T14:39:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Precio del Dólar en Chile hoy: El Peso chileno gana terreno tras datos económicos clave de EE.UU.",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRHNmWDJQY21vdF9yTHlNOFVFdnBWLVlZb0RmYjZjMEt0MC1xNDFOWjZ4X0lHSTdTVWFWcWw5bi1NLUV3MzJIV2p5X0tHRVdBTnNaTTNKWEpoT2xoUnpnQVlVUmxKQVBEdHhla3hQRTdPbzZ3dUIzWGRVNWVhVFVvN3laMmhLaE13NEo2a2ZhZ2lpQzk1ZnltRi1KNmphdzZtSXFobmxfMGFjLVFxMGFQczhpVkhEMHBNanRFRFdjOFhUWllHRG5pN0QxMVF0SWxsd3fSAdcBQVVfeXFMTVZ0dGJxZnlGVHV3OUY4Ti1adFd6NVFYTTVaa0JJWmRjZHhPc2ZZTk1MdjE0N21nbDNIRVdQU0RMVkEySWxIVDVqN3QtU29Hb0ZtcXRyTW1RTHdkR1A1Z3BpeVpFOHNMOTY4LVVaOHlDRTJuMnNSVHY5Y3BNNkE3YVFnaGNSY2dqbm1BYWpFRl9yeDJ3SEdJTVVKWkVXckJHanlMVEY1S2d5SEVBQ3dReURsMldJeWZ0QTE2aUdMU1pWRHZqYmNEM0NacGp6dkRRcEVOcUpZYWM?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Thu, 11 Jun 2026 13:53:59 GMT",
+        "pubdate_iso": "2026-06-11T13:53:59+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -320,8 +320,8 @@
         "title": "De malls a departamentos: por qué Cencosud, Parque Arauco y Mallplaza apuestan por viviendas",
         "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcXptaHoyeE5YQlZyYUZaTXNLdUY5REEtWnFpODlnZHVFMkU2SlBHQ213bFhCME9BREJSMUlaNDZacFJBYTNNaXJlclBKSFlXVlZrLWpHTlJtdlQzdWh6UFZMQWdTRzFFN0tJcExzZ1NuYjd0dHRSdkFycFZadTNFb2l2emJKOUtFaS1OVlNuVTU0UFVEanFJUFl5cGM3ZHlURUkxVDJNU2JRRUNRTTRtckZJcmVsWDA2YmVWQUt2ZEhtaFB5?oc=5",
         "source": "Perú Retail",
-        "pubdate": "Fri, 12 Jun 2026 04:13:54 GMT",
-        "pubdate_iso": "2026-06-12T04:13:54+00:00",
+        "pubdate": "Fri, 12 Jun 2026 07:19:36 GMT",
+        "pubdate_iso": "2026-06-12T07:19:36+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
