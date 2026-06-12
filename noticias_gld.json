@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T06:39:33.588802+00:00",
+  "updated_at_utc": "2026-06-12T08:39:34.667362+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -29,6 +29,34 @@
   },
   "noticias_por_categoria": {
     "precio": [
+      {
+        "title": "Cuánto cuesta un gramo de oro en España, hoy viernes 12 de junio",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORDNEREhmSWplUVJGbnc4bXNMQksyMU9ocnhxRkhQQVBxWmw3TmljdmpIVFBtZU9PWlZfZUg2blMzZV9ScFhXVHZGcHFOdU5LS0pzU0NFZFNaSGJyNlR6NkFkbVBYS3dWa0FTa0EwMHR2bHpfNnVNazV6TVpYamVqMTkzNEJldlZxZDk0R1NxMmVtem8wMUY1ZjdyeEJFaWJONXZ2cXN6OTJkQdIBxAFBVV95cUxPYkJDZDZzanRzUnNnZE44ZDU2WUpRS0E3X0FkNFFOcnBiT09iN05FY2VZREpmamJhQ0NvNUhKaWFraVFvSENnSjJWWHNoYzQxUHlweVduY3AwdzFmakdpMUdHQ3FaX0pEWEk4U2hRc1I1MXFaaEFqdFZmbFM2WWVaMmhSWjNJbnJoRTU1MXJiRG9wZ2VOMmlOS3c3ZkdfRUlZX1V4Rjh4S0liM0tNMENVRmR4RUY0aEJYazFiQWphM09HT3hI?oc=5",
+        "source": "Infobae",
+        "pubdate": "Fri, 12 Jun 2026 07:53:24 GMT",
+        "pubdate_iso": "2026-06-12T07:53:24+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Los precios del oro se han disparado hoy (12 de junio): la gente se apresura a comprar, formando largas colas en las joyerías.",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOVJGTHZhSUdBakhPeDFmYmp5UEc4a0xXVUcyTk95a213bWtZczZ2NTdLMnF1ZUZqVS1aVmUtOE5jYjhnZURFUEUzWm5iMG45dzZwMXk3Z2V3dXI5NWhiUmM3aHgtTnlfTE9WcGdVN01VSTBjQXZhZXhNbDZyNnROZFBxQWJLRmhlelJZaTBuN0ZqeDdSYk5XUkdxLVpzbGdSQ2FKLWFtYWlxdTBzc1E?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Fri, 12 Jun 2026 06:56:31 GMT",
+        "pubdate_iso": "2026-06-12T06:56:31+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Precios del oro hoy (mediodía, 12 de junio): ¡Disparados!",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5pZXNDYVlBRE9vb2ZaOFlCQjlJdmozdHhFTTNnUmI3OHVIc21NZ2RVOV9jTFk1dTdyU2ZDNjVTMllZVzNVekcyZTNoX1JnYk5nU3VPaVVsblZGZGVLTW51b0dTNENiQnMxZXc0Z01R?oc=5",
@@ -63,34 +91,6 @@
         "source": "Vietnam.vn",
         "pubdate": "Fri, 12 Jun 2026 05:05:43 GMT",
         "pubdate_iso": "2026-06-12T05:05:43+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Rompiendo su tendencia a la baja, los precios del oro en el mercado interno revirtieron su rumbo y subieron bruscamente.",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMV96T2RKT1BpS3hFeFQxVXFRY0kxZThvc0VZNDhab2p2MnN4Y08wVjFvTjlscG5KNkRwOUlKWXdHb2U0ZW1WeUFtQmVxTDFYX3U2OTRVRE1OQUUxd3BzNzNqN2dTdDJkSkpDOTVyUkNqNThIZU1ybEE2SHo0MWJfZlZMdXNvbkJBLUc2Zmk2UQ?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Fri, 12 Jun 2026 03:52:39 GMT",
-        "pubdate_iso": "2026-06-12T03:52:39+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Lista de precios del oro de 9999, 24 quilates y 18 quilates de SJC, DOJI y PNJ hoy, 12 de junio de 2026.",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZE1nZ0Nla1cxLXRhSG1WaDNmZllvdjVWRllUby0xUTQxMU42aWhibW16ZXU2NkpFZnE3dHBiUm02UXprbDU4ckZUSnkzcjg3a2pxNEN3WHFxN19sS196WHN4U2RaeURlTFBTcWNHeGF0TDFnX3c3SjBoMzhSdFBTcUVmY0toOGZzUE44?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Fri, 12 Jun 2026 03:45:32 GMT",
-        "pubdate_iso": "2026-06-12T03:45:32+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -174,7 +174,21 @@
     ],
     "dolar": [
       {
-        "title": "El Índice del Dólar estadounidense gana terreno por encima de 99.50 mientras las tensiones en Oriente Próximo y el IPP estadounidense elevado impulsan la demanda",
+        "title": "El Índice del Dólar de Estados Unidos avanza en medio de la aversión al riesgo predominante y perspectivas de línea dura de la Fed",
+        "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOMkV2SGcxMnlnSGtVVFQwNGpiYlh5UmlySDNIZnNSTE5HRWJGRWRIX2p5M1hNa2RVQ3QtaHVwNFZhWXRKaFI3eEtIVjRSVnR0Vi0wbzJYbUlGZkJHazVWQXJFNnZtNmtLZDJEMjZ5NHZVQ1FOU19UdE8yUWt1b1puNVFIMHdQbUtueU9rU1ZKMlhvWkNKMXZqdGxOQTg3UnRHY0tNOFpvbXZaRTBYdG9DakRzZGdxVlRkV3dleXRUZ1RzaHBIWjdNSnlaVEtCTUNGWUlpcjBBM2U2UmxxZk90a1ZHby1BcGstelhpaGU5Wno1c0RrTnFZMlBrRFQzWlVtZEHSAYcCQVVfeXFMTXVvZkxjeTJoRWdBLVdnSktVdjFpWTJ4SUZlbXQ2RDlGSzY3eHJsY0xQckkydDd3SG84eUJ4QzE0Z3EyeGJwbWh6QWpQNks1Sk40M3NmUlVSTDFmS3l5SXVMV0lUREZUVm1idEdDWDJhLUFYUUpXS3JSTFRhRjN2eG85R0dBSVJLSWlQM2I0Wm5ZYjdHaVI1djVhdHNqSVNOZTZDOGxuV0E5ZXBfYlI0bDVGMV80bW9oQXdBQ21QUkFzM3ExalM2UFdNenNBMFVPMXhuTEkweVFoUC1YRDlwcVNSRUxIMGY0aHJ4MlJoai1YenJpUFpYaTRvLXB0NjI4eTFfTFYzUzQ?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Fri, 12 Jun 2026 06:53:53 GMT",
+        "pubdate_iso": "2026-06-12T06:53:53+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "El Índice del Dólar estadounidense gana terreno por encima de 99.50 ante las tensiones en Oriente Próximo y el elevado IPP de EE.UU.",
         "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNTHRINzVZM2dsYXZSS3Y5WW4tVWtIeXc3d1pCTGszai00WFppaGt5eDhFcnVBQ3J4ZmpQYUttOGxnSXQyWTg0V1U5elpkaE5HbUVHWEJUX0RLRnRBM2xVWGVDM3U5RVJ0SGNxMzItNjlmUC12ejBrTjhwMVhLY0JZa2Ixc2NBT243dXpKVVdpaVdmd2h2Z2dNMmhCWkZBU1pnejh1b3p3VS05S0YyVXdGQkZveldhLTBqdzBnai1naGlHMWF0aWh0dUJTd29YTlVNclhkQmptSnMxXzFpRHhoem5USFJ2bWp5dVM5cndieWNyNHRYeHlnYWYxMUhrS0JLd3FuUlhuZFdvZ0JOXzNweXFDdGM4WDJpQTc0QjhlX3cwUG1PWWh3MDln0gGvAkFVX3lxTE9xblY2NXJlcjYwRjdvUFI5RkFMSGk5QVEtTU9KSHhEazhNVlM1cUtpVHREeFJnMWF5Y0VPMl92emFSeFBFT3o4UGh1VzFlLU4wR3Z1SUU4ejFtR3l0Sl9nTFAzNHpTZVFOMkpkc1BCMm9fUndqeHZkZmxZbzBSU3NFT1R0RmlsY1YxNkFCeHlYOWgzVm1HVmVlZ0tYZThTUU5VWGFJeGdJT2ZnQkNXM3JHdTdEMDY4RUp1Mlc1UWptcDBjWFlUUXRjaWVfNGxOSURlLUV0OHAydVRUcUlkZWZZYnBtOEc1WEJObVZ0RXM2Um52a3BOUEktR01lWG92STBFMXJrOFdnSmtVUFUtYnkwTzBRMHQzSUNtSlVYdHp5NnRmTGZlREstdjNDR2dRWQ?oc=5",
         "source": "FXStreet",
         "pubdate": "Fri, 12 Jun 2026 02:43:04 GMT",
@@ -228,20 +242,6 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "El Índice del Dólar estadounidense rebota ante la incertidumbre por el alto el fuego entre EE.UU. e Irán",
-        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNRTIyMWRRSEZEclZldHgwNU5LaVJGaDhjU0U5QmRzRTdUTXlqOFhzYmdmdzExakZFTm4wQnZlODFBenpHRFNUNHF1YlJManR4b3RhdDVmdFVGWkM5VmZwT29CZVVZLVE5Tk1pTGVKaUNjdnBJOTBUY0lfWE54NnpMa3hrZ3NYX1RTNURVV0tZbmZyTzhZaG9ld2NOTTVYUmxRb1NUa3ZGbVo1NjVSUU5NRTNXV0VDRW5XQlFnVWljRllSYUtDYndPcGdVTm9INFkxYWt6ZUg1R2gxYW92NHZtQzdKTG1Hd9IB6wFBVV95cUxQajJzLWR2NVpJU0p3bG9GTnN0VXBTT09FSjVlQmI2TlZPd1ZtOXlkOWRoZnFOYThXZGtpLUU5Y1RuR1l6Z2lYS3dUcEJ0QWw2MjNQTFRIS2xHc0dKTnRyU2hPcWl0RW9lRjFNZWhDYncwVDhWUF84RVJkMUZQNVFtdW1nNWFmT3BpTXZiaDU1ZnVJSEdsYjJYckNDRU9Qbm1COWNSN3VlMGZwZlBaODZsbTRPX1lRNVBjYWpJV2JlVHc1cHRKSThnazFaUVc1akZPUzM0SzNTWllrd2lTNmJ3U3lfN2tWZDg3RzNv?oc=5",
-        "source": "FXStreet",
-        "pubdate": "Thu, 11 Jun 2026 09:09:35 GMT",
-        "pubdate_iso": "2026-06-11T09:09:35+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 1,
-          "intensidad_label": "leve",
-          "emoji": "🔴",
-          "razonamiento": "Cese de hostilidades: risk-on, oro cae"
-        }
       }
     ],
     "bancos_centrales": [
@@ -251,6 +251,20 @@
         "source": "AD HOC NEWS",
         "pubdate": "Fri, 12 Jun 2026 05:12:32 GMT",
         "pubdate_iso": "2026-06-12T05:12:32+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Oro: la ofensiva compradora de los bancos centrales desafía el dominio de la Reserva Federal",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZGNSczhETG5SYVMyQndDcWptVjl5Y29DZ3oybzFRQ2V0OFBIZ0lpVHNUZm5XY3RHdDVLTExtLUtUZ19JdGJ4R1BpRUllWmdjRHJ1M182MC1BSmVoS0VtYi13QmRBQzQyOVBMVDBZWlY2Zk5aZVllMFRZU0lfXzE0eHprQU5rNWRpWDhGcXRmZ2NDRXJ4bjR5Z1I0OFlvWW9hNEoteEhEcndTTmtMUDUtbjFqenlCNTFsVkoyWnhwR3ZIZ0ZNcmVhOXhVQQ?oc=5",
+        "source": "AD HOC NEWS",
+        "pubdate": "Fri, 12 Jun 2026 02:03:44 GMT",
+        "pubdate_iso": "2026-06-12T02:03:44+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -300,20 +314,6 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Peso drops most over eight weeks since midterm sell-off",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOajREblFkSFlzdnZPR2VPa2J3eEE4bVFhNVEzd0xEbF9PWmRGVDRaT3BOVTRzcWQ3YU4zVU13ZnQ0NmNYUWtzeFJuVjV4M2NkU08zcnpLQVdVSTBLbEdKVWljZGVxcHhiWDFhaVdETnFvWjhZN2dwVjhLVlNWek1oTmhVV2stRmFVSElOdDNUY1FobHlMQlJvTWpmaWlrUVJ0OVBrcHJhT2w1ZjZhZ0R5M9IBtgFBVV95cUxOS1NlQncwMTlMZlBfR2Z3NWsxVjgwclhMS2Y2bFd5ME9IQklBcDRFR1ZRQ0tsYnVPSlE5TFpBWnRlbWYtcGEtQk8wbEMxZmNpNUhyZExzZGRZeWg1dEp1amxYb0l4ZERZZDdHOVdMR0MwdVptdF9Sb251ejFxUWc1LU1hN05XSHdFN1hYV2FlZkZfQmktNU5icWxBLVAtOVNtMG5sTFdXY1FIM2pXVGVYY3hfclM3dw?oc=5",
-        "source": "Buenos Aires Times",
-        "pubdate": "Wed, 10 Jun 2026 18:44:26 GMT",
-        "pubdate_iso": "2026-06-10T18:44:26+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ],
     "geopolitica": [
@@ -343,6 +343,20 @@
           "intensidad_label": "moderado",
           "emoji": "🟢",
           "razonamiento": "Tensiones geopoliticas: flujo a safe haven"
+        }
+      },
+      {
+        "title": "Commodity Corner: Oil surges on closure of Strait of Hormuz; gold hits six-month low",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPX3Nmc1JhX0Rvbk1YSXI5elc5MVNxV0lXaU1BY2hkV3NsbElOWnlwZ1g2b012TWJPZXBnMkc0ZERrbzJGME5wWXF5Y2VMOXlHeXhBakZHVVRVYVg3UWlvazRjdGdxVnBKSlZIM3JnZV83WGJPLTl6ZkhDdWlGWUdzV1hxb3BzYnN4dzR2aV8za2tLNjdKeXNIX1dEMzVkdzdOVTIyLW1ZemxDeE1SVExGS3FxYkFrc1dtU0RCWDNvNTV3czBKcVpoQnRMSU9ETW5Obnp5UmcybWlhTWtE?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 02:34:00 GMT",
+        "pubdate_iso": "2026-06-11T02:34:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
         }
       },
       {
@@ -406,23 +420,23 @@
     ]
   },
   "stats": {
-    "total_noticias": 26,
+    "total_noticias": 27,
     "por_categoria": {
       "precio": 5,
       "fed_macro": 5,
       "dolar": 5,
       "bancos_centrales": 5,
-      "geopolitica": 4,
+      "geopolitica": 5,
       "proyecciones": 2
     }
   },
   "resumen_ejecutivo": {
     "sentimiento": "alcista",
-    "score_neto": 10,
+    "score_neto": 11,
     "n_positivas": 6,
-    "n_negativas": 2,
-    "n_neutrales": 18,
-    "narrativa": "El feed muestra 6 senales positivas y 2 negativas (neto +10). Factores dominantes: Core inflation persistente: positivo para oro; Conflicto belico: flujo a oro como refugio.",
+    "n_negativas": 1,
+    "n_neutrales": 20,
+    "narrativa": "El feed muestra 6 senales positivas y 1 negativas (neto +11). Factores dominantes: Core inflation persistente: positivo para oro; Conflicto belico: flujo a oro como refugio.",
     "narrativa_fuente": "plantilla",
     "veredicto": "ALCISTA a corto plazo"
   }
