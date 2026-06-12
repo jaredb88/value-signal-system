@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T05:42:56.903451+00:00",
+  "updated_at_utc": "2026-06-12T07:35:52.542533+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "tesla": {
@@ -47,20 +47,6 @@
           "intensidad_label": "neutral",
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Tesla Stock Is Down 7% in 2026. The Margin Recovery and Robotaxi Launch Suggest the Selloff Is Overdone",
-        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeWxJSkNXSjk4WVluTXpCVTdhSDMxMjYteDFmWHNEalhvNnBRdzRrSm0zMlU0eWhObWxkd2lvbFVDMjVaM2VEYS1pZF9mVTJKa2wzeE9xaGVaRXEtUkZOc19SLUZKZ3RzQU1nVE9NSXdNd192T2gyYTVfdFg5eU5ucHpjTVpZZ0NZNjBqZlJLY1dDRVRmM0dOZTlnVGpDNU45YURuYjRYdjVfWnQ1WEF0LUpEQmJUU1I2LXBNZVFvRUE5SU1taDhueUdR?oc=5",
-        "source": "TIKR.com",
-        "pubdate": "Tue, 09 Jun 2026 07:00:00 GMT",
-        "pubdate_iso": "2026-06-09T07:00:00+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🔴",
-          "razonamiento": "Selloff: presion vendedora"
         }
       }
     ],
@@ -140,6 +126,20 @@
     ],
     "macro_tech": [
       {
+        "title": "S&P 500, Nasdaq, Dow End Higher After Trump Signals Iran Deal Coming Soon — ADBE, INTC, AMC, GOOGL, ORCL In Focus",
+        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUVUyOC1rSldZUVhfYXV2dUhLcG8zQ3NWUFNSa09RM0tfZ0RnTkNVTDFoTXVOVlZfTDFqVkVuSGR3bzd0SFV6UzNZVHpSTzRLOFptMFFuTjI5YVdnQ3h6Y0w0cG9xMkxMRVhVSXd0VmdVUUI5RUJGYXJ4cV8yclAwY1R1TTlUWGdveGxVc2hiaHNxYUoyZ2gtVTgtR1lHMlBZejNZamNmbFA2Vm4ydTZDdUFfT09tdWlBYmpOTVdZZ2lMeUlNVW4wUUdjdVg5Zm9NMEhpSUlYbWZic2ttdk1zODF6c0kwQlRLaFl4UVVwYU42azNFU2N3ZQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 22:48:00 GMT",
+        "pubdate_iso": "2026-06-11T22:48:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Magnificent Seven borran USD $2 billones y arrastran la caída del S&P 500 en junio",
         "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZHhrSy1rNlJyTDN2MDNCRmlFaW00dlFCVVBxejVlM29tc2k5MkZHOHE3LXE2cVhKT3dnZll2LVU3YlZrZHBiSHFpZ3hGWlQtUHNyNXM4VFd1ZE9NOEpTdktNb3ptMVoxSlZZSzVqX1NMR2pubk8yQUlleUtWa0t4SEhwWC0yZjdQOWp0N1NQMEZWMl9JRkppbXFHMmg5UjJxY1hzZHJlWnpnY3JQUG1tWTZ5bVdhRENUVEdGSDRvWQ?oc=5",
         "source": "DiarioBitcoin",
@@ -194,40 +194,26 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Wall Street futures decline up to 1.6% as crude prices surge on renewed US-Iran tensions; CPI data eyed",
-        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNaE1vcHhKMDAtQllObWxmNXR3c19ObU9WVDhIWGdXZVhiSVNqUmhHYzJUQVhYUlVsMWo2S2JocC02S0EtdVB6VklWVVc5b1ZjLWRzZUx3QVZyVVA5WVBBenZLb2Vicnpqdk83a2dzN19PUVZ5VEhFRUVsM2drYTQxM0VhQkFOd19sdFRGM3A3cEJENF81ckFPOXpNaWYxYTdpTUtIRm9LOHQ2Qzk0N1Zxdnpkb0xMc3E3UElUZm1CTHVXcm5TbkN2X05USjdjMjR3OXVlaS1ydklVN3JZVVZ3Y01QNmxKYzBFam1oNUlxU19sQ25WX1E?oc=5",
-        "source": "TradingView",
-        "pubdate": "Wed, 10 Jun 2026 12:08:37 GMT",
-        "pubdate_iso": "2026-06-10T12:08:37+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ]
   },
   "stats": {
-    "total_noticias": 13,
+    "total_noticias": 12,
     "por_categoria": {
-      "tesla": 3,
+      "tesla": 2,
       "nvidia": 3,
       "ia_semis": 2,
       "macro_tech": 5
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "levemente bajista",
-    "score_neto": -2,
+    "sentimiento": "neutral",
+    "score_neto": 0,
     "n_positivas": 0,
-    "n_negativas": 1,
+    "n_negativas": 0,
     "n_neutrales": 12,
-    "narrativa": "El feed muestra 0 senales positivas y 1 negativas (neto -2). Factores dominantes: Selloff: presion vendedora.",
+    "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "Levemente BAJISTA"
+    "veredicto": "NEUTRAL - sin sesgo dominante"
   }
 }
