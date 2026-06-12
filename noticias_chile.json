@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T23:33:49.865351+00:00",
+  "updated_at_utc": "2026-06-12T01:33:49.403428+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -102,11 +102,11 @@
     ],
     "ipsa": [
       {
-        "title": "SP IPSA: La Bolsa de Santiago este miércoles cerró a la baja con variación de 0,48%",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZWZ6UlRnU3c1NnhXYXkwdkdtSkVSV0ZmM1pMOXZHcFVKRWNvM095TnNQT2V4eUFOcUR5TTFPWjRCS3c2ZXV2SlE1Tk1HMC0tVXhzYmhpdWtxckJtaDdZd3YzeHBzWEF5WXZKekhXdUhPT1M2VXZGNWRBemJES0JlV0VPYzl4Q1dFcDhtci05NDFIVHQ2NWRtc3JJbFdnY1g0elNUSEJnN0JZeWJ6WXY2SmhJc2dUalJ3OHc?oc=5",
+        "title": "SP IPSA: La Bolsa de Santiago registró este jueves variación de 2,76%",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbzZyNTFwbGtxYjF5RG1xM0ZCd29mN3gzZld4TFRpelRnV3JrTml2Q2JINXZFZlVHNGdERGo3anBfRS0xOFdjM0VJaDdMNzN5clJLeEtQNlR4QVFsek95VGp5c3N2Nm96OGYzMkEyRVJtT0Vzb0RuazRQeldKaTl0eG1XSHN4NnhwNXFmVG5MSzVkWEwwbkhEVWJBUm1ZN01QSTBXUFR2U1JkUVNvTGtKdkFTbw?oc=5",
         "source": "diarioestrategia.cl",
-        "pubdate": "Wed, 10 Jun 2026 21:50:20 GMT",
-        "pubdate_iso": "2026-06-10T21:50:20+00:00",
+        "pubdate": "Thu, 11 Jun 2026 23:33:05 GMT",
+        "pubdate_iso": "2026-06-11T23:33:05+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
