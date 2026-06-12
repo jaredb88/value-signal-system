@@ -194,7 +194,8 @@ main{padding:26px 0 70px;min-height:60vh}
 
 /* zone badge */
 .zbadge{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:20px;
-  font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;border:1px solid}
+  font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;border:1px solid;cursor:help}
+.mult{cursor:help}
 .z-OPORTUNIDAD{background:var(--z-opp);color:#0b1f1c;border-color:var(--z-opp)}
 .z-ATRACTIVO{background:var(--z-atr-bg);color:var(--z-atr);border-color:var(--z-atr-bd)}
 .z-NEUTRAL{background:var(--z-neu-bg);color:var(--z-neu);border-color:var(--z-neu-bd)}
@@ -267,6 +268,7 @@ main{padding:26px 0 70px;min-height:60vh}
 
 /* component bars */
 .comp{display:flex;flex-direction:column;gap:11px}
+.comp .crow{display:flex;flex-direction:column;gap:3px}
 .comp .row{display:grid;grid-template-columns:140px 1fr 64px;gap:12px;align-items:center}
 .comp .row .nm{font-size:12px;color:var(--tx-2)}
 .comp .row .nm small{display:block;color:var(--mut);font-size:10px}
@@ -308,6 +310,37 @@ main{padding:26px 0 70px;min-height:60vh}
 .exec .narr{font-size:13px;color:var(--tx);line-height:1.5;margin:4px 0 0}
 .exec .verd{margin-top:10px;font-size:12px;color:var(--tx-2);padding-top:10px;border-top:1px solid var(--line)}
 .exec .verd b{color:var(--tx)}
+.exec .contra-line{margin-top:10px;font-size:12px;color:var(--tx-2);padding-top:10px;border-top:1px solid var(--line);line-height:1.5}
+.exec .contra-line b{color:var(--tx)}
+
+/* ---------- capa educativa ---------- */
+.edu-i{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;
+  border:1px solid var(--line-2);background:transparent;color:var(--mut);font-size:9.5px;font-family:var(--f-mono);
+  font-style:italic;cursor:pointer;margin-left:6px;vertical-align:middle;padding:0;line-height:1;flex-shrink:0;
+  transition:.15s}
+.edu-i:hover{color:var(--teal-2);border-color:var(--teal)}
+#eduWrap .edu-back{position:fixed;inset:0;z-index:90;background:transparent}
+#eduWrap .edu-pop{position:fixed;z-index:91;width:340px;max-width:calc(100vw - 24px);background:var(--elev);
+  border:1px solid var(--line-2);border-radius:12px;box-shadow:0 18px 50px -10px rgba(0,0,0,.75);padding:16px 18px}
+.edu-hd{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:13.5px;margin-bottom:10px;gap:12px}
+.edu-hd button{background:none;border:0;color:var(--mut);cursor:pointer;font-size:14px;padding:2px;line-height:1}
+.edu-hd button:hover{color:var(--tx)}
+.edu-lab{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);margin-bottom:4px}
+.edu-sec{margin-bottom:13px}
+.edu-sec:last-child{margin-bottom:0}
+.edu-sec .bd{font-size:12.5px;line-height:1.55;color:var(--tx-2)}
+#eduLect b{font-family:var(--f-mono)}
+@media(max-width:680px){
+  #eduWrap .edu-back{background:rgba(0,0,0,.55)}
+  #eduWrap .edu-pop{left:0!important;right:0;bottom:0;top:auto!important;width:100%;max-width:none;
+    border-radius:16px 16px 0 0;border-left:0;border-right:0;border-bottom:0;
+    padding:20px 22px calc(22px + env(safe-area-inset-bottom));animation:sheetUp .22s ease}
+  @keyframes sheetUp{from{transform:translateY(45%);opacity:.4}to{transform:none;opacity:1}}
+}
+.edu-inline{display:none;font-size:11.5px;line-height:1.45;margin-top:2px}
+.edu-inline b{font-family:var(--f-mono)}
+body.explain-on .edu-inline{display:block}
+.rf-btn.edu-on{border-color:var(--teal);color:var(--teal-2);background:rgba(38,166,154,.08)}
 
 /* contrarian alignment card */
 .align{border-radius:var(--r);border:1px solid var(--line-2);padding:16px 18px;margin-top:14px;
@@ -331,7 +364,13 @@ main{padding:26px 0 70px;min-height:60vh}
 .nitem .imp{flex-shrink:0;width:30px;text-align:center}
 .nitem .imp .e{font-size:15px}
 .nitem .imp .i{font-size:9px;font-family:var(--f-mono);color:var(--mut);margin-top:2px}
-.nitem .body{min-width:0}
+.nitem .tirow{display:flex;gap:8px;align-items:flex-start}
+.nitem .nbadge{flex-shrink:0;font-size:10.5px;line-height:1.6;letter-spacing:1px}
+.nitem .impline{font-size:11.5px;margin-top:4px;line-height:1.4}
+.nitem .impline.pos{color:var(--pos)}
+.nitem .impline.neg{color:var(--neg)}
+.nitem .impline.neu{color:var(--mut)}
+.nitem .body{min-width:0;width:100%}
 .nitem .ti{font-size:13px;color:var(--tx);line-height:1.35;font-weight:500;display:block}
 .nitem:hover .ti{color:#fff}
 .nitem .meta{font-size:11px;color:var(--mut);margin-top:4px;display:flex;gap:8px;flex-wrap:wrap;font-family:var(--f-mono)}
@@ -408,6 +447,7 @@ footer a.src:hover{color:var(--teal-2)}
       <nav class="tabs" id="nav"></nav>
       <div class="refresh">
         <span class="rf-time" id="rfTime"></span>
+        <button class="rf-btn" id="eduBtn" title="Mostrar todas las lecturas explicadas">💡 Explicar</button>
         <button class="rf-btn" id="rfBtn" title="Actualizar datos"><span class="spin"></span>Actualizar</button>
       </div>
     </div>
@@ -566,7 +606,7 @@ const esc = s => String(s??"").replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">
 
 function zoneBadge(zona, mult){
   const m = mult!=null ? ` · x${mult}` : "";
-  return `<span class="zbadge z-${zona}">${esc(zona)}${m}</span>`;
+  return `<span class="zbadge z-${zona}" onclick="openEduStatic('zonas',event)" title="¿Qué significan las zonas?">${esc(zona)}${m}</span>`;
 }
 
 /* signature 4-segment score bar with position marker */
@@ -637,24 +677,36 @@ function benchBar(dy, min, max, status){
   </div>`;
 }
 
-/* component score bars (0-100) with optional weights */
-function compBars(comp, pesos, details){
+/* component score bars (0-100) with optional weights + educational layer */
+function compBars(comp, pesos, edus){
   const keys = Object.keys(comp||{});
   return `<div class="comp">${keys.map(k=>{
     const v = comp[k]; const lab = subLabel(k);
     const w = pesos && pesos[k]!=null ? `${pesos[k]}%` : "";
-    return `<div class="row">
-      <div class="nm">${esc(lab.n)}${lab.d?`<small>${esc(lab.d)}</small>`:""}</div>
+    const ed = edus && edus[k];
+    return `<div class="crow"><div class="row">
+      <div class="nm">${esc(lab.n)}${ed?ed.icon:""}${lab.d?`<small>${esc(lab.d)}</small>`:""}</div>
       <div class="tr"><i style="width:${Math.max(0,Math.min(100,v))}%"></i></div>
       <div class="vl">${fmt.num(v,0)}${w?`<small> · ${w}</small>`:""}</div>
-    </div>`;
+    </div>${ed?ed.inline:""}</div>`;
   }).join("")}</div>`;
 }
 
-/* executive summary block */
-function execSummary(news){
+/* executive summary block (+ lectura contrarian en lenguaje simple) */
+function execSummary(news, ctx){
   if(!news||!news.resumen_ejecutivo) return "";
   const r = news.resumen_ejecutivo;
+  let contraLine = "";
+  if(ctx && ctx.zona){
+    const sg = sentSign(r.sentimiento);
+    const mood = sg>0?"optimista":sg<0?"pesimista":"neutro";
+    const buy = isBuyZone(ctx.zona), caro = ctx.zona==="CARO";
+    const verdict = buy ? "buena noticia: el plan es comprar cuando otros dudan"
+      : caro && sg>0 ? "señal de cautela: no perseguir"
+      : caro && sg<0 ? "razón para esperar"
+      : "neutral: mantener el aporte base";
+    contraLine = `<div class="contra-line">El mercado está <b>${mood}</b> con ${esc(ctx.label||"el activo")}. Para una estrategia contrarian, eso es <b>${verdict}</b>.</div>`;
+  }
   return `<div class="exec">
     <div class="sent">
       <span class="sent-pill ${sentClass(r.sentimiento)}">${esc(r.sentimiento)}</span>
@@ -662,6 +714,7 @@ function execSummary(news){
     </div>
     <p class="narr">${esc(r.narrativa)}</p>
     ${r.veredicto?`<div class="verd"><b>Veredicto:</b> ${esc(r.veredicto)}</div>`:""}
+    ${contraLine}
   </div>`;
 }
 
@@ -681,19 +734,20 @@ function alignCard(zona, score, news){
 }
 function zoneColorVar(z){ return {CARO:"var(--z-caro)",NEUTRAL:"var(--z-neu)",ATRACTIVO:"var(--z-atr)",OPORTUNIDAD:"var(--z-opp)"}[z]||"var(--tx)"; }
 
-/* one news item */
+/* one news item — badge dirección+intensidad SIEMPRE visible + razonamiento legible */
 function newsItem(it){
   const imp = it.impacto||{};
   const dir = imp.direccion;
-  const cls = dir==="positivo"?"imp-pos":dir==="negativo"?"imp-neg":"";
-  const inten = imp.intensidad ? "▮".repeat(Math.min(3,imp.intensidad)) : "";
+  const n = Math.min(3, Math.max(1, imp.intensidad||1));
+  const badge = dir==="positivo" ? "🟢".repeat(n) : dir==="negativo" ? "🔴".repeat(n) : "⚪";
+  const impline = dir==="positivo" ? `<div class="impline pos">↑ Empuja al alza: ${esc(imp.razonamiento||"")}</div>`
+    : dir==="negativo" ? `<div class="impline neg">↓ Presiona a la baja: ${esc(imp.razonamiento||"")}</div>`
+    : `<div class="impline neu">− Sin impacto direccional claro</div>`;
   return `<a class="nitem" href="${esc(it.link||'#')}" target="_blank" rel="noopener">
-    <div class="imp"><div class="e">${imp.emoji||"⚪"}</div><div class="i ${cls}">${inten||"·"}</div></div>
     <div class="body">
-      <span class="ti">${esc(it.title)}</span>
+      <div class="tirow"><span class="nbadge">${badge}</span><span class="ti">${esc(it.title)}</span></div>
+      ${impline}
       <div class="meta"><span>${esc(it.source||"")}</span><span>${fmt.ago(it.pubdate_iso||it.pubdate)}</span></div>
-      ${imp.razonamiento && imp.razonamiento!=="Sin senal direccional clara en el titular"
-        ? `<div class="razon">${esc(imp.razonamiento)}</div>`:""}
     </div>
   </a>`;
 }
@@ -728,6 +782,243 @@ function srcStamp(key){
   const t = st==="error"?"error de carga":st==="loading"?"actualizando…":"actualizado "+fmt.ago(VS.updated[key]);
   return `<span class="src-stamp"><span class="dot ${cls}"></span>${esc(t)}</span>`;
 }
+
+/* ===== js/edu.js ===== */
+/* ============================================================
+   VALUE SIGNAL — capa educativa
+   Diccionario QUÉ MIDE + lecturas dinámicas (umbrales del
+   paquete educativo) + popover/bottom-sheet + modo explicar.
+   ============================================================ */
+VS.eduReg = [];
+
+const EDU_COLORS = { vi:"#2fd4c4", v:"#26a69a", vs:"#5ccabd", g:"#9aa1ad", a:"#e0a33a", r:"#ef5350" };
+
+const EDU = {
+  /* ---------- compartidos ---------- */
+  drawdown52: { t:"Drawdown (52 semanas)",
+    mide:"Cuánto ha caído el precio desde su punto más alto del último año. Es el “descuento” actual respecto al mejor momento reciente.",
+    leer(c){ const d=c.dd, v=`<b>${fmt.signpct(d,1)}</b> — `;
+      if(d>=-3)  return {h:v+"Cerca de máximos. Sin descuento: comprar aquí es pagar precio completo.", c:"r"};
+      if(d>=-10) return {h:v+"Retroceso moderado. Descuento leve frente a máximos.", c:"g"};
+      if(d>=-20) return {h:v+"Corrección importante. Zona donde el contrarian empieza a interesarse.", c:"v"};
+      return {h:v+"Caída profunda. Históricamente, comprar en estas zonas ha premiado la paciencia.", c:"vi"}; } },
+
+  momentum: { t:"Momentum 12-1m",
+    mide:"La tendencia de fondo del último año (se excluye el último mes porque suele ser ruido). Positivo = viene subiendo; negativo = viene cayendo.",
+    leer(c){ const m=c.m, v=`<b>${fmt.signpct(m,1)}</b> — `;
+      if(m>20)  return {h:v+"Tendencia alcista fuerte. El activo viene corriendo — cuidado con comprar euforia.", c:"a"};
+      if(m>5)   return {h:v+"Tendencia alcista saludable.", c:"vs"};
+      if(m>=-5) return {h:v+"Sin tendencia clara.", c:"g"};
+      return {h:v+"Tendencia bajista. Para el contrarian, las caídas sostenidas crean los mejores precios de entrada.", c:c.buy?"v":"g"}; } },
+
+  /* ---------- oro ---------- */
+  ratio_sp500: { t:"Ratio vs S&P 500",
+    mide:"Si el oro está caro o barato COMPARADO con las acciones americanas. Percentil alto = oro caro vs bolsa; bajo = oro barato vs bolsa.",
+    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 años) — `;
+      if(p<25) return {h:v+"El oro está barato frente a las acciones. Punto a favor de rotar aportes hacia oro.", c:"v"};
+      if(p<=75) return {h:v+"Relación oro/bolsa en rango normal.", c:"g"};
+      return {h:v+"El oro está caro frente a las acciones. La bolsa ofrece mejor valor relativo.", c:"r"}; } },
+
+  ratio_silver: { t:"Ratio Oro/Plata",
+    mide:"Cuántas onzas de plata compra una de oro. Cuando el ratio es alto, el oro está caro frente a la plata (o hay miedo en el mercado).",
+    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 años) — `;
+      if(p<25) return {h:v+"El oro está barato frente a la plata. Punto a favor de rotar aportes hacia oro.", c:"v"};
+      if(p<=75) return {h:v+"Relación oro/plata en rango normal.", c:"g"};
+      return {h:v+"El oro está caro frente a la plata. La plata ofrece mejor valor relativo.", c:"r"}; } },
+
+  dxy: { t:"DXY (índice dólar)",
+    mide:"La fuerza del dólar frente a otras monedas. El oro se mueve al revés del dólar: dólar fuerte = viento en contra del oro.",
+    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 años) — `;
+      if(p>75) return {h:v+"Dólar muy fuerte — viento en contra para el oro. Si el dólar se debilita, el oro tiene espacio para subir.", c:"v"};
+      if(p>=25) return {h:v+"Dólar en rango normal.", c:"g"};
+      return {h:v+"Dólar débil — el oro ya recibió ese impulso; queda menos combustible por ese lado.", c:"a"}; } },
+
+  real_yield: { t:"Tasa real 10y (TIPS)",
+    mide:"Lo que paga un bono americano descontando la inflación. Es el “costo de oportunidad” de tener oro (que no paga interés). Tasa real alta = el bono compite mejor contra el oro.",
+    leer(c){ const r=c.v, v=`<b>${fmt.pct(r,2)}</b> — `;
+      if(r>2)  return {h:v+"Tasas reales altas: los bonos compiten fuerte contra el oro. Freno estructural.", c:"r"};
+      if(r>=1) return {h:v+"Costo de oportunidad moderado.", c:"g"};
+      if(r>=0) return {h:v+"Tasas reales bajas: ambiente cómodo para el oro.", c:"v"};
+      return {h:v+"Tasas reales negativas: el escenario dorado del oro — el bono pierde contra la inflación.", c:"vi"}; } },
+
+  vix: { t:"VIX (índice del miedo)",
+    mide:"Cuánto miedo hay en la bolsa americana. Picos de VIX = pánico; el oro suele recibir flujos de refugio.",
+    leer(c){ const x=c.v, v=`<b>${fmt.num(x,1)}</b> — `;
+      if(x<15) return {h:v+"Mercado tranquilo, sin demanda de refugio.", c:"g"};
+      if(x<=25) return {h:v+"Nerviosismo normal.", c:"g"};
+      if(x<=35) return {h:v+"Miedo elevado: flujos de refugio hacia el oro.", c:"v"};
+      return {h:v+"Pánico en los mercados. El refugio se paga caro — y el contrarian mira la bolsa, no solo el oro.", c:"a"}; } },
+
+  /* ---------- bitcoin ---------- */
+  drawdown_ath: { t:"Drawdown desde ATH",
+    mide:"Cuánto cayó BTC desde su máximo de todos los tiempos. BTC es cíclico: ha caído 50-85% varias veces y luego marcó nuevos máximos.",
+    leer(c){ const d=c.dd, v=`<b>${fmt.signpct(d,1)}</b> — `;
+      if(d>=-15) return {h:v+"Cerca de máximos. Zona de euforia típica — el contrarian aporta lo mínimo.", c:"r"};
+      if(d>=-35) return {h:v+"Corrección típica de mercado alcista.", c:"g"};
+      if(d>=-55) return {h:v+"Caída mayor. Históricamente, acumular en esta zona ha dado buenos resultados a 2-4 años.", c:"v"};
+      return {h:v+"Capitulación histórica. Las mejores compras de la historia de BTC se hicieron aquí — con estómago.", c:"vi"}; } },
+
+  fear_greed: { t:"Fear & Greed",
+    mide:"El termómetro emocional del mercado cripto (0 = pánico total, 100 = euforia total). Se construye con volatilidad, volumen, redes sociales y dominancia.",
+    leer(c){ const f=c.v, v=`<b>${fmt.num(f,0)}</b>${c.cl?` (${esc(c.cl)})`:""} — `;
+      if(f<=25) return {h:v+"MIEDO EXTREMO. “Sé codicioso cuando otros tienen miedo” — Buffett. Las zonas de miedo extremo han sido históricamente los mejores puntos de compra.", c:"vi"};
+      if(f<=45) return {h:v+"Miedo. El mercado pesimista suele regalar precios.", c:"v"};
+      if(f<=55) return {h:v+"Neutral.", c:"g"};
+      if(f<=75) return {h:v+"Codicia. Precaución: no perseguir.", c:"a"};
+      return {h:v+"CODICIA EXTREMA. Cuando todos celebran, el contrarian guarda la billetera.", c:"r"}; } },
+
+  pi_cycle: { t:"Pi Cycle Top",
+    mide:"Un detector de techos de ciclo: compara dos promedios móviles. Cuando la media corta cruza por encima del doble de la larga, históricamente BTC estuvo en zona de techo (2013, 2017, 2021).",
+    leer(c){ const r=c.r, v=`Ratio <b>${fmt.num(r,3)}</b> — `;
+      if(r<0.6)  return {h:v+"Muy lejos de zona de techo. El ciclo tiene cuerda.", c:"v"};
+      if(r<=0.85) return {h:v+"Distancia cómoda al techo de ciclo.", c:"vs"};
+      if(r<=0.95) return {h:v+"Acercándose a zona de techo histórica. Reducir agresividad.", c:"a"};
+      return {h:v+"Señal de techo de ciclo activa o inminente. Zona donde históricamente convino aportar lo mínimo.", c:"r"}; } },
+
+  halving: { t:"Ciclo de halving",
+    mide:"BTC reduce a la mitad su emisión cada ~4 años (halving). El precio ha seguido un patrón cíclico alrededor de estos eventos: acumulación → alza → techo → bear market → repetición.",
+    leer(c){ const f=c.fase||"", v=`<b>${esc(f)}</b>${c.meses!=null?` (${fmt.num(c.meses,1)} meses desde el halving)`:""} — `;
+      if(/bear/i.test(f)) return {h:v+"Fase históricamente de ACUMULACIÓN: precios deprimidos mientras el mercado olvida a BTC. Aquí se siembran los retornos del próximo ciclo.", c:"v"};
+      if(/bull/i.test(f)) return {h:v+"Fase de expansión. Disfrutar el viaje, pero aportar con cabeza fría.", c:"a"};
+      return {h:v+"Fase de transición: el mercado empieza a anticipar la reducción de oferta.", c:"g"}; } },
+
+  mvrv: { t:"MVRV Z-Score",
+    mide:"Compara el precio de mercado contra el precio promedio al que se movieron las monedas por última vez (“lo que pagaron los tenedores”). Alto = mercado sobrecalentado; bajo o negativo = mercado deprimido.",
+    leer(c){ const z=c.z, v=`<b>${fmt.num(z,2)}</b> — `;
+      if(z<0)  return {h:v+"Territorio de capitulación: el tenedor promedio pierde dinero. Históricamente suelo de ciclo.", c:"vi"};
+      if(z<=1) return {h:v+"Mercado deprimido o en recuperación temprana — zona de valor.", c:"v"};
+      if(z<=3) return {h:v+"Valoración media del ciclo.", c:"g"};
+      if(z<=5) return {h:v+"Mercado caliente.", c:"a"};
+      return {h:v+"Zona de euforia histórica de techos.", c:"r"}; } },
+
+  /* ---------- dividend ETFs ---------- */
+  dy_vs_hist: { t:"DY vs histórico (35%)",
+    mide:"El dividend yield de HOY comparado con su propio promedio de 3 años. Como el yield sube cuando el precio baja, un yield sobre su promedio significa precio castigado = oportunidad de comprar renta “en oferta”.",
+    leer(c){ const a=c.a, h=c.h, v=`<b>${fmt.pct(a)}</b> vs <b>${fmt.pct(h)}</b> hist — `;
+      if(a>h+0.4) return {h:v+"Yield muy por sobre su promedio: estás comprando el mismo flujo de dividendos más barato que de costumbre.", c:"vi"};
+      if(Math.abs(a-h)<=0.1) return {h:v+"Yield en línea con su historia.", c:"g"};
+      if(a>h) return {h:v+"Yield sobre su promedio histórico — precio levemente castigado.", c:"v"};
+      return {h:v+"Yield bajo su promedio: el precio corrió más rápido que el dividendo. Pagas premium.", c:"r"}; } },
+
+  balance_cagr: { t:"Balance CAGR+DY (15%)",
+    mide:"La suma de crecimiento del precio (CAGR) + renta por dividendo. Es el “retorno total” que entrega el ETF: un buen dividendero combina ambos.",
+    leer(c){ const t=c.v, v=`<b>${fmt.pct(t)}</b> total — `;
+      if(t>12) return {h:v+"Retorno total excelente: crecimiento y renta trabajando juntos.", c:"v"};
+      if(t>=8) return {h:v+"Retorno total saludable.", c:"vs"};
+      if(t>=4) return {h:v+"Retorno total modesto.", c:"g"};
+      return {h:v+"Retorno total pobre — el ETF no está entregando ni crecimiento ni renta suficiente.", c:"r"}; } },
+
+  dgr: { t:"DGR — crecimiento del dividendo (15%)",
+    mide:"A qué ritmo CRECE el dividendo año a año (promedio 3 años). Un dividendo creciente es señal de negocio sano y protege contra la inflación. Es el corazón de la estrategia DGI.",
+    leer(c){ const g=c.g, v=`<b>${fmt.signpct(g,1)}</b> anual — `;
+      if(g>8)  return {h:v+"Dividendo creciendo fuerte: cada año cobras más por las mismas cuotas.", c:"vi"};
+      if(g>=4) return {h:v+"Crecimiento de dividendo saludable, sobre la inflación.", c:"v"};
+      if(g>=0) return {h:v+"Dividendo casi plano: pierde poder de compra frente a la inflación.", c:"a"};
+      return {h:v+"ALERTA: dividendo recortado. Revisar si es puntual o tendencia.", c:"r"}; } },
+
+  /* ---------- acciones chilenas ---------- */
+  cl_dy: { t:"DY 3 años",
+    mide:"El dividendo promedio de los últimos 3 años dividido por el precio de HOY. Usamos 3 años para no dejarnos engañar por un año excepcional. IMPORTANTE: excluye dividendos EVENTUALES (pagos únicos que no se repiten) — incluirlos infla la rentabilidad esperada y es el error clásico del dividendero novato.",
+    leer(c){ const v=`<b>${fmt.pct(c.dy)}</b> — `;
+      const col = c.status==="Sobre benchmark"?"v":c.status==="Bajo benchmark"?"r":"g";
+      return {h:v+"Se evalúa contra el rango normal de SU sector (ver benchmark sectorial), no contra un número universal.", c:col}; } },
+
+  cl_benchmark: { t:"Benchmark sectorial",
+    mide:"El rango de dividend yield “normal” para el sector de la acción (AFPs rinden distinto que eléctricas o que holdings). Un yield se evalúa contra SU sector, no contra un número universal.",
+    leer(c){
+      if(c.status==="Sobre benchmark") return {h:`<b>${fmt.pp(c.pp)}</b> sobre el máximo sectorial — Rinde MÁS que el techo de su sector: el mercado está castigando el precio o el dividendo creció. Para el cazador de rentas, es la señal de compra.`, c:"v"};
+      if(c.status==="Bajo benchmark") return {h:`<b>${fmt.pp(c.pp)}</b> vs máximo sectorial — Rinde menos que su sector: o el precio está caro o el dividendo se debilitó.`, c:"r"};
+      return {h:`<b>${fmt.pp(c.pp)}</b> vs máximo sectorial — Rinde lo normal para su sector. Precio justo, sin descuento.`, c:"g"}; } },
+
+  cl_clasificacion: { t:"Clasificación",
+    mide:"El tipo de empresa según su crecimiento (G = ROE × utilidades retenidas). Define cuánto yield se le exige.",
+    leer(c){ const k=(c.c||"").toLowerCase();
+      if(k.includes("vaca")) return {h:"<b>VACA LECHERA</b> (G<10%, payout >80%): reparte casi todo, no crece. Se le exige yield alto (8-9%) porque el dividendo es todo lo que da.", c:"g"};
+      if(k.includes("dgi")) return {h:"<b>DGI</b> (G 10-15%, payout 30-80%): reparte y crece — el dividendo debería SUBIR año a año. Se acepta yield menor (6-7%) a cambio de crecimiento.", c:"vs"};
+      if(k.includes("crec")) return {h:"<b>CRECIMIENTO</b> (G>15%): reinvierte todo, casi no reparte. No es para estrategia de dividendos (aún).", c:"a"};
+      return {h:`<b>${esc(c.c||"—")}</b>`, c:"g"}; } },
+
+  cl_cagr: { t:"CAGR 3 / 5 / 10 años",
+    mide:"Crecimiento anual compuesto del precio en distintas ventanas. Complementa al yield: una acción puede rendir 8% de dividendo pero perder valor año a año (trampa de yield).",
+    leer(c){ const v=`<b>${fmt.pct(c.c3)} / ${fmt.pct(c.c5)} / ${fmt.pct(c.c10)}</b> — `;
+      if(c.c3>0 && c.c5>0 && c.c10>0) return {h:v+"Precio estable o creciente: el dividendo es ganancia real.", c:"v"};
+      if(c.c3<0 && c.c5<0) return {h:v+"OJO: el precio cae en el tiempo — parte del “dividendo” es devolución de tu propio capital vía pérdida de precio. Posible trampa de yield.", c:"r"};
+      return {h:v+"Ventanas mixtas: revisar la tendencia de largo plazo.", c:"g"}; } },
+};
+
+/* microcopy fijo (Sección 6 + tooltip del panel de noticias) */
+const STATIC_EDU = {
+  score: { t:"Score 0-100", mide:"Qué tan atractivo está el precio HOY para aportar. No predice el futuro: mide cuánto descuento ofrece el presente. Más alto = más barato frente a su propia historia.", static:true },
+  zonas: { t:"Zonas y multiplicadores", mide:"El score define cuánto aportar este mes: CARO ×0.5 (la mitad del aporte base), NEUTRAL ×1.0, ATRACTIVO ×1.5, OPORTUNIDAD ×2.5. Nunca es “vender”: es un sistema de acumulación disciplinada.", static:true },
+  mult: { t:"Multiplicador de aporte", mide:"Tu aporte base × el multiplicador de la zona. Ejemplo: si aportas $100 al mes y la zona es OPORTUNIDAD, este mes corresponde aportar $250.", static:true },
+  news: { t:"Cómo se analizan las noticias", mide:"Cada noticia se analiza automáticamente: detectamos si empuja el precio al alza o a la baja y con qué fuerza. El resumen combina todas las noticias de las últimas 72 h en una sola lectura.", static:true },
+};
+
+/* ---- builders ---- */
+function eduFor(id, ctx){
+  const d = EDU[id]; if(!d) return {icon:"", inline:""};
+  const lect = d.leer(ctx||{});
+  VS.eduReg.push({t:d.t, mide:d.mide, lect});
+  const i = VS.eduReg.length-1;
+  return {
+    icon: `<button class="edu-i" onclick="openEdu(${i},event)" aria-label="Explicación: ${esc(d.t)}">i</button>`,
+    inline: `<div class="edu-inline" style="color:${EDU_COLORS[lect.c]||EDU_COLORS.g}">↳ ${lect.h}</div>`,
+  };
+}
+function eduIconStatic(key){
+  return `<button class="edu-i" onclick="openEduStatic('${key}',event)" aria-label="Explicación">i</button>`;
+}
+
+/* ---- popover / bottom-sheet ---- */
+function ensureEduDom(){
+  if(document.getElementById("eduWrap")) return;
+  const d = document.createElement("div");
+  d.id = "eduWrap"; d.hidden = true;
+  d.innerHTML = `<div class="edu-back" onclick="closeEdu()"></div>
+    <div class="edu-pop" role="dialog" aria-modal="true">
+      <div class="edu-hd"><span id="eduTitle"></span><button onclick="closeEdu()" aria-label="Cerrar">✕</button></div>
+      <div class="edu-sec" id="eduMideSec"><div class="edu-lab" id="eduMideLab">Qué mide</div><div class="bd" id="eduMide"></div></div>
+      <div class="edu-sec" id="eduLectSec"><div class="edu-lab">Lectura actual</div><div class="bd" id="eduLect"></div></div>
+    </div>`;
+  document.body.appendChild(d);
+  document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeEdu(); });
+}
+function showEdu(d, ev){
+  ensureEduDom();
+  const wrap = document.getElementById("eduWrap");
+  const pop = wrap.querySelector(".edu-pop");
+  document.getElementById("eduTitle").textContent = d.t;
+  document.getElementById("eduMide").innerHTML = d.mide;
+  document.getElementById("eduMideLab").style.display = d.static ? "none" : "";
+  const ls = document.getElementById("eduLectSec");
+  if(d.lect){ ls.style.display=""; const el=document.getElementById("eduLect");
+    el.innerHTML = d.lect.h; el.style.color = EDU_COLORS[d.lect.c]||EDU_COLORS.g; }
+  else ls.style.display = "none";
+  wrap.hidden = false;
+  // desktop positioning near click; mobile uses CSS bottom-sheet
+  if(window.matchMedia("(min-width:681px)").matches && ev){
+    pop.style.left = "0px"; pop.style.top = "0px";
+    const w = pop.offsetWidth, h = pop.offsetHeight;
+    let x = Math.min(Math.max(12, ev.clientX - w/2), window.innerWidth - w - 12);
+    let y = ev.clientY + 14;
+    if(y + h > window.innerHeight - 12) y = Math.max(12, ev.clientY - h - 14);
+    pop.style.left = x+"px"; pop.style.top = y+"px";
+  } else { pop.style.left=""; pop.style.top=""; }
+}
+window.openEdu = function(i, ev){ ev.stopPropagation(); ev.preventDefault(); const d=VS.eduReg[i]; if(d) showEdu(d, ev); };
+window.openEduStatic = function(k, ev){ ev.stopPropagation(); ev.preventDefault(); const d=STATIC_EDU[k]; if(d) showEdu(d, ev); };
+window.closeEdu = function(){ const w=document.getElementById("eduWrap"); if(w) w.hidden = true; };
+
+/* ---- modo explicar (toggle global) ---- */
+document.addEventListener("DOMContentLoaded", ()=>{
+  const b = document.getElementById("eduBtn"); if(!b) return;
+  const apply = on => { document.body.classList.toggle("explain-on", on); b.classList.toggle("edu-on", on); };
+  apply(localStorage.getItem("vs_explain")==="1");
+  b.addEventListener("click", ()=>{
+    const on = !document.body.classList.contains("explain-on");
+    apply(on); localStorage.setItem("vs_explain", on?"1":"0");
+  });
+});
 
 /* ===== js/cards.js ===== */
 /* ============================================================
@@ -774,8 +1065,8 @@ function assetCard(a, opts){
         <div class="price">${a.price}${chg}</div>
       </div>
       <div class="score-wrap">
-        <div class="score-num" style="color:${zoneColorVar(a.zona)}">${fmt.score(a.score)}<span class="den">/100</span></div>
-        <div class="mult">aporte <b>x${a.mult}</b></div>
+        <div class="score-num" style="color:${zoneColorVar(a.zona)}">${fmt.score(a.score)}<span class="den">/100</span>${eduIconStatic('score')}</div>
+        <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>x${a.mult}</b></div>
         <div style="margin-top:6px">${zoneBadge(a.zona)}</div>
       </div>
     </div>
@@ -914,13 +1205,16 @@ function clRow(a){
   const ev = a.evaluacion||{};
   const sobre = ev.status==="Sobre benchmark";
   const ppCls = (ev.vs_benchmark_pp>=0)?"pos":"neg";
+  const edDy = eduFor('cl_dy',{dy:a.dy?.dy_pct, status:ev.status});
+  const edBm = eduFor('cl_benchmark',{status:ev.status, pp:ev.vs_benchmark_pp});
   return `<div class="cl-row ${sobre?'opp':''}" onclick="go('chile','${esc(a.ticker)}')">
     <div class="cl-id"><div class="t">${esc(a.ticker)}</div><div class="s">${esc(a.nombre)} · ${esc(a.sector)}</div></div>
-    <div class="cl-dy"><div class="v" style="color:${sobre?'var(--z-opp)':'var(--tx)'}">${fmt.pct(a.dy?.dy_pct)}</div><div class="l">DY 3 años</div></div>
+    <div class="cl-dy"><div class="v" style="color:${sobre?'var(--z-opp)':'var(--tx)'}">${fmt.pct(a.dy?.dy_pct)}</div><div class="l">DY 3 años${edDy.icon}</div></div>
     <div class="cl-bm">
       <div>Benchmark ${esc(a.sector)}: <span class="num">${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%</span>
-        · <span class="pp ${ppCls}">${fmt.pp(ev.vs_benchmark_pp)}</span> ${ev.emoji||""}</div>
+        · <span class="pp ${ppCls}">${fmt.pp(ev.vs_benchmark_pp)}</span> ${ev.emoji||""}${edBm.icon}</div>
       <div class="bar">${benchBar(a.dy?.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
+      ${edBm.inline}
     </div>
     <div class="right"><span class="pill-link">Ver detalle ›</span></div>
   </div>`;
@@ -949,6 +1243,25 @@ function renderAsset(which){
   queueChart(chId, meta.hist, meta.valKey, "#26a69a", "3Y");
 
   const detailRows = subDetailRows(d.sub_detalles, which);
+  const det = d.sub_detalles||{};
+  const buy = isBuyZone(d.zona);
+  const edus = {};
+  if(which==="oro"){
+    if(det.drawdown) edus.drawdown = eduFor('drawdown52',{dd:det.drawdown.drawdown_pct});
+    if(det.momentum) edus.momentum = eduFor('momentum',{m:det.momentum.ret_12_1_pct, buy});
+    if(det.ratio_sp500) edus.ratio_sp500 = eduFor('ratio_sp500',{p:det.ratio_sp500.percentil_2y});
+    if(det.ratio_silver) edus.ratio_silver = eduFor('ratio_silver',{p:det.ratio_silver.percentil_2y});
+    if(det.dxy) edus.dxy = eduFor('dxy',{p:det.dxy.percentil_2y});
+    if(det.real_yield) edus.real_yield = eduFor('real_yield',{v:det.real_yield.real_yield_pct});
+    if(det.vix) edus.vix = eduFor('vix',{v:det.vix.vix_actual});
+  }else{
+    if(det.drawdown) edus.drawdown = eduFor('drawdown_ath',{dd:det.drawdown.drawdown_pct});
+    if(det.fear_greed) edus.fear_greed = eduFor('fear_greed',{v:det.fear_greed.fg_value, cl:det.fear_greed.classification});
+    if(det.pi_cycle) edus.pi_cycle = eduFor('pi_cycle',{r:det.pi_cycle.ratio});
+    if(det.halving_cycle) edus.halving_cycle = eduFor('halving',{fase:det.halving_cycle.fase, meses:det.halving_cycle.meses_desde_halving});
+    if(det.momentum) edus.momentum = eduFor('momentum',{m:det.momentum.ret_12_1_pct, buy});
+    if(det.mvrv) edus.mvrv = eduFor('mvrv',{z:det.mvrv.z_score});
+  }
 
   const main = `
     <div class="panel" style="margin-bottom:16px">
@@ -960,8 +1273,8 @@ function renderAsset(which){
             ${which==="bitcoin"&&d.precio_ibit?`<span class="dim" style="font-size:12px;margin-left:8px">IBIT ${fmt.usd(d.precio_ibit)}</span>`:""}</div>
         </div>
         <div class="score-wrap">
-          <div class="score-num" style="font-size:52px;color:${zoneColorVar(d.zona)}">${fmt.score(d.score_final)}<span class="den">/100</span></div>
-          <div class="mult">aporte del mes <b>x${d.multiplicador}</b></div>
+          <div class="score-num" style="font-size:52px;color:${zoneColorVar(d.zona)}">${fmt.score(d.score_final)}<span class="den">/100</span>${eduIconStatic('score')}</div>
+          <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte del mes <b>x${d.multiplicador}</b></div>
           <div style="margin-top:8px">${zoneBadge(d.zona)}</div>
         </div>
       </div>
@@ -979,7 +1292,7 @@ function renderAsset(which){
     <div class="grid c2">
       <div class="panel">
         <h3>Componentes del score</h3>
-        ${compBars(d.sub_scores, d.pesos)}
+        ${compBars(d.sub_scores, d.pesos, edus)}
       </div>
       <div class="panel">
         <h3>Detalle de indicadores</h3>
@@ -987,7 +1300,7 @@ function renderAsset(which){
       </div>
     </div>`;
 
-  const sidebar = newsSidebar(news, newsKey, meta.title);
+  const sidebar = newsSidebar(news, newsKey, meta.title, {zona:d.zona, label:meta.title});
   return viewHead(meta.em, meta.title, srcStamp(key)) +
     `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
 }
@@ -1015,12 +1328,12 @@ function subDetailRows(det, which){
 }
 
 /* news sidebar shared */
-function newsSidebar(news, newsKey, label){
+function newsSidebar(news, newsKey, label, ctx){
   const errored = VS.status[newsKey]==="error";
   return `<div><div class="sidebar-news">
-    <div class="hd">📰 Noticias · ${esc(label)} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated[newsKey])}</span>`:""}</div>
+    <div class="hd">📰 Noticias · ${esc(label)}${eduIconStatic('news')} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated[newsKey])}</span>`:""}</div>
     ${errored?errBox(newsKey,"noticias"):""}
-    ${news?execSummary(news):""}
+    ${news?execSummary(news, ctx):""}
     <div style="margin-top:14px">${news?newsSection(news):""}</div>
   </div></div>`;
 }
@@ -1057,6 +1370,14 @@ function renderETFs(){
 function etfPanel(x){
   const chId = "chart_etf_"+x.ticker;
   queueChart(chId, x.historico, "close", "#26a69a", "3Y");
+  const buy = isBuyZone(x.zona);
+  const edus = {
+    dy_vs_historico: eduFor('dy_vs_hist',{a:x.dy_actual_pct, h:x.dy_historico_3y_pct}),
+    drawdown: eduFor('drawdown52',{dd:x.drawdown_pct}),
+    balance_cagr: eduFor('balance_cagr',{v:(x.cagr_precio_3y_pct||0)+(x.dy_actual_pct||0)}),
+    momentum: eduFor('momentum',{m:x.momentum_pct, buy}),
+    dgr: eduFor('dgr',{g:x.dgr_3y_pct}),
+  };
   const er = x.expense_ratio!=null ? fmt.pct(x.expense_ratio*100,2) : "—";
   const dyDelta = (x.dy_actual_pct!=null && x.dy_historico_3y_pct!=null)
     ? `<span class="${x.dy_actual_pct>=x.dy_historico_3y_pct?'chg up':'chg down'}" style="font-size:12px">vs ${fmt.pct(x.dy_historico_3y_pct)} hist</span>`:"";
@@ -1068,8 +1389,8 @@ function etfPanel(x){
         <div class="price" style="margin-top:8px">${fmt.usd(x.precio_usd)} <span class="dim" style="font-size:11px">· ${esc(x.type||"")}</span></div>
       </div>
       <div class="score-wrap">
-        <div class="score-num" style="font-size:42px;color:${zoneColorVar(x.zona)}">${fmt.score(x.score)}<span class="den">/100</span></div>
-        <div class="mult">aporte <b>${fmt.usd(x.aporte_sugerido_usd,0)}</b> · x${x.multiplicador}</div>
+        <div class="score-num" style="font-size:42px;color:${zoneColorVar(x.zona)}">${fmt.score(x.score)}<span class="den">/100</span>${eduIconStatic('score')}</div>
+        <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>${fmt.usd(x.aporte_sugerido_usd,0)}</b> · x${x.multiplicador}</div>
         <div style="margin-top:8px">${zoneBadge(x.zona)}</div>
       </div>
     </div>
@@ -1088,7 +1409,7 @@ function etfPanel(x){
       </div>
       <div>
         <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">Componentes del score</h3>
-        ${compBars(x.componentes, ETF_PESOS)}
+        ${compBars(x.componentes, ETF_PESOS, edus)}
       </div>
     </div>
 
@@ -1123,7 +1444,7 @@ function renderChile(param){
   const nSobre = acc.filter(a=>a.evaluacion?.status==="Sobre benchmark").length;
 
   const sidebar = `<div><div class="sidebar-news">
-    <div class="hd">📰 Noticias · Chile ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated.n_chile)}</span>`:""}</div>
+    <div class="hd">📰 Noticias · Chile${eduIconStatic('news')} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated.n_chile)}</span>`:""}</div>
     ${VS.status.n_chile==="error"?errBox("n_chile","noticias"):""}
     ${news?execSummary(news):""}
     ${news?chileAlign(nSobre, acc.length, news):""}
@@ -1171,6 +1492,10 @@ function renderChileDetail(ticker){
   const sobre = ev.status==="Sobre benchmark";
   const years = dy.anos_detalle ? Object.keys(dy.anos_detalle).sort() : [];
   const maxY = years.length?Math.max(...years.map(y=>dy.anos_detalle[y])):1;
+  const edDy = eduFor('cl_dy',{dy:dy.dy_pct, status:ev.status});
+  const edBm = eduFor('cl_benchmark',{status:ev.status, pp:ev.vs_benchmark_pp});
+  const edCl = eduFor('cl_clasificacion',{c:a.clasificacion});
+  const edCagr = eduFor('cl_cagr',{c3:(a.cagr_3y||0)*100, c5:(a.cagr_5y||0)*100, c10:(a.cagr_10y||0)*100});
 
   const divbars = years.length ? `<div class="divbars">${years.map(y=>{
     const v=dy.anos_detalle[y]; const h=Math.max(6,(v/maxY)*100);
@@ -1189,20 +1514,21 @@ function renderChileDetail(ticker){
       <div class="card-top">
         <div class="tk">
           <div class="ticker" style="font-size:24px">${esc(a.ticker)}</div>
-          <div class="name" style="max-width:none">${esc(a.nombre)} · ${esc(a.sector)} · <span class="dim">${esc(a.clasificacion||"")}</span></div>
+          <div class="name" style="max-width:none">${esc(a.nombre)} · ${esc(a.sector)} · <span class="dim">${esc(a.clasificacion||"")}</span>${edCl.icon}</div>
           <div class="price" style="margin-top:8px">${fmt.clp(a.precio_actual_clp)}
             <span class="chg ${a.variacion_pct>=0?'up':'down'}">${fmt.signpct(a.variacion_pct)}</span></div>
         </div>
         <div class="score-wrap">
           <div class="score-num" style="font-size:40px;color:${sobre?'var(--z-opp)':'var(--tx)'}">${fmt.pct(dy.dy_pct)}</div>
-          <div class="mult">DY promedio ${dy.anos_usados||3} años</div>
+          <div class="mult">DY promedio ${dy.anos_usados||3} años${edDy.icon}</div>
           <div style="margin-top:8px"><span class="zbadge" style="background:${sobre?'var(--z-opp-bg)':'var(--z-neu-bg)'};color:${statusColor};border-color:${statusColor}">${esc(status)}</span></div>
         </div>
       </div>
       <div style="margin-top:16px">
         <div class="cl-bm">Benchmark ${esc(a.sector)}: <span class="num">${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%</span>
-          · <span class="pp ${ev.vs_benchmark_pp>=0?'pos':'neg'}" style="font-family:var(--f-mono);font-weight:700">${fmt.pp(ev.vs_benchmark_pp)} sobre el máximo</span></div>
+          · <span class="pp ${ev.vs_benchmark_pp>=0?'pos':'neg'}" style="font-family:var(--f-mono);font-weight:700">${fmt.pp(ev.vs_benchmark_pp)} sobre el máximo</span>${edBm.icon}</div>
         <div class="bar" style="margin-top:10px">${benchBar(dy.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
+        ${edBm.inline}
       </div>
       ${a.descripcion?`<div class="hint" style="margin-top:16px;line-height:1.5;color:var(--tx-3)">${esc(a.descripcion)}</div>`:""}
     </div>
@@ -1212,7 +1538,8 @@ function renderChileDetail(ticker){
         <h3>Dividendos por año <span class="dim" style="font-weight:400;text-transform:none">(CLP/acción)</span></h3>
         ${divbars}
         <div class="kv" style="margin-top:14px"><span class="k">Promedio anual</span><span class="v">${fmt.clp(dy.promedio_anual)}</span></div>
-        <div class="kv"><span class="k">CAGR 3y / 5y / 10y</span><span class="v">${fmt.pct((a.cagr_3y||0)*100)} / ${fmt.pct((a.cagr_5y||0)*100)} / ${fmt.pct((a.cagr_10y||0)*100)}</span></div>
+        <div class="kv"><span class="k">CAGR 3y / 5y / 10y${edCagr.icon}</span><span class="v">${fmt.pct((a.cagr_3y||0)*100)} / ${fmt.pct((a.cagr_5y||0)*100)} / ${fmt.pct((a.cagr_10y||0)*100)}</span></div>
+        ${edCagr.inline}
       </div>
       <div class="panel">
         <h3>Fundamentales CMF <span class="dim" style="font-weight:400;text-transform:none">${esc(cmf.periodo||"")}</span></h3>
@@ -1259,10 +1586,15 @@ window.retrySource = async function(key){
   scheduleRender();
 };
 
-let _raf = null;
-function scheduleRender(){ if(_raf) return; _raf = requestAnimationFrame(()=>{ _raf=null; render(); }); }
+let _pendingRender = null;
+function scheduleRender(){
+  if(_pendingRender) return;
+  // setTimeout (not rAF): must also fire in background/hidden tabs
+  _pendingRender = setTimeout(()=>{ _pendingRender=null; render(); }, 60);
+}
 
 function render(){
+  VS.eduReg = [];
   const {route, param} = parseHash();
   // nav active
   document.querySelectorAll("nav.tabs a").forEach(a=>a.classList.toggle("active", a.dataset.route===route));
