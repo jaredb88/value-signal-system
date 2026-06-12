@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T06:33:05.214843+00:00",
+  "updated_at_utc": "2026-06-12T12:33:07.918447+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -8,13 +8,6 @@
   ],
   "noticias_por_ticker": {
     "HABITAT": [
-      {
-        "title": "Superintendencia de Pensiones advierte por vendedores que ofrecen bonos de dinero para cambiarse de AFP",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWlNXMUxHY0I5UTNORElMR0gzYkE2NzF0ZXAwVVJwTW1hcGFaLWVuNjRwcUJjbmFaMklrVFg1eTFJT3pCSW5KRUM2WmR4Z0liOHJyWHotNGk4RkxVdmx5MTVjeVVqWVZDWGppTkdoM0hTQ1d6SDZpdFIwbG0zc1RYQ3o1dlJsb0JJRVJESmlITWJEMDJGRUZOUTBVY3pqRGJfU0tQeFp4ZVdENkREb05GaQ?oc=5",
-        "pubdate": "Wed, 10 Jun 2026 08:00:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "AFP Habitat"
-      },
       {
         "title": "Señales financieras | Una entrevista con Edgardo Gutiérrez, de Moneda Patria",
         "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaHB1MFdRMG9abVNpWW9la1RVb05CVlBvUy15OHBXQWhPVklaTmRYZDFSNmc2WE1idkpsT21NOTc0QlNqTmltMGpqX0IzTjhKTjIxdU44a3VVY1dZTTd3RmpoYUx0RkFmWG5Ba1U3VmJTZkZteGNfOTQtdW4xMWRyMkd2NGl0bkdybmUwTW5sYTB0MGx5ZThKcHhNeWZxdmlvT1hzazJkN21RYnNIdVhGNHl3?oc=5",
@@ -50,7 +43,7 @@
       {
         "title": "El Ipsa sube acotadamente en primeros tres meses del gobierno de Kast, influido por el contexto internacional",
         "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOT0RITkMzZU1jejRRRHZpZ3NPYkJ1YlFZdENTb1NJc0JkMWFHMGJNejNDRHUtYkQ0Q0JTZFhTci1aWXZiUDRucHdxVXpZTkpwelkyV1ptTzZIdE9YMFZCNHYtRWl1VGQzTlNCdVZxUUtLWGtjMjFzZkVCOG15Vzc3UTIzbEUtTnZLVU9oSzlSdkZIQm1HRGo1a1pCS0xRQzhZQVZNRXFYQVRHUV9kMGNQWHlCc1V0UHp3Y21ucmVYLWhnNUotbGNqN2pHS0ItZVZpNG5QWWZESFlaLWhaQXBMdk9xY9IBhAJBVV95cUxOTFF1ZnpXWGs1NmZLcVVwYVlROUFURkVZU0lRdFJuVnJlQzVCYUdLQ29jQ2xjdDBaaFNZUHRfbHVzdmxQOFRQWHZZRzNIVjhEUkdJSTBKSkExc0pOVThlQlJKSFcyeUNPbUc1M0FYaVRFTDNsQy1VQXJzRDk0YjdNbVphVWstelpuMXB4U0ZrVk1kY3B4RVNKdjNYMnU3T19qMHRaZEFCSEIyTGlTeEU0aUxzNXJ5SnJzNUprUGFpbTdndWlLR0NFNDdhZVdqOXRFM0M4NzRvWTVyMEYzSkVRTkFLYmplZk9qMkVpOGVoWnVieUlFX1FRQW54UHJQNERvaFJyeQ?oc=5",
-        "pubdate": "Fri, 12 Jun 2026 00:34:19 GMT",
+        "pubdate": "Fri, 12 Jun 2026 00:40:00 GMT",
         "source": "La Tercera",
         "matched_keyword": "SQM"
       },
@@ -62,7 +55,7 @@
         "matched_keyword": "SQM"
       },
       {
-        "title": "Bolsas extienden su alza y el petróleo cae luego que Trump retirara amenaza de ataques a Irán",
+        "title": "Bolsa de Santiago y Wall Street anotan fuerte alza y el petróleo cae luego que Trump retirara amenaza de ataques a Irán",
         "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN1A4UjNtSklxaVpFUHBTU1I2Q3lickdTNE9Icm1YWlNDVnpRamhQUmdJR0paNUJBSVJsdFpia1dyWjVMeHRzTHNET0c1cENvLUhBal9UeVJNRWRrZGc3aEFRa19oNlNBbUVYczVZWGM0djBJaGVnN1Y5SmctcndhZDhYM3hJeTBBZGt4djg2YmF0OUJ1TlVIRNIBugFBVV95cUxQbGpRQlR0UXZOZVA1YWJVcWJXdi1lSkI5dnV2TFVka2NvTVJzNXRuM2xFVzlUV0w2OGJZVHIzQmItNUpxdU9xX1MtM25TdWd4MUxNUFJsazlVSUFITFpqaTNjMkZVVjNNZ3JVZmsxTk1ISjM0amw0NjRSSEZnTmFrMHUyNmtERE9TVzNBWjV3aXdqSHhIaUc0RjVUam52V1RNQmw0akw5M3pWc0VDdWdxQ1RfQUZHTXZpelE?oc=5",
         "pubdate": "Thu, 11 Jun 2026 16:21:33 GMT",
         "source": "La Tercera",
@@ -80,13 +73,6 @@
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvOVUzLTE4SnB1V0JFd1ZfbG5keVlEalJqZmNQUkYxNjRPbWNVTlNqSnlHd0xIVi1qYktuU1p4RW9zMzNRVkdmYzAxeUNnYzlBUnNTT3hKdU9vWnM2OXJNdDFfYndyTE9I?oc=5",
         "pubdate": "Tue, 09 Jun 2026 20:36:00 GMT",
         "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Novandino Litio: Innovar, el camino hacia el desarrollo integral",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQS3JiUTBzMGZibEkwSEUwYm5KSTh1OF9TWGpCSzZESkZ5UGNBOEkySnZCM0M4VUItVnVDS0pzWXdMOVhvUVp5cDdLeUtiX0VQdkh5NW9zS3YwMHpFS2Y3cUo2aHpEYjduNXgzck5TR0NHTC1hcGpWTTBYRTY5eDVoa2o3WUEzMHVrZDdlRHhoM2NzVTBTbEk4MVlrQl93NEZRa2VVUWRlSGPSAcoBQVVfeXFMTXpYQlV0Mlkzb1V5Rnc5bTFqQmZkNFJYbUdKZ2VqaXFsS3NfdEFOaFQ4WVQwNUlNOWE4eDZIdnhDNlVINXBFMjJBRF9LX0l4MzZGbmViajh6elVhZEJTa0ZwOWUwbTBVUmRaM0Z1ZXJGNDFDajFxVk8ydWhyUWZRMmFIdFdzMnFwTnBUTVJvRDBQejRyRl9kV2t0UTF1VmdFWEZSZl9CNUtpaVROOVduMFNUM3YyZjJXMFJyd3VmNTB3VW02QmwzOGFPdw?oc=5",
-        "pubdate": "Tue, 09 Jun 2026 17:11:31 GMT",
-        "source": "La Tercera",
         "matched_keyword": "SQM"
       },
       {
@@ -139,8 +125,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2253,
-    "total_noticias_filtradas": 16,
+    "total_noticias_brutas": 2259,
+    "total_noticias_filtradas": 14,
     "total_hechos_esenciales_brutos": 99
   }
 }
