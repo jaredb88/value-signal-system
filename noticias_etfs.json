@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T05:26:55.867831+00:00",
+  "updated_at_utc": "2026-06-12T07:26:55.624213+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -146,6 +146,34 @@
     ],
     "tech_nasdaq": [
       {
+        "title": "S&P 500, Nasdaq, Dow End Higher After Trump Signals Iran Deal Coming Soon — ADBE, INTC, AMC, GOOGL, ORCL In Focus",
+        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUVUyOC1rSldZUVhfYXV2dUhLcG8zQ3NWUFNSa09RM0tfZ0RnTkNVTDFoTXVOVlZfTDFqVkVuSGR3bzd0SFV6UzNZVHpSTzRLOFptMFFuTjI5YVdnQ3h6Y0w0cG9xMkxMRVhVSXd0VmdVUUI5RUJGYXJ4cV8yclAwY1R1TTlUWGdveGxVc2hiaHNxYUoyZ2gtVTgtR1lHMlBZejNZamNmbFA2Vm4ydTZDdUFfT09tdWlBYmpOTVdZZ2lMeUlNVW4wUUdjdVg5Zm9NMEhpSUlYbWZic2ttdk1zODF6c0kwQlRLaFl4UVVwYU42azNFU2N3ZQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 22:48:00 GMT",
+        "pubdate_iso": "2026-06-11T22:48:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Nvidia, AMD, Intel Lead Chip Stocks Rally as BofA Calls 'Agentic AI' Game-Changer",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQlRkSjBiTFNFZkU2ZnFnOVhXdUdLTy1FbHZaaGhINDhWT1czUERORlNETzYwQ3puQkFkam1tclNtWU9WRzBZaVdCbC0wQWd1ZDloUjdQZzJTUlJ5SWsyMkJGTVdaQjU0WTJoU0c4X0d4QkZzVmkydHlGeVd4YnBsdGdVUFZ5RHAzbDlqdlptemt4NUkxblVPTnltSjFtZlhuOWVsWHdGYmNpSTREdTB4Y0pKemp2VWFTLWZZOUNmODYyU1ZjblVsZEhqc3ctcGJzZUE?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 17:56:51 GMT",
+        "pubdate_iso": "2026-06-11T17:56:51+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Rally accionario"
+        }
+      },
+      {
         "title": "Oracle Financial Services shares fall 2% as post-US parent's Q4 results",
         "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ3BsdDNNOF9mNzNvUmxxTndYS19tTkZlWTBiWU8tSVdHdmlnb0x4Wk1CSFM4QVFGT2IwbC1nZ3R4SDdxaGg2TG1SSHZPRHZrR3NWN2ZNd3pnVjFqdE9hb1BVSl84TUZET2dnZVlrS1dnaW5oZ0xkQmp5WFVYQ05WcjJuZkNZTWpmVzFMODdZc0owbm1pUUx3VFJFZWp3bjdNaXZ0SmJCNkJyRWNIa2Z5dzBYUW9MTF8wT1hjR3Y3NzZzRGZsbEhLWGxQeU4?oc=5",
         "source": "TradingView",
@@ -185,34 +213,6 @@
           "intensidad_label": "neutral",
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "US Stock Market Today S&P 500 Futures Rise As Traders Eye Key Inflation Data",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZGhHTjNJOTdYY0NRdUZRaVUtYnppeGZJWmxjOU9qSHhnSVJxQ2xuSDN0SWlQNlhGU3ZqSzl2RlVCc09BcGs5cXJueHNyanlObzBHWEZjb25MRUlrUTlvazg0LUl4cDRMdkpBbDZZRFZxWjlyNUF3blZVM2pJcE9RT1ZOYk0zb3RGbVc2d29IWFlySmxFd1lnRHg0SGlWS1pDaGw2bWp3Q0xRQlhRSEQ5ZG1mXzltOENWUk1mbk9sa9IBxAFBVV95cUxPNlRlRmJhUFRfZFRJeF9sTVNCdk85WlVubjhLNmRmTGtwWWUteDlPcEo5UlEzY2htSUFhQTdHamlCWldlaEZBVTJPZ2ppRXU2MnBaQkVRQi1FaFVDNk9QWDFKN0ZrMlJLX25pc2RiMmx4LWEteGczeXlEYmhNbnVJWGNleUpMdFo4cjRMcC0yMjNiSTRETnc2TXMzcVlZQ3ZjZTdoYThDNTdQLWtvVnVXVFVwUUg3VkpJLUE4V19ySnMzNFl0?oc=5",
-        "source": "simplywall.st",
-        "pubdate": "Wed, 10 Jun 2026 08:33:07 GMT",
-        "pubdate_iso": "2026-06-10T08:33:07+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Dow Falls Over 500 Points, Nasdaq Sinks As Tech Stocks Tumble — Wells Fargo Warns 'Sugar Rush' Behind Recent Surge Likely Over",
-        "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNY1ZqNVVDRXZlQ0I1T3RpMmhzNGs0OEVmNk1BUERSWG1HN2FleFZxdnZvczNIbGNLbnFpSGlidEdLN3NmWENudEVUUjMxUHp6TldVZDViWFpmMXliVUJqWUlZallGTXl3cXZHUVpVMVdsOUdfZEdIQk1pNFJCRGVYdW84dFdrRkNDSkVfMHBwN19PeU1vVHBtY1VmZHpuQ09wVnhxa2JrZXJBUEZsbzIxTDJGR0RHbVN4emszQjd0VXowRWZza2Z5SzBITElVMDhfdWQxYVFfLVhLOUgxNWRyVDFQVlZfSkVLTE1TXy16MWZuTnluME9CWVBLdTluWjU3ZW1iRTdjRjd3VlV0T2c?oc=5",
-        "source": "TradingView",
-        "pubdate": "Tue, 09 Jun 2026 16:59:20 GMT",
-        "pubdate_iso": "2026-06-09T16:59:20+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🔴",
-          "razonamiento": "Acciones caen fuerte"
         }
       }
     ],
@@ -403,13 +403,13 @@
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "neutral",
-    "score_neto": -1,
-    "n_positivas": 1,
-    "n_negativas": 2,
+    "sentimiento": "levemente alcista",
+    "score_neto": 3,
+    "n_positivas": 2,
+    "n_negativas": 1,
     "n_neutrales": 22,
-    "narrativa": "El feed muestra 1 senales positivas y 2 negativas (neto -1). Factores dominantes: Rally de IA: impulso Nasdaq; Acciones caen fuerte.",
+    "narrativa": "El feed muestra 2 senales positivas y 1 negativas (neto +3). Factores dominantes: Rally accionario; Rally de IA: impulso Nasdaq.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "NEUTRAL - sin sesgo dominante"
+    "veredicto": "Levemente ALCISTA"
   }
 }
