@@ -376,6 +376,22 @@ main{padding:26px 0 70px;min-height:60vh}
   transition:.15s}
 .edu-i:hover{color:var(--teal-2);border-color:var(--teal)}
 #eduWrap .edu-back{position:fixed;inset:0;z-index:90;background:transparent}
+.gmodal{position:fixed;inset:0;z-index:95;display:none;background:rgba(8,12,16,.78);backdrop-filter:blur(3px);padding:18px 12px;overflow-y:auto}
+.gmodal.open{display:block}
+.gm-box{max-width:780px;margin:0 auto 40px;background:var(--elev);border:1px solid var(--line);border-radius:var(--r);padding:22px 22px 14px;position:relative}
+.gm-x{position:sticky;top:0;float:right;background:var(--panel-2);border:1px solid var(--line);color:var(--tx-2);border-radius:8px;padding:5px 12px;cursor:pointer;font-size:13px;z-index:2}
+.gm-box h2{margin:0 0 4px;font-size:19px}
+.gm-intro{color:var(--tx-3);font-size:13px;line-height:1.55;margin-bottom:6px}
+.gm-sec{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.gm-sec h3{margin:0 0 4px;font-size:15px}
+.gm-sec .gm-what{color:var(--tx-3);font-size:12.5px;line-height:1.5;margin-bottom:9px}
+.gm-tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.gm-tag{font-size:11px;padding:4px 9px;border-radius:99px;background:var(--panel-2);border:1px solid var(--line);color:var(--tx-2);font-family:var(--f-mono)}
+.gm-buy{margin-top:9px;padding:9px 12px;border-radius:var(--r-sm);background:rgba(38,166,154,.08);border:1px solid rgba(38,166,154,.25);font-size:12.5px;line-height:1.55;color:var(--tx-2)}
+.gm-buy b{color:var(--z-opp)}
+.gm-row{font-size:12.5px;color:var(--tx-2);line-height:1.6;padding:2px 0}
+.gm-row b{color:var(--tx)}
+.gm-foot{margin-top:18px;padding:11px 13px;border-radius:var(--r-sm);background:var(--panel-2);border:1px solid var(--line);font-size:12px;color:var(--tx-3);line-height:1.6}
 #eduWrap .edu-pop{position:fixed;z-index:91;width:340px;max-width:calc(100vw - 24px);background:var(--elev);
   border:1px solid var(--line-2);border-radius:12px;box-shadow:0 18px 50px -10px rgba(0,0,0,.75);padding:16px 18px}
 .edu-hd{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:13.5px;margin-bottom:10px;gap:12px}
@@ -511,6 +527,7 @@ footer a.src:hover{color:var(--teal-2)}
       </div>
       <div class="refresh">
         <span class="rf-time" id="rfTime"></span>
+        <button class="rf-btn" id="guideBtn" title="Guía: qué se mide en cada categoría">📖 Guía</button>
         <button class="rf-btn" id="eduBtn" title="Mostrar todas las lecturas explicadas">💡 Explicar</button>
         <button class="rf-btn" id="rfBtn" title="Actualizar datos"><span class="spin"></span>Actualizar</button>
       </div>
@@ -1097,8 +1114,68 @@ window.openEdu = function(i, ev){ ev.stopPropagation(); ev.preventDefault(); con
 window.openEduStatic = function(k, ev){ ev.stopPropagation(); ev.preventDefault(); const d=STATIC_EDU[k]; if(d) showEdu(d, ev); };
 window.closeEdu = function(){ const w=document.getElementById("eduWrap"); if(w) w.hidden = true; };
 
+/* ---- guía de metodología ---- */
+const GUIDE_HTML = `
+<div class="gm-box">
+  <button class="gm-x" onclick="toggleGuide(false)">✕ Cerrar</button>
+  <h2>📖 Guía de la metodología</h2>
+  <p class="gm-intro">La plataforma combina <b>dos familias de señales</b>: un <b>score contrarian 0–100</b> que regula cuánto aportar cada mes (DCA), y una <b>valoración fundamental</b> que compara precio contra valor. La regla madre: <b>comprar empresas excelentes cuando el precio está por debajo del valor</b> — y en los momentos de pánico están las mejores opciones.</p>
+
+  <div class="gm-sec"><h3>🚀 Growth ETFs — S&P 500 y Nasdaq (Racional)</h3>
+    <div class="gm-what">ETFs indexados para la etapa de <b>acumulación</b>: cuando se es joven importa más el volumen aportado que la rentabilidad. El score mide qué tan caro está el índice contra su propia historia.</div>
+    <div class="gm-tags"><span class="gm-tag">CAPE Shiller 40%</span><span class="gm-tag">Drawdown 25%</span><span class="gm-tag">Earnings yield vs bono 15%</span><span class="gm-tag">Curva de tasas 10%</span><span class="gm-tag">Momentum 12-1m 10%</span></div>
+    <div class="gm-buy"><b>¿Cuándo es buen momento?</b> El DCA nunca se detiene: el score regula el monto. CARO aporta <b>x0.5</b>, NEUTRAL <b>x1</b>, ATRACTIVO <b>x1.5</b> y OPORTUNIDAD <b>x2.5</b>. Mientras más castigado el índice (CAPE bajo, drawdown profundo), más se aporta: señal contrarian.</div>
+  </div>
+
+  <div class="gm-sec"><h3>📊 Dividend ETFs — SCHD y JEPQ</h3>
+    <div class="gm-what">ETFs de renta en USD. El score compara el dividend yield de hoy contra la propia historia del ETF: si rinde más que su promedio, el precio está castigado.</div>
+    <div class="gm-tags"><span class="gm-tag">DY vs histórico 3y 35%</span><span class="gm-tag">Drawdown 52s 25%</span><span class="gm-tag">CAGR + DY 15%</span><span class="gm-tag">Crecimiento del dividendo 15%</span><span class="gm-tag">Momentum 12-1m 10%</span></div>
+    <div class="gm-buy"><b>¿Cuándo es buen momento?</b> Cuando el DY actual supera su promedio de 3 años y el precio viene retrocediendo del máximo: se compra más renta por el mismo dólar.</div>
+  </div>
+
+  <div class="gm-sec"><h3>🥇 Oro · ₿ Bitcoin</h3>
+    <div class="gm-what">Coberturas y reserva de valor. Cada uno tiene su score contrarian con métricas propias: el oro pondera tasas reales, dólar (DXY) y compras de bancos centrales; Bitcoin pondera ciclo de halving, MVRV, drawdown y momentum.</div>
+    <div class="gm-buy"><b>¿Cuándo es buen momento?</b> Igual que los ETFs: zonas ATRACTIVO/OPORTUNIDAD elevan el aporte del mes. El detalle de cada componente está en su pestaña.</div>
+  </div>
+
+  <div class="gm-sec"><h3>🇨🇱 Acciones chilenas — estrategia dividendera</h3>
+    <div class="gm-what">Primero se clasifica cada empresa con <b>G = ROE × (1 − payout)</b>:</div>
+    <div class="gm-row">🐮 <b>Vaca Lechera</b> — G&lt;10%, payout &gt;80%, PER 8–14. Dividendo estable que no crece: se le exige <b>DY 8–9%</b>.</div>
+    <div class="gm-row">📈 <b>DGI</b> — G 10–15%, payout 30–80%, PER 15–25. Dividendo creciente: se le exige <b>DY 6–7%</b>.</div>
+    <div class="gm-row">🚀 <b>Crecimiento</b> — G≥15%, reinvierte. No es dividendera clásica: se evalúa por múltiplos.</div>
+    <div class="gm-tags"><span class="gm-tag">DY = prom. 3 años ÷ precio</span><span class="gm-tag">solo definitivos + provisorios</span><span class="gm-tag">eventuales NUNCA cuentan</span><span class="gm-tag">benchmark por sector</span><span class="gm-tag">Gordon-Shapiro: precio máx.</span><span class="gm-tag">salud CMF: ROE · margen · deuda · liquidez</span></div>
+    <div class="gm-buy"><b>¿Cuándo es buen momento?</b> Cuando el DY de 3 años <b>supera el máximo del rango de su sector</b> (no basta un yield alto si el sector entero rinde alto), el precio está bajo el máximo de Gordon-Shapiro (dividendo ÷ tasa exigida) y la salud financiera CMF no tiene alertas. El filtro previo a todo: ROE promedio 5 años.</div>
+  </div>
+
+  <div class="gm-sec"><h3>🇺🇸 Acciones USA — múltiplos cruzados</h3>
+    <div class="gm-what">Sin benchmark de dividendos: se valora con la tabla de múltiplos razonables según el tipo de empresa y su ROE.</div>
+    <div class="gm-row"><b>PER razonable</b> — Vaca 8–14 · DGI 15–24.9 · Crecimiento 25–30.</div>
+    <div class="gm-row"><b>P/B según ROE</b> — ROE&gt;15% justifica P/B 2–2.5 · ROE 10–15% → 1–2 · ROE&lt;10% → ≤1.</div>
+    <div class="gm-row"><b>Número de Graham</b> — PER × P/B &lt; 22.5 = precio razonable. Es el desempate cuando PER y P/B se contradicen.</div>
+    <div class="gm-buy"><b>¿Cuándo es buen momento?</b> Estado <b>Barata</b>: cotiza bajo sus rangos razonables de PER y P/B con Graham bajo 22.5, y la salud del 10-K/10-Q (SEC) sin alertas.</div>
+  </div>
+
+  <div class="gm-foot">Principios transversales: el precio es lo que pagas, el valor es lo que recibes · en etapa temprana el volumen aportado pesa más que la rentabilidad · la diversificación dividendera protege el flujo de caja, no baja el riesgo · las noticias se interpretan como contexto, nunca como señal única.</div>
+</div>`;
+
+window.toggleGuide = function(open){
+  let m = document.getElementById("guideModal");
+  if(!m){
+    m = document.createElement("div");
+    m.id = "guideModal"; m.className = "gmodal";
+    m.innerHTML = GUIDE_HTML;
+    m.addEventListener("click", e=>{ if(e.target===m) toggleGuide(false); });
+    document.body.appendChild(m);
+  }
+  m.classList.toggle("open", typeof open==="boolean" ? open : !m.classList.contains("open"));
+  document.body.style.overflow = m.classList.contains("open") ? "hidden" : "";
+};
+document.addEventListener("keydown", e=>{ if(e.key==="Escape") toggleGuide(false); });
+
 /* ---- modo explicar (toggle global) ---- */
 document.addEventListener("DOMContentLoaded", ()=>{
+  const g = document.getElementById("guideBtn");
+  if(g) g.addEventListener("click", ()=>toggleGuide(true));
   const b = document.getElementById("eduBtn"); if(!b) return;
   const apply = on => { document.body.classList.toggle("explain-on", on); b.classList.toggle("edu-on", on); };
   apply(localStorage.getItem("vs_explain")==="1");
@@ -1130,6 +1207,14 @@ function collectScored(){
       chg:null, score:x.score, zona:x.zona, mult:x.multiplicador,
       hist:x.historico, valKey:"close", newsKey:"n_etfs", emoji:x.emoji,
       sub:`DY ${fmt.pct(x.dy_actual_pct)} · aporte ${fmt.usd(x.aporte_sugerido_usd,0)}`});
+  });
+  const sq = VS.data.sp_nq;
+  if(sq&&sq.etfs) Object.values(sq.etfs).forEach(x=>{
+    out.push({route:"etfs", ticker:x.ticker, name:(x.indice||"")+" · Growth (Racional)",
+      price:x.precio_etf_clp?fmt.clp(x.precio_etf_clp):fmt.num(x.precio_indice,0),
+      chg:null, score:x.score, zona:x.zona, mult:x.multiplicador,
+      hist:x.historico, valKey:"close", newsKey:"n_etfs", emoji:"🚀",
+      sub:`${x.indice||""} ${fmt.num(x.precio_indice,0)} · aporte ${fmt.usd(x.aporte_sugerido_usd,0)}`});
   });
   return out;
 }
@@ -1268,7 +1353,12 @@ function renderHome(){
   const clRest = acc.filter(a=>!a.evaluacion||a.evaluacion.status!=="Sobre benchmark")
     .sort((x,y)=>(clPP(y)??-99)-(clPP(x)??-99));
 
-  const total = opps.length + sobre.length;
+  const us = VS.data.usa;
+  const usAcc = us&&us.acciones?us.acciones.slice():[];
+  const usBar  = usAcc.filter(a=>a.valoracion?.status==="Barata");
+  const usRest = usAcc.filter(a=>a.valoracion?.status!=="Barata");
+
+  const total = opps.length + sobre.length + usBar.length;
   const errs = ["gld","btc","etfs","chile","usa","sp_nq"].filter(k=>VS.status[k]==="error");
 
   let html = "";
@@ -1279,10 +1369,11 @@ function renderHome(){
     <div class="big">${total}</div>
     <div class="btxt">
       <h2>${total>0?`oportunidad${total>1?'es':''} de compra activa${total>1?'s':''} hoy`:"sin oportunidades activas hoy"}</h2>
-      <p>Suma de activos con score en zona de compra más acciones chilenas sobre su benchmark sectorial.</p>
+      <p>Activos con score en zona de compra, acciones chilenas sobre su benchmark sectorial y acciones USA baratas por múltiplos.</p>
       <div class="bbreak">
         <span class="chip">${opps.length} activos con score · ATRACTIVO / OPORTUNIDAD</span>
-        <span class="chip cl">${sobre.length} acciones chilenas · sobre benchmark</span>
+        <span class="chip cl">${sobre.length} acciones 🇨🇱 · sobre benchmark</span>
+        <span class="chip cl">${usBar.length} acciones 🇺🇸 · baratas por múltiplos</span>
       </div>
     </div>
   </div>`;
@@ -1298,17 +1389,23 @@ function renderHome(){
   if(sobre.length){ html += `<div class="grid">${sobre.map(clRow).join("")}</div>`; }
   else { html += `<div class="hint" style="padding:8px 0">Ninguna acción supera hoy el máximo de su rango sectorial.</div>`; }
 
+  // USA cheap by multiples
+  html += sectionTitle("Acciones USA baratas por múltiplos", usBar.length, "PER · P/B · Graham bajo rango");
+  if(usBar.length){ html += `<div class="grid">${usBar.map(usRow).join("")}</div>`; }
+  else { html += `<div class="hint" style="padding:8px 0">Ninguna acción USA cotiza hoy bajo sus rangos razonables.</div>`; }
+
   // collapsed rest
-  const restCount = rest.length + clRest.length;
+  const restCount = rest.length + clRest.length + usRest.length;
   html += `<div class="acc" id="accRest">
     <div class="acc-head" onclick="document.getElementById('accRest').classList.toggle('open')">
-      Sin señal activa — NEUTRAL / CARO y acciones dentro/bajo benchmark
+      Sin señal activa — NEUTRAL / CARO, dentro/bajo benchmark y USA a precio razonable o cara
       <span class="section-title" style="margin:0"><span class="count">${restCount}</span></span>
       <span class="chev">›</span>
     </div>
     <div class="acc-body">
       ${rest.length?`<div class="grid c3" style="margin-bottom:14px">${rest.map(a=>assetCard(a)).join("")}</div>`:""}
-      ${clRest.length?`<div class="grid">${clRest.map(clRow).join("")}</div>`:""}
+      ${clRest.length?`<div class="grid" style="margin-bottom:14px">${clRest.map(clRow).join("")}</div>`:""}
+      ${usRest.length?`<div class="grid">${usRest.map(usRow).join("")}</div>`:""}
     </div>
   </div>`;
 
