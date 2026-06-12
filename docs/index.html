@@ -529,6 +529,8 @@ const VS = {
     etfs:   "dividend_etfs_data.json",
     chile:  "acciones_chilenas.json",
     usa:    "acciones_usa_data.json",
+    sp_nq:  "sp_nq_data.json",
+    n_usa:  "noticias_usa.json",
     n_gld:  "noticias_gld.json",
     n_btc:  "noticias_btc.json",
     n_etfs: "noticias_etfs.json",
@@ -632,6 +634,10 @@ const SUB_LABELS = {
   pi_cycle:{n:"Pi Cycle Top",d:"MA111 vs MA350×2"},
   halving_cycle:{n:"Ciclo de halving",d:"fase del ciclo"},
   mvrv:{n:"MVRV Z-Score",d:"valor vs realizado"},
+  // growth ETFs componentes
+  cape:{n:"CAPE",d:"Shiller P/E vs historia"},
+  ey_vs_bond:{n:"EY vs Bond",d:"premium acciones vs 10Y"},
+  yield_curve:{n:"Yield Curve",d:"10y − 3m (régimen macro)"},
   // dividend ETFs componentes
   dy_vs_historico:{n:"DY vs histórico",d:"yield actual vs 3y"},
   balance_cagr:{n:"Balance CAGR+DY",d:"crecimiento + renta"},
@@ -1239,7 +1245,7 @@ function renderHome(){
     .sort((x,y)=>(y.evaluacion?.vs_benchmark_pp??-99)-(x.evaluacion?.vs_benchmark_pp??-99));
 
   const total = opps.length + sobre.length;
-  const errs = ["gld","btc","etfs","chile"].filter(k=>VS.status[k]==="error");
+  const errs = ["gld","btc","etfs","chile","usa","sp_nq"].filter(k=>VS.status[k]==="error");
 
   let html = "";
   if(errs.length) html += `<div style="margin-bottom:16px">${errs.map(k=>errBox(k,VS.FILES[k])).join("")}</div>`;
@@ -1447,7 +1453,7 @@ function renderETFs(){
   if(!e||!e.etfs) return viewHead("📊","ETFs USA","")+skeletonCards(2);
 
   const etfs = Object.values(e.etfs);
-  const main = etfs.map(etfPanel).join("") + spSlot();
+  const main = growthSection() + etfs.map(etfPanel).join("");
   const sidebar = newsSidebar(news, "n_etfs", "Macro USA");
 
   return viewHead("📊","ETFs USA", srcStamp("etfs"),
@@ -1515,9 +1521,69 @@ function etfPanel(x){
   </div>`;
 }
 
-function spSlot(){
-  return `<div class="soon"><span class="tag">PRÓXIMAMENTE</span>
-    S&P 500 (CFISPETF) y Nasdaq 100 (CFINASDAQ) — score en vivo con CAPE de Shiller. Slot preparado para <span class="mono">sp_nq_data.json</span> con la misma estructura de score/zona.</div>`;
+const GROWTH_PESOS = {cape:40, drawdown:25, ey_vs_bond:15, yield_curve:10, momentum:10};
+
+function growthSection(){
+  const d = VS.data.sp_nq;
+  if(VS.status.sp_nq==="error" && !d)
+    return `<div class="section-title" style="margin-top:0">Growth ETFs · Racional<span class="rule"></span></div>` + errBox("sp_nq",VS.FILES.sp_nq);
+  if(!d||!d.etfs) return skeletonCards(1);
+  const order = ["CFISPETF","CFINASDAQ"];
+  const panels = order.filter(t=>d.etfs[t]).map(t=>growthPanel(d.etfs[t])).join("");
+  return `<div class="section-title" style="margin-top:0">Growth ETFs · Racional
+    <span class="hint" style="text-transform:none;letter-spacing:0;font-weight:400">score sobre el índice subyacente · CAPE Shiller</span>
+    <span class="rule"></span></div>${panels}
+    <div class="section-title">Dividend ETFs
+    <span class="hint" style="text-transform:none;letter-spacing:0;font-weight:400">SCHD · JEPQ — score de timing para DCA</span>
+    <span class="rule"></span></div>`;
+}
+
+function growthPanel(x){
+  const chId = "chart_growth_"+x.ticker;
+  queueChart(chId, x.historico, "close", "#26a69a", "3Y");
+  const r = x.rango_365_clp;
+  const pos = (r && x.precio_etf_clp!=null && r.max>r.min) ? (x.precio_etf_clp-r.min)/(r.max-r.min)*100 : null;
+  return `<div class="panel" style="margin-bottom:16px">
+    <div class="card-top">
+      <div class="tk">
+        <div class="ticker" style="font-size:24px">${esc(x.ticker)}</div>
+        <div class="name">${esc(x.indice)} · Growth ETF · ${esc(x.emisor||"")}</div>
+        <div class="price" style="margin-top:8px">${x.precio_etf_clp!=null?fmt.clp(x.precio_etf_clp):"—"} <span class="dim" style="font-size:11px">· CLP en Racional</span></div>
+      </div>
+      <div class="score-wrap">
+        <div class="gauge-wrap sm">
+          ${vsGauge(x.score, x.zona)}
+          <div class="gv" style="color:${zoneColorVar(x.zona)}">${fmt.score(x.score)}${eduIconStatic('score')}</div>
+          <div class="gl">score</div>
+        </div>
+        <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>${fmt.usd(x.aporte_sugerido_usd,0)}</b> · x${x.multiplicador}</div>
+        <div style="margin-top:8px">${zoneBadge(x.zona)}</div>
+      </div>
+    </div>
+    ${scoreBar(x.score, x.zona)}
+    ${x.description?`<div class="hint" style="margin-top:14px;line-height:1.55;color:var(--tx-3)">${esc(x.description)}</div>`:""}
+
+    <div class="grid c2" style="margin-top:18px">
+      <div>
+        <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">Métricas del índice</h3>
+        <div class="kv"><span class="k">${esc(x.indice)} (índice)</span><span class="v">${fmt.num(x.precio_indice,0)}</span></div>
+        <div class="kv"><span class="k">CAPE ${x.cape_oficial?"(Shiller oficial)":"(proxy)"}</span><span class="v">${fmt.num(x.cape,1)}</span></div>
+        <div class="kv"><span class="k">Drawdown vs máximo</span><span class="v">${fmt.signpct(x.drawdown_pct,1)}</span></div>
+        <div class="kv"><span class="k">Cambio score vs mes anterior</span><span class="v">${fmt.signpct(x.delta_score,1).replace("%"," pts")}</span></div>
+        ${r?`<div class="kv"><span class="k">Rango ETF 1 año (CLP)</span><span class="v">${fmt.clp(r.min)} – ${fmt.clp(r.max)}${pos!=null?` <span class="dim">· ${fmt.num(pos,0)}%</span>`:""}</span></div>`:""}
+        <div class="kv"><span class="k">Dato índice al</span><span class="v">${esc(x.fecha_dato_indice||"—")}</span></div>
+      </div>
+      <div>
+        <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">Componentes del score</h3>
+        ${compBars(x.componentes, GROWTH_PESOS, {})}
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px">
+      <h3 style="margin:0">${esc(x.indice)} histórico</h3>${rangeSel(chId)}
+    </div>
+    <div class="chart-box sm"><canvas id="${chId}"></canvas></div>
+  </div>`;
 }
 
 /* =================== EVALUACIÓN FUNDAMENTAL =================== */
@@ -1722,6 +1788,15 @@ function renderUSA(param){
   acc.sort((a,b)=>(order[a.valoracion?.status]??3)-(order[b.valoracion?.status]??3));
   const nBaratas = acc.filter(a=>a.valoracion?.status==="Barata").length;
 
+  const news = VS.data.n_usa;
+  const sidebar = `<div><div class="sidebar-news">
+    <div class="hd">📰 Noticias · Acciones USA${eduIconStatic('news')} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated.n_usa)}</span>`:""}</div>
+    ${VS.status.n_usa==="error"?errBox("n_usa","noticias"):""}
+    ${news?execSummary(news):""}
+    ${news?usaAlign(acc, news):""}
+    <div style="margin-top:14px">${news?newsSection(news):""}</div>
+  </div></div>`;
+
   const main = `
     <div class="section-title" style="margin-top:0">Watchlist USA<span class="count">${acc.length}</span>
       <span class="hint" style="text-transform:none;letter-spacing:0;font-weight:400">valoración por múltiplos cruzados (PER · P/B · Graham)</span>
@@ -1730,7 +1805,34 @@ function renderUSA(param){
     <div class="hint" style="margin-top:14px;line-height:1.5">Empresas de Crecimiento: la tesis es ganancia por capital, no por dividendo. Una empresa excelente no es buena inversión si el precio es muy caro — si está "Cara", queda en watchlist hasta que el precio corrija.</div>`;
 
   return viewHead("🇺🇸","Acciones USA", srcStamp("usa"),
-    "Crecimiento USA · PER por clasificación, P/B según ROE y Graham (<22.5) como desempate") + main;
+    "Crecimiento USA · PER por clasificación, P/B según ROE y Graham (<22.5) como desempate") +
+    `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
+}
+
+function usaAlign(acc, news){
+  const sent = news.resumen_ejecutivo?.sentimiento;
+  const sg = sentSign(sent);
+  const nCaras = acc.filter(a=>a.valoracion?.status==="Cara").length;
+  const nBaratas = acc.filter(a=>a.valoracion?.status==="Barata").length;
+  let ic,cls,tag,desc;
+  if(nBaratas>0 && sg<0){ ic="✅";cls="good";tag="Señal contrarian";
+    desc=`${nBaratas} acción(es) a precio razonable/barato con noticias bajistas: comprar con miedo es exactamente el plan.`; }
+  else if(nCaras===acc.length && sg>0){ ic="⚠️";cls="warn";tag="Euforia";
+    desc="Todo el watchlist está caro y las noticias son alcistas: no perseguir el precio. El mercado paga expectativas, no fundamentos."; }
+  else if(nCaras===acc.length && sg<0){ ic="⏳";cls="muted";tag="Posible corrección";
+    desc="Watchlist caro pero con flujo de noticias bajista: si el castigo continúa, los múltiplos pueden entrar en rango. Monitorear, no comprar aún."; }
+  else if(nCaras===acc.length){ ic="⏳";cls="muted";tag="Esperando precio";
+    desc="Empresas en watchlist a la espera de mejores múltiplos. En los momentos de pánico están las mejores opciones."; }
+  else { ic="•";cls="muted";tag="Mixto";
+    desc="Valoraciones mixtas en el watchlist: revisar caso a caso contra el flujo de noticias."; }
+  return `<div class="align ${cls==='warn'?'warn':''}" style="margin-top:14px">
+    <div class="hd"><span class="ic">${ic}</span> ${tag}</div>
+    <div class="mx">
+      <div class="b"><div class="l">Valoración watchlist</div><div class="v" style="color:${nBaratas>0?'var(--z-opp)':'var(--tx)'}">${nCaras} caras · ${nBaratas} baratas</div></div>
+      <div class="b"><div class="l">Noticias USA</div><div class="v">${esc(sent||"—")}</div></div>
+    </div>
+    <div class="desc">${esc(desc)}</div>
+  </div>`;
 }
 
 function renderUSADetail(ticker){
