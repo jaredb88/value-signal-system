@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T13:33:27.404529+00:00",
+  "updated_at_utc": "2026-06-12T14:03:28.295637+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "tesla": {
@@ -112,20 +112,6 @@
     ],
     "macro_tech": [
       {
-        "title": "SpaceX’s Historic IPO Will Trigger a Nasdaq Sell-Off? Says Analyst Michael Burry",
-        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPTFpUMkhqTWVYcXlCNXhiUEhTcFpuODgxZERLZUdtVTFGMzdGdDFiSzBuMXB4VUhyZzhibTRwWTNGMzZmYWRnTzQzM0RLaHYyRkhYd3paWjVrcmRwOFFYeTM2bjJRR2RCakJYcEdyOTM1V0tkeWoydFh6VFkwZ2dBd1pOcUJkYXVPYVJSTUhUc3lraEtWMVJpbFdjeFVZWklFVEFORHpnbFotZjBNLXhoSUgwZndWU2Y1Uy1fd21kdmt3M2Jqa2xFeEo4bzZqVUJsRWJnbQ?oc=5",
-        "source": "TradingView",
-        "pubdate": "Fri, 12 Jun 2026 07:12:23 GMT",
-        "pubdate_iso": "2026-06-12T07:12:23+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 3,
-          "intensidad_label": "fuerte",
-          "emoji": "🔴🔴",
-          "razonamiento": "Selloff: presion vendedora"
-        }
-      },
-      {
         "title": "S&P 500, Nasdaq, Dow End Higher After Trump Signals Iran Deal Coming Soon — ADBE, INTC, AMC, GOOGL, ORCL In Focus",
         "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUVUyOC1rSldZUVhfYXV2dUhLcG8zQ3NWUFNSa09RM0tfZ0RnTkNVTDFoTXVOVlZfTDFqVkVuSGR3bzd0SFV6UzNZVHpSTzRLOFptMFFuTjI5YVdnQ3h6Y0w0cG9xMkxMRVhVSXd0VmdVUUI5RUJGYXJ4cV8yclAwY1R1TTlUWGdveGxVc2hiaHNxYUoyZ2gtVTgtR1lHMlBZejNZamNmbFA2Vm4ydTZDdUFfT09tdWlBYmpOTVdZZ2lMeUlNVW4wUUdjdVg5Zm9NMEhpSUlYbWZic2ttdk1zODF6c0kwQlRLaFl4UVVwYU42azNFU2N3ZQ?oc=5",
         "source": "TradingView",
@@ -180,6 +166,20 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
+      },
+      {
+        "title": "Why Broadcom (AVGO) Shares Are Plunging Today",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxObzVyN0tGRzZzSVpuQmJYRm10YU9JeTVZRG96YVVkVHJOT3A0OVFvbmNlVkw2alFfaVc3MkQ0Q0FEdHdWTURQWWJpVF9MTEctdmZmRVZFRlJtbmkzZHBUQklISVB4NW5JN3hGNXRPTlB6S1lfbFJ3MlFJUTg2ZHI1S3EyM0xYdXlsQmNyZU9kaVBaNm9uWEtjUTFaWmZhazNoTTZzc2p3?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 19:35:42 GMT",
+        "pubdate_iso": "2026-06-10T19:35:42+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
       }
     ]
   },
@@ -193,13 +193,13 @@
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "levemente bajista",
-    "score_neto": -2,
+    "sentimiento": "neutral",
+    "score_neto": 1,
     "n_positivas": 1,
-    "n_negativas": 1,
-    "n_neutrales": 9,
-    "narrativa": "El feed muestra 1 senales positivas y 1 negativas (neto -2). Factores dominantes: Selloff: presion vendedora; Avances en Optimus: opcionalidad Tesla.",
+    "n_negativas": 0,
+    "n_neutrales": 10,
+    "narrativa": "El feed muestra 1 senales positivas y 0 negativas (neto +1). Factores dominantes: Avances en Optimus: opcionalidad Tesla.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "Levemente BAJISTA"
+    "veredicto": "NEUTRAL - sin sesgo dominante"
   }
 }
