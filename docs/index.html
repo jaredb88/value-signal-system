@@ -144,6 +144,8 @@ nav.tabs a.active .ico{opacity:1}
 .rf-time{font-size:11px;color:var(--mut);white-space:nowrap}
 .rf-time b{color:var(--tx-2);font-weight:500}
 @media(max-width:1000px){.rf-time{display:none}}
+.data-stamp{display:none;font-size:10px;color:var(--mut);font-family:var(--f-mono);text-align:right;padding:0 14px 7px}
+@media(max-width:1000px){.data-stamp{display:block}}
 
 /* nav wrapper + flechas de scroll (móvil) */
 .nav-wrap{display:flex;align-items:center;margin-left:auto;height:100%;min-width:0}
@@ -532,6 +534,7 @@ footer a.src:hover{color:var(--teal-2)}
         <button class="rf-btn" id="rfBtn" title="Actualizar datos"><span class="spin"></span>Actualizar</button>
       </div>
     </div>
+    <div class="data-stamp" id="rfTime2"></div>
   </div>
 </header>
 
@@ -915,6 +918,39 @@ const EDU = {
       if(m>5)   return {h:v+"Tendencia alcista saludable.", c:"vs"};
       if(m>=-5) return {h:v+"Sin tendencia clara.", c:"g"};
       return {h:v+"Tendencia bajista. Para el contrarian, las caídas sostenidas crean los mejores precios de entrada.", c:c.buy?"v":"g"}; } },
+
+  /* ---------- growth ETFs (S&P / Nasdaq) ---------- */
+  cape_shiller: { t:"CAPE de Shiller (40%)",
+    mide:"Precio del índice dividido por las utilidades reales promedio de los últimos 10 años. Es el termómetro de valoración de largo plazo: compara qué tan caro está el mercado contra su propia historia. En el Nasdaq se usa una valoración relativa proxy (NDX/SPX) por falta de CAPE oficial.",
+    leer(c){ const s=c.s, v=c.v!=null?`<b>${fmt.num(c.v,1)}${c.oficial?"":"x"}</b> (aporta ${fmt.num(s,0)}/100) — `:`Aporta <b>${fmt.num(s,0)}/100</b> — `;
+      if(s>=75) return {h:v+"Valoración muy castigada frente a su historia. Para el contrarian, terreno fértil para aportar fuerte.", c:"vi"};
+      if(s>=50) return {h:v+"Valoración bajo su promedio histórico: componente a favor del aporte.", c:"v"};
+      if(s>=25) return {h:v+"Valoración en rango normal: ni descuento ni euforia.", c:"g"};
+      return {h:v+"Mercado caro frente a su historia. El componente más pesado del score pide moderar el aporte.", c:"r"}; } },
+
+  ey_bond: { t:"Earnings yield vs bono (15%)",
+    mide:"El rendimiento de las utilidades del índice (utilidad ÷ precio) comparado con la tasa del bono del Tesoro. Si las acciones 'rinden' menos que el bono libre de riesgo, no compensan el riesgo extra: mercado caro.",
+    leer(c){ const s=c.s, v=`Aporta <b>${fmt.num(s,0)}/100</b> — `;
+      if(s>=75) return {h:v+"Las acciones rinden claramente más que el bono: el riesgo está bien pagado.", c:"vi"};
+      if(s>=50) return {h:v+"Premio razonable de las acciones sobre la renta fija.", c:"v"};
+      if(s>=25) return {h:v+"Premio ajustado: el bono compite de cerca.", c:"g"};
+      return {h:v+"El bono rinde tanto o más que las acciones: la renta fija compite fuerte contra el índice.", c:"r"}; } },
+
+  yield_curve: { t:"Curva de tasas (10%)",
+    mide:"La pendiente entre las tasas largas y cortas del Tesoro. Curva invertida (cortas sobre largas) ha anticipado recesiones: los meses posteriores suelen castigar al índice y crear mejores precios de entrada.",
+    leer(c){ const s=c.s, v=`Aporta <b>${fmt.num(s,0)}/100</b> — `;
+      if(s>=75) return {h:v+"Curva profundamente invertida o normalizándose tras inversión: zona donde históricamente se gestan las oportunidades.", c:"v"};
+      if(s>=50) return {h:v+"Curva plana o en transición: señal mixta del ciclo.", c:"g"};
+      if(s>=25) return {h:v+"Curva con pendiente normal: ciclo sin estrés evidente.", c:"g"};
+      return {h:v+"Curva empinada y mercado confiado: este componente no suma puntos de descuento.", c:"a"}; } },
+
+  growth_momentum: { t:"Momentum 12-1m (10%)",
+    mide:"La tendencia de fondo del índice en el último año (excluyendo el mes más reciente, que suele ser ruido). Complementa al resto: confirma o matiza lo que dicen la valoración y el ciclo.",
+    leer(c){ const s=c.s, v=`Aporta <b>${fmt.num(s,0)}/100</b> — `;
+      if(s>=75) return {h:v+"Componente muy a favor del aporte este mes.", c:"vs"};
+      if(s>=50) return {h:v+"Componente moderadamente a favor.", c:"g"};
+      if(s>=25) return {h:v+"Componente neutro a levemente en contra.", c:"g"};
+      return {h:v+"Componente en contra del aporte este mes.", c:"a"}; } },
 
   /* ---------- oro ---------- */
   ratio_sp500: { t:"Ratio vs S&P 500",
@@ -1701,7 +1737,13 @@ function growthPanel(x){
       </div>
       <div>
         <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">Componentes del score</h3>
-        ${compBars(x.componentes, GROWTH_PESOS, {})}
+        ${compBars(x.componentes, GROWTH_PESOS, {
+          cape:        eduFor('cape_shiller',{v:x.cape, oficial:!!x.cape_oficial, s:x.componentes?.cape}),
+          drawdown:    eduFor('drawdown52',{dd:x.drawdown_pct}),
+          ey_vs_bond:  eduFor('ey_bond',{s:x.componentes?.ey_vs_bond}),
+          yield_curve: eduFor('yield_curve',{s:x.componentes?.yield_curve}),
+          momentum:    eduFor('growth_momentum',{s:x.componentes?.momentum}),
+        })}
       </div>
     </div>
 
@@ -2436,12 +2478,12 @@ function updateHeader(){
 
   const btn = document.getElementById("rfBtn");
   if(btn) btn.classList.toggle("loading", anyLoading);
-  const t = document.getElementById("rfTime");
-  if(t){
-    if(anyLoading) t.innerHTML = `<b>actualizando…</b>`;
-    else if(newest) t.innerHTML = `datos <b>${fmt.ago(newest.toISOString())}</b>${nErr?` · <span style="color:var(--red)">${nErr} con error</span>`:""}`;
-    else t.innerHTML = `<b>—</b>`;
-  }
+  let msg;
+  if(anyLoading) msg = `<b>actualizando…</b>`;
+  else if(newest) msg = `datos <b>${fmt.ago(newest.toISOString())}</b>${nErr?` · <span style="color:var(--red)">${nErr} con error</span>`:""}`;
+  else msg = `<b>—</b>`;
+  const t = document.getElementById("rfTime");   if(t)  t.innerHTML = msg;
+  const t2 = document.getElementById("rfTime2"); if(t2) t2.innerHTML = msg;
 }
 
 async function refresh(){
