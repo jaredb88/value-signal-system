@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T02:39:36.024385+00:00",
+  "updated_at_utc": "2026-06-12T04:40:04.282019+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -174,20 +174,6 @@
     ],
     "regulacion": [
       {
-        "title": "Japan will regulate the crypto sector like the stock market",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWm9SN1lUYkFVcERMcGZ1Q2NKMDg5OHBPeHczVTA1aFFuVk04SndoVUJSeVlad0M4RVNSV3NQVFlvdVRTLU8zZDJzZU9USl8yWTlNam5vNE9TS3doaG5LLVJOWGlGWmVSd2tMWnh2SUpTTk55RV9UZjFVa0RqTGtOdWFwT1pRcDdfMnFTaXUwOUM?oc=5",
-        "source": "Bit2Me News",
-        "pubdate": "Thu, 11 Jun 2026 15:00:04 GMT",
-        "pubdate_iso": "2026-06-11T15:00:04+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "Hungría despenalizará el comercio cripto y revertirá normas que contemplaban cárcel",
         "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcVdzbm5YakdUQnoyQVlVUTBpYnNEZE1tTThXMUV1a1pJNUtqSW1FaUlkUFljeUQwbjBhVXM4dXlNUXc1N1V2cGEtVjRSSVR2R2RzdTZPYXJzZ0hucXpRdF9CenlGMjNKTzAyekdmZV9kcFVaVXpIamNSTzJIQWoxWWNSRTAzOGtTVjRiN2xXeHJaV3ltbEV2NUJyWlpvXzBrSHFZaVFOMjlydkJLeFdEVldqYUJnU09WZW9zZHlQb0s?oc=5",
         "source": "DiarioBitcoin",
@@ -207,6 +193,20 @@
         "source": "Decrypt",
         "pubdate": "Thu, 11 Jun 2026 11:42:13 GMT",
         "pubdate_iso": "2026-06-11T11:42:13+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Hungría Pone Fin a la Represión Cripto y Señala una Nueva Era Digital",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNUp0RVR5ZlhWaDlqeXNoSDMzbnBnbjJDSmR1NjNJa3l1TUxrNUtvdFRRQlhfbW45RC1aRnpoWHo1cTlQRTkzZ0R2TmsxT3NRM3dwVlRVdXdEQlkwc1ZIMWtTT3lYSWhtNUFoWlVXcnBoVTRRXzNGTkJZUDdUUWx2ejJDMkZpbHpzVUI2VkpKcFJaNy1VUmEwYkV3Skp4QQ?oc=5",
+        "source": "Coinfomania",
+        "pubdate": "Thu, 11 Jun 2026 11:25:14 GMT",
+        "pubdate_iso": "2026-06-11T11:25:14+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -245,20 +245,6 @@
       }
     ],
     "adopcion": [
-      {
-        "title": "News Explorer — Crypto Adoption in Nepal 'Warrants Close Monitoring': IMF",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQa3N4WFgzS04wQWUxem0tRG9qQ0dCMmpqejZEQktoejI3V2lLaXlhMjlCdlVyYUQ0SWZyakxORjRVN0F1ZXV4WlNUY0puWVRlVDZxcFJaanFOV2QyblNYUWlRM3J1WkxnTEV1VEQ5Sk90YThiZTFZVldUQ3otRzBiTl9fMDR4LTItbXo5WHBpSHR6V1lyUmhDTjZOdmdkZFdVLUx6MWR0YWU3bm1V?oc=5",
-        "source": "Decrypt",
-        "pubdate": "Thu, 11 Jun 2026 11:39:45 GMT",
-        "pubdate_iso": "2026-06-11T11:39:45+00:00",
-        "impacto": {
-          "direccion": "positivo",
-          "intensidad": 1,
-          "intensidad_label": "leve",
-          "emoji": "🟢",
-          "razonamiento": "Adopcion mencionada"
-        }
-      },
       {
         "title": "Se desploma más del 40% en 30 días. La estrategia se acerca al mínimo anual, ¿podrá mantener el nivel de $100 ante el desplome del Bitcoin?",
         "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeEFUY0hJSzlCRldGaVhiUlNKQUh2UVJ3dVhSb2RnZ1ZPdVhWR2s0Rnp4cXR1UDJ3LWFwTV9wU2ppb1F2Y0ZfTERzS2RlaG1kbjY4Mk1PcU9ReWQ5QkxGaGVkWm54VnB0Ylo2SDBQRUNqVkRzd0JPdU9tY3hqQ2tWelk3WndVQ0I0T1gtVHpHUmlQdnBMTVJvWkNoWXFlZHhOZFJKNXdsWmYxY05GTFgwVGZhZEJPV2lOblRmTzZqd1FyNEppbDdCMnFiOUdfMVJIS1lJ?oc=5",
@@ -420,24 +406,24 @@
     ]
   },
   "stats": {
-    "total_noticias": 27,
+    "total_noticias": 26,
     "por_categoria": {
       "precio": 5,
       "etf_flows": 5,
       "regulacion": 5,
-      "adopcion": 4,
+      "adopcion": 3,
       "fed_macro": 5,
       "sentimiento_onchain": 3
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "levemente bajista",
-    "score_neto": -3,
-    "n_positivas": 2,
+    "sentimiento": "bajista",
+    "score_neto": -4,
+    "n_positivas": 1,
     "n_negativas": 2,
     "n_neutrales": 23,
-    "narrativa": "El feed muestra 2 senales positivas y 2 negativas (neto -3). Factores dominantes: Desplome: muy negativo; Salidas de ETF: muy negativo institucional.",
+    "narrativa": "El feed muestra 1 senales positivas y 2 negativas (neto -4). Factores dominantes: Desplome: muy negativo; Salidas de ETF: muy negativo institucional.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "Levemente BAJISTA"
+    "veredicto": "BAJISTA a corto plazo"
   }
 }
