@@ -76,6 +76,9 @@ img,canvas,svg,video{max-width:100%}
 .ev-concl.ok{border-color:var(--z-opp-bd);background:var(--z-opp-bg)}
 .ev-concl.bad{border-color:var(--z-caro-bd);background:var(--z-caro-bg)}
 .ev-note{margin-top:10px;font-size:11px;color:var(--mut);line-height:1.45}
+.row-news{margin-top:8px;font-size:11.5px;color:var(--tx-3);line-height:1.4;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.row-news .sent{font-weight:600}
+.row-news .top-r{color:var(--mut)}
 html,body{margin:0;padding:0}
 body{
   background:var(--bg);
@@ -137,10 +140,22 @@ nav.tabs a.active .ico{opacity:1}
 .rf-time b{color:var(--tx-2);font-weight:500}
 @media(max-width:1000px){.rf-time{display:none}}
 
+/* nav wrapper + flechas de scroll (móvil) */
+.nav-wrap{display:flex;align-items:center;margin-left:auto;height:100%;min-width:0}
+.nav-arr{display:none;flex-shrink:0;width:30px;height:46px;background:none;border:0;
+  color:var(--tx-3);font-size:22px;line-height:1;cursor:pointer;font-family:var(--f-sans);
+  align-items:center;justify-content:center;padding:0;transition:color .15s,opacity .15s}
+.nav-arr:hover{color:var(--tx)}
+.nav-arr.off{opacity:.25;pointer-events:none}
+nav.tabs{scrollbar-width:none;-ms-overflow-style:none}
+nav.tabs::-webkit-scrollbar{display:none}
+
 /* mobile nav scroll */
 @media(max-width:960px){
   .top-row{gap:12px;height:auto;flex-wrap:wrap;padding:10px 0}
-  nav.tabs{order:3;width:100%;margin-left:0;overflow-x:auto;border-top:1px solid var(--line);height:46px}
+  .nav-wrap{order:3;width:100%;margin-left:0;border-top:1px solid var(--line)}
+  .nav-arr{display:flex}
+  nav.tabs{flex:1;min-width:0;margin-left:0;overflow-x:auto;height:46px;scroll-behavior:smooth}
   nav.tabs a{height:46px;padding:0 12px}
   .refresh{margin-left:auto;border-left:0;padding-left:0}
 }
@@ -484,7 +499,11 @@ footer a.src:hover{color:var(--teal-2)}
         <span class="b1">VALUE</span><span class="b2">SIGNAL</span>
         <span class="tag">Timing cuantitativo de DCA · Señales contrarian</span>
       </div>
-      <nav class="tabs" id="nav"></nav>
+      <div class="nav-wrap">
+        <button class="nav-arr left" onclick="scrollTabs(-1)" aria-label="Pestañas anteriores">‹</button>
+        <nav class="tabs" id="nav"></nav>
+        <button class="nav-arr right" onclick="scrollTabs(1)" aria-label="Más pestañas">›</button>
+      </div>
       <div class="refresh">
         <span class="rf-time" id="rfTime"></span>
         <button class="rf-btn" id="eduBtn" title="Mostrar todas las lecturas explicadas">💡 Explicar</button>
@@ -1746,6 +1765,71 @@ function evalETFBlock(x){
    (PER por clasificación + P/B vs ROE + Graham de desempate), porque las
    empresas de Crecimiento no se valorizan por dividendo. */
 
+/* ---------- scroll de pestañas (móvil) ---------- */
+function scrollTabs(dir){
+  const nav = document.getElementById("nav");
+  if(nav) nav.scrollBy({left: dir*170, behavior:"smooth"});
+}
+function updateTabArrows(){
+  const nav = document.getElementById("nav");
+  if(!nav) return;
+  const L = document.querySelector(".nav-arr.left"), R = document.querySelector(".nav-arr.right");
+  if(!L||!R) return;
+  const max = nav.scrollWidth - nav.clientWidth;
+  L.classList.toggle("off", nav.scrollLeft <= 4);
+  R.classList.toggle("off", nav.scrollLeft >= max - 4);
+}
+document.addEventListener("DOMContentLoaded", ()=>{
+  const nav = document.getElementById("nav");
+  if(nav){ nav.addEventListener("scroll", updateTabArrows, {passive:true}); setTimeout(updateTabArrows, 300); }
+  window.addEventListener("resize", updateTabArrows);
+});
+
+/* ---------- noticias por acción (mini-resumen + filtro detalle) ---------- */
+function newsCatForTicker(news, ticker){
+  if(!news||!news.categorias_meta) return null;
+  const T = String(ticker||"").toUpperCase();
+  return Object.keys(news.categorias_meta).find(c=>
+    (news.categorias_meta[c].label||"").toUpperCase().includes(T)) || null;
+}
+function stockNewsStats(news, ticker){
+  const cat = newsCatForTicker(news, ticker);
+  if(!cat) return null;
+  const items = (news.noticias_por_categoria||{})[cat]||[];
+  let neto=0,pos=0,neg=0,top=null;
+  items.forEach(it=>{
+    const im=it.impacto||{}; const i=im.intensidad||0;
+    if(im.direccion==="positivo"){neto+=i;pos++;}
+    else if(im.direccion==="negativo"){neto-=i;neg++;}
+    if(i>0 && (!top||i>top.i)) top={i,r:im.razonamiento||"",d:im.direccion};
+  });
+  const sent = neto>=2?["alcista","var(--pos)"]:neto<=-2?["bajista","var(--neg)"]
+             : neto>0?["lev. alcista","var(--pos)"]:neto<0?["lev. bajista","var(--neg)"]
+             : ["neutral","var(--tx-3)"];
+  return {cat, n:items.length, pos, neg, neto, sent, top};
+}
+function stockNewsMini(news, ticker){
+  const s = news ? stockNewsStats(news, ticker) : null;
+  if(!s || !s.n) return "";
+  return `<div class="row-news">📰 <span class="sent" style="color:${s.sent[1]}">${esc(s.sent[0])}</span>
+    <span class="dim">· ${s.pos}🟢 ${s.neg}🔴 de ${s.n}</span>
+    ${s.top?`<span class="top-r">— ${esc(s.top.r)}</span>`:""}</div>`;
+}
+function usaNewsFiltered(news, ticker, todosTickers){
+  // noticias de ESTA acción + categorías compartidas (excluye las de otras acciones)
+  if(!news||!news.categorias_meta) return null;
+  const otros = (todosTickers||[]).filter(t=>t!==ticker).map(t=>t.toUpperCase());
+  const keep = Object.keys(news.categorias_meta).filter(c=>{
+    const lab=(news.categorias_meta[c].label||"").toUpperCase();
+    return !otros.some(t=>lab.includes(t));
+  });
+  const propia = newsCatForTicker(news, ticker);
+  keep.sort((a,b)=>(a===propia?-1:0)-(b===propia?-1:0));
+  const meta={}, npc={};
+  keep.forEach(c=>{ meta[c]=news.categorias_meta[c]; npc[c]=(news.noticias_por_categoria||{})[c]||[]; });
+  return {...news, categorias_meta:meta, noticias_por_categoria:npc};
+}
+
 const US_VAL_COLOR = {Barata:"var(--z-opp)", Razonable:"var(--z-neu)", Cara:"var(--z-caro)"};
 const US_VAL_BG    = {Barata:"var(--z-opp-bg)", Razonable:"var(--z-neu-bg)", Cara:"var(--z-caro-bg)"};
 
@@ -1772,6 +1856,7 @@ function usRow(a){
         · Graham <span class="num">${fmt.num(v.graham,1)}</span>
         · <span class="pp ${barata?'pos':'neg'}" style="color:${color}">${esc(v.status||"—")}</span></div>
       <div class="bar">${perBar(a.per, v.per_rango_min, v.per_rango_max, v.status)}</div>
+      ${stockNewsMini(VS.data.n_usa, a.ticker)}
     </div>
     <div class="right"><span class="pill-link">Ver detalle ›</span></div>
   </div>`;
@@ -1794,7 +1879,7 @@ function renderUSA(param){
     ${VS.status.n_usa==="error"?errBox("n_usa","noticias"):""}
     ${news?execSummary(news):""}
     ${news?usaAlign(acc, news):""}
-    <div style="margin-top:14px">${news?newsSection(news):""}</div>
+    <div class="hint" style="margin-top:14px;line-height:1.5">Toca <b>Ver detalle</b> en una acción para desplegar sus noticias completas con interpretación de impacto.</div>
   </div></div>`;
 
   const main = `
@@ -1912,9 +1997,21 @@ function renderUSADetail(ticker){
 
     ${divTable?`<div class="panel" style="margin-top:16px"><h3>Dividendos recientes</h3>${divTable}</div>`:""}`;
 
+  const news = VS.data.n_usa;
+  const tickers = us.acciones.map(x=>x.ticker);
+  const filtered = news ? usaNewsFiltered(news, a.ticker, tickers) : null;
+  const mini = stockNewsMini(news, a.ticker);
+  const sidebar = `<div><div class="sidebar-news">
+    <div class="hd">📰 Noticias · ${esc(a.ticker)}${eduIconStatic('news')} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated.n_usa)}</span>`:""}</div>
+    ${VS.status.n_usa==="error"?errBox("n_usa","noticias"):""}
+    ${mini?`<div style="margin-bottom:4px">${mini}</div>`:""}
+    ${news?execSummary(news):""}
+    <div style="margin-top:14px">${filtered?newsSection(filtered):`<div class="hint">Sin noticias disponibles.</div>`}</div>
+  </div></div>`;
+
   return `<div class="detail-back" onclick="go('usa')">‹ Volver al watchlist</div>` +
     viewHead("🇺🇸", a.ticker, srcStamp("usa"), a.razon_social) +
-    main;
+    `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
 }
 
 /* ---------- evaluación fundamental USA (múltiplos, no dividendo) ---------- */
