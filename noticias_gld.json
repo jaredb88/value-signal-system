@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T08:39:34.667362+00:00",
+  "updated_at_utc": "2026-06-12T10:39:34.134805+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -29,6 +29,20 @@
   },
   "noticias_por_categoria": {
     "precio": [
+      {
+        "title": "Precios del oro en la tarde del 12 de junio de 2026: precio del oro en SJC, precio del oro de 24k 9999, precio mundial del oro.",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTUcwYkxGa3lKMXNYaVBpanpLdnMwazhNbzRLUVd6LWhENnNRNVhtQ2l6LVoxV3Q2VUxqdmJyYmlIZFhyTTJsN1JSb1o2VWdGMFBoZTd4SnNPWUFUdGVab3NNMV9wSlc0SWg2ZUdTclhYU2hWNk81VkR6V2VJQ0MwS2ZibkxZMldEbmJrcDlIX1haZlhBRGxRZDBtbVUta2FObWc?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Fri, 12 Jun 2026 09:27:33 GMT",
+        "pubdate_iso": "2026-06-12T09:27:33+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Cuánto cuesta un gramo de oro en España, hoy viernes 12 de junio",
         "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORDNEREhmSWplUVJGbnc4bXNMQksyMU9ocnhxRkhQQVBxWmw3TmljdmpIVFBtZU9PWlZfZUg2blMzZV9ScFhXVHZGcHFOdU5LS0pzU0NFZFNaSGJyNlR6NkFkbVBYS3dWa0FTa0EwMHR2bHpfNnVNazV6TVpYamVqMTkzNEJldlZxZDk0R1NxMmVtem8wMUY1ZjdyeEJFaWJONXZ2cXN6OTJkQdIBxAFBVV95cUxPYkJDZDZzanRzUnNnZE44ZDU2WUpRS0E3X0FkNFFOcnBiT09iN05FY2VZREpmamJhQ0NvNUhKaWFraVFvSENnSjJWWHNoYzQxUHlweVduY3AwdzFmakdpMUdHQ3FaX0pEWEk4U2hRc1I1MXFaaEFqdFZmbFM2WWVaMmhSWjNJbnJoRTU1MXJiRG9wZ2VOMmlOS3c3ZkdfRUlZX1V4Rjh4S0liM0tNMENVRmR4RUY0aEJYazFiQWphM09HT3hI?oc=5",
@@ -77,20 +91,6 @@
         "source": "Vietnam.vn",
         "pubdate": "Fri, 12 Jun 2026 05:33:00 GMT",
         "pubdate_iso": "2026-06-12T05:33:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precio del oro (9999) hoy, mediodía del 12 de junio de 2026: Lista de precios para SJC, BTMC, BTMH, DOJI y precios mundiales del oro.",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYk1vQlMtZl9kbjg0blIyanNiR21wcEc1aGo5YVM1YWhnd0JSYkM0M0ZWd1RDcDloenpITW1lWmNVbWoyY2dIejJja0JpSlItdlA0UmlrcXFVb0t5X0c4VUsxOUtfN1ZwVzZ3N0Q2dHRGSEJlLWRPVjRPWlVSbGJEOXhWeEJ3eEVHUnNvR0l5TjNqeXdlTk16M0ZPMHpTQms4Yk10X2hBWEF2dHNoSkdyeWl3?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Fri, 12 Jun 2026 05:05:43 GMT",
-        "pubdate_iso": "2026-06-12T05:05:43+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -174,6 +174,20 @@
     ],
     "dolar": [
       {
+        "title": "¿Por qué está cayendo el Dólar estadounidense si EE.UU. e Irán están más cerca de un acuerdo de paz?",
+        "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdHJYb2lURVZNdWViMGxJV1RXTFFxOFAwQVZ6cmVzMl84SDNXeDczNlF2em5LMzlHblR4VUtzLUJ1UjN0U1RjNlJiZ00xcXZ6YXduMWs0VkFXb1pnNWtLeUlYNzItbXNBMXgwc1djbzNLZzJGVk9jWUV1U2w4VGFjYXV4TllEelBRLWVlblRUbWpibmxWTmhCRHNFYnhuSHVjeWFTUFY0NzczLVNsTlJpV2JPTWNuQ0RKNGhERFJVTXlxeldycVpUSHRuRWh3UjVuVkc0WDdFYXJzb0dfVVduTkRFNUhfY3hVdWVDWF9CNktZSTMxQTdwSlZLV1hnT1R4U3BJ0gGIAkFVX3lxTE0wT2ZwcXpzeEJ2TGVYVk9vQzJ6ZFBKZUtkQ0QtWC1ZUF9fckZULVFDaWZuQUlWVUNYWS1xRnhtY18xdy1ObUNDc2NES0hNRzRzV1JUXzdJMU85STIxY1FuQ0d0bnY4Sk5ta0xFa1ZMOENQaDhaTm9rbG9FYmN4R19vNlhOYzZ3UC04T1ZlY05IT2l1LUcyLXQtMTVfd2ozRWlHTDVsMy1zXzE1TjZNenJfLVRqYy1FSDJTdXBjaUQ1cENlUmp6S3hTMmFPOHhRLS1teW1yNlM1LWYzVHpJMTN2eEw5cXBHUFpnRkh2Qy1iRjNnVDFuYm1yOHhJSUhNbE9XeGVuaXZjYg?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Fri, 12 Jun 2026 09:16:07 GMT",
+        "pubdate_iso": "2026-06-12T09:16:07+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "El Índice del Dólar de Estados Unidos avanza en medio de la aversión al riesgo predominante y perspectivas de línea dura de la Fed",
         "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOMkV2SGcxMnlnSGtVVFQwNGpiYlh5UmlySDNIZnNSTE5HRWJGRWRIX2p5M1hNa2RVQ3QtaHVwNFZhWXRKaFI3eEtIVjRSVnR0Vi0wbzJYbUlGZkJHazVWQXJFNnZtNmtLZDJEMjZ5NHZVQ1FOU19UdE8yUWt1b1puNVFIMHdQbUtueU9rU1ZKMlhvWkNKMXZqdGxOQTg3UnRHY0tNOFpvbXZaRTBYdG9DakRzZGdxVlRkV3dleXRUZ1RzaHBIWjdNSnlaVEtCTUNGWUlpcjBBM2U2UmxxZk90a1ZHby1BcGstelhpaGU5Wno1c0RrTnFZMlBrRFQzWlVtZEHSAYcCQVVfeXFMTXVvZkxjeTJoRWdBLVdnSktVdjFpWTJ4SUZlbXQ2RDlGSzY3eHJsY0xQckkydDd3SG84eUJ4QzE0Z3EyeGJwbWh6QWpQNks1Sk40M3NmUlVSTDFmS3l5SXVMV0lUREZUVm1idEdDWDJhLUFYUUpXS3JSTFRhRjN2eG85R0dBSVJLSWlQM2I0Wm5ZYjdHaVI1djVhdHNqSVNOZTZDOGxuV0E5ZXBfYlI0bDVGMV80bW9oQXdBQ21QUkFzM3ExalM2UFdNenNBMFVPMXhuTEkweVFoUC1YRDlwcVNSRUxIMGY0aHJ4MlJoai1YenJpUFpYaTRvLXB0NjI4eTFfTFYzUzQ?oc=5",
         "source": "FXStreet",
@@ -221,20 +235,6 @@
         "source": "FXStreet",
         "pubdate": "Thu, 11 Jun 2026 18:33:48 GMT",
         "pubdate_iso": "2026-06-11T18:33:48+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precio del dólar hoy 11 de junio: Peso mexicano sigue al alza",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNU2FmZm1vWnpVSkhZNmJfb1p3OGpZSUJMSEZMVkVhbkFxU09IZFhhUnBjdDQtYUJfb2psQndmZ2FLa2N0bkhlakZmckUxNldta3B3WEUwRXhtTmJPOGM1R09obnhtYTNLTkVKd0ZHLWlzZGdfdXFscy1GVVo2N0pmdnlCdWhGYWtoenVjZXpOQlYxVWlLdWFGOXdDYXZURmc?oc=5",
-        "source": "Revista Espejo",
-        "pubdate": "Thu, 11 Jun 2026 17:29:18 GMT",
-        "pubdate_iso": "2026-06-11T17:29:18+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
