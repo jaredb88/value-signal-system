@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T14:33:08.557648+00:00",
+  "updated_at_utc": "2026-06-12T16:50:03.226583+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -7,112 +7,24 @@
     "El Mercurio"
   ],
   "noticias_por_ticker": {
-    "HABITAT": [
-      {
-        "title": "Superintendencia de Pensiones advierte por vendedores que ofrecen bonos de dinero para cambiarse de AFP",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWlNXMUxHY0I5UTNORElMR0gzYkE2NzF0ZXAwVVJwTW1hcGFaLWVuNjRwcUJjbmFaMklrVFg1eTFJT3pCSW5KRUM2WmR4Z0liOHJyWHotNGk4RkxVdmx5MTVjeVVqWVZDWGppTkdoM0hTQ1d6SDZpdFIwbG0zc1RYQ3o1dlJsb0JJRVJESmlITWJEMDJGRUZOUTBVY3pqRGJfU0tQeFp4ZVdENkREb05GaQ?oc=5",
-        "pubdate": "Wed, 10 Jun 2026 08:00:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "AFP Habitat"
-      },
-      {
-        "title": "Señales financieras | Una entrevista con Edgardo Gutiérrez, de Moneda Patria",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaHB1MFdRMG9abVNpWW9la1RVb05CVlBvUy15OHBXQWhPVklaTmRYZDFSNmc2WE1idkpsT21NOTc0QlNqTmltMGpqX0IzTjhKTjIxdU44a3VVY1dZTTd3RmpoYUx0RkFmWG5Ba1U3VmJTZkZteGNfOTQtdW4xMWRyMkd2NGl0bkdybmUwTW5sYTB0MGx5ZThKcHhNeWZxdmlvT1hzazJkN21RYnNIdVhGNHl3?oc=5",
-        "pubdate": "Tue, 09 Jun 2026 14:48:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "AFP Habitat"
-      }
-    ],
+    "HABITAT": [],
     "ZOFRI": [],
     "PEHUENCHE": [],
     "TRICAHUE": [],
     "COLBUN": [],
-    "ENELGXCH": [
-      {
-        "title": "El Ipsa sube acotadamente en primeros tres meses del gobierno de Kast, influido por el contexto internacional",
-        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOTFF1ZnpXWGs1NmZLcVVwYVlROUFURkVZU0lRdFJuVnJlQzVCYUdLQ29jQ2xjdDBaaFNZUHRfbHVzdmxQOFRQWHZZRzNIVjhEUkdJSTBKSkExc0pOVThlQlJKSFcyeUNPbUc1M0FYaVRFTDNsQy1VQXJzRDk0YjdNbVphVWstelpuMXB4U0ZrVk1kY3B4RVNKdjNYMnU3T19qMHRaZEFCSEIyTGlTeEU0aUxzNXJ5SnJzNUprUGFpbTdndWlLR0NFNDdhZVdqOXRFM0M4NzRvWTVyMEYzSkVRTkFLYmplZk9qMkVpOGVoWnVieUlFX1FRQW54UHJQNERvaFJyedIBhAJBVV95cUxOTFF1ZnpXWGs1NmZLcVVwYVlROUFURkVZU0lRdFJuVnJlQzVCYUdLQ29jQ2xjdDBaaFNZUHRfbHVzdmxQOFRQWHZZRzNIVjhEUkdJSTBKSkExc0pOVThlQlJKSFcyeUNPbUc1M0FYaVRFTDNsQy1VQXJzRDk0YjdNbVphVWstelpuMXB4U0ZrVk1kY3B4RVNKdjNYMnU3T19qMHRaZEFCSEIyTGlTeEU0aUxzNXJ5SnJzNUprUGFpbTdndWlLR0NFNDdhZVdqOXRFM0M4NzRvWTVyMEYzSkVRTkFLYmplZk9qMkVpOGVoWnVieUlFX1FRQW54UHJQNERvaFJyeQ?oc=5",
-        "pubdate": "Fri, 12 Jun 2026 00:33:31 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "Enel Chile"
-      }
-    ],
-    "LIPIGAS": [
-      {
-        "title": "Los dispares resultados de las otras firmas selectas en Chile: 15 reportaron alzas de utilidades, tres vieron caídas y siete sufrieron pérdidas",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS3NNdnNzX3VtWDRwNFhVby1KdUJ0d0pUNTdCaE52cXZfMFZoUV9tdUFqQlpSZFpyZlkyVFREdldBTWl0MmI2a2lQVU9JS2tfbVR3Wkd3X0Rmek5kNmtKN28ycDI2UXpoU05OU19QWW1sQW9FYW0xX3JtTENjUmdyQnhMUUVzYTJ5cTFXVXJGMW1IUFpVQ0t2b2hyZE51ZTNsYmNmcFJPTlktSzd0Ty1FbG8zdVY?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 17:15:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "Lipigas"
-      }
-    ],
+    "ENELGXCH": [],
+    "LIPIGAS": [],
     "NTGCLGAS": [],
-    "SOQUICOM": [
-      {
-        "title": "IPSA abre al alza sobre 10.800 puntos por compras globales frente a posible acuerdo de paz y ad portas de la histórica apertura de SpaceX",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85bS1VRnRSVXJleUk4aFNIaW9wSzBfWi12d3ZYelliSmpBNElsRjVieEdYdEthM1M3cGtISGxRaHBrQXNWb1FVYWFFUU5tdHgwZkp1eXJQUXpOOUxvcWR5RmpLaEkyTHRX?oc=5",
-        "pubdate": "Fri, 12 Jun 2026 13:32:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "El Ipsa sube acotadamente en primeros tres meses del gobierno de Kast, influido por el contexto internacional",
-        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOT0RITkMzZU1jejRRRHZpZ3NPYkJ1YlFZdENTb1NJc0JkMWFHMGJNejNDRHUtYkQ0Q0JTZFhTci1aWXZiUDRucHdxVXpZTkpwelkyV1ptTzZIdE9YMFZCNHYtRWl1VGQzTlNCdVZxUUtLWGtjMjFzZkVCOG15Vzc3UTIzbEUtTnZLVU9oSzlSdkZIQm1HRGo1a1pCS0xRQzhZQVZNRXFYQVRHUV9kMGNQWHlCc1V0UHp3Y21ucmVYLWhnNUotbGNqN2pHS0ItZVZpNG5QWWZESFlaLWhaQXBMdk9xY9IBhAJBVV95cUxOTFF1ZnpXWGs1NmZLcVVwYVlROUFURkVZU0lRdFJuVnJlQzVCYUdLQ29jQ2xjdDBaaFNZUHRfbHVzdmxQOFRQWHZZRzNIVjhEUkdJSTBKSkExc0pOVThlQlJKSFcyeUNPbUc1M0FYaVRFTDNsQy1VQXJzRDk0YjdNbVphVWstelpuMXB4U0ZrVk1kY3B4RVNKdjNYMnU3T19qMHRaZEFCSEIyTGlTeEU0aUxzNXJ5SnJzNUprUGFpbTdndWlLR0NFNDdhZVdqOXRFM0M4NzRvWTVyMEYzSkVRTkFLYmplZk9qMkVpOGVoWnVieUlFX1FRQW54UHJQNERvaFJyeQ?oc=5",
-        "pubdate": "Fri, 12 Jun 2026 00:40:00 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "IPSA se dispara casi 3% y cierra sobre 10.700 puntos tras anuncio de Trump que apunta a un inminente acuerdo con Irán",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YN2VuZW9wZmJ0eGptdlFtZzFwMEdyY3JNYnltaFpoQUUtcWcycVlUTWQwemUwSVFPS21NTEdSaENKaEs2bGY3eFBSem1IcVlQQy1JdXNKb2pldVRXZjQ2NC1TZXBaTjV3?oc=5",
-        "pubdate": "Thu, 11 Jun 2026 20:26:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Bolsa de Santiago y Wall Street anotan fuerte alza y el petróleo cae luego que Trump retirara amenaza de ataques a Irán",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN1A4UjNtSklxaVpFUHBTU1I2Q3lickdTNE9Icm1YWlNDVnpRamhQUmdJR0paNUJBSVJsdFpia1dyWjVMeHRzTHNET0c1cENvLUhBal9UeVJNRWRrZGc3aEFRa19oNlNBbUVYczVZWGM0djBJaGVnN1Y5SmctcndhZDhYM3hJeTBBZGt4djg2YmF0OUJ1TlVIRNIBugFBVV95cUxQbGpRQlR0UXZOZVA1YWJVcWJXdi1lSkI5dnV2TFVka2NvTVJzNXRuM2xFVzlUV0w2OGJZVHIzQmItNUpxdU9xX1MtM25TdWd4MUxNUFJsazlVSUFITFpqaTNjMkZVVjNNZ3JVZmsxTk1ISjM0amw0NjRSSEZnTmFrMHUyNmtERE9TVzNBWjV3aXdqSHhIaUc0RjVUam52V1RNQmw0akw5M3pWc0VDdWdxQ1RfQUZHTXZpelE?oc=5",
-        "pubdate": "Thu, 11 Jun 2026 16:21:33 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Lo último de nuestro Podcast: entérate de todo en Diario Financiero",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQThyX0wzSVYtMXotbExITXR5T184V2c0YnBQTlBiTGJpMVI1SmFvQ0g5d242ZVhqTHY0N2FnNi1NcWFwQ2FWZk8tRWVtOXYtS2NHdWlQWUhYaFl6cUhKTDdIY2UwRWVlWFJ1a3lFZE1fWFRUbGhfd0w5NlYzdjdwVG1xclh5SC1YYmc?oc=5",
-        "pubdate": "Thu, 11 Jun 2026 06:35:46 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "IPSA se dispara más de 3% en su mejor sesión desde abril de 2025 con fuerte protagonismo de la banca y despide siete jornadas consecutivas de pérdidas",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvOVUzLTE4SnB1V0JFd1ZfbG5keVlEalJqZmNQUkYxNjRPbWNVTlNqSnlHd0xIVi1qYktuU1p4RW9zMzNRVkdmYzAxeUNnYzlBUnNTT3hKdU9vWnM2OXJNdDFfYndyTE9I?oc=5",
-        "pubdate": "Tue, 09 Jun 2026 20:36:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Bolsa chilena cierra en mínimos de 2026 tras siete jornadas en rojo por malos datos locales y la incertidumbre en Medio Oriente",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CMVhEN2NrUldQRXhuSGJBSzFQZnhVSGlYRGV6TnBMX1I2OVQ0eHdkUDhuX0UxVFJ2T2o4ZDJhbXN1SnNRZlo2el9iRHpNVGNzcEJHNTlVbDMxN1BOVERyVWZXMGVFajg3Wk1IOA?oc=5",
-        "pubdate": "Mon, 08 Jun 2026 20:33:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "Grupo Pampa compra acciones de SQM por más de US$60 millones en la semana",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZWVRa1R2eDloQ2VQUW9JWFBud0lvUHJZSTRVRFZpby1sQXRBR2JGZjNDUDJFa0l2UjR4cE8zZWNMT0xxdmY1SHlCRld4NnpLdGFzclFHQkpYYjN1TXN2aWdyUGlXdDJsQXVpbENDbGs5a1gyTXJxTG9aVFhMV3R2VVpCSC1pSmlqNzlvX1Y4dDRmWkRiZG9XeTU0ek54SlJJbEJDcV9wSnJlTVBNYmhsWjZYb9IB1AFBVV95cUxNb3dZVEs2SE1sMXBKclVSQ01QYmh3S1Y1NWQ2TXhXVkFWMklwV0FKaW0xVlNmYnd5MTJ1ZnR2dkg4UkNuUlFET3VtZHRLZklQSmtWRDE5Q0RhY2Z5YjJfWms2MTVVTS05UFItaFlUQ05jYnBZYWE2R1l4NEh2R1FwLUZzaU03UnhCazZzUkNwQUJKMm00S1JGQVlBLXVmYWF5NXdpUHY0WTVaNURZQ1JPUXdKdzd1aERCQ2ktT25TaE42YTlFY1VPSTFiMTA3MDR2cFh6dw?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 15:50:00 GMT",
-        "source": "La Tercera",
-        "matched_keyword": "SQM"
-      }
-    ],
+    "SOQUICOM": [],
     "QUINENCO": [],
     "CENCOMALLS": []
   },
   "stats": {
     "total_queries": 51,
-    "queries_exitosas": 51,
-    "queries_falladas": 0,
-    "total_noticias_brutas": 2260,
-    "total_noticias_filtradas": 12,
-    "total_hechos_esenciales_brutos": 100
+    "queries_exitosas": 0,
+    "queries_falladas": 51,
+    "total_noticias_brutas": 0,
+    "total_noticias_filtradas": 0,
+    "total_hechos_esenciales_brutos": 0
   }
 }
