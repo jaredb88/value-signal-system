@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T04:39:57.448855+00:00",
+  "updated_at_utc": "2026-06-12T05:26:55.867831+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -290,11 +290,39 @@
     ],
     "earnings": [
       {
+        "title": "Alejandro Tosti Korn Ferry Tour Perfil de jugador, estadísticas, biografía, carrera",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUkpUc2ZhOGxVM185U1lrbkQyTjh6aU9EOEJSb2w2dUY0Z3NianFYYlRJRHRxR0VBeHZKa1J6cWhieS1PTmI2cXRiclRnUjNiQjBOM1d0R0hpeFN5SGdVSVpfT0FQLUk5d3diUElzaDIzTkdhcmJtX1hpbG0wZ2Q3UFZud0J5REpUWGQyd3l6Z3diemFwY2huYVZQT0ZqeUZ0dUhib0oxWWVoN25PcWJjOEdvaUNDUVEzQlhlc3AtTW1GQ1U?oc=5",
+        "source": "PGA Tour",
+        "pubdate": "Wed, 10 Jun 2026 23:59:39 GMT",
+        "pubdate_iso": "2026-06-10T23:59:39+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Everpure: AI Storage Uncertainty Overshadows Breakneck Growth",
         "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaHQ0Y2ZDWWZUbjlsSzFlLWdKN0ZSdFVqd2RDUnktSG5qUzBncjN2dHMzUkRpSTVVM3paZGs5VjIyazZVV3hZSjhSbGtWMmhOWkhiNXd1ZjUybThoTzk0MkVtRnlHZUY0S1Z1dWZKdXAzY0ZicjFIMFMyREhzWkpIMHQxcWdqTXh5SnFIbHhVTklBZDFOTGhnVzhSSklVZjdlWHZ2SnRtS09KV3BTN043bGVuMWkybFh5ems4WQ?oc=5",
         "source": "TradingView",
         "pubdate": "Wed, 10 Jun 2026 20:05:00 GMT",
         "pubdate_iso": "2026-06-10T20:05:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Key facts: Adobe Revenue +9.8% YoY; AI Rollout Raises Analyst Warnings",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTmRwa2VQaktxei14VFlNSmRJOF9LM3ItMjNpZGxQRzdLeDJNOFVoR0hrdkFWRm8tbFBld1NhYzRIZzRjNTZqbGFmU0hrUjI2RTNHUVJTRTlWVzRzQ0I0bTRMNkQ0SWxSbFE0Ykd4SjJjNkR1QlFsSmVIWFVGV0kyNnBUc1FvaW1BblVxUC1vQy1mbktpNUFWQjNZX3dEWGpxdjZlQ1c2aXNTYnl2QnhmdjQ1c1hUT2xGYUdZUUVTTkhOU2ZDZFE?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 07:13:49 GMT",
+        "pubdate_iso": "2026-06-10T07:13:49+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -364,13 +392,13 @@
     ]
   },
   "stats": {
-    "total_noticias": 23,
+    "total_noticias": 25,
     "por_categoria": {
       "fed_tasas": 3,
       "mercado": 5,
       "tech_nasdaq": 5,
       "economia": 5,
-      "earnings": 3,
+      "earnings": 5,
       "sentimiento": 2
     }
   },
@@ -379,7 +407,7 @@
     "score_neto": -1,
     "n_positivas": 1,
     "n_negativas": 2,
-    "n_neutrales": 20,
+    "n_neutrales": 22,
     "narrativa": "El feed muestra 1 senales positivas y 2 negativas (neto -1). Factores dominantes: Rally de IA: impulso Nasdaq; Acciones caen fuerte.",
     "narrativa_fuente": "plantilla",
     "veredicto": "NEUTRAL - sin sesgo dominante"
