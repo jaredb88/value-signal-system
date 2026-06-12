@@ -1264,9 +1264,9 @@ function renderHome(){
   const ch = VS.data.chile;
   const acc = ch&&ch.acciones?ch.acciones.slice():[];
   const sobre = acc.filter(a=>a.evaluacion&&a.evaluacion.status==="Sobre benchmark")
-    .sort((x,y)=>(y.evaluacion.vs_benchmark_pp)-(x.evaluacion.vs_benchmark_pp));
+    .sort((x,y)=>clPP(y)-clPP(x));
   const clRest = acc.filter(a=>!a.evaluacion||a.evaluacion.status!=="Sobre benchmark")
-    .sort((x,y)=>(y.evaluacion?.vs_benchmark_pp??-99)-(x.evaluacion?.vs_benchmark_pp??-99));
+    .sort((x,y)=>(clPP(y)??-99)-(clPP(x)??-99));
 
   const total = opps.length + sobre.length;
   const errs = ["gld","btc","etfs","chile","usa","sp_nq"].filter(k=>VS.status[k]==="error");
@@ -1318,15 +1318,16 @@ function renderHome(){
 function clRow(a){
   const ev = a.evaluacion||{};
   const sobre = ev.status==="Sobre benchmark";
-  const ppCls = (ev.vs_benchmark_pp>=0)?"pos":"neg";
+  const pp = clPP(a);
+  const ppCls = (pp>=0)?"pos":"neg";
   const edDy = eduFor('cl_dy',{dy:a.dy?.dy_pct, status:ev.status});
-  const edBm = eduFor('cl_benchmark',{status:ev.status, pp:ev.vs_benchmark_pp});
+  const edBm = eduFor('cl_benchmark',{status:ev.status, pp:pp});
   return `<div class="cl-row ${sobre?'opp':''}" onclick="go('chile','${esc(a.ticker)}')">
     <div class="cl-id"><div class="t">${esc(a.ticker)}</div><div class="s">${esc(a.nombre)} · ${esc(a.sector)}</div></div>
     <div class="cl-dy"><div class="v" style="color:${sobre?'var(--z-opp)':'var(--tx)'}">${fmt.pct(a.dy?.dy_pct)}</div><div class="l">DY 3 años${edDy.icon}</div></div>
     <div class="cl-bm">
       <div>Benchmark ${esc(a.sector)}: <span class="num">${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%</span>
-        · <span class="pp ${ppCls}">${fmt.pp(ev.vs_benchmark_pp)}</span> ${ev.emoji||""}${edBm.icon}</div>
+        · <span class="pp ${ppCls}">${fmt.pp(pp)} vs máx</span> ${ev.emoji||""}${edBm.icon}</div>
       <div class="bar">${benchBar(a.dy?.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
       ${edBm.inline}
       ${newsMiniLine(VS.data.n_chile, clCats(a.sector))}
@@ -1595,7 +1596,7 @@ function growthPanel(x){
       <div>
         <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">Métricas del índice</h3>
         <div class="kv"><span class="k">${esc(x.indice)} (índice)</span><span class="v">${fmt.num(x.precio_indice,0)}</span></div>
-        <div class="kv"><span class="k">CAPE ${x.cape_oficial?"(Shiller oficial)":"(proxy)"}</span><span class="v">${fmt.num(x.cape,1)}</span></div>
+        <div class="kv"><span class="k">${x.cape_oficial?"CAPE (Shiller oficial)":"Valoración relativa (proxy NDX/SPX)"}</span><span class="v">${fmt.num(x.cape,1)}${x.cape_oficial?"":"x"}</span></div>
         <div class="kv"><span class="k">Drawdown vs máximo</span><span class="v">${fmt.signpct(x.drawdown_pct,1)}</span></div>
         <div class="kv"><span class="k">Cambio score vs mes anterior</span><span class="v">${fmt.signpct(x.delta_score,1).replace("%"," pts")}</span></div>
         ${r?`<div class="kv"><span class="k">Rango ETF 1 año (CLP)</span><span class="v">${fmt.clp(r.min)} – ${fmt.clp(r.max)}${pos!=null?` <span class="dim">· ${fmt.num(pos,0)}%</span>`:""}</span></div>`:""}
@@ -1635,15 +1636,30 @@ function evScore(rows){ // rows = [[cls,...]] → balance ok vs bad
   return {ok,bad};
 }
 
+/* pp real vs MÁXIMO sectorial (el scraper trae vs punto medio: no usar) */
+function clPP(a){
+  if(a?.dy?.dy_pct!=null && a?.benchmark_max_pct!=null) return a.dy.dy_pct - a.benchmark_max_pct;
+  return a?.evaluacion?.vs_benchmark_pp ?? null;
+}
+
 /* ---------- salud financiera: acción chilena (datos CMF) ---------- */
 function evalSaludChile(a){
   const c=a.cmf||a.fund||{}, rows=[];
   const sector=(a.sector||"").toUpperCase();
   const finSector = sector.includes("AFP")||sector.includes("BANCO");
+  const periodoTop=c.periodo||"";
+  const facAnual = a.cmf ? ({"03":4,"06":2,"09":4/3}[periodoTop.slice(0,2)]||null) : null;
 
   if(c.roe_pct!=null){
-    const v=c.roe_pct, cls=v>=15?"ok":v>=8?"mid":"bad";
-    rows.push([cls,`ROE ${fmt.pct(v)}`, v>=15?"alto valor al accionista (≥15%).":v>=8?"rentabilidad media sobre patrimonio.":"rentabilidad baja en el período reportado."]);
+    const v=c.roe_pct;
+    const vJ = facAnual ? v*facAnual : v;           // se juzga el anualizado
+    const cls=vJ>=15?"ok":vJ>=8?"mid":"bad";
+    const label = facAnual
+      ? `ROE ${fmt.pct(v)} (parcial) ≈ ${fmt.pct(vJ)} anualizado`
+      : `ROE ${fmt.pct(v)}`;
+    const txt = (vJ>=15?"alto valor al accionista (≥15%).":vJ>=8?"rentabilidad media sobre patrimonio.":"rentabilidad baja en el período reportado.")
+      + (facAnual?" Anualización lineal aproximada: confirma con el promedio de 5 años.":"");
+    rows.push([cls,label,txt]);
   }
   if(c.margen_neto_pct!=null){
     const v=c.margen_neto_pct, cls=v>=20?"ok":v>=10?"mid":"bad";
@@ -1669,7 +1685,7 @@ function evalSaludChile(a){
   }
   const s=evScore(rows);
   const concl = s.bad===0 && s.ok>=2 ? ["ok","<b>Situación financiera sólida</b> en el período reportado: rentabilidad, deuda y liquidez sin alertas relevantes."] :
-                s.bad>=2 ? ["bad","<b>Situación financiera débil o en deterioro</b>: hay más de una alerta. Revisar el Análisis Razonado en la CMF antes de aportar."] :
+                s.bad>=2 ? ["bad",`<b>Situación financiera débil o en deterioro</b>: hay más de una alerta. Revisar ${a.cmf?"el Análisis Razonado en la CMF":"el último 10-K/10-Q en la SEC"} antes de aportar.`] :
                 ["","<b>Situación financiera mixta</b>: fortalezas y alertas conviven. Revisar la tendencia de 5 años antes de concluir."];
   const periodo=c.periodo||"";
   const parcial=/^(03|06|09)\//.test(periodo);
@@ -1683,8 +1699,8 @@ function evalValorChile(a){
   const rows=[]; let pmaxHtml="";
   const ev=a.evaluacion||{}, dy=a.dy||{};
   if(dy.dy_pct!=null && a.benchmark_min_pct!=null){
-    const pp=ev.vs_benchmark_pp;
-    const cls = ev.status==="Sobre benchmark"||(pp!=null&&pp>=0) ? "ok" : ev.status==="Bajo benchmark"?"bad":"mid";
+    const pp=clPP(a);
+    const cls = (pp!=null&&pp>=0) ? "ok" : (dy.dy_pct<a.benchmark_min_pct ? "bad" : "mid");
     rows.push([cls,`DY ${fmt.pct(dy.dy_pct)} vs sector ${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%`,
       cls==="ok"?"rinde sobre el máximo de su rango sectorial: descuento real, no solo yield alto.":
       cls==="bad"?"rinde bajo el mínimo sectorial: cara en términos de dividendo.":
@@ -2124,11 +2140,11 @@ function renderChile(param){
   if(!ch||!ch.acciones) return viewHead("🇨🇱","Acciones Chilenas","")+skeletonCards(3);
 
   const acc = ch.acciones.slice();
-  const order = {"Sobre benchmark":0,"Dentro benchmark":1,"Bajo benchmark":2};
+  const order = {"Sobre benchmark":0,"En rango":1,"Dentro benchmark":1,"Bajo benchmark":2};
   acc.sort((a,b)=>{
     const oa=order[a.evaluacion?.status]??3, ob=order[b.evaluacion?.status]??3;
     if(oa!==ob) return oa-ob;
-    return (b.evaluacion?.vs_benchmark_pp??-99)-(a.evaluacion?.vs_benchmark_pp??-99);
+    return (clPP(b)??-99)-(clPP(a)??-99);
   });
   const nSobre = acc.filter(a=>a.evaluacion?.status==="Sobre benchmark").length;
 
@@ -2182,7 +2198,8 @@ function renderChileDetail(ticker){
   const years = dy.anos_detalle ? Object.keys(dy.anos_detalle).sort() : [];
   const maxY = years.length?Math.max(...years.map(y=>dy.anos_detalle[y])):1;
   const edDy = eduFor('cl_dy',{dy:dy.dy_pct, status:ev.status});
-  const edBm = eduFor('cl_benchmark',{status:ev.status, pp:ev.vs_benchmark_pp});
+  const ppD = clPP(a);
+  const edBm = eduFor('cl_benchmark',{status:ev.status, pp:ppD});
   const edCl = eduFor('cl_clasificacion',{c:a.clasificacion});
   const edCagr = eduFor('cl_cagr',{c3:(a.cagr_3y||0)*100, c5:(a.cagr_5y||0)*100, c10:(a.cagr_10y||0)*100});
 
@@ -2216,7 +2233,7 @@ function renderChileDetail(ticker){
       ${a.descripcion?`<div class="hint" style="margin-top:14px;line-height:1.55;color:var(--tx-3)">${esc(a.descripcion)}</div>`:""}
       <div style="margin-top:16px">
         <div class="cl-bm">Benchmark ${esc(a.sector)}: <span class="num">${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%</span>
-          · <span class="pp ${ev.vs_benchmark_pp>=0?'pos':'neg'}" style="font-family:var(--f-mono);font-weight:700">${fmt.pp(ev.vs_benchmark_pp)} sobre el máximo</span>${edBm.icon}</div>
+          · <span class="pp ${ppD>=0?'pos':'neg'}" style="font-family:var(--f-mono);font-weight:700">${fmt.pp(ppD)} ${ppD>=0?'sobre':'bajo'} el máximo</span>${edBm.icon}</div>
         <div class="bar" style="margin-top:10px">${benchBar(dy.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
         ${edBm.inline}
       </div>
