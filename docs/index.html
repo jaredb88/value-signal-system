@@ -219,6 +219,17 @@ main{padding:26px 0 70px;min-height:60vh}
   font-size:9.5px;letter-spacing:.05em;color:var(--mut);text-transform:uppercase}
 .scorebar .labels span.on{color:var(--tx-2);font-weight:600}
 
+/* gauge card (variante C elegida) */
+.gauge-wrap{position:relative;margin:4px auto 0;width:200px;max-width:100%;text-align:center}
+.gauge-wrap .gsvg{display:block;width:100%;height:auto}
+.gauge-wrap .gv{position:absolute;left:0;right:0;bottom:16px;font-family:var(--f-mono);font-weight:700;font-size:34px;line-height:1;letter-spacing:-.02em}
+.gauge-wrap .gl{position:absolute;left:0;right:0;bottom:0;font-size:9.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.1em}
+.gauge-wrap.sm{width:168px;margin:0 0 0 auto}
+.gauge-wrap.sm .gv{font-size:29px;bottom:14px}
+.gfoot{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-size:13px;color:var(--tx-2)}
+.gfoot .mult{margin:0;font-family:var(--f-mono);font-size:12px;color:var(--tx-3)}
+.gfoot .mult b{color:var(--tx)}
+
 /* contrarian badge inline (home cards) */
 .contra{display:flex;align-items:center;gap:8px;margin-top:13px;padding:8px 10px;border-radius:var(--r-sm);
   background:var(--panel-2);border:1px solid var(--line);font-size:11.5px;color:var(--tx-2);line-height:1.35}
@@ -607,6 +618,23 @@ const esc = s => String(s??"").replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">
 function zoneBadge(zona, mult){
   const m = mult!=null ? ` · x${mult}` : "";
   return `<span class="zbadge z-${zona}" onclick="openEduStatic('zonas',event)" title="¿Qué significan las zonas?">${esc(zona)}${m}</span>`;
+}
+
+/* semicircular score gauge (zone-colored arc + zone ticks at 35/50/70) */
+function vsGauge(score, zona){
+  const p = Math.max(0,Math.min(100,score||0))/100;
+  const cx=100, cy=104, R=82;
+  const pol = (rr,a)=>{const rad=(a-90)*Math.PI/180; return [cx+rr*Math.cos(rad), cy+rr*Math.sin(rad)];};
+  const garc = (rr,a0,a1)=>{const[x0,y0]=pol(rr,a0),[x1,y1]=pol(rr,a1);const lg=Math.abs(a1-a0)>180?1:0;
+    return `M ${x0.toFixed(2)} ${y0.toFixed(2)} A ${rr} ${rr} 0 ${lg} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`;};
+  const col = zoneColorVar(zona);
+  const a0=-90, a1=90, va=a0+(a1-a0)*p;
+  return `<svg viewBox="0 0 200 120" class="gsvg">
+    <path d="${garc(R,a0,a1)}" fill="none" stroke="var(--line)" stroke-width="11" stroke-linecap="round"/>
+    <path d="${garc(R,a0,va)}" fill="none" stroke="${col}" stroke-width="11" stroke-linecap="round"/>
+    ${[35,50,70].map(t=>{const aa=a0+(a1-a0)*t/100;const[tx,ty]=pol(R+5.5,aa);const[ix,iy]=pol(R-5.5,aa);
+      return `<line x1="${ix.toFixed(2)}" y1="${iy.toFixed(2)}" x2="${tx.toFixed(2)}" y2="${ty.toFixed(2)}" stroke="var(--panel)" stroke-width="2.5"/>`;}).join("")}
+  </svg>`;
 }
 
 /* signature 4-segment score bar with position marker */
@@ -1051,8 +1079,34 @@ function sentimientoOf(newsKey){
   return n && n.resumen_ejecutivo ? n.resumen_ejecutivo.sentimiento : null;
 }
 
-/* the signature asset card (home + ETFs view) */
+/* the default asset card — variante C (gauge) + franja contrarian de A */
 function assetCard(a, opts){
+  opts = opts||{};
+  const opp = isBuyZone(a.zona);
+  const sent = sentimientoOf(a.newsKey);
+  return `<div class="card gcard ${opp?'opp':''}" onclick="go('${a.route}')">
+    <div class="card-top">
+      <div class="tk">
+        <div class="ticker">${esc(a.ticker)}</div>
+        <div class="name">${esc(a.name)}</div>
+      </div>
+      ${zoneBadge(a.zona)}
+    </div>
+    <div class="gauge-wrap">
+      ${vsGauge(a.score, a.zona)}
+      <div class="gv" style="color:${zoneColorVar(a.zona)}">${fmt.score(a.score)}${eduIconStatic('score')}</div>
+      <div class="gl">score</div>
+    </div>
+    <div class="gfoot">
+      <span class="num">${a.price}</span>
+      <span class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>x${a.mult}</b></span>
+    </div>
+    ${opts.contra!==false ? contrarianStrip(a.zona, sent) : ""}
+  </div>`;
+}
+
+/* versión anterior (score numérico + sparkline) — conservada para la página de variaciones */
+function assetCardLegacy(a, opts){
   opts = opts||{};
   const opp = isBuyZone(a.zona);
   const sent = sentimientoOf(a.newsKey);
@@ -1273,7 +1327,11 @@ function renderAsset(which){
             ${which==="bitcoin"&&d.precio_ibit?`<span class="dim" style="font-size:12px;margin-left:8px">IBIT ${fmt.usd(d.precio_ibit)}</span>`:""}</div>
         </div>
         <div class="score-wrap">
-          <div class="score-num" style="font-size:52px;color:${zoneColorVar(d.zona)}">${fmt.score(d.score_final)}<span class="den">/100</span>${eduIconStatic('score')}</div>
+          <div class="gauge-wrap sm">
+            ${vsGauge(d.score_final, d.zona)}
+            <div class="gv" style="color:${zoneColorVar(d.zona)}">${fmt.score(d.score_final)}${eduIconStatic('score')}</div>
+            <div class="gl">score</div>
+          </div>
           <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte del mes <b>x${d.multiplicador}</b></div>
           <div style="margin-top:8px">${zoneBadge(d.zona)}</div>
         </div>
@@ -1389,7 +1447,11 @@ function etfPanel(x){
         <div class="price" style="margin-top:8px">${fmt.usd(x.precio_usd)} <span class="dim" style="font-size:11px">· ${esc(x.type||"")}</span></div>
       </div>
       <div class="score-wrap">
-        <div class="score-num" style="font-size:42px;color:${zoneColorVar(x.zona)}">${fmt.score(x.score)}<span class="den">/100</span>${eduIconStatic('score')}</div>
+        <div class="gauge-wrap sm">
+          ${vsGauge(x.score, x.zona)}
+          <div class="gv" style="color:${zoneColorVar(x.zona)}">${fmt.score(x.score)}${eduIconStatic('score')}</div>
+          <div class="gl">score</div>
+        </div>
         <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>${fmt.usd(x.aporte_sugerido_usd,0)}</b> · x${x.multiplicador}</div>
         <div style="margin-top:8px">${zoneBadge(x.zona)}</div>
       </div>
