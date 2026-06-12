@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-11T23:26:59.889167+00:00",
+  "updated_at_utc": "2026-06-12T01:27:03.698060+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -74,6 +74,20 @@
         }
       },
       {
+        "title": "ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOUGlDTi1ZVXI4dlo1NXZGMFNYY2RrYjNfbzRqZkRLTl9SVkM1X3dxeDRjLTVhRHMxWDc4aFQ1NThRWEJ4OUJiejVieDNjNkZVRThZNzhBNG94c3ZnRjRzdGFYUmh5VXdaZVVrWUNXNXVUMEgzM2NuVExzUmRoSXRGSHFxOTRBT2xnSXFQY2pXemJTZkFCc0syNnE0aE92VjdIN09QaHJ3OWFOclJXMXU4RjlIdmM5UFVGbEhidjdXZWI4NUhfZFQ3aVZiYUd3c2VmVlpvdXM3NTQtMjhWcE0zU1RKaTFZUVdkUHJFLWlEbG4?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 12:07:28 GMT",
+        "pubdate_iso": "2026-06-11T12:07:28+00:00",
+        "impacto": {
+          "direccion": "negativo",
+          "intensidad": 1,
+          "intensidad_label": "leve",
+          "emoji": "🔴",
+          "razonamiento": "Selloff: presion vendedora"
+        }
+      },
+      {
         "title": "Sensex rises 550 pts from day's low, Nifty above 23,200: 4 key reasons behind markets turning green",
         "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPdXdoczYteVB3eVNvcG9qRDBNQkZDN0hDclBUUmNheUczaEFKMC1KamFXNzFObkJnc1QwOVFXUm10MzN2MFVFd21HN2YyNDFzVl9ZVmx6UFRwVW1yQ2l5dWRCVnNmV0pUckJmakhyM0ZqOXNsTGVMVW5OeWllQ2EzRU96dVBrc3NVdXFSVk9MbzlsVTVvRHNKbDBORG5OeEdtZ0NzclJZR3RiT1lKNG1OSHB1LVhZRkxpM2ZBamZmVmMzenQ5NHB3Sjk1WFFMYUZfMzhtVF9aVW56czlucEpGbXJxandKVjlhRHFvakFDWU4?oc=5",
         "source": "TradingView",
@@ -107,20 +121,6 @@
         "source": "AOL.com",
         "pubdate": "Wed, 10 Jun 2026 12:09:26 GMT",
         "pubdate_iso": "2026-06-10T12:09:26+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "US Stock Market Today S&P 500 Futures Rise As Traders Eye Key Inflation Data",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZGhHTjNJOTdYY0NRdUZRaVUtYnppeGZJWmxjOU9qSHhnSVJxQ2xuSDN0SWlQNlhGU3ZqSzl2RlVCc09BcGs5cXJueHNyanlObzBHWEZjb25MRUlrUTlvazg0LUl4cDRMdkpBbDZZRFZxWjlyNUF3blZVM2pJcE9RT1ZOYk0zb3RGbVc2d29IWFlySmxFd1lnRHg0SGlWS1pDaGw2bWp3Q0xRQlhRSEQ5ZG1mXzltOENWUk1mbk9sa9IBxAFBVV95cUxPNlRlRmJhUFRfZFRJeF9sTVNCdk85WlVubjhLNmRmTGtwWWUteDlPcEo5UlEzY2htSUFhQTdHamlCWldlaEZBVTJPZ2ppRXU2MnBaQkVRQi1FaFVDNk9QWDFKN0ZrMlJLX25pc2RiMmx4LWEteGczeXlEYmhNbnVJWGNleUpMdFo4cjRMcC0yMjNiSTRETnc2TXMzcVlZQ3ZjZTdoYThDNTdQLWtvVnVXVFVwUUg3VkpJLUE4V19ySnMzNFl0?oc=5",
-        "source": "simplywall.st",
-        "pubdate": "Wed, 10 Jun 2026 08:33:07 GMT",
-        "pubdate_iso": "2026-06-10T08:33:07+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -218,20 +218,6 @@
         }
       },
       {
-        "title": "US jobless aid filings rise to 229,000 last week, remain historically low despite Iran war headwinds",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5SZFNnakItNmpjdzdURVVyQTgzMkZiYTZkclRmbUdQZ2ZNWkF5eWNQT0tXdnRjOUxuNU00dzlBUXVCSC1uOXV0NXExMC0yeWxULWxqc1JsQUxUVWsydGowb2lJRHNWSFJObHVDYXFKSDZQTUpzdTFELW1jcw?oc=5",
-        "source": "AOL.com",
-        "pubdate": "Thu, 11 Jun 2026 13:03:44 GMT",
-        "pubdate_iso": "2026-06-11T13:03:44+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "Bitcoin al borde de USD $60.000 por temor a una inflación más alta en Estados Unidos",
         "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOenQ5eENJX3RMdWZxXy1iSzBLZGZocFBsNnVEME9uZ0Z4SFFoTEwwNEZraW5CSGRsX2xIYjlDdkRXWjU0MWY0QU5vU2tsbFQzT1M1dVdVRWt3TWxWTm5LT0xTLU5NU3lLeHlzVzRHNDJTS1lZMmc2eGRBZHM5MGdYZTJsQmxCaHZpMm5aMTJnMU5Vb3cwNkdCS0lRSEh5aTJBeExsc1FrX1l3SFNoT21yMXJueEJ0dFJKekRtRk90OA?oc=5",
         "source": "DiarioBitcoin",
@@ -265,6 +251,20 @@
         "source": "FOREX.com",
         "pubdate": "Wed, 10 Jun 2026 17:29:46 GMT",
         "pubdate_iso": "2026-06-10T17:29:46+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Bitcoin y Ethereum, pendientes del CPI de Estados Unidos: el dato que puede mover al mercado cripto",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVnU1RkhOemRjem9xRjVHZjYwZUxwQjd6dmdVcDhMbHFjazlLMWVkdkxYS3RBaHJVWUlLOTg1TTFlVl95X3ZrYzRmeEhiU1duU1V5cDdjQzRCMTVJaEF3NWpxVk5RTEpSNXhSOFF1NzgzWFh3UW53QjNsMWdxT0FnbmZTRTZVY01HWUpoN1E3UWkzOEsyTXRYbkpfWFRxdGZpVU1mYVJYdXI0YWFldEpabDY3S21LNWNNUXd6VEs2NWdJRzdOQ3NVczgxSktxWEY2azREQ3FQQQ?oc=5",
+        "source": "Cripto247",
+        "pubdate": "Wed, 10 Jun 2026 12:16:43 GMT",
+        "pubdate_iso": "2026-06-10T12:16:43+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -348,20 +348,6 @@
     ],
     "sentimiento": [
       {
-        "title": "Small, mid-cap valuations cool but froth remains",
-        "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOFl2Ym1iSTljZUdrXzdvblRxa2U4M1lhMWVBWTFkMVpnWXlxQ1Bsc0ZmT1BfOTZ6MXpOOWZaTktVRktSb2xfZEpxbVFKUmNtbUZzU3ZFRk1aU3BVRXRZZGxwYW1fUENBSnBJdlBjcGhLYTRSNUh0Wm9JNEF4LVp6QW1lUWFsNFZ0TFpTbWFBajFhTmg3SEgxS3p3eDBaOWFsVFRHbGxTNUFtczNOVGloNk1ycnkyODByQzN1WXZ4V2dsYUZ2YXdtSFlzbmFFVXBIXzRhaVgyMXdjUXM4eGJzOWI3NlkydlhDSUHSAe8BQVVfeXFMT3JzX253N1hVM3R2S3R0Q0VMRDNsYnBabGoyN21Kb2d4WVNsMjZkSDdEUWtDVkg2TmF1V0RCem10QTlQb0t4NEluZWk3aGNieGZZTXNHdGZ4NnJlbHUtZXdxMmNlMmRmTjFXUVdHakMtc1hqdjJTc1VMUDJ6blF0Y3g0dmxlZkZoeXRUS1AxTlJoVEpjcHZJSHdxdlhYbWlvaHV6Zkc2VFJQQTVuSTBja3VlVm9FNlg2MmtrQkxJWXhQam1OZ1Q3SGlPUnRaMV9iczU4UFlvRXRjbW5NaGlEZXJiMGhNaHhIZ2NNckFGbEE?oc=5",
-        "source": "Mint",
-        "pubdate": "Wed, 10 Jun 2026 00:30:51 GMT",
-        "pubdate_iso": "2026-06-10T00:30:51+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "MU Stock Slides 2% After-Hours As Goldman Sachs Doubles Price Target But Keeps Neutral Rating",
         "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZVFvVVZMblpkYVFIRExka19NQVQyMlNDaGVDdGVKU251aERVZ1pZWWZPMVhrcnVaLU1FaXBTdk5yamNfTTFyTzNRRHhTYjdrZzdFRnpzOGJFaEw5d2hpNUhMS3VaMW9YejBLVFo4SDF1X2g3TmN2dzRwa2RjT3o4NU02NGVRcG01Y2EzZjREcU5laTRubDg2NS1YN0g0VU1TZ0NZbm40dlNYNi01OE9RQzZ3WU9pdlk3Z2lLamRJNzNVZVBRWGVNclI1Qi1JX0ZTV2NFbXlZT2NMek1kWmtoNEwyNW9RYUU?oc=5",
         "source": "TradingView",
@@ -378,23 +364,23 @@
     ]
   },
   "stats": {
-    "total_noticias": 24,
+    "total_noticias": 23,
     "por_categoria": {
       "fed_tasas": 2,
       "mercado": 5,
       "tech_nasdaq": 5,
       "economia": 5,
       "earnings": 5,
-      "sentimiento": 2
+      "sentimiento": 1
     }
   },
   "resumen_ejecutivo": {
     "sentimiento": "neutral",
-    "score_neto": 0,
+    "score_neto": -1,
     "n_positivas": 0,
-    "n_negativas": 0,
-    "n_neutrales": 24,
-    "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
+    "n_negativas": 1,
+    "n_neutrales": 22,
+    "narrativa": "El feed muestra 0 senales positivas y 1 negativas (neto -1). Factores dominantes: Selloff: presion vendedora.",
     "narrativa_fuente": "plantilla",
     "veredicto": "NEUTRAL - sin sesgo dominante"
   }
