@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Value Signal · Señales de inversión</title>
-<meta name="description" content="Sistema cuantitativo de timing para DCA. Señales contrarian sobre Oro, Bitcoin, ETFs de dividendos USA y acciones chilenas.">
+<title>Value Signal Â· SeÃ±ales de inversiÃ³n</title>
+<meta name="description" content="Sistema cuantitativo de timing para DCA. SeÃ±ales contrarian sobre Oro, Bitcoin, ETFs de dividendos USA y acciones chilenas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   VALUE SIGNAL — dark financial theme (TradingView / Yahoo Finance)
+   VALUE SIGNAL â€” dark financial theme (TradingView / Yahoo Finance)
    ============================================================ */
 :root{
   /* surfaces */
@@ -451,14 +451,14 @@ footer a.src:hover{color:var(--teal-2)}
   <div class="wrap">
     <div class="top-row">
       <div class="brand" id="brand" title="Inicio">
-        <span class="tri">▲</span>
+        <span class="tri">â–²</span>
         <span class="b1">VALUE</span><span class="b2">SIGNAL</span>
-        <span class="tag">Timing cuantitativo de DCA · Señales contrarian</span>
+        <span class="tag">Timing cuantitativo de DCA Â· SeÃ±ales contrarian</span>
       </div>
       <nav class="tabs" id="nav"></nav>
       <div class="refresh">
         <span class="rf-time" id="rfTime"></span>
-        <button class="rf-btn" id="eduBtn" title="Mostrar todas las lecturas explicadas">💡 Explicar</button>
+        <button class="rf-btn" id="eduBtn" title="Mostrar todas las lecturas explicadas">ðŸ’¡ Explicar</button>
         <button class="rf-btn" id="rfBtn" title="Actualizar datos"><span class="spin"></span>Actualizar</button>
       </div>
     </div>
@@ -474,13 +474,13 @@ footer a.src:hover{color:var(--teal-2)}
 <footer>
   <div class="wrap">
     <div class="fbar">
-      <span class="fbrand">▲ VALUE<b>SIGNAL</b></span>
-      <span class="disc">Sistema personal de señales de inversión · Datos:
+      <span class="fbrand">â–² VALUE<b>SIGNAL</b></span>
+      <span class="disc">Sistema personal de seÃ±ales de inversiÃ³n Â· Datos:
         <a class="src" href="https://finance.yahoo.com" target="_blank" rel="noopener">Yahoo Finance</a>,
         <a class="src" href="https://www.bolsadesantiago.com" target="_blank" rel="noopener">Bolsa de Santiago</a>,
         <a class="src" href="https://www.cmfchile.cl" target="_blank" rel="noopener">CMF</a>.
-        No es recomendación de inversión.</span>
-      <span style="margin-left:auto;font-family:var(--f-mono)">“Compra miedo, no euforia”</span>
+        No es recomendaciÃ³n de inversiÃ³n.</span>
+      <span style="margin-left:auto;font-family:var(--f-mono)">â€œCompra miedo, no euforiaâ€</span>
     </div>
   </div>
 </footer>
@@ -490,10 +490,10 @@ footer a.src:hover{color:var(--teal-2)}
 
 /* ===== js/data.js ===== */
 /* ============================================================
-   VALUE SIGNAL — data layer
+   VALUE SIGNAL â€” data layer
    ============================================================ */
 const VS = {
-  BASE: "https://raw.githubusercontent.com/jaredb88/value-signal-system/main/",
+  BASE: "https://raw.githubusercontent.com/jaredbellov/value-signal-system/main/",
   FILES: {
     gld:    "gld_data.json",
     btc:    "btc_data.json",
@@ -544,16 +544,16 @@ async function fetchAll(){
 
 /* ---- formatting ---- */
 const fmt = {
-  usd(n,dec){ if(n==null||isNaN(n)) return "—"; return "$"+Number(n).toLocaleString("en-US",{minimumFractionDigits:dec??2,maximumFractionDigits:dec??2}); },
-  clp(n){ if(n==null||isNaN(n)) return "—"; return "$"+Math.round(n).toLocaleString("es-CL"); },
-  pct(n,dec){ if(n==null||isNaN(n)) return "—"; return Number(n).toFixed(dec??1)+"%"; },
-  signpct(n,dec){ if(n==null||isNaN(n)) return "—"; const v=Number(n); return (v>=0?"+":"")+v.toFixed(dec??2)+"%"; },
-  pp(n){ if(n==null||isNaN(n)) return "—"; const v=Number(n); return (v>=0?"+":"")+v.toFixed(2)+" pp"; },
-  num(n,dec){ if(n==null||isNaN(n)) return "—"; return Number(n).toFixed(dec??1); },
-  score(n){ if(n==null||isNaN(n)) return "—"; return Number(n).toFixed(1); },
+  usd(n,dec){ if(n==null||isNaN(n)) return "â€”"; return "$"+Number(n).toLocaleString("en-US",{minimumFractionDigits:dec??2,maximumFractionDigits:dec??2}); },
+  clp(n){ if(n==null||isNaN(n)) return "â€”"; return "$"+Math.round(n).toLocaleString("es-CL"); },
+  pct(n,dec){ if(n==null||isNaN(n)) return "â€”"; return Number(n).toFixed(dec??1)+"%"; },
+  signpct(n,dec){ if(n==null||isNaN(n)) return "â€”"; const v=Number(n); return (v>=0?"+":"")+v.toFixed(dec??2)+"%"; },
+  pp(n){ if(n==null||isNaN(n)) return "â€”"; const v=Number(n); return (v>=0?"+":"")+v.toFixed(2)+" pp"; },
+  num(n,dec){ if(n==null||isNaN(n)) return "â€”"; return Number(n).toFixed(dec??1); },
+  score(n){ if(n==null||isNaN(n)) return "â€”"; return Number(n).toFixed(1); },
   ago(iso){
-    if(!iso) return "—";
-    const d = new Date(iso); if(isNaN(d)) return "—";
+    if(!iso) return "â€”";
+    const d = new Date(iso); if(isNaN(d)) return "â€”";
     const s = Math.floor((Date.now()-d.getTime())/1000);
     if(s<60) return "hace "+s+"s";
     if(s<3600) return "hace "+Math.floor(s/60)+" min";
@@ -561,7 +561,7 @@ const fmt = {
     return "hace "+Math.floor(s/86400)+" d";
   },
   clock(d){ d=d||new Date(); return d.toLocaleTimeString("es-CL",{hour:"2-digit",minute:"2-digit"}); },
-  date(iso){ const d=new Date(iso); if(isNaN(d)) return "—"; return d.toLocaleDateString("es-CL",{day:"2-digit",month:"short",year:"numeric"}); },
+  date(iso){ const d=new Date(iso); if(isNaN(d)) return "â€”"; return d.toLocaleDateString("es-CL",{day:"2-digit",month:"short",year:"numeric"}); },
 };
 
 /* ---- sentiment helpers ---- */
@@ -579,31 +579,31 @@ function contrarian(zona, sentimiento){
   const buy = isBuyZone(zona);
   const caro = zona==="CARO";
   const sg = sentSign(sentimiento);
-  if(buy && sg<0)  return {ic:"✅", cls:"good", tag:"Señal contrarian", desc:"Zona de compra + noticias bajistas: comprar con miedo es exactamente el plan."};
-  if(buy && sg>0)  return {ic:"✅✅", cls:"good", tag:"Doble señal", desc:"Zona de compra y momentum de noticias a favor: convicción reforzada."};
-  if(buy && sg===0)return {ic:"✅", cls:"good", tag:"Zona de compra", desc:"Score en zona atractiva; el flujo de noticias no aporta sesgo direccional claro."};
-  if(caro && sg>0) return {ic:"⚠️", cls:"warn", tag:"Euforia", desc:"Precio caro y noticias alcistas: no perseguir. Aportar menos este mes."};
-  if(caro && sg<0) return {ic:"⏳", cls:"muted", tag:"Posible corrección", desc:"Caro pero con noticias bajistas: esperar; el descuento aún no llega."};
-  return {ic:"•", cls:"muted", tag:"Neutral", desc:"Sin cruce relevante: mantener el aporte base del mes."};
+  if(buy && sg<0)  return {ic:"âœ…", cls:"good", tag:"SeÃ±al contrarian", desc:"Zona de compra + noticias bajistas: comprar con miedo es exactamente el plan."};
+  if(buy && sg>0)  return {ic:"âœ…âœ…", cls:"good", tag:"Doble seÃ±al", desc:"Zona de compra y momentum de noticias a favor: convicciÃ³n reforzada."};
+  if(buy && sg===0)return {ic:"âœ…", cls:"good", tag:"Zona de compra", desc:"Score en zona atractiva; el flujo de noticias no aporta sesgo direccional claro."};
+  if(caro && sg>0) return {ic:"âš ï¸", cls:"warn", tag:"Euforia", desc:"Precio caro y noticias alcistas: no perseguir. Aportar menos este mes."};
+  if(caro && sg<0) return {ic:"â³", cls:"muted", tag:"Posible correcciÃ³n", desc:"Caro pero con noticias bajistas: esperar; el descuento aÃºn no llega."};
+  return {ic:"â€¢", cls:"muted", tag:"Neutral", desc:"Sin cruce relevante: mantener el aporte base del mes."};
 }
 
 /* ---- human labels for score components ---- */
 const SUB_LABELS = {
   // GLD
-  drawdown:{n:"Drawdown",d:"caída desde máx. 52s"},
+  drawdown:{n:"Drawdown",d:"caÃ­da desde mÃ¡x. 52s"},
   momentum:{n:"Momentum",d:"retorno 12-1m"},
   ratio_sp500:{n:"Ratio vs S&P 500",d:"percentil 2y"},
   ratio_silver:{n:"Ratio Oro/Plata",d:"percentil 2y"},
-  dxy:{n:"DXY (dólar)",d:"percentil 2y"},
+  dxy:{n:"DXY (dÃ³lar)",d:"percentil 2y"},
   real_yield:{n:"Tasa real",d:"TIPS 10y"},
   vix:{n:"VIX",d:"volatilidad"},
   // BTC
-  fear_greed:{n:"Fear & Greed",d:"índice de sentimiento"},
-  pi_cycle:{n:"Pi Cycle Top",d:"MA111 vs MA350×2"},
+  fear_greed:{n:"Fear & Greed",d:"Ã­ndice de sentimiento"},
+  pi_cycle:{n:"Pi Cycle Top",d:"MA111 vs MA350Ã—2"},
   halving_cycle:{n:"Ciclo de halving",d:"fase del ciclo"},
   mvrv:{n:"MVRV Z-Score",d:"valor vs realizado"},
   // dividend ETFs componentes
-  dy_vs_historico:{n:"DY vs histórico",d:"yield actual vs 3y"},
+  dy_vs_historico:{n:"DY vs histÃ³rico",d:"yield actual vs 3y"},
   balance_cagr:{n:"Balance CAGR+DY",d:"crecimiento + renta"},
   dgr:{n:"DGR",d:"crecimiento del dividendo"},
 };
@@ -611,13 +611,13 @@ const subLabel = k => SUB_LABELS[k] || {n:k, d:""};
 
 /* ===== js/ui.js ===== */
 /* ============================================================
-   VALUE SIGNAL — UI components (return HTML strings)
+   VALUE SIGNAL â€” UI components (return HTML strings)
    ============================================================ */
 const esc = s => String(s??"").replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 function zoneBadge(zona, mult){
-  const m = mult!=null ? ` · x${mult}` : "";
-  return `<span class="zbadge z-${zona}" onclick="openEduStatic('zonas',event)" title="¿Qué significan las zonas?">${esc(zona)}${m}</span>`;
+  const m = mult!=null ? ` Â· x${mult}` : "";
+  return `<span class="zbadge z-${zona}" onclick="openEduStatic('zonas',event)" title="Â¿QuÃ© significan las zonas?">${esc(zona)}${m}</span>`;
 }
 
 /* semicircular score gauge (zone-colored arc + zone ticks at 35/50/70) */
@@ -689,7 +689,7 @@ function contrarianStrip(zona, sentimiento){
   const sl = sentimiento ? `noticias ${esc(sentimiento)}` : "sin noticias";
   return `<div class="contra ${c.cls}">
     <span class="ic">${c.ic}</span>
-    <span><b>${esc(zona)}</b> · ${sl} → <b>${c.tag}</b></span>
+    <span><b>${esc(zona)}</b> Â· ${sl} â†’ <b>${c.tag}</b></span>
   </div>`;
 }
 
@@ -715,7 +715,7 @@ function compBars(comp, pesos, edus){
     return `<div class="crow"><div class="row">
       <div class="nm">${esc(lab.n)}${ed?ed.icon:""}${lab.d?`<small>${esc(lab.d)}</small>`:""}</div>
       <div class="tr"><i style="width:${Math.max(0,Math.min(100,v))}%"></i></div>
-      <div class="vl">${fmt.num(v,0)}${w?`<small> · ${w}</small>`:""}</div>
+      <div class="vl">${fmt.num(v,0)}${w?`<small> Â· ${w}</small>`:""}</div>
     </div>${ed?ed.inline:""}</div>`;
   }).join("")}</div>`;
 }
@@ -730,15 +730,15 @@ function execSummary(news, ctx){
     const mood = sg>0?"optimista":sg<0?"pesimista":"neutro";
     const buy = isBuyZone(ctx.zona), caro = ctx.zona==="CARO";
     const verdict = buy ? "buena noticia: el plan es comprar cuando otros dudan"
-      : caro && sg>0 ? "señal de cautela: no perseguir"
-      : caro && sg<0 ? "razón para esperar"
+      : caro && sg>0 ? "seÃ±al de cautela: no perseguir"
+      : caro && sg<0 ? "razÃ³n para esperar"
       : "neutral: mantener el aporte base";
-    contraLine = `<div class="contra-line">El mercado está <b>${mood}</b> con ${esc(ctx.label||"el activo")}. Para una estrategia contrarian, eso es <b>${verdict}</b>.</div>`;
+    contraLine = `<div class="contra-line">El mercado estÃ¡ <b>${mood}</b> con ${esc(ctx.label||"el activo")}. Para una estrategia contrarian, eso es <b>${verdict}</b>.</div>`;
   }
   return `<div class="exec">
     <div class="sent">
       <span class="sent-pill ${sentClass(r.sentimiento)}">${esc(r.sentimiento)}</span>
-      <span class="counts"><span class="p">▲${r.n_positivas??0}</span> · <span class="n">▼${r.n_negativas??0}</span> · ${r.n_neutrales??0} neutr.</span>
+      <span class="counts"><span class="p">â–²${r.n_positivas??0}</span> Â· <span class="n">â–¼${r.n_negativas??0}</span> Â· ${r.n_neutrales??0} neutr.</span>
     </div>
     <p class="narr">${esc(r.narrativa)}</p>
     ${r.veredicto?`<div class="verd"><b>Veredicto:</b> ${esc(r.veredicto)}</div>`:""}
@@ -755,22 +755,22 @@ function alignCard(zona, score, news){
     <div class="hd"><span class="ic">${c.ic}</span> ${esc(c.tag)}</div>
     <div class="mx">
       <div class="b"><div class="l">Zona (score ${fmt.score(score)})</div><div class="v" style="color:${zoneColorVar(zona)}">${esc(zona)}</div></div>
-      <div class="b"><div class="l">Noticias 3 días</div><div class="v">${esc(r.sentimiento)}</div></div>
+      <div class="b"><div class="l">Noticias 3 dÃ­as</div><div class="v">${esc(r.sentimiento)}</div></div>
     </div>
     <div class="desc">${esc(c.desc)}</div>
   </div>`;
 }
 function zoneColorVar(z){ return {CARO:"var(--z-caro)",NEUTRAL:"var(--z-neu)",ATRACTIVO:"var(--z-atr)",OPORTUNIDAD:"var(--z-opp)"}[z]||"var(--tx)"; }
 
-/* one news item — badge dirección+intensidad SIEMPRE visible + razonamiento legible */
+/* one news item â€” badge direcciÃ³n+intensidad SIEMPRE visible + razonamiento legible */
 function newsItem(it){
   const imp = it.impacto||{};
   const dir = imp.direccion;
   const n = Math.min(3, Math.max(1, imp.intensidad||1));
-  const badge = dir==="positivo" ? "🟢".repeat(n) : dir==="negativo" ? "🔴".repeat(n) : "⚪";
-  const impline = dir==="positivo" ? `<div class="impline pos">↑ Empuja al alza: ${esc(imp.razonamiento||"")}</div>`
-    : dir==="negativo" ? `<div class="impline neg">↓ Presiona a la baja: ${esc(imp.razonamiento||"")}</div>`
-    : `<div class="impline neu">− Sin impacto direccional claro</div>`;
+  const badge = dir==="positivo" ? "ðŸŸ¢".repeat(n) : dir==="negativo" ? "ðŸ”´".repeat(n) : "âšª";
+  const impline = dir==="positivo" ? `<div class="impline pos">â†‘ Empuja al alza: ${esc(imp.razonamiento||"")}</div>`
+    : dir==="negativo" ? `<div class="impline neg">â†“ Presiona a la baja: ${esc(imp.razonamiento||"")}</div>`
+    : `<div class="impline neu">âˆ’ Sin impacto direccional claro</div>`;
   return `<a class="nitem" href="${esc(it.link||'#')}" target="_blank" rel="noopener">
     <div class="body">
       <div class="tirow"><span class="nbadge">${badge}</span><span class="ti">${esc(it.title)}</span></div>
@@ -790,9 +790,9 @@ function newsSection(news, opts){
     let items = (news.noticias_por_categoria[cat]||[]).slice();
     items.sort((a,b)=>(Math.abs((b.impacto||{}).intensidad||0))-(Math.abs((a.impacto||{}).intensidad||0)));
     if(compact) items = items.slice(0,3);
-    const m = meta[cat]||{emoji:"•",label:cat};
+    const m = meta[cat]||{emoji:"â€¢",label:cat};
     return `<div class="news-cat">
-      <div class="ch">${m.emoji||"•"} ${esc(m.label||cat)} <span class="cnt">${items.length}</span></div>
+      <div class="ch">${m.emoji||"â€¢"} ${esc(m.label||cat)} <span class="cnt">${items.length}</span></div>
       <div class="news-list">${items.map(newsItem).join("")}</div>
     </div>`;
   }).join("");
@@ -801,20 +801,20 @@ function newsSection(news, opts){
 /* loading / error helpers */
 function skeletonCards(n){ return `<div class="grid c3">${Array.from({length:n||3}).map(()=>`<div class="skel" style="height:200px"></div>`).join("")}</div>`; }
 function errBox(key,label){
-  return `<div class="err-box">⚠️ No se pudo cargar <b style="margin:0 4px">${esc(label||key)}</b>. El resto del panel sigue disponible.
+  return `<div class="err-box">âš ï¸ No se pudo cargar <b style="margin:0 4px">${esc(label||key)}</b>. El resto del panel sigue disponible.
     <button class="rt" onclick="retrySource('${key}')">Reintentar</button></div>`;
 }
 function srcStamp(key){
   const st = VS.status[key];
   const cls = st==="error"?"err":st==="loading"?"loading":"";
-  const t = st==="error"?"error de carga":st==="loading"?"actualizando…":"actualizado "+fmt.ago(VS.updated[key]);
+  const t = st==="error"?"error de carga":st==="loading"?"actualizandoâ€¦":"actualizado "+fmt.ago(VS.updated[key]);
   return `<span class="src-stamp"><span class="dot ${cls}"></span>${esc(t)}</span>`;
 }
 
 /* ===== js/edu.js ===== */
 /* ============================================================
-   VALUE SIGNAL — capa educativa
-   Diccionario QUÉ MIDE + lecturas dinámicas (umbrales del
+   VALUE SIGNAL â€” capa educativa
+   Diccionario QUÃ‰ MIDE + lecturas dinÃ¡micas (umbrales del
    paquete educativo) + popover/bottom-sheet + modo explicar.
    ============================================================ */
 VS.eduReg = [];
@@ -824,162 +824,162 @@ const EDU_COLORS = { vi:"#2fd4c4", v:"#26a69a", vs:"#5ccabd", g:"#9aa1ad", a:"#e
 const EDU = {
   /* ---------- compartidos ---------- */
   drawdown52: { t:"Drawdown (52 semanas)",
-    mide:"Cuánto ha caído el precio desde su punto más alto del último año. Es el “descuento” actual respecto al mejor momento reciente.",
-    leer(c){ const d=c.dd, v=`<b>${fmt.signpct(d,1)}</b> — `;
-      if(d>=-3)  return {h:v+"Cerca de máximos. Sin descuento: comprar aquí es pagar precio completo.", c:"r"};
-      if(d>=-10) return {h:v+"Retroceso moderado. Descuento leve frente a máximos.", c:"g"};
-      if(d>=-20) return {h:v+"Corrección importante. Zona donde el contrarian empieza a interesarse.", c:"v"};
-      return {h:v+"Caída profunda. Históricamente, comprar en estas zonas ha premiado la paciencia.", c:"vi"}; } },
+    mide:"CuÃ¡nto ha caÃ­do el precio desde su punto mÃ¡s alto del Ãºltimo aÃ±o. Es el â€œdescuentoâ€ actual respecto al mejor momento reciente.",
+    leer(c){ const d=c.dd, v=`<b>${fmt.signpct(d,1)}</b> â€” `;
+      if(d>=-3)  return {h:v+"Cerca de mÃ¡ximos. Sin descuento: comprar aquÃ­ es pagar precio completo.", c:"r"};
+      if(d>=-10) return {h:v+"Retroceso moderado. Descuento leve frente a mÃ¡ximos.", c:"g"};
+      if(d>=-20) return {h:v+"CorrecciÃ³n importante. Zona donde el contrarian empieza a interesarse.", c:"v"};
+      return {h:v+"CaÃ­da profunda. HistÃ³ricamente, comprar en estas zonas ha premiado la paciencia.", c:"vi"}; } },
 
   momentum: { t:"Momentum 12-1m",
-    mide:"La tendencia de fondo del último año (se excluye el último mes porque suele ser ruido). Positivo = viene subiendo; negativo = viene cayendo.",
-    leer(c){ const m=c.m, v=`<b>${fmt.signpct(m,1)}</b> — `;
-      if(m>20)  return {h:v+"Tendencia alcista fuerte. El activo viene corriendo — cuidado con comprar euforia.", c:"a"};
+    mide:"La tendencia de fondo del Ãºltimo aÃ±o (se excluye el Ãºltimo mes porque suele ser ruido). Positivo = viene subiendo; negativo = viene cayendo.",
+    leer(c){ const m=c.m, v=`<b>${fmt.signpct(m,1)}</b> â€” `;
+      if(m>20)  return {h:v+"Tendencia alcista fuerte. El activo viene corriendo â€” cuidado con comprar euforia.", c:"a"};
       if(m>5)   return {h:v+"Tendencia alcista saludable.", c:"vs"};
       if(m>=-5) return {h:v+"Sin tendencia clara.", c:"g"};
-      return {h:v+"Tendencia bajista. Para el contrarian, las caídas sostenidas crean los mejores precios de entrada.", c:c.buy?"v":"g"}; } },
+      return {h:v+"Tendencia bajista. Para el contrarian, las caÃ­das sostenidas crean los mejores precios de entrada.", c:c.buy?"v":"g"}; } },
 
   /* ---------- oro ---------- */
   ratio_sp500: { t:"Ratio vs S&P 500",
-    mide:"Si el oro está caro o barato COMPARADO con las acciones americanas. Percentil alto = oro caro vs bolsa; bajo = oro barato vs bolsa.",
-    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 años) — `;
-      if(p<25) return {h:v+"El oro está barato frente a las acciones. Punto a favor de rotar aportes hacia oro.", c:"v"};
-      if(p<=75) return {h:v+"Relación oro/bolsa en rango normal.", c:"g"};
-      return {h:v+"El oro está caro frente a las acciones. La bolsa ofrece mejor valor relativo.", c:"r"}; } },
+    mide:"Si el oro estÃ¡ caro o barato COMPARADO con las acciones americanas. Percentil alto = oro caro vs bolsa; bajo = oro barato vs bolsa.",
+    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 aÃ±os) â€” `;
+      if(p<25) return {h:v+"El oro estÃ¡ barato frente a las acciones. Punto a favor de rotar aportes hacia oro.", c:"v"};
+      if(p<=75) return {h:v+"RelaciÃ³n oro/bolsa en rango normal.", c:"g"};
+      return {h:v+"El oro estÃ¡ caro frente a las acciones. La bolsa ofrece mejor valor relativo.", c:"r"}; } },
 
   ratio_silver: { t:"Ratio Oro/Plata",
-    mide:"Cuántas onzas de plata compra una de oro. Cuando el ratio es alto, el oro está caro frente a la plata (o hay miedo en el mercado).",
-    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 años) — `;
-      if(p<25) return {h:v+"El oro está barato frente a la plata. Punto a favor de rotar aportes hacia oro.", c:"v"};
-      if(p<=75) return {h:v+"Relación oro/plata en rango normal.", c:"g"};
-      return {h:v+"El oro está caro frente a la plata. La plata ofrece mejor valor relativo.", c:"r"}; } },
+    mide:"CuÃ¡ntas onzas de plata compra una de oro. Cuando el ratio es alto, el oro estÃ¡ caro frente a la plata (o hay miedo en el mercado).",
+    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 aÃ±os) â€” `;
+      if(p<25) return {h:v+"El oro estÃ¡ barato frente a la plata. Punto a favor de rotar aportes hacia oro.", c:"v"};
+      if(p<=75) return {h:v+"RelaciÃ³n oro/plata en rango normal.", c:"g"};
+      return {h:v+"El oro estÃ¡ caro frente a la plata. La plata ofrece mejor valor relativo.", c:"r"}; } },
 
-  dxy: { t:"DXY (índice dólar)",
-    mide:"La fuerza del dólar frente a otras monedas. El oro se mueve al revés del dólar: dólar fuerte = viento en contra del oro.",
-    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 años) — `;
-      if(p>75) return {h:v+"Dólar muy fuerte — viento en contra para el oro. Si el dólar se debilita, el oro tiene espacio para subir.", c:"v"};
-      if(p>=25) return {h:v+"Dólar en rango normal.", c:"g"};
-      return {h:v+"Dólar débil — el oro ya recibió ese impulso; queda menos combustible por ese lado.", c:"a"}; } },
+  dxy: { t:"DXY (Ã­ndice dÃ³lar)",
+    mide:"La fuerza del dÃ³lar frente a otras monedas. El oro se mueve al revÃ©s del dÃ³lar: dÃ³lar fuerte = viento en contra del oro.",
+    leer(c){ const p=c.p, v=`Percentil <b>${fmt.num(p,0)}</b> (2 aÃ±os) â€” `;
+      if(p>75) return {h:v+"DÃ³lar muy fuerte â€” viento en contra para el oro. Si el dÃ³lar se debilita, el oro tiene espacio para subir.", c:"v"};
+      if(p>=25) return {h:v+"DÃ³lar en rango normal.", c:"g"};
+      return {h:v+"DÃ³lar dÃ©bil â€” el oro ya recibiÃ³ ese impulso; queda menos combustible por ese lado.", c:"a"}; } },
 
   real_yield: { t:"Tasa real 10y (TIPS)",
-    mide:"Lo que paga un bono americano descontando la inflación. Es el “costo de oportunidad” de tener oro (que no paga interés). Tasa real alta = el bono compite mejor contra el oro.",
-    leer(c){ const r=c.v, v=`<b>${fmt.pct(r,2)}</b> — `;
+    mide:"Lo que paga un bono americano descontando la inflaciÃ³n. Es el â€œcosto de oportunidadâ€ de tener oro (que no paga interÃ©s). Tasa real alta = el bono compite mejor contra el oro.",
+    leer(c){ const r=c.v, v=`<b>${fmt.pct(r,2)}</b> â€” `;
       if(r>2)  return {h:v+"Tasas reales altas: los bonos compiten fuerte contra el oro. Freno estructural.", c:"r"};
       if(r>=1) return {h:v+"Costo de oportunidad moderado.", c:"g"};
-      if(r>=0) return {h:v+"Tasas reales bajas: ambiente cómodo para el oro.", c:"v"};
-      return {h:v+"Tasas reales negativas: el escenario dorado del oro — el bono pierde contra la inflación.", c:"vi"}; } },
+      if(r>=0) return {h:v+"Tasas reales bajas: ambiente cÃ³modo para el oro.", c:"v"};
+      return {h:v+"Tasas reales negativas: el escenario dorado del oro â€” el bono pierde contra la inflaciÃ³n.", c:"vi"}; } },
 
-  vix: { t:"VIX (índice del miedo)",
-    mide:"Cuánto miedo hay en la bolsa americana. Picos de VIX = pánico; el oro suele recibir flujos de refugio.",
-    leer(c){ const x=c.v, v=`<b>${fmt.num(x,1)}</b> — `;
+  vix: { t:"VIX (Ã­ndice del miedo)",
+    mide:"CuÃ¡nto miedo hay en la bolsa americana. Picos de VIX = pÃ¡nico; el oro suele recibir flujos de refugio.",
+    leer(c){ const x=c.v, v=`<b>${fmt.num(x,1)}</b> â€” `;
       if(x<15) return {h:v+"Mercado tranquilo, sin demanda de refugio.", c:"g"};
       if(x<=25) return {h:v+"Nerviosismo normal.", c:"g"};
       if(x<=35) return {h:v+"Miedo elevado: flujos de refugio hacia el oro.", c:"v"};
-      return {h:v+"Pánico en los mercados. El refugio se paga caro — y el contrarian mira la bolsa, no solo el oro.", c:"a"}; } },
+      return {h:v+"PÃ¡nico en los mercados. El refugio se paga caro â€” y el contrarian mira la bolsa, no solo el oro.", c:"a"}; } },
 
   /* ---------- bitcoin ---------- */
   drawdown_ath: { t:"Drawdown desde ATH",
-    mide:"Cuánto cayó BTC desde su máximo de todos los tiempos. BTC es cíclico: ha caído 50-85% varias veces y luego marcó nuevos máximos.",
-    leer(c){ const d=c.dd, v=`<b>${fmt.signpct(d,1)}</b> — `;
-      if(d>=-15) return {h:v+"Cerca de máximos. Zona de euforia típica — el contrarian aporta lo mínimo.", c:"r"};
-      if(d>=-35) return {h:v+"Corrección típica de mercado alcista.", c:"g"};
-      if(d>=-55) return {h:v+"Caída mayor. Históricamente, acumular en esta zona ha dado buenos resultados a 2-4 años.", c:"v"};
-      return {h:v+"Capitulación histórica. Las mejores compras de la historia de BTC se hicieron aquí — con estómago.", c:"vi"}; } },
+    mide:"CuÃ¡nto cayÃ³ BTC desde su mÃ¡ximo de todos los tiempos. BTC es cÃ­clico: ha caÃ­do 50-85% varias veces y luego marcÃ³ nuevos mÃ¡ximos.",
+    leer(c){ const d=c.dd, v=`<b>${fmt.signpct(d,1)}</b> â€” `;
+      if(d>=-15) return {h:v+"Cerca de mÃ¡ximos. Zona de euforia tÃ­pica â€” el contrarian aporta lo mÃ­nimo.", c:"r"};
+      if(d>=-35) return {h:v+"CorrecciÃ³n tÃ­pica de mercado alcista.", c:"g"};
+      if(d>=-55) return {h:v+"CaÃ­da mayor. HistÃ³ricamente, acumular en esta zona ha dado buenos resultados a 2-4 aÃ±os.", c:"v"};
+      return {h:v+"CapitulaciÃ³n histÃ³rica. Las mejores compras de la historia de BTC se hicieron aquÃ­ â€” con estÃ³mago.", c:"vi"}; } },
 
   fear_greed: { t:"Fear & Greed",
-    mide:"El termómetro emocional del mercado cripto (0 = pánico total, 100 = euforia total). Se construye con volatilidad, volumen, redes sociales y dominancia.",
-    leer(c){ const f=c.v, v=`<b>${fmt.num(f,0)}</b>${c.cl?` (${esc(c.cl)})`:""} — `;
-      if(f<=25) return {h:v+"MIEDO EXTREMO. “Sé codicioso cuando otros tienen miedo” — Buffett. Las zonas de miedo extremo han sido históricamente los mejores puntos de compra.", c:"vi"};
+    mide:"El termÃ³metro emocional del mercado cripto (0 = pÃ¡nico total, 100 = euforia total). Se construye con volatilidad, volumen, redes sociales y dominancia.",
+    leer(c){ const f=c.v, v=`<b>${fmt.num(f,0)}</b>${c.cl?` (${esc(c.cl)})`:""} â€” `;
+      if(f<=25) return {h:v+"MIEDO EXTREMO. â€œSÃ© codicioso cuando otros tienen miedoâ€ â€” Buffett. Las zonas de miedo extremo han sido histÃ³ricamente los mejores puntos de compra.", c:"vi"};
       if(f<=45) return {h:v+"Miedo. El mercado pesimista suele regalar precios.", c:"v"};
       if(f<=55) return {h:v+"Neutral.", c:"g"};
-      if(f<=75) return {h:v+"Codicia. Precaución: no perseguir.", c:"a"};
+      if(f<=75) return {h:v+"Codicia. PrecauciÃ³n: no perseguir.", c:"a"};
       return {h:v+"CODICIA EXTREMA. Cuando todos celebran, el contrarian guarda la billetera.", c:"r"}; } },
 
   pi_cycle: { t:"Pi Cycle Top",
-    mide:"Un detector de techos de ciclo: compara dos promedios móviles. Cuando la media corta cruza por encima del doble de la larga, históricamente BTC estuvo en zona de techo (2013, 2017, 2021).",
-    leer(c){ const r=c.r, v=`Ratio <b>${fmt.num(r,3)}</b> — `;
+    mide:"Un detector de techos de ciclo: compara dos promedios mÃ³viles. Cuando la media corta cruza por encima del doble de la larga, histÃ³ricamente BTC estuvo en zona de techo (2013, 2017, 2021).",
+    leer(c){ const r=c.r, v=`Ratio <b>${fmt.num(r,3)}</b> â€” `;
       if(r<0.6)  return {h:v+"Muy lejos de zona de techo. El ciclo tiene cuerda.", c:"v"};
-      if(r<=0.85) return {h:v+"Distancia cómoda al techo de ciclo.", c:"vs"};
-      if(r<=0.95) return {h:v+"Acercándose a zona de techo histórica. Reducir agresividad.", c:"a"};
-      return {h:v+"Señal de techo de ciclo activa o inminente. Zona donde históricamente convino aportar lo mínimo.", c:"r"}; } },
+      if(r<=0.85) return {h:v+"Distancia cÃ³moda al techo de ciclo.", c:"vs"};
+      if(r<=0.95) return {h:v+"AcercÃ¡ndose a zona de techo histÃ³rica. Reducir agresividad.", c:"a"};
+      return {h:v+"SeÃ±al de techo de ciclo activa o inminente. Zona donde histÃ³ricamente convino aportar lo mÃ­nimo.", c:"r"}; } },
 
   halving: { t:"Ciclo de halving",
-    mide:"BTC reduce a la mitad su emisión cada ~4 años (halving). El precio ha seguido un patrón cíclico alrededor de estos eventos: acumulación → alza → techo → bear market → repetición.",
-    leer(c){ const f=c.fase||"", v=`<b>${esc(f)}</b>${c.meses!=null?` (${fmt.num(c.meses,1)} meses desde el halving)`:""} — `;
-      if(/bear/i.test(f)) return {h:v+"Fase históricamente de ACUMULACIÓN: precios deprimidos mientras el mercado olvida a BTC. Aquí se siembran los retornos del próximo ciclo.", c:"v"};
-      if(/bull/i.test(f)) return {h:v+"Fase de expansión. Disfrutar el viaje, pero aportar con cabeza fría.", c:"a"};
-      return {h:v+"Fase de transición: el mercado empieza a anticipar la reducción de oferta.", c:"g"}; } },
+    mide:"BTC reduce a la mitad su emisiÃ³n cada ~4 aÃ±os (halving). El precio ha seguido un patrÃ³n cÃ­clico alrededor de estos eventos: acumulaciÃ³n â†’ alza â†’ techo â†’ bear market â†’ repeticiÃ³n.",
+    leer(c){ const f=c.fase||"", v=`<b>${esc(f)}</b>${c.meses!=null?` (${fmt.num(c.meses,1)} meses desde el halving)`:""} â€” `;
+      if(/bear/i.test(f)) return {h:v+"Fase histÃ³ricamente de ACUMULACIÃ“N: precios deprimidos mientras el mercado olvida a BTC. AquÃ­ se siembran los retornos del prÃ³ximo ciclo.", c:"v"};
+      if(/bull/i.test(f)) return {h:v+"Fase de expansiÃ³n. Disfrutar el viaje, pero aportar con cabeza frÃ­a.", c:"a"};
+      return {h:v+"Fase de transiciÃ³n: el mercado empieza a anticipar la reducciÃ³n de oferta.", c:"g"}; } },
 
   mvrv: { t:"MVRV Z-Score",
-    mide:"Compara el precio de mercado contra el precio promedio al que se movieron las monedas por última vez (“lo que pagaron los tenedores”). Alto = mercado sobrecalentado; bajo o negativo = mercado deprimido.",
-    leer(c){ const z=c.z, v=`<b>${fmt.num(z,2)}</b> — `;
-      if(z<0)  return {h:v+"Territorio de capitulación: el tenedor promedio pierde dinero. Históricamente suelo de ciclo.", c:"vi"};
-      if(z<=1) return {h:v+"Mercado deprimido o en recuperación temprana — zona de valor.", c:"v"};
-      if(z<=3) return {h:v+"Valoración media del ciclo.", c:"g"};
+    mide:"Compara el precio de mercado contra el precio promedio al que se movieron las monedas por Ãºltima vez (â€œlo que pagaron los tenedoresâ€). Alto = mercado sobrecalentado; bajo o negativo = mercado deprimido.",
+    leer(c){ const z=c.z, v=`<b>${fmt.num(z,2)}</b> â€” `;
+      if(z<0)  return {h:v+"Territorio de capitulaciÃ³n: el tenedor promedio pierde dinero. HistÃ³ricamente suelo de ciclo.", c:"vi"};
+      if(z<=1) return {h:v+"Mercado deprimido o en recuperaciÃ³n temprana â€” zona de valor.", c:"v"};
+      if(z<=3) return {h:v+"ValoraciÃ³n media del ciclo.", c:"g"};
       if(z<=5) return {h:v+"Mercado caliente.", c:"a"};
-      return {h:v+"Zona de euforia histórica de techos.", c:"r"}; } },
+      return {h:v+"Zona de euforia histÃ³rica de techos.", c:"r"}; } },
 
   /* ---------- dividend ETFs ---------- */
-  dy_vs_hist: { t:"DY vs histórico (35%)",
-    mide:"El dividend yield de HOY comparado con su propio promedio de 3 años. Como el yield sube cuando el precio baja, un yield sobre su promedio significa precio castigado = oportunidad de comprar renta “en oferta”.",
-    leer(c){ const a=c.a, h=c.h, v=`<b>${fmt.pct(a)}</b> vs <b>${fmt.pct(h)}</b> hist — `;
-      if(a>h+0.4) return {h:v+"Yield muy por sobre su promedio: estás comprando el mismo flujo de dividendos más barato que de costumbre.", c:"vi"};
-      if(Math.abs(a-h)<=0.1) return {h:v+"Yield en línea con su historia.", c:"g"};
-      if(a>h) return {h:v+"Yield sobre su promedio histórico — precio levemente castigado.", c:"v"};
-      return {h:v+"Yield bajo su promedio: el precio corrió más rápido que el dividendo. Pagas premium.", c:"r"}; } },
+  dy_vs_hist: { t:"DY vs histÃ³rico (35%)",
+    mide:"El dividend yield de HOY comparado con su propio promedio de 3 aÃ±os. Como el yield sube cuando el precio baja, un yield sobre su promedio significa precio castigado = oportunidad de comprar renta â€œen ofertaâ€.",
+    leer(c){ const a=c.a, h=c.h, v=`<b>${fmt.pct(a)}</b> vs <b>${fmt.pct(h)}</b> hist â€” `;
+      if(a>h+0.4) return {h:v+"Yield muy por sobre su promedio: estÃ¡s comprando el mismo flujo de dividendos mÃ¡s barato que de costumbre.", c:"vi"};
+      if(Math.abs(a-h)<=0.1) return {h:v+"Yield en lÃ­nea con su historia.", c:"g"};
+      if(a>h) return {h:v+"Yield sobre su promedio histÃ³rico â€” precio levemente castigado.", c:"v"};
+      return {h:v+"Yield bajo su promedio: el precio corriÃ³ mÃ¡s rÃ¡pido que el dividendo. Pagas premium.", c:"r"}; } },
 
   balance_cagr: { t:"Balance CAGR+DY (15%)",
-    mide:"La suma de crecimiento del precio (CAGR) + renta por dividendo. Es el “retorno total” que entrega el ETF: un buen dividendero combina ambos.",
-    leer(c){ const t=c.v, v=`<b>${fmt.pct(t)}</b> total — `;
+    mide:"La suma de crecimiento del precio (CAGR) + renta por dividendo. Es el â€œretorno totalâ€ que entrega el ETF: un buen dividendero combina ambos.",
+    leer(c){ const t=c.v, v=`<b>${fmt.pct(t)}</b> total â€” `;
       if(t>12) return {h:v+"Retorno total excelente: crecimiento y renta trabajando juntos.", c:"v"};
       if(t>=8) return {h:v+"Retorno total saludable.", c:"vs"};
       if(t>=4) return {h:v+"Retorno total modesto.", c:"g"};
-      return {h:v+"Retorno total pobre — el ETF no está entregando ni crecimiento ni renta suficiente.", c:"r"}; } },
+      return {h:v+"Retorno total pobre â€” el ETF no estÃ¡ entregando ni crecimiento ni renta suficiente.", c:"r"}; } },
 
-  dgr: { t:"DGR — crecimiento del dividendo (15%)",
-    mide:"A qué ritmo CRECE el dividendo año a año (promedio 3 años). Un dividendo creciente es señal de negocio sano y protege contra la inflación. Es el corazón de la estrategia DGI.",
-    leer(c){ const g=c.g, v=`<b>${fmt.signpct(g,1)}</b> anual — `;
-      if(g>8)  return {h:v+"Dividendo creciendo fuerte: cada año cobras más por las mismas cuotas.", c:"vi"};
-      if(g>=4) return {h:v+"Crecimiento de dividendo saludable, sobre la inflación.", c:"v"};
-      if(g>=0) return {h:v+"Dividendo casi plano: pierde poder de compra frente a la inflación.", c:"a"};
+  dgr: { t:"DGR â€” crecimiento del dividendo (15%)",
+    mide:"A quÃ© ritmo CRECE el dividendo aÃ±o a aÃ±o (promedio 3 aÃ±os). Un dividendo creciente es seÃ±al de negocio sano y protege contra la inflaciÃ³n. Es el corazÃ³n de la estrategia DGI.",
+    leer(c){ const g=c.g, v=`<b>${fmt.signpct(g,1)}</b> anual â€” `;
+      if(g>8)  return {h:v+"Dividendo creciendo fuerte: cada aÃ±o cobras mÃ¡s por las mismas cuotas.", c:"vi"};
+      if(g>=4) return {h:v+"Crecimiento de dividendo saludable, sobre la inflaciÃ³n.", c:"v"};
+      if(g>=0) return {h:v+"Dividendo casi plano: pierde poder de compra frente a la inflaciÃ³n.", c:"a"};
       return {h:v+"ALERTA: dividendo recortado. Revisar si es puntual o tendencia.", c:"r"}; } },
 
   /* ---------- acciones chilenas ---------- */
-  cl_dy: { t:"DY 3 años",
-    mide:"El dividendo promedio de los últimos 3 años dividido por el precio de HOY. Usamos 3 años para no dejarnos engañar por un año excepcional. IMPORTANTE: excluye dividendos EVENTUALES (pagos únicos que no se repiten) — incluirlos infla la rentabilidad esperada y es el error clásico del dividendero novato.",
-    leer(c){ const v=`<b>${fmt.pct(c.dy)}</b> — `;
+  cl_dy: { t:"DY 3 aÃ±os",
+    mide:"El dividendo promedio de los Ãºltimos 3 aÃ±os dividido por el precio de HOY. Usamos 3 aÃ±os para no dejarnos engaÃ±ar por un aÃ±o excepcional. IMPORTANTE: excluye dividendos EVENTUALES (pagos Ãºnicos que no se repiten) â€” incluirlos infla la rentabilidad esperada y es el error clÃ¡sico del dividendero novato.",
+    leer(c){ const v=`<b>${fmt.pct(c.dy)}</b> â€” `;
       const col = c.status==="Sobre benchmark"?"v":c.status==="Bajo benchmark"?"r":"g";
-      return {h:v+"Se evalúa contra el rango normal de SU sector (ver benchmark sectorial), no contra un número universal.", c:col}; } },
+      return {h:v+"Se evalÃºa contra el rango normal de SU sector (ver benchmark sectorial), no contra un nÃºmero universal.", c:col}; } },
 
   cl_benchmark: { t:"Benchmark sectorial",
-    mide:"El rango de dividend yield “normal” para el sector de la acción (AFPs rinden distinto que eléctricas o que holdings). Un yield se evalúa contra SU sector, no contra un número universal.",
+    mide:"El rango de dividend yield â€œnormalâ€ para el sector de la acciÃ³n (AFPs rinden distinto que elÃ©ctricas o que holdings). Un yield se evalÃºa contra SU sector, no contra un nÃºmero universal.",
     leer(c){
-      if(c.status==="Sobre benchmark") return {h:`<b>${fmt.pp(c.pp)}</b> sobre el máximo sectorial — Rinde MÁS que el techo de su sector: el mercado está castigando el precio o el dividendo creció. Para el cazador de rentas, es la señal de compra.`, c:"v"};
-      if(c.status==="Bajo benchmark") return {h:`<b>${fmt.pp(c.pp)}</b> vs máximo sectorial — Rinde menos que su sector: o el precio está caro o el dividendo se debilitó.`, c:"r"};
-      return {h:`<b>${fmt.pp(c.pp)}</b> vs máximo sectorial — Rinde lo normal para su sector. Precio justo, sin descuento.`, c:"g"}; } },
+      if(c.status==="Sobre benchmark") return {h:`<b>${fmt.pp(c.pp)}</b> sobre el mÃ¡ximo sectorial â€” Rinde MÃS que el techo de su sector: el mercado estÃ¡ castigando el precio o el dividendo creciÃ³. Para el cazador de rentas, es la seÃ±al de compra.`, c:"v"};
+      if(c.status==="Bajo benchmark") return {h:`<b>${fmt.pp(c.pp)}</b> vs mÃ¡ximo sectorial â€” Rinde menos que su sector: o el precio estÃ¡ caro o el dividendo se debilitÃ³.`, c:"r"};
+      return {h:`<b>${fmt.pp(c.pp)}</b> vs mÃ¡ximo sectorial â€” Rinde lo normal para su sector. Precio justo, sin descuento.`, c:"g"}; } },
 
-  cl_clasificacion: { t:"Clasificación",
-    mide:"El tipo de empresa según su crecimiento (G = ROE × utilidades retenidas). Define cuánto yield se le exige.",
+  cl_clasificacion: { t:"ClasificaciÃ³n",
+    mide:"El tipo de empresa segÃºn su crecimiento (G = ROE Ã— utilidades retenidas). Define cuÃ¡nto yield se le exige.",
     leer(c){ const k=(c.c||"").toLowerCase();
       if(k.includes("vaca")) return {h:"<b>VACA LECHERA</b> (G<10%, payout >80%): reparte casi todo, no crece. Se le exige yield alto (8-9%) porque el dividendo es todo lo que da.", c:"g"};
-      if(k.includes("dgi")) return {h:"<b>DGI</b> (G 10-15%, payout 30-80%): reparte y crece — el dividendo debería SUBIR año a año. Se acepta yield menor (6-7%) a cambio de crecimiento.", c:"vs"};
-      if(k.includes("crec")) return {h:"<b>CRECIMIENTO</b> (G>15%): reinvierte todo, casi no reparte. No es para estrategia de dividendos (aún).", c:"a"};
-      return {h:`<b>${esc(c.c||"—")}</b>`, c:"g"}; } },
+      if(k.includes("dgi")) return {h:"<b>DGI</b> (G 10-15%, payout 30-80%): reparte y crece â€” el dividendo deberÃ­a SUBIR aÃ±o a aÃ±o. Se acepta yield menor (6-7%) a cambio de crecimiento.", c:"vs"};
+      if(k.includes("crec")) return {h:"<b>CRECIMIENTO</b> (G>15%): reinvierte todo, casi no reparte. No es para estrategia de dividendos (aÃºn).", c:"a"};
+      return {h:`<b>${esc(c.c||"â€”")}</b>`, c:"g"}; } },
 
-  cl_cagr: { t:"CAGR 3 / 5 / 10 años",
-    mide:"Crecimiento anual compuesto del precio en distintas ventanas. Complementa al yield: una acción puede rendir 8% de dividendo pero perder valor año a año (trampa de yield).",
-    leer(c){ const v=`<b>${fmt.pct(c.c3)} / ${fmt.pct(c.c5)} / ${fmt.pct(c.c10)}</b> — `;
+  cl_cagr: { t:"CAGR 3 / 5 / 10 aÃ±os",
+    mide:"Crecimiento anual compuesto del precio en distintas ventanas. Complementa al yield: una acciÃ³n puede rendir 8% de dividendo pero perder valor aÃ±o a aÃ±o (trampa de yield).",
+    leer(c){ const v=`<b>${fmt.pct(c.c3)} / ${fmt.pct(c.c5)} / ${fmt.pct(c.c10)}</b> â€” `;
       if(c.c3>0 && c.c5>0 && c.c10>0) return {h:v+"Precio estable o creciente: el dividendo es ganancia real.", c:"v"};
-      if(c.c3<0 && c.c5<0) return {h:v+"OJO: el precio cae en el tiempo — parte del “dividendo” es devolución de tu propio capital vía pérdida de precio. Posible trampa de yield.", c:"r"};
+      if(c.c3<0 && c.c5<0) return {h:v+"OJO: el precio cae en el tiempo â€” parte del â€œdividendoâ€ es devoluciÃ³n de tu propio capital vÃ­a pÃ©rdida de precio. Posible trampa de yield.", c:"r"};
       return {h:v+"Ventanas mixtas: revisar la tendencia de largo plazo.", c:"g"}; } },
 };
 
-/* microcopy fijo (Sección 6 + tooltip del panel de noticias) */
+/* microcopy fijo (SecciÃ³n 6 + tooltip del panel de noticias) */
 const STATIC_EDU = {
-  score: { t:"Score 0-100", mide:"Qué tan atractivo está el precio HOY para aportar. No predice el futuro: mide cuánto descuento ofrece el presente. Más alto = más barato frente a su propia historia.", static:true },
-  zonas: { t:"Zonas y multiplicadores", mide:"El score define cuánto aportar este mes: CARO ×0.5 (la mitad del aporte base), NEUTRAL ×1.0, ATRACTIVO ×1.5, OPORTUNIDAD ×2.5. Nunca es “vender”: es un sistema de acumulación disciplinada.", static:true },
-  mult: { t:"Multiplicador de aporte", mide:"Tu aporte base × el multiplicador de la zona. Ejemplo: si aportas $100 al mes y la zona es OPORTUNIDAD, este mes corresponde aportar $250.", static:true },
-  news: { t:"Cómo se analizan las noticias", mide:"Cada noticia se analiza automáticamente: detectamos si empuja el precio al alza o a la baja y con qué fuerza. El resumen combina todas las noticias de las últimas 72 h en una sola lectura.", static:true },
+  score: { t:"Score 0-100", mide:"QuÃ© tan atractivo estÃ¡ el precio HOY para aportar. No predice el futuro: mide cuÃ¡nto descuento ofrece el presente. MÃ¡s alto = mÃ¡s barato frente a su propia historia.", static:true },
+  zonas: { t:"Zonas y multiplicadores", mide:"El score define cuÃ¡nto aportar este mes: CARO Ã—0.5 (la mitad del aporte base), NEUTRAL Ã—1.0, ATRACTIVO Ã—1.5, OPORTUNIDAD Ã—2.5. Nunca es â€œvenderâ€: es un sistema de acumulaciÃ³n disciplinada.", static:true },
+  mult: { t:"Multiplicador de aporte", mide:"Tu aporte base Ã— el multiplicador de la zona. Ejemplo: si aportas $100 al mes y la zona es OPORTUNIDAD, este mes corresponde aportar $250.", static:true },
+  news: { t:"CÃ³mo se analizan las noticias", mide:"Cada noticia se analiza automÃ¡ticamente: detectamos si empuja el precio al alza o a la baja y con quÃ© fuerza. El resumen combina todas las noticias de las Ãºltimas 72 h en una sola lectura.", static:true },
 };
 
 /* ---- builders ---- */
@@ -989,12 +989,12 @@ function eduFor(id, ctx){
   VS.eduReg.push({t:d.t, mide:d.mide, lect});
   const i = VS.eduReg.length-1;
   return {
-    icon: `<button class="edu-i" onclick="openEdu(${i},event)" aria-label="Explicación: ${esc(d.t)}">i</button>`,
-    inline: `<div class="edu-inline" style="color:${EDU_COLORS[lect.c]||EDU_COLORS.g}">↳ ${lect.h}</div>`,
+    icon: `<button class="edu-i" onclick="openEdu(${i},event)" aria-label="ExplicaciÃ³n: ${esc(d.t)}">i</button>`,
+    inline: `<div class="edu-inline" style="color:${EDU_COLORS[lect.c]||EDU_COLORS.g}">â†³ ${lect.h}</div>`,
   };
 }
 function eduIconStatic(key){
-  return `<button class="edu-i" onclick="openEduStatic('${key}',event)" aria-label="Explicación">i</button>`;
+  return `<button class="edu-i" onclick="openEduStatic('${key}',event)" aria-label="ExplicaciÃ³n">i</button>`;
 }
 
 /* ---- popover / bottom-sheet ---- */
@@ -1004,8 +1004,8 @@ function ensureEduDom(){
   d.id = "eduWrap"; d.hidden = true;
   d.innerHTML = `<div class="edu-back" onclick="closeEdu()"></div>
     <div class="edu-pop" role="dialog" aria-modal="true">
-      <div class="edu-hd"><span id="eduTitle"></span><button onclick="closeEdu()" aria-label="Cerrar">✕</button></div>
-      <div class="edu-sec" id="eduMideSec"><div class="edu-lab" id="eduMideLab">Qué mide</div><div class="bd" id="eduMide"></div></div>
+      <div class="edu-hd"><span id="eduTitle"></span><button onclick="closeEdu()" aria-label="Cerrar">âœ•</button></div>
+      <div class="edu-sec" id="eduMideSec"><div class="edu-lab" id="eduMideLab">QuÃ© mide</div><div class="bd" id="eduMide"></div></div>
       <div class="edu-sec" id="eduLectSec"><div class="edu-lab">Lectura actual</div><div class="bd" id="eduLect"></div></div>
     </div>`;
   document.body.appendChild(d);
@@ -1050,7 +1050,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 /* ===== js/cards.js ===== */
 /* ============================================================
-   VALUE SIGNAL — asset normalization + the asset card component
+   VALUE SIGNAL â€” asset normalization + the asset card component
    ============================================================ */
 
 /* normalize every scored asset into one shape */
@@ -1059,17 +1059,17 @@ function collectScored(){
   const g = VS.data.gld;
   if(g) out.push({route:"oro", ticker:"GLD", name:"SPDR Gold (Oro)", price:fmt.usd(g.precio_gld),
     chg:null, score:g.score_final, zona:g.zona, mult:g.multiplicador,
-    hist:g.historico_gld, valKey:"precio", newsKey:"n_gld", emoji:"🥇"});
+    hist:g.historico_gld, valKey:"precio", newsKey:"n_gld", emoji:"ðŸ¥‡"});
   const b = VS.data.btc;
   if(b) out.push({route:"bitcoin", ticker:"BTC", name:"Bitcoin", price:fmt.usd(b.precio_btc,0),
     chg:null, score:b.score_final, zona:b.zona, mult:b.multiplicador,
-    hist:b.historico_btc, valKey:"precio", newsKey:"n_btc", emoji:"₿"});
+    hist:b.historico_btc, valKey:"precio", newsKey:"n_btc", emoji:"â‚¿"});
   const e = VS.data.etfs;
   if(e&&e.etfs) Object.values(e.etfs).forEach(x=>{
     out.push({route:"etfs", ticker:x.ticker, name:x.long_name||x.name, price:fmt.usd(x.precio_usd),
       chg:null, score:x.score, zona:x.zona, mult:x.multiplicador,
       hist:x.historico, valKey:"close", newsKey:"n_etfs", emoji:x.emoji,
-      sub:`DY ${fmt.pct(x.dy_actual_pct)} · aporte ${fmt.usd(x.aporte_sugerido_usd,0)}`});
+      sub:`DY ${fmt.pct(x.dy_actual_pct)} Â· aporte ${fmt.usd(x.aporte_sugerido_usd,0)}`});
   });
   return out;
 }
@@ -1079,7 +1079,7 @@ function sentimientoOf(newsKey){
   return n && n.resumen_ejecutivo ? n.resumen_ejecutivo.sentimiento : null;
 }
 
-/* the default asset card — variante C (gauge) + franja contrarian de A */
+/* the default asset card â€” variante C (gauge) + franja contrarian de A */
 function assetCard(a, opts){
   opts = opts||{};
   const opp = isBuyZone(a.zona);
@@ -1099,13 +1099,13 @@ function assetCard(a, opts){
     </div>
     <div class="gfoot">
       <span class="num">${a.price}</span>
-      <span class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>x${a.mult}</b></span>
+      <span class="mult" onclick="openEduStatic('mult',event)" title="Â¿CÃ³mo se calcula el aporte?">aporte <b>x${a.mult}</b></span>
     </div>
     ${opts.contra!==false ? contrarianStrip(a.zona, sent) : ""}
   </div>`;
 }
 
-/* versión anterior (score numérico + sparkline) — conservada para la página de variaciones */
+/* versiÃ³n anterior (score numÃ©rico + sparkline) â€” conservada para la pÃ¡gina de variaciones */
 function assetCardLegacy(a, opts){
   opts = opts||{};
   const opp = isBuyZone(a.zona);
@@ -1120,7 +1120,7 @@ function assetCardLegacy(a, opts){
       </div>
       <div class="score-wrap">
         <div class="score-num" style="color:${zoneColorVar(a.zona)}">${fmt.score(a.score)}<span class="den">/100</span>${eduIconStatic('score')}</div>
-        <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>x${a.mult}</b></div>
+        <div class="mult" onclick="openEduStatic('mult',event)" title="Â¿CÃ³mo se calcula el aporte?">aporte <b>x${a.mult}</b></div>
         <div style="margin-top:6px">${zoneBadge(a.zona)}</div>
       </div>
     </div>
@@ -1132,7 +1132,7 @@ function assetCardLegacy(a, opts){
 
 /* ===== js/views.js ===== */
 /* ============================================================
-   VALUE SIGNAL — views + charts
+   VALUE SIGNAL â€” views + charts
    ============================================================ */
 VS.charts = {};
 VS.chartData = {};
@@ -1219,10 +1219,10 @@ function renderHome(){
     <div class="big">${total}</div>
     <div class="btxt">
       <h2>${total>0?`oportunidad${total>1?'es':''} de compra activa${total>1?'s':''} hoy`:"sin oportunidades activas hoy"}</h2>
-      <p>Suma de activos con score en zona de compra más acciones chilenas sobre su benchmark sectorial.</p>
+      <p>Suma de activos con score en zona de compra mÃ¡s acciones chilenas sobre su benchmark sectorial.</p>
       <div class="bbreak">
-        <span class="chip">${opps.length} activos con score · ATRACTIVO / OPORTUNIDAD</span>
-        <span class="chip cl">${sobre.length} acciones chilenas · sobre benchmark</span>
+        <span class="chip">${opps.length} activos con score Â· ATRACTIVO / OPORTUNIDAD</span>
+        <span class="chip cl">${sobre.length} acciones chilenas Â· sobre benchmark</span>
       </div>
     </div>
   </div>`;
@@ -1231,20 +1231,20 @@ function renderHome(){
   html += sectionTitle("Oportunidades activas", opps.length, "score descendente");
   if(VS.status.gld==="loading"&&!scored.length){ html += skeletonCards(3); }
   else if(opps.length){ html += `<div class="grid c3">${opps.map(a=>assetCard(a)).join("")}</div>`; }
-  else { html += `<div class="hint" style="padding:8px 0">Ningún activo con score está en zona de compra ahora mismo.</div>`; }
+  else { html += `<div class="hint" style="padding:8px 0">NingÃºn activo con score estÃ¡ en zona de compra ahora mismo.</div>`; }
 
   // chilean over benchmark
-  html += sectionTitle("Acciones chilenas sobre benchmark", sobre.length, "exceso sobre el máximo sectorial");
+  html += sectionTitle("Acciones chilenas sobre benchmark", sobre.length, "exceso sobre el mÃ¡ximo sectorial");
   if(sobre.length){ html += `<div class="grid">${sobre.map(clRow).join("")}</div>`; }
-  else { html += `<div class="hint" style="padding:8px 0">Ninguna acción supera hoy el máximo de su rango sectorial.</div>`; }
+  else { html += `<div class="hint" style="padding:8px 0">Ninguna acciÃ³n supera hoy el mÃ¡ximo de su rango sectorial.</div>`; }
 
   // collapsed rest
   const restCount = rest.length + clRest.length;
   html += `<div class="acc" id="accRest">
     <div class="acc-head" onclick="document.getElementById('accRest').classList.toggle('open')">
-      Sin señal activa — NEUTRAL / CARO y acciones dentro/bajo benchmark
+      Sin seÃ±al activa â€” NEUTRAL / CARO y acciones dentro/bajo benchmark
       <span class="section-title" style="margin:0"><span class="count">${restCount}</span></span>
-      <span class="chev">›</span>
+      <span class="chev">â€º</span>
     </div>
     <div class="acc-body">
       ${rest.length?`<div class="grid c3" style="margin-bottom:14px">${rest.map(a=>assetCard(a)).join("")}</div>`:""}
@@ -1262,15 +1262,15 @@ function clRow(a){
   const edDy = eduFor('cl_dy',{dy:a.dy?.dy_pct, status:ev.status});
   const edBm = eduFor('cl_benchmark',{status:ev.status, pp:ev.vs_benchmark_pp});
   return `<div class="cl-row ${sobre?'opp':''}" onclick="go('chile','${esc(a.ticker)}')">
-    <div class="cl-id"><div class="t">${esc(a.ticker)}</div><div class="s">${esc(a.nombre)} · ${esc(a.sector)}</div></div>
-    <div class="cl-dy"><div class="v" style="color:${sobre?'var(--z-opp)':'var(--tx)'}">${fmt.pct(a.dy?.dy_pct)}</div><div class="l">DY 3 años${edDy.icon}</div></div>
+    <div class="cl-id"><div class="t">${esc(a.ticker)}</div><div class="s">${esc(a.nombre)} Â· ${esc(a.sector)}</div></div>
+    <div class="cl-dy"><div class="v" style="color:${sobre?'var(--z-opp)':'var(--tx)'}">${fmt.pct(a.dy?.dy_pct)}</div><div class="l">DY 3 aÃ±os${edDy.icon}</div></div>
     <div class="cl-bm">
-      <div>Benchmark ${esc(a.sector)}: <span class="num">${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%</span>
-        · <span class="pp ${ppCls}">${fmt.pp(ev.vs_benchmark_pp)}</span> ${ev.emoji||""}${edBm.icon}</div>
+      <div>Benchmark ${esc(a.sector)}: <span class="num">${fmt.num(a.benchmark_min_pct,1)}â€“${fmt.num(a.benchmark_max_pct,1)}%</span>
+        Â· <span class="pp ${ppCls}">${fmt.pp(ev.vs_benchmark_pp)}</span> ${ev.emoji||""}${edBm.icon}</div>
       <div class="bar">${benchBar(a.dy?.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
       ${edBm.inline}
     </div>
-    <div class="right"><span class="pill-link">Ver detalle ›</span></div>
+    <div class="right"><span class="pill-link">Ver detalle â€º</span></div>
   </div>`;
 }
 
@@ -1287,8 +1287,8 @@ function renderAsset(which){
   const newsKey = which==="oro"?"n_gld":"n_btc";
   const news = VS.data[newsKey];
   const meta = which==="oro"
-    ? {em:"🥇",title:"Oro",ticker:"GLD",priceLabel:"Precio GLD",price:d?fmt.usd(d.precio_gld):"—",hist:d?.historico_gld,valKey:"precio"}
-    : {em:"₿",title:"Bitcoin",ticker:"BTC",priceLabel:"Precio BTC",price:d?fmt.usd(d.precio_btc,0):"—",hist:d?.historico_btc,valKey:"precio"};
+    ? {em:"ðŸ¥‡",title:"Oro",ticker:"GLD",priceLabel:"Precio GLD",price:d?fmt.usd(d.precio_gld):"â€”",hist:d?.historico_gld,valKey:"precio"}
+    : {em:"â‚¿",title:"Bitcoin",ticker:"BTC",priceLabel:"Precio BTC",price:d?fmt.usd(d.precio_btc,0):"â€”",hist:d?.historico_btc,valKey:"precio"};
 
   if(VS.status[key]==="error" && !d) return viewHead(meta.em,meta.title,"")+errBox(key,VS.FILES[key]);
   if(!d) return viewHead(meta.em,meta.title,"")+skeletonCards(2);
@@ -1332,7 +1332,7 @@ function renderAsset(which){
             <div class="gv" style="color:${zoneColorVar(d.zona)}">${fmt.score(d.score_final)}${eduIconStatic('score')}</div>
             <div class="gl">score</div>
           </div>
-          <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte del mes <b>x${d.multiplicador}</b></div>
+          <div class="mult" onclick="openEduStatic('mult',event)" title="Â¿CÃ³mo se calcula el aporte?">aporte del mes <b>x${d.multiplicador}</b></div>
           <div style="margin-top:8px">${zoneBadge(d.zona)}</div>
         </div>
       </div>
@@ -1342,7 +1342,7 @@ function renderAsset(which){
 
     <div class="panel" style="margin-bottom:16px">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-        <h3 style="margin:0">Precio histórico</h3>${rangeSel(chId)}
+        <h3 style="margin:0">Precio histÃ³rico</h3>${rangeSel(chId)}
       </div>
       <div class="chart-box"><canvas id="${chId}"></canvas></div>
     </div>
@@ -1368,18 +1368,18 @@ function subDetailRows(det, which){
   const rows = [];
   const push=(k,v)=>rows.push(`<div class="kv"><span class="k">${esc(k)}</span><span class="v">${v}</span></div>`);
   if(which==="oro"){
-    if(det.drawdown) push("Drawdown desde máx. 52s", fmt.signpct(det.drawdown.drawdown_pct,1));
+    if(det.drawdown) push("Drawdown desde mÃ¡x. 52s", fmt.signpct(det.drawdown.drawdown_pct,1));
     if(det.momentum) push("Momentum 12-1m", fmt.signpct(det.momentum.ret_12_1_pct,1));
-    if(det.ratio_silver) push("Ratio Oro/Plata", fmt.num(det.ratio_silver.ratio_actual,2)+" · p"+fmt.num(det.ratio_silver.percentil_2y,0));
+    if(det.ratio_silver) push("Ratio Oro/Plata", fmt.num(det.ratio_silver.ratio_actual,2)+" Â· p"+fmt.num(det.ratio_silver.percentil_2y,0));
     if(det.real_yield) push("Tasa real 10y", fmt.pct(det.real_yield.real_yield_pct,2));
-    if(det.dxy) push("DXY (dólar)", fmt.num(det.dxy.dxy_actual,2));
+    if(det.dxy) push("DXY (dÃ³lar)", fmt.num(det.dxy.dxy_actual,2));
     if(det.vix) push("VIX", fmt.num(det.vix.vix_actual,2));
   }else{
     if(det.drawdown) push("Drawdown desde ATH", fmt.signpct(det.drawdown.drawdown_pct,1));
-    if(det.fear_greed) push("Fear & Greed", det.fear_greed.fg_value+" · "+esc(det.fear_greed.classification||""));
+    if(det.fear_greed) push("Fear & Greed", det.fear_greed.fg_value+" Â· "+esc(det.fear_greed.classification||""));
     if(det.mvrv) push("MVRV Z-Score", fmt.num(det.mvrv.z_score,2));
     if(det.pi_cycle) push("Pi Cycle ratio", fmt.num(det.pi_cycle.ratio,3));
-    if(det.halving_cycle) push("Ciclo halving", esc(det.halving_cycle.fase||"")+" · "+fmt.num(det.halving_cycle.meses_desde_halving,1)+"m");
+    if(det.halving_cycle) push("Ciclo halving", esc(det.halving_cycle.fase||"")+" Â· "+fmt.num(det.halving_cycle.meses_desde_halving,1)+"m");
     if(det.momentum) push("Momentum 12-1m", fmt.signpct(det.momentum.ret_12_1_pct,1));
   }
   return rows.join("");
@@ -1389,7 +1389,7 @@ function subDetailRows(det, which){
 function newsSidebar(news, newsKey, label, ctx){
   const errored = VS.status[newsKey]==="error";
   return `<div><div class="sidebar-news">
-    <div class="hd">📰 Noticias · ${esc(label)}${eduIconStatic('news')} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated[newsKey])}</span>`:""}</div>
+    <div class="hd">ðŸ“° Noticias Â· ${esc(label)}${eduIconStatic('news')} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated[newsKey])}</span>`:""}</div>
     ${errored?errBox(newsKey,"noticias"):""}
     ${news?execSummary(news, ctx):""}
     <div style="margin-top:14px">${news?newsSection(news):""}</div>
@@ -1405,7 +1405,7 @@ function viewHead(em, title, stamp, sub){
 
 /* ===== js/views2.js ===== */
 /* ============================================================
-   VALUE SIGNAL — ETFs USA + Acciones Chilenas views
+   VALUE SIGNAL â€” ETFs USA + Acciones Chilenas views
    ============================================================ */
 const ETF_PESOS = {dy_vs_historico:35, drawdown:25, balance_cagr:15, momentum:10, dgr:15};
 
@@ -1413,15 +1413,15 @@ const ETF_PESOS = {dy_vs_historico:35, drawdown:25, balance_cagr:15, momentum:10
 function renderETFs(){
   const e = VS.data.etfs;
   const news = VS.data.n_etfs;
-  if(VS.status.etfs==="error" && !e) return viewHead("📊","ETFs USA","")+errBox("etfs",VS.FILES.etfs);
-  if(!e||!e.etfs) return viewHead("📊","ETFs USA","")+skeletonCards(2);
+  if(VS.status.etfs==="error" && !e) return viewHead("ðŸ“Š","ETFs USA","")+errBox("etfs",VS.FILES.etfs);
+  if(!e||!e.etfs) return viewHead("ðŸ“Š","ETFs USA","")+skeletonCards(2);
 
   const etfs = Object.values(e.etfs);
   const main = etfs.map(etfPanel).join("") + spSlot();
   const sidebar = newsSidebar(news, "n_etfs", "Macro USA");
 
-  return viewHead("📊","ETFs USA", srcStamp("etfs"),
-    "Dividend ETFs · score de timing para DCA · "+etfs.map(x=>x.ticker).join(" · ")) +
+  return viewHead("ðŸ“Š","ETFs USA", srcStamp("etfs"),
+    "Dividend ETFs Â· score de timing para DCA Â· "+etfs.map(x=>x.ticker).join(" Â· ")) +
     `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
 }
 
@@ -1436,7 +1436,7 @@ function etfPanel(x){
     momentum: eduFor('momentum',{m:x.momentum_pct, buy}),
     dgr: eduFor('dgr',{g:x.dgr_3y_pct}),
   };
-  const er = x.expense_ratio!=null ? fmt.pct(x.expense_ratio*100,2) : "—";
+  const er = x.expense_ratio!=null ? fmt.pct(x.expense_ratio*100,2) : "â€”";
   const dyDelta = (x.dy_actual_pct!=null && x.dy_historico_3y_pct!=null)
     ? `<span class="${x.dy_actual_pct>=x.dy_historico_3y_pct?'chg up':'chg down'}" style="font-size:12px">vs ${fmt.pct(x.dy_historico_3y_pct)} hist</span>`:"";
   return `<div class="panel" style="margin-bottom:16px">
@@ -1444,7 +1444,7 @@ function etfPanel(x){
       <div class="tk">
         <div class="ticker" style="font-size:24px">${esc(x.ticker)}</div>
         <div class="name">${esc(x.long_name||x.name)}</div>
-        <div class="price" style="margin-top:8px">${fmt.usd(x.precio_usd)} <span class="dim" style="font-size:11px">· ${esc(x.type||"")}</span></div>
+        <div class="price" style="margin-top:8px">${fmt.usd(x.precio_usd)} <span class="dim" style="font-size:11px">Â· ${esc(x.type||"")}</span></div>
       </div>
       <div class="score-wrap">
         <div class="gauge-wrap sm">
@@ -1452,7 +1452,7 @@ function etfPanel(x){
           <div class="gv" style="color:${zoneColorVar(x.zona)}">${fmt.score(x.score)}${eduIconStatic('score')}</div>
           <div class="gl">score</div>
         </div>
-        <div class="mult" onclick="openEduStatic('mult',event)" title="¿Cómo se calcula el aporte?">aporte <b>${fmt.usd(x.aporte_sugerido_usd,0)}</b> · x${x.multiplicador}</div>
+        <div class="mult" onclick="openEduStatic('mult',event)" title="Â¿CÃ³mo se calcula el aporte?">aporte <b>${fmt.usd(x.aporte_sugerido_usd,0)}</b> Â· x${x.multiplicador}</div>
         <div style="margin-top:8px">${zoneBadge(x.zona)}</div>
       </div>
     </div>
@@ -1460,14 +1460,14 @@ function etfPanel(x){
 
     <div class="grid c2" style="margin-top:18px">
       <div>
-        <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">Métricas</h3>
+        <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">MÃ©tricas</h3>
         <div class="kv"><span class="k">Dividend Yield actual</span><span class="v">${fmt.pct(x.dy_actual_pct)} ${dyDelta}</span></div>
-        <div class="kv"><span class="k">DY histórico 3y</span><span class="v">${fmt.pct(x.dy_historico_3y_pct)}</span></div>
+        <div class="kv"><span class="k">DY histÃ³rico 3y</span><span class="v">${fmt.pct(x.dy_historico_3y_pct)}</span></div>
         <div class="kv"><span class="k">DGR 3y (crec. dividendo)</span><span class="v">${fmt.signpct(x.dgr_3y_pct,1)}</span></div>
         <div class="kv"><span class="k">Drawdown 52s</span><span class="v">${fmt.signpct(x.drawdown_pct,1)}</span></div>
         <div class="kv"><span class="k">Momentum 12-1m</span><span class="v">${fmt.signpct(x.momentum_pct,1)}</span></div>
         <div class="kv"><span class="k">CAGR precio 3y / 5y</span><span class="v">${fmt.pct(x.cagr_precio_3y_pct)} / ${fmt.pct(x.cagr_precio_5y_pct)}</span></div>
-        <div class="kv"><span class="k">Expense ratio · frecuencia</span><span class="v">${er} · ${esc(x.frequency||"")}</span></div>
+        <div class="kv"><span class="k">Expense ratio Â· frecuencia</span><span class="v">${er} Â· ${esc(x.frequency||"")}</span></div>
       </div>
       <div>
         <h3 style="font-size:12px;color:var(--tx-3);margin:0 0 8px">Componentes del score</h3>
@@ -1476,7 +1476,7 @@ function etfPanel(x){
     </div>
 
     <div style="display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px">
-      <h3 style="margin:0">Precio histórico</h3>${rangeSel(chId)}
+      <h3 style="margin:0">Precio histÃ³rico</h3>${rangeSel(chId)}
     </div>
     <div class="chart-box sm"><canvas id="${chId}"></canvas></div>
     ${x.description?`<div class="hint" style="margin-top:12px;line-height:1.5;color:var(--tx-3)">${esc(x.description)}</div>`:""}
@@ -1484,8 +1484,8 @@ function etfPanel(x){
 }
 
 function spSlot(){
-  return `<div class="soon"><span class="tag">PRÓXIMAMENTE</span>
-    S&P 500 (CFISPETF) y Nasdaq 100 (CFINASDAQ) — score en vivo con CAPE de Shiller. Slot preparado para <span class="mono">sp_nq_data.json</span> con la misma estructura de score/zona.</div>`;
+  return `<div class="soon"><span class="tag">PRÃ“XIMAMENTE</span>
+    S&P 500 (CFISPETF) y Nasdaq 100 (CFINASDAQ) â€” score en vivo con CAPE de Shiller. Slot preparado para <span class="mono">sp_nq_data.json</span> con la misma estructura de score/zona.</div>`;
 }
 
 /* =================== ACCIONES CHILENAS =================== */
@@ -1493,8 +1493,8 @@ function renderChile(param){
   if(param) return renderChileDetail(param);
   const ch = VS.data.chile;
   const news = VS.data.n_chile;
-  if(VS.status.chile==="error" && !ch) return viewHead("🇨🇱","Acciones Chilenas","")+errBox("chile",VS.FILES.chile);
-  if(!ch||!ch.acciones) return viewHead("🇨🇱","Acciones Chilenas","")+skeletonCards(3);
+  if(VS.status.chile==="error" && !ch) return viewHead("ðŸ‡¨ðŸ‡±","Acciones Chilenas","")+errBox("chile",VS.FILES.chile);
+  if(!ch||!ch.acciones) return viewHead("ðŸ‡¨ðŸ‡±","Acciones Chilenas","")+skeletonCards(3);
 
   const acc = ch.acciones.slice();
   const order = {"Sobre benchmark":0,"Dentro benchmark":1,"Bajo benchmark":2};
@@ -1506,7 +1506,7 @@ function renderChile(param){
   const nSobre = acc.filter(a=>a.evaluacion?.status==="Sobre benchmark").length;
 
   const sidebar = `<div><div class="sidebar-news">
-    <div class="hd">📰 Noticias · Chile${eduIconStatic('news')} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated.n_chile)}</span>`:""}</div>
+    <div class="hd">ðŸ“° Noticias Â· Chile${eduIconStatic('news')} ${news?`<span class="hint" style="margin-left:auto">${fmt.ago(VS.updated.n_chile)}</span>`:""}</div>
     ${VS.status.n_chile==="error"?errBox("n_chile","noticias"):""}
     ${news?execSummary(news):""}
     ${news?chileAlign(nSobre, acc.length, news):""}
@@ -1515,12 +1515,12 @@ function renderChile(param){
 
   const main = `
     <div class="section-title" style="margin-top:0">Watchlist dividenderas<span class="count">${acc.length}</span>
-      <span class="hint" style="text-transform:none;letter-spacing:0;font-weight:400">${nSobre} sobre benchmark · ordenadas por exceso sectorial</span>
+      <span class="hint" style="text-transform:none;letter-spacing:0;font-weight:400">${nSobre} sobre benchmark Â· ordenadas por exceso sectorial</span>
       <span class="rule"></span></div>
     <div class="grid">${acc.map(clRow).join("")}</div>`;
 
-  return viewHead("🇨🇱","Acciones Chilenas", srcStamp("chile"),
-    "Dividend Yield (promedio 3 años, definitivos+provisorios) vs rango sectorial") +
+  return viewHead("ðŸ‡¨ðŸ‡±","Acciones Chilenas", srcStamp("chile"),
+    "Dividend Yield (promedio 3 aÃ±os, definitivos+provisorios) vs rango sectorial") +
     `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
 }
 
@@ -1528,19 +1528,19 @@ function chileAlign(nSobre, total, news){
   const sent = news.resumen_ejecutivo?.sentimiento;
   const sg = sentSign(sent);
   let ic,cls,tag,desc;
-  if(nSobre>=3 && sg<0){ ic="✅";cls="good";tag="Contrarian en bloque";
+  if(nSobre>=3 && sg<0){ ic="âœ…";cls="good";tag="Contrarian en bloque";
     desc=`${nSobre} de ${total} acciones sobre benchmark con noticias bajistas: castigo de precio que sube el DY. Buen momento para reforzar las mejores.`; }
-  else if(nSobre>=3 && sg>=0){ ic="✅";cls="good";tag="Varias oportunidades";
-    desc=`${nSobre} acciones sobre su benchmark sectorial. El DY elevado es estructural, no solo por caída de precio.`; }
-  else if(nSobre===0){ ic="⏳";cls="muted";tag="Sin oportunidades";
-    desc="Ninguna acción supera hoy el máximo de su rango sectorial. Mantener aportes base."; }
-  else { ic="•";cls="muted";tag=`${nSobre} sobre benchmark`;
+  else if(nSobre>=3 && sg>=0){ ic="âœ…";cls="good";tag="Varias oportunidades";
+    desc=`${nSobre} acciones sobre su benchmark sectorial. El DY elevado es estructural, no solo por caÃ­da de precio.`; }
+  else if(nSobre===0){ ic="â³";cls="muted";tag="Sin oportunidades";
+    desc="Ninguna acciÃ³n supera hoy el mÃ¡ximo de su rango sectorial. Mantener aportes base."; }
+  else { ic="â€¢";cls="muted";tag=`${nSobre} sobre benchmark`;
     desc="Algunas acciones puntuales superan su rango sectorial. Revisar caso a caso."; }
   return `<div class="align ${cls==='warn'?'warn':''}" style="margin-top:14px">
     <div class="hd"><span class="ic">${ic}</span> ${tag}</div>
     <div class="mx">
       <div class="b"><div class="l">Sobre benchmark</div><div class="v" style="color:var(--z-opp)">${nSobre} / ${total}</div></div>
-      <div class="b"><div class="l">Noticias Chile</div><div class="v">${esc(sent||"—")}</div></div>
+      <div class="b"><div class="l">Noticias Chile</div><div class="v">${esc(sent||"â€”")}</div></div>
     </div>
     <div class="desc">${esc(desc)}</div>
   </div>`;
@@ -1549,7 +1549,7 @@ function chileAlign(nSobre, total, news){
 function renderChileDetail(ticker){
   const ch = VS.data.chile;
   const a = ch&&ch.acciones?ch.acciones.find(x=>x.ticker===ticker):null;
-  if(!a) return `<div class="detail-back" onclick="go('chile')">‹ Volver al watchlist</div><div class="hint">Acción no encontrada.</div>`;
+  if(!a) return `<div class="detail-back" onclick="go('chile')">â€¹ Volver al watchlist</div><div class="hint">AcciÃ³n no encontrada.</div>`;
   const ev = a.evaluacion||{}; const dy=a.dy||{}; const cmf=a.cmf||{};
   const sobre = ev.status==="Sobre benchmark";
   const years = dy.anos_detalle ? Object.keys(dy.anos_detalle).sort() : [];
@@ -1566,7 +1566,7 @@ function renderChileDetail(ticker){
 
   const divs = (a.dividendos_recientes||[]).slice(0,6);
   const divTable = divs.length?`<div class="comp">${divs.map(d=>`
-    <div class="kv"><span class="k">${fmt.date(d.fecha_pago)} · <span class="dim">${esc(d.tipo)}</span></span><span class="v">${fmt.clp(d.monto_clp)}</span></div>`).join("")}</div>`:"";
+    <div class="kv"><span class="k">${fmt.date(d.fecha_pago)} Â· <span class="dim">${esc(d.tipo)}</span></span><span class="v">${fmt.clp(d.monto_clp)}</span></div>`).join("")}</div>`:"";
 
   const status = sobre?"Sobre benchmark":ev.status;
   const statusColor = sobre?"var(--z-opp)":ev.status==="Bajo benchmark"?"var(--z-caro)":"var(--z-neu)";
@@ -1576,19 +1576,19 @@ function renderChileDetail(ticker){
       <div class="card-top">
         <div class="tk">
           <div class="ticker" style="font-size:24px">${esc(a.ticker)}</div>
-          <div class="name" style="max-width:none">${esc(a.nombre)} · ${esc(a.sector)} · <span class="dim">${esc(a.clasificacion||"")}</span>${edCl.icon}</div>
+          <div class="name" style="max-width:none">${esc(a.nombre)} Â· ${esc(a.sector)} Â· <span class="dim">${esc(a.clasificacion||"")}</span>${edCl.icon}</div>
           <div class="price" style="margin-top:8px">${fmt.clp(a.precio_actual_clp)}
             <span class="chg ${a.variacion_pct>=0?'up':'down'}">${fmt.signpct(a.variacion_pct)}</span></div>
         </div>
         <div class="score-wrap">
           <div class="score-num" style="font-size:40px;color:${sobre?'var(--z-opp)':'var(--tx)'}">${fmt.pct(dy.dy_pct)}</div>
-          <div class="mult">DY promedio ${dy.anos_usados||3} años${edDy.icon}</div>
+          <div class="mult">DY promedio ${dy.anos_usados||3} aÃ±os${edDy.icon}</div>
           <div style="margin-top:8px"><span class="zbadge" style="background:${sobre?'var(--z-opp-bg)':'var(--z-neu-bg)'};color:${statusColor};border-color:${statusColor}">${esc(status)}</span></div>
         </div>
       </div>
       <div style="margin-top:16px">
-        <div class="cl-bm">Benchmark ${esc(a.sector)}: <span class="num">${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%</span>
-          · <span class="pp ${ev.vs_benchmark_pp>=0?'pos':'neg'}" style="font-family:var(--f-mono);font-weight:700">${fmt.pp(ev.vs_benchmark_pp)} sobre el máximo</span>${edBm.icon}</div>
+        <div class="cl-bm">Benchmark ${esc(a.sector)}: <span class="num">${fmt.num(a.benchmark_min_pct,1)}â€“${fmt.num(a.benchmark_max_pct,1)}%</span>
+          Â· <span class="pp ${ev.vs_benchmark_pp>=0?'pos':'neg'}" style="font-family:var(--f-mono);font-weight:700">${fmt.pp(ev.vs_benchmark_pp)} sobre el mÃ¡ximo</span>${edBm.icon}</div>
         <div class="bar" style="margin-top:10px">${benchBar(dy.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
         ${edBm.inline}
       </div>
@@ -1597,7 +1597,7 @@ function renderChileDetail(ticker){
 
     <div class="grid c2">
       <div class="panel">
-        <h3>Dividendos por año <span class="dim" style="font-weight:400;text-transform:none">(CLP/acción)</span></h3>
+        <h3>Dividendos por aÃ±o <span class="dim" style="font-weight:400;text-transform:none">(CLP/acciÃ³n)</span></h3>
         ${divbars}
         <div class="kv" style="margin-top:14px"><span class="k">Promedio anual</span><span class="v">${fmt.clp(dy.promedio_anual)}</span></div>
         <div class="kv"><span class="k">CAGR 3y / 5y / 10y${edCagr.icon}</span><span class="v">${fmt.pct((a.cagr_3y||0)*100)} / ${fmt.pct((a.cagr_5y||0)*100)} / ${fmt.pct((a.cagr_10y||0)*100)}</span></div>
@@ -1608,8 +1608,8 @@ function renderChileDetail(ticker){
         <div class="kv"><span class="k">ROE</span><span class="v">${fmt.pct(cmf.roe_pct)}</span></div>
         <div class="kv"><span class="k">Margen neto</span><span class="v">${fmt.pct(cmf.margen_neto_pct)}</span></div>
         <div class="kv"><span class="k">Endeudamiento</span><span class="v">${fmt.pct(cmf.razon_endeudamiento_pct)}</span></div>
-        <div class="kv"><span class="k">Razón corriente</span><span class="v">${fmt.num(cmf.razon_corriente,2)}</span></div>
-        <div class="kv"><span class="k">Patrimonio</span><span class="v">${cmf.patrimonio_total?fmt.clp(cmf.patrimonio_total)+"k":"—"}</span></div>
+        <div class="kv"><span class="k">RazÃ³n corriente</span><span class="v">${fmt.num(cmf.razon_corriente,2)}</span></div>
+        <div class="kv"><span class="k">Patrimonio</span><span class="v">${cmf.patrimonio_total?fmt.clp(cmf.patrimonio_total)+"k":"â€”"}</span></div>
       </div>
     </div>
 
@@ -1618,21 +1618,21 @@ function renderChileDetail(ticker){
       ${divTable||'<div class="hint">Sin registros recientes.</div>'}
     </div>`;
 
-  return `<div class="detail-back" onclick="go('chile')">‹ Volver al watchlist</div>` +
-    viewHead("🇨🇱", a.ticker, srcStamp("chile"), a.razon_social) +
+  return `<div class="detail-back" onclick="go('chile')">â€¹ Volver al watchlist</div>` +
+    viewHead("ðŸ‡¨ðŸ‡±", a.ticker, srcStamp("chile"), a.razon_social) +
     main;
 }
 
 /* ===== js/app.js ===== */
 /* ============================================================
-   VALUE SIGNAL — router + app shell
+   VALUE SIGNAL â€” router + app shell
    ============================================================ */
 const ROUTES = {
-  home:    {label:"Oportunidades", ico:"🎯", render:renderHome},
-  etfs:    {label:"ETFs USA",      ico:"📊", render:renderETFs},
-  chile:   {label:"Chile",         ico:"🇨🇱", render:p=>renderChile(p)},
-  oro:     {label:"Oro",           ico:"🥇", render:()=>renderAsset("oro")},
-  bitcoin: {label:"Bitcoin",       ico:"₿",  render:()=>renderAsset("bitcoin")},
+  home:    {label:"Oportunidades", ico:"ðŸŽ¯", render:renderHome},
+  etfs:    {label:"ETFs USA",      ico:"ðŸ“Š", render:renderETFs},
+  chile:   {label:"Chile",         ico:"ðŸ‡¨ðŸ‡±", render:p=>renderChile(p)},
+  oro:     {label:"Oro",           ico:"ðŸ¥‡", render:()=>renderAsset("oro")},
+  bitcoin: {label:"Bitcoin",       ico:"â‚¿",  render:()=>renderAsset("bitcoin")},
 };
 
 function parseHash(){
@@ -1665,7 +1665,7 @@ function render(){
   try{
     view.innerHTML = ROUTES[route].render(param);
   }catch(e){
-    view.innerHTML = `<div class="err-box">⚠️ Error al renderizar la vista: ${esc(e.message)}</div>`;
+    view.innerHTML = `<div class="err-box">âš ï¸ Error al renderizar la vista: ${esc(e.message)}</div>`;
     console.error(e);
   }
   flushCharts();
@@ -1684,9 +1684,9 @@ function updateHeader(){
   if(btn) btn.classList.toggle("loading", anyLoading);
   const t = document.getElementById("rfTime");
   if(t){
-    if(anyLoading) t.innerHTML = `<b>actualizando…</b>`;
-    else if(newest) t.innerHTML = `datos <b>${fmt.ago(newest.toISOString())}</b>${nErr?` · <span style="color:var(--red)">${nErr} con error</span>`:""}`;
-    else t.innerHTML = `<b>—</b>`;
+    if(anyLoading) t.innerHTML = `<b>actualizandoâ€¦</b>`;
+    else if(newest) t.innerHTML = `datos <b>${fmt.ago(newest.toISOString())}</b>${nErr?` Â· <span style="color:var(--red)">${nErr} con error</span>`:""}`;
+    else t.innerHTML = `<b>â€”</b>`;
   }
 }
 
@@ -1695,7 +1695,7 @@ async function refresh(){
   scheduleRender();
 }
 
-/* status callback during fetches → keep header + view live */
+/* status callback during fetches â†’ keep header + view live */
 function onStatusChange(key){
   updateHeader();
   // re-render current view as its data lands (cheap, coalesced)
@@ -1725,3 +1725,4 @@ document.addEventListener("DOMContentLoaded", init);
 </script>
 </body>
 </html>
+
