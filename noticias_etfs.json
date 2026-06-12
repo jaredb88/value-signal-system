@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T11:26:56.445743+00:00",
+  "updated_at_utc": "2026-06-12T13:26:58.051127+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -58,6 +58,34 @@
         }
       },
       {
+        "title": "US CPI Rate Rises to 4.2%, Bitcoin Price Sees Minor Gains",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOEJLbF9ZejFKaWJ4S1JNMFFZZnlXYVJ0QUxuQkVUNW1GeVc5UTBkUWFfNDh6WjdMVlBEMHVDV05iSklOS1RobTFwOS1jSTV4Q3lCUG1ocWlEMDN6VlU0d2xqcURoVkRuWUxrMEZ6VmNQeEMweEVnRU9vbDBFWi1TeFF5TDVZb3dtQTViZlJGQzF4SENBWVVXUVBUSEJlRUhId2NjRXRnREZWQ3oxZFJlbXhOal8?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 12:51:05 GMT",
+        "pubdate_iso": "2026-06-10T12:51:05+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "FedEx pilots approve new contract after 5 years of negotiations",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9DMk5PN3l1VWN5SHotWWU0clRZR2dubUlmVWMxTVRldXpqMGJQa1BfS3hwamhKUFFUNFNPV2hUU2pKTXExeThITnpKTHRFMVlFYlhReXQxa2RLTTlfOVZfMUFTX3ZFVVBYQ1hnR0Y5TWVZUEdtOWFKd2F3dw?oc=5",
+        "source": "AOL.com",
+        "pubdate": "Tue, 09 Jun 2026 17:17:15 GMT",
+        "pubdate_iso": "2026-06-09T17:17:15+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Stocks Erase Early Gains as Chipmakers Turn Lower",
         "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbU16cjZ4M0ViS0p0cU1hd1llSGVnVVhIWkxVUTNiZXIyYS1sbm5OU2NQOV9IODhnTTJ3dGpWSEZVQUxXUWpNT3dncUJxNF90Y052LV9JeW1ld2g2eUx1MHpSVi1ydndUT0I0UEFwOHVPN2IwNWhKUHJaT09aNDVzTm03dXNOc29LUEJWVWhnOTNfQThkenhPNkRVWVZFaUc2TFcwdkdpcFhFRzA?oc=5",
         "source": "TradingView",
@@ -102,6 +130,20 @@
         }
       },
       {
+        "title": "Why Is Marvell Technology (MRVL) Stock Soaring Today",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZUZXYXVCdEpHZ0JURl9FZ09CX2RzSlRpNDNlN2xBMGpQZGtESS1zUlhXbmE3UnVuT0N6Z01LTHd5eFlUOHIyY2RxUVFGTGhNZWxTd1ROSkN2Z25tS2R3dTlPbzFVX0ZtZ3RNTjZhZC1TcVBqbnZVX2tMMFBueVk2UXBqN3ZkcHFaSEx5S1ZDZ053R1BUY2c5bTV6dWFFYWp4WGlnRFlER2lqUzkwZkhR?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 15:05:43 GMT",
+        "pubdate_iso": "2026-06-11T15:05:43+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff",
         "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOUGlDTi1ZVXI4dlo1NXZGMFNYY2RrYjNfbzRqZkRLTl9SVkM1X3dxeDRjLTVhRHMxWDc4aFQ1NThRWEJ4OUJiejVieDNjNkZVRThZNzhBNG94c3ZnRjRzdGFYUmh5VXdaZVVrWUNXNXVUMEgzM2NuVExzUmRoSXRGSHFxOTRBT2xnSXFQY2pXemJTZkFCc0syNnE0aE92VjdIN09QaHJ3OWFOclJXMXU4RjlIdmM5UFVGbEhidjdXZWI4NUhfZFQ3aVZiYUd3c2VmVlpvdXM3NTQtMjhWcE0zU1RKaTFZUVdkUHJFLWlEbG4?oc=5",
         "source": "TradingView",
@@ -121,20 +163,6 @@
         "source": "TradingView",
         "pubdate": "Thu, 11 Jun 2026 04:53:00 GMT",
         "pubdate_iso": "2026-06-11T04:53:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "NYSE Content Update: ERock Sees $5.9 Billion Market Cap after its IPO Prices",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcVNMSE9wamtDRnhfUDlnbEJrYU1wWWdqWEswRGNDU3RqZHpjVy03eWpWcXVPclpBLURYUG1PTmxQblpQbEtkTGlkWWJ2cXhmc0J5d3dLcnUxRjZIU2x6UmZ1aVdRWnRhTmd3OXA4MVJ4Uk1GWGFUNzFNa0VacVZveHp6dGo0ampDV3diNGNPNWRFTHI0cHdIWUM4Wld6bkctdGp1bnMxRDhYeTZCYTBVb1dqQ0tEdDdwMzVaVlhJc1BPdTgyaGwwSVlkWEhReWs?oc=5",
-        "source": "TradingView",
-        "pubdate": "Wed, 10 Jun 2026 13:15:00 GMT",
-        "pubdate_iso": "2026-06-10T13:15:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -218,20 +246,6 @@
     ],
     "economia": [
       {
-        "title": "Job numbers are up, but see which companies are still cutting",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeFNtSW12MDBYdEd1R2lNTHY3VG1ZZ3hlcmpZRWJKemxocHhsc1FjUDI0ZTFISTQxMWdrTzFiMGRRemxhU2Z6Zno3QS1ZSGxwUEZ3TzY3ZHBDdHB4U2lVNDl0eFZSNDBEOU9KWlJxMWFmbEM3VUNTU2FWV2diSGp4VA?oc=5",
-        "source": "AOL.com",
-        "pubdate": "Fri, 12 Jun 2026 06:59:59 GMT",
-        "pubdate_iso": "2026-06-12T06:59:59+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "The US just had its highest number of people file for unemployment benefits since the Iran war started",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9JbjBleTFTRksyYTVkcTdlX3ExdjFoeExyQS1tbTZfcC1ySmVHUWx0OWlVR3FwX2dYSFd2Njc1NklUdDBiWTBtMDQxSG5FQ3dyT1BtOUk3NTViWG1iMmtOWmxoTTVSSjlZTHBNaUozR01jMUI1c2UxVzdB?oc=5",
         "source": "AOL.com",
@@ -279,6 +293,20 @@
         "source": "FOREX.com",
         "pubdate": "Wed, 10 Jun 2026 17:29:46 GMT",
         "pubdate_iso": "2026-06-10T17:29:46+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Bitcoin y Ethereum, pendientes del CPI de Estados Unidos: el dato que puede mover al mercado cripto",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVnU1RkhOemRjem9xRjVHZjYwZUxwQjd6dmdVcDhMbHFjazlLMWVkdkxYS3RBaHJVWUlLOTg1TTFlVl95X3ZrYzRmeEhiU1duU1V5cDdjQzRCMTVJaEF3NWpxVk5RTEpSNXhSOFF1NzgzWFh3UW53QjNsMWdxT0FnbmZTRTZVY01HWUpoN1E3UWkzOEsyTXRYbkpfWFRxdGZpVU1mYVJYdXI0YWFldEpabDY3S21LNWNNUXd6VEs2NWdJRzdOQ3NVczgxSktxWEY2azREQ3FQQQ?oc=5",
+        "source": "Cripto247",
+        "pubdate": "Wed, 10 Jun 2026 12:16:43 GMT",
+        "pubdate_iso": "2026-06-10T12:16:43+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -392,9 +420,9 @@
     ]
   },
   "stats": {
-    "total_noticias": 25,
+    "total_noticias": 27,
     "por_categoria": {
-      "fed_tasas": 3,
+      "fed_tasas": 5,
       "mercado": 5,
       "tech_nasdaq": 5,
       "economia": 5,
@@ -407,7 +435,7 @@
     "score_neto": 3,
     "n_positivas": 2,
     "n_negativas": 1,
-    "n_neutrales": 22,
+    "n_neutrales": 24,
     "narrativa": "El feed muestra 2 senales positivas y 1 negativas (neto +3). Factores dominantes: Rally accionario; Rally de IA: impulso Nasdaq.",
     "narrativa_fuente": "plantilla",
     "veredicto": "Levemente ALCISTA"
