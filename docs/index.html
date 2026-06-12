@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Value Signal · Señales de inversión</title>
+<meta name="description" content="Sistema cuantitativo de timing para DCA. Señales contrarian sobre Oro, Bitcoin, ETFs de dividendos USA y acciones chilenas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="top-row">
+      <div class="brand" id="brand" title="Inicio">
+        <span class="tri">▲</span>
+        <span class="b1">VALUE</span><span class="b2">SIGNAL</span>
+        <span class="tag">Timing cuantitativo de DCA · Señales contrarian</span>
+      </div>
+      <nav class="tabs" id="nav"></nav>
+      <div class="refresh">
+        <span class="rf-time" id="rfTime"></span>
+        <button class="rf-btn" id="rfBtn" title="Actualizar datos"><span class="spin"></span>Actualizar</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div id="view"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fbar">
+      <span class="fbrand">▲ VALUE<b>SIGNAL</b></span>
+      <span class="disc">Sistema personal de señales de inversión · Datos:
+        <a class="src" href="https://finance.yahoo.com" target="_blank" rel="noopener">Yahoo Finance</a>,
+        <a class="src" href="https://www.bolsadesantiago.com" target="_blank" rel="noopener">Bolsa de Santiago</a>,
+        <a class="src" href="https://www.cmfchile.cl" target="_blank" rel="noopener">CMF</a>.
+        No es recomendación de inversión.</span>
+      <span style="margin-left:auto;font-family:var(--f-mono)">“Compra miedo, no euforia”</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/views.js"></script>
+<script src="js/views2.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
