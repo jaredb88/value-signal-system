@@ -528,6 +528,7 @@ const VS = {
     btc:    "btc_data.json",
     etfs:   "dividend_etfs_data.json",
     chile:  "acciones_chilenas.json",
+    usa:    "acciones_usa_data.json",
     n_gld:  "noticias_gld.json",
     n_btc:  "noticias_btc.json",
     n_etfs: "noticias_etfs.json",
@@ -1540,7 +1541,7 @@ function evScore(rows){ // rows = [[cls,...]] → balance ok vs bad
 
 /* ---------- salud financiera: acción chilena (datos CMF) ---------- */
 function evalSaludChile(a){
-  const c=a.cmf||{}, rows=[];
+  const c=a.cmf||a.fund||{}, rows=[];
   const sector=(a.sector||"").toUpperCase();
   const finSector = sector.includes("AFP")||sector.includes("BANCO");
 
@@ -1576,7 +1577,8 @@ function evalSaludChile(a){
                 ["","<b>Situación financiera mixta</b>: fortalezas y alertas conviven. Revisar la tendencia de 5 años antes de concluir."];
   const periodo=c.periodo||"";
   const parcial=/^(03|06|09)\//.test(periodo);
-  const note = `Datos CMF ${esc(periodo)}${parcial?" (período parcial: el ROE y márgenes no están anualizados — para el filtro de compra usa el promedio de 5 años)":""}. La foto de un período no reemplaza la tendencia de 5 años.`;
+  const fuente = a.cmf ? "CMF" : (c.fuente||"estados financieros");
+  const note = `Datos ${esc(fuente)} ${esc(periodo)}${parcial&&a.cmf?" (período parcial: el ROE y márgenes no están anualizados — para el filtro de compra usa el promedio de 5 años)":""}. La foto de un período no reemplaza la tendencia de 5 años.`;
   return {rows,concl,note};
 }
 
@@ -1671,6 +1673,196 @@ function evalETFBlock(x){
       ${evConcl(cZona[0],cZona[1])}
     </div>`;
   }catch(e){ console.warn("evalETFBlock",e); return ""; }
+}
+
+/* =================== ACCIONES USA =================== */
+/* Misma estructura que Chile, pero la valoración es por múltiplos cruzados
+   (PER por clasificación + P/B vs ROE + Graham de desempate), porque las
+   empresas de Crecimiento no se valorizan por dividendo. */
+
+const US_VAL_COLOR = {Barata:"var(--z-opp)", Razonable:"var(--z-neu)", Cara:"var(--z-caro)"};
+const US_VAL_BG    = {Barata:"var(--z-opp-bg)", Razonable:"var(--z-neu-bg)", Cara:"var(--z-caro-bg)"};
+
+function perBar(per, min, max, status){
+  if(per==null||min==null||max==null) return "";
+  const top = Math.max(max*1.6, per*1.15, max+5);
+  const x = v => Math.max(0,Math.min(100,(v/top)*100));
+  const color = US_VAL_COLOR[status]||"var(--z-neu)";
+  return `<div class="bmbar">
+    <div class="range" style="left:${x(min)}%;width:${x(max)-x(min)}%"></div>
+    <div class="pin" style="left:${x(per)}%;background:${color}"></div>
+  </div>`;
+}
+
+function usRow(a){
+  const v = a.valoracion||{};
+  const barata = v.status==="Barata", cara = v.status==="Cara";
+  const color = US_VAL_COLOR[v.status]||"var(--tx)";
+  return `<div class="cl-row ${barata?'opp':''}" onclick="go('usa','${esc(a.ticker)}')">
+    <div class="cl-id"><div class="t">${esc(a.ticker)}</div><div class="s">${esc(a.nombre)} · ${esc(a.sector)}</div></div>
+    <div class="cl-dy"><div class="v" style="color:${color}">${fmt.num(a.per,1)}</div><div class="l">PER 12m</div></div>
+    <div class="cl-bm">
+      <div>PER razonable <span class="dim">(${esc(a.clasificacion||"")})</span>: <span class="num">${fmt.num(v.per_rango_min,0)}–${fmt.num(v.per_rango_max,0)}</span>
+        · Graham <span class="num">${fmt.num(v.graham,1)}</span>
+        · <span class="pp ${barata?'pos':'neg'}" style="color:${color}">${esc(v.status||"—")}</span></div>
+      <div class="bar">${perBar(a.per, v.per_rango_min, v.per_rango_max, v.status)}</div>
+    </div>
+    <div class="right"><span class="pill-link">Ver detalle ›</span></div>
+  </div>`;
+}
+
+function renderUSA(param){
+  if(param) return renderUSADetail(param);
+  const us = VS.data.usa;
+  if(VS.status.usa==="error" && !us) return viewHead("🇺🇸","Acciones USA","")+errBox("usa",VS.FILES.usa);
+  if(!us||!us.acciones) return viewHead("🇺🇸","Acciones USA","")+skeletonCards(2);
+
+  const acc = us.acciones.slice();
+  const order = {"Barata":0,"Razonable":1,"Cara":2};
+  acc.sort((a,b)=>(order[a.valoracion?.status]??3)-(order[b.valoracion?.status]??3));
+  const nBaratas = acc.filter(a=>a.valoracion?.status==="Barata").length;
+
+  const main = `
+    <div class="section-title" style="margin-top:0">Watchlist USA<span class="count">${acc.length}</span>
+      <span class="hint" style="text-transform:none;letter-spacing:0;font-weight:400">valoración por múltiplos cruzados (PER · P/B · Graham)</span>
+      <span class="rule"></span></div>
+    <div class="grid">${acc.map(usRow).join("")}</div>
+    <div class="hint" style="margin-top:14px;line-height:1.5">Empresas de Crecimiento: la tesis es ganancia por capital, no por dividendo. Una empresa excelente no es buena inversión si el precio es muy caro — si está "Cara", queda en watchlist hasta que el precio corrija.</div>`;
+
+  return viewHead("🇺🇸","Acciones USA", srcStamp("usa"),
+    "Crecimiento USA · PER por clasificación, P/B según ROE y Graham (<22.5) como desempate") + main;
+}
+
+function renderUSADetail(ticker){
+  const us = VS.data.usa;
+  if(!us||!us.acciones) return viewHead("🇺🇸",ticker,"")+skeletonCards(2);
+  const a = us.acciones.find(x=>x.ticker===ticker);
+  if(!a) return viewHead("🇺🇸",ticker,"")+`<div class="hint">No encontrada en el watchlist.</div>`;
+
+  const v = a.valoracion||{};
+  const color = US_VAL_COLOR[v.status]||"var(--tx)";
+  const chId = "chart_usa_"+a.ticker;
+  queueChart(chId, a.historico, "close", "#26a69a", "3Y");
+
+  const dy = a.dy||{};
+  const years = Object.keys(dy.anos_detalle||{}).sort();
+  const maxY = years.length?Math.max(...years.map(y=>dy.anos_detalle[y])):1;
+  const divbars = years.length ? `<div class="divbars">${years.map(y=>{
+    const val=dy.anos_detalle[y]; const h=Math.max(6,(val/maxY)*100);
+    return `<div class="c"><div class="am">$${fmt.num(val,2)}</div><div class="bar" style="height:${h}%"></div><div class="yr">${y}</div></div>`;
+  }).join("")}</div>` : "";
+
+  const divs = (a.dividendos_recientes||[]).slice(0,6);
+  const divTable = divs.length?`<div class="comp">${divs.map(d=>`
+    <div class="kv"><span class="k">${fmt.date(d.fecha_pago)} · <span class="dim">${esc(d.tipo)}</span></span><span class="v">$${fmt.num(d.monto_usd,2)}</span></div>`).join("")}</div>`:"";
+
+  const f = a.fund||{};
+  const main = `
+    <div class="panel" style="margin-bottom:16px">
+      <div class="card-top">
+        <div class="tk">
+          <div class="ticker" style="font-size:24px">${esc(a.ticker)}</div>
+          <div class="name" style="max-width:none">${esc(a.nombre)} · ${esc(a.sector)} · <span class="dim">${esc(a.clasificacion||"")}</span></div>
+          <div class="price" style="margin-top:8px">${fmt.usd(a.precio_actual_usd)}
+            <span class="chg ${a.variacion_pct>=0?'up':'down'}">${fmt.signpct(a.variacion_pct)}</span></div>
+        </div>
+        <div class="score-wrap">
+          <div class="score-num" style="font-size:40px;color:${color}">${fmt.num(a.per,1)}</div>
+          <div class="mult">PER (últimos 12m)</div>
+          <div style="margin-top:8px"><span class="zbadge" style="background:${US_VAL_BG[v.status]||'var(--z-neu-bg)'};color:${color};border-color:${color}">${esc(v.status||"—")}</span></div>
+        </div>
+      </div>
+      ${a.descripcion?`<div class="hint" style="margin-top:14px;line-height:1.55;color:var(--tx-3)">${esc(a.descripcion)}</div>`:""}
+      <div style="margin-top:16px">
+        <div class="cl-bm">PER razonable <span class="dim">(${esc(a.clasificacion||"")})</span>: <span class="num">${fmt.num(v.per_rango_min,0)}–${fmt.num(v.per_rango_max,0)}</span>
+          · P/B ${fmt.num(a.pb,1)} <span class="dim">(razonable ${fmt.num(v.pb_rango_min,1)}–${fmt.num(v.pb_rango_max,1)} para ROE ${fmt.pct(f.roe_pct)})</span>
+          · Graham <span class="num">${fmt.num(v.graham,1)}</span> <span class="dim">vs 22.5</span></div>
+        <div class="bar" style="margin-top:10px">${perBar(a.per, v.per_rango_min, v.per_rango_max, v.status)}</div>
+      </div>
+    </div>
+
+    ${evalUSAPanel(a)}
+
+    <div class="panel" style="margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <h3 style="margin:0">Precio histórico</h3>${rangeSel(chId)}
+      </div>
+      <div class="chart-box sm"><canvas id="${chId}"></canvas></div>
+    </div>
+
+    <div class="grid c2">
+      <div class="panel">
+        <h3>Dividendos por año <span class="dim" style="font-weight:400;text-transform:none">(USD/acción)</span></h3>
+        ${divbars || `<div class="hint" style="line-height:1.5">No paga dividendos relevantes — empresa de Crecimiento: reinvierte las utilidades. La tesis aquí es ganancia por capital; si algún día se vuelve DGI, recién entra a la estrategia dividendera.</div>`}
+        ${years.length?`<div class="kv" style="margin-top:14px"><span class="k">DY (prom. ${dy.anos_usados||0} años)</span><span class="v">${fmt.pct(dy.dy_pct,2)}</span></div>`:""}
+        ${a.cagr_5y!=null?`<div class="kv"><span class="k">CAGR dividendo 3y / 5y / 10y</span><span class="v">${fmt.pct((a.cagr_3y||0)*100)} / ${fmt.pct((a.cagr_5y||0)*100)} / ${a.cagr_10y!=null?fmt.pct(a.cagr_10y*100):"—"}</span></div>`:""}
+      </div>
+      <div class="panel">
+        <h3>Fundamentales <span class="dim" style="font-weight:400;text-transform:none">${esc(f.periodo||"")}</span></h3>
+        <div class="kv"><span class="k">ROE</span><span class="v">${fmt.pct(f.roe_pct)}</span></div>
+        <div class="kv"><span class="k">Margen neto</span><span class="v">${fmt.pct(f.margen_neto_pct)}</span></div>
+        <div class="kv"><span class="k">Endeudamiento</span><span class="v">${fmt.pct(f.razon_endeudamiento_pct)}</span></div>
+        <div class="kv"><span class="k">Razón corriente</span><span class="v">${fmt.num(f.razon_corriente,2)}</span></div>
+        <div class="kv"><span class="k">Payout · G</span><span class="v">${fmt.pct(a.payout_pct,0)} · ${fmt.pct(a.g_pct)}</span></div>
+        <div class="kv"><span class="k">Patrimonio</span><span class="v">${f.patrimonio_total?"$"+(f.patrimonio_total/1e9).toFixed(1)+"B":"—"}</span></div>
+      </div>
+    </div>
+
+    ${divTable?`<div class="panel" style="margin-top:16px"><h3>Dividendos recientes</h3>${divTable}</div>`:""}`;
+
+  return `<div class="detail-back" onclick="go('usa')">‹ Volver al watchlist</div>` +
+    viewHead("🇺🇸", a.ticker, srcStamp("usa"), a.razon_social) +
+    main;
+}
+
+/* ---------- evaluación fundamental USA (múltiplos, no dividendo) ---------- */
+function evalValorUSA(a){
+  const rows=[]; const v=a.valoracion||{}; const f=a.fund||{};
+  if(a.per!=null && v.per_rango_max!=null){
+    const cls = a.per < v.per_rango_min ? "ok" : a.per <= v.per_rango_max ? "mid" : "bad";
+    rows.push([cls,`PER ${fmt.num(a.per,1)} vs rango ${fmt.num(v.per_rango_min,0)}–${fmt.num(v.per_rango_max,0)}`,
+      cls==="ok"?"bajo el rango razonable de su clasificación: posible descuento (verificar que la utilidad sea estable y operacional).":
+      cls==="mid"?"dentro del rango razonable para una empresa de "+esc((a.clasificacion||"").toLowerCase())+".":
+      "sobre el rango razonable: el mercado paga muchos años de utilidad por adelantado."]);
+  }
+  if(a.pb!=null && v.pb_rango_max!=null){
+    const cls = a.pb <= v.pb_rango_max ? "ok" : a.pb <= v.pb_rango_max*1.5 ? "mid" : "bad";
+    rows.push([cls,`P/B ${fmt.num(a.pb,1)} vs razonable ${fmt.num(v.pb_rango_min,1)}–${fmt.num(v.pb_rango_max,1)}`,
+      cls==="ok"?`coherente con su ROE (${fmt.pct(f.roe_pct)}).`:
+      cls==="mid"?"algo sobre lo que su ROE justifica.":
+      `muy por sobre lo que el ROE (${fmt.pct(f.roe_pct)}) justifica según la tabla ROE↔P/B.`]);
+  }
+  if(v.graham!=null){
+    const cls = v.graham < 22.5 ? "ok" : v.graham < 45 ? "mid" : "bad";
+    rows.push([cls,`Graham ${fmt.num(v.graham,1)} vs 22.5`,
+      cls==="ok"?"bajo el umbral de Graham: precio razonable según el desempate clásico.":
+      cls==="mid"?"sobre el umbral de Graham: cara en términos value clásicos.":
+      "muy sobre el umbral: el precio descuenta crecimiento extraordinario por años."]);
+  }
+  if(a.g_pct!=null){
+    rows.push(["mid",`G = ${fmt.pct(a.g_pct)}`,
+      `crecimiento implícito (ROE × retención). ${a.payout_pct<5?"Sin dividendo relevante: toda la tesis es apreciación de capital.":"Parte de la utilidad se reparte."}`]);
+  }
+  const s=evScore(rows);
+  const concl = v.status==="Barata" ? ["ok","<b>Precio con descuento</b> según múltiplos cruzados: revisar utilidad estable y operacional antes de comprar (evitar la trampa del PER bajo)."] :
+                v.status==="Razonable" ? ["","<b>Precio razonable</b> para su clasificación: comprable si la convicción cualitativa acompaña."] :
+                ["bad","<b>Acción cara hoy</b> según múltiplos: una empresa excelente no es buena inversión a cualquier precio. Mantener en watchlist — en los momentos de pánico están las mejores opciones."];
+  return {rows,concl};
+}
+
+function evalUSAPanel(a){
+  try{
+    const sal=evalSaludChile(a), val=evalValorUSA(a);
+    if(!sal.rows.length && !val.rows.length) return "";
+    return `<div class="panel" style="margin-bottom:16px">
+      <h3>🔬 Evaluación fundamental</h3>
+      <div class="ev-grid">
+        <div class="ev-col"><h4>Salud financiera</h4>${sal.rows.map(r=>evRow(...r)).join("")}${evConcl(sal.concl[0],sal.concl[1])}</div>
+        <div class="ev-col"><h4>Valoración por múltiplos</h4>${val.rows.map(r=>evRow(...r)).join("")}${evConcl(val.concl[0],val.concl[1])}</div>
+      </div>
+      <div class="ev-note">${sal.note} Valoración por múltiplos cruzados — sin flujo de caja descontado (muy sensible a supuestos para el inversionista minoritario).</div>
+    </div>`;
+  }catch(e){ console.warn("evalUSAPanel",e); return ""; }
 }
 
 /* =================== ACCIONES CHILENAS =================== */
@@ -1818,6 +2010,7 @@ const ROUTES = {
   home:    {label:"Oportunidades", ico:"🎯", render:renderHome},
   etfs:    {label:"ETFs USA",      ico:"📊", render:renderETFs},
   chile:   {label:"Chile",         ico:"🇨🇱", render:p=>renderChile(p)},
+  usa:     {label:"Acciones USA",  ico:"🇺🇸", render:p=>renderUSA(p)},
   oro:     {label:"Oro",           ico:"🥇", render:()=>renderAsset("oro")},
   bitcoin: {label:"Bitcoin",       ico:"₿",  render:()=>renderAsset("bitcoin")},
 };
