@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-12T09:04:52.768459",
-  "duracion_segundos": 104.632537,
+  "fecha_actualizacion": "2026-06-12T09:35:09.333375",
+  "duracion_segundos": 121.163832,
   "n_acciones": 11,
   "acciones": [
     {
@@ -137,9 +137,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Operadora de la zona franca de Iquique. Negocio estable y predecible. ROE 35%, payout 74%, G=9%.",
-      "precio_actual_clp": 988.24,
+      "precio_actual_clp": 988.06,
       "razon_social": "ZONA FRANCA DE IQUIQUE S.A.",
-      "variacion_pct": 0,
+      "variacion_pct": -0.02,
       "dy": {
         "dy_pct": 7.0,
         "anos_usados": 3,
@@ -151,9 +151,9 @@
         "promedio_anual": 69.21,
         "advertencia": null
       },
-      "cagr_3y": 0.15890492087364105,
-      "cagr_5y": 0.1992288819086645,
-      "cagr_10y": 0.06734672028559197,
+      "cagr_3y": 0.15883455485183995,
+      "cagr_5y": 0.19918519273854018,
+      "cagr_10y": 0.06732727782641512,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
@@ -515,9 +515,9 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 128,
+      "precio_actual_clp": 128.01,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": 0,
+      "variacion_pct": 0.01,
       "dy": {
         "dy_pct": 6.21,
         "anos_usados": 3,
@@ -529,9 +529,9 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.01474743056297223,
-      "cagr_5y": 0.027066087089351765,
-      "cagr_10y": -0.02604731495631274,
+      "cagr_3y": 0.014773855589170104,
+      "cagr_5y": 0.027082134495488797,
+      "cagr_10y": -0.02603970621845164,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -767,9 +767,9 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de GLP en Chile, Colombia y Peru. Crecimiento moderado por expansion regional. ROE 33%, payout 63%, G=12%.",
-      "precio_actual_clp": 8368.7,
+      "precio_actual_clp": 8360,
       "razon_social": "EMPRESAS LIPIGAS S.A.",
-      "variacion_pct": 0,
+      "variacion_pct": -0.1,
       "dy": {
         "dy_pct": 4.17,
         "anos_usados": 2,
@@ -780,8 +780,8 @@
         "promedio_anual": 349.0,
         "advertencia": "Solo 2 anos disponibles (ideal: 3)"
       },
-      "cagr_3y": 0.4495554416982559,
-      "cagr_5y": 0.17334237730672286,
+      "cagr_3y": 0.44905295405598067,
+      "cagr_5y": 0.1730983172684697,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
@@ -1144,11 +1144,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3851,
+      "precio_actual_clp": 3872,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": 0,
+      "variacion_pct": 0.55,
       "dy": {
-        "dy_pct": 10.48,
+        "dy_pct": 10.42,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1158,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.12081371435483335,
-      "cagr_5y": 0.21403787229347682,
-      "cagr_10y": 0.11471287332448998,
+      "cagr_3y": 0.12284733623251687,
+      "cagr_5y": 0.215359054636441,
+      "cagr_10y": 0.11531925412134658,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 1.98
+        "vs_benchmark_pp": 1.92
       },
       "cmf": {
         "periodo": "03/2026",
