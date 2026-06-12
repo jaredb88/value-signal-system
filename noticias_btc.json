@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T04:40:04.282019+00:00",
+  "updated_at_utc": "2026-06-12T06:39:33.384110+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -29,6 +29,20 @@
   },
   "noticias_por_categoria": {
     "precio": [
+      {
+        "title": "Predicción del precio de Bitcoin 2023-2031",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE81dG5aU3dxNlA3Rlp0THphYW9hZzNMRGZHZGFIMHdENXhpeG1Vdi1FdGdHb1phR0pvdkFkSUpQQzVjUk5veTZGUGxvYUE0STlraVFzUWxLYl9GU1c0bGc?oc=5",
+        "source": "Changelly",
+        "pubdate": "Fri, 12 Jun 2026 04:35:28 GMT",
+        "pubdate_iso": "2026-06-12T04:35:28+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Los Bitcoin declarados por Adorni: cómo evolucionó la criptomoneda que hoy investiga la Justicia",
         "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPajgwanpFZ1lTN0tjOFlrZC10RWxsS21uZTd0TlpFc1dTWkJod3RsaUtaWGVXM1pidUxpWllKVFE1UUNscVh2TG5JVFBCdW8xRjhPeTZjTUpCMWs0X05VVWZsdWNQb3JsRlpRMFJyUjJvNlVEdTIxbjlRVm5yYVBtTGc3anlSVG04aG9mOWI3RWg0NlQ2X3VCMjhXeUtFYW9CalkyN2w1NjVaY0RlS1Z0MmI0ZnJQYW1lRXFxdW5DT3F4d1NQSnJzVUJVM1pER0NPaEHSAcsBQVVfeXFMTW9DUE5sN0Rwa05tWE1HTkxScnNmd1pJOXoxMlAxR21rSHNFSmVnZGduOGhDZEZGRENQTWdxeUxOWjlSTmNIRFlkVVRPTWZjOEtJWUQxaG9GV1d1emdVbW1ac0w2U1c4clh6dXpGNXd1WC10LTZFY2RMOWw3ZG1VSU1hTjZQZk8wcDdhdVI2Mkc0ZGFvclBUT3hRcWYtdHFTUjk4RW1wV2h1bUNSckd1NlI2MDhNT1ZkZDlKYVdDSU0zellPcm5LbDg0ZmM?oc=5",
@@ -74,20 +88,6 @@
       {
         "title": "Cuánto vale Bitcoin hoy, 11 de junio de 2026",
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQN0FCV0VockxLV2NzTnVNYmhMUmNjbW5ubkI4d0dOd0ExR2JOMXB0QmpYU1lwZW8yZ3ZEQV8wdWZvbGlDVWF5YTZIdnRrSjZsaFY0Q29NUFVKX2d6QVFudVBMSnRxQzMxbkU3eUVwUEFMcUJERTlJRjhGY3Z3b2hhcWRIU0hMd042SDRIZGNwLWlGQjFjNU0wM2ttenNhclJtT283eUxBcUtUeWkzdGlGSUZGaVNZRndzdHdv0gHAAUFVX3lxTE0wRFRDMmg0ckxZbEZUSHBpTG5GMzVqZEhwNHhXYW9WYnR2aVZ2YXctc3l4QlgwekI3TC1QcDZEY196WjhTM1hDNThUVlFoemhsYXZfWjhQR1d4YndMd3ZwNEN1MjNGMnQyZHExS1VqRVBFWEkyYk1CVjFOQWk5THNibWpfMUhXMkhZUE1DdHBDTGlVUW5TMmFmNHNybWhhUkpmRVpxZGx3dWVUR2V2aDhzMnBxMEd3dmVfbUFYVk1pVQ?oc=5",
-        "source": "iProUP",
-        "pubdate": "Thu, 11 Jun 2026 15:10:00 GMT",
-        "pubdate_iso": "2026-06-11T15:10:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precio de criptomonedas en Argentina: cuánto valen hoy, 11 de junio de 2026",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQ3VELVZXX0xHVzJ6aEJDNDNqQ2FCaHhJMDlwWnNwRHZaU01DYWZZejM2SEVjSmRwTzBJUU0xNWl5cFVVZklkckowYXlDRU90eElCMW5aOHRBREs1eUE4ZFhrVUlIZFhWM0JxLXluckRYS0s4ZW5pc1hnMDBlcUJxSVY5R3BGRnVuSGROd3o1eVdudXhDcmUtRnRKcXFiVU5CY2F4TU5weDd3OGFoSEd1b2NHc3BqdmRpd0JJ0gHAAUFVX3lxTE1zVWR3NTBpQXNpVUppek0yb2xlT3NVZ3BURzR5M1RxN1VoWDJPZGpxY0p4WmRxdXFuUTFlOUtKaGxNVXlCNk9JOHNNU3FyTWhNMXR0TXQ2VWQzX0U3eGU1cnpGS2hsMEl1RTdYOG93cVFxbXNHYjBTY2xDZExEY0dUckFHZFZSM04xdW9MbUw2Q1dSekY5UjRrQk40aDJEdFc2UlBldDd4ekJFSHRHVEVvWVU0X29oM01ZQ3ptTmFmeg?oc=5",
         "source": "iProUP",
         "pubdate": "Thu, 11 Jun 2026 15:10:00 GMT",
         "pubdate_iso": "2026-06-11T15:10:00+00:00",
@@ -174,6 +174,20 @@
     ],
     "regulacion": [
       {
+        "title": "Japan will regulate the crypto sector like the stock market",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWm9SN1lUYkFVcERMcGZ1Q2NKMDg5OHBPeHczVTA1aFFuVk04SndoVUJSeVlad0M4RVNSV3NQVFlvdVRTLU8zZDJzZU9USl8yWTlNam5vNE9TS3doaG5LLVJOWGlGWmVSd2tMWnh2SUpTTk55RV9UZjFVa0RqTGtOdWFwT1pRcDdfMnFTaXUwOUM?oc=5",
+        "source": "Bit2Me News",
+        "pubdate": "Thu, 11 Jun 2026 15:00:04 GMT",
+        "pubdate_iso": "2026-06-11T15:00:04+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Hungría despenalizará el comercio cripto y revertirá normas que contemplaban cárcel",
         "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcVdzbm5YakdUQnoyQVlVUTBpYnNEZE1tTThXMUV1a1pJNUtqSW1FaUlkUFljeUQwbjBhVXM4dXlNUXc1N1V2cGEtVjRSSVR2R2RzdTZPYXJzZ0hucXpRdF9CenlGMjNKTzAyekdmZV9kcFVaVXpIamNSTzJIQWoxWWNSRTAzOGtTVjRiN2xXeHJaV3ltbEV2NUJyWlpvXzBrSHFZaVFOMjlydkJLeFdEVldqYUJnU09WZW9zZHlQb0s?oc=5",
         "source": "DiarioBitcoin",
@@ -228,23 +242,23 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "La regulación de las criptomonedas se profundiza con nuevas propuestas de la UE",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPM1dVMEc4aGppVUhtM1dqUXliaS1fXzFjWkRxYmktWjY0VmtBQ2dSY2NNRV9fVDNGOFB2bDA1NTRLcjVQNS1ZaWFLam9Dd0RqNWZkUlp5R2otQkpfNEVkUGFnM3M0UTlMWVRreDRwQUxJdEVIOW9fam1rNjVITlJibFMyaGR4Z29YZFQ2Z3JNX1RUWlE3OTZ3ek1WZEVLMmpVYUZBYm04N2RHSVA3N0tPWmZuWkcyV3VTNTJuUzlpRzVvVTMz0gHKAUFVX3lxTE5HcDB5czM4eFBnSzZEYmVfLWxtbHhkb281SnZsc29fYVpYOWQxQnROZHoxWGZ5SmtDTjhyRGJuOC1fME1kQjRYc2k2ejg0M04zWXcyOE4tcjVNTF85ZzQ3VlNLay1tdHRoR3dIZDhaMUxhbElURlNIVk9SRjBpZzQyQTI3Sk9kYWZtV3RCOFczbEtMQ0tnZUxKM3RrR3UzbXQtSWtEenFsSXA3NXZQMVJrcnM4TlE3UWwyMks0YzdNempCU05GYUlhWmc?oc=5",
-        "source": "The Coin Republic",
-        "pubdate": "Thu, 11 Jun 2026 09:30:00 GMT",
-        "pubdate_iso": "2026-06-11T09:30:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ],
     "adopcion": [
+      {
+        "title": "News Explorer — Crypto Adoption in Nepal 'Warrants Close Monitoring': IMF",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQa3N4WFgzS04wQWUxem0tRG9qQ0dCMmpqejZEQktoejI3V2lLaXlhMjlCdlVyYUQ0SWZyakxORjRVN0F1ZXV4WlNUY0puWVRlVDZxcFJaanFOV2QyblNYUWlRM3J1WkxnTEV1VEQ5Sk90YThiZTFZVldUQ3otRzBiTl9fMDR4LTItbXo5WHBpSHR6V1lyUmhDTjZOdmdkZFdVLUx6MWR0YWU3bm1V?oc=5",
+        "source": "Decrypt",
+        "pubdate": "Thu, 11 Jun 2026 11:39:45 GMT",
+        "pubdate_iso": "2026-06-11T11:39:45+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 1,
+          "intensidad_label": "leve",
+          "emoji": "🟢",
+          "razonamiento": "Adopcion mencionada"
+        }
+      },
       {
         "title": "Se desploma más del 40% en 30 días. La estrategia se acerca al mínimo anual, ¿podrá mantener el nivel de $100 ante el desplome del Bitcoin?",
         "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeEFUY0hJSzlCRldGaVhiUlNKQUh2UVJ3dVhSb2RnZ1ZPdVhWR2s0Rnp4cXR1UDJ3LWFwTV9wU2ppb1F2Y0ZfTERzS2RlaG1kbjY4Mk1PcU9ReWQ5QkxGaGVkWm54VnB0Ylo2SDBQRUNqVkRzd0JPdU9tY3hqQ2tWelk3WndVQ0I0T1gtVHpHUmlQdnBMTVJvWkNoWXFlZHhOZFJKNXdsWmYxY05GTFgwVGZhZEJPV2lOblRmTzZqd1FyNEppbDdCMnFiOUdfMVJIS1lJ?oc=5",
@@ -304,11 +318,11 @@
         }
       },
       {
-        "title": "XRPUSD - Analysts tip pressure for Bitcoin, gold as US inflation tops 4%",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNVpCNjRFZ0hLTW1nT2wxeWNDeHNfZ254MjA0cmMzMGJQb2Q4cFhBLUx5T3lvMlRZSW9ZaU1JdWlxQ1pCY2FfQkNRMXVXUjRITFFZcTNpbXlMYWVpLU83MHRUMFJUNjNQdEtHNnBsX1dzM3c1eWwtdDRoVmFDVGxjOFJaa19xOTFadk1tQWV5dWppYklBRHpFX2I1RTNzQUx1LUZqYXFCSjlTNE1IbHYxM0ZhdG9peWs3ci1nZQ?oc=5",
-        "source": "mx.advfn.com",
-        "pubdate": "Thu, 11 Jun 2026 04:51:52 GMT",
-        "pubdate_iso": "2026-06-11T04:51:52+00:00",
+        "title": "Bitcoin sube brevemente tras nuevos datos de inflación en EE.UU.",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5iMkZ6TFZVMks3ekI4NVpVbElnZHJJU3J5YlNlR1BsSkh5R05oTmJJQ0kxdE1FRkViUmZsLU41T2hnQ3M2WkRXbDZKTGdQTnlLLVBqSG1SeGJRTk9T?oc=5",
+        "source": "Cryptonews.net",
+        "pubdate": "Thu, 11 Jun 2026 09:14:50 GMT",
+        "pubdate_iso": "2026-06-11T09:14:50+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -318,11 +332,11 @@
         }
       },
       {
-        "title": "BTCUSD - Pending Bank of Japan rate decision may impact Bitcoin price: Should traders prepare?",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTFZwaVlaNUlqTkhfbEN5YWNJcGRlbThsclU0QWlhbW1peFlpcUNldElUQ2lSWXkweFRValF3cTh3Ykpqc1Z0RHZPZW1Ub05lV3lJUlRBMWFQbndubTJ1Wm5BRXUyNjZsZ3V0RlNGeWcwYXEwRklraV85Qi1FeU5PQVc2VFlLMzRIZWVvR3I1czJFVkV5MTlCVEgzZGRXZEFaRmhFS1E0QmF2NXMxUTJmd0J6MTZoUU1LR3cwVTFn?oc=5",
+        "title": "XRPUSD - Analysts tip pressure for Bitcoin, gold as US inflation tops 4%",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNVpCNjRFZ0hLTW1nT2wxeWNDeHNfZ254MjA0cmMzMGJQb2Q4cFhBLUx5T3lvMlRZSW9ZaU1JdWlxQ1pCY2FfQkNRMXVXUjRITFFZcTNpbXlMYWVpLU83MHRUMFJUNjNQdEtHNnBsX1dzM3c1eWwtdDRoVmFDVGxjOFJaa19xOTFadk1tQWV5dWppYklBRHpFX2I1RTNzQUx1LUZqYXFCSjlTNE1IbHYxM0ZhdG9peWs3ci1nZQ?oc=5",
         "source": "mx.advfn.com",
-        "pubdate": "Wed, 10 Jun 2026 18:41:15 GMT",
-        "pubdate_iso": "2026-06-10T18:41:15+00:00",
+        "pubdate": "Thu, 11 Jun 2026 04:51:52 GMT",
+        "pubdate_iso": "2026-06-11T04:51:52+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -346,11 +360,11 @@
         }
       },
       {
-        "title": "El escenario del IPC de EE. UU. que podría hacer que el precio de BTC caiga por debajo de $60,000: Crypto Daily",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaG8ySVFVamVlamVKSWpmUTJuZldOWE5xTF9YLTNJVUg3U2NuUGQ5WUQ1cUxfeGxrX3pMY2ZOTC1pRDJnOUR5YmExblFzQ05HVzEydzFaNVlTSVZaazlOSTJ1WmF5S082NmtUWE91aW44ZzJCNE5LRWZLcHlpdmkzZ1d1TElTVXhYcFRvb3JmajJEankzV2djbGFQS3BoVExmZjI5cGlMbTFVOUU1ZVdaSU1XMkozaHhvQ3hLUVhn?oc=5",
+        "title": "Datos de inflación en EE.UU. mejores de lo esperado, impulsando a BTC",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMGY3Vmg5bU9uTnlXcmdVbWZIMFdxdThEczZfYXh2TlFrZnl1SW1DQjQ3Z29yTlpUQ1YxSm9tQWE3UGlyVGlYeE5ub3NyeHdjcEFnU0R6aDJtSThoSDRvd0l6aG1oVVNVWGdHalMwQ0tHYUNNcFNPcUFfYm14Y1pSTjVEb2pYSU9HaWMtd29LWEVZeEpKMzJxRkdnVEp4R2lUZVVpTWxiYlFZaHJyZmRzcDNmYzJNVFEwaDNkR1p5TQ?oc=5",
         "source": "CoinDesk",
-        "pubdate": "Wed, 10 Jun 2026 11:27:41 GMT",
-        "pubdate_iso": "2026-06-10T11:27:41+00:00",
+        "pubdate": "Wed, 10 Jun 2026 12:46:09 GMT",
+        "pubdate_iso": "2026-06-10T12:46:09+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -406,24 +420,24 @@
     ]
   },
   "stats": {
-    "total_noticias": 26,
+    "total_noticias": 27,
     "por_categoria": {
       "precio": 5,
       "etf_flows": 5,
       "regulacion": 5,
-      "adopcion": 3,
+      "adopcion": 4,
       "fed_macro": 5,
       "sentimiento_onchain": 3
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "bajista",
-    "score_neto": -4,
-    "n_positivas": 1,
+    "sentimiento": "levemente bajista",
+    "score_neto": -3,
+    "n_positivas": 2,
     "n_negativas": 2,
     "n_neutrales": 23,
-    "narrativa": "El feed muestra 1 senales positivas y 2 negativas (neto -4). Factores dominantes: Desplome: muy negativo; Salidas de ETF: muy negativo institucional.",
+    "narrativa": "El feed muestra 2 senales positivas y 2 negativas (neto -3). Factores dominantes: Desplome: muy negativo; Salidas de ETF: muy negativo institucional.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "BAJISTA a corto plazo"
+    "veredicto": "Levemente BAJISTA"
   }
 }
