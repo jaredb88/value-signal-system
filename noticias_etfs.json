@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T09:26:56.789519+00:00",
+  "updated_at_utc": "2026-06-12T11:26:56.445743+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -174,6 +174,20 @@
         }
       },
       {
+        "title": "Why Is Marvell Technology (MRVL) Stock Soaring Today",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZUZXYXVCdEpHZ0JURl9FZ09CX2RzSlRpNDNlN2xBMGpQZGtESS1zUlhXbmE3UnVuT0N6Z01LTHd5eFlUOHIyY2RxUVFGTGhNZWxTd1ROSkN2Z25tS2R3dTlPbzFVX0ZtZ3RNTjZhZC1TcVBqbnZVX2tMMFBueVk2UXBqN3ZkcHFaSEx5S1ZDZ053R1BUY2c5bTV6dWFFYWp4WGlnRFlER2lqUzkwZkhR?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 15:05:43 GMT",
+        "pubdate_iso": "2026-06-11T15:05:43+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Oracle Financial Services shares fall 2% as post-US parent's Q4 results",
         "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ3BsdDNNOF9mNzNvUmxxTndYS19tTkZlWTBiWU8tSVdHdmlnb0x4Wk1CSFM4QVFGT2IwbC1nZ3R4SDdxaGg2TG1SSHZPRHZrR3NWN2ZNd3pnVjFqdE9hb1BVSl84TUZET2dnZVlrS1dnaW5oZ0xkQmp5WFVYQ05WcjJuZkNZTWpmVzFMODdZc0owbm1pUUx3VFJFZWp3bjdNaXZ0SmJCNkJyRWNIa2Z5dzBYUW9MTF8wT1hjR3Y3NzZzRGZsbEhLWGxQeU4?oc=5",
         "source": "TradingView",
@@ -200,13 +214,15 @@
           "emoji": "🟢",
           "razonamiento": "Rally de IA: impulso Nasdaq"
         }
-      },
+      }
+    ],
+    "economia": [
       {
-        "title": "Everpure: AI Storage Uncertainty Overshadows Breakneck Growth",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaHQ0Y2ZDWWZUbjlsSzFlLWdKN0ZSdFVqd2RDUnktSG5qUzBncjN2dHMzUkRpSTVVM3paZGs5VjIyazZVV3hZSjhSbGtWMmhOWkhiNXd1ZjUybThoTzk0MkVtRnlHZUY0S1Z1dWZKdXAzY0ZicjFIMFMyREhzWkpIMHQxcWdqTXh5SnFIbHhVTklBZDFOTGhnVzhSSklVZjdlWHZ2SnRtS09KV3BTN043bGVuMWkybFh5ems4WQ?oc=5",
-        "source": "TradingView",
-        "pubdate": "Wed, 10 Jun 2026 20:05:00 GMT",
-        "pubdate_iso": "2026-06-10T20:05:00+00:00",
+        "title": "Job numbers are up, but see which companies are still cutting",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeFNtSW12MDBYdEd1R2lNTHY3VG1ZZ3hlcmpZRWJKemxocHhsc1FjUDI0ZTFISTQxMWdrTzFiMGRRemxhU2Z6Zno3QS1ZSGxwUEZ3TzY3ZHBDdHB4U2lVNDl0eFZSNDBEOU9KWlJxMWFmbEM3VUNTU2FWV2diSGp4VA?oc=5",
+        "source": "AOL.com",
+        "pubdate": "Fri, 12 Jun 2026 06:59:59 GMT",
+        "pubdate_iso": "2026-06-12T06:59:59+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -214,9 +230,7 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      }
-    ],
-    "economia": [
+      },
       {
         "title": "The US just had its highest number of people file for unemployment benefits since the Iran war started",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9JbjBleTFTRksyYTVkcTdlX3ExdjFoeExyQS1tbTZfcC1ySmVHUWx0OWlVR3FwX2dYSFd2Njc1NklUdDBiWTBtMDQxSG5FQ3dyT1BtOUk3NTViWG1iMmtOWmxoTTVSSjlZTHBNaUozR01jMUI1c2UxVzdB?oc=5",
@@ -265,20 +279,6 @@
         "source": "FOREX.com",
         "pubdate": "Wed, 10 Jun 2026 17:29:46 GMT",
         "pubdate_iso": "2026-06-10T17:29:46+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Bitcoin y Ethereum, pendientes del CPI de Estados Unidos: el dato que puede mover al mercado cripto",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVnU1RkhOemRjem9xRjVHZjYwZUxwQjd6dmdVcDhMbHFjazlLMWVkdkxYS3RBaHJVWUlLOTg1TTFlVl95X3ZrYzRmeEhiU1duU1V5cDdjQzRCMTVJaEF3NWpxVk5RTEpSNXhSOFF1NzgzWFh3UW53QjNsMWdxT0FnbmZTRTZVY01HWUpoN1E3UWkzOEsyTXRYbkpfWFRxdGZpVU1mYVJYdXI0YWFldEpabDY3S21LNWNNUXd6VEs2NWdJRzdOQ3NVczgxSktxWEY2azREQ3FQQQ?oc=5",
-        "source": "Cripto247",
-        "pubdate": "Wed, 10 Jun 2026 12:16:43 GMT",
-        "pubdate_iso": "2026-06-10T12:16:43+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
