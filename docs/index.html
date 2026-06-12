@@ -1860,11 +1860,11 @@ const ETF_NEWS_CATS = {
 };
 function clCats(sector){
   const s = (sector||"").toLowerCase();
-  if(s.includes("afp")) return ["bcch_tpm","ipsa","economia_chile","politica_regulacion","sectores_watchlist"];
+  if(s.includes("afp")) return ["pensiones_afp","bcch_tpm","ipsa","economia_chile","politica_regulacion"];
   if(s.includes("eléctr")||s.includes("electr")||s.includes("energ")||s.includes("gas"))
-    return ["bcch_tpm","economia_chile","politica_regulacion","dolar_cobre","sectores_watchlist"];
-  if(s.includes("fertil")) return ["dolar_cobre","economia_chile","ipsa","sectores_watchlist"];
-  return ["ipsa","economia_chile","bcch_tpm","politica_regulacion","sectores_watchlist"];
+    return ["energia_tarifas","bcch_tpm","economia_chile","dolar_cobre","politica_regulacion"];
+  if(s.includes("fertil")) return ["dolar_cobre","sectores_watchlist","economia_chile","ipsa"];
+  return ["sectores_watchlist","ipsa","economia_chile","bcch_tpm","politica_regulacion"];
 }
 function usaNewsFiltered(news, ticker, todosTickers){
   // noticias de ESTA acción + categorías compartidas (excluye las de otras acciones)

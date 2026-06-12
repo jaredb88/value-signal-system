@@ -57,14 +57,27 @@ QUERIES = {
         "economia chilena crecimiento",
     ],
     "politica_regulacion": [
-        "reforma pensiones Chile AFP",
         "reforma tributaria Chile",
-        "tarifas electricas Chile",
+        "Congreso Chile proyecto ley empresas",
+        "regulacion servicios basicos Chile",
+    ],
+    "pensiones_afp": [
+        "reforma pensiones Chile AFP",
+        "AFP Habitat PlanVital utilidades",
+        "retiro fondos pensiones Chile",
+        "cotizacion adicional pensiones Chile",
+    ],
+    "energia_tarifas": [
+        "tarifas electricas Chile CNE",
+        "descongelamiento tarifas electricas",
+        "hidrologia embalses generacion Chile",
+        "Colbun Enel Generacion Pehuenche",
     ],
     "sectores_watchlist": [
-        "AFP Habitat utilidades",
-        "electricas Chile hidrologia",
-        "Colbun Enel generacion",
+        "Zofri zona franca Iquique",
+        "Cenco Malls centros comerciales Chile",
+        "Lipigas gas licuado Chile",
+        "SQM fertilizantes litio resultados",
     ],
 }
 
@@ -74,6 +87,8 @@ CATEGORIA_META = {
     "dolar_cobre":         {"emoji": "🪙", "label": "Dolar / Cobre"},
     "economia_chile":      {"emoji": "🇨🇱", "label": "Economia Chile"},
     "politica_regulacion": {"emoji": "⚖️", "label": "Politica / Regulacion"},
+    "pensiones_afp":       {"emoji": "🧓", "label": "Pensiones / AFP"},
+    "energia_tarifas":     {"emoji": "⚡", "label": "Energia / Tarifas"},
     "sectores_watchlist":  {"emoji": "🏢", "label": "Sectores del watchlist"},
 }
 
@@ -118,6 +133,23 @@ IMPACTO_KEYWORDS = {
     "mayores dividendos":  ("positivo", 3, "Dividendos al alza"),
     "reparto de dividendos":("positivo", 2, "Reparto de dividendos confirmado"),
     "dividend yield":      ("positivo", 1, "Foco en dividend yield"),
+    # --- Pensiones / AFP ---
+    "fin a los retiros":   ("positivo", 2, "Sin nuevos retiros: estabilidad de AUM para AFPs"),
+    # peso 4: compensa colision con "retiro de fondos"/"nuevo retiro" (neg 3)
+    "rechaza retiro":      ("positivo", 4, "Retiro rechazado: alivio para AFPs"),
+    "rechaza el retiro":   ("positivo", 4, "Retiro rechazado: alivio para AFPs"),
+    "rechazo del retiro":  ("positivo", 4, "Retiro rechazado: alivio para AFPs"),
+    "aumenta cotizacion":  ("positivo", 2, "Mayor cotizacion: mas flujo administrado por AFPs"),
+    "alza de cotizacion":  ("positivo", 2, "Mayor cotizacion: mas AUM para AFPs"),
+    "fondos suben":        ("positivo", 1, "Fondos de pensiones al alza: mas AUM y comisiones"),
+    "rentabilidad de los fondos":("positivo", 1, "Rentabilidad de fondos en foco"),
+    "utilidades afp":      ("positivo", 2, "Utilidades AFP: directo al watchlist (HABITAT)"),
+    # --- Energia / Tarifas ---
+    # peso 3: compensa colision con "congelamiento de tarifas" (substring)
+    "descongelamiento":    ("positivo", 3, "Descongelamiento de tarifas: electricas recuperan ingresos"),
+    "alza de tarifas electricas":("positivo", 2, "Tarifas al alza: positivo para reguladas"),
+    "normalizacion tarifaria":("positivo", 2, "Normalizacion tarifaria: recupera flujos electricos"),
+    "pago deuda tarifaria":("positivo", 2, "Pago de deuda tarifaria: caja para electricas"),
     # --- Watchlist especifico ---
     "hidrologia favorable":("positivo", 3, "Buena hidrologia: positivo hidroelectricas (PEHUENCHE/COLBUN)"),
     "lluvias benefician":  ("positivo", 2, "Lluvias: positivo para generacion hidro"),
@@ -159,8 +191,21 @@ IMPACTO_KEYWORDS = {
     # --- Watchlist especifico ---
     "retiro de fondos":    ("negativo", 3, "Retiros AFP: muy negativo para HABITAT/PLANVITAL"),
     "retiros afp":         ("negativo", 3, "Retiros AFP: muy negativo para AFPs"),
+    "nuevo retiro":        ("negativo", 3, "Nuevo retiro en discusion: riesgo de AUM para AFPs"),
     "reforma de pensiones":("negativo", 2, "Reforma pensiones: riesgo regulatorio para AFPs"),
+    "reforma previsional": ("negativo", 2, "Reforma previsional: riesgo regulatorio para AFPs"),
+    "afp estatal":         ("negativo", 2, "AFP estatal: competencia regulatoria"),
+    "fin de las afp":      ("negativo", 3, "Fin de las AFP: riesgo existencial del modelo"),
+    "expropiacion de fondos":("negativo", 3, "Expropiacion de fondos: muy negativo para AFPs"),
+    "licitacion del stock":("negativo", 2, "Licitacion del stock de afiliados: presion a incumbentes"),
+    "rebaja de comisiones":("negativo", 2, "Comisiones a la baja: presion de margenes AFP"),
     "congelamiento de tarifas":("negativo", 2, "Tarifas congeladas: presion electricas reguladas"),
+    "rebaja de tarifas":   ("negativo", 2, "Tarifas a la baja: menos ingresos regulados"),
+    "racionamiento electrico":("negativo", 3, "Racionamiento: estres del sistema electrico"),
+    "decreto de racionamiento":("negativo", 3, "Decreto de racionamiento: estres electrico"),
+    "sequia":              ("negativo", 2, "Sequia: presion para generacion hidro (PEHUENCHE/COLBUN)"),
+    "megasequia":          ("negativo", 3, "Megasequia: muy negativo para hidroelectricas"),
+    "embalses bajos":      ("negativo", 2, "Embalses bajos: menor generacion hidro"),
     "tarifas electricas congeladas":("negativo", 2, "Tarifas congeladas: presion electricas"),
     "sequia":              ("negativo", 3, "Sequia: negativo hidroelectricas (PEHUENCHE/COLBUN)"),
     "estres hidrico":      ("negativo", 2, "Estres hidrico: presion generacion hidro"),
