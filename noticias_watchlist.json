@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T04:38:52.299485+00:00",
+  "updated_at_utc": "2026-06-12T06:33:05.214843+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -69,6 +69,13 @@
         "matched_keyword": "SQM"
       },
       {
+        "title": "Lo último de nuestro Podcast: entérate de todo en Diario Financiero",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQThyX0wzSVYtMXotbExITXR5T184V2c0YnBQTlBiTGJpMVI1SmFvQ0g5d242ZVhqTHY0N2FnNi1NcWFwQ2FWZk8tRWVtOXYtS2NHdWlQWUhYaFl6cUhKTDdIY2UwRWVlWFJ1a3lFZE1fWFRUbGhfd0w5NlYzdjdwVG1xclh5SC1YYmc?oc=5",
+        "pubdate": "Thu, 11 Jun 2026 06:35:46 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
         "title": "IPSA se dispara más de 3% en su mejor sesión desde abril de 2025 con fuerte protagonismo de la banca y despide siete jornadas consecutivas de pérdidas",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvOVUzLTE4SnB1V0JFd1ZfbG5keVlEalJqZmNQUkYxNjRPbWNVTlNqSnlHd0xIVi1qYktuU1p4RW9zMzNRVkdmYzAxeUNnYzlBUnNTT3hKdU9vWnM2OXJNdDFfYndyTE9I?oc=5",
         "pubdate": "Tue, 09 Jun 2026 20:36:00 GMT",
@@ -93,13 +100,6 @@
         "title": "La investigación sobre el Tren de Aragua reaviva el debate en Chile sobre el secreto bancario",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQ0hLd19yclZsbnZuYUhGVmg1ak5ZQ3VrV0tKWHMtTmVfREcyM1BoVFVIczRCMEw3ZGZkajFpZnVSd3ozLUJoWl9RTHRyR3FLMFdrVXpJcFhrTGk5MUxCaHZ6OE1WSDViaHhZYVk3MjB2bm1RUmtSQXY4QnZGQ2N4QlNIRllZZG1pclUyQVhROFRWWFNORDNDckZmemFUVmlHcmNTbkpiNVVvSGh0Zm9VSmg1RlA?oc=5",
         "pubdate": "Mon, 08 Jun 2026 16:47:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
-      },
-      {
-        "title": "IPSA anota su racha de caídas más extensa de 2026 por tormenta global de mercados tras datos de empleo en EEUU",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CQ09GcG16M0JDODViLTJMVHBGR1U2X25Fdk1wdVJTMWVvWHRLSzFZQVh6N1hCWUtPbE5LcmZrUHNvQnFJWElXZTNRTlpEYmtzazhka0JnLS0ySWRMb3MwRlNPeVl5ZEM1aU5V?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 20:29:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -130,13 +130,6 @@
         "pubdate": "Fri, 05 Jun 2026 13:26:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
-      },
-      {
-        "title": "EDICIÓN ESPECIAL",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMFgtRnpoWjFnS1F0cU5yeGtKbE9raVhKSVFxbC1sSS1aTEZvZURINXo5U2s0Y0JWSXlLTkJzcHk1NW02elBvSEN2Ymk2RWw0MnpodXh6SFg4OVBfRk81WUdJSUgwWkpPQTFWRlg0eXZycjFraGphUU80SHlLZHpLMllTaG5tbTZNRzhyXw?oc=5",
-        "pubdate": "Fri, 05 Jun 2026 07:00:00 GMT",
-        "source": "Diario Financiero",
-        "matched_keyword": "SQM"
       }
     ],
     "QUINENCO": [],
@@ -144,10 +137,10 @@
   },
   "stats": {
     "total_queries": 51,
-    "queries_exitosas": 50,
-    "queries_falladas": 1,
-    "total_noticias_brutas": 2250,
-    "total_noticias_filtradas": 17,
+    "queries_exitosas": 51,
+    "queries_falladas": 0,
+    "total_noticias_brutas": 2253,
+    "total_noticias_filtradas": 16,
     "total_hechos_esenciales_brutos": 99
   }
 }
