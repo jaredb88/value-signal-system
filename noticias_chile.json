@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T09:33:54.668040+00:00",
+  "updated_at_utc": "2026-06-12T11:33:56.548430+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -126,6 +126,20 @@
     ],
     "dolar_cobre": [
       {
+        "title": "Dólar hoy en Chile: cotización de apertura del 12 de junio",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSndKeENXTWZyLWxrXzEyTEhFV0dxVGNlMHVrQ0tkUmZaUzlFdnZHZUtfc2h3V3VrZ2c0M3hNQ1ZWdjB5cFd6YmpmRGJMTnNvYk1VTXZJWnVfdGZGb2VfTEVoaURlMEpGQ2R1aVl2cE9waWhjU1lKcE1fMkxkNmdYTllrdkt0bXdNUndWZ3I4QUVqZjNtdGFqYjNTVnJNajJjdC1URtIBvwFBVV95cUxPdEFXWUtNR0ZHYlRlQkd2dXNmbXY4RFVOX044NF9LQmtWaURURkZTLU01UURlU3QxTURNMF9tdzUzUUJXMkw0SnFDT2Z1UUNtVERBTWc3NW9kdjRWNDRPcmNMMG9RaG9QcWR1RGh5OW9lUzZoMUdIRjRiT0pHOGJBbktHVmNzV3NJa0o2NUNLaXI5aUtPdGc1MkZRemJVVmhqQ3hTYVpMWl9hbjYxeVJvUGVTQXZqaVBzMWNDRVBzOA?oc=5",
+        "source": "Infobae",
+        "pubdate": "Fri, 12 Jun 2026 11:28:26 GMT",
+        "pubdate_iso": "2026-06-12T11:28:26+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Valor de la UF hoy jueves 11 de junio de 2026 en Chile: precio actualizado",
         "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUW9DSHlHYjFNU3JpUkQ1X21jbWlNeEVyb0FPMjJaN3dHdFlWMmxqVFRaWWx3UFZGTmNPUEl4ckdvWC1Qa2R6V0paMXhzbFJBN0dPMWJlaVJYM3BvdF9rSFlWWTZxVHYzNVlpaXNYcGc4dS01bGI4VzhjZlZKOXNsNG9FbEFuS2NzU2paX2x0MUxNNjRDXzRKVkl2VDcxMHVXRGoyRkFDLUVRNUpnNU0xV2xEZw?oc=5",
         "source": "Radio Pauta 100.5",
@@ -145,20 +159,6 @@
         "source": "Radio Agricultura",
         "pubdate": "Thu, 11 Jun 2026 19:23:09 GMT",
         "pubdate_iso": "2026-06-11T19:23:09+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precio del dólar hoy en Chile: cotización de cierre del 11 de junio",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVGpkT1BtRG8yZU93dkFZVUh1SnJKWERzT0ttTFdrY3ZadW5oQzVmQ3dTblhmVE82ZXRHNGVhTzE4MFlaV1pzRkw4NEl4dDdWdG44Q1l3ckUxaFMzSWdRNlVpTFpGQlgwLXBkLUpRdWhRRlRSd2pyVE1zRlhWXzVlOTZjMW03dEdld2NFelU1aHRBblZjYkZ1Zi1BeEo3aTQ4UkNfNjJWU0FEcTk0UUtCd9IBywFBVV95cUxOd0ZqTEIwYWM5djJ4WnlsYmc2TzFFV3R0aXZ1WDZ6SEdyR3Q1S3hrNjJUcGRzUDE2ZU51Z2YyT2llaXRqZnFJSVJ3WFZhQlFacXEtaXAydWJFbno1VjNKNkpxeXVYSjJtN2xqZm1jQ2xZUnUxZVhkXzRRUXpzMXk2aDhrX1JpcXZGdXN6UFVSLV9vUnh4bnJ5S09PMG12VXRuR2xsWmNsNmJuOVBnV2hfWTl3VTdZalRFVkJfeGd2Q0dGeHBNb2FIVjhJVQ?oc=5",
-        "source": "Infobae",
-        "pubdate": "Thu, 11 Jun 2026 18:47:59 GMT",
-        "pubdate_iso": "2026-06-11T18:47:59+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -320,8 +320,8 @@
         "title": "De malls a departamentos: por qué Cencosud, Parque Arauco y Mallplaza apuestan por viviendas",
         "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcXptaHoyeE5YQlZyYUZaTXNLdUY5REEtWnFpODlnZHVFMkU2SlBHQ213bFhCME9BREJSMUlaNDZacFJBYTNNaXJlclBKSFlXVlZrLWpHTlJtdlQzdWh6UFZMQWdTRzFFN0tJcExzZ1NuYjd0dHRSdkFycFZadTNFb2l2emJKOUtFaS1OVlNuVTU0UFVEanFJUFl5cGM3ZHlURUkxVDJNU2JRRUNRTTRtckZJcmVsWDA2YmVWQUt2ZEhtaFB5?oc=5",
         "source": "Perú Retail",
-        "pubdate": "Fri, 12 Jun 2026 07:19:36 GMT",
-        "pubdate_iso": "2026-06-12T07:19:36+00:00",
+        "pubdate": "Fri, 12 Jun 2026 10:20:54 GMT",
+        "pubdate_iso": "2026-06-12T10:20:54+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
