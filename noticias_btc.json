@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T10:39:34.461239+00:00",
+  "updated_at_utc": "2026-06-12T12:39:35.133034+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -29,6 +29,34 @@
   },
   "noticias_por_categoria": {
     "precio": [
+      {
+        "title": "Criptomonedas: cuál es su precio en el mercado este viernes 12 de junio",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZ3dNTWh0OWlRdDRNU3BaMnFQdzFQZ3Vac1lHYUZTbWYyNjZNU1FDSDNtRlJBalBjTHBkVjcyMEE1MTZTMVZmWC1tTS1KQWtWVkI3TTdmNmpsNnljSG5ESE1YVG9Tb1RzTVRrQ3ZhbElMTWJxTWFkTGtiTHNGRDlCZ09pMUpSaUFORW5pZmV0cDFfSWVSTGVYcU90eEozV01tU0FGZTY0aVZCS2JWejRCak5R0gHMAUFVX3lxTE9QYUxtcjBWcU9uT0Q3T3BPZWxVRjZCM2FlT2g3cGdLN0lub2dnVjRDTV9vTGpESzIxcmFjR1VWeWZJM0tMeTVuWGQ0aUpnOHpaWUtGdWJiREJua3k5anhTN2ZDRVJoRWdxRERkMFJYWGV3N2dSWFVETDJtSG5CZFVVazM1ZVlFb1I2R1NUd0g4S1ZHbms2Nkp4dmxOd0VCcHg1YmNWclNIcFNKaW1yM2FQc1R4aEVWM2FzZXg5TTdCSTVJZjNhVHFnT2o2VA?oc=5",
+        "source": "Infobae",
+        "pubdate": "Fri, 12 Jun 2026 12:04:36 GMT",
+        "pubdate_iso": "2026-06-12T12:04:36+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Bitcoin hoy: cotización y precio del BTC este viernes 12 de junio de 2026",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTlRyVFVXZ2RTQkhtajVBRlRoa0VESnptZWJSdk13dy1tRlVsVHNjSDk2azFZVl9tNUk3R0NKNUFNYm9LNnhibElxMzc4VDU3UlU5Zm91UFJGR0VLVWNsbE0ydGdjdXJFcUVMLXhiN3U2SEozbTZkbDNlamQxRXFZSnFIZC03WjljM3N1OC1EZF9SS2M4UTlFcGNmOXlIdkpFTV9FMjQzby1LaU8ySko1NUpIRXJLbDVKUUNfMExPSE5hZHJa0gHEAUFVX3lxTE9OVHJUVVdnZFNCSG1qNUFGVGhrRURKem1lYlJ2TXd3LW1GVWxUc2NIOTZrMVlWX201STdHQ0o1QU1ib0s2eGJsSXEzNzhUNTdSVTlmb3VQUkZHRUtVY2xsTTJ0Z2N1ckVxRUwteGI3dTZISjNtNmRsM2VqZDFFcVlKcUhkLTdaOWMzc3U4LURkX1JLYzhROUVwY2Y5eUh2SkVNX0UyNDNvLUtpTzJKSjU1SkhFcktsNUpRQ18wTE9ITmFkclo?oc=5",
+        "source": "Clarin.com",
+        "pubdate": "Fri, 12 Jun 2026 10:22:02 GMT",
+        "pubdate_iso": "2026-06-12T10:22:02+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Qué pasa con Bitcoin hoy: pese a volatilidad de precio, marcó un récord",
         "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPazY4SmZqSzIxeU9fMmhlakJXWTFySEJJUUdReUx0aXRBU2M3a3VuZmxXMUxuRFFZVGtzcm1uUXNwcTFWcmNCZkFfZFgxd3dQSVB6anFiMzV2Wm5jZ0xqeU53ZWJ1cFg1dEM3SDFUQTc3WVNkQkZnSk9MOWRtQmZPOTE4czBHc0tBbllkenBNYzEzckhhbHItRjExVUFabU9SNEQwVjk3S3EzYTVfZk5Jai1VT2pzd9IBuwFBVV95cUxNZGF2RnBCVk1hQ2JGZGpGNFh1eEtGRkt6blBXc3NRTG9ZbURhc1VGZkxVdzVLV1AxUEtGZ2g0eWRmU1dadWFPMG1heVM2NHFpb2ZSUXJpdjdMY0JRV3NNZEU4WWZVVVN1cjBEZm44enVraWkxc3lYSm9NdkNCTEY2S2pHTXMtZlBvTEgyU1lVa0VtUkFWUkxXYmNKVFZBaWZjNmZtdzEzNUdmRnhWNnc5cWVYTkV2VDlwWUJJ?oc=5",
@@ -63,34 +91,6 @@
         "source": "BAE Negocios",
         "pubdate": "Thu, 11 Jun 2026 18:21:00 GMT",
         "pubdate_iso": "2026-06-11T18:21:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Cuántos millones hubiera ganado Adorni si no vendía sus Bitcoin: las cifras en juego en la apuesta cripto del Jefe de Gabinete",
-        "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNeVNWbFhKRUJ6REYwZkFyYkx2LWYzMGZ4UjdDZnNpSzR2dzNBcnd1TjRwV1FSa3NBZFR3alRuYzRQdlgtUF9Cck9lZFRGU2ZlX29ManRKYjM2am02SFk3RlVpNUFkRjFTaGZ6ZkhMUUoxelNpNzJRaHl2UFRGM1F0aXJsMEVmQW1MNkwtR3pxdi1SekFoQmlWV1Vjbi1BVE92MGUtenU2YnZPWUw0MG00ZmlPM1NheEhNZzJMMHBTejV0TTdHa1A5RHlEandqeHpDTlJDY3VqU1ZCaDE1b0pmVDFSa3l0ZkUySmxkS2N0T21RNVp5ZGQ3MkRSNHFQZmvSAZoCQVVfeXFMTndaWWQyOFdodjRrOEIzUWFvaE1rQ0g0VFQ1aXJOaFpwSWRRWXdId0lmZmQ5dkFxcm9abW1VWE1GcnEzOWNzR05BOG96M1l1VmlOR0Q1UjhrS3R5OHQ2WlJ5aC1HZl82TTMyc1dxQnRMVldPYnp6cnRnQXdpVGFubnRwQm5JdjQweXdJYmJFOGpiaktfaVRvUVRLN1d0Zmp2QlN2dmwteGVhYzllbXhONXJ5Z2t0MXdKUnFPS2JGeEhYQjR6WEdlWU9rc2MyZnVLVUdtY3VacEtJQ3NrY3c2RVJSeGlIQ0JjeXRJSk5iNmNXZEozajJNcW1ENERadzJ5NHBqaWhZMGtMMU13MW5NT1kxQUxiLXhKMU1R?oc=5",
-        "source": "Infobae",
-        "pubdate": "Thu, 11 Jun 2026 17:08:00 GMT",
-        "pubdate_iso": "2026-06-11T17:08:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "BTC/USD se aferra a los 90.000 dólares tras una violenta liquidación de futuros",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTkhrRlpZMmN5Q0pORFpCRHJpcFFacC0zR2p0bzJlaWRNZTI0MFh0NTVCZWI3LXp2bHFkOXI3YmxaTnVZOTdHSkdqNi1tV1NlbVNIR01pZVFXSkZQMlhFdlJaYXNpNW9Ia2t3bW1Lem9nV1N3VWR1THVZVDBOb2NsOERPTUw2cHdmcjNWVEVpUjZ2b2tENEQ0NXg3dk1qRXZRVEJPZk5vdW5pSGE0Mm9QRzdfNDJuV2FJYm1R?oc=5",
-        "source": "DiarioBitcoin",
-        "pubdate": "Thu, 11 Jun 2026 16:30:59 GMT",
-        "pubdate_iso": "2026-06-11T16:30:59+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
