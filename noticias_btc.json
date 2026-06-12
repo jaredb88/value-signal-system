@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T00:39:42.472086+00:00",
+  "updated_at_utc": "2026-06-12T02:39:36.024385+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -174,6 +174,20 @@
     ],
     "regulacion": [
       {
+        "title": "Japan will regulate the crypto sector like the stock market",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWm9SN1lUYkFVcERMcGZ1Q2NKMDg5OHBPeHczVTA1aFFuVk04SndoVUJSeVlad0M4RVNSV3NQVFlvdVRTLU8zZDJzZU9USl8yWTlNam5vNE9TS3doaG5LLVJOWGlGWmVSd2tMWnh2SUpTTk55RV9UZjFVa0RqTGtOdWFwT1pRcDdfMnFTaXUwOUM?oc=5",
+        "source": "Bit2Me News",
+        "pubdate": "Thu, 11 Jun 2026 15:00:04 GMT",
+        "pubdate_iso": "2026-06-11T15:00:04+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Hungría despenalizará el comercio cripto y revertirá normas que contemplaban cárcel",
         "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcVdzbm5YakdUQnoyQVlVUTBpYnNEZE1tTThXMUV1a1pJNUtqSW1FaUlkUFljeUQwbjBhVXM4dXlNUXc1N1V2cGEtVjRSSVR2R2RzdTZPYXJzZ0hucXpRdF9CenlGMjNKTzAyekdmZV9kcFVaVXpIamNSTzJIQWoxWWNSRTAzOGtTVjRiN2xXeHJaV3ltbEV2NUJyWlpvXzBrSHFZaVFOMjlydkJLeFdEVldqYUJnU09WZW9zZHlQb0s?oc=5",
         "source": "DiarioBitcoin",
@@ -221,20 +235,6 @@
         "source": "The Coin Republic",
         "pubdate": "Thu, 11 Jun 2026 09:30:00 GMT",
         "pubdate_iso": "2026-06-11T09:30:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "EE. UU. debate nuevas leyes sobre impuestos cripto",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5vUWhhTmowRGZFdnVGa0J3YVZCWlFxaktoYzhETTMzZE5rWmltYl9JOHljVVdRLTRwTDF6aHlYVFEzSFgtcVB5YUYwQVVmemhqalFybUJSNmJ5X096cndwYlFFY0twd3VGZFB5QXFORXBiTUxkMnZMYkFyQThQdw?oc=5",
-        "source": "Bit2Me News",
-        "pubdate": "Thu, 11 Jun 2026 09:00:06 GMT",
-        "pubdate_iso": "2026-06-11T09:00:06+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -300,20 +300,6 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "¿Insinúa Estrategia (MSTR) la venta de Bitcoin para financiar los dividendos preferentes un nuevo libro de jugadas del Tesoro?",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNc1RlaXYyUEF4dXRFNkNwRmNaUm5wQ0ZyZ0QwZEExSkR2X0RTc2J1SXBXRFVuWmE3SjdCVFRNVGY4UU52Q3V0WGMzUGtqakNSTUhMRnRmeV9XMjNROWxrQzBQdG1zb0RuTVZ2S2ItRGlsQnhmcjNaUG1wZDl4eDk4NGZXSFVkNDU2QkpEeVVncFZaZTRJd2xuRm9xdU1LT2dQbzEwa1JiNzV4Z1I2S2tsRjRwUllZZkdvbU1GSFg5MUpQN2dBQkd0R2VBcEV3U3PSAc8BQVVfeXFMTXNUZWl2MlBBeHV0RTZDcEZjWlJucENGcmdEMGRBMUpEdl9EU3NidUlwV0RVblphN0o3QlRUTVRmOFFOdkN1dFhjM1BrampDUk1ITEZ0ZnlfVzIzUTlsa0MwUHRtc29Ebk1WdktiLURpbEJ4ZnIzWlBtcGQ5eHg5ODRmV0hVZDQ1NkJKRHlVZ3BWWmU0SXdsbkZvcXVNS09nUG8xMGtSYjc1eGdSNktrbEY0cFJZWWZHb21NRkhYOTFKUDdnQUJHdEdlQXBFd1Nz?oc=5",
-        "source": "simplywall.st",
-        "pubdate": "Tue, 09 Jun 2026 01:33:19 GMT",
-        "pubdate_iso": "2026-06-09T01:33:19+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ],
     "fed_macro": [
@@ -323,20 +309,6 @@
         "source": "TradingView",
         "pubdate": "Thu, 11 Jun 2026 11:43:19 GMT",
         "pubdate_iso": "2026-06-11T11:43:19+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Bitcoin sube brevemente tras nuevos datos de inflación en EE.UU.",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5iMkZ6TFZVMks3ekI4NVpVbElnZHJJU3J5YlNlR1BsSkh5R05oTmJJQ0kxdE1FRkViUmZsLU41T2hnQ3M2WkRXbDZKTGdQTnlLLVBqSG1SeGJRTk9T?oc=5",
-        "source": "Cryptonews.net",
-        "pubdate": "Thu, 11 Jun 2026 09:14:50 GMT",
-        "pubdate_iso": "2026-06-11T09:14:50+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -379,6 +351,20 @@
         "source": "Decrypt",
         "pubdate": "Wed, 10 Jun 2026 15:37:39 GMT",
         "pubdate_iso": "2026-06-10T15:37:39+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "El escenario del IPC de EE. UU. que podría hacer que el precio de BTC caiga por debajo de $60,000: Crypto Daily",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaG8ySVFVamVlamVKSWpmUTJuZldOWE5xTF9YLTNJVUg3U2NuUGQ5WUQ1cUxfeGxrX3pMY2ZOTC1pRDJnOUR5YmExblFzQ05HVzEydzFaNVlTSVZaazlOSTJ1WmF5S082NmtUWE91aW44ZzJCNE5LRWZLcHlpdmkzZ1d1TElTVXhYcFRvb3JmajJEankzV2djbGFQS3BoVExmZjI5cGlMbTFVOUU1ZVdaSU1XMkozaHhvQ3hLUVhn?oc=5",
+        "source": "CoinDesk",
+        "pubdate": "Wed, 10 Jun 2026 11:27:41 GMT",
+        "pubdate_iso": "2026-06-10T11:27:41+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -434,12 +420,12 @@
     ]
   },
   "stats": {
-    "total_noticias": 28,
+    "total_noticias": 27,
     "por_categoria": {
       "precio": 5,
       "etf_flows": 5,
       "regulacion": 5,
-      "adopcion": 5,
+      "adopcion": 4,
       "fed_macro": 5,
       "sentimiento_onchain": 3
     }
@@ -449,7 +435,7 @@
     "score_neto": -3,
     "n_positivas": 2,
     "n_negativas": 2,
-    "n_neutrales": 24,
+    "n_neutrales": 23,
     "narrativa": "El feed muestra 2 senales positivas y 2 negativas (neto -3). Factores dominantes: Desplome: muy negativo; Salidas de ETF: muy negativo institucional.",
     "narrativa_fuente": "plantilla",
     "veredicto": "Levemente BAJISTA"
