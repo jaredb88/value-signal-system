@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T13:26:58.051127+00:00",
+  "updated_at_utc": "2026-06-12T15:26:57.954756+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -63,34 +63,6 @@
         "source": "TradingView",
         "pubdate": "Wed, 10 Jun 2026 12:51:05 GMT",
         "pubdate_iso": "2026-06-10T12:51:05+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "FedEx pilots approve new contract after 5 years of negotiations",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9DMk5PN3l1VWN5SHotWWU0clRZR2dubUlmVWMxTVRldXpqMGJQa1BfS3hwamhKUFFUNFNPV2hUU2pKTXExeThITnpKTHRFMVlFYlhReXQxa2RLTTlfOVZfMUFTX3ZFVVBYQ1hnR0Y5TWVZUEdtOWFKd2F3dw?oc=5",
-        "source": "AOL.com",
-        "pubdate": "Tue, 09 Jun 2026 17:17:15 GMT",
-        "pubdate_iso": "2026-06-09T17:17:15+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Stocks Erase Early Gains as Chipmakers Turn Lower",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbU16cjZ4M0ViS0p0cU1hd1llSGVnVVhIWkxVUTNiZXIyYS1sbm5OU2NQOV9IODhnTTJ3dGpWSEZVQUxXUWpNT3dncUJxNF90Y052LV9JeW1ld2g2eUx1MHpSVi1ydndUT0I0UEFwOHVPN2IwNWhKUHJaT09aNDVzTm03dXNOc29LUEJWVWhnOTNfQThkenhPNkRVWVZFaUc2TFcwdkdpcFhFRzA?oc=5",
-        "source": "TradingView",
-        "pubdate": "Tue, 09 Jun 2026 15:23:34 GMT",
-        "pubdate_iso": "2026-06-09T15:23:34+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -174,11 +146,53 @@
     ],
     "tech_nasdaq": [
       {
+        "title": "MU, STX, WDC, DRAM: Memory Stocks Rally Amid Hopes Of Iran Peace Deal, SNDK Hits Fresh High",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPblJqZ0RtV2JoUFZDWTBJSldySkpkcDNwX1pGUzJfSnRzeUZmTWJjZ1ZKcHhxTmduQWwzc0ZiNkZZb1hwT0lQd1YxRk1hWDhPZVpIT2FJSDZZWnB2Rk1lb1BMdjhTRzNwT1NTTUF4eGpnNFdOR1RuQnJRYlFUcUlLWjkzNU9wZkpKUUp6NWVRSmJCcHBuOXhwc19zTXU3ZUN3TEhCcmZaMUl0OURmV0M3RmZhbE43cExXeXFxRW5EbzZrcnZhZEJmMjNEenBDMDN2dERrYk9TYkQyNHBTYVZJ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Fri, 12 Jun 2026 02:24:00 GMT",
+        "pubdate_iso": "2026-06-12T02:24:00+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Rally accionario"
+        }
+      },
+      {
+        "title": "Japanese Shares Rally on US-Iran Deal Hopes",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObHk4aVVYZnE2bjNlT0ZtdWFaVG85M1lId1M1WUpfNE9Pa2xLVjBGZVE0RUxPY25FRTNld1RQX245cUdKTG9OLUdvcnI5XzJXQzRQNmpOY1JBZGtuVHhOY3BCM3hzRHI4RVQ4ZnVUMUd6RHQ1cHZEbWNNTmFnbTlnbzNSdGtpb1I5cjlqZ3NRdTllU0ZFbzVScA?oc=5",
+        "source": "TradingView",
+        "pubdate": "Fri, 12 Jun 2026 00:42:00 GMT",
+        "pubdate_iso": "2026-06-12T00:42:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "S&P 500, Nasdaq, Dow End Higher After Trump Signals Iran Deal Coming Soon — ADBE, INTC, AMC, GOOGL, ORCL In Focus",
         "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUVUyOC1rSldZUVhfYXV2dUhLcG8zQ3NWUFNSa09RM0tfZ0RnTkNVTDFoTXVOVlZfTDFqVkVuSGR3bzd0SFV6UzNZVHpSTzRLOFptMFFuTjI5YVdnQ3h6Y0w0cG9xMkxMRVhVSXd0VmdVUUI5RUJGYXJ4cV8yclAwY1R1TTlUWGdveGxVc2hiaHNxYUoyZ2gtVTgtR1lHMlBZejNZamNmbFA2Vm4ydTZDdUFfT09tdWlBYmpOTVdZZ2lMeUlNVW4wUUdjdVg5Zm9NMEhpSUlYbWZic2ttdk1zODF6c0kwQlRLaFl4UVVwYU42azNFU2N3ZQ?oc=5",
         "source": "TradingView",
         "pubdate": "Thu, 11 Jun 2026 22:48:00 GMT",
         "pubdate_iso": "2026-06-11T22:48:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Adobe Stock Sinks to Multi-Year Low Ahead of Earnings",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTkRvUG15UC1BdkdXcEJCY2NLRXhpVzF0MFQ5M1hlbzlOUnFORkVKWnZZaEJmUEFoM2paR0M3MWozcENIV3ZRMW5qdjZoVGJGa2NZNHlqbGJrMWxHLUFxU01TT05pVnl6MGJ6VGtnNEJ1cG9JR0duTXRPXzRmdENQYzlKZE9WbjNCc1E3VmJzbGdfMGxhc3BiNWV6bHhBMWVGNnRCLTlnaDdNUE5YTzNTd0F3?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 18:41:36 GMT",
+        "pubdate_iso": "2026-06-11T18:41:36+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -199,48 +213,6 @@
           "intensidad_label": "moderado",
           "emoji": "🟢",
           "razonamiento": "Rally accionario"
-        }
-      },
-      {
-        "title": "Why Is Marvell Technology (MRVL) Stock Soaring Today",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZUZXYXVCdEpHZ0JURl9FZ09CX2RzSlRpNDNlN2xBMGpQZGtESS1zUlhXbmE3UnVuT0N6Z01LTHd5eFlUOHIyY2RxUVFGTGhNZWxTd1ROSkN2Z25tS2R3dTlPbzFVX0ZtZ3RNTjZhZC1TcVBqbnZVX2tMMFBueVk2UXBqN3ZkcHFaSEx5S1ZDZ053R1BUY2c5bTV6dWFFYWp4WGlnRFlER2lqUzkwZkhR?oc=5",
-        "source": "TradingView",
-        "pubdate": "Thu, 11 Jun 2026 15:05:43 GMT",
-        "pubdate_iso": "2026-06-11T15:05:43+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Oracle Financial Services shares fall 2% as post-US parent's Q4 results",
-        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ3BsdDNNOF9mNzNvUmxxTndYS19tTkZlWTBiWU8tSVdHdmlnb0x4Wk1CSFM4QVFGT2IwbC1nZ3R4SDdxaGg2TG1SSHZPRHZrR3NWN2ZNd3pnVjFqdE9hb1BVSl84TUZET2dnZVlrS1dnaW5oZ0xkQmp5WFVYQ05WcjJuZkNZTWpmVzFMODdZc0owbm1pUUx3VFJFZWp3bjdNaXZ0SmJCNkJyRWNIa2Z5dzBYUW9MTF8wT1hjR3Y3NzZzRGZsbEhLWGxQeU4?oc=5",
-        "source": "TradingView",
-        "pubdate": "Thu, 11 Jun 2026 08:34:40 GMT",
-        "pubdate_iso": "2026-06-11T08:34:40+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Foreigners sell Japanese stocks for second week on AI rally caution",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeVBYcndIWHJWeG03Uk56LUhaZ2djalQtQllXc1ZSbHpETF9fZlREQWQyWFZNLVVkLURzaWtFbnlaMFBNS0ZrUUxoWGNvYVF5Sm05aUVUeEJIS2VlWmlBZGpoeVpJU2VOMUtOSUNHZTNYdEhqdXEzc2hoVk03ZEp6Ym1nVGVNWnp1Vm50QmRPOHRmOS0wdl9SX3hlN2doYXFJTk1MdVZnZ3FTRU5QQ2ZsVFN1S09peEVNb0tNNGpIU0w0Q1dTUVhOQWZleGVRb1VDNVE?oc=5",
-        "source": "TradingView",
-        "pubdate": "Thu, 11 Jun 2026 04:12:00 GMT",
-        "pubdate_iso": "2026-06-11T04:12:00+00:00",
-        "impacto": {
-          "direccion": "positivo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🟢",
-          "razonamiento": "Rally de IA: impulso Nasdaq"
         }
       }
     ],
@@ -318,6 +290,34 @@
     ],
     "earnings": [
       {
+        "title": "Driven Brands Q1 Earnings Call Highlights",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNU2ZEQ25IeHNBUHNacWE4ZHljWDlvTXVyOUtFYWNSRjdYemxxX1drbk92eDVadUprWXg4cGIzQXdib3h0cW9TX2VQNFpiSzF2dVhVbWpNLS1sNzllWU9YakN1UXE0Unc1ZjItOEFHTXNDSmtRLVFvY3BFdFl3R2VadWhEbkt3YURUOTdLUVZ4dVFOM0xMM1owdGFsbEtkTXpRaVhR?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 14:05:52 GMT",
+        "pubdate_iso": "2026-06-11T14:05:52+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "India's Q4FY26 earnings were red hot. These five charts highlight how they were layered",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPeENoS244Wnl1R1pZMmhvTmF2OUFHRjhzb3Rhcko2aXRMT1hNUnh1SDlDWWhCdExOaW8tNjFJWThHekNQNzVQbzFSSkFMdFExQUhCTi1NOXI0M05OZUhXVjgtVi1lYVg5bWRsclVIOGZoVHJBU0gyYno0TzFoWUpqT1ZpRWV0UFZVSUNpNVNPY2hQYjhIeF90N3ROX0gwQV80YlN5SENCdGdUbkVKU29YRUtwZWg3TTFTLWV5NnlLYzh1NXFGaFNtUVZNdndvdmpIS2lUQ1hZa9IB3AFBVV95cUxQcTVGdGw4VzJUbjdkLVN0NTNzNHdISC0za2JPR0Q5S0dVUkVUMXJlZHlERXdsd0FrQU1seC1kWWU4SDNma24zdmJmNkFpVnRjWFFsdV95WThNcUdDeXRacnZpU1NZeS0xUnM2ZEtoT1p5MkprdkMtRzAxRDMySl9reURwVjNqUkg3ejZJblk5QW5Cbkk3blF4MEc5RlhaNFFPOXZuM3ZOQkFDa01OaGZtelNTci03UUtiOC1FVkdVc1VRbm5tZU1XaHNqTVFsNmtGSXBJSXluNTZaeUpj?oc=5",
+        "source": "Mint",
+        "pubdate": "Thu, 11 Jun 2026 06:41:03 GMT",
+        "pubdate_iso": "2026-06-11T06:41:03+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Alejandro Tosti Korn Ferry Tour Perfil de jugador, estadísticas, biografía, carrera",
         "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUkpUc2ZhOGxVM185U1lrbkQyTjh6aU9EOEJSb2w2dUY0Z3NianFYYlRJRHRxR0VBeHZKa1J6cWhieS1PTmI2cXRiclRnUjNiQjBOM1d0R0hpeFN5SGdVSVpfT0FQLUk5d3diUElzaDIzTkdhcmJtX1hpbG0wZ2Q3UFZud0J5REpUWGQyd3l6Z3diemFwY2huYVZQT0ZqeUZ0dUhib0oxWWVoN25PcWJjOEdvaUNDUVEzQlhlc3AtTW1GQ1U?oc=5",
         "source": "PGA Tour",
@@ -358,34 +358,6 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Lovesac (LOVE) Reports Q1: Everything You Need To Know Ahead Of Earnings",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd3hOVElFMVNtV1lHTHlIMkFZZldULWJHMWZyTlpnU1FBY2ZPWkZxWDBONkpJWTl0dE4xN2U3QVVSM3d2dWJ1cmJ0Xy14WTBpdndSaVpib2dmQXZGNTNMem5GRTBhcl9GRTJESDktMWF5d1ExRVBBdnktOWhGUW1PRVNVSkdOSTA3V3RlRjNOM3AxcU00Vkc5Vk41NU9ZLTdzYlBZNmY4RjlBUS16OGNtWU0yUFl1Z3JiY2RfRDNieWNqMHFWdjl4dQ?oc=5",
-        "source": "TradingView",
-        "pubdate": "Wed, 10 Jun 2026 03:01:00 GMT",
-        "pubdate_iso": "2026-06-10T03:01:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Customs Support Group reforzó su crecimiento en España desde el SIL Barcelona",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOejAyWDZtNkhlVmlrOHBJM3ZlaER5Y0ZnWGxPaW9uVW9jMm9IZEdfRnRxSXhSTGw3bUFVX0xDNWt2bmcwVkhqVFFZYURudmdCNWZDMUljaEQyel8zRVJPUlczZzZEWExaUFpMTk1hcW1qUkE4TEo1LVRlREZBV1lHd1RjQW43cjB1b2xhWWJXM3FZc0pfbVV4VUFUOU8xRGZ5Um5mQlYyRFhTZ0Qz?oc=5",
-        "source": "El Canal Marítimo y Logístico",
-        "pubdate": "Tue, 09 Jun 2026 14:27:59 GMT",
-        "pubdate_iso": "2026-06-09T14:27:59+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ],
     "sentimiento": [
@@ -395,6 +367,20 @@
         "source": "TradingView",
         "pubdate": "Thu, 11 Jun 2026 09:15:18 GMT",
         "pubdate_iso": "2026-06-11T09:15:18+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Chewy’s Growth Engine Is Stronger Than the Market Thinks",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONDZ5dU4zLVJGcEM4ZFl3enAzZWlNcWRKM0FIWVFpNThFTkpsaGNLVy0zUXBYNm8zYWsyeEYzUGVrQWFqSVBKV0NsQUxTdWhWTXI1WGhMd2pDeFpJcWw0T0VwQWs1am9CYWlndVZhUFhTSkxqaDc4MDlRcklRTVBXSk15MkJOM0JYUjd2cTVNb1lyeVlEOFJ5bDJyRGd6SUp5bU0zTWZic0UxR3hfa3JicUpiaHp3Y2s?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 17:10:00 GMT",
+        "pubdate_iso": "2026-06-10T17:10:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -420,14 +406,14 @@
     ]
   },
   "stats": {
-    "total_noticias": 27,
+    "total_noticias": 26,
     "por_categoria": {
-      "fed_tasas": 5,
+      "fed_tasas": 3,
       "mercado": 5,
       "tech_nasdaq": 5,
       "economia": 5,
       "earnings": 5,
-      "sentimiento": 2
+      "sentimiento": 3
     }
   },
   "resumen_ejecutivo": {
@@ -435,8 +421,8 @@
     "score_neto": 3,
     "n_positivas": 2,
     "n_negativas": 1,
-    "n_neutrales": 24,
-    "narrativa": "El feed muestra 2 senales positivas y 1 negativas (neto +3). Factores dominantes: Rally accionario; Rally de IA: impulso Nasdaq.",
+    "n_neutrales": 23,
+    "narrativa": "El feed muestra 2 senales positivas y 1 negativas (neto +3). Factores dominantes: Rally accionario; Rally accionario.",
     "narrativa_fuente": "plantilla",
     "veredicto": "Levemente ALCISTA"
   }
