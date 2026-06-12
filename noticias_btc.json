@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T12:39:35.133034+00:00",
+  "updated_at_utc": "2026-06-12T14:39:35.162795+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -30,6 +30,48 @@
   "noticias_por_categoria": {
     "precio": [
       {
+        "title": "¿Cuánto valía Bitcoin hace 10 años? Este fue el precio de BTC en 2016",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcHdIOEluQVRuN2ZSV3Y4QmZid0tHNFhJNjJPVkpCb1RHSnM1ZEoxMFJwZUFKSzlIcFo2YkQ5Skw1T0FUYndLWUNIS2c3YlRQM0poLXRzakdkZTdXS0oxenRna3U3cmdHUHNvRUtxb0diNURKV2NrMEkyVzEzSFdMMzNfeURnMGl3Wm82SnUzbldsTzhlNmlqTVhoWlQ2MlR1TTkxZnBaMXRnYjRmM1IzV2E2bHJKTDZLaGFKdS0yTjU4aEE?oc=5",
+        "source": "Cripto247",
+        "pubdate": "Fri, 12 Jun 2026 13:06:30 GMT",
+        "pubdate_iso": "2026-06-12T13:06:30+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Rendimiento a 10 años de EE. UU., el USD/CAD, el BTC/USD y el cobre: tipos apoyados en un soporte",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNOUtQZE9ieHYyUVkya2M5Y2EtbDJZQkNJVEtrT1NydkhIMUg2ZTBMQWhweWpXbHpfUmxtVjRkZHpUS0hHczd2TExJNjMwaGtsRExJVmU4YUsxRjdoX1d5ZGh5SUdoSzRDa2hUMmMzQ2daYzdydm1pcVA5WVlWNFF4UzI1U3pJTG82QnFEVDNXSldJdklVeWw2U1Z3WTV1VEFpTHE1WUxsZWwtMERBYm9XSlZZWHFXOFp4LUx6VGRhWU5QR0kxYzMwcTBKOWpCZWFqTGdDczlqZ3oxYmN5T01TOEpDTQ?oc=5",
+        "source": "FXEmpire",
+        "pubdate": "Fri, 12 Jun 2026 12:41:00 GMT",
+        "pubdate_iso": "2026-06-12T12:41:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "El precio del Bitcoin hoy, 12 de junio: el Bitcoin desciende de los 63.000 dólares",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYWJXQTJHazRXdzVmckk2dW4xWFg2ZmRCSVBCcUZTTnZLYlJIRWdxWmQzVVgwY0xjTk1CMkhRaDRlbHlyUnd0a0ZOYU5QLUFwQXIxN0hkNDFUa0gtVFQ3dHJ5dm1nNG1INkhVOWg1TS1jeEtSLXZidEpVaE5kLTFqQnBiQlJhNHRkajZz0gGLAUFVX3lxTE9zVUx4cnlPc1dEOXJuNjJaeFo3aXF2ejd2S255YmEzOF9Pa2tXY0h1dVdqUzdqNS1Gd29IX0ludGpUM09mM3ExYmR1UmNGemFUYklIdG0zTW90d3AtajY3b2JiLV8xN21vbVFPd053UmMyRm52aEFHNlJiVkNiWlhVRDBDTXA4U29sTDA?oc=5",
+        "source": "Expansión",
+        "pubdate": "Fri, 12 Jun 2026 12:37:02 GMT",
+        "pubdate_iso": "2026-06-12T12:37:02+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Criptomonedas: cuál es su precio en el mercado este viernes 12 de junio",
         "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZ3dNTWh0OWlRdDRNU3BaMnFQdzFQZ3Vac1lHYUZTbWYyNjZNU1FDSDNtRlJBalBjTHBkVjcyMEE1MTZTMVZmWC1tTS1KQWtWVkI3TTdmNmpsNnljSG5ESE1YVG9Tb1RzTVRrQ3ZhbElMTWJxTWFkTGtiTHNGRDlCZ09pMUpSaUFORW5pZmV0cDFfSWVSTGVYcU90eEozV01tU0FGZTY0aVZCS2JWejRCak5R0gHMAUFVX3lxTE9QYUxtcjBWcU9uT0Q3T3BPZWxVRjZCM2FlT2g3cGdLN0lub2dnVjRDTV9vTGpESzIxcmFjR1VWeWZJM0tMeTVuWGQ0aUpnOHpaWUtGdWJiREJua3k5anhTN2ZDRVJoRWdxRERkMFJYWGV3N2dSWFVETDJtSG5CZFVVazM1ZVlFb1I2R1NUd0g4S1ZHbms2Nkp4dmxOd0VCcHg1YmNWclNIcFNKaW1yM2FQc1R4aEVWM2FzZXg5TTdCSTVJZjNhVHFnT2o2VA?oc=5",
         "source": "Infobae",
@@ -49,48 +91,6 @@
         "source": "Clarin.com",
         "pubdate": "Fri, 12 Jun 2026 10:22:02 GMT",
         "pubdate_iso": "2026-06-12T10:22:02+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Qué pasa con Bitcoin hoy: pese a volatilidad de precio, marcó un récord",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPazY4SmZqSzIxeU9fMmhlakJXWTFySEJJUUdReUx0aXRBU2M3a3VuZmxXMUxuRFFZVGtzcm1uUXNwcTFWcmNCZkFfZFgxd3dQSVB6anFiMzV2Wm5jZ0xqeU53ZWJ1cFg1dEM3SDFUQTc3WVNkQkZnSk9MOWRtQmZPOTE4czBHc0tBbllkenBNYzEzckhhbHItRjExVUFabU9SNEQwVjk3S3EzYTVfZk5Jai1VT2pzd9IBuwFBVV95cUxNZGF2RnBCVk1hQ2JGZGpGNFh1eEtGRkt6blBXc3NRTG9ZbURhc1VGZkxVdzVLV1AxUEtGZ2g0eWRmU1dadWFPMG1heVM2NHFpb2ZSUXJpdjdMY0JRV3NNZEU4WWZVVVN1cjBEZm44enVraWkxc3lYSm9NdkNCTEY2S2pHTXMtZlBvTEgyU1lVa0VtUkFWUkxXYmNKVFZBaWZjNmZtdzEzNUdmRnhWNnc5cWVYTkV2VDlwWUJJ?oc=5",
-        "source": "iProUP",
-        "pubdate": "Fri, 12 Jun 2026 06:45:49 GMT",
-        "pubdate_iso": "2026-06-12T06:45:49+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Predicción del precio de Bitcoin 2023-2031",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE81dG5aU3dxNlA3Rlp0THphYW9hZzNMRGZHZGFIMHdENXhpeG1Vdi1FdGdHb1phR0pvdkFkSUpQQzVjUk5veTZGUGxvYUE0STlraVFzUWxLYl9GU1c0bGc?oc=5",
-        "source": "Changelly",
-        "pubdate": "Fri, 12 Jun 2026 04:35:28 GMT",
-        "pubdate_iso": "2026-06-12T04:35:28+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Los Bitcoin declarados por Adorni: cómo evolucionó la criptomoneda que hoy investiga la Justicia",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPajgwanpFZ1lTN0tjOFlrZC10RWxsS21uZTd0TlpFc1dTWkJod3RsaUtaWGVXM1pidUxpWllKVFE1UUNscVh2TG5JVFBCdW8xRjhPeTZjTUpCMWs0X05VVWZsdWNQb3JsRlpRMFJyUjJvNlVEdTIxbjlRVm5yYVBtTGc3anlSVG04aG9mOWI3RWg0NlQ2X3VCMjhXeUtFYW9CalkyN2w1NjVaY0RlS1Z0MmI0ZnJQYW1lRXFxdW5DT3F4d1NQSnJzVUJVM1pER0NPaEHSAcsBQVVfeXFMTW9DUE5sN0Rwa05tWE1HTkxScnNmd1pJOXoxMlAxR21rSHNFSmVnZGduOGhDZEZGRENQTWdxeUxOWjlSTmNIRFlkVVRPTWZjOEtJWUQxaG9GV1d1emdVbW1ac0w2U1c4clh6dXpGNXd1WC10LTZFY2RMOWw3ZG1VSU1hTjZQZk8wcDdhdVI2Mkc0ZGFvclBUT3hRcWYtdHFTUjk4RW1wV2h1bUNSckd1NlI2MDhNT1ZkZDlKYVdDSU0zellPcm5LbDg0ZmM?oc=5",
-        "source": "BAE Negocios",
-        "pubdate": "Thu, 11 Jun 2026 18:21:00 GMT",
-        "pubdate_iso": "2026-06-11T18:21:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -174,6 +174,20 @@
     ],
     "regulacion": [
       {
+        "title": "La SEC frena el marco para acciones tokenizadas en exchanges",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMkR2TXFiem43T3RIRUlnNEhKQ0xXbU5tSkRXTzVTcVRyN3RhM0JQakVyRkM1Z1p4VlhMeWVOWWx6Y0dOMzdNbkVmbmluTXVvNmpDLTRSZ3ZGaG5TQ29fb2Z1VDd5VUl5R0Y2SXRpQk1TZWxvY0xaRTFxVTEzaDhOQlByb19MOHdRQU4yU2I5enk2VTdqV1dyZko5ZXlqMGJvM3d5a0k2WlZkWklraFhv?oc=5",
+        "source": "99Bitcoins",
+        "pubdate": "Fri, 12 Jun 2026 11:22:35 GMT",
+        "pubdate_iso": "2026-06-12T11:22:35+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Hungría despenalizará el comercio cripto y revertirá normas que contemplaban cárcel",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9iNHo1QTMzbXZ3eXlRUzl6dDJJTS02a2poZG1kVFZTajB3NVNGc1BCeHJ5YWxpR3Z2Y3FfRGVaQ1FfNjRjUlRYZ2ZOWHFrZnMzR013RTdwU3VIQQ?oc=5",
         "source": "Cryptonews.net",
@@ -216,25 +230,11 @@
         }
       },
       {
-        "title": "Japan crypto bill advances with ETF, tax reform path: Report",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZk1vV3lxb2xsaF9UZzZHY3pPVVRodnd3Zlo1aExSQVI5azhLdlVMcXBUd3NnMmRaRWl5SE9IRmszbGRMdW5xei1iczJWNS1Lb0MzQUx5OEQwY2NYWFZsNi1vMUFDdy1ieENYUW1Yei1xcWtUQVMyR3VObGpVNm5nelVabU5lNDFWRGp5bkFUMzNTMnZOMU1JNGFvMzI5V0NXRHBFSmFNMlBueUxpck92VWdHYnhSVGs1UVY0WUJ3?oc=5",
-        "source": "TradingView",
-        "pubdate": "Thu, 11 Jun 2026 12:17:21 GMT",
-        "pubdate_iso": "2026-06-11T12:17:21+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "News Explorer — Japan Moves to Regulate Crypto Like Stocks in New Bill",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPN01MSWREOC0xa3hCc2Q0bHltNXMtMlk5Qy1UY0ttSEpNTzFyczNfQnl5S19JZFJGSnNRNW1HMFd1MUtpR1Y2VkE5R0Rob1lha0pqaG0zUFJjSEVKNmxJS0tFajI0ekEzQVRnRk9pMnVDaEFWT05iVV84QlVqY0hvTDZkRnJWaFBUYU5UU0VSb3FZS0ozbFRReWRXUlM0WnpXNFRmNGNvZnZrYkVV?oc=5",
-        "source": "Decrypt",
-        "pubdate": "Thu, 11 Jun 2026 11:42:13 GMT",
-        "pubdate_iso": "2026-06-11T11:42:13+00:00",
+        "title": "¿Qué sigue para la Ley CLARITY, ya que el bloqueo del acuerdo ético suscita especulaciones?",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNUtBQU4zXzlHU2dSLS1EaEpOenpoNUNQYmdRUVd6ZVU3a3MzcGVZZGE5dnhXWGI2c2g0OWh2NWlYeW4xSnViNFA4MG16eWQ2Rmw3Q1BDQkpUQzBVWHdRWm9SbXUyVl9oVWJWQXBCcXhYOGZWNldnWFJmUUYxcnVwVDlxVEhJTmIzTWREcHkwYzhTanFaaEsxb2pIRWxWMS1wd3kxdlZQdjlYZHBYNDBaMmtMQTBiUjZ2bFpNLTFtTUZoUWJmeTFjU0JWN0xMYmkx0gHWAUFVX3lxTE8tV1ZHWEdJNGpkd3ZRd2syM3ZqbXEzSkRxMWR4Zmhqb01HZ3VqNHl3cXlYcWdieGlOQjFWQXF3bFlEMFF0MUdFcXZnc3d3QlV5eDFPZ1J0UTlwM2U1Q3BGZF9qTHZpa0NJZmJWdUJSeHJyaHF0VU1UN0pCYnZIeGRuTUR5TGFHS1Vwd2tkUjE1Z0x2Wk9OTWZTZnllUW5TUUNVM1lLUzhjckdyd0VONUpJZzFwcHBxemRWSmdNRzNLdktlWDRGLXFQdTZZRU15WENxdlB0S1E?oc=5",
+        "source": "The Coin Republic",
+        "pubdate": "Thu, 11 Jun 2026 13:30:00 GMT",
+        "pubdate_iso": "2026-06-11T13:30:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -245,6 +245,20 @@
       }
     ],
     "adopcion": [
+      {
+        "title": "“Te dije que nunca vendas tu Bitcoin”: Michael Saylor habla sobre la venta de 32 BTC",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5MSGkyeW1NQlkyOFRUQ0V5OG4wZEVfOE5meXNGR0JfZHJLZ2thQVZtNmZpYVE1QzZacHFodXM3d0FjWlZNb2VncXhoOWJBQUlMcUx3ekdUZHdDNUlDYk93eUo4WmJ4ZkFHdDhndmVVRQ?oc=5",
+        "source": "BeInCrypto",
+        "pubdate": "Fri, 12 Jun 2026 10:39:00 GMT",
+        "pubdate_iso": "2026-06-12T10:39:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "News Explorer — Crypto Adoption in Nepal 'Warrants Close Monitoring': IMF",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQa3N4WFgzS04wQWUxem0tRG9qQ0dCMmpqejZEQktoejI3V2lLaXlhMjlCdlVyYUQ0SWZyakxORjRVN0F1ZXV4WlNUY0puWVRlVDZxcFJaanFOV2QyblNYUWlRM3J1WkxnTEV1VEQ5Sk90YThiZTFZVldUQ3otRzBiTl9fMDR4LTItbXo5WHBpSHR6V1lyUmhDTjZOdmdkZFdVLUx6MWR0YWU3bm1V?oc=5",
@@ -406,12 +420,12 @@
     ]
   },
   "stats": {
-    "total_noticias": 26,
+    "total_noticias": 27,
     "por_categoria": {
       "precio": 5,
       "etf_flows": 5,
       "regulacion": 5,
-      "adopcion": 3,
+      "adopcion": 4,
       "fed_macro": 5,
       "sentimiento_onchain": 3
     }
@@ -421,7 +435,7 @@
     "score_neto": -3,
     "n_positivas": 2,
     "n_negativas": 2,
-    "n_neutrales": 22,
+    "n_neutrales": 23,
     "narrativa": "El feed muestra 2 senales positivas y 2 negativas (neto -3). Factores dominantes: Desplome: muy negativo; Salidas de ETF: muy negativo institucional.",
     "narrativa_fuente": "plantilla",
     "veredicto": "Levemente BAJISTA"
