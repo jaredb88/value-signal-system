@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T16:50:02.765691+00:00",
+  "updated_at_utc": "2026-06-13T03:49:08.393365+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "tesla": {
@@ -20,28 +20,172 @@
     }
   },
   "noticias_por_categoria": {
-    "tesla": [],
-    "nvidia": [],
-    "ia_semis": [],
-    "macro_tech": []
+    "tesla": [
+      {
+        "title": "Elon Musk prepara el chip AI6: más potencia para Robotaxi, Optimus y FSD",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRnM4SkhYRlJxMHpQOEl3bnJuQ190bE5pQUZyd3Y4UXJLRmgxcWtHZzFITTNSRXN0MnNsWnFCazBvZGRURGlFUER5VjJvVWYzOV9hWV9LOTBrbk1BbnlJRURndk41SnhPbTJXZU1rQWNlWFAzVDQ3ZGZEUG1XNFhJcWQwbWNFbkZJQ1o4WjNySDJUdVkyUjhiT2FoTDJjWkZrYk5aMzNkOHUtR3JTZ1phNWtIS011aHM2bDVuUzNyRmZ5T09ZS2pqVWFJczREdw?oc=5",
+        "source": "Somos Eléctricos",
+        "pubdate": "Fri, 12 Jun 2026 10:44:09 GMT",
+        "pubdate_iso": "2026-06-12T10:44:09+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 1,
+          "intensidad_label": "leve",
+          "emoji": "🟢",
+          "razonamiento": "Avances en Optimus: opcionalidad Tesla"
+        }
+      },
+      {
+        "title": "Tesla Stock Surges Into Bull Case as JPMorgan Lifts Target 227%",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUWJ5RGw0Q3ZrTE5XbDhDcDh6Vk1Ud2Vxd0dja05ZVzlNNS1CSmF1REM1S3h1WktDUGlwS0xzM01qSHpWVTBISlN5d1JDRVhMZVF0UmZXTzczZVJuVXBVNlNwYWdqOFhMeVYtNV9zS290VU1rSE9FTHV6NWNpNjFhcXhTZXFYQ3dBZGVvRC0ybjJ6YkpDZ1NrUU1sV3RfdzZCcS11YlZuQXNkXzhyYlp1blhxYlBuZXNNUWpuUEpn?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 19:36:21 GMT",
+        "pubdate_iso": "2026-06-10T19:36:21+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "nvidia": [
+      {
+        "title": "FRMI Stock Surges Nearly 27% Today — Is There An OpenAI Connection?",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbFVlSGs1X2hHTDVVMGpJbjlPY3QtM29OYWRiVWxrT3JpVWk4SHhXMzItOXV4RTlmRjdVRnJxRUJUZ3YwRHA2a1V1NDBlcmtkV0NVNTQzcjZseGVKZ3NCLXhuTXNlZkEtQ04yOVI4X0hjZ3RqSC1nVkxVSWhhcFhjVFo5V3VEWWJoMXFMbGdBaWRtcFJ2V1lPYl9ydTlrSTNPejl1OVJiU2szRFlObFVxRG1mSUs0d3N2VGRKRXhnSHU?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 18:22:48 GMT",
+        "pubdate_iso": "2026-06-10T18:22:48+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Nvidia CEO Delivers a Blunt Message For TSMC Stock Fans",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeFM2LTlUYzhLQlRvelg4R25GY1B1YS1FdUZ6R1dlaUhPbV9xdjZnZHdXT2Y2OGhqTk9tdmFnTDNzbEJIQnpSc0hudHhGQ2ZTbFYtVGhqM3dBdUFIYmZrdzYwWm10WFZ3OXV1bF9na21iLThKY0pmc0s3ZWFkdXQxaUdwSXFjSzU3NEw4c1NBQUdsNWtaN0UyREVrN0JtOFM5TU9iNlpIaDJMSGpjaDJFWGJxM0s?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 17:26:52 GMT",
+        "pubdate_iso": "2026-06-10T17:26:52+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "ia_semis": [
+      {
+        "title": "Nvidia CEO Delivers a Blunt Message For TSMC Stock Fans",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeFM2LTlUYzhLQlRvelg4R25GY1B1YS1FdUZ6R1dlaUhPbV9xdjZnZHdXT2Y2OGhqTk9tdmFnTDNzbEJIQnpSc0hudHhGQ2ZTbFYtVGhqM3dBdUFIYmZrdzYwWm10WFZ3OXV1bF9na21iLThKY0pmc0s3ZWFkdXQxaUdwSXFjSzU3NEw4c1NBQUdsNWtaN0UyREVrN0JtOFM5TU9iNlpIaDJMSGpjaDJFWGJxM0s?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 17:26:52 GMT",
+        "pubdate_iso": "2026-06-10T17:26:52+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "macro_tech": [
+      {
+        "title": "SpaceX’s Historic IPO Will Trigger a Nasdaq Sell-Off? Says Analyst Michael Burry",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPTFpUMkhqTWVYcXlCNXhiUEhTcFpuODgxZERLZUdtVTFGMzdGdDFiSzBuMXB4VUhyZzhibTRwWTNGMzZmYWRnTzQzM0RLaHYyRkhYd3paWjVrcmRwOFFYeTM2bjJRR2RCakJYcEdyOTM1V0tkeWoydFh6VFkwZ2dBd1pOcUJkYXVPYVJSTUhUc3lraEtWMVJpbFdjeFVZWklFVEFORHpnbFotZjBNLXhoSUgwZndWU2Y1Uy1fd21kdmt3M2Jqa2xFeEo4bzZqVUJsRWJnbQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Fri, 12 Jun 2026 07:12:23 GMT",
+        "pubdate_iso": "2026-06-12T07:12:23+00:00",
+        "impacto": {
+          "direccion": "negativo",
+          "intensidad": 3,
+          "intensidad_label": "fuerte",
+          "emoji": "🔴🔴",
+          "razonamiento": "Selloff: presion vendedora"
+        }
+      },
+      {
+        "title": "S&P 500, Nasdaq, Dow End Higher After Trump Signals Iran Deal Coming Soon — ADBE, INTC, AMC, GOOGL, ORCL In Focus",
+        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUVUyOC1rSldZUVhfYXV2dUhLcG8zQ3NWUFNSa09RM0tfZ0RnTkNVTDFoTXVOVlZfTDFqVkVuSGR3bzd0SFV6UzNZVHpSTzRLOFptMFFuTjI5YVdnQ3h6Y0w0cG9xMkxMRVhVSXd0VmdVUUI5RUJGYXJ4cV8yclAwY1R1TTlUWGdveGxVc2hiaHNxYUoyZ2gtVTgtR1lHMlBZejNZamNmbFA2Vm4ydTZDdUFfT09tdWlBYmpOTVdZZ2lMeUlNVW4wUUdjdVg5Zm9NMEhpSUlYbWZic2ttdk1zODF6c0kwQlRLaFl4UVVwYU42azNFU2N3ZQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 22:48:00 GMT",
+        "pubdate_iso": "2026-06-11T22:48:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Magnificent Seven borran USD $2 billones y arrastran la caída del S&P 500 en junio",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZHhrSy1rNlJyTDN2MDNCRmlFaW00dlFCVVBxejVlM29tc2k5MkZHOHE3LXE2cVhKT3dnZll2LVU3YlZrZHBiSHFpZ3hGWlQtUHNyNXM4VFd1ZE9NOEpTdktNb3ptMVoxSlZZSzVqX1NMR2pubk8yQUlleUtWa0t4SEhwWC0yZjdQOWp0N1NQMEZWMl9JRkppbXFHMmg5UjJxY1hzZHJlWnpnY3JQUG1tWTZ5bVdhRENUVEdGSDRvWQ?oc=5",
+        "source": "DiarioBitcoin",
+        "pubdate": "Thu, 11 Jun 2026 17:58:36 GMT",
+        "pubdate_iso": "2026-06-11T17:58:36+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "US Stocks Rebound from 1-Month Low",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUG11MmxJbkpKZ3dkUkdBZ29tdktXSy1RUkdZQTA1dWtxeHpDNHVtWkpzZVJYS01DNTRpZnVJRmFobXRhV3pmal9HZW9PUWpEcGlodk1pSzFlSVV0SmlfQ2RzNV9pcDhjRk51VUtpXzk5RzIzdFZyaUVaM25CX2tVUEdsU0I3V0owNXRLXw?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 13:37:34 GMT",
+        "pubdate_iso": "2026-06-11T13:37:34+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "TSLA Stock Sinks As SpaceX IPO Nears — Analyst Says Investors Are Selling Tesla To Catch A Day-1 Pop In Next Musk Trade",
+        "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPOGNMNkpkd0pGWnBwcFpjald2dFdmTmM0MHY4Z2gzWUlaaVFwV2xjZGZSRUE2Um9temo2ZHdDQnF4NHE4emRWYjNuZnN5QnVxVF9MQUoxUWppU29jWTBWaExIRGtJYjBUbzJ6YndRUHM1SnRjeWxwLWc2c0JITldTRlM0ZndrZ01WVG1CeXdtdjRiM3pGNXNxSHI2UWRWTzVTRHJtd0FCZ1MwUWhzODJyNlNBUXpMNTFnSXlRQWxVcjFzS0NnNGUtd3NkQl9DUXZzbjduU1FrdDhQak55c2hPYXJ1MlZBQkM2bHdCS0dQczkwcGVVYTlrRzVCY2phem5nSmdYM09WZFA?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 01:36:00 GMT",
+        "pubdate_iso": "2026-06-11T01:36:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ]
   },
   "stats": {
-    "total_noticias": 0,
+    "total_noticias": 10,
     "por_categoria": {
-      "tesla": 0,
-      "nvidia": 0,
-      "ia_semis": 0,
-      "macro_tech": 0
+      "tesla": 2,
+      "nvidia": 2,
+      "ia_semis": 1,
+      "macro_tech": 5
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "neutral",
-    "score_neto": 0,
-    "n_positivas": 0,
-    "n_negativas": 0,
-    "n_neutrales": 0,
-    "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
+    "sentimiento": "levemente bajista",
+    "score_neto": -2,
+    "n_positivas": 1,
+    "n_negativas": 1,
+    "n_neutrales": 8,
+    "narrativa": "El feed muestra 1 senales positivas y 1 negativas (neto -2). Factores dominantes: Selloff: presion vendedora; Avances en Optimus: opcionalidad Tesla.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "NEUTRAL - sin sesgo dominante"
+    "veredicto": "Levemente BAJISTA"
   }
 }
