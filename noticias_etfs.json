@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T13:22:36.862990+00:00",
+  "updated_at_utc": "2026-06-13T19:26:59.219900+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -29,30 +29,287 @@
   },
   "noticias_por_categoria": {
     "fed_tasas": [],
-    "mercado": [],
-    "tech_nasdaq": [],
-    "economia": [],
-    "earnings": [],
-    "sentimiento": []
+    "mercado": [
+      {
+        "title": "Wall Street termina en verde una semana marcada por la salida a bolsa de SpaceX l mercados",
+        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOT0YzQ2l2N0paN0JWTGlnSnV4bFpiSUNiUThlWXBsTUMtZEwzeWRoUXV1XzR5ZEFRMGEzTlVud3VUZmVKSExIam4xdEJyLW5fek1zb1d0cVQyVjJONjJ0Z0NoeUsxVzN6ZjJwSDhpUlZnVm1QMlhnRldDbnMyUGJjOVJYem9ZM2g2ckJKNXBqSVVnRDNyQlI1QnJ2NDhCMXV1b3MtUmJ0ZGdwVUtvX3RlR3NPb2g2am95cDZGVDRXcGxOa0hXTWJSa3YtbjZuTHc5NElYME5OaVRhWi1QaGZLaTFQMVNRR2ZVWkFzalNPZXphN2pFWVE?oc=5",
+        "source": "El Comercio Perú",
+        "pubdate": "Fri, 12 Jun 2026 21:55:10 GMT",
+        "pubdate_iso": "2026-06-12T21:55:10+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Wall Street cierra en verde con fuertes subidas tras cancelar Trump ataques a Irán - AlbertoNews",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTFBONmNkZzdiQS1IODhCZHhNMjdaRS1VMHRRQWtwV1htTTNXdS1ZQ1hheWhwNHNwTE5SaHRQOUpCbXZEbk1RUkdpVHE4RVQxQ3YxZ1BFZUozWWhfMUJJVHg5N2R4SjlNVXRROHRaVkt0dS1DMjY2Qng0TmVsZzZQVW04azFHbmVzWWZVaktXbFhaS2lrUDNiUDNTNk1PTlE1NHdBdVZvYTkyVEllSm9SZDFnSmVobFZmU2VDaEN3bUc?oc=5",
+        "source": "AlbertoNews - Periodismo sin censura",
+        "pubdate": "Thu, 11 Jun 2026 21:26:54 GMT",
+        "pubdate_iso": "2026-06-11T21:26:54+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Why Target (TGT) Stock Is Up Today",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSHM3ckJ1ZWE0UEJVZk9Sei1PeEUtMEJldVF1QUw1b3UwcmVKc0tCeElBOUJjdHdkZ2otd3d3eEk5ZmJkM0MycGRyaEFUQ2hkYmJCOXJMcVlEM2ZmSDZiYUR1YWgwU2tEZEVyRVVINVBLZ0FiZm5WYURmaV85TGh4SXF5VTVObmpXNkFLUTdGakNfOFhNSmNR?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 19:50:36 GMT",
+        "pubdate_iso": "2026-06-11T19:50:36+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Why Is Marvell Technology (MRVL) Stock Soaring Today",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZUZXYXVCdEpHZ0JURl9FZ09CX2RzSlRpNDNlN2xBMGpQZGtESS1zUlhXbmE3UnVuT0N6Z01LTHd5eFlUOHIyY2RxUVFGTGhNZWxTd1ROSkN2Z25tS2R3dTlPbzFVX0ZtZ3RNTjZhZC1TcVBqbnZVX2tMMFBueVk2UXBqN3ZkcHFaSEx5S1ZDZ053R1BUY2c5bTV6dWFFYWp4WGlnRFlER2lqUzkwZkhR?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 15:05:43 GMT",
+        "pubdate_iso": "2026-06-11T15:05:43+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOUGlDTi1ZVXI4dlo1NXZGMFNYY2RrYjNfbzRqZkRLTl9SVkM1X3dxeDRjLTVhRHMxWDc4aFQ1NThRWEJ4OUJiejVieDNjNkZVRThZNzhBNG94c3ZnRjRzdGFYUmh5VXdaZVVrWUNXNXVUMEgzM2NuVExzUmRoSXRGSHFxOTRBT2xnSXFQY2pXemJTZkFCc0syNnE0aE92VjdIN09QaHJ3OWFOclJXMXU4RjlIdmM5UFVGbEhidjdXZWI4NUhfZFQ3aVZiYUd3c2VmVlpvdXM3NTQtMjhWcE0zU1RKaTFZUVdkUHJFLWlEbG4?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 12:07:28 GMT",
+        "pubdate_iso": "2026-06-11T12:07:28+00:00",
+        "impacto": {
+          "direccion": "negativo",
+          "intensidad": 1,
+          "intensidad_label": "leve",
+          "emoji": "🔴",
+          "razonamiento": "Selloff: presion vendedora"
+        }
+      }
+    ],
+    "tech_nasdaq": [
+      {
+        "title": "Booz Allen Falls Ahead of Q1 Announcement",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPM09aU0ZGX1hSNXdrZWFVVGpaYnNVZm5lRm1oSXd5QUczcnU5a0JUU2NWRUNCczItdEd3Z3A3clpjTUlaRFZDazBuVld3MGlweUhaX2lmVnEzaFpZemgxNmxpcUNSM1hJbG1SLWVXY1J0ME5vRkhVa2pqUjAzczNfS19ta2NDM2hhLWFEbFB2NVk1ODFEaVRMVi1IZnhKQlJNaEE?oc=5",
+        "source": "TradingView",
+        "pubdate": "Fri, 12 Jun 2026 13:42:06 GMT",
+        "pubdate_iso": "2026-06-12T13:42:06+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Space Stocks Rally as Adobe Slips",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdmV2LWV4VkE1aDVGYVRQa0V6VWJHdTRxX09peGNQejBLVm9nUHI1SE9xOW01TUc1V2toQzhpdkxoSmtjOTJ3NERlbUpSTTR1YzVodGgxZlY3d0F3M0pBYjZ0bU1sc21KQzBpQ3RQS05jQ3RYRWY0cmVFcW1QbXgzdDZSZXFidmduLXNlRGxUZWU3SFNxUVF3?oc=5",
+        "source": "TradingView",
+        "pubdate": "Fri, 12 Jun 2026 12:29:33 GMT",
+        "pubdate_iso": "2026-06-12T12:29:33+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Rally accionario"
+        }
+      },
+      {
+        "title": "SpaceX’s Historic IPO Will Trigger a Nasdaq Sell-Off? Says Analyst Michael Burry",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPTFpUMkhqTWVYcXlCNXhiUEhTcFpuODgxZERLZUdtVTFGMzdGdDFiSzBuMXB4VUhyZzhibTRwWTNGMzZmYWRnTzQzM0RLaHYyRkhYd3paWjVrcmRwOFFYeTM2bjJRR2RCakJYcEdyOTM1V0tkeWoydFh6VFkwZ2dBd1pOcUJkYXVPYVJSTUhUc3lraEtWMVJpbFdjeFVZWklFVEFORHpnbFotZjBNLXhoSUgwZndWU2Y1Uy1fd21kdmt3M2Jqa2xFeEo4bzZqVUJsRWJnbQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Fri, 12 Jun 2026 07:12:23 GMT",
+        "pubdate_iso": "2026-06-12T07:12:23+00:00",
+        "impacto": {
+          "direccion": "negativo",
+          "intensidad": 3,
+          "intensidad_label": "fuerte",
+          "emoji": "🔴🔴",
+          "razonamiento": "Selloff: presion vendedora"
+        }
+      },
+      {
+        "title": "MU, STX, WDC, DRAM: Memory Stocks Rally Amid Hopes Of Iran Peace Deal, SNDK Hits Fresh High",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPblJqZ0RtV2JoUFZDWTBJSldySkpkcDNwX1pGUzJfSnRzeUZmTWJjZ1ZKcHhxTmduQWwzc0ZiNkZZb1hwT0lQd1YxRk1hWDhPZVpIT2FJSDZZWnB2Rk1lb1BMdjhTRzNwT1NTTUF4eGpnNFdOR1RuQnJRYlFUcUlLWjkzNU9wZkpKUUp6NWVRSmJCcHBuOXhwc19zTXU3ZUN3TEhCcmZaMUl0OURmV0M3RmZhbE43cExXeXFxRW5EbzZrcnZhZEJmMjNEenBDMDN2dERrYk9TYkQyNHBTYVZJ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Fri, 12 Jun 2026 02:24:00 GMT",
+        "pubdate_iso": "2026-06-12T02:24:00+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Rally accionario"
+        }
+      },
+      {
+        "title": "Japanese Shares Rally on US-Iran Deal Hopes",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObHk4aVVYZnE2bjNlT0ZtdWFaVG85M1lId1M1WUpfNE9Pa2xLVjBGZVE0RUxPY25FRTNld1RQX245cUdKTG9OLUdvcnI5XzJXQzRQNmpOY1JBZGtuVHhOY3BCM3hzRHI4RVQ4ZnVUMUd6RHQ1cHZEbWNNTmFnbTlnbzNSdGtpb1I5cjlqZ3NRdTllU0ZFbzVScA?oc=5",
+        "source": "TradingView",
+        "pubdate": "Fri, 12 Jun 2026 00:42:00 GMT",
+        "pubdate_iso": "2026-06-12T00:42:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "economia": [
+      {
+        "title": "US Initial jobless claims 229K vs 219K estimate. Continuing Claims 1.795M vs 1.780M est.",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQkRCMXUweUhxOHlsX3RvTjBsOG5BRlZTWG94ekdYckY3MUp5S1ZpOF9ONi1MV1k1UkhuNTZjN1hQZXZuQm85NS1SVkpuRHAtYXVQcEthTWhJUEhXSmNYbUQ0R3h1X0lOOXVYeG55aldvalJZV2Zyb2dCTFhaNW55R2w2eHVSZFFMNEV4VUozMFJpd2IwN0gza0xhV2I3akNuc1BYdUI1a2lpLUpvazhwSU1vTk5Wb1I0NGlOVFdZeENSOVpxZERsRUN2eENfWkZOazRjTV9oWjBqMk9aWkE?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 12:30:39 GMT",
+        "pubdate_iso": "2026-06-11T12:30:39+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Bitcoin al borde de USD $60.000 por temor a una inflación más alta en Estados Unidos",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOenQ5eENJX3RMdWZxXy1iSzBLZGZocFBsNnVEME9uZ0Z4SFFoTEwwNEZraW5CSGRsX2xIYjlDdkRXWjU0MWY0QU5vU2tsbFQzT1M1dVdVRWt3TWxWTm5LT0xTLU5NU3lLeHlzVzRHNDJTS1lZMmc2eGRBZHM5MGdYZTJsQmxCaHZpMm5aMTJnMU5Vb3cwNkdCS0lRSEh5aTJBeExsc1FrX1l3SFNoT21yMXJueEJ0dFJKekRtRk90OA?oc=5",
+        "source": "DiarioBitcoin",
+        "pubdate": "Wed, 10 Jun 2026 20:23:28 GMT",
+        "pubdate_iso": "2026-06-10T20:23:28+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "earnings": [
+      {
+        "title": "Small caps defy volatility",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVWRQdWFMUGlsM0k3UnhDVXVMcG1sUjVJYmpFQWRCc1MtazExdVZLZXlRc1hUTjQ2UGl0ekpmQjZzbjFGN1Y3VTFmclJNTGQtd1JvbGRJMjlBYkdOUmdUV3U1UC1qT29qQWl1dFBrQnZsd2NtXzdoTlFhZWlhYU9fbEVsNU5VVUUtNHpTYzZEZ3g?oc=5",
+        "source": "The Star",
+        "pubdate": "Thu, 11 Jun 2026 23:04:15 GMT",
+        "pubdate_iso": "2026-06-11T23:04:15+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Driven Brands Q1 Earnings Call Highlights",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNU2ZEQ25IeHNBUHNacWE4ZHljWDlvTXVyOUtFYWNSRjdYemxxX1drbk92eDVadUprWXg4cGIzQXdib3h0cW9TX2VQNFpiSzF2dVhVbWpNLS1sNzllWU9YakN1UXE0Unc1ZjItOEFHTXNDSmtRLVFvY3BFdFl3R2VadWhEbkt3YURUOTdLUVZ4dVFOM0xMM1owdGFsbEtkTXpRaVhR?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 14:05:52 GMT",
+        "pubdate_iso": "2026-06-11T14:05:52+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Zach Johnson Korn Ferry Tour Perfil de jugador, estadísticas, biografía, carrera",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTUJ4V05YNlI2eEJzU085ZUExQTBMU0pBQzExRVhOajdwLW1QY0QwaUtuZDNPcXhmb1lBcVhzc3p0V1dCa05rci16RjhPbVZtd0p5Njl5Z05UTFR6Y1M5bmtPc29VemRJdy1qQ3RQdGJYSE1WT3VmZ21vSzZRTmhaWm1QbE92MXJwYVZIaW5oWTEyenBjcWhIRmdZU2F2MEFCZWxMWHBaTkJZWXpPU2k3enJuNWxZSDBSQ1FZakVrMA?oc=5",
+        "source": "PGA Tour",
+        "pubdate": "Wed, 10 Jun 2026 23:44:56 GMT",
+        "pubdate_iso": "2026-06-10T23:44:56+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Everpure: AI Storage Uncertainty Overshadows Breakneck Growth",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaHQ0Y2ZDWWZUbjlsSzFlLWdKN0ZSdFVqd2RDUnktSG5qUzBncjN2dHMzUkRpSTVVM3paZGs5VjIyazZVV3hZSjhSbGtWMmhOWkhiNXd1ZjUybThoTzk0MkVtRnlHZUY0S1Z1dWZKdXAzY0ZicjFIMFMyREhzWkpIMHQxcWdqTXh5SnFIbHhVTklBZDFOTGhnVzhSSklVZjdlWHZ2SnRtS09KV3BTN043bGVuMWkybFh5ems4WQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 20:05:00 GMT",
+        "pubdate_iso": "2026-06-10T20:05:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "sentimiento": [
+      {
+        "title": "Odds of a 'Super El Niño' are rising. What Texans need to know.",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdEFiQ3J3MnBOZjNKZ1M2WENLdTE1WWxYVWJRbjRsZHlrTmdiTEl6ZGtRQTJPRWE3THdVRXpXWk5UWGozdzI2LVhFT1V5SnRUNmc0WFk0bTdXbmNWLVFvWXFTbjBwNHJqZXdWdm8yRlFTc0hTMTltZXNRUVB4OU1GWkRxRFY2clh1ZEh5WThn?oc=5",
+        "source": "MySA",
+        "pubdate": "Fri, 12 Jun 2026 00:21:37 GMT",
+        "pubdate_iso": "2026-06-12T00:21:37+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "ADBE Stock Rises Ahead Of Q2 Earnings Report Today – Michael Burry Thinks The Market May Be Underpricing Adobe",
+        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNN0I5ZUZTRFkwZHI4NEhtSGYtSmZBLTV4ZlZfem1zWW9WS19nN1dBV1FVVjF6OGVleDd0OFVfR2tnQ0NGQTVGMk1nckFVM2ViZ0RkNTdGTF9WLWFGRU5hUnZGRDJ2YV9jTjBfaFRzYnk5YVIwVjV1dHU1bUZhVFlmeWwyazZGLXFkMHdFWjh5bXg1SnRzRFN5dFg3UmZZZDZOT29BWnQzbXlqMnJXYjlXcXppWHlLZ1BLWmhLZ2FyZFRNSXU5Y20yWmtFdFZCdUZsUURrVHVEZmYtSVdrYlZWeFM0V1ZqVWhvcUFhSVhxc3RCdldmNHNVRXd2aWY?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 09:15:18 GMT",
+        "pubdate_iso": "2026-06-11T09:15:18+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ]
   },
   "stats": {
-    "total_noticias": 0,
+    "total_noticias": 18,
     "por_categoria": {
       "fed_tasas": 0,
-      "mercado": 0,
-      "tech_nasdaq": 0,
-      "economia": 0,
-      "earnings": 0,
-      "sentimiento": 0
+      "mercado": 5,
+      "tech_nasdaq": 5,
+      "economia": 2,
+      "earnings": 4,
+      "sentimiento": 2
     }
   },
   "resumen_ejecutivo": {
     "sentimiento": "neutral",
     "score_neto": 0,
-    "n_positivas": 0,
-    "n_negativas": 0,
-    "n_neutrales": 0,
-    "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
+    "n_positivas": 2,
+    "n_negativas": 2,
+    "n_neutrales": 14,
+    "narrativa": "El feed muestra 2 senales positivas y 2 negativas (neto +0). Factores dominantes: Selloff: presion vendedora; Rally accionario.",
     "narrativa_fuente": "plantilla",
     "veredicto": "NEUTRAL - sin sesgo dominante"
   }
