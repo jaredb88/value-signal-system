@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T19:33:25.623096+00:00",
+  "updated_at_utc": "2026-06-13T20:03:28.036868+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "tesla": {
@@ -47,20 +47,6 @@
           "intensidad_label": "leve",
           "emoji": "🟢",
           "razonamiento": "Avances en Optimus: opcionalidad Tesla"
-        }
-      },
-      {
-        "title": "Tesla Stock Surges Into Bull Case as JPMorgan Lifts Target 227%",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUWJ5RGw0Q3ZrTE5XbDhDcDh6Vk1Ud2Vxd0dja05ZVzlNNS1CSmF1REM1S3h1WktDUGlwS0xzM01qSHpWVTBISlN5d1JDRVhMZVF0UmZXTzczZVJuVXBVNlNwYWdqOFhMeVYtNV9zS290VU1rSE9FTHV6NWNpNjFhcXhTZXFYQ3dBZGVvRC0ybjJ6YkpDZ1NrUU1sV3RfdzZCcS11YlZuQXNkXzhyYlp1blhxYlBuZXNNUWpuUEpn?oc=5",
-        "source": "TradingView",
-        "pubdate": "Wed, 10 Jun 2026 19:36:21 GMT",
-        "pubdate_iso": "2026-06-10T19:36:21+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
         }
       }
     ],
@@ -170,9 +156,9 @@
     ]
   },
   "stats": {
-    "total_noticias": 10,
+    "total_noticias": 9,
     "por_categoria": {
-      "tesla": 3,
+      "tesla": 2,
       "nvidia": 1,
       "ia_semis": 1,
       "macro_tech": 5
@@ -183,7 +169,7 @@
     "score_neto": -2,
     "n_positivas": 1,
     "n_negativas": 1,
-    "n_neutrales": 8,
+    "n_neutrales": 7,
     "narrativa": "El feed muestra 1 senales positivas y 1 negativas (neto -2). Factores dominantes: Selloff: presion vendedora; Avances en Optimus: opcionalidad Tesla.",
     "narrativa_fuente": "plantilla",
     "veredicto": "Levemente BAJISTA"
