@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T03:50:04.792191+00:00",
+  "updated_at_utc": "2026-06-13T05:33:52.907836+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -110,20 +110,6 @@
     ],
     "ipsa": [
       {
-        "title": "SP IPSA: La Bolsa de Santiago cierra al alza este viernes con 1,68% y en la semana varió 6,31%",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTEg4S0t6OXRBYTc2dERYbU1WZU9jYzA3NDBuZlVpclMzV2l2RHB2N0hKZmFBV0lnN2R3QUdaQXpvXzRXQmdyQ3J5TndYQWcyVE9QOXA5RHZMSFBiLUVmU0pzSXhaUkhLWGRGNXRPa3JfQWJ4cEZhUlNka0xVOGxSTlFNcnd3SDVycTJ6VG5xU3kxX19qTm9kMFBMb2JjcGFfSklHbVpTU2NQX0M1WnlLRWplV2RfYlNfRmlqN2Y3V0stZw?oc=5",
-        "source": "diarioestrategia.cl",
-        "pubdate": "Fri, 12 Jun 2026 23:21:13 GMT",
-        "pubdate_iso": "2026-06-12T23:21:13+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "Bolsa de Santiago se recupera y el IPSA logra ganancias semanales ante luces de acuerdo EEUU e Irán",
         "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOUnpXTlFDc2xnd05vZDhyeEZlU2s4cU44N09NWG5Va01iSGlvMGpCeUNCb2lZek56VnJaSUs3RVBVR1hpWnRqelhXUDliNGxjLURtbVFINERWWjl6aHFGLW43WE5hbk5Yb0k3Y1NBVS0wUWNCQ3czOFZQblpuR2xMakFDV09tQzdsdnFSYjI5X2ozZGZrSkxfVjQ5cG9ZTDVRODBIVDlmSHRwUUM1QjhHTm1sZ01ZdXJZRUJvdVprUG0tQTZQaFh6NDd2RFplQWxWWDdPcnVuWE5RZGptV3N4YTA2WFJVejFMSGdLWFBnNXJnZFdvYUl5VVFkLVd4S0pQUFRXbkhhZHV6Wmo1ZVNB?oc=5",
         "source": "BioBioChile",
@@ -168,6 +154,20 @@
         }
       },
       {
+        "title": "Precio del dólar hoy en Chile: cotización de cierre del 12 de junio",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMXJYa0VHQlZDcndxVHdZT29SVnJtNXFkRDE5S2xfLXg4TEM1U09CVEF3Mng0dmlGajBnUzQ4UGlGdXl4Tm9xbVpVTEM1R0RWRWdEejlaWnZZQW1pY25vYi1wWmlfdHp4czBHRG44UnpUaWN6M3VibTIzSTExdWpyc2sxaDBoVTNLdGJPWlR5Wk1vWk85cFktMG8zcEIyLWtRWnFhcGJoWjVVWUFvVWgwcNIBywFBVV95cUxPbndLcjlOSmVsV3U3bEc0TlhhQ1A1aUwyTUV6UVI3SnJ1ZzFRNk8xWXdqT1A5NldCdG5kS29SbDNydTYydkV3VlNTWTcyaklTdThMdkQycVFaaEk2QmhiVzd3djlLeFBScTl2WUNCbG96S0dfalZERFJJRkN3Z2lOSEw5V3RPOVNySnVZTWtmYVBqd0tENlBWYjM0c0w1b1Y3a3pIakYxeGhKTGtSZ290LTAyZW9RT2s1SWdrZ01VeFZkYTVnQUU5Wl9ZMA?oc=5",
+        "source": "Infobae",
+        "pubdate": "Fri, 12 Jun 2026 18:21:41 GMT",
+        "pubdate_iso": "2026-06-12T18:21:41+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Precio del Dólar en Chile hoy: El Peso chileno amplía sus ganancias y alcanza máximos de una semana",
         "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTTlsWllON1FhQVhWWTZFY3hUYnBwNFZDWjZIMVoyel90VlNvOGM3SXBvT1MzTWJDUU4zd3h5RFp4Nkk1YmlqMm1KRTZVcG9hMHRkeGtNZFFPVk9aYmN2M2hiX1lYNVN6SHg4a2hrNVQtVnh5T1U0dnBQaTNRZGVZdklfUTdBeWdFN3hSWURpdXFJVEY1aFBhcnJNclBJWFR2LWU3ekdVNGxLZnppYlNkWEIwUWM0cGo3OFRmSTN6QWhFWUZabXNLT2JldlViM0Z4WkxzOXVuSdIB3AFBVV95cUxNLWdraHFEaUlmZDNVcnJDakpKVTJtcFNFNGtYRGNLUEE1NG50UkVET3ZtLU9aNzVIMlVhdjJyNUpHN0VwTy1Xd3lMS3ItZy1fVzVvbG5URzg2VEcwcFhnLVNpTEdDdGZ0X1B4TlE4YkdxdGZMTW9vWUdlSEZtS1FsRGNiZnF3M2Y1YVZXbUxRSFdTN2U2U0FKWVNfaEZ2TDhfVVFqYjFMVnZKWnJQTGJqeUx1S3JzZXN6QkJBU0UzbDhrZVljRGlrZHp6QjJlMjVWTWRnWDUwVmwtSFlU?oc=5",
         "source": "FXStreet",
@@ -201,20 +201,6 @@
         "source": "home.doe.cl",
         "pubdate": "Fri, 12 Jun 2026 14:10:23 GMT",
         "pubdate_iso": "2026-06-12T14:10:23+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Dólar hoy en Chile: cotización de apertura del 12 de junio",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSndKeENXTWZyLWxrXzEyTEhFV0dxVGNlMHVrQ0tkUmZaUzlFdnZHZUtfc2h3V3VrZ2c0M3hNQ1ZWdjB5cFd6YmpmRGJMTnNvYk1VTXZJWnVfdGZGb2VfTEVoaURlMEpGQ2R1aVl2cE9waWhjU1lKcE1fMkxkNmdYTllrdkt0bXdNUndWZ3I4QUVqZjNtdGFqYjNTVnJNajJjdC1URtIBvwFBVV95cUxPdEFXWUtNR0ZHYlRlQkd2dXNmbXY4RFVOX044NF9LQmtWaURURkZTLU01UURlU3QxTURNMF9tdzUzUUJXMkw0SnFDT2Z1UUNtVERBTWc3NW9kdjRWNDRPcmNMMG9RaG9QcWR1RGh5OW9lUzZoMUdIRjRiT0pHOGJBbktHVmNzV3NJa0o2NUNLaXI5aUtPdGc1MkZRemJVVmhqQ3hTYVpMWl9hbjYxeVJvUGVTQXZqaVBzMWNDRVBzOA?oc=5",
-        "source": "Infobae",
-        "pubdate": "Fri, 12 Jun 2026 11:28:26 GMT",
-        "pubdate_iso": "2026-06-12T11:28:26+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -333,8 +319,8 @@
         "title": "De malls a departamentos: por qué Cencosud, Parque Arauco y Mallplaza apuestan por viviendas",
         "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcXptaHoyeE5YQlZyYUZaTXNLdUY5REEtWnFpODlnZHVFMkU2SlBHQ213bFhCME9BREJSMUlaNDZacFJBYTNNaXJlclBKSFlXVlZrLWpHTlJtdlQzdWh6UFZMQWdTRzFFN0tJcExzZ1NuYjd0dHRSdkFycFZadTNFb2l2emJKOUtFaS1OVlNuVTU0UFVEanFJUFl5cGM3ZHlURUkxVDJNU2JRRUNRTTRtckZJcmVsWDA2YmVWQUt2ZEhtaFB5?oc=5",
         "source": "Perú Retail",
-        "pubdate": "Sat, 13 Jun 2026 01:31:27 GMT",
-        "pubdate_iso": "2026-06-13T01:31:27+00:00",
+        "pubdate": "Sat, 13 Jun 2026 04:30:27 GMT",
+        "pubdate_iso": "2026-06-13T04:30:27+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -360,10 +346,10 @@
     ]
   },
   "stats": {
-    "total_noticias": 22,
+    "total_noticias": 21,
     "por_categoria": {
       "bcch_tpm": 5,
-      "ipsa": 3,
+      "ipsa": 2,
       "dolar_cobre": 5,
       "economia_chile": 5,
       "politica_regulacion": 2,
@@ -377,7 +363,7 @@
     "score_neto": 0,
     "n_positivas": 0,
     "n_negativas": 0,
-    "n_neutrales": 22,
+    "n_neutrales": 21,
     "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
     "narrativa_fuente": "plantilla",
     "veredicto": "NEUTRAL - sin sesgo dominante"
