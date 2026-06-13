@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T16:50:02.537494+00:00",
+  "updated_at_utc": "2026-06-13T03:49:38.765214+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -28,32 +28,444 @@
     }
   },
   "noticias_por_categoria": {
-    "precio": [],
-    "fed_macro": [],
-    "dolar": [],
-    "bancos_centrales": [],
-    "geopolitica": [],
-    "proyecciones": []
+    "precio": [
+      {
+        "title": "Precios del oro hoy, 13 de junio: Se disparan bruscamente.",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE44ZTZiZUVnN09kcXFpaTBfdE1IMm9SckJYdzdyeWg4bENLUW8wZnZoY1hSc3B3c01ib3lIRUZ2WUpSSS1xa3hwa2dnaVZtZzZYYkFqY2prWWNscHFZcC1ScDViSXprYk9WMWpEOFJB?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Sat, 13 Jun 2026 03:04:24 GMT",
+        "pubdate_iso": "2026-06-13T03:04:24+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Actualización del precio del oro el 13 de junio: Se dispara en 5,6 millones de VND por tael (aproximadamente 37,5 gramos).",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcFpteTNKenRjdno4bkFuUURZMDkzNGRqVkF2NVdEd2d1VFhTR0hDdXg2cWd2Wl9qNWgtQ2xOM1ZpLU9yNU1vOTlhTlR2TXA0Y0RreXBOVEVXcFowbWxuVkFDOTdiLTZRTHhxb0RiLU1TeDhoXzE2OUozZV9mVTlDcHYxUlVsakhpd0xQcFpmMXI?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Sat, 13 Jun 2026 03:00:31 GMT",
+        "pubdate_iso": "2026-06-13T03:00:31+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "¿Cuál es la previsión para el precio del oro hoy, 13 de junio de 2026? ¿Subirá o bajará?",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBKTGplMUNuUzg0M0ZPZjF4cVluSXZFQnlxTnZ1VmwtN0V5YzhrOTBrQjdOSGFfSG5vdEcyYVJiMG41aDc0Q21CNU1UVWFvT3UzSkJUWEpVSHpETGJVMWM3QmdVRGEyNjUxa2IxaEdaT0JQa0ZPVDg2ak54N25JQQ?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Sat, 13 Jun 2026 02:20:33 GMT",
+        "pubdate_iso": "2026-06-13T02:20:33+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Actualización 08:30 AM 13 de junio de 2026: Los precios del oro aumentaron entre 1,1 y 1,6 millones de VND, mientras que los de BTMC y SJC se mantuvieron sin cambios.",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMENOM1VGZzN1OVBURGYxelJGVk10X3c2X3c4dTI0STlseTRtelZkOVNzSkpRRHZGUGlJbHhZVlhwNjh6NGQ4LVFwWkxWX09KVFNEUEo5VjR6R0VNczkxS29TcEFtd0thaU5qalRicWk4Tm1MYjE4X1lkYTVkUS01cklCQVdvTWZ0OEtabWNnMWlzRXpyWElQZEsxZHBrR2hoUmdUNm1MSUYtQ2pURTc0ejd3?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Sat, 13 Jun 2026 02:11:50 GMT",
+        "pubdate_iso": "2026-06-13T02:11:50+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Precio del oro hoy, 13 de junio de 2026: Se dispara hasta los 147 millones de VND por tael.",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNeTlITkEyeDE4a045eVdBR2w0OHZjMy05dnB1XzBBVmE0OWgtYk1QNjY4V0oyT3MxM29UX1FQTTZDNkpaRm1SS0xaUWI3RVcwSjNYVEN4OW9Qb0pEdzdCVklqeE0yOG1VaENkQWRGOGxfTkVuSUllYk5CeGhFWjctYkxQSzNrWVVrUXpFbUpRWUFFMGgxenk4?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Sat, 13 Jun 2026 01:58:11 GMT",
+        "pubdate_iso": "2026-06-13T01:58:11+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "fed_macro": [
+      {
+        "title": "Inflación mayorista en EE. UU. salta a 6,5% en mayo y reaviva temor a más tasas de la Fed",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbUdGb0ZRU2tSdjdSVGtvM3VSUjhGOVlkRmgyQjVUYlVWZDg3MzRaSTJkdmUxd0pNLTdOODhJZTNaN0xaV2dSY2pwSlBuWWZxV1kzT2M5ZlY5MmtBRkJ6eVZCTS1mcVRMYXc1d3hsOXRGbVBFYmVlT2xxZXZ3Ry04S29lVmNCOERfVkNmVGR3NFlaRXhNSWhXdXpVVEhIZ3JDdzN0NGl3clByVDE3R0dQR1lVSGZuNi1EUlJ4RWdndVY1Z2d3TzYwdXJSVQ?oc=5",
+        "source": "DiarioBitcoin",
+        "pubdate": "Thu, 11 Jun 2026 13:39:15 GMT",
+        "pubdate_iso": "2026-06-11T13:39:15+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "US CPI Rate Rises to 4.2%, Bitcoin Price Sees Minor Gains",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOEJLbF9ZejFKaWJ4S1JNMFFZZnlXYVJ0QUxuQkVUNW1GeVc5UTBkUWFfNDh6WjdMVlBEMHVDV05iSklOS1RobTFwOS1jSTV4Q3lCUG1ocWlEMDN6VlU0d2xqcURoVkRuWUxrMEZ6VmNQeEMweEVnRU9vbDBFWi1TeFF5TDVZb3dtQTViZlJGQzF4SENBWVVXUVBUSEJlRUhId2NjRXRnREZWQ3oxZFJlbXhOal8?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 12:51:05 GMT",
+        "pubdate_iso": "2026-06-10T12:51:05+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "El IPC de EE. UU. cumple expectativas pero la inflación subyacente se desacelera, ¿Bitcoin a 60,000 dólares?",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBLWGY2d2tHNHdOYkdrVm9NQjcwZjBkZlpZbndIZ24yM2RVTGRVaUtKeHBCQ28xd1BjMXg2MUNMMnhjRFpPMjhZZUl1aGZ1aXVYeHZIT00waWxWTld4?oc=5",
+        "source": "BeInCrypto",
+        "pubdate": "Wed, 10 Jun 2026 12:34:00 GMT",
+        "pubdate_iso": "2026-06-10T12:34:00+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Core inflation persistente: positivo para oro"
+        }
+      },
+      {
+        "title": "Bitcoin y Ethereum, pendientes del CPI de Estados Unidos: el dato que puede mover al mercado cripto",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVnU1RkhOemRjem9xRjVHZjYwZUxwQjd6dmdVcDhMbHFjazlLMWVkdkxYS3RBaHJVWUlLOTg1TTFlVl95X3ZrYzRmeEhiU1duU1V5cDdjQzRCMTVJaEF3NWpxVk5RTEpSNXhSOFF1NzgzWFh3UW53QjNsMWdxT0FnbmZTRTZVY01HWUpoN1E3UWkzOEsyTXRYbkpfWFRxdGZpVU1mYVJYdXI0YWFldEpabDY3S21LNWNNUXd6VEs2NWdJRzdOQ3NVczgxSktxWEY2azREQ3FQQQ?oc=5",
+        "source": "Cripto247",
+        "pubdate": "Wed, 10 Jun 2026 12:16:43 GMT",
+        "pubdate_iso": "2026-06-10T12:16:43+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "La inflación en EE. UU. acecha los mercados con el aumento de la tensión con Irán",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53dzBvejgtQml0dE8zblgtY1o2RUEzTGFGQmVBSmdzcDk4cV9HcnI3VGI1UzBIN1hfZmRNOUJsNTVmQkMxRC1jMVh6RmtxTUJqN2RJS3hYN1R6clZIOHFkdmEwRkQ?oc=5",
+        "source": "Binance",
+        "pubdate": "Wed, 10 Jun 2026 11:05:50 GMT",
+        "pubdate_iso": "2026-06-10T11:05:50+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "dolar": [
+      {
+        "title": "¿Por qué está cayendo el Dólar estadounidense si EE.UU. e Irán están más cerca de un acuerdo de paz?",
+        "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdHJYb2lURVZNdWViMGxJV1RXTFFxOFAwQVZ6cmVzMl84SDNXeDczNlF2em5LMzlHblR4VUtzLUJ1UjN0U1RjNlJiZ00xcXZ6YXduMWs0VkFXb1pnNWtLeUlYNzItbXNBMXgwc1djbzNLZzJGVk9jWUV1U2w4VGFjYXV4TllEelBRLWVlblRUbWpibmxWTmhCRHNFYnhuSHVjeWFTUFY0NzczLVNsTlJpV2JPTWNuQ0RKNGhERFJVTXlxeldycVpUSHRuRWh3UjVuVkc0WDdFYXJzb0dfVVduTkRFNUhfY3hVdWVDWF9CNktZSTMxQTdwSlZLV1hnT1R4U3BJ0gGIAkFVX3lxTE0wT2ZwcXpzeEJ2TGVYVk9vQzJ6ZFBKZUtkQ0QtWC1ZUF9fckZULVFDaWZuQUlWVUNYWS1xRnhtY18xdy1ObUNDc2NES0hNRzRzV1JUXzdJMU85STIxY1FuQ0d0bnY4Sk5ta0xFa1ZMOENQaDhaTm9rbG9FYmN4R19vNlhOYzZ3UC04T1ZlY05IT2l1LUcyLXQtMTVfd2ozRWlHTDVsMy1zXzE1TjZNenJfLVRqYy1FSDJTdXBjaUQ1cENlUmp6S3hTMmFPOHhRLS1teW1yNlM1LWYzVHpJMTN2eEw5cXBHUFpnRkh2Qy1iRjNnVDFuYm1yOHhJSUhNbE9XeGVuaXZjYg?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Fri, 12 Jun 2026 09:16:07 GMT",
+        "pubdate_iso": "2026-06-12T09:16:07+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "El Índice del Dólar de Estados Unidos avanza ante la aversión al riesgo predominante y las perspectivas de línea dura de la Fed",
+        "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOMkV2SGcxMnlnSGtVVFQwNGpiYlh5UmlySDNIZnNSTE5HRWJGRWRIX2p5M1hNa2RVQ3QtaHVwNFZhWXRKaFI3eEtIVjRSVnR0Vi0wbzJYbUlGZkJHazVWQXJFNnZtNmtLZDJEMjZ5NHZVQ1FOU19UdE8yUWt1b1puNVFIMHdQbUtueU9rU1ZKMlhvWkNKMXZqdGxOQTg3UnRHY0tNOFpvbXZaRTBYdG9DakRzZGdxVlRkV3dleXRUZ1RzaHBIWjdNSnlaVEtCTUNGWUlpcjBBM2U2UmxxZk90a1ZHby1BcGstelhpaGU5Wno1c0RrTnFZMlBrRFQzWlVtZEHSAYcCQVVfeXFMTXVvZkxjeTJoRWdBLVdnSktVdjFpWTJ4SUZlbXQ2RDlGSzY3eHJsY0xQckkydDd3SG84eUJ4QzE0Z3EyeGJwbWh6QWpQNks1Sk40M3NmUlVSTDFmS3l5SXVMV0lUREZUVm1idEdDWDJhLUFYUUpXS3JSTFRhRjN2eG85R0dBSVJLSWlQM2I0Wm5ZYjdHaVI1djVhdHNqSVNOZTZDOGxuV0E5ZXBfYlI0bDVGMV80bW9oQXdBQ21QUkFzM3ExalM2UFdNenNBMFVPMXhuTEkweVFoUC1YRDlwcVNSRUxIMGY0aHJ4MlJoai1YenJpUFpYaTRvLXB0NjI4eTFfTFYzUzQ?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Fri, 12 Jun 2026 06:53:53 GMT",
+        "pubdate_iso": "2026-06-12T06:53:53+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "El Índice del Dólar estadounidense gana terreno por encima de 99.50 ante las tensiones en Oriente Próximo y el elevado IPP de EE.UU.",
+        "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNTHRINzVZM2dsYXZSS3Y5WW4tVWtIeXc3d1pCTGszai00WFppaGt5eDhFcnVBQ3J4ZmpQYUttOGxnSXQyWTg0V1U5elpkaE5HbUVHWEJUX0RLRnRBM2xVWGVDM3U5RVJ0SGNxMzItNjlmUC12ejBrTjhwMVhLY0JZa2Ixc2NBT243dXpKVVdpaVdmd2h2Z2dNMmhCWkZBU1pnejh1b3p3VS05S0YyVXdGQkZveldhLTBqdzBnai1naGlHMWF0aWh0dUJTd29YTlVNclhkQmptSnMxXzFpRHhoem5USFJ2bWp5dVM5cndieWNyNHRYeHlnYWYxMUhrS0JLd3FuUlhuZFdvZ0JOXzNweXFDdGM4WDJpQTc0QjhlX3cwUG1PWWh3MDln0gGvAkFVX3lxTE9xblY2NXJlcjYwRjdvUFI5RkFMSGk5QVEtTU9KSHhEazhNVlM1cUtpVHREeFJnMWF5Y0VPMl92emFSeFBFT3o4UGh1VzFlLU4wR3Z1SUU4ejFtR3l0Sl9nTFAzNHpTZVFOMkpkc1BCMm9fUndqeHZkZmxZbzBSU3NFT1R0RmlsY1YxNkFCeHlYOWgzVm1HVmVlZ0tYZThTUU5VWGFJeGdJT2ZnQkNXM3JHdTdEMDY4RUp1Mlc1UWptcDBjWFlUUXRjaWVfNGxOSURlLUV0OHAydVRUcUlkZWZZYnBtOEc1WEJObVZ0RXM2Um52a3BOUEktR01lWG92STBFMXJrOFdnSmtVUFUtYnkwTzBRMHQzSUNtSlVYdHp5NnRmTGZlREstdjNDR2dRWQ?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Fri, 12 Jun 2026 02:43:04 GMT",
+        "pubdate_iso": "2026-06-12T02:43:04+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Tensiones geopoliticas: flujo a safe haven"
+        }
+      },
+      {
+        "title": "Peso ‘golea’ al dolar y mantiene su fortaleza: Así cerró HOY 11 de junio",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRzlMMzAzY2hYZ1otU0FJekswMzlkcE5oZ1NJR2tXZmFOX0plVTc3d1c2d2hiUUZ4WTBYT254cVM5aUJJLVNNbnRVeXhIUzEyLWlUdVJPTzlCV1d2c3hRTjFobmQ3bEptdXlIWnllQ01jVGw1UjdIbFhaczdCdjc5cWh6b1hQOUc0MGt3b1Fzd0tnX09BZGJOTnJn?oc=5",
+        "source": "El Financiero",
+        "pubdate": "Thu, 11 Jun 2026 21:34:23 GMT",
+        "pubdate_iso": "2026-06-11T21:34:23+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "El Índice del Dólar retrocede tras la cancelación de los ataques a Irán planeados por Donald Trump",
+        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOajU0eFN3WEdZQ1F1SFJyeVNhZi14UWVwYjhRd25DaFBuaVN5QnoybUtqalNhR1lHMFpsLXpUVDBJYzNYUGJ1WVB2UEwzS01LdXZWRlQwRWpfc18wYk9BVV9GTnFkdWRlWkwzVFRmYzcwa1ZCWVNUcmRxNGlFeENwUjZuNzd2U0RJQ3NaODAwTVZMY25QMGs1Z1UycUR3MTdnQ3kxOVFzd0I4c0dfa1ZkZVlhMW1Zc2pKME9XODRadzFJekFvcnVkUUJOTXlRQTJSQTJ4dmQzRWxzdGdfSHJQYWNHT3hOM1pVUHhlN0I4ZXpDMnllQ0gtMFI1am85SXRLTzZJMtIBigJBVV95cUxPMHk0NDJkdUlmcmhRR0kzVG9zZllUT0hUa1BzQ01zdnVHWm5wXzBSV09QYmVnOGE5SEhwOGt0RTRzbFdBTGZYQzBkeWs0ZmduYmtlb3lyVEV0NEprTlUwN201T2RIU3RVM0c5bDVDRXoxOUpmYUxmWnVrYkVJVzRFNnJZU254Sk85TTVkRzdGUkVHbTVOUnZZTTU3X3p2Zy05SGRmdDBrRjRoMVFncFRSV28yTV9Bdy1QMF9aYmxYcll5blFjc012TGlBUEFoenlCcDRab2w1QWE3aGNSQ3B6ckZFcDU5aWlwc1I2Q3hRLVFyT3JZYUZMVlN6SHVuTnVRUmVDOUxPX2REZw?oc=5",
+        "source": "FXStreet",
+        "pubdate": "Thu, 11 Jun 2026 18:33:48 GMT",
+        "pubdate_iso": "2026-06-11T18:33:48+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "bancos_centrales": [
+      {
+        "title": "El mercado mira a SpaceX, la FED y el oro ¿cómo posicionar la cartera?",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQX0ZhUFhCY2g0VkJtZ0lmMEFRX0VVRGFXd0FleVBDbXllSmdDWjNfcEJmOHpfVGgxN04zVGQ4VDRyeDhNWlB5UGlSWV9XbTdfWWZOQ19aaFM4XzlBMWI1aXhKTHd3ZnNZRkJmTHlsaEloWjU0UWVQYkItazc3U2NPS0E0QTBnOFMzOVlpaEhrc1FsVURXT0pURU50S3RYUdIBngFBVV95cUxQX0ZhUFhCY2g0VkJtZ0lmMEFRX0VVRGFXd0FleVBDbXllSmdDWjNfcEJmOHpfVGgxN04zVGQ4VDRyeDhNWlB5UGlSWV9XbTdfWWZOQ19aaFM4XzlBMWI1aXhKTHd3ZnNZRkJmTHlsaEloWjU0UWVQYkItazc3U2NPS0E0QTBnOFMzOVlpaEhrc1FsVURXT0pURU50S3RYUQ?oc=5",
+        "source": "Estrategias de Inversión",
+        "pubdate": "Fri, 12 Jun 2026 08:50:00 GMT",
+        "pubdate_iso": "2026-06-12T08:50:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Oro: la paradoja se acentúa con un desplome del 26% mientras los bancos centrales aprovechan para a",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMWdsd3c2NE1oU3lZNEQyQ3FMZHZkbDN5U0h3RjJTNDVpMmRLVkUwSDhFUUl1TlNkRi1kT0FSQy01ZU1kV2lXTjRiRlV2NW50Y1ZxRDJiMFlFYXlHdlE1Umg4Zjg1aXA4LUhaYUpubkw1QlYzcUpQSWptcXo1S1FLdkI5enJad09Vam51SEh0MDBOOEFFUTFfY0hvbFVEa1MtTG5wdFJ0V0swSTZCS28wNmlxdG9fc2J2dS1sR2E4Vkt6Q2hRc29Qbw?oc=5",
+        "source": "AD HOC NEWS",
+        "pubdate": "Fri, 12 Jun 2026 05:12:32 GMT",
+        "pubdate_iso": "2026-06-12T05:12:32+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Oro: la ofensiva compradora de los bancos centrales desafía el dominio de la Reserva Federal",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZGNSczhETG5SYVMyQndDcWptVjl5Y29DZ3oybzFRQ2V0OFBIZ0lpVHNUZm5XY3RHdDVLTExtLUtUZ19JdGJ4R1BpRUllWmdjRHJ1M182MC1BSmVoS0VtYi13QmRBQzQyOVBMVDBZWlY2Zk5aZVllMFRZU0lfXzE0eHprQU5rNWRpWDhGcXRmZ2NDRXJ4bjR5Z1I0OFlvWW9hNEoteEhEcndTTmtMUDUtbjFqenlCNTFsVkoyWnhwR3ZIZ0ZNcmVhOXhVQQ?oc=5",
+        "source": "AD HOC NEWS",
+        "pubdate": "Fri, 12 Jun 2026 02:03:44 GMT",
+        "pubdate_iso": "2026-06-12T02:03:44+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "¿Por qué cayeron en más de $700 millones las reservas de oro de Ecuador?",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaFZvcUdVMlllTmxtN0cyc0J6NU9aUVhVQ1Rya29RbWc4aFctXy1vSUpQVnBiNW5KYm42dGhNUmNZUWxCQS1lOEFpQktQcGlCS2plb1hXUDZ5RWZ1UnNzVG9WRnk0bzUxd19YMlBYdTl1QVpRYnF6aDZBdUstSmN2X0lJY1hNcWFTc3dCR0ZiUi1jWnZzM2V1RVRGd3duUGJEcjZGMDhUd0VuZEh2anVFZC1PdDJhT0JQRllTNzUzZ1U?oc=5",
+        "source": "Diario La Hora",
+        "pubdate": "Thu, 11 Jun 2026 15:12:47 GMT",
+        "pubdate_iso": "2026-06-11T15:12:47+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Acumulacion de reservas de oro"
+        }
+      },
+      {
+        "title": "¿Por qué el oro puede caer incluso cuando bancos centrales siguen comprando?",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUzc1RC1kU0ZYdlIzRDFQWUhwR2U3amJjZC1BMGN4NUNDV1ROWXpzaEYzLVlyMXJGQ1o0VGRkd3prOFo0aEhJUWRTb3hlX0RhOTNGNzRlT0dZeWVWVDhuRFpzLW9DWk51TExuVy1uSWhaQUdDQlJ6bFRtbWJlMHBmY1l6emhBQlNqcktTR09XaG9xNmxfNE5FZmpJcUliSnJ3WVhmbHRINjAzRVU?oc=5",
+        "source": "EBC Financial Group",
+        "pubdate": "Thu, 11 Jun 2026 03:03:00 GMT",
+        "pubdate_iso": "2026-06-11T03:03:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "geopolitica": [
+      {
+        "title": "Here’s what moved India’s inflation closer to RBI’s midpoint target in May",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWHJSTzJZUkhTRWN6dlJMV0trd2FPX2g3R09xTE5NZ1hLb1YwRi1RMzk0eDNtZ2xrMzV4UjVNa1ZTYkpQaFFiXzMxRm55OGdqVmFaS0ZkdEs2T0ZFWEwySEVtNUNyTjRWR1ZVODZDa1RvbG5BUW56RzgxWERqc0syaHJ1TEVTa3hVYmRmVlBfOW1LWkhrdU9FeGpnYk9Td1ZWSk8zZWFWal8xTXEzYmFNaFhFbnlaQUo1VGdRcnhxeUtVSk1zOEZodjFyRFhQVFE5bEE?oc=5",
+        "source": "TradingView",
+        "pubdate": "Fri, 12 Jun 2026 12:14:23 GMT",
+        "pubdate_iso": "2026-06-12T12:14:23+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Pronóstico del precio de la plata: ¿puede XAG/USD mantener su rebote ante las tensiones con Irán?",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE56WVdMT1VxaFlEeTVENnN3amxmVTVTanBrQ085bVpDejRQNTNMS2l3UkJqT09jVWUxUWk2TVNxUkpxSFlQVWZNZE12RjZnZXA3WGZjS2RIX2hKQ2l1d1I0ZWZMT2p2QQ?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 05:15:00 GMT",
+        "pubdate_iso": "2026-06-11T05:15:00+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🟢",
+          "razonamiento": "Tensiones geopoliticas: flujo a safe haven"
+        }
+      },
+      {
+        "title": "Commodity Corner: Oil surges on closure of Strait of Hormuz; gold hits six-month low",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPX3Nmc1JhX0Rvbk1YSXI5elc5MVNxV0lXaU1BY2hkV3NsbElOWnlwZ1g2b012TWJPZXBnMkc0ZERrbzJGME5wWXF5Y2VMOXlHeXhBakZHVVRVYVg3UWlvazRjdGdxVnBKSlZIM3JnZV83WGJPLTl6ZkhDdWlGWUdzV1hxb3BzYnN4dzR2aV8za2tLNjdKeXNIX1dEMzVkdzdOVTIyLW1ZemxDeE1SVExGS3FxYkFrc1dtU0RCWDNvNTV3czBKcVpoQnRMSU9ETW5Obnp5UmcybWlhTWtE?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 02:34:00 GMT",
+        "pubdate_iso": "2026-06-11T02:34:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Gold ETFs fall over 3%, silver ETFs drop nearly 5% as bullion prices hit multi-week lows on US-Iran tensions",
+        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNR09KMHZJWWlPTUh2UG01WEZiNGc0X2ZkS1IwSzRwb052SE5oR2NoeFJPWVU4bG5UVmEwQmZWVnNlTlgyLW8zSlJWNG00WW5kdFd3b0M2YWxMaExMWUREdTVjZFlibjRfTUc2VXpsWGFaenI3T25IaF9wd0lNM3RjSjZKeHlPeGlaSWVUQzJBZkRQTmVveVdtYi03TExZTWpKS2Q3Vk94NVZDRXFjdzlqckYtbUU0Vi1KZXpuRUZtU3pzNlFOQlZxM1EyY0lOaDd2WVdRc0tZX3ZNYlZJSEpYR1pSVVBNS2h1WjU2clhORXFMT1h6TWNLNVc1cw?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 05:35:00 GMT",
+        "pubdate_iso": "2026-06-10T05:35:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "proyecciones": [
+      {
+        "title": "TFPM: $440M gold stream deal secures cash flow and raises 2030 outlook, with Q3 2026 first delivery",
+        "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPb1M5d2ZtOWR3dGI4T0JzRkZUNW5KMWQ2V3V5OGZzSHU1WWloZ0cxeTI4RWRXd3hVUDJ4U2hQY2FKbm03X1UtRkcxdi1GZGt4SHpGbzRnZmhXOW9OY3cwRFJNQkpMZ0xwaFhhalZBeXh4Z2VRV1A4Y2hyLVMyWDRvX1VabGtKNG9ZTnlQdlhVeUJYZnpsMlR3SVZPNWJDNDdDN0JsVG1CQWlEN3BLcVIxTkRuVG5xamI5WUdMM0ZIWDY1MzE2RTdFd0dMQXBBeXFIME5iUE5SdzQ3enRWT2tOUnhtLVRMTjVUcnF0ZDJKeXNYODh4SFZFMDM1dzA4a3FfNFc1VHpNUG1SZw?oc=5",
+        "source": "TradingView",
+        "pubdate": "Fri, 12 Jun 2026 14:52:31 GMT",
+        "pubdate_iso": "2026-06-12T14:52:31+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Mercados a Observar Hoy: OIL, GOLD y BITCOIN (12.06.2026)",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVUJEWndoSFotS2o1NkpDejdLbFZCXzFtdFhvY1JfYTl5Q2VUNS05UUxTZ09lVjBkOU9RNjBoQWhDVmFjNHFwTi1MellRY3ROeTVid0wxWW1ubXhVMEs4cDNOcWUxMGo5TkNRR1BITEdyMkpSYUZOTEFxTktuRXNVSDBFN1NBR2NzMTJDWjc0MThNcDNIMnBnbEVCWEhHNjR1c09UR2s5RDVJXzJmcEpHZl9CWTg1aWtB?oc=5",
+        "source": "XTB.com",
+        "pubdate": "Fri, 12 Jun 2026 13:04:22 GMT",
+        "pubdate_iso": "2026-06-12T13:04:22+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "2026 World Cup: Each team’s chances - The Athletic",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdHJ0aEVaZkV1cm96c1RHYnJ2cml5M2FtLUpBNEdnR3ZsSGxuYW5Lay1PYlBkMERlS19tN0UzdDZ2bTl3a0tOTF9lRm5CeXdBcnlJNU56alZOT0l6cmU3UjkzcDY0UEhKbXNEWVEzMzMyWVYyUmUtZVZJbHFTMG5TbllVRE8tV0w1enNSaUZfSjN5STlNN3lJOGN2MmItX0VPYlYxem9nX3Y0OU5LY1lIWXQ3LUgydw?oc=5",
+        "source": "The New York Times",
+        "pubdate": "Fri, 12 Jun 2026 03:55:00 GMT",
+        "pubdate_iso": "2026-06-12T03:55:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Gold Holds Gains on Iran Deal Prospects",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNemtBazFINk9obDhrd0FUeEs4NXo5a3N0OFFkNEM4ME5kbFJpN3B1NFN5aTZHVXhpWVFtWGxxdDQwOWlhbXRIblk5UGJoSVY4U2VIRHZSTEJjcldwZkpFbFVwUHlIZmkwcG92TFMyOVRTeWM4V3hBRlc4RnJMWHFEU3pZT1RZNFQyZUJ5aGVTVW0wM1k?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 23:53:30 GMT",
+        "pubdate_iso": "2026-06-11T23:53:30+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Mercados a Observar Hoy: GOLD, SILVER y TNOTE (11.06.2026)",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaWl0TFJlQTV6V1h5WEhKeDJOaFlnSmc5UWd4UksxTDVzaWFEWDV4cHNoaWFsY2JBRlJjUXJ0OTZEOERXTHF5RU51a2t1VE0xc1RPWWdPUzJFM1BTLUMzaDN2azV6b3g1MXdpbkxRcVd4QWN4WmNCSVpHWTFzdnp3ZVgzV0pMMjZDeE9jY0FwenhSV0Vna0RreXNRUGsxWmJMNGlDeEJpbFByVUJuY0lqTzMwcExaWGJibVE?oc=5",
+        "source": "XTB.com",
+        "pubdate": "Thu, 11 Jun 2026 13:11:26 GMT",
+        "pubdate_iso": "2026-06-11T13:11:26+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ]
   },
   "stats": {
-    "total_noticias": 0,
+    "total_noticias": 29,
     "por_categoria": {
-      "precio": 0,
-      "fed_macro": 0,
-      "dolar": 0,
-      "bancos_centrales": 0,
-      "geopolitica": 0,
-      "proyecciones": 0
+      "precio": 5,
+      "fed_macro": 5,
+      "dolar": 5,
+      "bancos_centrales": 5,
+      "geopolitica": 4,
+      "proyecciones": 5
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "neutral",
-    "score_neto": 0,
-    "n_positivas": 0,
+    "sentimiento": "alcista",
+    "score_neto": 8,
+    "n_positivas": 4,
     "n_negativas": 0,
-    "n_neutrales": 0,
-    "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
+    "n_neutrales": 25,
+    "narrativa": "El feed muestra 4 senales positivas y 0 negativas (neto +8). Factores dominantes: Core inflation persistente: positivo para oro; Tensiones geopoliticas: flujo a safe haven.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "NEUTRAL - sin sesgo dominante"
+    "veredicto": "ALCISTA a corto plazo"
   }
 }
