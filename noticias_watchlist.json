@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T18:35:18.507569+00:00",
+  "updated_at_utc": "2026-06-13T20:33:03.312194+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -47,6 +47,13 @@
       }
     ],
     "SOQUICOM": [
+      {
+        "title": "El pago de Chile - Diario El Mercurio |",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Sa1RXMjZHaHNSbVpmaDdncGR4eGNrdG1TQm1qZkRrT21TbGkza1BJcGFmNUU5UnRJYl93cHl1WFFyT2YxM1MzTTlBRDBFemJmN2pLeXU4MUpkNU1QaDBGR2lRS1VUcU9MankwcUp6NUpBUXhyd2Y2dTZlYlM?oc=5",
+        "pubdate": "Sat, 13 Jun 2026 18:32:41 GMT",
+        "source": "Diario El Mercurio |",
+        "matched_keyword": "SQM"
+      },
       {
         "title": "IPSA cierra con fuerte alza sobre 10.900 puntos y registra su mejor semana desde 2022 frente a posible acuerdo de paz en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85bS1VRnRSVXJleUk4aFNIaW9wSzBfWi12d3ZYelliSmpBNElsRjVieEdYdEthM1M3cGtISGxRaHBrQXNWb1FVYWFFUU5tdHgwZkp1eXJQUXpOOUxvcWR5RmpLaEkyTHRX?oc=5",
@@ -125,8 +132,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2273,
-    "total_noticias_filtradas": 14,
+    "total_noticias_brutas": 2272,
+    "total_noticias_filtradas": 15,
     "total_hechos_esenciales_brutos": 94
   }
 }
