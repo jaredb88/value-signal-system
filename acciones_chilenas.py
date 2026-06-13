@@ -315,32 +315,6 @@ def _valor_mas_reciente(item):
 # ============================================================================
 
 
-def precio_fallback_yf(ticker):
-    """Obtiene el precio de cierre desde Yahoo Finance (<nemo>.SN) cuando la BCS
-    cae en captcha. Devuelve float CLP o None. Yahoo SI tiene datos para las
-    acciones que la BCS bloquea (AGUAS-A, PARAUCO, MALLPLAZA, CCU)."""
-    sym = f"{ticker}.SN"
-    try:
-        import yfinance as yf
-        tk = yf.Ticker(sym)
-        # 1) fast_info (rapido)
-        try:
-            p = tk.fast_info.last_price
-            if p and p > 0:
-                return float(p)
-        except Exception:
-            pass
-        # 2) history ultimo cierre
-        h = tk.history(period="5d")
-        if not h.empty:
-            cierre = h["Close"].dropna()
-            if len(cierre):
-                return float(cierre.iloc[-1])
-    except Exception as e:
-        log.warning(f"  Fallback yfinance fallo para {sym}: {e}")
-    return None
-
-
 async def analizar_ticker(ticker_config, bcs_client):
     """
     Obtiene todos los datos de un ticker:
@@ -388,7 +362,6 @@ async def analizar_ticker(ticker_config, bcs_client):
         # Parsear dividendos
         if variaciones:
             divs = parsear_dividendos_de_variaciones(variaciones)
-            resultado["_divs_bcs"] = divs  # para el fallback yfinance
             # Guardar los 10 mas recientes
             resultado["dividendos_recientes"] = sorted(
                 divs, key=lambda x: x["fecha_pago"], reverse=True
@@ -406,26 +379,6 @@ async def analizar_ticker(ticker_config, bcs_client):
                 )
     except Exception as e:
         resultado["error"] = f"BCS: {e}"
-
-    # 1b. Fallback de PRECIO via Yahoo Finance si la BCS no trajo precio
-    #     (cayo en captcha). El DY se recalcula con los dividendos disponibles:
-    #     los que bajo la BCS, o los preservados del JSON previo.
-    if not (resultado.get("precio_actual_clp") or 0):
-        p_yf = precio_fallback_yf(ticker)
-        if p_yf and p_yf > 0:
-            resultado["precio_actual_clp"] = p_yf
-            resultado["precio_fuente"] = "yahoo_sn"
-            log.info(f"  Precio de {ticker} via Yahoo (.SN): ${p_yf:,.0f}")
-            # dividendos: los frescos de BCS si los hay, si no los del JSON previo
-            divs_para_dy = resultado.get("_divs_bcs") or resultado.get("dividendos_recientes") or []
-            if divs_para_dy:
-                resultado["dy"] = calcular_dy_jared(divs_para_dy, p_yf)
-                if resultado["dy"].get("dy_pct") is not None:
-                    resultado["evaluacion"] = evaluar_vs_benchmark(
-                        resultado["dy"]["dy_pct"],
-                        ticker_config["benchmark_min"],
-                        ticker_config["benchmark_max"],
-                    )
 
 # 1.5 CAGR historico desde BCS (precio oficial)
     try:
@@ -506,20 +459,34 @@ def _limpiar_cache_nemo(bcs, ticker):
             cache.pop(nm, None)
 
 
-async def analizar_con_reintentos(ticker_config, bcs, max_intentos=3):
-    """Analiza una accion; si sale con precio 0 (captcha BCS), reintenta.
-    El captcha de la BCS es aleatorio, asi que un reintento suele pasar."""
+# Tope de reintentos contra el captcha aleatorio de la BCS. Alto para vencer
+# casi cualquier captcha, pero finito para no quedar en bucle si la BCS esta
+# caida de verdad. Las pausas entre intentos crecen para dar tiempo a que el
+# bloqueo temporal se libere.
+MAX_INTENTOS_CAPTCHA = 8
+
+
+async def analizar_con_reintentos(ticker_config, bcs, max_intentos=MAX_INTENTOS_CAPTCHA):
+    """Analiza una accion insistiendo en la BCS hasta obtener precio FRESCO.
+    El captcha de la BCS es aleatorio: reintentando con pausas crecientes,
+    casi siempre termina pasando. El precio es SIEMPRE de la Bolsa de Santiago
+    (sin fuentes alternativas que puedan venir desfasadas)."""
     ticker = ticker_config["ticker"]
     resultado = None
     for intento in range(1, max_intentos + 1):
         if intento > 1:
             _limpiar_cache_nemo(bcs, ticker)
-            log.info(f"  Reintento {intento}/{max_intentos} para {ticker} (precio 0, posible captcha)...")
-            await asyncio.sleep(3)
+            pausa = min(3 * (intento - 1), 20)  # 3,6,9,...,tope 20s
+            log.info(f"  Reintento {intento}/{max_intentos} para {ticker} "
+                     f"(BCS en captcha, esperando {pausa}s para precio fresco)...")
+            await asyncio.sleep(pausa)
         resultado = await analizar_ticker(ticker_config, bcs)
         if _precio_ok(resultado):
+            if intento > 1:
+                log.info(f"  {ticker}: precio BCS fresco obtenido en intento {intento}.")
             return resultado
-    log.warning(f"  {ticker}: sigue en precio 0 tras {max_intentos} intentos.")
+    log.warning(f"  {ticker}: la BCS siguio en captcha tras {max_intentos} intentos. "
+                f"Se usara el ultimo precio BCS valido (preservado).")
     return resultado
 
 
