@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-12T23:52:35.752232",
-  "duracion_segundos": 233.726854,
+  "fecha_actualizacion": "2026-06-13T01:16:44.145927",
+  "duracion_segundos": 114.08012,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,14 +11,28 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": null,
-      "razon_social": null,
-      "variacion_pct": null,
-      "dy": null,
-      "cagr_3y": 0.23526088875487194,
-      "cagr_5y": 0.3934355458257812,
-      "cagr_10y": 0.10549395233389758,
-      "evaluacion": null,
+      "precio_actual_clp": 1343.5,
+      "razon_social": "A.F.P. HABITAT S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 7.39,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 110.0,
+          "2024": 120.0,
+          "2023": 68.0
+        },
+        "promedio_anual": 99.33,
+        "advertencia": null
+      },
+      "cagr_3y": 0.21792104860905148,
+      "cagr_5y": 0.3971323382473273,
+      "cagr_10y": 0.10536838501121015,
+      "evaluacion": {
+        "status": "Sobre benchmark",
+        "emoji": "🟢",
+        "vs_benchmark_pp": 0.89
+      },
       "cmf": {
         "periodo": "03/2026",
         "tipo_balance": "INDIVIDUAL",
@@ -31,7 +45,88 @@
         "capital_trabajo": -8196260.0,
         "patrimonio_total": 423201664.0
       },
-      "dividendos_recientes": [],
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-15",
+          "fecha_limite": "2026-05-09",
+          "monto_clp": 60.0,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO ADIC 149 $ 60"
+        },
+        {
+          "fecha_pago": "2026-01-09",
+          "fecha_limite": "2026-01-03",
+          "monto_clp": 20.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 20"
+        },
+        {
+          "fecha_pago": "2025-10-10",
+          "fecha_limite": "2025-10-04",
+          "monto_clp": 20.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 20"
+        },
+        {
+          "fecha_pago": "2025-05-16",
+          "fecha_limite": "2025-05-10",
+          "monto_clp": 55.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 146 $ 55"
+        },
+        {
+          "fecha_pago": "2025-01-03",
+          "fecha_limite": "2024-12-27",
+          "monto_clp": 35.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 145 $ 35"
+        },
+        {
+          "fecha_pago": "2024-10-11",
+          "fecha_limite": "2024-10-05",
+          "monto_clp": 20.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 144 $ 20"
+        },
+        {
+          "fecha_pago": "2024-05-17",
+          "fecha_limite": "2024-05-11",
+          "monto_clp": 60.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 143 $ 60"
+        },
+        {
+          "fecha_pago": "2024-01-05",
+          "fecha_limite": "2023-12-29",
+          "monto_clp": 40.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 142 $ 40"
+        },
+        {
+          "fecha_pago": "2023-10-13",
+          "fecha_limite": "2023-10-06",
+          "monto_clp": 15.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 141 $ 15"
+        },
+        {
+          "fecha_pago": "2023-05-12",
+          "fecha_limite": "2023-05-06",
+          "monto_clp": 53.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 140 $ 53"
+        }
+      ],
       "error": null
     },
     {
@@ -58,7 +153,7 @@
       },
       "cagr_3y": 0.15881109761214995,
       "cagr_5y": 0.19917062826688436,
-      "cagr_10y": 0.06732079629829935,
+      "cagr_10y": 0.06813662288118616,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
@@ -182,7 +277,7 @@
         "promedio_anual": 233.52,
         "advertencia": null
       },
-      "cagr_3y": 0.13135216411824602,
+      "cagr_3y": 0.15287251435835802,
       "cagr_5y": 0.0796084730466029,
       "cagr_10y": -0.040700112466340976,
       "evaluacion": {
@@ -308,7 +403,7 @@
         "promedio_anual": 70.9,
         "advertencia": null
       },
-      "cagr_3y": 0.2997407116529842,
+      "cagr_3y": 0.2997150372552284,
       "cagr_5y": 0.1459281498546543,
       "cagr_10y": null,
       "evaluacion": {
@@ -434,9 +529,9 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.01738315001408286,
-      "cagr_5y": 0.02866588625917843,
-      "cagr_10y": -0.02528907630070154,
+      "cagr_3y": 0.01545262706438133,
+      "cagr_5y": 0.024205712419562486,
+      "cagr_10y": -0.026028739213731056,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -561,8 +656,8 @@
         "advertencia": null
       },
       "cagr_3y": 0.30539244107768493,
-      "cagr_5y": 0.20695789118934305,
-      "cagr_10y": -0.008173026518431992,
+      "cagr_5y": 0.206022201108228,
+      "cagr_10y": -0.009175259379129552,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
@@ -686,7 +781,7 @@
         "advertencia": "Solo 2 anos disponibles (ideal: 3)"
       },
       "cagr_3y": 0.44739284634931487,
-      "cagr_5y": 0.1722917562601074,
+      "cagr_5y": 0.17150827108396371,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
@@ -811,7 +906,7 @@
         "promedio_anual": 40.33,
         "advertencia": null
       },
-      "cagr_3y": 0.5429923088863622,
+      "cagr_3y": 0.5552454228601558,
       "cagr_5y": 0.22047118701815815,
       "cagr_10y": null,
       "evaluacion": {
@@ -938,7 +1033,7 @@
         "advertencia": null
       },
       "cagr_3y": 0.08932222693859337,
-      "cagr_5y": 0.10917878766584721,
+      "cagr_5y": 0.10621830382528263,
       "cagr_10y": 0.09066539911764293,
       "evaluacion": {
         "status": "Sobre benchmark",
@@ -1063,9 +1158,9 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.12515286520489788,
-      "cagr_5y": 0.21685572965638333,
-      "cagr_10y": 0.11600578246196336,
+      "cagr_3y": 0.1314060766545564,
+      "cagr_5y": 0.21032863511194533,
+      "cagr_10y": 0.11521905270945632,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
@@ -1189,8 +1284,8 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.20446455392233398,
-      "cagr_5y": 0.13042684454103215,
+      "cagr_3y": 0.21377339757808156,
+      "cagr_5y": 0.12941346160757572,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
