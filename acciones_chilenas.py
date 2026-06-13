@@ -408,6 +408,80 @@ async def analizar_ticker(ticker_config, bcs_client):
 # ============================================================================
 
 
+def _precio_ok(resultado):
+    """True si la accion trae un precio valido (no cayo en captcha)."""
+    p = resultado.get("precio_actual_clp") or 0
+    try:
+        return float(p) > 0
+    except (TypeError, ValueError):
+        return False
+
+
+def _limpiar_cache_nemo(bcs, ticker):
+    """Borra la cache del nemo para forzar un fetch fresco en el reintento."""
+    nm = ticker.upper()
+    for attr in ("_cache_variaciones", "_cache_resumen"):
+        cache = getattr(bcs, attr, None)
+        if isinstance(cache, dict):
+            cache.pop(nm, None)
+
+
+async def analizar_con_reintentos(ticker_config, bcs, max_intentos=3):
+    """Analiza una accion; si sale con precio 0 (captcha BCS), reintenta.
+    El captcha de la BCS es aleatorio, asi que un reintento suele pasar."""
+    ticker = ticker_config["ticker"]
+    resultado = None
+    for intento in range(1, max_intentos + 1):
+        if intento > 1:
+            _limpiar_cache_nemo(bcs, ticker)
+            log.info(f"  Reintento {intento}/{max_intentos} para {ticker} (precio 0, posible captcha)...")
+            await asyncio.sleep(3)
+        resultado = await analizar_ticker(ticker_config, bcs)
+        if _precio_ok(resultado):
+            return resultado
+    log.warning(f"  {ticker}: sigue en precio 0 tras {max_intentos} intentos.")
+    return resultado
+
+
+def _cargar_json_previo():
+    """Carga el acciones_chilenas.json anterior como dict {ticker: registro}."""
+    try:
+        with open(JSON_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return {a["ticker"]: a for a in data.get("acciones", []) if a.get("ticker")}
+    except Exception:
+        return {}
+
+
+def _preservar_si_roto(resultado, previo_por_ticker):
+    """Si la accion quedo en precio 0 pero habia un dato bueno previo,
+    conserva el dato anterior (precio/dy/evaluacion/etc.) marcado como stale.
+    Devuelve (registro_final, fue_preservado:bool)."""
+    if _precio_ok(resultado):
+        return resultado, False
+    prev = previo_por_ticker.get(resultado.get("ticker"))
+    if not prev:
+        return resultado, False
+    prev_precio = prev.get("precio_actual_clp") or 0
+    try:
+        prev_ok = float(prev_precio) > 0
+    except (TypeError, ValueError):
+        prev_ok = False
+    if not prev_ok:
+        return resultado, False
+    # Conservar campos de mercado del dato previo; mantener CAGR/CMF nuevos si llegaron
+    preservado = dict(prev)
+    for campo in ("cagr_3y", "cagr_5y", "cagr_10y"):
+        if resultado.get(campo) is not None:
+            preservado[campo] = resultado[campo]
+    if resultado.get("cmf"):
+        preservado["cmf"] = resultado["cmf"]
+    preservado["stale"] = True
+    preservado["stale_desde"] = prev.get("_fecha_dato") or prev.get("stale_desde") or "anterior"
+    preservado["error"] = None
+    return preservado, True
+
+
 async def main():
     log.info("=" * 70)
     log.info("ACCIONES CHILENAS - Analisis Watchlist Dividendero")
@@ -430,11 +504,20 @@ async def main():
         except Exception as e:
             log.warning(f"Warm-up fallo (no critico): {e}")
 
+    # Cargar datos previos para preservar el ultimo dato bueno si una accion
+    # cae en el captcha aleatorio de la BCS.
+    previo_por_ticker = _cargar_json_previo()
+    n_preservadas = 0
+
     # Analizar todos los tickers (secuencial porque BCS usa el mismo browser)
     resultados = []
     for ticker_config in WATCHLIST:
         try:
-            resultado = await analizar_ticker(ticker_config, bcs)
+            resultado = await analizar_con_reintentos(ticker_config, bcs)
+            resultado, fue_preservado = _preservar_si_roto(resultado, previo_por_ticker)
+            if fue_preservado:
+                n_preservadas += 1
+                log.warning(f"  {ticker_config['ticker']}: se conservo el ultimo dato bueno (captcha BCS).")
             resultados.append(resultado)
         except Exception as e:
             log.error(f"Fallo critico con {ticker_config['ticker']}: {e}")
@@ -450,6 +533,15 @@ async def main():
         await bcs._stop()
     except Exception:
         pass
+
+    # Sellar la fecha del dato fresco en cada registro con precio valido
+    _ahora_iso = datetime.now().isoformat()
+    for r in resultados:
+        if (r.get("precio_actual_clp") or 0) and not r.get("stale"):
+            r["_fecha_dato"] = _ahora_iso
+
+    if n_preservadas:
+        log.warning(f"{n_preservadas} accion(es) conservaron su ultimo dato bueno por captcha BCS.")
 
     # Construir output
     output = {
