@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-13T14:38:25.678449",
-  "duracion_segundos": 171.913965,
+  "fecha_actualizacion": "2026-06-13T15:05:38.190328",
+  "duracion_segundos": 150.656931,
   "n_acciones": 11,
   "acciones": [
     {
@@ -1273,11 +1273,25 @@
       "precio_actual_clp": 2464.3,
       "razon_social": "CENCOSUD SHOPPING S.A.",
       "variacion_pct": 0,
-      "dy": null,
+      "dy": {
+        "dy_pct": 4.13,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 91.0,
+          "2024": 119.0,
+          "2023": 95.0
+        },
+        "promedio_anual": 101.67,
+        "advertencia": null
+      },
       "cagr_3y": 0.21377339757808156,
       "cagr_5y": 0.12941346160757572,
       "cagr_10y": null,
-      "evaluacion": null,
+      "evaluacion": {
+        "status": "Bajo benchmark",
+        "emoji": "🔴",
+        "vs_benchmark_pp": -4.37
+      },
       "cmf": {
         "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
@@ -1290,7 +1304,88 @@
         "capital_trabajo": 15588435.0,
         "patrimonio_total": 3074811583.0
       },
-      "dividendos_recientes": [],
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-12",
+          "fecha_limite": "2026-05-06",
+          "monto_clp": 15.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF.  $ 15"
+        },
+        {
+          "fecha_pago": "2025-11-27",
+          "fecha_limite": "2025-11-21",
+          "monto_clp": 60.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV.  $ 60"
+        },
+        {
+          "fecha_pago": "2025-05-06",
+          "fecha_limite": "2025-04-29",
+          "monto_clp": 31.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF.  $ 31"
+        },
+        {
+          "fecha_pago": "2024-11-20",
+          "fecha_limite": "2024-11-14",
+          "monto_clp": 85.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV $ 85"
+        },
+        {
+          "fecha_pago": "2024-05-07",
+          "fecha_limite": "2024-04-30",
+          "monto_clp": 34.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF 8 $ 34"
+        },
+        {
+          "fecha_pago": "2023-11-16",
+          "fecha_limite": "2023-11-10",
+          "monto_clp": 70.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 7 $ 70"
+        },
+        {
+          "fecha_pago": "2023-05-09",
+          "fecha_limite": "2023-05-03",
+          "monto_clp": 25.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF $ 25"
+        },
+        {
+          "fecha_pago": "2022-11-08",
+          "fecha_limite": "2022-11-02",
+          "monto_clp": 60.0,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO PROV 6 $ 60"
+        },
+        {
+          "fecha_pago": "2022-05-03",
+          "fecha_limite": "2022-04-27",
+          "monto_clp": 30.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF $ 30"
+        },
+        {
+          "fecha_pago": "2021-10-21",
+          "fecha_limite": "2021-10-15",
+          "monto_clp": 30.0,
+          "tipo": "OTRO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO EVEN 4 $ 30"
+        }
+      ],
       "error": null
     }
   ]
