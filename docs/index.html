@@ -615,6 +615,12 @@ footer .fbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:1
 footer .fbrand{font-weight:600;color:var(--tx-2);letter-spacing:.1em}
 footer .fbrand b{color:var(--teal)}
 footer .disc{max-width:560px;line-height:1.5}
+.donate-btn{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;
+  padding:7px 14px;border-radius:20px;cursor:pointer;text-decoration:none;
+  background:rgba(38,166,154,.10);border:1px solid var(--z-opp-bd);color:var(--teal-2);
+  transition:background .15s,border-color .15s,transform .12s;white-space:nowrap}
+.donate-btn:hover{background:rgba(38,166,154,.18);border-color:var(--teal);transform:translateY(-1px)}
+.donate-btn .heart{font-size:13px}
 footer a.src{color:var(--tx-3);border-bottom:1px dotted var(--line-2)}
 footer a.src:hover{color:var(--teal-2)}
 
@@ -676,6 +682,7 @@ footer a.src:hover{color:var(--teal-2)}
         <a class="src" href="https://www.bolsadesantiago.com" target="_blank" rel="noopener">Bolsa de Santiago</a>,
         <a class="src" href="https://www.cmfchile.cl" target="_blank" rel="noopener">CMF</a>.
         No es recomendación de inversión.</span>
+      <a class="donate-btn" href="https://link.mercadopago.cl/jaredbello" target="_blank" rel="noopener" title="Donación voluntaria vía Mercado Pago — tú eliges el monto"><span class="heart">☕</span> Invítame un café</a>
       <span style="margin-left:auto;font-family:var(--f-mono)">“Compra miedo, no euforia”</span>
     </div>
   </div>
@@ -2702,7 +2709,7 @@ function init(){
   // refresh "ago" labels every 30s
   setInterval(updateHeader, 30000);
 }
-const VS_BUILD = "v2026-06-13.4";
+const VS_BUILD = "v2026-06-13.5";
 document.addEventListener("DOMContentLoaded", ()=>{
   const e=document.getElementById("vsBuild"); if(e) e.textContent = VS_BUILD;
   console.log("Value Signal", VS_BUILD);
