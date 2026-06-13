@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T03:49:38.765214+00:00",
+  "updated_at_utc": "2026-06-13T05:15:00.642502+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -30,6 +30,34 @@
   "noticias_por_categoria": {
     "precio": [
       {
+        "title": "Precio del oro (9999) hoy, mediodía del 13 de junio de 2026: Lista de precios para SJC, BTMC, BTMH, DOJI y precios mundiales del oro.",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQXZQbmg4a3N4Y1BCRm5BbGhYbDM2YkdScjhLNjFXLXBYM3MxM0JvNWY0ZTB3ZkJMeU85bllLZDJhT0xuNFozX0ZZa2tUWkROMVA5R0VWTFNOLWlLSXk4V0h3S05ZZ0pTcHBSMGF4VVFBaEJpNC1NQ1FXOXlrWWlhVk9DUF8zcVk3Q1dvMC0zNWtFQllxZzVBY3hfNkZSM3c0VV9iWWoySkpub2Mwazc4bjhn?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Sat, 13 Jun 2026 05:12:25 GMT",
+        "pubdate_iso": "2026-06-13T05:12:25+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "El precio del oro aumentó en 11 millones de VND por onza en tan solo dos días.",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWHNRQjhoZ3hCazFpMER6czQwQ2VGaVlWZHUxQUZ0Uy1DcXByLS0xNi10MWMzODJ3N19mbFY1ODBKTUhpQlpGb1R1blhySG9TSjR0R0wwZk1YeGp3Qm9Uem9tem12enMzQ3hURDNXdEFlejViZEg3R0hKbE1Dam9KOA?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Sat, 13 Jun 2026 04:19:05 GMT",
+        "pubdate_iso": "2026-06-13T04:19:05+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Precios del oro hoy, 13 de junio: Se disparan bruscamente.",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE44ZTZiZUVnN09kcXFpaTBfdE1IMm9SckJYdzdyeWg4bENLUW8wZnZoY1hSc3B3c01ib3lIRUZ2WUpSSS1xa3hwa2dnaVZtZzZYYkFqY2prWWNscHFZcC1ScDViSXprYk9WMWpEOFJB?oc=5",
         "source": "Vietnam.vn",
@@ -58,39 +86,11 @@
         }
       },
       {
-        "title": "¿Cuál es la previsión para el precio del oro hoy, 13 de junio de 2026? ¿Subirá o bajará?",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBKTGplMUNuUzg0M0ZPZjF4cVluSXZFQnlxTnZ1VmwtN0V5YzhrOTBrQjdOSGFfSG5vdEcyYVJiMG41aDc0Q21CNU1UVWFvT3UzSkJUWEpVSHpETGJVMWM3QmdVRGEyNjUxa2IxaEdaT0JQa0ZPVDg2ak54N25JQQ?oc=5",
+        "title": "Noticias agrícolas de hoy (13 de junio): Los precios del café suben bruscamente.",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNREZPTF9DeHppWHZ6SW0ySmZrUVlzMUJ6eTNRNktTXzh0Vm9CS1d4Ymt5ZG1vaTBTdDNOZlFTamZhcWJUbFBGR0JsTVc3U3FzSW1kOFc5NDRaUDZJSV9HeGF2aW1wRkQxYnJ2Y1BGdGlfdG14LUFDUEw0RDNOb3F3Nzl3?oc=5",
         "source": "Vietnam.vn",
-        "pubdate": "Sat, 13 Jun 2026 02:20:33 GMT",
-        "pubdate_iso": "2026-06-13T02:20:33+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Actualización 08:30 AM 13 de junio de 2026: Los precios del oro aumentaron entre 1,1 y 1,6 millones de VND, mientras que los de BTMC y SJC se mantuvieron sin cambios.",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMENOM1VGZzN1OVBURGYxelJGVk10X3c2X3c4dTI0STlseTRtelZkOVNzSkpRRHZGUGlJbHhZVlhwNjh6NGQ4LVFwWkxWX09KVFNEUEo5VjR6R0VNczkxS29TcEFtd0thaU5qalRicWk4Tm1MYjE4X1lkYTVkUS01cklCQVdvTWZ0OEtabWNnMWlzRXpyWElQZEsxZHBrR2hoUmdUNm1MSUYtQ2pURTc0ejd3?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Sat, 13 Jun 2026 02:11:50 GMT",
-        "pubdate_iso": "2026-06-13T02:11:50+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precio del oro hoy, 13 de junio de 2026: Se dispara hasta los 147 millones de VND por tael.",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNeTlITkEyeDE4a045eVdBR2w0OHZjMy05dnB1XzBBVmE0OWgtYk1QNjY4V0oyT3MxM29UX1FQTTZDNkpaRm1SS0xaUWI3RVcwSjNYVEN4OW9Qb0pEdzdCVklqeE0yOG1VaENkQWRGOGxfTkVuSUllYk5CeGhFWjctYkxQSzNrWVVrUXpFbUpRWUFFMGgxenk4?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Sat, 13 Jun 2026 01:58:11 GMT",
-        "pubdate_iso": "2026-06-13T01:58:11+00:00",
+        "pubdate": "Sat, 13 Jun 2026 03:00:02 GMT",
+        "pubdate_iso": "2026-06-13T03:00:02+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -318,20 +318,6 @@
     ],
     "geopolitica": [
       {
-        "title": "Here’s what moved India’s inflation closer to RBI’s midpoint target in May",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWHJSTzJZUkhTRWN6dlJMV0trd2FPX2g3R09xTE5NZ1hLb1YwRi1RMzk0eDNtZ2xrMzV4UjVNa1ZTYkpQaFFiXzMxRm55OGdqVmFaS0ZkdEs2T0ZFWEwySEVtNUNyTjRWR1ZVODZDa1RvbG5BUW56RzgxWERqc0syaHJ1TEVTa3hVYmRmVlBfOW1LWkhrdU9FeGpnYk9Td1ZWSk8zZWFWal8xTXEzYmFNaFhFbnlaQUo1VGdRcnhxeUtVSk1zOEZodjFyRFhQVFE5bEE?oc=5",
-        "source": "TradingView",
-        "pubdate": "Fri, 12 Jun 2026 12:14:23 GMT",
-        "pubdate_iso": "2026-06-12T12:14:23+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "Pronóstico del precio de la plata: ¿puede XAG/USD mantener su rebote ante las tensiones con Irán?",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE56WVdMT1VxaFlEeTVENnN3amxmVTVTanBrQ085bVpDejRQNTNMS2l3UkJqT09jVWUxUWk2TVNxUkpxSFlQVWZNZE12RjZnZXA3WGZjS2RIX2hKQ2l1d1I0ZWZMT2p2QQ?oc=5",
         "source": "TradingView",
@@ -448,13 +434,13 @@
     ]
   },
   "stats": {
-    "total_noticias": 29,
+    "total_noticias": 28,
     "por_categoria": {
       "precio": 5,
       "fed_macro": 5,
       "dolar": 5,
       "bancos_centrales": 5,
-      "geopolitica": 4,
+      "geopolitica": 3,
       "proyecciones": 5
     }
   },
@@ -463,7 +449,7 @@
     "score_neto": 8,
     "n_positivas": 4,
     "n_negativas": 0,
-    "n_neutrales": 25,
+    "n_neutrales": 24,
     "narrativa": "El feed muestra 4 senales positivas y 0 negativas (neto +8). Factores dominantes: Core inflation persistente: positivo para oro; Tensiones geopoliticas: flujo a safe haven.",
     "narrativa_fuente": "plantilla",
     "veredicto": "ALCISTA a corto plazo"
