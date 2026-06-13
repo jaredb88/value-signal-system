@@ -210,6 +210,8 @@ nav.tabs::-webkit-scrollbar{display:none}
 .hero .chip{font-size:12px;padding:5px 12px;border-radius:20px;background:var(--z-opp-bg);
   border:1px solid var(--z-opp-bd);color:var(--teal-2);font-weight:600}
 .hero .chip.cl{background:rgba(224,163,58,.12);border-color:rgba(224,163,58,.35);color:var(--amber)}
+.hero .chip.us{background:rgba(224,163,58,.12);border-color:rgba(224,163,58,.35);color:var(--amber)}
+.hero .chip{cursor:pointer}
 @media(max-width:680px){
   .hero-inner{flex-direction:column;align-items:flex-start;gap:16px;padding:22px}
   .hero-num{border-right:0;padding-right:0}.hero-num .big{font-size:58px}
@@ -250,6 +252,32 @@ nav.tabs::-webkit-scrollbar{display:none}
 .clm-num .pp.pos{color:var(--z-opp)} .clm-num .pp.neg{color:var(--tx-3)}
 .clm-bar{grid-column:1/-1;margin-top:5px}
 .us-side .clm-num .dy{font-size:15px}
+
+/* sub-etiquetas dentro del bloque de oportunidades */
+.sub-lbl{font-size:11.5px;font-weight:600;letter-spacing:.04em;color:var(--tx-2);text-transform:uppercase;
+  margin:18px 0 10px;display:flex;align-items:center;gap:7px}
+.sub-lbl:first-of-type{margin-top:4px}
+
+/* grilla de cards compactas (chilenas / USA) que llena el ancho */
+.mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:13px}
+@media(max-width:520px){.mini-grid{grid-template-columns:1fr}}
+.mcard{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px 15px 13px;
+  cursor:pointer;transition:border-color .15s,background .15s;position:relative;overflow:hidden}
+.mcard:hover{border-color:var(--line-2);background:var(--panel-2)}
+.mcard.opp{border-color:var(--z-opp-bd)}
+.mcard.opp::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 100% 0%, rgba(38,166,154,.08), transparent 60%)}
+.mcard-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;position:relative}
+.mc-tk{font-weight:700;font-size:16px;line-height:1.1}
+.mc-sub{font-size:11px;color:var(--tx-3);margin-top:2px}
+.mc-val{text-align:right;flex-shrink:0}
+.mc-val .v{font-family:var(--f-mono);font-weight:700;font-size:22px;line-height:1}
+.mc-val .l{font-size:9.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em;margin-top:1px}
+.mc-bm{font-size:11.5px;color:var(--tx-2);margin-top:11px;line-height:1.45;position:relative}
+.mc-bm .pp{font-family:var(--f-mono);font-weight:700}
+.mc-bm .pp.pos{color:var(--pos)} .mc-bm .pp.neg{color:var(--tx-3)}
+.mc-bar{margin-top:8px;position:relative}
+.mcard .row-news{margin-top:9px}
 
 /* ---------- layout ---------- */
 main{padding:26px 0 70px;min-height:60vh}
@@ -1493,128 +1521,103 @@ function renderHome(){
   let html = "";
   if(errs.length) html += `<div style="margin-bottom:16px">${errs.map(k=>errBox(k,VS.FILES[k])).join("")}</div>`;
 
-  // ---- HERO full-width ----
+  // ---- HERO full-width (sin sparkline; degradado + número grande) ----
   html += `<div class="hero ${total===0?'zero':''}">
-    <div class="hero-spark" aria-hidden="true">${heroLines()}</div>
     <div class="hero-inner">
       <div class="hero-num"><div class="big">${total}</div><div class="hl">señal${total!==1?'es':''}<br>activa${total!==1?'s':''}</div></div>
       <div class="btxt">
         <h2>${total>0?`${total} oportunidad${total>1?'es':''} de compra hoy`:"sin oportunidades activas hoy"}</h2>
         <p>Activos con score en zona de compra, acciones chilenas sobre su benchmark sectorial y acciones USA baratas por múltiplos. Es timing de aportes (DCA), no trading: nunca hay señal de vender.</p>
         <div class="bbreak">
-          <span class="chip">▲ ${opps.length} con score · ATRACTIVO / OPORTUNIDAD</span>
-          <span class="chip cl">▲ ${sobre.length} chilenas 🇨🇱 · sobre benchmark</span>
-          <span class="chip cl">▲ ${usBar.length} USA 🇺🇸 · baratas</span>
+          ${opps.length?`<span class="chip" onclick="document.getElementById('opp-score')?.scrollIntoView({behavior:'smooth'})">${opps.length} con score · ATRACTIVO / OPORTUNIDAD</span>`:""}
+          ${sobre.length?`<span class="chip cl" onclick="document.getElementById('opp-cl')?.scrollIntoView({behavior:'smooth'})">${sobre.length} chilenas · sobre benchmark</span>`:""}
+          ${usBar.length?`<span class="chip us" onclick="document.getElementById('opp-us')?.scrollIntoView({behavior:'smooth'})">${usBar.length} USA · baratas</span>`:""}
+          ${total===0?`<span class="chip" style="background:var(--panel-2);border-color:var(--line-2);color:var(--tx-3)">Acumulando aporte base</span>`:""}
         </div>
       </div>
     </div>
   </div>`;
 
-  // ---- columna principal: oportunidades con score ----
-  let mainCol = sectionTitle("Oportunidades activas", opps.length, "score descendente · cuánto aportar este mes");
-  if(loading){ mainCol += skeletonCards(2); }
-  else if(opps.length){ mainCol += `<div class="opp-grid">${opps.map(a=>assetCard(a)).join("")}</div>`; }
-  else { mainCol += `<div class="empty">Ningún activo con score está en zona de compra ahora mismo. Se acumula el aporte base.</div>`; }
+  if(loading){ return html + skeletonCards(3); }
 
-  if(rest.length){
-    mainCol += `<div class="acc" id="accRest">
-      <div class="acc-head" onclick="document.getElementById('accRest').classList.toggle('open')">
-        Sin señal activa — NEUTRAL / CARO
-        <span class="section-title" style="margin:0"><span class="count">${rest.length}</span></span>
-        <span class="chev">›</span>
-      </div>
-      <div class="acc-body"><div class="opp-grid">${rest.map(a=>assetCard(a)).join("")}</div></div>
-    </div>`;
+  // ====== BLOQUE 1: TODAS las oportunidades activas en una grilla ancha ======
+  html += `<div id="opp-active">` + sectionTitle("Oportunidades activas", total, "todo lo que está en zona de compra hoy") + `</div>`;
+
+  if(total===0){
+    html += `<div class="empty">Nada en zona de compra ahora mismo. Se acumula el aporte base para cuando aparezcan señales.</div>`;
+  } else {
+    // 1a. activos con score (BTC/GLD/ETFs/Growth)
+    if(opps.length){
+      html += `<div id="opp-score" class="sub-lbl">▲ Con score · cuánto aportar este mes</div>`;
+      html += `<div class="opp-grid">${opps.map(a=>assetCard(a)).join("")}</div>`;
+    }
+    // 1b. chilenas sobre benchmark
+    if(sobre.length){
+      html += `<div id="opp-cl" class="sub-lbl">🏛️ Chilenas sobre su benchmark sectorial</div>`;
+      html += `<div class="mini-grid">${sobre.map(a=>oppCardCL(a)).join("")}</div>`;
+    }
+    // 1c. USA baratas
+    if(usBar.length){
+      html += `<div id="opp-us" class="sub-lbl">📈 USA baratas por múltiplos</div>`;
+      html += `<div class="mini-grid">${usBar.map(a=>oppCardUS(a)).join("")}</div>`;
+    }
   }
 
-  // ---- sidebar: watchlists compactos (chile + usa) ----
-  const sideCol = clWatchlist(sobre, clRest, loading) + usWatchlist(usBar, usRest, loading);
-
-  html += `<div class="home-grid">
-    <div class="home-main">${mainCol}</div>
-    <aside class="home-side">${sideCol}</aside>
+  // ====== BLOQUE 2: resto en grillas anchas dentro de acordeones ======
+  const restTotal = rest.length + clRest.length + usRest.length;
+  html += `<div class="acc" id="accRest" style="margin-top:22px">
+    <div class="acc-head" onclick="document.getElementById('accRest').classList.toggle('open')">
+      Resto del universo — sin señal de compra activa
+      <span class="section-title" style="margin:0"><span class="count">${restTotal}</span></span>
+      <span class="chev">›</span>
+    </div>
+    <div class="acc-body">
+      ${rest.length?`<div class="sub-lbl">Activos con score · NEUTRAL / CARO</div><div class="opp-grid" style="margin-bottom:16px">${rest.map(a=>assetCard(a)).join("")}</div>`:""}
+      ${clRest.length?`<div class="sub-lbl">🏛️ Chilenas dentro / bajo benchmark</div><div class="mini-grid" style="margin-bottom:16px">${clRest.map(a=>oppCardCL(a)).join("")}</div>`:""}
+      ${usRest.length?`<div class="sub-lbl">📈 USA a precio razonable o caro</div><div class="mini-grid">${usRest.map(a=>oppCardUS(a)).join("")}</div>`:""}
+    </div>
   </div>`;
 
   return html;
 }
 
-/* sparkline de fondo del hero (BTC + GLD) */
-function heroLines(){
-  const series = [];
-  if(VS.data.btc?.historico_btc) series.push({pts:VS.data.btc.historico_btc, k:"precio", c:"rgba(38,166,154,.55)"});
-  if(VS.data.gld?.historico_gld) series.push({pts:VS.data.gld.historico_gld, k:"precio", c:"rgba(95,202,189,.32)"});
-  if(!series.length) return "";
-  const W=1200,H=240;
-  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" width="100%" height="100%">${
-    series.map(s=>{
-      let p=s.pts.filter(d=>d[s.k]!=null);
-      if(p.length>200){const st=Math.ceil(p.length/200);p=p.filter((_,i)=>i%st===0);}
-      const v=p.map(d=>d[s.k]); const mn=Math.min(...v),mx=Math.max(...v),rg=(mx-mn)||1;
-      const dd=v.map((x,i)=>`${(i/(v.length-1)*W).toFixed(1)} ${(H-8-(x-mn)/rg*(H-40)).toFixed(1)}`).join(" L");
-      return `<path d="M${dd}" fill="none" stroke="${s.c}" stroke-width="1.5" vector-effect="non-scaling-stroke"/>`;
-    }).join("")
-  }</svg>`;
-}
-
-/* watchlist compacto: acciones chilenas (sidebar) */
-function clWatchlist(sobre, clRest, loading){
-  if(loading) return `<div class="watch panel"><div class="watch-hd"><span>🇨🇱 Acciones chilenas</span></div><div class="skel" style="height:280px;margin-top:12px"></div></div>`;
-  const head = `<div class="watch-hd">
-    <span>🇨🇱 Acciones chilenas</span>
-    <span class="cnt">${sobre.length} <i>sobre benchmark</i></span>
-  </div>`;
-  let body = "";
-  if(sobre.length){ body += `<div class="watch-list">${sobre.map(a=>clMini(a)).join("")}</div>`; }
-  else { body += `<div class="empty sm">Ninguna acción supera hoy el máximo de su rango sectorial.</div>`; }
-  if(clRest.length){
-    body += `<div class="watch-sep">Dentro / bajo benchmark <span>${clRest.length}</span></div>
-      <div class="watch-list dim">${clRest.map(a=>clMini(a)).join("")}</div>`;
-  }
-  body += `<a class="watch-all" onclick="go('chile')">Ver watchlist completo · fundamentales ›</a>`;
-  return `<div class="watch panel">${head}${body}</div>`;
-}
-function clMini(a){
+/* card compacta de acción chilena (grilla ancha del home) */
+function oppCardCL(a){
   const ev = a.evaluacion||{};
   const sobre = ev.status==="Sobre benchmark";
   const bajo = ev.status==="Bajo benchmark";
   const pp = clPP(a);
   const dyCol = sobre?"var(--z-opp)":bajo?"var(--z-caro)":"var(--tx)";
   const ppCls = pp>=0?"pos":"neg";
-  return `<div class="clm ${sobre?'opp':''}" onclick="go('chile','${esc(a.ticker)}')">
-    <div class="clm-id"><span class="t">${esc(a.ticker)}</span><span class="s">${esc(a.sector)}</span></div>
-    <div class="clm-num"><span class="dy" style="color:${dyCol}">${fmt.pct(a.dy?.dy_pct)}</span>
-      <span class="pp ${ppCls}">${fmt.pp(pp)}</span></div>
-    <div class="clm-bar">${benchBar(a.dy?.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
+  const news = newsMiniLine(VS.data.n_chile, clCats(a.sector));
+  return `<div class="mcard ${sobre?'opp':''}" onclick="go('chile','${esc(a.ticker)}')">
+    <div class="mcard-top">
+      <div><div class="mc-tk">${esc(a.ticker)}</div><div class="mc-sub">${esc(a.sector)}</div></div>
+      <div class="mc-val"><div class="v" style="color:${dyCol}">${fmt.pct(a.dy?.dy_pct)}</div><div class="l">DY 3 años</div></div>
+    </div>
+    <div class="mc-bm">Benchmark <span class="num">${fmt.num(a.benchmark_min_pct,1)}–${fmt.num(a.benchmark_max_pct,1)}%</span>
+      · <span class="pp ${ppCls}">${fmt.pp(pp)} vs máx</span></div>
+    <div class="mc-bar">${benchBar(a.dy?.dy_pct||0, a.benchmark_min_pct, a.benchmark_max_pct, ev.status)}</div>
+    ${news||""}
   </div>`;
 }
 
-/* watchlist compacto: acciones USA por múltiplos (sidebar) */
-function usWatchlist(usBar, usRest, loading){
-  if(loading) return "";
-  if(!usBar.length && !usRest.length) return "";
-  const head = `<div class="watch-hd">
-    <span>🇺🇸 Acciones USA</span>
-    <span class="cnt">${usBar.length} <i>baratas</i></span>
-  </div>`;
-  let body = "";
-  if(usBar.length){ body += `<div class="watch-list">${usBar.map(a=>usMini(a)).join("")}</div>`; }
-  else { body += `<div class="empty sm">Ninguna acción USA cotiza hoy bajo sus rangos razonables.</div>`; }
-  if(usRest.length){
-    body += `<div class="watch-sep">Razonable / cara <span>${usRest.length}</span></div>
-      <div class="watch-list dim">${usRest.map(a=>usMini(a)).join("")}</div>`;
-  }
-  body += `<a class="watch-all" onclick="go('usa')">Ver acciones USA · fundamentales ›</a>`;
-  return `<div class="watch panel us-side" style="margin-top:18px">${head}${body}</div>`;
-}
-function usMini(a){
+/* card compacta de acción USA (grilla ancha del home) */
+function oppCardUS(a){
   const v = a.valoracion||{};
   const barata = v.status==="Barata", cara = v.status==="Cara";
   const col = barata?"var(--z-opp)":cara?"var(--z-caro)":"var(--tx)";
-  return `<div class="clm ${barata?'opp':''}" onclick="go('usa','${esc(a.ticker)}')">
-    <div class="clm-id"><span class="t">${esc(a.ticker)}</span><span class="s">${esc(a.clasificacion||a.sector||"")}</span></div>
-    <div class="clm-num"><span class="dy" style="color:${col}">${fmt.num(a.per,1)}</span>
-      <span class="pp ${barata?'pos':'neg'}" style="color:${col}">${esc(v.status||"—")}</span></div>
-    <div class="clm-bar">${perBar(a.per, v.per_rango_min, v.per_rango_max, v.status)}</div>
+  const news = stockNewsMini(VS.data.n_usa, a.ticker);
+  return `<div class="mcard ${barata?'opp':''}" onclick="go('usa','${esc(a.ticker)}')">
+    <div class="mcard-top">
+      <div><div class="mc-tk">${esc(a.ticker)}</div><div class="mc-sub">${esc(a.clasificacion||a.sector||"")}</div></div>
+      <div class="mc-val"><div class="v" style="color:${col}">${fmt.num(a.per,1)}</div><div class="l">PER 12m</div></div>
+    </div>
+    <div class="mc-bm">PER razonable <span class="num">${fmt.num(v.per_rango_min,0)}–${fmt.num(v.per_rango_max,0)}</span>
+      · Graham <span class="num">${fmt.num(v.graham,1)}</span>
+      · <span class="pp ${barata?'pos':'neg'}" style="color:${col}">${esc(v.status||"—")}</span></div>
+    <div class="mc-bar">${perBar(a.per, v.per_rango_min, v.per_rango_max, v.status)}</div>
+    ${news||""}
   </div>`;
 }
 
@@ -2595,8 +2598,8 @@ function renderChileDetail(ticker){
 const ROUTES = {
   home:    {label:"Oportunidades", ico:"🎯", render:renderHome},
   etfs:    {label:"ETFs USA",      ico:"📊", render:renderETFs},
-  chile:   {label:"Chile",         ico:"🇨🇱", render:p=>renderChile(p)},
-  usa:     {label:"Acciones USA",  ico:"🇺🇸", render:p=>renderUSA(p)},
+  chile:   {label:"Chile",         ico:"🏛️", render:p=>renderChile(p)},
+  usa:     {label:"Acciones USA",  ico:"📈", render:p=>renderUSA(p)},
   oro:     {label:"Oro",           ico:"🥇", render:()=>renderAsset("oro")},
   bitcoin: {label:"Bitcoin",       ico:"₿",  render:()=>renderAsset("bitcoin")},
 };
@@ -2686,7 +2689,7 @@ function init(){
   // refresh "ago" labels every 30s
   setInterval(updateHeader, 30000);
 }
-const VS_BUILD = "v2026-06-13.2";
+const VS_BUILD = "v2026-06-13.3";
 document.addEventListener("DOMContentLoaded", ()=>{
   const e=document.getElementById("vsBuild"); if(e) e.textContent = VS_BUILD;
   console.log("Value Signal", VS_BUILD);
