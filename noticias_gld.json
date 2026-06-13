@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T06:39:37.104448+00:00",
+  "updated_at_utc": "2026-06-13T08:39:34.545808+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -29,6 +29,34 @@
   },
   "noticias_por_categoria": {
     "precio": [
+      {
+        "title": "Los precios del oro hoy (13 de junio) se han disparado: los compradores hacen cola en grandes multitudes y las tiendas se ven obligadas a vender oro en papel.",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQYjZZay1Bc0J1OS1CVFNjRVJBbUx3TnNjbUxnc0tuSm9SenJpQWRCNC1CTUs5RnpWVk1wYUFTZTRJaTlwTENLVHI1UEJ1RzViY1dZd2ZqSkNxUVBfYk9rOGNtX1VxanNpa0dYVlEzaUNxT0o4enVlbFZ0dGVuOXBWcFVzVzd4Zy1sNnduWDFLLU4wU0xhOGd4Zm1WTjZPYUs0NzYzcWdlVzdJbGR1S2h3cVA2dW5XcEF1SzV4LXhTTU9sUXFmZkdncjhBdw?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Sat, 13 Jun 2026 07:20:29 GMT",
+        "pubdate_iso": "2026-06-13T07:20:29+00:00",
+        "impacto": {
+          "direccion": "negativo",
+          "intensidad": 2,
+          "intensidad_label": "moderado",
+          "emoji": "🔴",
+          "razonamiento": "Liquidacion institucional de oro"
+        }
+      },
+      {
+        "title": "Precio del oro de 9999 hoy, tarde del 13 de junio de 2026: Lista de precios final para oro de 9999, anillos de oro BTMC, BTMC y DOJI.",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZ2VqY2ZESm9iM28tWGt4Y1ZFeUlCZUJiWTRQR2xESzBwTmRhNGdydUNpUE1ldTI0RW9CUlY0SXNxMU1zbXNCLTZSZGlOaU90TEx1c3pROEtwVFhMdTJ1OW5ZVTcxUVNKbmswQVBaLVgtbHh6QTBEc1dSOUItMHdxY1VmeXVseHI0Q2V3TDhmQ2R3MVVWazh2UldBQi1OdEV0VlBBZGlCRDdGamg3T21qLUFB?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Sat, 13 Jun 2026 07:10:15 GMT",
+        "pubdate_iso": "2026-06-13T07:10:15+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "¿Cuál es el precio de 1 tael (aproximadamente 3,75 gramos) de joyas de oro Doji 9999 hoy, 13 de junio de 2026?",
         "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPS25YR0tsM2lLWWl3X28xQkdyemc4ZGgtaUd4SS1iWGZFVkFXV1BuaUJ4Y0dVbGNoQmk3Z1M5QjF3NFd2a0lvdFFKcmQwNlhSVlBtc2xIdDdQNWNTaWoydjNlYzZLbjFmejJPN29ka2RxNWstVjlpMEkxQzBqczc0RjRrdnNCd0E1NzI3X1lR?oc=5",
@@ -63,34 +91,6 @@
         "source": "Vietnam.vn",
         "pubdate": "Sat, 13 Jun 2026 05:12:25 GMT",
         "pubdate_iso": "2026-06-13T05:12:25+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "El precio del oro aumentó en 11 millones de VND por onza en tan solo dos días.",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWHNRQjhoZ3hCazFpMER6czQwQ2VGaVlWZHUxQUZ0Uy1DcXByLS0xNi10MWMzODJ3N19mbFY1ODBKTUhpQlpGb1R1blhySG9TSjR0R0wwZk1YeGp3Qm9Uem9tem12enMzQ3hURDNXdEFlejViZEg3R0hKbE1Dam9KOA?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Sat, 13 Jun 2026 04:19:05 GMT",
-        "pubdate_iso": "2026-06-13T04:19:05+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Precios del oro hoy, 13 de junio: Se disparan bruscamente.",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE44ZTZiZUVnN09kcXFpaTBfdE1IMm9SckJYdzdyeWg4bENLUW8wZnZoY1hSc3B3c01ib3lIRUZ2WUpSSS1xa3hwa2dnaVZtZzZYYkFqY2prWWNscHFZcC1ScDViSXprYk9WMWpEOFJB?oc=5",
-        "source": "Vietnam.vn",
-        "pubdate": "Sat, 13 Jun 2026 03:04:24 GMT",
-        "pubdate_iso": "2026-06-13T03:04:24+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -158,11 +158,11 @@
         }
       },
       {
-        "title": "La inflación en EE. UU. acecha los mercados con el aumento de la tensión con Irán",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53dzBvejgtQml0dE8zblgtY1o2RUEzTGFGQmVBSmdzcDk4cV9HcnI3VGI1UzBIN1hfZmRNOUJsNTVmQkMxRC1jMVh6RmtxTUJqN2RJS3hYN1R6clZIOHFkdmEwRkQ?oc=5",
-        "source": "Binance",
-        "pubdate": "Wed, 10 Jun 2026 11:05:50 GMT",
-        "pubdate_iso": "2026-06-10T11:05:50+00:00",
+        "title": "Inflación en EEUU: precios al consumidor están en su nivel más alto desde 2023",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdUFmbFYzYXllU0NhbDRkVmgyUUxnZjRxNlExa1pVSDBkbjk0VnZnT2VoNnhZcjl2X2VFaHJYd3FXVFlrMld2RlJ4MHhaREFZeVZobEdWNjNVYmNTTWR3LXloODMtcjV6aFViVEk1WkpSeDZBbVd2WVpYNHptNE1FTTQ5eWVTVGwwMVVQVjBsMXJKM3dRSnB3TGg2ajIwS3RaYjllUGQyTW9pQVBuRk9aajlsa3BteHVw0gHAAUFVX3lxTE5NbWhzVW1KY1JTdV9TSnpSMGNRaUt0bUdvLWhGQ3FDYVRISVUwU2N6NkV2UzlBNG9PbEp0M3JqVnFZRThyRDg2cG1WbThaeFpMY3VodlVKU1VSSkNBSlRrSFpzVnhzYU5uWkxlMHlEblBoRVpCUG5lZ282ZEJJc2ZtZGg1a2FxMjB5UTdjbDFKdXhsR2VPdnFzU0I1ZmJ3UXB2RnQ3dzNCMWhRZ2hWNk1wVTdBSHRRWDl5YlRRa3NFbA?oc=5",
+        "source": "Telemundo Denver",
+        "pubdate": "Wed, 10 Jun 2026 11:20:28 GMT",
+        "pubdate_iso": "2026-06-10T11:20:28+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -404,11 +404,11 @@
         }
       },
       {
-        "title": "Gold Holds Gains on Iran Deal Prospects",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNemtBazFINk9obDhrd0FUeEs4NXo5a3N0OFFkNEM4ME5kbFJpN3B1NFN5aTZHVXhpWVFtWGxxdDQwOWlhbXRIblk5UGJoSVY4U2VIRHZSTEJjcldwZkpFbFVwUHlIZmkwcG92TFMyOVRTeWM4V3hBRlc4RnJMWHFEU3pZT1RZNFQyZUJ5aGVTVW0wM1k?oc=5",
-        "source": "TradingView",
-        "pubdate": "Thu, 11 Jun 2026 23:53:30 GMT",
-        "pubdate_iso": "2026-06-11T23:53:30+00:00",
+        "title": "2026 World Cup: Each team’s chances - The Athletic",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdHJ0aEVaZkV1cm96c1RHYnJ2cml5M2FtLUpBNEdnR3ZsSGxuYW5Lay1PYlBkMERlS19tN0UzdDZ2bTl3a0tOTF9lRm5CeXdBcnlJNU56alZOT0l6cmU3UjkzcDY0UEhKbXNEWVEzMzMyWVYyUmUtZVZJbHFTMG5TbllVRE8tV0w1enNSaUZfSjN5STlNN3lJOGN2MmItX0VPYlYxem9nX3Y0OU5LY1lIWXQ3LUgydw?oc=5",
+        "source": "The New York Times",
+        "pubdate": "Fri, 12 Jun 2026 03:55:00 GMT",
+        "pubdate_iso": "2026-06-12T03:55:00+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -418,11 +418,11 @@
         }
       },
       {
-        "title": "Mercados a Observar Hoy: GOLD, SILVER y TNOTE (11.06.2026)",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaWl0TFJlQTV6V1h5WEhKeDJOaFlnSmc5UWd4UksxTDVzaWFEWDV4cHNoaWFsY2JBRlJjUXJ0OTZEOERXTHF5RU51a2t1VE0xc1RPWWdPUzJFM1BTLUMzaDN2azV6b3g1MXdpbkxRcVd4QWN4WmNCSVpHWTFzdnp3ZVgzV0pMMjZDeE9jY0FwenhSV0Vna0RreXNRUGsxWmJMNGlDeEJpbFByVUJuY0lqTzMwcExaWGJibVE?oc=5",
-        "source": "XTB.com",
-        "pubdate": "Thu, 11 Jun 2026 13:11:26 GMT",
-        "pubdate_iso": "2026-06-11T13:11:26+00:00",
+        "title": "Gold Holds Gains on Iran Deal Prospects",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNemtBazFINk9obDhrd0FUeEs4NXo5a3N0OFFkNEM4ME5kbFJpN3B1NFN5aTZHVXhpWVFtWGxxdDQwOWlhbXRIblk5UGJoSVY4U2VIRHZSTEJjcldwZkpFbFVwUHlIZmkwcG92TFMyOVRTeWM4V3hBRlc4RnJMWHFEU3pZT1RZNFQyZUJ5aGVTVW0wM1k?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 23:53:30 GMT",
+        "pubdate_iso": "2026-06-11T23:53:30+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -446,11 +446,11 @@
   },
   "resumen_ejecutivo": {
     "sentimiento": "alcista",
-    "score_neto": 8,
+    "score_neto": 6,
     "n_positivas": 4,
-    "n_negativas": 0,
-    "n_neutrales": 24,
-    "narrativa": "El feed muestra 4 senales positivas y 0 negativas (neto +8). Factores dominantes: Core inflation persistente: positivo para oro; Tensiones geopoliticas: flujo a safe haven.",
+    "n_negativas": 1,
+    "n_neutrales": 23,
+    "narrativa": "El feed muestra 4 senales positivas y 1 negativas (neto +6). Factores dominantes: Liquidacion institucional de oro; Core inflation persistente: positivo para oro.",
     "narrativa_fuente": "plantilla",
     "veredicto": "ALCISTA a corto plazo"
   }
