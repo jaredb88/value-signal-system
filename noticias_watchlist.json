@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T03:48:26.876646+00:00",
+  "updated_at_utc": "2026-06-13T05:14:46.406615+00:00",
   "ventana_dias": 7,
   "medios": [
     "Diario Financiero",
@@ -8,6 +8,13 @@
   ],
   "noticias_por_ticker": {
     "HABITAT": [
+      {
+        "title": "Superintendencia de Pensiones advierte por vendedores que ofrecen bonos de dinero para cambiarse de AFP",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWlNXMUxHY0I5UTNORElMR0gzYkE2NzF0ZXAwVVJwTW1hcGFaLWVuNjRwcUJjbmFaMklrVFg1eTFJT3pCSW5KRUM2WmR4Z0liOHJyWHotNGk4RkxVdmx5MTVjeVVqWVZDWGppTkdoM0hTQ1d6SDZpdFIwbG0zc1RYQ3o1dlJsb0JJRVJESmlITWJEMDJGRUZOUTBVY3pqRGJfU0tQeFp4ZVdENkREb05GaQ?oc=5",
+        "pubdate": "Wed, 10 Jun 2026 08:00:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "AFP Habitat"
+      },
       {
         "title": "Señales financieras | Una entrevista con Edgardo Gutiérrez, de Moneda Patria",
         "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaHB1MFdRMG9abVNpWW9la1RVb05CVlBvUy15OHBXQWhPVklaTmRYZDFSNmc2WE1idkpsT21NOTc0QlNqTmltMGpqX0IzTjhKTjIxdU44a3VVY1dZTTd3RmpoYUx0RkFmWG5Ba1U3VmJTZkZteGNfOTQtdW4xMWRyMkd2NGl0bkdybmUwTW5sYTB0MGx5ZThKcHhNeWZxdmlvT1hzazJkN21RYnNIdVhGNHl3?oc=5",
@@ -51,6 +58,13 @@
         "title": "IPSA cierra con fuerte alza sobre 10.900 puntos y registra su mejor semana desde 2022 frente a posible acuerdo de paz en Medio Oriente",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85bS1VRnRSVXJleUk4aFNIaW9wSzBfWi12d3ZYelliSmpBNElsRjVieEdYdEthM1M3cGtISGxRaHBrQXNWb1FVYWFFUU5tdHgwZkp1eXJQUXpOOUxvcWR5RmpLaEkyTHRX?oc=5",
         "pubdate": "Fri, 12 Jun 2026 20:31:00 GMT",
+        "source": "Diario Financiero",
+        "matched_keyword": "SQM"
+      },
+      {
+        "title": "Exponor bate récords y cierra su edición 2026 con 60 mil visitantes y US$ 1.200 millones en negocios proyectados",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVVhkbXpjQVhtWFZ5d0NZUFZfb18yVThRUnBITlRtTFdoMGgzSnJja3lrTmVja0Q2RnM0VlJ4UHlKbzd1a2xsWVY3RFU0OFI3c2dKcEd1OVBTblFZeUNZNWUyeE41WVhHbVF1dllrYjNGTktfc2I4NVYzaFlLbGdnLWFZWU9xYWd2a05pUFFIUVpUcUJlT0Q5N2ktbzZDdmxUNHllanJCa0FEeFgwSXd4Vw?oc=5",
+        "pubdate": "Fri, 12 Jun 2026 17:15:00 GMT",
         "source": "Diario Financiero",
         "matched_keyword": "SQM"
       },
@@ -111,8 +125,8 @@
     "total_queries": 51,
     "queries_exitosas": 51,
     "queries_falladas": 0,
-    "total_noticias_brutas": 2271,
-    "total_noticias_filtradas": 12,
-    "total_hechos_esenciales_brutos": 114
+    "total_noticias_brutas": 2269,
+    "total_noticias_filtradas": 14,
+    "total_hechos_esenciales_brutos": 0
   }
 }
