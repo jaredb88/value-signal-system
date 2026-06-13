@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T07:26:56.400933+00:00",
+  "updated_at_utc": "2026-06-13T09:27:02.230896+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -188,17 +188,17 @@
         }
       },
       {
-        "title": "Nvidia, AMD, Intel Lead Chip Stocks Rally as BofA Calls 'Agentic AI' Game-Changer",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQlRkSjBiTFNFZkU2ZnFnOVhXdUdLTy1FbHZaaGhINDhWT1czUERORlNETzYwQ3puQkFkam1tclNtWU9WRzBZaVdCbC0wQWd1ZDloUjdQZzJTUlJ5SWsyMkJGTVdaQjU0WTJoU0c4X0d4QkZzVmkydHlGeVd4YnBsdGdVUFZ5RHAzbDlqdlptemt4NUkxblVPTnltSjFtZlhuOWVsWHdGYmNpSTREdTB4Y0pKemp2VWFTLWZZOUNmODYyU1ZjblVsZEhqc3ctcGJzZUE?oc=5",
+        "title": "Adobe Stock Sinks to Multi-Year Low Ahead of Earnings",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTkRvUG15UC1BdkdXcEJCY2NLRXhpVzF0MFQ5M1hlbzlOUnFORkVKWnZZaEJmUEFoM2paR0M3MWozcENIV3ZRMW5qdjZoVGJGa2NZNHlqbGJrMWxHLUFxU01TT05pVnl6MGJ6VGtnNEJ1cG9JR0duTXRPXzRmdENQYzlKZE9WbjNCc1E3VmJzbGdfMGxhc3BiNWV6bHhBMWVGNnRCLTlnaDdNUE5YTzNTd0F3?oc=5",
         "source": "TradingView",
-        "pubdate": "Thu, 11 Jun 2026 17:56:51 GMT",
-        "pubdate_iso": "2026-06-11T17:56:51+00:00",
+        "pubdate": "Thu, 11 Jun 2026 18:41:36 GMT",
+        "pubdate_iso": "2026-06-11T18:41:36+00:00",
         "impacto": {
-          "direccion": "positivo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🟢",
-          "razonamiento": "Rally accionario"
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
         }
       }
     ],
@@ -334,6 +334,20 @@
         }
       },
       {
+        "title": "ADBE Stock Rises Ahead Of Q2 Earnings Report Today – Michael Burry Thinks The Market May Be Underpricing Adobe",
+        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNN0I5ZUZTRFkwZHI4NEhtSGYtSmZBLTV4ZlZfem1zWW9WS19nN1dBV1FVVjF6OGVleDd0OFVfR2tnQ0NGQTVGMk1nckFVM2ViZ0RkNTdGTF9WLWFGRU5hUnZGRDJ2YV9jTjBfaFRzYnk5YVIwVjV1dHU1bUZhVFlmeWwyazZGLXFkMHdFWjh5bXg1SnRzRFN5dFg3UmZZZDZOT29BWnQzbXlqMnJXYjlXcXppWHlLZ1BLWmhLZ2FyZFRNSXU5Y20yWmtFdFZCdUZsUURrVHVEZmYtSVdrYlZWeFM0V1ZqVWhvcUFhSVhxc3RCdldmNHNVRXd2aWY?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 09:15:18 GMT",
+        "pubdate_iso": "2026-06-11T09:15:18+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Chewy’s Growth Engine Is Stronger Than the Market Thinks",
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONDZ5dU4zLVJGcEM4ZFl3enAzZWlNcWRKM0FIWVFpNThFTkpsaGNLVy0zUXBYNm8zYWsyeEYzUGVrQWFqSVBKV0NsQUxTdWhWTXI1WGhMd2pDeFpJcWw0T0VwQWs1am9CYWlndVZhUFhTSkxqaDc4MDlRcklRTVBXSk15MkJOM0JYUjd2cTVNb1lyeVlEOFJ5bDJyRGd6SUp5bU0zTWZic0UxR3hfa3JicUpiaHp3Y2s?oc=5",
         "source": "TradingView",
@@ -350,23 +364,23 @@
     ]
   },
   "stats": {
-    "total_noticias": 22,
+    "total_noticias": 23,
     "por_categoria": {
       "fed_tasas": 2,
       "mercado": 5,
       "tech_nasdaq": 5,
       "economia": 4,
       "earnings": 3,
-      "sentimiento": 3
+      "sentimiento": 4
     }
   },
   "resumen_ejecutivo": {
     "sentimiento": "neutral",
-    "score_neto": 1,
-    "n_positivas": 2,
+    "score_neto": -1,
+    "n_positivas": 1,
     "n_negativas": 1,
-    "n_neutrales": 19,
-    "narrativa": "El feed muestra 2 senales positivas y 1 negativas (neto +1). Factores dominantes: Selloff: presion vendedora; Rally accionario.",
+    "n_neutrales": 21,
+    "narrativa": "El feed muestra 1 senales positivas y 1 negativas (neto -1). Factores dominantes: Selloff: presion vendedora; Rally accionario.",
     "narrativa_fuente": "plantilla",
     "veredicto": "NEUTRAL - sin sesgo dominante"
   }
