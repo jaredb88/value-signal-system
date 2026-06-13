@@ -1,7 +1,7 @@
 {
-  "fecha_actualizacion": "2026-06-13T16:07:10.756711",
-  "duracion_segundos": 244.811799,
-  "n_acciones": 16,
+  "fecha_actualizacion": "2026-06-13T16:24:43.582643",
+  "duracion_segundos": 138.932609,
+  "n_acciones": 12,
   "acciones": [
     {
       "ticker": "HABITAT",
@@ -515,28 +515,14 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 129,
-      "razon_social": "COLBUN S.A.",
-      "variacion_pct": 0,
-      "dy": {
-        "dy_pct": 6.16,
-        "anos_usados": 3,
-        "anos_detalle": {
-          "2025": 5.54,
-          "2024": 6.97,
-          "2023": 11.32
-        },
-        "promedio_anual": 7.94,
-        "advertencia": null
-      },
+      "precio_actual_clp": null,
+      "razon_social": null,
+      "variacion_pct": null,
+      "dy": null,
       "cagr_3y": 0.01545262706438133,
       "cagr_5y": 0.024205712419562486,
       "cagr_10y": -0.026028739213731056,
-      "evaluacion": {
-        "status": "Bajo benchmark",
-        "emoji": "🔴",
-        "vs_benchmark_pp": -2.34
-      },
+      "evaluacion": null,
       "cmf": {
         "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
@@ -549,88 +535,7 @@
         "capital_trabajo": 974541.0,
         "patrimonio_total": 3271628.0
       },
-      "dividendos_recientes": [
-        {
-          "fecha_pago": "2026-05-15",
-          "fecha_limite": "2026-05-09",
-          "monto_clp": 0.8009199,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "USD",
-          "descripcion": "DIVIDENDO DEF 67 US$ 0,00089"
-        },
-        {
-          "fecha_pago": "2025-12-12",
-          "fecha_limite": "2025-12-05",
-          "monto_clp": 4.1246605,
-          "tipo": "PROVISORIO",
-          "moneda_origen": "USD",
-          "descripcion": "DIVIDENDO PROV.  US$ 0,00445"
-        },
-        {
-          "fecha_pago": "2025-05-09",
-          "fecha_limite": "2025-05-03",
-          "monto_clp": 1.4189017,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "USD",
-          "descripcion": "DIVIDENDO DEF 65 US$ 0,00151"
-        },
-        {
-          "fecha_pago": "2024-12-13",
-          "fecha_limite": "2024-12-07",
-          "monto_clp": 5.5331267,
-          "tipo": "PROVISORIO",
-          "moneda_origen": "USD",
-          "descripcion": "DIVIDENDO PROV.  US$ 0,00569"
-        },
-        {
-          "fecha_pago": "2024-05-10",
-          "fecha_limite": "2024-05-04",
-          "monto_clp": 1.4388066,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "USD",
-          "descripcion": "DIVIDENDO DEF 63 US$ 0,00154"
-        },
-        {
-          "fecha_pago": "2023-12-15",
-          "fecha_limite": "2023-12-09",
-          "monto_clp": 8.4023368,
-          "tipo": "PROVISORIO",
-          "moneda_origen": "USD",
-          "descripcion": "DIVIDENDO PROV 62 US$ 0,00968"
-        },
-        {
-          "fecha_pago": "2023-05-12",
-          "fecha_limite": "2023-05-06",
-          "monto_clp": 2.9162528,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "USD",
-          "descripcion": "DIVIDENDO DEF US$ 0,00368"
-        },
-        {
-          "fecha_pago": "2023-05-12",
-          "fecha_limite": "2023-05-06",
-          "monto_clp": 3.3917288,
-          "tipo": "ADICIONAL",
-          "moneda_origen": "USD",
-          "descripcion": "DIVIDENDO ADIC US$ 0,00428"
-        },
-        {
-          "fecha_pago": "2022-12-16",
-          "fecha_limite": "2022-12-10",
-          "monto_clp": 4.1007876,
-          "tipo": "PROVISORIO",
-          "moneda_origen": "USD",
-          "descripcion": "DIVIDENDO PROV 60 US$ 0,00476"
-        },
-        {
-          "fecha_pago": "2022-05-12",
-          "fecha_limite": "2022-05-06",
-          "monto_clp": 1.1195523,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "USD",
-          "descripcion": "DIVIDENDO DEF US$ 0,00129"
-        }
-      ],
+      "dividendos_recientes": [],
       "error": null
     },
     {
@@ -1270,14 +1175,28 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": null,
-      "razon_social": null,
-      "variacion_pct": null,
-      "dy": null,
+      "precio_actual_clp": 2464.3,
+      "razon_social": "CENCOSUD SHOPPING S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 4.13,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 91.0,
+          "2024": 119.0,
+          "2023": 95.0
+        },
+        "promedio_anual": 101.67,
+        "advertencia": null
+      },
       "cagr_3y": 0.21377339757808156,
       "cagr_5y": 0.12941346160757572,
       "cagr_10y": null,
-      "evaluacion": null,
+      "evaluacion": {
+        "status": "Bajo benchmark",
+        "emoji": "🔴",
+        "vs_benchmark_pp": -4.37
+      },
       "cmf": {
         "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
@@ -1290,224 +1209,86 @@
         "capital_trabajo": 15588435.0,
         "patrimonio_total": 3074811583.0
       },
-      "dividendos_recientes": [],
-      "error": null
-    },
-    {
-      "ticker": "AGUAS-A",
-      "nombre": "Aguas Andinas",
-      "sector": "Sanitaria",
-      "clasificacion": "Vaca Lechera",
-      "benchmark_min_pct": 8.0,
-      "benchmark_max_pct": 9.0,
-      "descripcion": "Mayor sanitaria de Chile, negocio regulado y estable, dividendos altos.",
-      "precio_actual_clp": null,
-      "razon_social": null,
-      "variacion_pct": null,
-      "dy": null,
-      "cagr_3y": 0.05971795624153109,
-      "cagr_5y": 0.16251480179283706,
-      "cagr_10y": -0.010063316393468691,
-      "evaluacion": null,
-      "cmf": {
-        "periodo": "03/2026",
-        "tipo_balance": "CONSOLIDADO",
-        "moneda": "CLP",
-        "unidad": "Miles",
-        "roe_pct": 4.49,
-        "margen_neto_pct": 29.53,
-        "razon_endeudamiento_pct": 56.57,
-        "razon_corriente": 1.55,
-        "capital_trabajo": 126997971.0,
-        "patrimonio_total": 1383865704.0
-      },
-      "dividendos_recientes": [],
-      "error": null
-    },
-    {
-      "ticker": "PARAUCO",
-      "nombre": "Parque Arauco",
-      "sector": "Inmobiliario",
-      "clasificacion": "Vaca Lechera",
-      "benchmark_min_pct": 8.0,
-      "benchmark_max_pct": 9.0,
-      "descripcion": "Centros comerciales en Chile, Peru y Colombia. Tipo REIT: revisar flujo operativo.",
-      "precio_actual_clp": null,
-      "razon_social": null,
-      "variacion_pct": null,
-      "dy": null,
-      "cagr_3y": 0.487206567077646,
-      "cagr_5y": 0.330687308217281,
-      "cagr_10y": 0.12036662762572736,
-      "evaluacion": null,
-      "cmf": {
-        "periodo": "03/2026",
-        "tipo_balance": "CONSOLIDADO",
-        "moneda": "CLP",
-        "unidad": "Miles",
-        "roe_pct": 1.54,
-        "margen_neto_pct": 31.26,
-        "razon_endeudamiento_pct": 54.94,
-        "razon_corriente": 0.62,
-        "capital_trabajo": -199106289.0,
-        "patrimonio_total": 2016536570.0
-      },
-      "dividendos_recientes": [],
-      "error": null
-    },
-    {
-      "ticker": "MALLPLAZA",
-      "nombre": "Mall Plaza",
-      "sector": "Inmobiliario",
-      "clasificacion": "Vaca Lechera",
-      "benchmark_min_pct": 8.0,
-      "benchmark_max_pct": 9.0,
-      "descripcion": "Holding de centros comerciales Mall Plaza. Tipo REIT: revisar flujo operativo.",
-      "precio_actual_clp": null,
-      "razon_social": null,
-      "variacion_pct": null,
-      "dy": null,
-      "cagr_3y": 0.46812722390112516,
-      "cagr_5y": 0.26466981722267113,
-      "cagr_10y": null,
-      "evaluacion": null,
-      "cmf": {
-        "periodo": "03/2026",
-        "tipo_balance": "CONSOLIDADO",
-        "moneda": "CLP",
-        "unidad": "Miles",
-        "roe_pct": 1.85,
-        "margen_neto_pct": 51.36,
-        "razon_endeudamiento_pct": 40.54,
-        "razon_corriente": 1.8,
-        "capital_trabajo": 252859655.0,
-        "patrimonio_total": 4583198434.0
-      },
-      "dividendos_recientes": [],
-      "error": null
-    },
-    {
-      "ticker": "CCU",
-      "nombre": "Compania Cervecerias Unidas",
-      "sector": "Embotelladora",
-      "clasificacion": "DGI",
-      "benchmark_min_pct": 6.0,
-      "benchmark_max_pct": 7.000000000000001,
-      "descripcion": "Multicategoria de bebestibles. Dividendo creciente, perfil DGI.",
-      "precio_actual_clp": 5650,
-      "razon_social": "COMPANIA CERVECERIAS UNIDAS S.A.",
-      "variacion_pct": 7.62,
-      "dy": {
-        "dy_pct": 2.28,
-        "anos_usados": 3,
-        "anos_detalle": {
-          "2025": 97.17,
-          "2024": 202.56,
-          "2023": 86.5
-        },
-        "promedio_anual": 128.74,
-        "advertencia": null
-      },
-      "cagr_3y": -0.037730106592198887,
-      "cagr_5y": -0.03308252949313217,
-      "cagr_10y": -0.029728588804799005,
-      "evaluacion": {
-        "status": "Bajo benchmark",
-        "emoji": "🔴",
-        "vs_benchmark_pp": -4.22
-      },
-      "cmf": {
-        "periodo": "03/2026",
-        "tipo_balance": "CONSOLIDADO",
-        "moneda": "CLP",
-        "unidad": "Miles",
-        "roe_pct": 3.1,
-        "margen_neto_pct": 6.57,
-        "razon_endeudamiento_pct": 53.55,
-        "razon_corriente": 2.04,
-        "capital_trabajo": 768305502.0,
-        "patrimonio_total": 1739768341.0
-      },
       "dividendos_recientes": [
         {
-          "fecha_pago": "2026-04-24",
-          "fecha_limite": "2026-04-18",
-          "monto_clp": 11.11608,
+          "fecha_pago": "2026-05-12",
+          "fecha_limite": "2026-05-06",
+          "monto_clp": 15.0,
           "tipo": "DEFINITIVO",
           "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF.  272 $ 11,11608"
-        },
-        {
-          "fecha_pago": "2026-04-24",
-          "fecha_limite": "2026-04-18",
-          "monto_clp": 63.41071,
-          "tipo": "ADICIONAL",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO ADIC 272 $ 63,41071"
+          "descripcion": "DIVIDENDO DEF.  $ 15"
         },
         {
           "fecha_pago": "2025-11-27",
           "fecha_limite": "2025-11-21",
-          "monto_clp": 84.0,
+          "monto_clp": 60.0,
           "tipo": "PROVISORIO",
           "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO PROV. 271 $ 84"
+          "descripcion": "DIVIDENDO PROV.  $ 60"
         },
         {
-          "fecha_pago": "2025-04-30",
-          "fecha_limite": "2025-04-24",
-          "monto_clp": 13.17082,
+          "fecha_pago": "2025-05-06",
+          "fecha_limite": "2025-04-29",
+          "monto_clp": 31.0,
           "tipo": "DEFINITIVO",
           "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF. 270 $ 13,17082"
+          "descripcion": "DIVIDENDO DEF.  $ 31"
         },
         {
-          "fecha_pago": "2025-04-30",
-          "fecha_limite": "2025-04-24",
-          "monto_clp": 87.11388,
-          "tipo": "ADICIONAL",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO ADIC 270 $ 87,11388"
-        },
-        {
-          "fecha_pago": "2024-11-28",
-          "fecha_limite": "2024-11-22",
-          "monto_clp": 117.5,
+          "fecha_pago": "2024-11-20",
+          "fecha_limite": "2024-11-14",
+          "monto_clp": 85.0,
           "tipo": "PROVISORIO",
           "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO PROV. 269 $ 117,5"
+          "descripcion": "DIVIDENDO PROV $ 85"
         },
         {
-          "fecha_pago": "2024-04-30",
-          "fecha_limite": "2024-04-24",
-          "monto_clp": 85.06042,
+          "fecha_pago": "2024-05-07",
+          "fecha_limite": "2024-04-30",
+          "monto_clp": 34.0,
           "tipo": "DEFINITIVO",
           "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 268 $ 85,06042"
+          "descripcion": "DIVIDENDO DEF 8 $ 34"
         },
         {
-          "fecha_pago": "2023-11-29",
-          "fecha_limite": "2023-11-23",
-          "monto_clp": 86.49907,
+          "fecha_pago": "2023-11-16",
+          "fecha_limite": "2023-11-10",
+          "monto_clp": 70.0,
           "tipo": "PROVISORIO",
           "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO PROV 267 $ 86,49907"
+          "descripcion": "DIVIDENDO PROV 7 $ 70"
         },
         {
-          "fecha_pago": "2023-04-27",
-          "fecha_limite": "2023-04-21",
-          "monto_clp": 24.80181,
-          "tipo": "ADICIONAL",
+          "fecha_pago": "2023-05-09",
+          "fecha_limite": "2023-05-03",
+          "monto_clp": 25.0,
+          "tipo": "DEFINITIVO",
           "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO ADIC 266 $ 24,80181"
+          "descripcion": "DIVIDENDO DEF $ 25"
         },
         {
-          "fecha_pago": "2022-12-29",
-          "fecha_limite": "2022-12-23",
-          "monto_clp": 135.1,
+          "fecha_pago": "2022-11-08",
+          "fecha_limite": "2022-11-02",
+          "monto_clp": 60.0,
           "tipo": "PROVISORIO",
           "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO PROV 265 $ 135,1"
+          "descripcion": "DIVIDENDO PROV 6 $ 60"
+        },
+        {
+          "fecha_pago": "2022-05-03",
+          "fecha_limite": "2022-04-27",
+          "monto_clp": 30.0,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO DEF $ 30"
+        },
+        {
+          "fecha_pago": "2021-10-21",
+          "fecha_limite": "2021-10-15",
+          "monto_clp": 30.0,
+          "tipo": "OTRO",
+          "moneda_origen": "CLP",
+          "descripcion": "DIVIDENDO EVEN 4 $ 30"
         }
       ],
       "error": null

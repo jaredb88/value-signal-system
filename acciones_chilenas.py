@@ -166,6 +166,15 @@ WATCHLIST = [
         "benchmark_max": 0.09,
         "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
     },
+    {
+        "ticker": "ENELAM",
+        "nombre": "Enel Americas",
+        "sector": "Electrica",
+        "clasificacion": "Vaca Lechera",
+        "benchmark_min": 0.08,
+        "benchmark_max": 0.09,
+        "descripcion": "Mayor electrica privada de Latam. Par regional de Enel Generacion Chile.",
+    },
 ]
 
 # ============================================================================
