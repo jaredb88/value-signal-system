@@ -48,7 +48,7 @@
 
   --r:10px;
   --r-sm:7px;
-  --maxw:1240px;
+  --maxw:1680px;
   --shadow:0 1px 0 rgba(255,255,255,.02), 0 8px 24px -12px rgba(0,0,0,.6);
 }
 
@@ -141,11 +141,9 @@ nav.tabs a.active .ico{opacity:1}
   border-radius:50%;}
 .rf-btn.loading .spin{animation:spin .7s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.rf-time{font-size:11px;color:var(--mut);white-space:nowrap}
-.rf-time b{color:var(--tx-2);font-weight:500}
-@media(max-width:1000px){.rf-time{display:none}}
-.data-stamp{display:none;font-size:10px;color:var(--mut);font-family:var(--f-mono);text-align:right;padding:0 14px 7px}
-@media(max-width:1000px){.data-stamp{display:block}}
+.rf-time{display:none}  /* el sello de datos vive siempre en su propia línea (.data-stamp) */
+.data-stamp{display:block;font-size:11px;color:var(--mut);font-family:var(--f-mono);text-align:right;padding:0 2px 8px}
+.data-stamp b{color:var(--tx-2);font-weight:500}
 
 /* nav wrapper + flechas de scroll (móvil) */
 .nav-wrap{display:flex;align-items:center;margin-left:auto;height:100%;min-width:0}
@@ -157,8 +155,8 @@ nav.tabs a.active .ico{opacity:1}
 nav.tabs{scrollbar-width:none;-ms-overflow-style:none}
 nav.tabs::-webkit-scrollbar{display:none}
 
-/* mobile nav scroll */
-@media(max-width:960px){
+/* nav apilado en anchos intermedios y móvil: evita que pestañas, stamp y botones se solapen */
+@media(max-width:1240px){
   .top-row{gap:12px;height:auto;flex-wrap:wrap;padding:10px 0}
   .nav-wrap{order:3;width:100%;margin-left:0;border-top:1px solid var(--line)}
   .nav-arr{display:flex}
@@ -210,6 +208,8 @@ main{padding:26px 0 70px;min-height:60vh}
 .grid.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .grid.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .grid.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.grid.rows2{grid-template-columns:minmax(0,1fr)!important}
+@media(min-width:1240px){.grid.rows2{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:1000px){.grid.c3,.grid.c4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.grid.c2,.grid.c3,.grid.c4{grid-template-columns:minmax(0,1fr)}}
 
@@ -305,6 +305,11 @@ main{padding:26px 0 70px;min-height:60vh}
 @media(max-width:760px){
   .cl-row{grid-template-columns:minmax(0,1fr) auto;gap:8px 14px}
   .cl-bm{grid-column:1/-1}
+}
+/* filas en media columna (desktop ancho): apilar para que respiren */
+@media(min-width:1240px){
+  .grid.rows2 .cl-row{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr) auto;gap:9px 16px}
+  .grid.rows2 .cl-bm{grid-column:1/-1}
 }
 
 /* benchmark mini bar */
@@ -1422,12 +1427,12 @@ function renderHome(){
 
   // chilean over benchmark
   html += sectionTitle("Acciones chilenas sobre benchmark", sobre.length, "exceso sobre el máximo sectorial");
-  if(sobre.length){ html += `<div class="grid">${sobre.map(clRow).join("")}</div>`; }
+  if(sobre.length){ html += `<div class="grid rows2">${sobre.map(clRow).join("")}</div>`; }
   else { html += `<div class="hint" style="padding:8px 0">Ninguna acción supera hoy el máximo de su rango sectorial.</div>`; }
 
   // USA cheap by multiples
   html += sectionTitle("Acciones USA baratas por múltiplos", usBar.length, "PER · P/B · Graham bajo rango");
-  if(usBar.length){ html += `<div class="grid">${usBar.map(usRow).join("")}</div>`; }
+  if(usBar.length){ html += `<div class="grid rows2">${usBar.map(usRow).join("")}</div>`; }
   else { html += `<div class="hint" style="padding:8px 0">Ninguna acción USA cotiza hoy bajo sus rangos razonables.</div>`; }
 
   // collapsed rest
@@ -1440,8 +1445,8 @@ function renderHome(){
     </div>
     <div class="acc-body">
       ${rest.length?`<div class="grid c3" style="margin-bottom:14px">${rest.map(a=>assetCard(a)).join("")}</div>`:""}
-      ${clRest.length?`<div class="grid" style="margin-bottom:14px">${clRest.map(clRow).join("")}</div>`:""}
-      ${usRest.length?`<div class="grid">${usRest.map(usRow).join("")}</div>`:""}
+      ${clRest.length?`<div class="grid rows2" style="margin-bottom:14px">${clRest.map(clRow).join("")}</div>`:""}
+      ${usRest.length?`<div class="grid rows2">${usRest.map(usRow).join("")}</div>`:""}
     </div>
   </div>`;
 
@@ -2092,7 +2097,7 @@ function renderUSA(param){
     <div class="section-title" style="margin-top:0">Watchlist USA<span class="count">${acc.length}</span>
       <span class="hint" style="text-transform:none;letter-spacing:0;font-weight:400">valoración por múltiplos cruzados (PER · P/B · Graham)</span>
       <span class="rule"></span></div>
-    <div class="grid">${acc.map(usRow).join("")}</div>
+    <div class="grid rows2">${acc.map(usRow).join("")}</div>
     <div class="hint" style="margin-top:14px;line-height:1.5">Empresas de Crecimiento: la tesis es ganancia por capital, no por dividendo. Una empresa excelente no es buena inversión si el precio es muy caro — si está "Cara", queda en watchlist hasta que el precio corrija.</div>`;
 
   return viewHead("🇺🇸","Acciones USA", srcStamp("usa"),
@@ -2299,7 +2304,7 @@ function renderChile(param){
     <div class="section-title" style="margin-top:0">Watchlist dividenderas<span class="count">${acc.length}</span>
       <span class="hint" style="text-transform:none;letter-spacing:0;font-weight:400">${nSobre} sobre benchmark · ordenadas por exceso sectorial</span>
       <span class="rule"></span></div>
-    <div class="grid">${acc.map(clRow).join("")}</div>`;
+    <div class="grid rows2">${acc.map(clRow).join("")}</div>`;
 
   return viewHead("🇨🇱","Acciones Chilenas", srcStamp("chile"),
     "Dividend Yield (promedio 3 años, definitivos+provisorios) vs rango sectorial") +
@@ -2516,7 +2521,7 @@ function init(){
   // refresh "ago" labels every 30s
   setInterval(updateHeader, 30000);
 }
-const VS_BUILD = "v2026-06-12.2";
+const VS_BUILD = "v2026-06-13.1";
 document.addEventListener("DOMContentLoaded", ()=>{
   const e=document.getElementById("vsBuild"); if(e) e.textContent = VS_BUILD;
   console.log("Value Signal", VS_BUILD);
