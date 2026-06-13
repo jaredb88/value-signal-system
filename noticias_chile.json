@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T18:35:33.168283+00:00",
+  "updated_at_utc": "2026-06-13T19:33:55.729132+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -140,20 +140,6 @@
         }
       },
       {
-        "title": "Dólar a peso chileno: precio del dólar en Chile para este viernes 12 de junio",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOckR3c3Y0b1R6T185VVE0ekZvN1RuckhOd1BWemtlV2FFVjBQM2NOcVZOdkNudG1MWVlfVVVrV0U5ZndLemMxcW1mRGR0bzEzRGExSWtudWJlVG9yWGVwZDYyX2llcmJhaWxRUXVuYlpKdEcxdEZtZWRKZTVTZEw0alptazhIUDhUbjRYUnhseHRaRElYY0ptczN1dVg0b3VrM25vMHFKTjVmaFM4TVNiVVdXSWdOWGhpb2w2eE9mS2dISjhIN3c?oc=5",
-        "source": "Radio Pauta 100.5",
-        "pubdate": "Fri, 12 Jun 2026 20:38:25 GMT",
-        "pubdate_iso": "2026-06-12T20:38:25+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
         "title": "Precio del Dólar en Chile hoy: El Peso chileno amplía sus ganancias y alcanza máximos de una semana",
         "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTTlsWllON1FhQVhWWTZFY3hUYnBwNFZDWjZIMVoyel90VlNvOGM3SXBvT1MzTWJDUU4zd3h5RFp4Nkk1YmlqMm1KRTZVcG9hMHRkeGtNZFFPVk9aYmN2M2hiX1lYNVN6SHg4a2hrNVQtVnh5T1U0dnBQaTNRZGVZdklfUTdBeWdFN3hSWURpdXFJVEY1aFBhcnJNclBJWFR2LWU3ekdVNGxLZnppYlNkWEIwUWM0cGo3OFRmSTN6QWhFWUZabXNLT2JldlViM0Z4WkxzOXVuSdIB3AFBVV95cUxNLWdraHFEaUlmZDNVcnJDakpKVTJtcFNFNGtYRGNLUEE1NG50UkVET3ZtLU9aNzVIMlVhdjJyNUpHN0VwTy1Xd3lMS3ItZy1fVzVvbG5URzg2VEcwcFhnLVNpTEdDdGZ0X1B4TlE4YkdxdGZMTW9vWUdlSEZtS1FsRGNiZnF3M2Y1YVZXbUxRSFdTN2U2U0FKWVNfaEZ2TDhfVVFqYjFMVnZKWnJQTGJqeUx1S3JzZXN6QkJBU0UzbDhrZVljRGlrZHp6QjJlMjVWTWRnWDUwVmwtSFlU?oc=5",
         "source": "FXStreet",
@@ -187,6 +173,20 @@
         "source": "Infobae",
         "pubdate": "Fri, 12 Jun 2026 11:28:26 GMT",
         "pubdate_iso": "2026-06-12T11:28:26+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Dólar cierra bajo los $910 en Chile apoyado por fuerte repunte del cobre",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOek40UHJaaWxxeTU1Q2NPeDJwVHpLSlJKYXFjMzNnTVlheENTREQwcTdqbW9wbnpLVklDcUZudm52eF9vd200aXNhVy12Q0NQd0xkajBxM3U0YjVJOC1UQkw3Qzg1T0pHU0RRa1N0MU9QZ2IyOFBKMGRrZzNUMW1DbENFYjF3ODEtR01UQmY1RXYwRWx2cVJjM21EUjJacWtIeV95MUUtLUswdUxZUXFiOU5lbGtSdEJaSHlzRUUtTEdneHRMdWJkcktuYw?oc=5",
+        "source": "Radio Agricultura",
+        "pubdate": "Thu, 11 Jun 2026 19:23:09 GMT",
+        "pubdate_iso": "2026-06-11T19:23:09+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
