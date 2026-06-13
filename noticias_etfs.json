@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T05:26:57.397109+00:00",
+  "updated_at_utc": "2026-06-13T07:26:56.400933+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -29,6 +29,20 @@
   },
   "noticias_por_categoria": {
     "fed_tasas": [
+      {
+        "title": "CPI Inflation Rate +4.2%: Hottest in 3 Years",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOczVSZUNORC1zVGNuc2FEQ194TlE0d1NLUnRhT1QwczFnWGtpM2YtMWxmclRKMWpxdG5vMnFHSnVaSmsxcEpvY3RGOTlHNm1UZ185RTlaWFBKWE5yNVpfMERkSnFkZlVMSE1peUl6ejRoMTdOWnByalRWNVJOUC14U0t6SkwtYUFyVkNsM29Kc2ZaZ1N5cjVsT1k2R2w?oc=5",
+        "source": "TradingView",
+        "pubdate": "Wed, 10 Jun 2026 14:24:00 GMT",
+        "pubdate_iso": "2026-06-10T14:24:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "US CPI Rate Rises to 4.2%, Bitcoin Price Sees Minor Gains",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOEJLbF9ZejFKaWJ4S1JNMFFZZnlXYVJ0QUxuQkVUNW1GeVc5UTBkUWFfNDh6WjdMVlBEMHVDV05iSklOS1RobTFwOS1jSTV4Q3lCUG1ocWlEMDN6VlU0d2xqcURoVkRuWUxrMEZ6VmNQeEMweEVnRU9vbDBFWi1TeFF5TDVZb3dtQTViZlJGQzF4SENBWVVXUVBUSEJlRUhId2NjRXRnREZWQ3oxZFJlbXhOal8?oc=5",
@@ -288,20 +302,6 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "Key facts: Adobe Revenue +9.8% YoY; AI Rollout Raises Analyst Warnings",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTmRwa2VQaktxei14VFlNSmRJOF9LM3ItMjNpZGxQRzdLeDJNOFVoR0hrdkFWRm8tbFBld1NhYzRIZzRjNTZqbGFmU0hrUjI2RTNHUVJTRTlWVzRzQ0I0bTRMNkQ0SWxSbFE0Ykd4SjJjNkR1QlFsSmVIWFVGV0kyNnBUc1FvaW1BblVxUC1vQy1mbktpNUFWQjNZX3dEWGpxdjZlQ1c2aXNTYnl2QnhmdjQ1c1hUT2xGYUdZUUVTTkhOU2ZDZFE?oc=5",
-        "source": "TradingView",
-        "pubdate": "Wed, 10 Jun 2026 07:13:49 GMT",
-        "pubdate_iso": "2026-06-10T07:13:49+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
       }
     ],
     "sentimiento": [
@@ -352,11 +352,11 @@
   "stats": {
     "total_noticias": 22,
     "por_categoria": {
-      "fed_tasas": 1,
+      "fed_tasas": 2,
       "mercado": 5,
       "tech_nasdaq": 5,
       "economia": 4,
-      "earnings": 4,
+      "earnings": 3,
       "sentimiento": 3
     }
   },
