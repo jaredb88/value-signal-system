@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T19:26:59.219900+00:00",
+  "updated_at_utc": "2026-06-13T21:27:02.157353+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "fed_tasas": {
@@ -31,11 +31,39 @@
     "fed_tasas": [],
     "mercado": [
       {
+        "title": "De soldador inmigrante a millonario: la historia del mexicano que triunfó con el debut de SpaceX en Wall Street",
+        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPZzRXYy1OUC1ZQkdwODNSYl9KWnRPUFZmRS1YMDZ1dHh6R3B3NHNJblZQMDJRc2toMmFleUh6cnA3NHd6QVRwWTc3TVV4UzVyUXBORkpfU3Y5WmtSRC1wUm90enNjQTl1dWg5bzBTVnF5WmpYSkpFUVlHTHNuaDlWTlJOb1BTVVRXaWhlNG1aWkFzTmdOX2VmZG5MaGRETUxDZjJzNDEzb2VUb3NlQnpOazJKQnc2NHltbFVUQXZMWXRFQk5WUHhXOWFmOWNjbVUzMzJKTlZUTGV1XzE4WmlVb0pRaFMzczdYTE5aOS1HRTU5akXSAY4CQVVfeXFMT2hPMlNPSTA3Nm5BWC11NjBBTG5hSTYtUGxBaEZQQXR6VUxYeVRjM1NTSGdYM1dVdjZ5ZThVOS14eE1XN1hqSUlkTkd3VUg5WnVHajh3RDhXN1dWTkN5aGFqY2pubkdDSHV2NEFyemp3OFVGcnhwRlpNQ3BnUzBlZS0xTjVRaUgxTnk5czVwMFp2b1d5MXpUdTg2dmNUeFFQRlo3ajA4ZDVvRlJfWHdXZTRzNEJuR0VmQ0duem9WVW9hWEx0VFBHd3JFa0JvTHhTZ1F3akUyNENPQ3ZaeXZXT1FveU1TUEVlT09xdkVIbkRYOW0teGVtVkpoVXZtS3VBdWY1SkVkdEh1bE9tQzNn?oc=5",
+        "source": "Infobae",
+        "pubdate": "Sat, 13 Jun 2026 17:37:00 GMT",
+        "pubdate_iso": "2026-06-13T17:37:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Wall Street termina en verde una semana marcada por la salida a bolsa de SpaceX l mercados",
         "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOT0YzQ2l2N0paN0JWTGlnSnV4bFpiSUNiUThlWXBsTUMtZEwzeWRoUXV1XzR5ZEFRMGEzTlVud3VUZmVKSExIam4xdEJyLW5fek1zb1d0cVQyVjJONjJ0Z0NoeUsxVzN6ZjJwSDhpUlZnVm1QMlhnRldDbnMyUGJjOVJYem9ZM2g2ckJKNXBqSVVnRDNyQlI1QnJ2NDhCMXV1b3MtUmJ0ZGdwVUtvX3RlR3NPb2g2am95cDZGVDRXcGxOa0hXTWJSa3YtbjZuTHc5NElYME5OaVRhWi1QaGZLaTFQMVNRR2ZVWkFzalNPZXphN2pFWVE?oc=5",
         "source": "El Comercio Perú",
         "pubdate": "Fri, 12 Jun 2026 21:55:10 GMT",
         "pubdate_iso": "2026-06-12T21:55:10+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Stock market today: Gift Nifty hints gap-up start; US-Iran peace deal to global markets rally - 7 stocks to buy",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPVW9xY3RnNENtUnRaYUlwRG9QeVAyeHJsb093dW1jT0xRc0oxZXFYOUdXcU1rZVhySmpaaEZFa0pZbGRaMkd4NHdRV2pkUlMydjJrOURNNGF4TVZiaFFXQkx2ZUd4ZWd5U3lmRm1JUTRRejVWTlJNWXg0a1FLU3k4c2N1cXlsTWJSa0RKaDNqNjRGc1RYbjhrQU41WUt2M0lPV3Z5STRsclA2ai1LcVZDaE5PZzBIVUtmenp2UzhqbFFSeWZTa1ROeUtZenBlTXd6eHVlS2NVT3RQQ05POG5ad1V3TEh1czg5azRLNkcyaznSAfYBQVVfeXFMT0FtcHlzUHBfd05UYVVKZnRuak5tSGtWTmNocHRvQ09keEgzeEVnbnRmNEQzT3FHNTA5M0kxWUdHQlRKM3dhc2JHb0djbkFmdWhqaU9HRjNsZVhfNGpjOWVEM2tobHZSalotSDRHOXR4dWhSUzRLYUpBVjZiRnRkdXptcUo4b0J3S29ESnJsclpOeDY1NWwxRDdoLUZ2WjdUZHQtUktQSHdZakVLaVZ0RHYwWHJ0WmRzQVJzbE1aMTdkblNiZU1SR3haUmtUXzhqczNmYnJqODNNZDRkSk80UDBHQ2RIa0hmQ1NUR2lIVlZqbFBlcV93?oc=5",
+        "source": "Mint",
+        "pubdate": "Fri, 12 Jun 2026 02:08:24 GMT",
+        "pubdate_iso": "2026-06-12T02:08:24+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -70,34 +98,6 @@
           "intensidad_label": "neutral",
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Why Is Marvell Technology (MRVL) Stock Soaring Today",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZUZXYXVCdEpHZ0JURl9FZ09CX2RzSlRpNDNlN2xBMGpQZGtESS1zUlhXbmE3UnVuT0N6Z01LTHd5eFlUOHIyY2RxUVFGTGhNZWxTd1ROSkN2Z25tS2R3dTlPbzFVX0ZtZ3RNTjZhZC1TcVBqbnZVX2tMMFBueVk2UXBqN3ZkcHFaSEx5S1ZDZ053R1BUY2c5bTV6dWFFYWp4WGlnRFlER2lqUzkwZkhR?oc=5",
-        "source": "TradingView",
-        "pubdate": "Thu, 11 Jun 2026 15:05:43 GMT",
-        "pubdate_iso": "2026-06-11T15:05:43+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff",
-        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOUGlDTi1ZVXI4dlo1NXZGMFNYY2RrYjNfbzRqZkRLTl9SVkM1X3dxeDRjLTVhRHMxWDc4aFQ1NThRWEJ4OUJiejVieDNjNkZVRThZNzhBNG94c3ZnRjRzdGFYUmh5VXdaZVVrWUNXNXVUMEgzM2NuVExzUmRoSXRGSHFxOTRBT2xnSXFQY2pXemJTZkFCc0syNnE0aE92VjdIN09QaHJ3OWFOclJXMXU4RjlIdmM5UFVGbEhidjdXZWI4NUhfZFQ3aVZiYUd3c2VmVlpvdXM3NTQtMjhWcE0zU1RKaTFZUVdkUHJFLWlEbG4?oc=5",
-        "source": "TradingView",
-        "pubdate": "Thu, 11 Jun 2026 12:07:28 GMT",
-        "pubdate_iso": "2026-06-11T12:07:28+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 1,
-          "intensidad_label": "leve",
-          "emoji": "🔴",
-          "razonamiento": "Selloff: presion vendedora"
         }
       }
     ],
@@ -159,11 +159,11 @@
         }
       },
       {
-        "title": "Japanese Shares Rally on US-Iran Deal Hopes",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObHk4aVVYZnE2bjNlT0ZtdWFaVG85M1lId1M1WUpfNE9Pa2xLVjBGZVE0RUxPY25FRTNld1RQX245cUdKTG9OLUdvcnI5XzJXQzRQNmpOY1JBZGtuVHhOY3BCM3hzRHI4RVQ4ZnVUMUd6RHQ1cHZEbWNNTmFnbTlnbzNSdGtpb1I5cjlqZ3NRdTllU0ZFbzVScA?oc=5",
-        "source": "TradingView",
-        "pubdate": "Fri, 12 Jun 2026 00:42:00 GMT",
-        "pubdate_iso": "2026-06-12T00:42:00+00:00",
+        "title": "Stock market today: Gift Nifty hints gap-up start; US-Iran peace deal to global markets rally - 7 stocks to buy",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPVW9xY3RnNENtUnRaYUlwRG9QeVAyeHJsb093dW1jT0xRc0oxZXFYOUdXcU1rZVhySmpaaEZFa0pZbGRaMkd4NHdRV2pkUlMydjJrOURNNGF4TVZiaFFXQkx2ZUd4ZWd5U3lmRm1JUTRRejVWTlJNWXg0a1FLU3k4c2N1cXlsTWJSa0RKaDNqNjRGc1RYbjhrQU41WUt2M0lPV3Z5STRsclA2ai1LcVZDaE5PZzBIVUtmenp2UzhqbFFSeWZTa1ROeUtZenBlTXd6eHVlS2NVT3RQQ05POG5ad1V3TEh1czg5azRLNkcyaznSAfYBQVVfeXFMT0FtcHlzUHBfd05UYVVKZnRuak5tSGtWTmNocHRvQ09keEgzeEVnbnRmNEQzT3FHNTA5M0kxWUdHQlRKM3dhc2JHb0djbkFmdWhqaU9HRjNsZVhfNGpjOWVEM2tobHZSalotSDRHOXR4dWhSUzRLYUpBVjZiRnRkdXptcUo4b0J3S29ESnJsclpOeDY1NWwxRDdoLUZ2WjdUZHQtUktQSHdZakVLaVZ0RHYwWHJ0WmRzQVJzbE1aMTdkblNiZU1SR3haUmtUXzhqczNmYnJqODNNZDRkSk80UDBHQ2RIa0hmQ1NUR2lIVlZqbFBlcV93?oc=5",
+        "source": "Mint",
+        "pubdate": "Fri, 12 Jun 2026 02:08:24 GMT",
+        "pubdate_iso": "2026-06-12T02:08:24+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -175,11 +175,11 @@
     ],
     "economia": [
       {
-        "title": "US Initial jobless claims 229K vs 219K estimate. Continuing Claims 1.795M vs 1.780M est.",
-        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQkRCMXUweUhxOHlsX3RvTjBsOG5BRlZTWG94ekdYckY3MUp5S1ZpOF9ONi1MV1k1UkhuNTZjN1hQZXZuQm85NS1SVkpuRHAtYXVQcEthTWhJUEhXSmNYbUQ0R3h1X0lOOXVYeG55aldvalJZV2Zyb2dCTFhaNW55R2w2eHVSZFFMNEV4VUozMFJpd2IwN0gza0xhV2I3akNuc1BYdUI1a2lpLUpvazhwSU1vTk5Wb1I0NGlOVFdZeENSOVpxZERsRUN2eENfWkZOazRjTV9oWjBqMk9aWkE?oc=5",
+        "title": "Why EchoStar (SATS) Stock Is Falling Today",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOanEwcGZrVmlSSUhqNkhfSkRtTTNBQkM4bUdVMlBEc2xVU3dXVnJLWXRLU0lQRTdFMzFNYjk2LXBoWUIycV94a2R4dlJZV080VlpKcng0OHZ0dUwzRzhLcldiZGlXc2N1RHZMZ2RGbzJBdldkM2dtZHZzaWZTS0I0dUVPRy0wVHBWd2xFWFRieGFyblhiRnFHMzF4WlkyMnBnOHc?oc=5",
         "source": "TradingView",
-        "pubdate": "Thu, 11 Jun 2026 12:30:39 GMT",
-        "pubdate_iso": "2026-06-11T12:30:39+00:00",
+        "pubdate": "Fri, 12 Jun 2026 15:45:43 GMT",
+        "pubdate_iso": "2026-06-12T15:45:43+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -189,11 +189,11 @@
         }
       },
       {
-        "title": "Bitcoin al borde de USD $60.000 por temor a una inflación más alta en Estados Unidos",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOenQ5eENJX3RMdWZxXy1iSzBLZGZocFBsNnVEME9uZ0Z4SFFoTEwwNEZraW5CSGRsX2xIYjlDdkRXWjU0MWY0QU5vU2tsbFQzT1M1dVdVRWt3TWxWTm5LT0xTLU5NU3lLeHlzVzRHNDJTS1lZMmc2eGRBZHM5MGdYZTJsQmxCaHZpMm5aMTJnMU5Vb3cwNkdCS0lRSEh5aTJBeExsc1FrX1l3SFNoT21yMXJueEJ0dFJKekRtRk90OA?oc=5",
-        "source": "DiarioBitcoin",
-        "pubdate": "Wed, 10 Jun 2026 20:23:28 GMT",
-        "pubdate_iso": "2026-06-10T20:23:28+00:00",
+        "title": "US Initial jobless claims 229K vs 219K estimate. Continuing Claims 1.795M vs 1.780M est.",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQkRCMXUweUhxOHlsX3RvTjBsOG5BRlZTWG94ekdYckY3MUp5S1ZpOF9ONi1MV1k1UkhuNTZjN1hQZXZuQm85NS1SVkpuRHAtYXVQcEthTWhJUEhXSmNYbUQ0R3h1X0lOOXVYeG55aldvalJZV2Zyb2dCTFhaNW55R2w2eHVSZFFMNEV4VUozMFJpd2IwN0gza0xhV2I3akNuc1BYdUI1a2lpLUpvazhwSU1vTk5Wb1I0NGlOVFdZeENSOVpxZERsRUN2eENfWkZOazRjTV9oWjBqMk9aWkE?oc=5",
+        "source": "TradingView",
+        "pubdate": "Thu, 11 Jun 2026 12:30:39 GMT",
+        "pubdate_iso": "2026-06-11T12:30:39+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -245,13 +245,15 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
+      }
+    ],
+    "sentimiento": [
       {
-        "title": "Everpure: AI Storage Uncertainty Overshadows Breakneck Growth",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaHQ0Y2ZDWWZUbjlsSzFlLWdKN0ZSdFVqd2RDUnktSG5qUzBncjN2dHMzUkRpSTVVM3paZGs5VjIyazZVV3hZSjhSbGtWMmhOWkhiNXd1ZjUybThoTzk0MkVtRnlHZUY0S1Z1dWZKdXAzY0ZicjFIMFMyREhzWkpIMHQxcWdqTXh5SnFIbHhVTklBZDFOTGhnVzhSSklVZjdlWHZ2SnRtS09KV3BTN043bGVuMWkybFh5ems4WQ?oc=5",
-        "source": "TradingView",
-        "pubdate": "Wed, 10 Jun 2026 20:05:00 GMT",
-        "pubdate_iso": "2026-06-10T20:05:00+00:00",
+        "title": "Stock market today: Gift Nifty hints gap-up start; US-Iran peace deal to global markets rally - 7 stocks to buy",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPVW9xY3RnNENtUnRaYUlwRG9QeVAyeHJsb093dW1jT0xRc0oxZXFYOUdXcU1rZVhySmpaaEZFa0pZbGRaMkd4NHdRV2pkUlMydjJrOURNNGF4TVZiaFFXQkx2ZUd4ZWd5U3lmRm1JUTRRejVWTlJNWXg0a1FLU3k4c2N1cXlsTWJSa0RKaDNqNjRGc1RYbjhrQU41WUt2M0lPV3Z5STRsclA2ai1LcVZDaE5PZzBIVUtmenp2UzhqbFFSeWZTa1ROeUtZenBlTXd6eHVlS2NVT3RQQ05POG5ad1V3TEh1czg5azRLNkcyaznSAfYBQVVfeXFMT0FtcHlzUHBfd05UYVVKZnRuak5tSGtWTmNocHRvQ09keEgzeEVnbnRmNEQzT3FHNTA5M0kxWUdHQlRKM3dhc2JHb0djbkFmdWhqaU9HRjNsZVhfNGpjOWVEM2tobHZSalotSDRHOXR4dWhSUzRLYUpBVjZiRnRkdXptcUo4b0J3S29ESnJsclpOeDY1NWwxRDdoLUZ2WjdUZHQtUktQSHdZakVLaVZ0RHYwWHJ0WmRzQVJzbE1aMTdkblNiZU1SR3haUmtUXzhqczNmYnJqODNNZDRkSk80UDBHQ2RIa0hmQ1NUR2lIVlZqbFBlcV93?oc=5",
+        "source": "Mint",
+        "pubdate": "Fri, 12 Jun 2026 02:08:24 GMT",
+        "pubdate_iso": "2026-06-12T02:08:24+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -259,9 +261,7 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      }
-    ],
-    "sentimiento": [
+      },
       {
         "title": "Odds of a 'Super El Niño' are rising. What Texans need to know.",
         "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdEFiQ3J3MnBOZjNKZ1M2WENLdTE1WWxYVWJRbjRsZHlrTmdiTEl6ZGtRQTJPRWE3THdVRXpXWk5UWGozdzI2LVhFT1V5SnRUNmc0WFk0bTdXbmNWLVFvWXFTbjBwNHJqZXdWdm8yRlFTc0hTMTltZXNRUVB4OU1GWkRxRFY2clh1ZEh5WThn?oc=5",
@@ -299,17 +299,17 @@
       "mercado": 5,
       "tech_nasdaq": 5,
       "economia": 2,
-      "earnings": 4,
-      "sentimiento": 2
+      "earnings": 3,
+      "sentimiento": 3
     }
   },
   "resumen_ejecutivo": {
     "sentimiento": "neutral",
-    "score_neto": 0,
+    "score_neto": 1,
     "n_positivas": 2,
-    "n_negativas": 2,
-    "n_neutrales": 14,
-    "narrativa": "El feed muestra 2 senales positivas y 2 negativas (neto +0). Factores dominantes: Selloff: presion vendedora; Rally accionario.",
+    "n_negativas": 1,
+    "n_neutrales": 15,
+    "narrativa": "El feed muestra 2 senales positivas y 1 negativas (neto +1). Factores dominantes: Selloff: presion vendedora; Rally accionario.",
     "narrativa_fuente": "plantilla",
     "veredicto": "NEUTRAL - sin sesgo dominante"
   }
