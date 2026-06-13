@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T13:22:36.787345+00:00",
+  "updated_at_utc": "2026-06-13T18:35:27.950578+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "precio": {
@@ -28,32 +28,304 @@
     }
   },
   "noticias_por_categoria": {
-    "precio": [],
-    "etf_flows": [],
-    "regulacion": [],
-    "adopcion": [],
-    "fed_macro": [],
-    "sentimiento_onchain": []
+    "precio": [
+      {
+        "title": "La apuesta cripto de Adorni y cuánto valen hoy sus 15 Bitcoin - Diario El Norte",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQzJmbjZNUEZOLVdlYVY2NGdsSVRJVEo4UDZab054RmY0b2IyYVdHSUN0cFZ0dkZvSUk0UVl5NjNnOXp5QkFBSzRyemRNZnlHTC1nclpIbXdtZDhxUm41RVN6LWdEanBpcExhbmhRMF9aNGE4amZHb3Fma0JKRGNQU0N6NVZGUE9iUGJlWW9VaTNmLU1XUHc?oc=5",
+        "source": "Diario El Norte - San Nicolás",
+        "pubdate": "Sat, 13 Jun 2026 15:02:11 GMT",
+        "pubdate_iso": "2026-06-13T15:02:11+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "La fortuna cripto de Adorni: cuánto valen hoy sus Bitcoin y qué sueldo hace falta para comprarlos - Mi 8 - Mar del Plata - Mi 8",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPS1RhNjdMS0pGUzBhbmZGWlpYd3huRGpRMGtwNjdMVkFvMDdkWUtjcjU2TldiMmhyeVlZQVZuUmJoTTJSbkRlY3VnYVdwWU0weDFENC1PY1VmTGtnenNRZm1sdEs1OXRxWl9tdzNMLWdaTjQ2dmNzZ09QMGFfSW5YbnlmNUNNN3ptS2hsN19WUy1kblRoZS1CV0xheWs0Q0hPeDgyekUxUGRGc3M1YUZUWlU3QjE3Mms?oc=5",
+        "source": "Mi 8 - Mar del Plata",
+        "pubdate": "Sat, 13 Jun 2026 14:49:39 GMT",
+        "pubdate_iso": "2026-06-13T14:49:39+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Paso a paso para invertir en criptomonedas y cuál es su valor este sábado 13 de junio",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX0NBUS1aRWV1T3AwNU5uMzNEQmVVQXpKU3dTNkZldlpyVW1QclJjaHcyREtkWUxQNnN5WHVUQ2lhd1Fra08tY0txbERDUy1QR3RWbVRFM1RCaU9CTWlMTDF6MnJrVmdHcnFqbmk5SFc4bFhjeTQzZ2RfQ0Q3UkdtajlqSWNrMkFGeVNPdFppWFRQbnF4LU9sVnFaXzl0dWRaSExINkVwZ3BDRkM2ZlZGWnoyTm9LU0djb2wyS3Y0X0VfZ3RKdUHSAeABQVVfeXFMT1lzcE9GWEc1SEtOcjhPZTlsazhzU1FMQWh0bmdVSFJDWlIxQXVxZ3ZZT1pZUl8zTlpnSVZrZ0VZSW93a1d3Q1ZJOHg4YWZ3WjNsN3ctcjBTcnQzblJIZ0diTlVVT2d3NWlHZHdyNnEtTWRLU3M3Wk93QXBzRHBCWG9nTG1hVEt2LUxvcmlaa2l6WTBSTU1tMXFiSms0UGRtMDBudFA4SjFzcDJaN0k3U0tEQWNkNXYyZFhmRUlMUnUxbEVWUGhsWmprQUlramZGWlFObUZrZnVuMTIxVXJtUDA?oc=5",
+        "source": "Infobae",
+        "pubdate": "Sat, 13 Jun 2026 11:38:07 GMT",
+        "pubdate_iso": "2026-06-13T11:38:07+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "El mercado de criptomonedas se desploma en números rojos, con pérdidas superiores al 50% en Bitcoin: los expertos aún ven un \"rayo de esperanza\".",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWG1tZV8wTkItMUZPUHowQ3lNOHVpVTYyTXlLTWQ3M1FuaFNELUJaM2plR09MOGtPS0hQSWJjT1ZnU2FhT1FCdU1mTXBNWEJMQVJiTFJFYTVoZnF5NjU5RU1TbVZrU01KdjNFR0VQQ0FGYnk2ZGxmY3FyZ1BQYjhCVlhfNDFqZTN4T05SbjQycmEyOUxkOE84TlBqX3pSV1RZblRWYVFyMFVVYWhCZUpsckIwc0RFbHVvTWpGUEM2XzQ4WjA?oc=5",
+        "source": "Vietnam.vn",
+        "pubdate": "Sat, 13 Jun 2026 10:17:07 GMT",
+        "pubdate_iso": "2026-06-13T10:17:07+00:00",
+        "impacto": {
+          "direccion": "negativo",
+          "intensidad": 3,
+          "intensidad_label": "fuerte",
+          "emoji": "🔴🔴",
+          "razonamiento": "Desplome: muy negativo"
+        }
+      },
+      {
+        "title": "Qué pasa con Bitcoin hoy: pese a volatilidad de precio, marcó un récord",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPazY4SmZqSzIxeU9fMmhlakJXWTFySEJJUUdReUx0aXRBU2M3a3VuZmxXMUxuRFFZVGtzcm1uUXNwcTFWcmNCZkFfZFgxd3dQSVB6anFiMzV2Wm5jZ0xqeU53ZWJ1cFg1dEM3SDFUQTc3WVNkQkZnSk9MOWRtQmZPOTE4czBHc0tBbllkenBNYzEzckhhbHItRjExVUFabU9SNEQwVjk3S3EzYTVfZk5Jai1VT2pzd9IBuwFBVV95cUxNZGF2RnBCVk1hQ2JGZGpGNFh1eEtGRkt6blBXc3NRTG9ZbURhc1VGZkxVdzVLV1AxUEtGZ2g0eWRmU1dadWFPMG1heVM2NHFpb2ZSUXJpdjdMY0JRV3NNZEU4WWZVVVN1cjBEZm44enVraWkxc3lYSm9NdkNCTEY2S2pHTXMtZlBvTEgyU1lVa0VtUkFWUkxXYmNKVFZBaWZjNmZtdzEzNUdmRnhWNnc5cWVYTkV2VDlwWUJJ?oc=5",
+        "source": "iProUP",
+        "pubdate": "Sat, 13 Jun 2026 10:15:58 GMT",
+        "pubdate_iso": "2026-06-13T10:15:58+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "etf_flows": [
+      {
+        "title": "BlackRock y el éxito del iShares Bitcoin Trust (IBIT)",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbS1wNjB2RHZTY0tIaDRzaHJOSzVMeHFxdEVXY0hKWGhTVmpiM2VSbTVXQ2ctNW4xMmF1QVBPZHhrRl93UThWdzJWYU41d2VGZHdYX21ndTBObjJzMG1tYlh1ZmxramppblowU3FfX3JfQ2I4b2V3dVpONVFuemFPY2x0emJmbDBYM2plbDdDUXpraXNUbmNuSm9KQmxSMk0?oc=5",
+        "source": "99Bitcoins",
+        "pubdate": "Thu, 11 Jun 2026 17:55:05 GMT",
+        "pubdate_iso": "2026-06-11T17:55:05+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "El ETF de bitcoin de BlackRock que paga ingresos se acerca a su lanzamiento con una tarifa que supera a la competencia",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUjZHaExMV2xsdXk4UHRpdGdMZHR1dG9PZnc5R295YU9FblM3d1dfV18xVmpSVlp3SE9tNlBuaTZLaVU4cXhoN2daTk50cFZKOTZERUZidF9oUHFkOEh4ZUhuUExnOE40U2wxdUIxSFY3bjB4RDdlQTZPN0xPejd4YVN5ajAtNEJYS1NuSm1RMC1TVTd4bFd0eFhXdDZabW9uOGpwb2JVeHJoRGprbjZybUd4TnUxZVh3cThRZFlWUmUtd2Y0NEhR?oc=5",
+        "source": "CoinDesk",
+        "pubdate": "Thu, 11 Jun 2026 09:10:06 GMT",
+        "pubdate_iso": "2026-06-11T09:10:06+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "BlackRock presenta la última enmienda a la BITA antes del lanzamiento del ETF",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRFp0aFp0czI2cHlDZUNjSVMtcnJLUVNjWDloQ2YzUEczdTdJU3gwSklqMWltVVFzbGdWaTFiR1ZFcGlwbE5naS1Fa254cWlXbERndGR1eFkwQWNlQkJMVE5pU3JISk5GazhITGN3MmptMGNySzJVMnNXWHEtcnpfeXZkaGxZNjJmVXdqSXlFNE5tVHY3d0tIZUUxTzlCZkE2VEtGRHNGS2tvYVRiYmx1VzJGU1FFeEhtUWF4Z2hWSlN1Z9IBxwFBVV95cUxNNUtRalp6LXNMSTdsaEhEUE83ZHlxY011NjRFejFKSVBqcEVFQ2x5Q3dqZzgycWc0V0VEU3doSms4VzdrMjd4ZlRickYyYW4teHFXOWJpRHFMRWlSaXZXdXJKZzJKUW1SR0xzZjVSVWdOcm1hT2FvMXU3bC0yaVdkZ0tPU2MtTldRellMX2QtMnktMnRGOEhxOVBodXZQdnl2dkdmWHBRaVB4SXlXa2JoT1JRdS1rM1NrdDRUd2NaTTlKMXVfd1Rn?oc=5",
+        "source": "The Coin Republic",
+        "pubdate": "Thu, 11 Jun 2026 03:55:00 GMT",
+        "pubdate_iso": "2026-06-11T03:55:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "BlackRock actualiza su ETF de ingresos en Bitcoin con calls cubiertas",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRml4STFSa0stYnJVbHZiUVEzdjlEQ01hc1VlM1JDU202alNPV04zTXp2N3dXNGhseWlKbFRSN3BUV3dLWDJsNVVRazE0SnR3OGFhSVNFRnZQZWRtRENwYlMyTlRudk95a3pKWWhTN3B6UVlIOHdnU3d6MVZwYTZWMzVlZllBQmxxRE8wLUw1WVdQSEJIWjdVclZzbl9OVGdoR0R2M2JsbW5nN0tuRm50NnY0WHhuZw?oc=5",
+        "source": "DiarioBitcoin",
+        "pubdate": "Thu, 11 Jun 2026 02:24:42 GMT",
+        "pubdate_iso": "2026-06-11T02:24:42+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "regulacion": [
+      {
+        "title": "SEC aprueba ETF cripto de T. Rowe con Bitcoin, XRP, SHIB y DOGE en la lista elegible",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNc0FicXcxek1NTVdIdk1tSmNQWHZLR1haLUhuSkk3d1lwdmVybEF5YmFEdy13SEhUdjJ0UkJJZ0FYR1ZUX2p1YTJ0VzRRR1UzMEpWUG9yZ0V2Vk82d3Z6X0dmSUo1Q0h1c1pHZUdvX1ZJNnVFYVRaMzNJRmFYMWRkc0hyRlV0VzhJNE5nSVdZMXl2U0NTa3QyXy0ybXMtd0dNVW1TXy1MeXc4WkljaUZ2dERIVlZMd0JmWEtqZ0kxRzc?oc=5",
+        "source": "DiarioBitcoin",
+        "pubdate": "Sat, 13 Jun 2026 15:28:44 GMT",
+        "pubdate_iso": "2026-06-13T15:28:44+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Zimbabwe impone regulación para cripto y exigirá registro anual de empresas",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNEtkLXBfMGREWlV6RFMzT3JvdV9jWG1aeF9QVV9sMzlVdGtCUFh2SG9LOENqNWtTWk52Q2RMWWpnUU9oY25xS0w3T09vS0E3NmIycWQ0Zk5fNnZqNllCQVJIblpWY2RVRUhYRTJKX3JhT2c5dnZUSm5VVFhQM1pnZkNQYUVxY09HYnFKb3phQ1BYbk9ueHpmTXQzVHVtSU00X1c2M20xV2N3aWlYcU4xdENLUjlGeldCZUpFRldFYw?oc=5",
+        "source": "DiarioBitcoin",
+        "pubdate": "Fri, 12 Jun 2026 19:53:23 GMT",
+        "pubdate_iso": "2026-06-12T19:53:23+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Bitcoin tocó fondo en $59,000 marcando el fin del invierno cripto, según analista de Standard Chartered",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUElramtSLUdfNHlIU2pBN0hoTzgydnU1X1RZWWRWTFpqZVV2MjhncE1XNTNxT3VnNGJyZnlMRzQ3QjJtMUZ4MnFUeHNkM0IxS0MzWm80X0hqSmhfdFlkcXNtWnp1WnRxN2ZtUVlaTEVpaWlvX1lHZ3lQUmdYbkl1SGtuNkZUb3ZSaTE1WFNpd3hpQjdNckctSlBmLTJfbHo1VW5aTUlSV3dnRUpXNm9aRWUtbXVTYTA1alBGdVg0cVFsLU51UmZ3R3ltSXVaNGJyV01KNXdxajlpcFk?oc=5",
+        "source": "CoinDesk",
+        "pubdate": "Fri, 12 Jun 2026 18:15:14 GMT",
+        "pubdate_iso": "2026-06-12T18:15:14+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Venezuela | Parlamento evalúa reformas a la regulación de las criptomonedas",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNnIxTnFXLVBWVmx3WkVNVEZYeVRabGw5WWMwMXQ2UTNKNXFWWFVSZVVPZzFmVnhWU0FYOXgwRERLU3FOQkx0VGNaWTNETUxLSGdTbThQcWMyTlZvNFZqbUxCdXlaSjBKdV9mQlVWTEdPRDFUZnE5aWZBRVlSdEp6X252cDhvMGFCNVp3X3h0WTJTQnNLRXctSWln?oc=5",
+        "source": "DPL News",
+        "pubdate": "Fri, 12 Jun 2026 16:31:00 GMT",
+        "pubdate_iso": "2026-06-12T16:31:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "La SEC frena el marco para acciones tokenizadas en exchanges",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMkR2TXFiem43T3RIRUlnNEhKQ0xXbU5tSkRXTzVTcVRyN3RhM0JQakVyRkM1Z1p4VlhMeWVOWWx6Y0dOMzdNbkVmbmluTXVvNmpDLTRSZ3ZGaG5TQ29fb2Z1VDd5VUl5R0Y2SXRpQk1TZWxvY0xaRTFxVTEzaDhOQlByb19MOHdRQU4yU2I5enk2VTdqV1dyZko5ZXlqMGJvM3d5a0k2WlZkWklraFhv?oc=5",
+        "source": "99Bitcoins",
+        "pubdate": "Fri, 12 Jun 2026 11:22:35 GMT",
+        "pubdate_iso": "2026-06-12T11:22:35+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "adopcion": [
+      {
+        "title": "“Te dije que nunca vendas tu Bitcoin”: Michael Saylor habla sobre la venta de 32 BTC",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOXhTNkNnV29CSFFENDNwTjB6dmRNRzhwdnhGZTJQekdYOXZDTm1DRXMzdFpramFSbFpsenJGbUU5RWRxck1yQV84S1lGSHJ4ZG0yY1pWWWE0ZXllN2lqRXk3cHNjeldiYm5xSmpzYWsyeUdhYzgxNGtRMVAwWlljdUNuc3U?oc=5",
+        "source": "Yahoo",
+        "pubdate": "Fri, 12 Jun 2026 10:39:00 GMT",
+        "pubdate_iso": "2026-06-12T10:39:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "News Explorer — Crypto Adoption in Nepal 'Warrants Close Monitoring': IMF",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQa3N4WFgzS04wQWUxem0tRG9qQ0dCMmpqejZEQktoejI3V2lLaXlhMjlCdlVyYUQ0SWZyakxORjRVN0F1ZXV4WlNUY0puWVRlVDZxcFJaanFOV2QyblNYUWlRM3J1WkxnTEV1VEQ5Sk90YThiZTFZVldUQ3otRzBiTl9fMDR4LTItbXo5WHBpSHR6V1lyUmhDTjZOdmdkZFdVLUx6MWR0YWU3bm1V?oc=5",
+        "source": "Decrypt",
+        "pubdate": "Thu, 11 Jun 2026 11:39:45 GMT",
+        "pubdate_iso": "2026-06-11T11:39:45+00:00",
+        "impacto": {
+          "direccion": "positivo",
+          "intensidad": 1,
+          "intensidad_label": "leve",
+          "emoji": "🟢",
+          "razonamiento": "Adopcion mencionada"
+        }
+      }
+    ],
+    "fed_macro": [
+      {
+        "title": "Bitcoin sube brevemente tras nuevos datos de inflación en EE.UU.",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5iMkZ6TFZVMks3ekI4NVpVbElnZHJJU3J5YlNlR1BsSkh5R05oTmJJQ0kxdE1FRkViUmZsLU41T2hnQ3M2WkRXbDZKTGdQTnlLLVBqSG1SeGJRTk9T?oc=5",
+        "source": "Cryptonews.net",
+        "pubdate": "Thu, 11 Jun 2026 09:14:50 GMT",
+        "pubdate_iso": "2026-06-11T09:14:50+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "XRPUSD - Analysts tip pressure for Bitcoin, gold as US inflation tops 4%",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNVpCNjRFZ0hLTW1nT2wxeWNDeHNfZ254MjA0cmMzMGJQb2Q4cFhBLUx5T3lvMlRZSW9ZaU1JdWlxQ1pCY2FfQkNRMXVXUjRITFFZcTNpbXlMYWVpLU83MHRUMFJUNjNQdEtHNnBsX1dzM3c1eWwtdDRoVmFDVGxjOFJaa19xOTFadk1tQWV5dWppYklBRHpFX2I1RTNzQUx1LUZqYXFCSjlTNE1IbHYxM0ZhdG9peWs3ci1nZQ?oc=5",
+        "source": "mx.advfn.com",
+        "pubdate": "Thu, 11 Jun 2026 04:51:52 GMT",
+        "pubdate_iso": "2026-06-11T04:51:52+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ],
+    "sentimiento_onchain": [
+      {
+        "title": "Este movimiento del Fear & Greed está llamando la atención de los expertos",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMVZFRTFEOTdmRzVWdEFYQjVhRGlhWWVMUnlMbFNqU24tTFhvWEFEWV9sTjRtQWVyMFVueDByalFOV3ZENTNNOEFkUnJsMkpCdkFiT0h0bW5XRnJBek5iN09NY012dHdPTmlTbFVEWlJZa1ZSQmRuNnE0ajNmbFdnS3dSNmRkeFFKd0dzSUUzbFE3WFdMNW52ZDhCQWw4ZXJHR0laUA?oc=5",
+        "source": "Cointribune",
+        "pubdate": "Fri, 12 Jun 2026 07:00:00 GMT",
+        "pubdate_iso": "2026-06-12T07:00:00+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      }
+    ]
   },
   "stats": {
-    "total_noticias": 0,
+    "total_noticias": 19,
     "por_categoria": {
-      "precio": 0,
-      "etf_flows": 0,
-      "regulacion": 0,
-      "adopcion": 0,
-      "fed_macro": 0,
-      "sentimiento_onchain": 0
+      "precio": 5,
+      "etf_flows": 4,
+      "regulacion": 5,
+      "adopcion": 2,
+      "fed_macro": 2,
+      "sentimiento_onchain": 1
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "neutral",
-    "score_neto": 0,
-    "n_positivas": 0,
-    "n_negativas": 0,
-    "n_neutrales": 0,
-    "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
+    "sentimiento": "levemente bajista",
+    "score_neto": -2,
+    "n_positivas": 1,
+    "n_negativas": 1,
+    "n_neutrales": 17,
+    "narrativa": "El feed muestra 1 senales positivas y 1 negativas (neto -2). Factores dominantes: Desplome: muy negativo; Adopcion mencionada.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "NEUTRAL - sin sesgo dominante"
+    "veredicto": "Levemente BAJISTA"
   }
 }
