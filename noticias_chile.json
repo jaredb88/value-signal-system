@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-12T15:33:59.112095+00:00",
+  "updated_at_utc": "2026-06-13T03:50:04.792191+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -37,6 +37,20 @@
   },
   "noticias_por_categoria": {
     "bcch_tpm": [
+      {
+        "title": "La inflación en Brasil se acelera en mayo y supera el rango objetivo antes de decisión de tasas",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdW1rbGxxSEFlOThaSDBmV1NUX2FlMWhrWTh0UjktaUxKd2txZDhtZmdxYko4ejBZMlVpOHJxaktBd3dfSkhJc0NfajJyYVRyU1AtcXRFYzFFZzlTZnAtZkpDOWpYbnFEeW0taURERWJTRFBNUm9jV2hlbE40V0VFNjQ3dnVfUEtyTm02enNzYjdoQ2JMcVExUS1aR1pPZ3BfRG5hanNMN1lJZ0tmU2U3WEY3aEFUR1Itb3lNSlYwOGZ0V3I4?oc=5",
+        "source": "GBM",
+        "pubdate": "Fri, 12 Jun 2026 15:40:50 GMT",
+        "pubdate_iso": "2026-06-12T15:40:50+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "Banco Central de Chile mantendría tasa de interés en 4,5% en junio: sondeo",
         "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPNFVqZUl6Yk5LVjRxSGF0X05ySy1qRjlwUXRpVTBGN0ltVklQMlg1eFRBSGtWM3gzMHZYWXJ5WkxwR3lLX05ZMW1maXJzZVRHYTZ6b1R0eWdPTkwzWXlobXEtYnRKYThaX1g4Q2t4Nkx3NXBpUUdaekt5S244V3RVLWx0aGNQNk5SR1RxVV9lTmlvMmtuY01fVTFYNFNWb2czbnJFNW9aUWxaZW1WYnh5Rkg3TUl3RnNMMHkzejZjckR3REVSVk50NGVEWVB0WE1haGV0MG5fdWRTd2l1RS1QWEZZTGF1a1ZEQ3RvWWJGXzBncmZZ?oc=5",
@@ -92,13 +106,15 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
+      }
+    ],
+    "ipsa": [
       {
-        "title": "El Euro se mantiene estable frente a la Libra Esterlina mientras los operadores se preparan para la decisión de tasas del BCE",
-        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNUFFROE9oMVNwZlhyY0dEM084d3hYTjNQQjhBamlsREc0TmtXT2tTMlhxMlk2dnYzeDVfeVNfZWtOdE5NdHE1UXlEeW9tYXhqd0taTV8yUU45ak40T1VoZl9JMWFTYXhiMHNqU0xkNzV1Q01TWmhjX1BucHNXQ3J5NDNkb3p3bmpjd3ZMRm5vdnFaZ2VGbnNuNlNYMy1JVHhHVUNoTDhYSlp4NVc0VG4tYnV1cTBQMlJNR0Jybmo4VG83c014NUZCUWNEZGwwUzJWU2FvdXNXTXJSWTdmbi1fQ1F2TGw4cEh6RlRZQ1FaZmwyejNIcGRtTVRHa9IBgAJBVV95cUxOb0NPSU5ZVW1JQ3BmUW00WmFjTVctUndfOXI1YmZxSHp4NjhpdTR1QVd4Yy00VXZMZTgyTVVOUlRtXzBXQVpxbVNsbUVzQjZwRHBrLVJxUHpwOEJla2prVmxQV01fTTJVaFdmbnZLSmhqLVA5WDZSSFJOSVowSUpndGxwQ2djRVdMblZtNmRjUG1fR2c3ZG9qdk1xakJFNVNyRUZsNEEzMkNpeDI1eld4ZjF3eVdTbWIyTW9idW8xa3JmdTN2SnpZbzdrZ1ZjWm9vWUlfRWYxWXJnemxlcV9qSC1YZVQ0bVF3UmFZS2ZscW5YY2JFX0J6MkdyUWRCM3lV?oc=5",
-        "source": "FXStreet",
-        "pubdate": "Wed, 10 Jun 2026 06:56:55 GMT",
-        "pubdate_iso": "2026-06-10T06:56:55+00:00",
+        "title": "SP IPSA: La Bolsa de Santiago cierra al alza este viernes con 1,68% y en la semana varió 6,31%",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTEg4S0t6OXRBYTc2dERYbU1WZU9jYzA3NDBuZlVpclMzV2l2RHB2N0hKZmFBV0lnN2R3QUdaQXpvXzRXQmdyQ3J5TndYQWcyVE9QOXA5RHZMSFBiLUVmU0pzSXhaUkhLWGRGNXRPa3JfQWJ4cEZhUlNka0xVOGxSTlFNcnd3SDVycTJ6VG5xU3kxX19qTm9kMFBMb2JjcGFfSklHbVpTU2NQX0M1WnlLRWplV2RfYlNfRmlqN2Y3V0stZw?oc=5",
+        "source": "diarioestrategia.cl",
+        "pubdate": "Fri, 12 Jun 2026 23:21:13 GMT",
+        "pubdate_iso": "2026-06-12T23:21:13+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -106,9 +122,21 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      }
-    ],
-    "ipsa": [
+      },
+      {
+        "title": "Bolsa de Santiago se recupera y el IPSA logra ganancias semanales ante luces de acuerdo EEUU e Irán",
+        "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOUnpXTlFDc2xnd05vZDhyeEZlU2s4cU44N09NWG5Va01iSGlvMGpCeUNCb2lZek56VnJaSUs3RVBVR1hpWnRqelhXUDliNGxjLURtbVFINERWWjl6aHFGLW43WE5hbk5Yb0k3Y1NBVS0wUWNCQ3czOFZQblpuR2xMakFDV09tQzdsdnFSYjI5X2ozZGZrSkxfVjQ5cG9ZTDVRODBIVDlmSHRwUUM1QjhHTm1sZ01ZdXJZRUJvdVprUG0tQTZQaFh6NDd2RFplQWxWWDdPcnVuWE5RZGptV3N4YTA2WFJVejFMSGdLWFBnNXJnZFdvYUl5VVFkLVd4S0pQUFRXbkhhZHV6Wmo1ZVNB?oc=5",
+        "source": "BioBioChile",
+        "pubdate": "Fri, 12 Jun 2026 21:18:11 GMT",
+        "pubdate_iso": "2026-06-12T21:18:11+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
       {
         "title": "SP IPSA: La Bolsa de Santiago registró este jueves variación de 2,76%",
         "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbzZyNTFwbGtxYjF5RG1xM0ZCd29mN3gzZld4TFRpelRnV3JrTml2Q2JINXZFZlVHNGdERGo3anBfRS0xOFdjM0VJaDdMNzN5clJLeEtQNlR4QVFsek95VGp5c3N2Nm96OGYzMkEyRVJtT0Vzb0RuazRQeldKaTl0eG1XSHN4NnhwNXFmVG5MSzVkWEwwbkhEVWJBUm1ZN01QSTBXUFR2U1JkUVNvTGtKdkFTbw?oc=5",
@@ -122,29 +150,29 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
-      {
-        "title": "IPSA se dispara más de 3% en su mejor sesión desde abril de 2025 con fuerte protagonismo de la banca y despide siete jornadas consecutivas de pérdidas",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvOVUzLTE4SnB1V0JFd1ZfbG5keVlEalJqZmNQUkYxNjRPbWNVTlNqSnlHd0xIVi1qYktuU1p4RW9zMzNRVkdmYzAxeUNnYzlBUnNTT3hKdU9vWnM2OXJNdDFfYndyTE9I?oc=5",
-        "source": "Diario Financiero",
-        "pubdate": "Tue, 09 Jun 2026 20:36:00 GMT",
-        "pubdate_iso": "2026-06-09T20:36:00+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🔴",
-          "razonamiento": "Perdidas reportadas"
-        }
       }
     ],
     "dolar_cobre": [
       {
+        "title": "Valor de la UF hoy viernes 12 de junio de 2026 en Chile: precio actualizado",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPU2VjM013VERFTXl1cjNKOVkyYnpCN0ZPenZVMFktZndrNGZ2Z2liV1o2WjREbGtpTzRQclhlX2pLb3diUGNvRTJLWDFWQjRCcENJTEJtdkZWT0wyNnhnajdkcjZYbHRBU3FHNTczYm9VMmMybmtfaU5fYWpVUGF3V2d1TGVjWlMtRGg4Qm54cGVya3RaRUlhSkk4Ym1nZXlBaFNpOHUtTmFrTFZINFNnMngtSEE?oc=5",
+        "source": "Radio Pauta 100.5",
+        "pubdate": "Fri, 12 Jun 2026 20:41:50 GMT",
+        "pubdate_iso": "2026-06-12T20:41:50+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Precio del Dólar en Chile hoy: El Peso chileno amplía sus ganancias y alcanza máximos de una semana",
         "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTTlsWllON1FhQVhWWTZFY3hUYnBwNFZDWjZIMVoyel90VlNvOGM3SXBvT1MzTWJDUU4zd3h5RFp4Nkk1YmlqMm1KRTZVcG9hMHRkeGtNZFFPVk9aYmN2M2hiX1lYNVN6SHg4a2hrNVQtVnh5T1U0dnBQaTNRZGVZdklfUTdBeWdFN3hSWURpdXFJVEY1aFBhcnJNclBJWFR2LWU3ekdVNGxLZnppYlNkWEIwUWM0cGo3OFRmSTN6QWhFWUZabXNLT2JldlViM0Z4WkxzOXVuSdIB3AFBVV95cUxNLWdraHFEaUlmZDNVcnJDakpKVTJtcFNFNGtYRGNLUEE1NG50UkVET3ZtLU9aNzVIMlVhdjJyNUpHN0VwTy1Xd3lMS3ItZy1fVzVvbG5URzg2VEcwcFhnLVNpTEdDdGZ0X1B4TlE4YkdxdGZMTW9vWUdlSEZtS1FsRGNiZnF3M2Y1YVZXbUxRSFdTN2U2U0FKWVNfaEZ2TDhfVVFqYjFMVnZKWnJQTGJqeUx1S3JzZXN6QkJBU0UzbDhrZVljRGlrZHp6QjJlMjVWTWRnWDUwVmwtSFlU?oc=5",
         "source": "FXStreet",
-        "pubdate": "Fri, 12 Jun 2026 15:00:00 GMT",
-        "pubdate_iso": "2026-06-12T15:00:00+00:00",
+        "pubdate": "Fri, 12 Jun 2026 15:06:27 GMT",
+        "pubdate_iso": "2026-06-12T15:06:27+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -194,13 +222,15 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      },
+      }
+    ],
+    "economia_chile": [
       {
-        "title": "Dólar cierra bajo los $910 en Chile apoyado por fuerte repunte del cobre",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOek40UHJaaWxxeTU1Q2NPeDJwVHpLSlJKYXFjMzNnTVlheENTREQwcTdqbW9wbnpLVklDcUZudm52eF9vd200aXNhVy12Q0NQd0xkajBxM3U0YjVJOC1UQkw3Qzg1T0pHU0RRa1N0MU9QZ2IyOFBKMGRrZzNUMW1DbENFYjF3ODEtR01UQmY1RXYwRWx2cVJjM21EUjJacWtIeV95MUUtLUswdUxZUXFiOU5lbGtSdEJaSHlzRUUtTEdneHRMdWJkcktuYw?oc=5",
-        "source": "Radio Agricultura",
-        "pubdate": "Thu, 11 Jun 2026 19:23:09 GMT",
-        "pubdate_iso": "2026-06-11T19:23:09+00:00",
+        "title": "Crisis fiscal y envejecimiento poblacional: Gemines advierte dos amenazas estructurales para Chile",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQV1FqSWl3bXBON3RReG93UU9QZU5Fak5fTzRsTWRLUGZHbVBmZDJCTFdXZ1BlNDc5eVpvcVZsbklxUUZzSk9fUEF2cFlDMHk0OEJZM04tQzh1VnBsRl9HRW84Uld3akQyai1vc1hpeWRvdW5qdXpFRzI1Z2NCTi1zekhRSzV2QldXRXd1RnBCVXpXM0pTR0UxTzNDOER3VlFLZ1V5VE5mQTNyYUpBREF2OVo0Q2lGN25vVEVYdHVzMURjMEdoNENTRWN2SnhlVTJyeGZfYkNraFBYQzBFZVE?oc=5",
+        "source": "El Mostrador",
+        "pubdate": "Fri, 12 Jun 2026 16:59:50 GMT",
+        "pubdate_iso": "2026-06-12T16:59:50+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -208,15 +238,27 @@
           "emoji": "⚪",
           "razonamiento": "Sin senal direccional clara en el titular"
         }
-      }
-    ],
-    "economia_chile": [
+      },
       {
         "title": "Banco Mundial ajusta a la baja proyección de crecimiento para Chile y advierte desaceleración global",
         "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQdW15dzg5ckFXbXVRb1RJRWQzSHRPRjFjZVBDLUtPQWlSaDBmZ3JrX2VPaS1NeXU1T2M5UGp6ZHNOZjhZRnI5WV95ZWNZM1RNb2NWWndOV2VaTkVGdGtXdXVLRTVSUkh1T3c4NXR5ZlhRZ3RxM2UzU0ZEMkNDcy1PWG9tRWQ1UjJrWWI2bHlYemZ3Qms3M2RROFJsdGhQNndoQ001Sy0xeXQ4RlFoSVNPdHExWmtudkxvX2NQdzhEdzZmdi1TOXR4clpnSXhEdzBzUDRF?oc=5",
         "source": "El Periodista",
         "pubdate": "Fri, 12 Jun 2026 14:33:45 GMT",
         "pubdate_iso": "2026-06-12T14:33:45+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
+        "title": "Ex presidente del Banco Estado hizo lapidaria advertencia económica: «Un círculo vicioso de recorte de gasto público y bajo crecimiento»",
+        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOalVTT0NHdmZGU21ZdGEzUU1Mal9MWXZTaF9xeGxpdEFKUUZQX1RwaU9LYUdBdl9BSk5Ya0otOGloSFVRSTFwY0UxUk5rU2JtUmk1cDRtWmxGYUhFc3I4Z3Z3cWdWQTBFMS1XOGlVX2NSanI5NTBaOFpBdEJBYk41dm5wb2V1d3hRVzcyYkZGT1V2MU10bnNkRjViYlp3YVN3U0kxZkJoalp3VWdsaC1pdDRjZTdDbGlNS0NiWmduMWhHSGdyZE1razhzVDF4bE9wTXg4YUI5bHpTeldZenlPb2k0c0NrZVJtQ3FZeENfczNNaGh5dW130gH8AUFVX3lxTFBYeU94UU5GRFp6SEpEcllXbTI1b25MSVVndVFJSTJmaFVrdkNPYUVuYzl4aGtjWFZOOXZtSFF2ekNNNDBrZVVoWkhoZi1sckFTQ1liMVVhMXNrcjdLRWlOeGt6aEhyU0x1WWdyVHkwZ05Hc3JKYVJaOHZBOTd3OTYxVzFJLURnVzlaaU9nWGp0MFowNklPRUJWU2FHdG4xTUVrRGxNalJwaUliMnNqdVA4QVRXVmhmMkdrOFdKbFl0WFRfOHVHSk1sQ0hSZURNTUNKOU5NSzlWWWNKcTJBN1JQTUhtcVdITk5CSUtUVjBvNmhWSnFjdjdRcEdUdA?oc=5",
+        "source": "Futuro Chile",
+        "pubdate": "Fri, 12 Jun 2026 13:31:21 GMT",
+        "pubdate_iso": "2026-06-12T13:31:21+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -245,34 +287,6 @@
         "source": "El Mostrador",
         "pubdate": "Thu, 11 Jun 2026 15:52:03 GMT",
         "pubdate_iso": "2026-06-11T15:52:03+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Banco Mundial baja su proyección de crecimiento para Chile este año",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQUlKQ1hIckNpSFNwcy1NMEQ1X1JhNHRGYUd0VHltZWEyT19CLVR0ckh5SHBYV2pKaHhTeHVxb3RndU1MZ1BXRzB1UlN6aDV3VW9lSWlpY1ZmRjF6NGNPdUlFbG9CSlRRN3Z4UnFfNVVrVzNCTGROQTBqRUplUlNRN0NWQ1RXMklkUnhteW5XdXFLalBIa3VfRGRJQU5zOFhGRldFMksyTE04N3BkWlh5Yw?oc=5",
-        "source": "Diario Financiero",
-        "pubdate": "Thu, 11 Jun 2026 15:36:00 GMT",
-        "pubdate_iso": "2026-06-11T15:36:00+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Banco Mundial recorta proyección de crecimiento para Chile, a la vez que destaca alto precio del cobre",
-        "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPSnczcFRldkVtTXZvM0dEMENncy1MSFNndHY2aVBRSG9oaHhjVHl6VEZ4SXNodzRSWTZ0VjFTaEFFdGxOX3hteUpjekY4YlpjWkpNc1gtMjZCNGhRc25nQkZUMXBoRlE3REpNZkx5WG8xMzZQeHd3NEt1QnpZMTJmSGh5QUU5dDY3TnQwMlBjOTVmaHNhQlVUdjFNaEphNm9OWTFnYkU4d25RTUpjRE5Yc1dqLTRoNVE3T2NHZ2pSSEQ0TUE2VTJBcm1kUk9aUkI3bUwxd2Q0RTJOWk1sT09GanRCa3RpSkt0c3VXQk5scDhKRlgtYVlZQTF6NUV2T0tWVFVQYVEyWEtOLUJ5LVZfdkhB?oc=5",
-        "source": "BioBioChile",
-        "pubdate": "Thu, 11 Jun 2026 14:38:51 GMT",
-        "pubdate_iso": "2026-06-11T14:38:51+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -312,30 +326,15 @@
         }
       }
     ],
-    "pensiones_afp": [
-      {
-        "title": "Chile. Reforma previsional: Cecilia Cifuentes propone que cotización extra para cuenta individual sea de cargo del trabajador",
-        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNX3pacE14T08xNDQ5ZFlVMjg5NDNQWkZreEFwQ0tlRURPcmpKQmVWNlJFdUlTTzNZLXlwX19VNl9nN1l4ZWVxX1ZSSnFUWDJqczFSbGxfYmhERi1HRzRYQ2JxZlNER1VhbHBDN3E2MkhnYVpVUHFnOGpZVDZIYXZzSXZjT2xPaC1QS0x1MmlvZjdjVGxkU1VXLXpNLTVHQVNXbVpQVTlYQ1J3YloyMkttbk8telBpLURXd3puckQ5NF8wRmZSWmlyNDdzODJsYUk1WGRRaDVmSUt6dVh1S1pBaE9zWFVpLWFJMWlTQ2I4YmMwWGw3TUdSTjRmcw?oc=5",
-        "source": "Pension Policy International",
-        "pubdate": "Tue, 09 Jun 2026 15:49:31 GMT",
-        "pubdate_iso": "2026-06-09T15:49:31+00:00",
-        "impacto": {
-          "direccion": "negativo",
-          "intensidad": 2,
-          "intensidad_label": "moderado",
-          "emoji": "🔴",
-          "razonamiento": "Reforma previsional: riesgo regulatorio para AFPs"
-        }
-      }
-    ],
+    "pensiones_afp": [],
     "energia_tarifas": [],
     "sectores_watchlist": [
       {
         "title": "De malls a departamentos: por qué Cencosud, Parque Arauco y Mallplaza apuestan por viviendas",
         "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcXptaHoyeE5YQlZyYUZaTXNLdUY5REEtWnFpODlnZHVFMkU2SlBHQ213bFhCME9BREJSMUlaNDZacFJBYTNNaXJlclBKSFlXVlZrLWpHTlJtdlQzdWh6UFZMQWdTRzFFN0tJcExzZ1NuYjd0dHRSdkFycFZadTNFb2l2emJKOUtFaS1OVlNuVTU0UFVEanFJUFl5cGM3ZHlURUkxVDJNU2JRRUNRTTRtckZJcmVsWDA2YmVWQUt2ZEhtaFB5?oc=5",
         "source": "Perú Retail",
-        "pubdate": "Thu, 11 Jun 2026 07:00:00 GMT",
-        "pubdate_iso": "2026-06-11T07:00:00+00:00",
+        "pubdate": "Sat, 13 Jun 2026 01:31:27 GMT",
+        "pubdate_iso": "2026-06-13T01:31:27+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -364,23 +363,23 @@
     "total_noticias": 22,
     "por_categoria": {
       "bcch_tpm": 5,
-      "ipsa": 2,
+      "ipsa": 3,
       "dolar_cobre": 5,
       "economia_chile": 5,
       "politica_regulacion": 2,
-      "pensiones_afp": 1,
+      "pensiones_afp": 0,
       "energia_tarifas": 0,
       "sectores_watchlist": 2
     }
   },
   "resumen_ejecutivo": {
-    "sentimiento": "bajista",
-    "score_neto": -4,
+    "sentimiento": "neutral",
+    "score_neto": 0,
     "n_positivas": 0,
-    "n_negativas": 2,
-    "n_neutrales": 20,
-    "narrativa": "El feed muestra 0 senales positivas y 2 negativas (neto -4). Factores dominantes: Perdidas reportadas; Reforma previsional: riesgo regulatorio para AFPs.",
+    "n_negativas": 0,
+    "n_neutrales": 22,
+    "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
     "narrativa_fuente": "plantilla",
-    "veredicto": "BAJISTA a corto plazo"
+    "veredicto": "NEUTRAL - sin sesgo dominante"
   }
 }
