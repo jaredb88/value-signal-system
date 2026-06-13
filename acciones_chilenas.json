@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-13T16:24:43.582643",
-  "duracion_segundos": 138.932609,
+  "fecha_actualizacion": "2026-06-13T16:34:37.213689",
+  "duracion_segundos": 187.472696,
   "n_acciones": 12,
   "acciones": [
     {
@@ -127,7 +127,8 @@
           "descripcion": "DIVIDENDO DEF 140 $ 53"
         }
       ],
-      "error": null
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "ZOFRI",
@@ -253,7 +254,8 @@
           "descripcion": "DIVIDENDO DEF 65 $ 21,8301"
         }
       ],
-      "error": null
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "PEHUENCHE",
@@ -379,7 +381,8 @@
           "descripcion": "DIVIDENDO DEF 104 $ 113,045329208"
         }
       ],
-      "error": null
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "TRICAHUE",
@@ -505,7 +508,8 @@
           "descripcion": "DIVIDENDO PROV 98 $ 54"
         }
       ],
-      "error": null
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "COLBUN",
@@ -515,14 +519,28 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": null,
-      "razon_social": null,
-      "variacion_pct": null,
-      "dy": null,
+      "precio_actual_clp": 129,
+      "razon_social": "COLBUN S.A.",
+      "variacion_pct": 0,
+      "dy": {
+        "dy_pct": 6.16,
+        "anos_usados": 3,
+        "anos_detalle": {
+          "2025": 5.54,
+          "2024": 6.97,
+          "2023": 11.32
+        },
+        "promedio_anual": 7.94,
+        "advertencia": null
+      },
       "cagr_3y": 0.01545262706438133,
       "cagr_5y": 0.024205712419562486,
       "cagr_10y": -0.026028739213731056,
-      "evaluacion": null,
+      "evaluacion": {
+        "status": "Bajo benchmark",
+        "emoji": "🔴",
+        "vs_benchmark_pp": -2.34
+      },
       "cmf": {
         "periodo": "03/2026",
         "tipo_balance": "CONSOLIDADO",
@@ -535,8 +553,90 @@
         "capital_trabajo": 974541.0,
         "patrimonio_total": 3271628.0
       },
-      "dividendos_recientes": [],
-      "error": null
+      "dividendos_recientes": [
+        {
+          "fecha_pago": "2026-05-15",
+          "fecha_limite": "2026-05-09",
+          "monto_clp": 0.8009199,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF 67 US$ 0,00089"
+        },
+        {
+          "fecha_pago": "2025-12-12",
+          "fecha_limite": "2025-12-05",
+          "monto_clp": 4.1246605,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV.  US$ 0,00445"
+        },
+        {
+          "fecha_pago": "2025-05-09",
+          "fecha_limite": "2025-05-03",
+          "monto_clp": 1.4189017,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF 65 US$ 0,00151"
+        },
+        {
+          "fecha_pago": "2024-12-13",
+          "fecha_limite": "2024-12-07",
+          "monto_clp": 5.5331267,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV.  US$ 0,00569"
+        },
+        {
+          "fecha_pago": "2024-05-10",
+          "fecha_limite": "2024-05-04",
+          "monto_clp": 1.4388066,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF 63 US$ 0,00154"
+        },
+        {
+          "fecha_pago": "2023-12-15",
+          "fecha_limite": "2023-12-09",
+          "monto_clp": 8.4023368,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV 62 US$ 0,00968"
+        },
+        {
+          "fecha_pago": "2023-05-12",
+          "fecha_limite": "2023-05-06",
+          "monto_clp": 2.9162528,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF US$ 0,00368"
+        },
+        {
+          "fecha_pago": "2023-05-12",
+          "fecha_limite": "2023-05-06",
+          "monto_clp": 3.3917288,
+          "tipo": "ADICIONAL",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO ADIC US$ 0,00428"
+        },
+        {
+          "fecha_pago": "2022-12-16",
+          "fecha_limite": "2022-12-10",
+          "monto_clp": 4.1007876,
+          "tipo": "PROVISORIO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO PROV 60 US$ 0,00476"
+        },
+        {
+          "fecha_pago": "2022-05-12",
+          "fecha_limite": "2022-05-06",
+          "monto_clp": 1.1195523,
+          "tipo": "DEFINITIVO",
+          "moneda_origen": "USD",
+          "descripcion": "DIVIDENDO DEF US$ 0,00129"
+        }
+      ],
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "ENELGXCH",
@@ -662,7 +762,8 @@
           "descripcion": "DIVIDENDO DEF 72 $ 3,061433063265350"
         }
       ],
-      "error": null
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "LIPIGAS",
@@ -787,7 +888,8 @@
           "descripcion": "DIVIDENDO PROV.  $ 97"
         }
       ],
-      "error": null
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "NTGCLGAS",
@@ -913,7 +1015,8 @@
           "descripcion": "DIVIDENDO EVEN 8 $ 19"
         }
       ],
-      "error": null
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "SOQUICOM",
@@ -1039,7 +1142,8 @@
           "descripcion": "DIVIDENDO EVEN US$ 0,03675"
         }
       ],
-      "error": null
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "QUINENCO",
@@ -1165,7 +1269,8 @@
           "descripcion": "DIVIDENDO PROV $ 171,26168"
         }
       ],
-      "error": null
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "CENCOMALLS",
@@ -1291,7 +1396,8 @@
           "descripcion": "DIVIDENDO EVEN 4 $ 30"
         }
       ],
-      "error": null
+      "error": null,
+      "_fecha_dato": "2026-06-13T16:34:37.213440"
     },
     {
       "ticker": "ENELAM",
@@ -1409,7 +1515,9 @@
           "descripcion": "DIVID. DEF 103 US$ 0,00162721534077627"
         }
       ],
-      "error": null
+      "error": null,
+      "stale": true,
+      "stale_desde": "anterior"
     }
   ]
 }
