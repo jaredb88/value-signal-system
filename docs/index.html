@@ -146,7 +146,11 @@ nav.tabs a{
   padding:0 13px;font-size:13px;font-weight:500;color:var(--tx-3);
   border-bottom:2px solid transparent;transition:color .15s;white-space:nowrap;
 }
-nav.tabs a .ico{font-size:13px;opacity:.9}
+nav.tabs a .ico{font-size:13px;opacity:.9;display:inline-flex;align-items:center}
+.flag{width:17px;height:11px;border-radius:2px;display:inline-block;vertical-align:-1px;
+  box-shadow:0 0 0 1px rgba(255,255,255,.12);object-fit:cover}
+.flag-sm{width:15px;height:10px}
+.view-head h1 .em .flag{width:26px;height:17px;vertical-align:-2px}
 nav.tabs a:hover{color:var(--tx)}
 nav.tabs a.active{color:var(--tx);border-bottom-color:var(--teal)}
 nav.tabs a.active .ico{opacity:1}
@@ -1553,12 +1557,12 @@ function renderHome(){
     }
     // 1b. chilenas sobre benchmark
     if(sobre.length){
-      html += `<div id="opp-cl" class="sub-lbl">🏛️ Chilenas sobre su benchmark sectorial</div>`;
+      html += `<div id="opp-cl" class="sub-lbl">${flag('cl')} Chilenas sobre su benchmark sectorial</div>`;
       html += `<div class="mini-grid">${sobre.map(a=>oppCardCL(a)).join("")}</div>`;
     }
     // 1c. USA baratas
     if(usBar.length){
-      html += `<div id="opp-us" class="sub-lbl">📈 USA baratas por múltiplos</div>`;
+      html += `<div id="opp-us" class="sub-lbl">${flag('us')} USA baratas por múltiplos</div>`;
       html += `<div class="mini-grid">${usBar.map(a=>oppCardUS(a)).join("")}</div>`;
     }
   }
@@ -1573,8 +1577,8 @@ function renderHome(){
     </div>
     <div class="acc-body">
       ${rest.length?`<div class="sub-lbl">Activos con score · NEUTRAL / CARO</div><div class="opp-grid" style="margin-bottom:16px">${rest.map(a=>assetCard(a)).join("")}</div>`:""}
-      ${clRest.length?`<div class="sub-lbl">🏛️ Chilenas dentro / bajo benchmark</div><div class="mini-grid" style="margin-bottom:16px">${clRest.map(a=>oppCardCL(a)).join("")}</div>`:""}
-      ${usRest.length?`<div class="sub-lbl">📈 USA a precio razonable o caro</div><div class="mini-grid">${usRest.map(a=>oppCardUS(a)).join("")}</div>`:""}
+      ${clRest.length?`<div class="sub-lbl">${flag('cl')} Chilenas dentro / bajo benchmark</div><div class="mini-grid" style="margin-bottom:16px">${clRest.map(a=>oppCardCL(a)).join("")}</div>`:""}
+      ${usRest.length?`<div class="sub-lbl">${flag('us')} USA a precio razonable o caro</div><div class="mini-grid">${usRest.map(a=>oppCardUS(a)).join("")}</div>`:""}
     </div>
   </div>`;
 
@@ -2244,8 +2248,8 @@ function usRow(a){
 function renderUSA(param){
   if(param) return renderUSADetail(param);
   const us = VS.data.usa;
-  if(VS.status.usa==="error" && !us) return viewHead("🇺🇸","Acciones USA","")+errBox("usa",VS.FILES.usa);
-  if(!us||!us.acciones) return viewHead("🇺🇸","Acciones USA","")+skeletonCards(2);
+  if(VS.status.usa==="error" && !us) return viewHead(flag("us"),"Acciones USA","")+errBox("usa",VS.FILES.usa);
+  if(!us||!us.acciones) return viewHead(flag("us"),"Acciones USA","")+skeletonCards(2);
 
   const acc = us.acciones.slice();
   const order = {"Barata":0,"Razonable":1,"Cara":2};
@@ -2268,7 +2272,7 @@ function renderUSA(param){
     <div class="grid rows2">${acc.map(usRow).join("")}</div>
     <div class="hint" style="margin-top:14px;line-height:1.5">Empresas de Crecimiento: la tesis es ganancia por capital, no por dividendo. Una empresa excelente no es buena inversión si el precio es muy caro — si está "Cara", queda en watchlist hasta que el precio corrija.</div>`;
 
-  return viewHead("🇺🇸","Acciones USA", srcStamp("usa"),
+  return viewHead(flag("us"),"Acciones USA", srcStamp("usa"),
     "Crecimiento USA · PER por clasificación, P/B según ROE y Graham (<22.5) como desempate") +
     `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
 }
@@ -2301,9 +2305,9 @@ function usaAlign(acc, news){
 
 function renderUSADetail(ticker){
   const us = VS.data.usa;
-  if(!us||!us.acciones) return viewHead("🇺🇸",ticker,"")+skeletonCards(2);
+  if(!us||!us.acciones) return viewHead(flag("us"),ticker,"")+skeletonCards(2);
   const a = us.acciones.find(x=>x.ticker===ticker);
-  if(!a) return viewHead("🇺🇸",ticker,"")+`<div class="hint">No encontrada en el watchlist.</div>`;
+  if(!a) return viewHead(flag("us"),ticker,"")+`<div class="hint">No encontrada en el watchlist.</div>`;
 
   const v = a.valoracion||{};
   const color = US_VAL_COLOR[v.status]||"var(--tx)";
@@ -2389,7 +2393,7 @@ function renderUSADetail(ticker){
   </div></div>`;
 
   return `<div class="detail-back" onclick="go('usa')">‹ Volver al watchlist</div>` +
-    viewHead("🇺🇸", a.ticker, srcStamp("usa"), a.razon_social) +
+    viewHead(flag("us"), a.ticker, srcStamp("usa"), a.razon_social) +
     `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
 }
 
@@ -2448,8 +2452,8 @@ function renderChile(param){
   if(param) return renderChileDetail(param);
   const ch = VS.data.chile;
   const news = VS.data.n_chile;
-  if(VS.status.chile==="error" && !ch) return viewHead("🇨🇱","Acciones Chilenas","")+errBox("chile",VS.FILES.chile);
-  if(!ch||!ch.acciones) return viewHead("🇨🇱","Acciones Chilenas","")+skeletonCards(3);
+  if(VS.status.chile==="error" && !ch) return viewHead(flag("cl"),"Acciones Chilenas","")+errBox("chile",VS.FILES.chile);
+  if(!ch||!ch.acciones) return viewHead(flag("cl"),"Acciones Chilenas","")+skeletonCards(3);
 
   const acc = ch.acciones.slice();
   const order = {"Sobre benchmark":0,"En rango":1,"Dentro benchmark":1,"Bajo benchmark":2};
@@ -2474,7 +2478,7 @@ function renderChile(param){
       <span class="rule"></span></div>
     <div class="grid rows2">${acc.map(clRow).join("")}</div>`;
 
-  return viewHead("🇨🇱","Acciones Chilenas", srcStamp("chile"),
+  return viewHead(flag("cl"),"Acciones Chilenas", srcStamp("chile"),
     "Dividend Yield (promedio 3 años, definitivos+provisorios) vs rango sectorial") +
     `<div class="layout-split"><div>${main}</div>${sidebar}</div>`;
 }
@@ -2587,7 +2591,7 @@ function renderChileDetail(ticker){
   </div></div>`;
 
   return `<div class="detail-back" onclick="go('chile')">‹ Volver al watchlist</div>` +
-    viewHead("🇨🇱", a.ticker, srcStamp("chile"), a.razon_social) +
+    viewHead(flag("cl"), a.ticker, srcStamp("chile"), a.razon_social) +
     `<div class="layout-split"><div>${main}</div>${sidebarCl}</div>`;
 }
 
@@ -2595,11 +2599,20 @@ function renderChileDetail(ticker){
 /* ============================================================
    VALUE SIGNAL — router + app shell
    ============================================================ */
+/* banderas como SVG inline: se renderizan igual en cualquier SO (Windows no trae emoji-banderas) */
+const FLAGS = {
+  cl: `<svg class="flag" viewBox="0 0 30 20" aria-label="Chile"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#D52B1E"/><rect width="10" height="10" fill="#0039A6"/><polygon points="5,2 5.9,4.2 8.2,4.2 6.3,5.6 7,7.9 5,6.5 3,7.9 3.7,5.6 1.8,4.2 4.1,4.2" fill="#fff"/></svg>`,
+  us: `<svg class="flag" viewBox="0 0 38 20" aria-label="USA"><rect width="38" height="20" fill="#fff"/>${
+    [0,2,4,6,8,10,12].map(i=>`<rect y="${i*20/13}" width="38" height="${20/13}" fill="#B22234"/>`).join("")
+  }<rect width="16" height="${20*7/13}" fill="#3C3B6E"/></svg>`,
+};
+function flag(code){ return FLAGS[code]||""; }
+
 const ROUTES = {
   home:    {label:"Oportunidades", ico:"🎯", render:renderHome},
   etfs:    {label:"ETFs USA",      ico:"📊", render:renderETFs},
-  chile:   {label:"Chile",         ico:"🏛️", render:p=>renderChile(p)},
-  usa:     {label:"Acciones USA",  ico:"📈", render:p=>renderUSA(p)},
+  chile:   {label:"Chile",         ico:FLAGS.cl, render:p=>renderChile(p)},
+  usa:     {label:"Acciones USA",  ico:FLAGS.us, render:p=>renderUSA(p)},
   oro:     {label:"Oro",           ico:"🥇", render:()=>renderAsset("oro")},
   bitcoin: {label:"Bitcoin",       ico:"₿",  render:()=>renderAsset("bitcoin")},
 };
@@ -2689,7 +2702,7 @@ function init(){
   // refresh "ago" labels every 30s
   setInterval(updateHeader, 30000);
 }
-const VS_BUILD = "v2026-06-13.3";
+const VS_BUILD = "v2026-06-13.4";
 document.addEventListener("DOMContentLoaded", ()=>{
   const e=document.getElementById("vsBuild"); if(e) e.textContent = VS_BUILD;
   console.log("Value Signal", VS_BUILD);
