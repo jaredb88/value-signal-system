@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-13T07:33:54.049553+00:00",
+  "updated_at_utc": "2026-06-13T09:33:54.666187+00:00",
   "ventana_dias": 3,
   "categorias_meta": {
     "bcch_tpm": {
@@ -85,20 +85,6 @@
         "source": "Finanzas Digital",
         "pubdate": "Thu, 11 Jun 2026 13:00:16 GMT",
         "pubdate_iso": "2026-06-11T13:00:16+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Rueda de prensa del BCE: Lagarde habla sobre las perspectivas de la política tras la subida de tipos en junio",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdkVFVzRLVy1yeXRjUVJydU4zRUlWRXFibTJpTlNRQ0JGUlZ0OFlXR0ItV0psUVhCdktybmh4ZVIzV0JWaHI5Rl93RkNPSE9RaUhuTUpMTU5YekZpWDJpNFNsaVB2TjIzb0ZZNXJlanNtOGNSSnVYbUdLazhfaE5KTmoxajllNnhXUlNTR0JNU2RQZTI4Und5WVdRWms5TG9mZlJZOWxUUHFDSHZrN1oyVml4SnRCTzFDdmZLR1BmcWZpUFllT1F1SVlJMjhKd1I2Rmt3cVR0VdIB3AFBVV95cUxQdENKcTg4eDRKajIxOG1adXhRM3ZnY0haRjhUWHhGNmlWYk1WaWtXRHFXOE1GTW9RM1FCcDlxYlNUWHRRdWdrVWV2d0ZNMzhwaXZmM1drTHdMazE4X2U3VVZOdmh1ZjFNTmszbWFvbWotZVZ0dW1CTnJKdjFzbmZEVFo1NzRodk1lSUJVbmo1b21NXzBEaUZkZUw0eDRmeDdMT25uUHFpZVFYZE9XSHFETl90enIzbzJlYjhpWllCVjQyLW13aThwNVJ1QjBMdGxUTTJOUHRwaGhzQVVt?oc=5",
-        "source": "FXStreet",
-        "pubdate": "Thu, 11 Jun 2026 12:47:46 GMT",
-        "pubdate_iso": "2026-06-11T12:47:46+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -212,6 +198,20 @@
     ],
     "economia_chile": [
       {
+        "title": "Chile. Las promesas económicas de Kast se caen a pedazos: Hacienda entierra también la meta de crecimiento del 4% - Resumen Latinoamericano -",
+        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPQm5KdVkybnhDZl83bzdZZzlqOUsxU3p4VEVsTDZhRUlJdU4xc1ZrQ3VTRDVRYlU2YnB6RUZ5WE1wYzJ1ZF9CeVo0bkpkM1NfRV8xZkFLcHpMZmxWUWoyQmhvSkFNeTd4Z1JRX21ocWo4aExtWW9hLUJKYWZaSXN3ZC1lS3ZKT3FpU3BjX0RCZUxXSDktdVM2dEx1aWg2T29HZVMxTXRpSEpYS3NSTGd0SjFhb241OVNlVU1NWkQ1NTdSTGluWHlsNm1qZE1fVjBrazQ5MU9YUl92NU1BYnBwM2hKVTJKd0tBdVpUVzRqM1dxU0k?oc=5",
+        "source": "Resumen Latinoamericano -",
+        "pubdate": "Sat, 13 Jun 2026 08:26:15 GMT",
+        "pubdate_iso": "2026-06-13T08:26:15+00:00",
+        "impacto": {
+          "direccion": "neutral",
+          "intensidad": 0,
+          "intensidad_label": "neutral",
+          "emoji": "⚪",
+          "razonamiento": "Sin senal direccional clara en el titular"
+        }
+      },
+      {
         "title": "Crisis fiscal y envejecimiento poblacional: Gemines advierte dos amenazas estructurales para Chile",
         "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQV1FqSWl3bXBON3RReG93UU9QZU5Fak5fTzRsTWRLUGZHbVBmZDJCTFdXZ1BlNDc5eVpvcVZsbklxUUZzSk9fUEF2cFlDMHk0OEJZM04tQzh1VnBsRl9HRW84Uld3akQyai1vc1hpeWRvdW5qdXpFRzI1Z2NCTi1zekhRSzV2QldXRXd1RnBCVXpXM0pTR0UxTzNDOER3VlFLZ1V5VE5mQTNyYUpBREF2OVo0Q2lGN25vVEVYdHVzMURjMEdoNENTRWN2SnhlVTJyeGZfYkNraFBYQzBFZVE?oc=5",
         "source": "El Mostrador",
@@ -259,20 +259,6 @@
         "source": "La Tercera",
         "pubdate": "Thu, 11 Jun 2026 20:21:28 GMT",
         "pubdate_iso": "2026-06-11T20:21:28+00:00",
-        "impacto": {
-          "direccion": "neutral",
-          "intensidad": 0,
-          "intensidad_label": "neutral",
-          "emoji": "⚪",
-          "razonamiento": "Sin senal direccional clara en el titular"
-        }
-      },
-      {
-        "title": "Pese a altos precios del cobre, Banco Mundial recorta proyección de crecimiento para Chile",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSGs4eVpXdVMwYWphSkV0RGhsMWxER1VGcGdJVnNDRGxydHpzVkhMOEx1c0Q1dEhzbDRWdlkxUGNNVEhnYW00YnE1a19Mb092d0w2NXEyMDlDc1QwS3h5Tjk2Sk5kcjhOSUdRWW1TYmw3V3ZxRjhjMzRmZXI1eG9QdktrRE5fYXBGMXdoMlJldExBSGFEUEVVRjJnOGZSLUtGMWNENGQzUThTSEJBTnhQQWtWQTM0cWhkT21ISEJFZGxydlJHMmU0bXQ1X1VTWDJZN2Mw?oc=5",
-        "source": "El Mostrador",
-        "pubdate": "Thu, 11 Jun 2026 15:52:03 GMT",
-        "pubdate_iso": "2026-06-11T15:52:03+00:00",
         "impacto": {
           "direccion": "neutral",
           "intensidad": 0,
@@ -346,9 +332,9 @@
     ]
   },
   "stats": {
-    "total_noticias": 21,
+    "total_noticias": 20,
     "por_categoria": {
-      "bcch_tpm": 5,
+      "bcch_tpm": 4,
       "ipsa": 2,
       "dolar_cobre": 5,
       "economia_chile": 5,
@@ -363,7 +349,7 @@
     "score_neto": 0,
     "n_positivas": 0,
     "n_negativas": 0,
-    "n_neutrales": 21,
+    "n_neutrales": 20,
     "narrativa": "Sin senales direccionales claras en las noticias de las ultimas 72 horas.",
     "narrativa_fuente": "plantilla",
     "veredicto": "NEUTRAL - sin sesgo dominante"
