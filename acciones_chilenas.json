@@ -1,6 +1,6 @@
 {
-  "fecha_actualizacion": "2026-06-12T11:34:46.508577",
-  "duracion_segundos": 98.614647,
+  "fecha_actualizacion": "2026-06-12T23:52:35.752232",
+  "duracion_segundos": 233.726854,
   "n_acciones": 11,
   "acciones": [
     {
@@ -11,28 +11,14 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Administradora de Fondos de Pensiones. Top 1 por AUM en Chile. ROE consistentemente alto (~45%), G=20% (tecnicamente Crecimiento pero paga dividendos altos).",
-      "precio_actual_clp": 1338.1,
-      "razon_social": "A.F.P. HABITAT S.A.",
-      "variacion_pct": 0.49,
-      "dy": {
-        "dy_pct": 7.42,
-        "anos_usados": 3,
-        "anos_detalle": {
-          "2025": 110.0,
-          "2024": 120.0,
-          "2023": 68.0
-        },
-        "promedio_anual": 99.33,
-        "advertencia": null
-      },
-      "cagr_3y": 0.23360368351563543,
-      "cagr_5y": 0.392313598861163,
-      "cagr_10y": 0.10504880962475616,
-      "evaluacion": {
-        "status": "Sobre benchmark",
-        "emoji": "🟢",
-        "vs_benchmark_pp": 0.92
-      },
+      "precio_actual_clp": null,
+      "razon_social": null,
+      "variacion_pct": null,
+      "dy": null,
+      "cagr_3y": 0.23526088875487194,
+      "cagr_5y": 0.3934355458257812,
+      "cagr_10y": 0.10549395233389758,
+      "evaluacion": null,
       "cmf": {
         "periodo": "03/2026",
         "tipo_balance": "INDIVIDUAL",
@@ -45,88 +31,7 @@
         "capital_trabajo": -8196260.0,
         "patrimonio_total": 423201664.0
       },
-      "dividendos_recientes": [
-        {
-          "fecha_pago": "2026-05-15",
-          "fecha_limite": "2026-05-09",
-          "monto_clp": 60.0,
-          "tipo": "ADICIONAL",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO ADIC 149 $ 60"
-        },
-        {
-          "fecha_pago": "2026-01-09",
-          "fecha_limite": "2026-01-03",
-          "monto_clp": 20.0,
-          "tipo": "PROVISORIO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO PROV.  $ 20"
-        },
-        {
-          "fecha_pago": "2025-10-10",
-          "fecha_limite": "2025-10-04",
-          "monto_clp": 20.0,
-          "tipo": "PROVISORIO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO PROV.  $ 20"
-        },
-        {
-          "fecha_pago": "2025-05-16",
-          "fecha_limite": "2025-05-10",
-          "monto_clp": 55.0,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 146 $ 55"
-        },
-        {
-          "fecha_pago": "2025-01-03",
-          "fecha_limite": "2024-12-27",
-          "monto_clp": 35.0,
-          "tipo": "PROVISORIO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO PROV 145 $ 35"
-        },
-        {
-          "fecha_pago": "2024-10-11",
-          "fecha_limite": "2024-10-05",
-          "monto_clp": 20.0,
-          "tipo": "PROVISORIO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO PROV 144 $ 20"
-        },
-        {
-          "fecha_pago": "2024-05-17",
-          "fecha_limite": "2024-05-11",
-          "monto_clp": 60.0,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 143 $ 60"
-        },
-        {
-          "fecha_pago": "2024-01-05",
-          "fecha_limite": "2023-12-29",
-          "monto_clp": 40.0,
-          "tipo": "PROVISORIO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO PROV 142 $ 40"
-        },
-        {
-          "fecha_pago": "2023-10-13",
-          "fecha_limite": "2023-10-06",
-          "monto_clp": 15.0,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 141 $ 15"
-        },
-        {
-          "fecha_pago": "2023-05-12",
-          "fecha_limite": "2023-05-06",
-          "monto_clp": 53.0,
-          "tipo": "DEFINITIVO",
-          "moneda_origen": "CLP",
-          "descripcion": "DIVIDENDO DEF 140 $ 53"
-        }
-      ],
+      "dividendos_recientes": [],
       "error": null
     },
     {
@@ -139,7 +44,7 @@
       "descripcion": "Operadora de la zona franca de Iquique. Negocio estable y predecible. ROE 35%, payout 74%, G=9%.",
       "precio_actual_clp": 988,
       "razon_social": "ZONA FRANCA DE IQUIQUE S.A.",
-      "variacion_pct": -0.02,
+      "variacion_pct": 0,
       "dy": {
         "dy_pct": 7.01,
         "anos_usados": 3,
@@ -515,11 +420,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Segunda mayor generadora electrica de Chile. Diversificada en hidro, gas, eolica, solar. ROE 4%, payout 79%, G=1%.",
-      "precio_actual_clp": 130.1,
+      "precio_actual_clp": 129,
       "razon_social": "COLBUN S.A.",
-      "variacion_pct": 1.64,
+      "variacion_pct": 0,
       "dy": {
-        "dy_pct": 6.11,
+        "dy_pct": 6.16,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 5.54,
@@ -529,13 +434,13 @@
         "promedio_anual": 7.94,
         "advertencia": null
       },
-      "cagr_3y": 0.020266755914991386,
-      "cagr_5y": 0.03041424690010519,
-      "cagr_10y": -0.024461099625084803,
+      "cagr_3y": 0.01738315001408286,
+      "cagr_5y": 0.02866588625917843,
+      "cagr_10y": -0.02528907630070154,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.39
+        "vs_benchmark_pp": -2.34
       },
       "cmf": {
         "periodo": "03/2026",
@@ -641,11 +546,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial chilena de Enel. Principal generadora hidroelectrica del pais. ROE 19%, payout 62%, G=7%.",
-      "precio_actual_clp": 535,
+      "precio_actual_clp": 533.98,
       "razon_social": "ENEL GENERACION CHILE S.A.",
-      "variacion_pct": 1.79,
+      "variacion_pct": 0,
       "dy": {
-        "dy_pct": 6.28,
+        "dy_pct": 6.29,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 41.9,
@@ -655,13 +560,13 @@
         "promedio_anual": 33.59,
         "advertencia": null
       },
-      "cagr_3y": 0.30622309227871747,
-      "cagr_5y": 0.20741864158334855,
-      "cagr_10y": -0.007983731983988052,
+      "cagr_3y": 0.30539244107768493,
+      "cagr_5y": 0.20695789118934305,
+      "cagr_10y": -0.008173026518431992,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.22
+        "vs_benchmark_pp": -2.21
       },
       "cmf": {
         "periodo": "03/2026",
@@ -767,11 +672,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de GLP en Chile, Colombia y Peru. Crecimiento moderado por expansion regional. ROE 33%, payout 63%, G=12%.",
-      "precio_actual_clp": 8350,
+      "precio_actual_clp": 8331.3,
       "razon_social": "EMPRESAS LIPIGAS S.A.",
-      "variacion_pct": -0.22,
+      "variacion_pct": 0,
       "dy": {
-        "dy_pct": 4.18,
+        "dy_pct": 4.19,
         "anos_usados": 2,
         "anos_detalle": {
           "2025": 437.0,
@@ -780,13 +685,13 @@
         "promedio_anual": 349.0,
         "advertencia": "Solo 2 anos disponibles (ideal: 3)"
       },
-      "cagr_3y": 0.44847495122080305,
-      "cagr_5y": 0.17281753736141048,
+      "cagr_3y": 0.44739284634931487,
+      "cagr_5y": 0.1722917562601074,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -2.32
+        "vs_benchmark_pp": -2.31
       },
       "cmf": {
         "periodo": "03/2026",
@@ -892,11 +797,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Distribucion de gas natural por redes en Chile. Negocio regulado, payout alto. ROE 13%, payout 68%, G=4%.",
-      "precio_actual_clp": 611.89,
+      "precio_actual_clp": 620.36,
       "razon_social": "NATURGY CHILE GAS NATURAL S.A.",
       "variacion_pct": 0,
       "dy": {
-        "dy_pct": 6.59,
+        "dy_pct": 6.5,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 44.0,
@@ -906,13 +811,13 @@
         "promedio_anual": 40.33,
         "advertencia": null
       },
-      "cagr_3y": 0.53593776022415,
-      "cagr_5y": 0.21712012828830018,
+      "cagr_3y": 0.5429923088863622,
+      "cagr_5y": 0.22047118701815815,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Cerca",
         "emoji": "🟠",
-        "vs_benchmark_pp": -1.91
+        "vs_benchmark_pp": -2.0
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1018,11 +923,11 @@
       "benchmark_min_pct": 6.0,
       "benchmark_max_pct": 7.000000000000001,
       "descripcion": "Distribuidora de fertilizantes especiales en Chile. Filial de SQM. ROE 11%, ciclo de payout variable, G=11%.",
-      "precio_actual_clp": 374.88,
+      "precio_actual_clp": 374.38,
       "razon_social": "SOQUIMICH COMERCIAL S.A.",
       "variacion_pct": 0,
       "dy": {
-        "dy_pct": 7.26,
+        "dy_pct": 7.27,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 30.4,
@@ -1032,13 +937,13 @@
         "promedio_anual": 27.22,
         "advertencia": null
       },
-      "cagr_3y": 0.08980695619827794,
-      "cagr_5y": 0.10947490036426921,
-      "cagr_10y": 0.09081097453166698,
+      "cagr_3y": 0.08932222693859337,
+      "cagr_5y": 0.10917878766584721,
+      "cagr_10y": 0.09066539911764293,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 0.76
+        "vs_benchmark_pp": 0.77
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1144,11 +1049,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Holding del grupo Luksic. Participaciones en CCU, Banco de Chile, Madeco, Enex, Vapores. ROE 10%, payout 73%, G=3%.",
-      "precio_actual_clp": 3912.4,
+      "precio_actual_clp": 3895.9,
       "razon_social": "QUINENCO S.A.",
-      "variacion_pct": 1.59,
+      "variacion_pct": 0,
       "dy": {
-        "dy_pct": 10.32,
+        "dy_pct": 10.36,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 300.7,
@@ -1158,13 +1063,13 @@
         "promedio_anual": 403.58,
         "advertencia": null
       },
-      "cagr_3y": 0.12673905194606627,
-      "cagr_5y": 0.21788471867579973,
-      "cagr_10y": 0.1164775372492477,
+      "cagr_3y": 0.12515286520489788,
+      "cagr_5y": 0.21685572965638333,
+      "cagr_10y": 0.11600578246196336,
       "evaluacion": {
         "status": "Sobre benchmark",
         "emoji": "🟢",
-        "vs_benchmark_pp": 1.82
+        "vs_benchmark_pp": 1.86
       },
       "cmf": {
         "periodo": "03/2026",
@@ -1270,11 +1175,11 @@
       "benchmark_min_pct": 8.0,
       "benchmark_max_pct": 9.0,
       "descripcion": "Filial inmobiliaria de Cencosud. Operadora de centros comerciales en Chile, Peru y Colombia. ROE 11%, payout 46%, G=6%.",
-      "precio_actual_clp": 2420,
+      "precio_actual_clp": 2464.3,
       "razon_social": "CENCOSUD SHOPPING S.A.",
-      "variacion_pct": 0.23,
+      "variacion_pct": 0,
       "dy": {
-        "dy_pct": 4.2,
+        "dy_pct": 4.13,
         "anos_usados": 3,
         "anos_detalle": {
           "2025": 91.0,
@@ -1284,13 +1189,13 @@
         "promedio_anual": 101.67,
         "advertencia": null
       },
-      "cagr_3y": 0.19720343256221518,
-      "cagr_5y": 0.12633302989831052,
+      "cagr_3y": 0.20446455392233398,
+      "cagr_5y": 0.13042684454103215,
       "cagr_10y": null,
       "evaluacion": {
         "status": "Bajo benchmark",
         "emoji": "🔴",
-        "vs_benchmark_pp": -4.3
+        "vs_benchmark_pp": -4.37
       },
       "cmf": {
         "periodo": "03/2026",
