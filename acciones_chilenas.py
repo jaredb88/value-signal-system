@@ -175,6 +175,42 @@ WATCHLIST = [
         "benchmark_max": 0.09,
         "descripcion": "Mayor electrica privada de Latam. Par regional de Enel Generacion Chile.",
     },
+    {
+        "ticker": "AGUAS-A",
+        "nombre": "Aguas Andinas",
+        "sector": "Sanitaria",
+        "clasificacion": "Vaca Lechera",
+        "benchmark_min": 0.08,
+        "benchmark_max": 0.09,
+        "descripcion": "Mayor sanitaria de Chile. Negocio regulado y muy estable, dividendos altos y predecibles. Precio via Yahoo (.SN) por bloqueo captcha BCS.",
+    },
+    {
+        "ticker": "PARAUCO",
+        "nombre": "Parque Arauco",
+        "sector": "Inmobiliario",
+        "clasificacion": "Vaca Lechera",
+        "benchmark_min": 0.08,
+        "benchmark_max": 0.09,
+        "descripcion": "Operador de centros comerciales en Chile, Peru y Colombia. Dividendos estables. Precio via Yahoo (.SN) por bloqueo captcha BCS.",
+    },
+    {
+        "ticker": "MALLPLAZA",
+        "nombre": "Mall Plaza",
+        "sector": "Inmobiliario",
+        "clasificacion": "Vaca Lechera",
+        "benchmark_min": 0.08,
+        "benchmark_max": 0.09,
+        "descripcion": "Operador de malls (grupo Falabella). Negocio inmobiliario de renta estable. Precio via Yahoo (.SN) por bloqueo captcha BCS.",
+    },
+    {
+        "ticker": "CCU",
+        "nombre": "Compania Cervecerias Unidas",
+        "sector": "Embotelladora",
+        "clasificacion": "DGI",
+        "benchmark_min": 0.06,
+        "benchmark_max": 0.07,
+        "descripcion": "Mayor cervecera y embotelladora de Chile. Marcas lider, expansion regional. Precio via Yahoo (.SN) por bloqueo captcha BCS.",
+    },
 ]
 
 # ============================================================================
@@ -279,6 +315,32 @@ def _valor_mas_reciente(item):
 # ============================================================================
 
 
+def precio_fallback_yf(ticker):
+    """Obtiene el precio de cierre desde Yahoo Finance (<nemo>.SN) cuando la BCS
+    cae en captcha. Devuelve float CLP o None. Yahoo SI tiene datos para las
+    acciones que la BCS bloquea (AGUAS-A, PARAUCO, MALLPLAZA, CCU)."""
+    sym = f"{ticker}.SN"
+    try:
+        import yfinance as yf
+        tk = yf.Ticker(sym)
+        # 1) fast_info (rapido)
+        try:
+            p = tk.fast_info.last_price
+            if p and p > 0:
+                return float(p)
+        except Exception:
+            pass
+        # 2) history ultimo cierre
+        h = tk.history(period="5d")
+        if not h.empty:
+            cierre = h["Close"].dropna()
+            if len(cierre):
+                return float(cierre.iloc[-1])
+    except Exception as e:
+        log.warning(f"  Fallback yfinance fallo para {sym}: {e}")
+    return None
+
+
 async def analizar_ticker(ticker_config, bcs_client):
     """
     Obtiene todos los datos de un ticker:
@@ -326,6 +388,7 @@ async def analizar_ticker(ticker_config, bcs_client):
         # Parsear dividendos
         if variaciones:
             divs = parsear_dividendos_de_variaciones(variaciones)
+            resultado["_divs_bcs"] = divs  # para el fallback yfinance
             # Guardar los 10 mas recientes
             resultado["dividendos_recientes"] = sorted(
                 divs, key=lambda x: x["fecha_pago"], reverse=True
@@ -344,8 +407,25 @@ async def analizar_ticker(ticker_config, bcs_client):
     except Exception as e:
         resultado["error"] = f"BCS: {e}"
 
-
-
+    # 1b. Fallback de PRECIO via Yahoo Finance si la BCS no trajo precio
+    #     (cayo en captcha). El DY se recalcula con los dividendos disponibles:
+    #     los que bajo la BCS, o los preservados del JSON previo.
+    if not (resultado.get("precio_actual_clp") or 0):
+        p_yf = precio_fallback_yf(ticker)
+        if p_yf and p_yf > 0:
+            resultado["precio_actual_clp"] = p_yf
+            resultado["precio_fuente"] = "yahoo_sn"
+            log.info(f"  Precio de {ticker} via Yahoo (.SN): ${p_yf:,.0f}")
+            # dividendos: los frescos de BCS si los hay, si no los del JSON previo
+            divs_para_dy = resultado.get("_divs_bcs") or resultado.get("dividendos_recientes") or []
+            if divs_para_dy:
+                resultado["dy"] = calcular_dy_jared(divs_para_dy, p_yf)
+                if resultado["dy"].get("dy_pct") is not None:
+                    resultado["evaluacion"] = evaluar_vs_benchmark(
+                        resultado["dy"]["dy_pct"],
+                        ticker_config["benchmark_min"],
+                        ticker_config["benchmark_max"],
+                    )
 
 # 1.5 CAGR historico desde BCS (precio oficial)
     try:
